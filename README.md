@@ -152,3 +152,11 @@ TODO:
 - Lynda: https://www.linkedin.com/learning/learning-static-site-building-with-jekyll/add-a-post?u=42250305
 - youtube: 
   - TODO
+  
+  
+# Article to write
+
+- Synergistic team
+- my inspiration for Sketching (compast closed set)
+- My professional website home
+- Dance, my dance philosophy
