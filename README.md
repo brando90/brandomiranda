@@ -53,6 +53,21 @@ where the gemfile is located at. This will install the new gems (if there are ne
 gem list
 ```
 
+For the rest of the tutorial to work you might need to install the Jekyll compose plugins.
+To do that write the following in the gemfile file:
+
+```
+gem 'jekyll-compose', group: [:jekyll_plugins]
+```
+
+now bundle it to install it:
+
+```
+bundle
+```
+
+the subcommands for Jekyll should now be installed!
+
 ## Bundler ##
 
 Bulder 2: https://bundler.io/guides/bundler_2_upgrade.html
@@ -112,7 +127,27 @@ comments: true
 ---
 ```
 
-TODO
+One can also use Jekyll. Make sure the following gem is installed by adding it to the gem file (that is tracking all of the gems):
+
+```
+gem 'jekyll-compose', group: [:jekyll_plugins]
+```
+
+This install subcommands that will be useful. Then run:
+
+```
+bundle
+```
+
+to install the gem that that was described in the gem file.
+Now you don't have to create posts manually.
+Instead do:
+
+```
+bundle exec jekyll post "post name"
+```
+
+now the file is created automatically. TODO: add how discuss works.
 
 # Adding a seperate standalone page
 
@@ -152,6 +187,14 @@ TODO
 # Public directory
 
 TODO
+
+# Excluding files/directories in Jekyll
+
+In the _config.yml file do:
+
+exclude: [DIR, FILE, ...]
+
+resource: https://talk.jekyllrb.com/t/can-i-exclude-files-in-my-project-folders-from-my-site/396
 
 # Github pages
 
