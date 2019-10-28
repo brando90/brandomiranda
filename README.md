@@ -53,6 +53,10 @@ where the gemfile is located at. This will install the new gems (if there are ne
 gem list
 ```
 
+## Bundler ##
+
+Bulder 2: https://bundler.io/guides/bundler_2_upgrade.html
+
 Source/useful links:
 
 - https://learn.cloudcannon.com/jekyll/gemfiles-and-the-bundler/
@@ -112,7 +116,22 @@ TODO
 
 # Adding a seperate standalone page
 
-TODO
+To create a standlone page with jekyll run the following command:
+
+```
+bundle exec jekyll page "name-of-standlone-page"
+```
+
+this will create a `.md` outside of where the blog posts are (i.e. outsude `_posts`)
+for your standlone wepage. It will have this when created:
+
+```
+---
+layout: page
+title: name-of-standlone-page
+---
+
+```
 
 # _config.yml
 
@@ -142,6 +161,29 @@ Go to the settings in the repo and activate the github pages hosting.
 
 To add the comment section/discussion do the following:
 
+# Common errors:
+
+Bulder 2:
+
+https://bundler.io/guides/bundler_2_upgrade.html
+
+```
+fatal: 'jekyll page' could not be found. You may need to install the jekyll-page gem or a related gem to be able to use this subcommand.
+```
+
+to solve that install some subcommands with:
+
+# Seems this is needed to install a lot of subcommands, see: https://github.com/jekyll/jekyll-compose
+gem 'jekyll-compose', group: [:jekyll_plugins]
+
+# Updating Jekyll
+
+https://jekyllrb.com/docs/upgrading/
+
+```
+bundle update jekyll
+```
+
 TODO:
 - https://stackoverflow.com/questions/57881099/where-does-the-universal-embed-code-go-for-disqus-and-jekyll
 - https://github.com/jekyll/minima#enabling-comments-via-disqus
@@ -150,10 +192,10 @@ TODO:
 # Useful resources:
 
 - Lynda: https://www.linkedin.com/learning/learning-static-site-building-with-jekyll/add-a-post?u=42250305
-- youtube: 
+- youtube:
   - TODO
-  
-  
+
+
 # Article to write
 
 - Synergistic team

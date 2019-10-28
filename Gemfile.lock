@@ -12,7 +12,7 @@ GEM
     ffi (1.11.1)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
-    i18n (1.6.0)
+    i18n (1.7.0)
       concurrent-ruby (~> 1.0)
     jekyll (4.0.0)
       addressable (~> 2.4)
@@ -30,6 +30,8 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
     jekyll-athena (0.0.2)
+    jekyll-compose (0.11.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-feed (0.12.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (2.0.1)
@@ -56,7 +58,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
-    rouge (3.11.1)
+    rouge (3.12.0)
     safe_yaml (1.0.5)
     sassc (2.2.1)
       ffi (~> 1.9)
@@ -76,6 +78,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.0.0)
   jekyll-athena
+  jekyll-compose
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
   tzinfo (~> 1.2)
