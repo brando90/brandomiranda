@@ -33,7 +33,7 @@ github_username:  brando90
 exclude: [exclude/]
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 #theme: jekyll-theme-minimal
 #theme: "jekyll-athena"
 plugins:
