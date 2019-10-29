@@ -33,7 +33,7 @@ where I am hoping to share useful things I know:
 
 - Related to dance
 
-<!-- I have cool [projects](/projects) you might want to check. -->
+<!-- I have cool [projects](/miscellaneous-projects) you might want to check. -->
 
 # External links #
 

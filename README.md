@@ -200,6 +200,12 @@ resource: https://talk.jekyllrb.com/t/can-i-exclude-files-in-my-project-folders-
 
 Go to the settings in the repo and activate the github pages hosting.
 
+
+Resources:
+
+- https://stackoverflow.com/questions/58598699/what-is-the-format-for-the-dependency-version-to-install-github-pages-and-jekyll
+- https://talk.jekyllrb.com/t/how-to-install-github-pages-with-jekyll/3510
+
 # Disqus (discussion section)
 
 To add the comment section/discussion do the following:
