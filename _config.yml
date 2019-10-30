@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is Brando Miranda's website. In my website I hope to share about the things I love.
   I hope to share about my research, vision, hobbies and self-improvement journey
   that I've been in volved in my life and make the world a better place.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "baseurl: /brandomiranda" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BrandoHablando
 github_username:  brando90
