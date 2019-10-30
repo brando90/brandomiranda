@@ -12,4 +12,4 @@ I hope it also sparks interesting discussion where we all learn.
 
 My posts are:
 
-1) [Building a Synergetic Team](/_posts/2019-10-28-synergetic-team)
+1) [Building a Synergetic Team](/_posts/2019-10-28-synergetic-team.md)
