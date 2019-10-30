@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: Projects
 ---
 
 In this webpage I am hoping to share my miscellaneous projects I've worked on.
-
+I'm still working on this page!
 
 # Machine Learning related
 
