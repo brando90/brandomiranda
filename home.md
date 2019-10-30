@@ -5,7 +5,8 @@ title: Home
 
 # About me #
 
-I am a scientist and engineering, interested moving the powerful and beautiful field of A.I. closer to true Artificial General Intelligence (AGI).
+I am a scientist and an engineer that is interested in moving the powerful 
+and beautiful field of A.I. closer to true Artificial General Intelligence (AGI).
 I believe an important direction is understanding how to combine cognitive and neuro-inspired models, specially investigating how reasoning and learning work together.
 I also believe being able to adapt to new tasks using prior experience and using previous knowledge is crucial for AGI to occur. Therefore, right now I am a 2nd-year Ph.D. student working on meta-learning and machine learning (ML) for
 Theorem Proving (TP).

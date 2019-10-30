@@ -1,6 +1,6 @@
 ---
 layout: page
-title: self-improvement
+title: Self-improvement
 ---
 
 Self-improvement is one of my favorite hobbies (in addition to dancing).
