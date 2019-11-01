@@ -3,7 +3,7 @@ layout: page
 title: Research
 ---
 
-I am currently working on improving this site. To come!
+I am currently working on improving this part of my website.
 
 For now as a brief description I am currently interested in meta-learning
 and Machine Learning for Theorem Proving.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Synergetic team"
+title: "Building a Synergetic team - Improving Your Research Skills"
 date: 2019-10-28 14:23 -0500
 ---
 
