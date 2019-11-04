@@ -28,12 +28,12 @@ Urbana, Illinois, 61801.
 
 miranda9 {at} illinois DoT edu
 
-<!-- # Navigating my site #
+<!-- # Navigating my site # -->
 
-I'm still organizing and continually working on my website but check my blog
+<!-- I'm still organizing and continually working on my website but check my blog
 where I am hoping to share useful things I know: -->
 
-- Related to dance
+<!-- - Related to dance -->
 
 <!-- I have cool [projects](/miscellaneous-projects) you might want to check. -->
 
