@@ -244,6 +244,8 @@ TODO:
 - youtube:
   - TODO
 
+- https://stackoverflow.com/questions/10529859/how-to-include-video-in-jekyll-markdown-blog
+
 
 # Article to write
 
