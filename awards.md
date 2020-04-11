@@ -3,6 +3,7 @@ layout: page
 title: Awards
 ---
 
+- Honorable Mention, Ford Foundation Fellowship (2020)
 - Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC), (December 2019)
 - Computer Science Excellence Saburo Muroga Endowed Fellow, (2019-2020)
 - Sloan Scholar, Alfred P. Sloan Foundations Minority Ph.D. (MPHD) Program, awarded in (2018-2019)
