@@ -17,7 +17,7 @@ Current:
 - Seeker Yuan
 - Bin
 
-Past Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
+Past Advisee's Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
 - Xiao
 - Aaron
 
