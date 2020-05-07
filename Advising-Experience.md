@@ -1,3 +1,8 @@
+---
+layout: page
+title: Advising Experience
+---
+
 If you are a interested in working with me as your mentor send me your CV/resume and transcript to my UIUC e-mail 
 and how our research interests align. 
 Make sure your CV outlines the projects you've work on.
