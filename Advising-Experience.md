@@ -13,7 +13,8 @@ Current:
 - Bin
 
 Past Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
-- Xiao 
+- Xiao
+- Aaron
 
 Past Advisee's at [MIT'S Ceneter fro Brain Minds & Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda):
 
