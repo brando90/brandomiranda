@@ -19,7 +19,7 @@ Current:
 
 Past Advisee's Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
 - Xiao
-- Aaron
+- Aaron - DREU
 
 Past Advisee's at [MIT'S Ceneter fro Brain Minds & Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda):
 
