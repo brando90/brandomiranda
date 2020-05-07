@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Miscellaneous-Projects
 ---
 
 In this webpage I am hoping to share my miscellaneous projects I've worked on.
