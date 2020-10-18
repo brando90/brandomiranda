@@ -8,7 +8,7 @@ title: Performance Psychology
 I'm very interested in being the best version of myself in the most essential aspects of my life.
 Thus, over the years I've spent a lot of times reading about 
 [performance psychology](https://larrygmaguire.com/what-is-performance-psychology/#:~:text=Performance%20psychology%20is%20a%20subdivision,factors%20influencing%20optimal%20human%20performance.&text=Through%20assisting%20professionals%20to%20refine,improving%20and%20enhancing%20human%20performance.)
-and (unrelated) areas that make me better (in my professionally and personal life).
+and (seemingly unrelated) areas that make me better (in my professionally and personal life).
 
 The most influential things I've pursued in this area are the following:
 
