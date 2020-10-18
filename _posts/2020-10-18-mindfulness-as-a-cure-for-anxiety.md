@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Mindfulness as cure for Anxiety"
+title: "Mindfulness as a cure for Anxiety"
 date: 2020-10-18 21:09 -0500
 ---
 
 
-# Mindfulness as a cure for anxiety 
+# Mindfulness as a cure for Anxiety 
 
 I've been working this past year as the graduate advisor for 
 [LCS (Latinxs in Computer Science)](http://latinoscs.web.illinois.edu/) at [UIUC](https://illinois.edu/).
