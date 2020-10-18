@@ -168,6 +168,11 @@ title: name-of-standlone-page
 
 ```
 
+# Video
+
+To include videos use this link: 
+http://embedyoutube.org/ 
+
 # _config.yml
 
 TODO
