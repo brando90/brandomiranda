@@ -9,10 +9,11 @@ date: 2020-10-18 21:09 -0500
 
 I've been working this past year as the graduate advisor for 
 [LCS (Latinxs in Computer Science)](http://latinoscs.web.illinois.edu/) at [UIUC](https://illinois.edu/).
-The main project I've been leading with LCS is the 
+The main project I've been leading with LCS the 
 Professional development & wellness colloquium.
 It is aimed at improving students' general career and personal life.
-I believe that career development is strongly correlated with one's personal well-being.
+I believe that career development and well-being are 
+strongly interrelated.
 
 We had the honor to have as a speaker neuroscientist [Professor Judson Brewer](https://drjud.com/)
 from Brown Univeristy and share us his ground breaking research on mindfulness as a tool for
