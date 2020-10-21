@@ -22,10 +22,10 @@ Current:
 - Ryohei
 
 Past Advisee's Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
-- Xiao
+- Xiao- CS REU UIUC
 - Aaron - DREU
-- Brian Ko - UIUC
-- Heling Zhang - UIUC REU
+- Brian Ko - CS REU UIUC
+- Heling Zhang - CS REU UIUC
 
 Past Advisee's at [MIT'S Ceneter fro Brain Minds & Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda):
 
