@@ -11,15 +11,21 @@ a good research mentee, request for them a short reference.
 This has more importance to me than your transcript. 
 
 Current:
-- Mohammed
-- Heling Zhang
-- Brian Ko
-- Seeker Yuan
-- Bin
+- Qikai
+- Winston
+- Eric
+- Viraj
+- Nitish
+- Cindy
+- Ishu
+- Rohan
+- Ryohei
 
 Past Advisee's Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
 - Xiao
 - Aaron - DREU
+- Brian Ko - UIUC
+- Heling Zhang - UIUC REU
 
 Past Advisee's at [MIT'S Ceneter fro Brain Minds & Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda):
 
@@ -29,3 +35,6 @@ Past Advisee's at [MIT'S Ceneter fro Brain Minds & Machines (CBMM)](https://cbmm
 - Margarita Misirpashayeva - EIT
 - Diego Alonso Roque Montoya - UROP
 - Kevin Shen - UROP
+
+
+
