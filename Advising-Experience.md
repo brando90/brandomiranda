@@ -29,12 +29,12 @@ Past Advisee's Univerity of Illinois Urbana-Champaign (UIUC) advisee's:
 
 Past Advisee's at [MIT'S Ceneter fro Brain Minds & Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda):
 
-- David Barnes - EIT
-- Ivan Jutamulia - Undergraduate Research Assistant
-- Aaron Lin - UROP
-- Margarita Misirpashayeva - EIT
-- Diego Alonso Roque Montoya - UROP
-- Kevin Shen - UROP
+- David Barnes - MIT EIT
+- Ivan Jutamulia - MIT EIT
+- Aaron Lin - MIT UROP
+- Margarita Misirpashayeva - MIT EIT
+- Diego Alonso Roque Montoya - MIT UROP
+- Kevin Shen - MIT UROP
 
 
 
