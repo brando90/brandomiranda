@@ -58,7 +58,8 @@ I also uploaded the talk to [my personal youtube channel.](https://youtu.be/eBsP
 ### Follow us!
 
 If you want to follow us at LCS here are some useful links:
-- LCS website: http://latinoscs.web.illinois.edu/
-- facebook page: https://www.facebook.com/LCSillinois
-- facebook group: https://www.facebook.com/groups/latinocomputerscienceclub
-- youtube page: https://www.youtube.com/channel/UCB40buA2ZnFGM9yCBF0IepA
+- LCS website: http://latinoscs.web.illinois.edu 
+- facebook page: https://www.facebook.com/LCSillinois  
+- facebook group: https://www.facebook.com/groups/latinocomputerscienceclub 
+- youtube page: https://www.youtube.com/channel/UCB40buA2ZnFGM9yCBF0IepA 
+
