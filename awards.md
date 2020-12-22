@@ -3,6 +3,7 @@ layout: page
 title: Awards
 ---
 
+- Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang (December 2020).
 - HSF (Hispanic Scholarship Fund) Scholar (2020)
 - Honorable Mention, Ford Foundation Fellowship (2020)
 - Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC), (December 2019)
