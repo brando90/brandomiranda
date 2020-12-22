@@ -48,7 +48,7 @@ which visually documents construction sites, matching images to plans and analyz
 to embed videos
 http://embedyoutube.org/
 -->
-[![](http://img.youtube.com/vi/kosDOu6SPuk/0.jpg)](http://www.youtube.com/watch?v=kosDOu6SPuk "hoiem")
+[![](http://img.youtube.com/vi/kosDOu6SPuk/0.jpg)](http://www.youtube.com/watch?v=kosDOu6SPuk)
 
 I also uploaded the talk to [my personal youtube channel.](https://www.youtube.com/watch?v=c2TZ-t3O_ho&t=1s)
 
