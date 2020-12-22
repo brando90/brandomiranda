@@ -15,7 +15,7 @@ It is aimed at improving students' general career and personal life.
 I believe that career development and well-being are 
 strongly interrelated, especially after my lower back injury from 2018 that challenges me every day.
 
-We had the honor to have as a speaker computer vision researcher [Professor Derek Hoeim](http://dhoiem.cs.illinois.edu/)
+We had the honor to have as a speaker computer vision researcher [Professor Derek Hoiem](http://dhoiem.cs.illinois.edu/)
 from Univeristy of Illinois Urbana-Champaign and share us his wisdom on how to thrive in the research community.
 
 Hope you learn a lot from the talk, just as much as we did!
@@ -48,7 +48,7 @@ which visually documents construction sites, matching images to plans and analyz
 to embed videos
 http://embedyoutube.org/
 -->
-[![](http://img.youtube.com/vi/kosDOu6SPuk/0.jpg)](http://www.youtube.com/watch?v=kosDOu6SPuk "")
+[![](http://img.youtube.com/vi/kosDOu6SPuk/0.jpg)](http://www.youtube.com/watch?v=kosDOu6SPuk "hoiem")
 
 I also uploaded the talk to [my personal youtube channel.](https://www.youtube.com/watch?v=c2TZ-t3O_ho&t=1s)
 
