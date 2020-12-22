@@ -170,8 +170,9 @@ title: name-of-standlone-page
 
 # Video
 
-To include videos use this link: 
-http://embedyoutube.org/ 
+to embed videos go to the website
+http://embedyoutube.org/
+then paste the link in the place they tell you so they can create the markdown you can copy paste to your blog post.
 
 # _config.yml
 

@@ -55,7 +55,7 @@ http://embedyoutube.org/
 I also uploaded the talk to [my personal youtube channel.](https://youtu.be/eBsPbrwCyHA)
 
 
-### Follow us!
+### Follow LCS!
 
 If you want to follow us at LCS here are some useful links:
 - LCS website: http://latinoscs.web.illinois.edu 
