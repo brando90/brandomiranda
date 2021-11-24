@@ -9,4 +9,5 @@ date: 2019-10-31 21:09 -0500
 [Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/),
 I made a survey of my own explanation of the concepts and
 mathematical proofs of [Uniforms Stability and Generalization in (statistical)
-Learning Theory](https://qr.ae/TWo7oy). Enjoy!
+Learning Theory](https://qr.ae/TWo7oy).
+- Document available [here](https://www.ideals.illinois.edu/handle/2142/112788). Enjoy!
