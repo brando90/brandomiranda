@@ -9,11 +9,9 @@ I am a scientist and an engineer that is interested in moving forward the powerf
 and beautiful field of A.I. closer to true Artificial General Intelligence (AGI).
 I believe an important direction is understanding how to combine cognitive and neuro-inspired models, specially investigating how reasoning and learning work together.
 In addition, I also believe being able to adapt to new tasks using prior experience and knowledge is crucial for AGI to occur.
-Consequently, I decided to pursue a PhD where I am a 2nd-year Ph.D. student working on meta-learning and machine learning (ML) for
+Consequently, I decided to pursue a Ph.D in AI and machine learning. 
+I currently work on meta-learning and machine learning (ML) for
 Theorem Proving (TP) at University of Illinois Urbana-Champaign (UIUC).
-
-This is my temporary page and will be updated to something cooler soon.
-Stay tuned for it and check out my blog too! ;)
 
 ![me](/images/me.png){:class="img-responsive"}
 
