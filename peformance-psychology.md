@@ -30,7 +30,7 @@ I am, of course, an avid listener of [his podact](https://www.calnewport.com/pod
 Other related activties that I've pursued that have had an impact on me:
 
 - I've also done [Accomplishment Coaching](https://www.accomplishmentcoaching.com/)
-with [Anthony Vargas](https://relationshiphero.com/room/sarged).
-I found it a very rewarding experience where I learned to recognize and overcome 
-self imposed limiting beliefs.
+with [Anthony Vargas](https://www.linkedin.com/in/anthony-vargas/).
+I found it a valuable experience where I learned to recognize and overcome 
+self-imposed limiting beliefs.
 It's focus is on empowerming people and I believe it's an effective framework. 
