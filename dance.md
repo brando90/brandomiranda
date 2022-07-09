@@ -41,3 +41,17 @@ group interested in promoting the latin dances Bachata & Brazilean Zouk.
 With that in mind we try to record all our videos of the moves we teach
 with counts and explanations.
 We post them in [our youtube page](https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ).
+
+
+# Urbana Dance Company (UDC)
+
+During my time at UIUC (2019) I also was a dance instructor at [Urbana Dance Company](https://www.urbanadancecompany.com/)
+(UIUC and UDC are unaffiliated).
+
+During that time I wrote the following statement:
+
+> BRANDO MIRANDA // Instructor
+> 
+> It is my mission to inspire anyone around me to become a social dancer and have connected, deep, meaningful dances while at the same time understanding the mechanics of solid technique. It is my experience that the most fulfilling way to social dance is a combination of deep connection and awareness of good technique with space for the creative expression of music. It is my experience that one can co-create a dance experience with any lead and follow. For this reason, Bachata Sensual and Brazilian Zouk are my favorite dances. Bachata Sensual (made by Korke and Judith) is a dance tested and based on solid follow and lead principles of natural motions of energy and how to use this energy with your partner.
+>
+>I’ve been dancing for the past 5 years every week at least 10 hours a week, training, learning from other instructors and testing everything I’ve learned on the social dance floor. I’ve also trained under the World Master program designed by Korke and Judith and certified to teach the official original Bachata Sensual. I’ve also attended multiple dance congresses learning from instructors around the world in Brazilian Zouk and (all) Bachata styles. I also founded the registered student organization (RSO) UIUC Bachata Sensual with the goal to spread the love of bachata and social dancing.
