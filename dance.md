@@ -40,7 +40,8 @@ group interested in promoting the latin dances Bachata & Brazilean Zouk.
 - Our mission is also to promote and spread dancing as far as possible.
 With that in mind we try to record all our videos of the moves we teach
 with counts and explanations.
-We post them in [our youtube page](https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ).
+We post them in [our youtube page](https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ). 
+Our [instructional dance videos can be found on our facebook page](https://www.facebook.com/UIUCBachataSen/videos/).
 
 
 # Urbana Dance Company (UDC)
