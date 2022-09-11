@@ -40,6 +40,7 @@ where I am hoping to share useful things I know: -->
 - [My Google scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 - [My home page when I was at MIT's Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda)
 - [My Stanford profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
+- [My Stanford engineering profile](https://stanford.brightcrowd.com/eng-welcome-2022/brando-miranda)
 - I have a passion to share my knowledge with the world. I love that with technology people have the improved opportunities to learn. With that motivation I can't help but enjoy sharing what I know in my [Quora profile](https://www.quora.com/profile/Brando-Miranda).
 - [My Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
 - [My CV](/professional_documents/Brando_Miranda_long_CV.pdf)
