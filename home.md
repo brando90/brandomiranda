@@ -11,7 +11,7 @@ I believe an important direction is understanding how to combine cognitive and n
 In addition, I also believe being able to adapt to new tasks using prior experience and knowledge is crucial for AGI to occur.
 Consequently, I decided to pursue a Ph.D in AI and machine learning. 
 I currently work on meta-learning and machine learning (ML) for
-Theorem Proving (TP) at University of Illinois Urbana-Champaign (UIUC).
+Theorem Proving (TP) at Stanford University. 
 
 ![me](/images/me.png){:class="img-responsive"}
 
@@ -19,12 +19,15 @@ Theorem Proving (TP) at University of Illinois Urbana-Champaign (UIUC).
 # Contact #
 
 Department of Computer Science
-
 3333 Siebel Center,
-
 Urbana, Illinois, 61801.
-
 miranda9 {at} illinois DoT edu
+
+Department of Computer Science
+Gates Computer Science Building
+353 Jane Stanford Way
+Stanford, CA 94305
+brando9 {at} stanford DoT Edu
 
 <!-- # Navigating my site # -->
 

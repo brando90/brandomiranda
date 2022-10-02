@@ -3,6 +3,8 @@ layout: page
 title: Awards
 ---
 
+- EDGE Scholar, Stanford University (September 2022)
+- SAIL award, Stanford University (September 2022)
 - Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang (December 2020).
 - HSF (Hispanic Scholarship Fund) Scholar (2020)
 - Honorable Mention, Ford Foundation Fellowship (2020)
