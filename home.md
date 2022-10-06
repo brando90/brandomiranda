@@ -15,14 +15,14 @@ Theorem Proving (TP) at Stanford University.
 
 # Bio #
 
-Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo
+Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
 in the department of Computer Science.
-Previously he has been a graduate student at University of Illinois Urbana-Champaign, Research Assistant at MIT's 
-Center for Brain Minds and Machines (CBMM), and graduate student at the Massachusetts Institute of Technology (MIT).
+Previously he has been a graduate student at [University of Illinois Urbana-Champaign](https://illinois.edu/), Research Assistant at MIT's 
+[Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/), and graduate student at the [Massachusetts Institute of Technology (MIT)](https://mit.edu/).
 Miranda's research interests lie in the field of meta-learning, foundation models for theorem proving, and human & brain
 inspired Artificial Intelligence (AI). 
 Miranda completed his Master of Engineering in Electrical Engineering and Computer Science under the supervision of 
-Professor Tomaso Poggio -- where he did research on Deep Learning Theory.
+[Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) -- where he did research on Deep Learning Theory.
 Miranda has been the recipient of several awards, 
 including Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC),
 Honorable Mention, Ford Foundation Fellowship (2020, 2019),
