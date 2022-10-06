@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-# Informal About me #
+# About me (Informal) #
 
 I am a scientist and an engineer that is interested in moving forward the powerful
 and beautiful field of A.I. closer to true Artificial General Intelligence (AGI).
