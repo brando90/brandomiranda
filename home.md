@@ -25,7 +25,7 @@ Miranda completed his Master of Engineering in Electrical Engineering and Comput
 [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) -- where he did research on Deep Learning Theory.
 Miranda has been the recipient of several awards, 
 including Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC),
-Honorable Mention, Ford Foundation Fellowship (2020, 2019),
+two Honorable Mention with the Ford Foundation Fellowship,
 Computer Science Excellence Saburo Muroga Endowed Fellow, 
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
 
@@ -35,10 +35,13 @@ Stanford School of Engineering fellowship, and is currently an EDGE Scholar at S
 
 # Contact #
 
-Department of Computer Science
-3333 Siebel Center,
-Urbana, Illinois, 61801.
-miranda9 {at} illinois DoT edu
+[//]: # (Department of Computer Science)
+
+[//]: # (3333 Siebel Center,)
+
+[//]: # (Urbana, Illinois, 61801.)
+
+[//]: # (miranda9 {at} illinois DoT edu)
 
 Department of Computer Science
 Gates Computer Science Building
