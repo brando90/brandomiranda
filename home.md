@@ -3,7 +3,7 @@ layout: page
 title: Home
 ---
 
-# About me #
+# Informal About me #
 
 I am a scientist and an engineer that is interested in moving forward the powerful
 and beautiful field of A.I. closer to true Artificial General Intelligence (AGI).
@@ -12,6 +12,23 @@ In addition, I also believe being able to adapt to new tasks using prior experie
 Consequently, I decided to pursue a Ph.D in AI and machine learning. 
 I currently work on meta-learning and machine learning (ML) for
 Theorem Proving (TP) at Stanford University. 
+
+# Bio #
+
+Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo
+in the department of Computer Science.
+Previously he has been a graduate student at University of Illinois Urbana-Champaign, Research Assistant at MIT's 
+Center for Brain Minds and Machines (CBMM), and graduate student at the Massachusetts Institute of Technology (MIT).
+Miranda's research interests lie in the field of meta-learning, foundation models for theorem proving, and human & brain
+inspired Artificial Intelligence (AI). 
+Miranda completed his Master of Engineering in Electrical Engineering and Computer Science under the supervision of 
+Professor Tomaso Poggio -- where he did research on Deep Learning Theory.
+Miranda has been the recipient of several awards, 
+including Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC),
+Honorable Mention, Ford Foundation Fellowship (2020, 2019),
+Computer Science Excellence Saburo Muroga Endowed Fellow, 
+Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
+
 
 ![me](/images/me.png){:class="img-responsive"}
 
