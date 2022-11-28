@@ -20,19 +20,19 @@ title: Publications
 [15 minute video Contributed Talk]
 
 
-[Weight and Batch Normalization implement Classical Generalization Bounds. ](https://sites.google.com/view/icml2019-generalization/accepted-papers)
+[Weight and Batch Normalization implement Classical Generalization Bounds.](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 *Tomaso Poggio Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
 **ICML Workshop 2019**
 [**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 
 
-[High-performance and scalable on-chip digital Fourier transform spectroscopy .](https://www.nature.com/articles/s41467-018-06773-2)
+[High-performance and scalable on-chip digital Fourier transform spectroscopy.](https://www.nature.com/articles/s41467-018-06773-2)
 *Derek M Kita, Brando Miranda, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
 **Nature Communications 2018.**
 [**[PDF]**](https://www.nature.com/articles/s41467-018-06773-2)
 
 
-[Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review .](https://link.springer.com/article/10.1007/s11633-017-1054-2)
-*Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao. *
+[Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review.](https://link.springer.com/article/10.1007/s11633-017-1054-2)
+*Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao.*
 **International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC).**
 [**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
