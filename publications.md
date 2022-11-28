@@ -3,7 +3,7 @@ layout: page
 title: Publications
 ---
 
-For now check [my Google Scholar profile](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en) and [my home page when I was at MIT's Center for Brain Minds & Machines](https://cbmm.mit.edu/about/people/miranda).
+[//]: # (For now check [my Google Scholar profile]&#40;https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en&#41; and [my home page when I was at MIT's Center for Brain Minds & Machines]&#40;https://cbmm.mit.edu/about/people/miranda&#41;.)
 
 
 # Selected Publications [Full List](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
