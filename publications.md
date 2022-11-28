@@ -19,6 +19,14 @@ title: Publications
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
 [15 minute video Contributed Talk]
 
+[Does MAML Only Work via Feature Re-use? A Data Centric Perspective](https://arxiv.org/abs/2112.13137)
+*Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
+**Preprint, Best research project award for graduate course CS 598 “Learning to Learn” by professor Y. Wang UIUC (December 2020).**
+[**[arXiv]**](https://arxiv.org/abs/2112.13137)
+[**[5 minute video]**](https://youtu.be/WyG6bwGnbGc)
+
+[//]: # ([**[PDF]**]&#40;https://www.ideals.illinois.edu/handle/2142/109139&#41;)
+
 
 [Weight and Batch Normalization implement Classical Generalization Bounds.](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 *Tomaso Poggio Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
