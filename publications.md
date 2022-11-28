@@ -10,8 +10,8 @@ title: Publications
 
 [//]: # (TODO put full list in my own website like Tony? perhaps not more work to manage)
 
-*The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence*.
-Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi O Koyejo.
+**The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence**.
+*Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi O Koyejo*.
 **NeurIPS Meta-Learning Workshop 2022, Contributed Talk**
 [**[PDF]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[Arxiv]**](https://arxiv.org/abs/2208.01545) 
