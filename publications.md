@@ -28,7 +28,7 @@ title: Publications
 
 [High-performance and scalable on-chip digital Fourier transform spectroscopy .](https://www.nature.com/articles/s41467-018-06773-2)
 *Derek M Kita, Brando Miranda, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
-**Nature communications 2018.**
+**Nature Communications 2018.**
 [**[PDF]**](https://www.nature.com/articles/s41467-018-06773-2)
 
 
