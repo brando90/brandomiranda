@@ -34,5 +34,5 @@ title: Publications
 
 [Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review .](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 *Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao. *
-**International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC). **
+**International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC).**
 [**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
