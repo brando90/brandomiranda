@@ -36,3 +36,4 @@ title: Publications
 *Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao.*
 **International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC).**
 [**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
+[**[Award]**](/professional_documents/Why%20and%20When%20Can%20Deep-but%20Not%20Shallow-networks%20Avoid%20the%20Curse%20of%20Dimensionality%20A%20Review.jpg)
