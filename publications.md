@@ -33,6 +33,8 @@ title: Publications
 **ICML Workshop 2019**
 [**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 
+[//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
+
 
 [High-performance and scalable on-chip digital Fourier transform spectroscopy.](https://www.nature.com/articles/s41467-018-06773-2)
 *Derek M Kita, Brando Miranda, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
