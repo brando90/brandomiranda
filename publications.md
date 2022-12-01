@@ -17,7 +17,7 @@ title: Publications
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
-[**[15 minute video Contributed Talk**]](https://youtu.be/3LfTWHIgmvM)
+[**[15 minute video Contributed Talk]**](https://youtu.be/3LfTWHIgmvM)
 
 [Does MAML Only Work via Feature Re-use? A Data Centric Perspective](https://arxiv.org/abs/2112.13137)
 *Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
