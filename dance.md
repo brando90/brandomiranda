@@ -3,24 +3,63 @@ layout: page
 title: Dance
 ---
 
+# Dance through Bachata Sensual
 
-Dancing is an activity I love dearly.
-It's one of my favorite activities because its challenging and it allows me
-to express my myself freely.
-I love improvisation. That is why I fell in love with Jazz and thats why
-I am so in love with (social) dancing.
-I've thought a lot about what connection means and why my
-dance philosophy is.
-I will share that soon.
+The best way to capture my feelings for dancing is through the statement I wrote when I was a 
+[bacahta sensual](https://www.bachatasensual.com/historia-bs/) dance 
+instructor at the beautiful dance studio -- [Urbana Dance Company](https://www.urbanadancecompany.com/) --
+close to the beautiful corn field of Urbana-Champaign:
 
+> BRANDO MIRANDA // Instructor @ UDC
+>
+> It is my mission to inspire anyone around me to become a social dancer and have connected, deep, meaningful dances
+> while at the same time understanding the mechanics of solid technique. It is my experience that the most fulfilling
+> way to social dance is a combination of deep connection and awareness of good technique with space for the creative
+> expression of music. It is my experience that one can co-create a dance experience with any lead and follow.
+> For this reason, Bachata Sensual and Brazilian Zouk are my favorite dances. Bachata Sensual (made by Korke and Judith)
+> is a dance tested and based on solid follow and lead principles of natural motions of energy and how to use this
+> energy with your partner.
+>
+>I’ve been dancing for the past 5 years every week at least 10 hours a week, training, learning from other instructors
+> and testing everything I’ve learned on the social dance floor. I’ve also trained under the World Master program
+> designed by Korke and Judith and certified to teach the official original Bachata Sensual. I’ve also attended multiple
+> dance congresses learning from instructors around the world in Brazilian Zouk and (all) Bachata styles.
+> I also founded the registered student organization (RSO) UIUC Bachata Sensual with the goal to spread the
+> love of bachata and social dancing.
 
-# How to improvise in Dance and Jazz
+I trained under the beautiful
+[world master course lead by creator's of the style 
+-- Korke & Judith](professional_documents/BRANDO_MIRANDA_DIPLOMA_EXCELLENCE_KYJ_EN.jpg).
 
-- check my blog post [on Jazz improvisation](_posts/2019-10-31-jazz-improvisation.md)
- to learn more!
+[//]: # (- Click [here]&#40;https://illinois.campuslabs.com/engage/organization/facebookuiucsbachata&#41; for the university website.)
 
-- I will be updating this for dance improve soon but most of the same lessons
-from Jazz improvisation apply, just the details are different.
+[//]: # (We post them in [our youtube page]&#40;https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ&#41;. )
+
+# Stanford Bachata Sensual & Brazilian Zouk @ Stanford
+
+I am currently leading the student organization called 
+[Staford Bachata Sensual & Brazilian Zouk (SBSBZ)](https://www.facebook.com/groups/857433758788901) 
+at [Stanford University](https://www.stanford.edu/).
+Our mission is to spread the beautiful technique in the style of 
+[the original bacahta sensual](https://www.bachatasensual.com/historia-bs/) 
+for **connection based social dancing**.
+What I love most about this style is that it was created with the goal of following the natural energy created during
+dancing -- and therefore being so natural the one can help but follow the beautiful flow created during the dance.
+
+In line with our mission to spreading the lovely technique of 
+[bachata sensual](https://www.bachatasensual.com/historia-bs/)
+, we recorded summary videos of our lessons
+with counts and explanations and made them available on the
+[wold wide web via our video page on our facebook page](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
+
+# Bachata Sensual and Zouk @ University of Illinois Urbana-Champaign (UIUC)
+
+I was the founder and president of the registered student organization at [UIUC](https://illinois.edu/)
+called [Bachata Sensual & Zouk](https://www.facebook.com/UIUCBachataSen/)
+-- that focused on technique for connection based social dancing.
+Our mission is also to promote and spread great social dancing as far as possible.
+Therfefore, we recorded summary videos of our lessons with counts and explanations and made them available on the
+[wold wide web via our video page on our facebook page](https://www.facebook.com/UIUCBachataSen/videos/). 
 
 # Videos of me dancing
 
@@ -30,29 +69,9 @@ from Jazz improvisation apply, just the details are different.
 
 - [What? A third one? Yes, Another video with my awesome friend Jacky dancing at the Chicago Salsa & Bachata Festival 2018](https://youtu.be/_xw520qaw2o)
 
-# UIUC Bachata Sensual and Zouk
+# How to improvise in Jazz music
 
-I am the founder and president of UIUC Bachata Sensual & Zouk, student
-group interested in promoting the latin dances Bachata & Brazilean Zouk.
-
-- Click [here](https://illinois.campuslabs.com/engage/organization/facebookuiucsbachata) for the university website.
-
-- Our mission is also to promote and spread dancing as far as possible.
-With that in mind we try to record all our videos of the moves we teach
-with counts and explanations.
-We post them in [our youtube page](https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ). 
-Our [instructional dance videos can be found on our facebook page](https://www.facebook.com/UIUCBachataSen/videos/).
-
-
-# Urbana Dance Company (UDC)
-
-During my time at UIUC (2019) I also was a dance instructor at [Urbana Dance Company](https://www.urbanadancecompany.com/)
-(UIUC and UDC are unaffiliated).
-
-During that time I wrote the following statement:
-
-> BRANDO MIRANDA // Instructor
-> 
-> It is my mission to inspire anyone around me to become a social dancer and have connected, deep, meaningful dances while at the same time understanding the mechanics of solid technique. It is my experience that the most fulfilling way to social dance is a combination of deep connection and awareness of good technique with space for the creative expression of music. It is my experience that one can co-create a dance experience with any lead and follow. For this reason, Bachata Sensual and Brazilian Zouk are my favorite dances. Bachata Sensual (made by Korke and Judith) is a dance tested and based on solid follow and lead principles of natural motions of energy and how to use this energy with your partner.
->
->I’ve been dancing for the past 5 years every week at least 10 hours a week, training, learning from other instructors and testing everything I’ve learned on the social dance floor. I’ve also trained under the World Master program designed by Korke and Judith and certified to teach the official original Bachata Sensual. I’ve also attended multiple dance congresses learning from instructors around the world in Brazilian Zouk and (all) Bachata styles. I also founded the registered student organization (RSO) UIUC Bachata Sensual with the goal to spread the love of bachata and social dancing.
+I the past I wrote a detailed blog [on Jazz improvisation.](_posts/2019-10-31-jazz-improvisation.md) 
+I firmly believe my minor in Jazz, and it's related training really helped me develop into the dancer I am today.
+Therefore, I am sharing this in my dance page since it gives context to my approach to dance.
+In addition I believe it can help readers become better at improvising during social dancing. 
