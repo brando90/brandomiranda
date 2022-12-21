@@ -50,7 +50,7 @@ In line with our mission to spreading the lovely technique of
 [bachata sensual](https://www.bachatasensual.com/historia-bs/)
 , we recorded summary videos of our lessons
 with counts and explanations and made them available on the
-[wold wide web via our video page on our facebook page](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
+[wold wide web via my personal youtube channel](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
 
 # Bachata Sensual and Zouk @ University of Illinois Urbana-Champaign (UIUC)
 
