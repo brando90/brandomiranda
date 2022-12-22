@@ -35,7 +35,12 @@ I trained under the beautiful
 
 [//]: # (We post them in [our youtube page]&#40;https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ&#41;. )
 
-# Stanford Bachata Sensual & Brazilian Zouk @ Stanford
+# Spreading the Bachata Sensual Love
+
+I've started two university bachata sensual groups as part of my efforts to spread bachata sensual.
+If you are interested in teaming feel free to email me at brando9 AT stanford dot edu.
+
+## Stanford Bachata Sensual & Brazilian Zouk @ Stanford
 
 I am currently leading the student organization called 
 [Staford Bachata Sensual & Brazilian Zouk (SBSBZ)](https://www.facebook.com/groups/857433758788901) 
@@ -52,7 +57,7 @@ In line with our mission to spreading the lovely technique of
 with counts and explanations and made them available on the
 [wold wide web via my personal youtube channel](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
 
-# Bachata Sensual and Zouk @ University of Illinois Urbana-Champaign (UIUC)
+## Bachata Sensual and Zouk @ University of Illinois Urbana-Champaign (UIUC)
 
 I was the founder and president of the registered student organization at [UIUC](https://illinois.edu/)
 called [Bachata Sensual & Zouk](https://www.facebook.com/UIUCBachataSen/)
