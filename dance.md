@@ -6,9 +6,9 @@ title: Dance
 # Dance through Bachata Sensual
 
 The best way to capture my feelings for dancing is through the statement I wrote when I was a 
-[bacahta sensual](https://www.bachatasensual.com/historia-bs/) dance 
+[bachata sensual](https://www.bachatasensual.com/historia-bs/) dance 
 instructor at the beautiful dance studio -- [Urbana Dance Company](https://www.urbanadancecompany.com/) --
-close to the beautiful corn field of Urbana-Champaign:
+close the lovely cornfields of Central Illinois:
 
 > BRANDO MIRANDA // Instructor @ UDC
 >
@@ -20,7 +20,7 @@ close to the beautiful corn field of Urbana-Champaign:
 > is a dance tested and based on solid follow and lead principles of natural motions of energy and how to use this
 > energy with your partner.
 >
->I’ve been dancing for the past 5 years every week at least 10 hours a week, training, learning from other instructors
+> I’ve been dancing for the past 5 years every week at least 10 hours a week, training, learning from other instructors
 > and testing everything I’ve learned on the social dance floor. I’ve also trained under the World Master program
 > designed by Korke and Judith and certified to teach the official original Bachata Sensual. I’ve also attended multiple
 > dance congresses learning from instructors around the world in Brazilian Zouk and (all) Bachata styles.
@@ -37,33 +37,35 @@ I trained under the beautiful
 
 # Spreading the Bachata Sensual Love
 
-I've started two university bachata sensual groups as part of my efforts to spread bachata sensual.
-If you are interested in teaming feel free to email me at brando9 AT stanford dot edu.
+I've started two university [bachata sensual](https://www.bachatasensual.com/historia-bs/) groups as part of my efforts 
+to spread bachata sensual.
+If you are interested in teaming up feel free to email me at brando9 AT stanford dot edu.
 
 ## Stanford Bachata Sensual & Brazilian Zouk @ Stanford
 
 I am currently leading the student organization called 
 [Staford Bachata Sensual & Brazilian Zouk (SBSBZ)](https://www.facebook.com/groups/857433758788901) 
 at [Stanford University](https://www.stanford.edu/).
-Our mission is to spread the beautiful technique in the style of 
-[the original bacahta sensual](https://www.bachatasensual.com/historia-bs/) 
+Our mission is to spread the beautiful technique of 
+[the original bachata sensual](https://www.bachatasensual.com/historia-bs/) 
 for **connection based social dancing**.
 What I love most about this style is that it was created with the goal of following the natural energy created during
-dancing -- and therefore being so natural the one can help but follow the beautiful flow created during the dance.
+dancing -- and therefore being so natural that the one can't help but follow the beautiful flow created during 
+the dance.
 
 In line with our mission to spreading the lovely technique of 
 [bachata sensual](https://www.bachatasensual.com/historia-bs/)
 , we recorded summary videos of our lessons
 with counts and explanations and made them available on the
-[wold wide web via my personal youtube channel](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
+[wold wide web via my personal YouTube channel](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
 
 ## Bachata Sensual and Zouk @ University of Illinois Urbana-Champaign (UIUC)
 
 I was the founder and president of the registered student organization at [UIUC](https://illinois.edu/)
 called [Bachata Sensual & Zouk](https://www.facebook.com/UIUCBachataSen/)
 -- that focused on technique for connection based social dancing.
-Our mission is also to promote and spread great social dancing as far as possible.
-Therfefore, we recorded summary videos of our lessons with counts and explanations and made them available on the
+Our mission was also to promote and spread great social dancing as far as possible.
+Therefore, we recorded summary videos of our lessons with counts and explanations and made them available on the
 [wold wide web via our video page on our facebook page](https://www.facebook.com/UIUCBachataSen/videos/). 
 
 # Videos of me dancing
@@ -79,4 +81,4 @@ Therfefore, we recorded summary videos of our lessons with counts and explanatio
 I the past I wrote a detailed blog [on Jazz improvisation.](_posts/2019-10-31-jazz-improvisation.md) 
 I firmly believe my minor in Jazz, and it's related training really helped me develop into the dancer I am today.
 Therefore, I am sharing this in my dance page since it gives context to my approach to dance.
-In addition I believe it can help readers become better at improvising during social dancing. 
+In addition, I believe it can help readers become better at improvising during social dancing. 
