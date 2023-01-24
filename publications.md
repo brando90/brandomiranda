@@ -17,8 +17,14 @@ title: Publications
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
-[**[15 minute video Contributed Talk]**](https://youtu.be/3LfTWHIgmvM)
+[**[15 minute video Contributed Talk, pre-recording]**](https://youtu.be/3LfTWHIgmvM)
+[**[15 minute video Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 [**[Code, contact me for now, coming soon I hope!]**]()
+
+[//]: # (5 min video from neurips)
+[//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
+
+
 
 [Does MAML Only Work via Feature Re-use? A Data Centric Perspective](https://arxiv.org/abs/2112.13137)
 *Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
