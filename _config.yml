@@ -24,6 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   This is Brando Miranda's website. 
   In my website I hope to share about things that I love and think are important.
   I hope to share here about 1. my research on AI 2. my hobbies, and 3. insights on top performance.
+  The views and opinions expressed on this site are strictly those of the author and do not reflect the views or 
+  opinions of any entity I am affiliated or have been affiliated -- nor any past, present, or future clients/employers.
 # baseurl: "brandomiranda" # the subpath of your site, e.g. /blog
 baseurl: "/brandomiranda" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
