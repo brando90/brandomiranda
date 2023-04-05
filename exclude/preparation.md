@@ -1,0 +1,28 @@
+# A note to prospective students
+(Copy pasted from Sanmi Koyejo https://cs.stanford.edu/~sanmi/preparation.html)
+(Modified with permission from Bert Huang http://people.cs.vt.edu/~bhuang/for_students.html.)
+
+While openings in my research group will be rare, I thought it would be helpful for me to write about what qualities in students I look for, to give you an idea of what I find important for doing successful research with me. The three major elements, in order of what CS grad students typically need the most improvement on, are communication, mathematics, and programming. I wouldn't expect you to be excellent at all of these aspects right away, but if we work together, I'd expect you to continually make efforts to improve all of these. This should sound fun and exciting to you. If it doesn't, it's a good sign that we may not have great working compatibility.
+
+The first requirement for collaborating with me is some background in machine learning, at least consisting of taking a graduate-level introductory machine learning course or equivalent. You should have some maturity in understanding how machine learning algorithms work, their mathematical foundations, and how one implements them in computer programs.
+
+## Communication
+Research requires a ton of communication. You must be able to express ideas verbally and in writing, and you must be good at listening and understanding what others say or write (often not well). You'll need to become an expert in English grammar, style, and usage. You don't need to be an expert right away, and mastering English is a lot of work, even if you are a native speaker, but the better you get at it, the more fun and productive your scientific research will be.
+
+In addition, you will need to hone your skills at mathematical writing. This type of writing can be very different from non-mathematical writing. Mechanically, you will need to know and continually improve your knowledge of LaTeX, which is the standard language for typesetting math-heavy scientific papers.
+
+## Mathematics
+There is a multitude of weird mathematical concepts in ML research, so you'll need to be capable of learning to understand some of these concepts. At the core, there are some standard math areas that you need for nearly all ML research. The work I do requires being comfortable with the basic concepts of probability, linear algebra, optimization, discrete math, calculus, and graph theory. Some of these concepts are exotic and could be new to you, or they could be things you learned in high school, but we will be using them in likely higher dimensionality than you've previously done if you haven't done ML research before, and things can become very counterintuitive.
+
+## Programming
+Machine learning is a mathematical research discipline that is centered on empirical data, which means you need to be very good at designing, coding, debugging, and maintaining code to test the algorithms and mathematical ideas you investigate. As a reference, my research code is a mix of Python, Java, MATLAB, and C/C. Among these, my favorite language is Python.
+
+You will need to become good at version control, object-oriented design, and quickly picking up new languages, APIs, and libraries. You need to have good programming practices and attention to detail, and you should value well-organized code. At the same time, you should be good at working at a fast pace, producing quick prototypes, and capable of keeping yourself organized so you know how to clean up our hastily produced experimental code.
+
+## Joy and commitment
+If we work together, we'll spend a lot of time struggling with these three areas. At some point, you will have to spend tremendous and absurd amounts of time and effort refining a sentence, being confused by an equation, or trying to find bugs in your code. These situations will be very frustrating, difficult, and exhausting, but at the same time, they should also be fun. Again, if you can't imagine these things being enjoyable, my guess is you'd be happier following a different path. (For example, if you love math but dislike programming, there are lots of more purely theoretical research areas and groups – even some who are doing a type of machine learning research – that might fit better.)
+
+The last point is on the commitment necessary to be successful at graduate research. Science is harsh. Your goal will be to explore something that nobody in the world has ever known before. The amount of time and effort it takes to answer an open question is completely unknown and often infinite. And there is no foolproof oracle to tell us which questions will be easier. The harshness of science means that you'll need to be really smart about how you work. Usually this means just working hard without much time off, but it can also mean strategically taking breaks to improve your overall productivity, taking advantage of small pockets of idle time (lots of good research ideas come from when you're showering or driving), or knowing when to ask for help. Realistically, the default strategy is unfortunately to work crazy hard. But the work should also be fun, like I wrote above.
+
+## If you're still on board
+Be aware that I get a lot of email from students wanting to work with me, so I may not be able to reply to every query. However, if all this stuff excites you more than it scares you, feel free to get in touch to see if our research interests line up.
