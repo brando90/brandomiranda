@@ -2,6 +2,7 @@
 layout: page
 title: Prospective Collaborations
 ---
+
 # Prospective Collaborations: Interested in a collaborating with on a research project?
 
 This is a great read for all: https://cs.stanford.edu/~sanmi/preparation.html
