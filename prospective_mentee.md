@@ -1,9 +1,10 @@
 ---
 layout: page
 title: Prospective Collaborations
-permalink: /prospective-collaborations/
 ---
 # Prospective Collaborations: Interested in a collaborating with on a research project?
+
+This is a great read for all: https://cs.stanford.edu/~sanmi/preparation.html
 
 ## Undergraduates and Master Students at Stanford
 
