@@ -1,3 +1,8 @@
+---
+layout: page
+title: Prospective Collaborations
+permalink: /prospective-collaborations/
+---
 # Prospective Collaborations: Interested in a collaborating with on a research project?
 
 ## Undergraduates and Master Students at Stanford
@@ -30,6 +35,6 @@ Here are some potential projects I'm interested in: https://docs.google.com/docu
 If you have your own or an adaptation of my that aligns with my interests, I'm happy to discuss it with you -- but
 will expect that you have scoped it in a persuasive matter, thought about the impact, and have a clear plan for how you will execute it.
 
-## Postdocs, Junior Graduates students, and the rest
+## Postdocs, Junior student, fewllow Graduates students, and the rest
 
 Shoot me an e-mail (brando AT stanford DOt edu) and we can discuss potential collaborations. 
