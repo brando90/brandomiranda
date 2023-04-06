@@ -1,5 +1,12 @@
 # My notes on making a static website
 
+# Quick and dirty way to check if website builds
+
+Since right now bundle doesn't build you can do:
+1. Commit & push to github.
+2. Then next to the commit github displays if it was able to build for you. If it does it will be green.
+3. If it can't then it will be red and you can copy paste the error to Google, SO or GPT-4. 
+
 # Initializing a jekyll project
 
 To start/create a brand new webpage (in your current directory) with jekyll do the following:
