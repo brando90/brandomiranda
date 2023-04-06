@@ -3,15 +3,22 @@ layout: page
 title: Home
 ---
 
-# About me (Informal) #
+[//]: # (# About me &#40;Informal&#41; #)
 
-I am a scientist and an engineer that is interested in moving forward the powerful
-and beautiful field of A.I. closer to true Artificial General Intelligence (AGI).
-I believe an important direction is understanding how to combine cognitive and neuro-inspired models, specially investigating how reasoning and learning work together.
-In addition, I also believe being able to adapt to new tasks using prior experience and knowledge is crucial for AGI to occur.
-Consequently, I decided to pursue a Ph.D in AI and machine learning. 
-I currently work on meta-learning and machine learning (ML) for
-Theorem Proving (TP) at Stanford University. 
+[//]: # ()
+[//]: # (I am a scientist and an engineer that is interested in moving forward the powerful)
+
+[//]: # (and beautiful field of A.I. closer to true Artificial General Intelligence &#40;AGI&#41;.)
+
+[//]: # (I believe an important direction is understanding how to combine cognitive and neuro-inspired models, specially investigating how reasoning and learning work together.)
+
+[//]: # (In addition, I also believe being able to adapt to new tasks using prior experience and knowledge is crucial for AGI to occur.)
+
+[//]: # (Consequently, I decided to pursue a Ph.D in AI and machine learning. )
+
+[//]: # (I currently work on meta-learning and machine learning &#40;ML&#41; for)
+
+[//]: # (Theorem Proving &#40;TP&#41; at Stanford University. )
 
 # Bio #
 
