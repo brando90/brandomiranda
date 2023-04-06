@@ -13,14 +13,15 @@ I am always keen and excited to work with motivated and talented students. I als
 ever execute. However, research is difficult and mentoring is a time-consuming endeavor. Therefore, I've created this
 application process with that in mind:
 
-The application process to work with me is designed to ensure dedicated, independent, and focused individuals are selected for mentoring opportunities. In order to be considered for a position, please adhere to the following steps:
+The application process to work with me is designed to ensure dedicated, independent, and focused individuals are selected for mentoring opportunities. 
+In order to be considered for a position, please adhere to the following steps:
 
 1. Submit a letter detailing your motivation and career plans, along with a commitment to a minimum of 10 hours per week. I typically recommend a 20-hour weekly commitment, as research can be challenging and it is crucial that the time I invest in mentoring is used effectively. A commitment of at least two quarters is required, with a recommended duration of three to four quarters.
 2. Provide a copy of your CV and all relevant academic transcripts. It is your responsibility to clarify any unfamiliar information or discrepancies that may be present in your documents. Completion of classes related to machine learning, such as CS 229 or Deep Learning CS 230, is a minimum requirement, as well as coding and software development experience.
 3. Obtain a recommendation letter, ideally from a faculty member. While a brief letter will suffice, a more comprehensive endorsement is preferred.
-4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions.
-
-[//]: # (5. I'd also like to know your strengths in the mathematics, scientific and engineering axis. )
+4. Take part in a technical interview, during which you will spend approximately 10 minutes discussing your contributions to a previous technical project you have been involved in.
+[//]: # (4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions.)
+5. I would also like to learn about your proficiencies in the areas of mathematics, science, and engineering.
 
 By following these steps, you will demonstrate your commitment to excellence and your ability to work independently. To foster a productive and professional working relationship I'd like to outline my minimum expectations:
 
