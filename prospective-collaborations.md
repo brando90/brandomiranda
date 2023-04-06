@@ -41,7 +41,7 @@ Please read this: [Professor Koyejo's advise for his own prospective students](h
 
 ## Project Ideas
 
-Here are some potential projects I'm interested in: https://docs.google.com/document/d/1HBBmEKb2JJrhWab5Chnadpru_z_ZHF-1i28tKIXlq-U/edit?usp=sharing .
+Here are some potential projects I'm interested in: [project list](https://docs.google.com/document/d/1HBBmEKb2JJrhWab5Chnadpru_z_ZHF-1i28tKIXlq-U/edit?usp=sharing).
 If you have your own or an adaptation of my that aligns with my interests, I'm happy to discuss it with you -- but
 will expect that you have scoped it in a persuasive matter, thought about the impact, and have a clear plan for how you will execute it.
 
