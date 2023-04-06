@@ -5,7 +5,8 @@ title: Prospective Collaborations
 
 # Prospective Collaborations: Interested in a collaborating with on a research project?
 
-This is a great read for all: https://cs.stanford.edu/~sanmi/preparation.html
+This is a great read for all: 
+[Professor Koyejo's advise for his own prospective student](https://cs.stanford.edu/~sanmi/preparation.html).
 
 ## Undergraduates and Master Students at Stanford
 
@@ -27,7 +28,7 @@ By following these steps, you will demonstrate your commitment to excellence and
 To foster a productive and professional working relationship I'd like to outline my minimum expectations:
 
 1. Independence, Initiative and Communication: I expect you to work independently while maintaining consistent communication. Ideally, we should stay in touch daily or weekly through asynchronous means, rather than relying on lengthy, unproductive meetings. I strongly prefer not to use Zoom for meetings. In-person meetings are preferred and I expect those encounters to be efficient and valuable for both of us.
-2. Recommended Reading: I encourage prospective mentees and collaborators to review the following resource, which I plan to include on my webpage: https://cs.stanford.edu/~sanmi/preparation.html. This material provides valuable insights and guidance for working together effectively.
+2. Recommended Reading: I encourage prospective mentees and collaborators to review the following resource, which I plan to include on my webpage: [Professor Koyejo's advise for his own prospective student](https://cs.stanford.edu/~sanmi/preparation.html). This material provides valuable insights and guidance for working together effectively.
 3. Intrinsic motivation and curiosity are essential for successful research, as they encourage individuals to pose insightful questions, investigate novel perspectives, and make meaningful contributions, collectively resulting in substantial advancements and breakthroughs in the field. Moreover, genuine interest serves as a driving force to persevere through challenging moments in research and cultivate enduring motivation.
 4. My Mentoring Style: Tackling complex challenges necessitates empowering mentees to work independently and resourcefully. Consequently, I expect you to operate autonomously and optimize the use of available resources. Meetings will typically be held once every one to two weeks, with a focus on efficient asynchronous communication. It is crucial that you capitalize on the wealth of resources at Stanford. To illustrate the importance of independence, my intervention in debugging your code will be limited and sparing. I do recommend to use GPT-4 and always verify it's output rigorously. 
 
@@ -35,7 +36,7 @@ By adhering to these expectations, we can establish a productive and professiona
 
 If you are interested, I look forward to reviewing your application (e-mail me at brando9 aT stanford dOT edu and which project you are interested in and why) and potentially embarking on a fruitful mentoring relationship.
 
-Please read this: https://cs.stanford.edu/~sanmi/preparation.html
+Please read this: [Professor Koyejo's advise for his own prospective student](https://cs.stanford.edu/~sanmi/preparation.html).
 
 ## Project Ideas
 
