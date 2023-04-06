@@ -42,3 +42,14 @@ will expect that you have scoped it in a persuasive matter, thought about the im
 ## Postdocs, Junior student, fewllow Graduates students, and the rest
 
 Shoot me an e-mail (brando AT stanford DOt edu) and we can discuss potential collaborations. 
+
+
+
+
+[//]: # (Hi everyone,)
+
+[//]: # ()
+[//]: # (The lab I am part of has project openings for research collaborations with master students, taken for class credit. If you are interested e-mail brando9@stanford.edu and rschaef@stanford.edu with your CV & &#40;unofficial&#41; transcript, a small paragraph explaining your career plans/why you're interested in doing research, and also a time with us to schedule a 15-minute interview &#40;ideally in the late afternoon&#41;.)
+
+[//]: # ()
+[//]: # (https://docs.google.com/document/d/15YbR5tf2zqPwjYyb3KpyDKCUH5YLSqfVo8nwWIzkXsY/edit?usp=sharing)
