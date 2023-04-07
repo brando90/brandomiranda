@@ -3,7 +3,7 @@ layout: page
 title: Prospective Collaborations
 ---
 
-# Prospective Collaborations: Interested in a collaborating with on a research project?
+# Prospective Collaborations: Interested in a collaborating with me on a research project?
 
 This is a great read for all: 
 [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html).
