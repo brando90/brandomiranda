@@ -24,7 +24,6 @@ In order to be considered, please adhere to the following steps -- where step 1-
 4. Take part in a technical interview, during which you will spend approximately 10 minutes discussing your contributions to a previous technical project you have been involved in + 5 minutes discussing the project.
 5. Obtain a strong recommendation letter -- ideally from a faculty member. While a brief letter will suffice, a more comprehensive endorsement is preferred.
 
-[//]: # (4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions.)
 
 By following these steps, you will demonstrate your commitment to excellence and your ability to work independently. 
 To foster a productive and professional working relationship I'd like to outline my minimum expectations:
@@ -60,3 +59,8 @@ Shoot me an e-mail (brando AT stanford DOt edu) and we can discuss potential col
 
 [//]: # ()
 [//]: # (https://docs.google.com/document/d/15YbR5tf2zqPwjYyb3KpyDKCUH5YLSqfVo8nwWIzkXsY/edit?usp=sharing)
+
+
+
+
+[//]: # (4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions.)
