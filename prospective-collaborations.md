@@ -61,6 +61,4 @@ Shoot me an e-mail (brando AT stanford DOt edu) and we can discuss potential col
 [//]: # (https://docs.google.com/document/d/15YbR5tf2zqPwjYyb3KpyDKCUH5YLSqfVo8nwWIzkXsY/edit?usp=sharing)
 
 
-
-
-[//]: # (4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions.)
+<!-- 4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions. -->
