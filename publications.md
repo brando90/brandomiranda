@@ -10,6 +10,11 @@ title: Publications
 
 [//]: # (TODO put full list in my own website like Tony? perhaps not more work to manage)
 
+The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that LLM are Pretrained on formally Diverse Data.
+*Alycia Lee, Brando Miranda, Patrick Yu, and Oluwasanmi Koyejo.*
+**Generative AI and Foundation Models Workshop 2023 - SAIL (Stanford Artificial Intelligence Laboratory)**
+[Coming soon!][Code ping me][Poster from SAIL conference ping me!]
+
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
 **NeurIPS Meta-Learning Workshop 2022, Contributed Talk.**
