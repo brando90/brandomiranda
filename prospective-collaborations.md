@@ -22,7 +22,7 @@ In order to be considered, please adhere to the following steps -- where step 1-
 2. Provide a copy of your CV and all relevant academic transcripts. It is your responsibility to clarify any unfamiliar information or discrepancies that may be present in your documents. Completion of classes related to machine learning, such as CS 229 or Deep Learning CS 230, is a minimum requirement, as well as coding and software development experience.
 3. I would also like to learn about your proficiencies in the areas of mathematics, science, and engineering.
 4. Take part in a technical interview, during which you will spend approximately 10 minutes discussing your contributions to a previous technical project you have been involved in + 5 minutes discussing the project.
-5. Obtain a strong recommendation letter -- ideally from a faculty member. While a brief letter will suffice, a more comprehensive endorsement is preferred.
+5. Obtain a strong recommendation letter -- ideally from a faculty member. While a brief letter will suffice, a more comprehensive endorsement is preferred. If they are a faculty and do not have the time to write a letter -- an e-mail endorsing you would suffice. 
 
 
 By following these steps, you will demonstrate your commitment to excellence and your ability to work independently. 
