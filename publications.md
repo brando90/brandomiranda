@@ -13,6 +13,7 @@ title: Publications
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 **Preprint.**
+[**[PDF]**](https://arxiv.org/pdf/2304.15004.pdf) 
 [**[arXiv]**](https://arxiv.org/abs/2304.15004) 
 
 The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that LLM are Pretrained on formally Diverse Data.
