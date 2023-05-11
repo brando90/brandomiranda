@@ -22,8 +22,6 @@ The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that
 [**2023 Stanford Data Science Conference.**](https://datascience.stanford.edu/2023-stanford-data-science-conference)
 [**[Stanford Data Science Poster]**](https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true)
 [**[SAIL Poster]**](professional_documents/SAIL_2023_Poster.pdf)
-[Coming soon!]
-[Code ping me]
 
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
@@ -34,11 +32,11 @@ The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
 [**[15 minute video Contributed Talk, pre-recording]**](https://youtu.be/3LfTWHIgmvM)
 [**[15 minute video Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
-[**[Code, contact me for now, coming soon I hope!]**]()
+[Code ping me]
 
+[//]: # ([**[Code, contact me for now, coming soon I hope!]**]&#40;&#41;)
 [//]: # (5 min video from neurips)
 [//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
-
 
 
 [Does MAML Only Work via Feature Re-use? A Data Centric Perspective](https://arxiv.org/abs/2112.13137)
