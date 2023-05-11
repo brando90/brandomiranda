@@ -18,8 +18,12 @@ Are Emergent Abilities of Large Language Models a Mirage?
 
 The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that LLM are Pretrained on formally Diverse Data.
 *Alycia Lee, Brando Miranda, Patrick Yu, and Oluwasanmi Koyejo.*
-**Generative AI and Foundation Models Workshop 2023 - SAIL (Stanford Artificial Intelligence Laboratory)**
-[Coming soon!][Code ping me][**[Poster from SAIL conference]**](professional_documents/SAIL_2023_Poster.pdf)
+**Generative AI and Foundation Models Workshop 2023 - SAIL (Stanford Artificial Intelligence Laboratory).**
+[**2023 Stanford Data Science Conference.**](https://datascience.stanford.edu/2023-stanford-data-science-conference)
+[**[Stanford Data Science Poster]**](https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true)
+[**[SAIL Poster]**](professional_documents/SAIL_2023_Poster.pdf)
+[Coming soon!]
+[Code ping me]
 
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
