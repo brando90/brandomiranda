@@ -48,7 +48,6 @@ The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that
 
 [//]: # ([**[PDF]**]&#40;https://www.ideals.illinois.edu/handle/2142/109139&#41;)
 
-
 [Weight and Batch Normalization implement Classical Generalization Bounds.](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 *Tomaso Poggio Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
 **ICML Workshop 2019**
@@ -56,12 +55,10 @@ The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that
 
 [//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
 
-
 [High-performance and scalable on-chip digital Fourier transform spectroscopy.](https://www.nature.com/articles/s41467-018-06773-2)
 *Derek M Kita, Brando Miranda, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
 **Nature Communications 2018.**
 [**[PDF]**](https://www.nature.com/articles/s41467-018-06773-2)
-
 
 [Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review.](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 *Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao.*
