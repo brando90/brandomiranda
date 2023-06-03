@@ -22,7 +22,8 @@ The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that
 [**2023 Stanford Data Science Conference.**](https://datascience.stanford.edu/2023-stanford-data-science-conference)
 [**[Stanford Data Science Poster]**](https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true)
 [**[SAIL Poster]**](professional_documents/SAIL_2023_Poster.pdf)
-[Code ping me]
+[**[Short 6 page paper]**](professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__6pg_.pdf)
+[**[Code]**](https://github.com/brando90/ultimate-utils/tree/master/ultimate-utils-proj-src/uutils/torch_uu/metrics)
 
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
