@@ -5,27 +5,32 @@ title: Prospective Collaborations
 
 # Prospective Collaborations: Interested in a collaborating with me on a research project?
 
-This is a great read for all: 
+This is a great read for everyone: 
 [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html).
 
 ## Undergraduates and Master Students at Stanford
 
 I'm always keen and excited to work with motivated and talented students. 
-I also always have more ideas than I can ever execute. 
+I always have more ideas than I can ever execute. 
 However, research is challenging -- yet rewarding -- and mentoring is a time-consuming endeavor. 
-Therefore, I've created this process to aid me in the selection of prospective mentees:
+Therefore, I've created this process to aid us in the matching processes:
 
-The application process to work with me is designed to ensure dedicated, independent, and focused individuals are selected for mentoring opportunities. 
-In order to be considered, please adhere to the following steps -- where step 1-4 should be included in your email to me:
+The application process to work with me is designed to ensure dedicated, independent, and focused individuals are matched mentoring opportunities. 
+In order to be considered, please adhere to the following steps 
+-- where step 1-4 should be included in your first email to me:
 
-1. Submit a small paragraph detailing your motivation for engaging in research and career plans. Along stating if you can commit to a minimum of 10 hours per week. I typically recommend a 20-hour weekly commitment, as research can be challenging, and it is crucial that the time I invest in mentoring is used effectively. A commitment of at least two quarters is required, with a recommended duration of three to four quarters.
-2. Provide a copy of your CV and all relevant academic transcripts. It is your responsibility to clarify any unfamiliar information or discrepancies that may be present in your documents. Completion of classes related to machine learning, such as CS 229 or Deep Learning CS 230, is a minimum requirement, as well as coding and software development experience.
+1. Submit a small paragraph detailing your motivation for engaging in research and career plans. Along stating if you can commit to a minimum of 10 hours per week. I typically recommend a 20-hour weekly commitment, as research can be challenging, and it is crucial for the time be productive for all parties involved. A commitment of at least two quarters is required, with a recommended duration of three to four quarters (~1 year ideal).
+2. Provide me a copy of your CV and all relevant academic transcripts. It is your responsibility to clarify any unfamiliar information or discrepancies that may be present in the documents. Completion of classes related to Machine Learning, such as CS 229 or Deep Learning CS 230, is a strongly suggested (or equivalent experience), as well as coding/software development experience.
 3. I would also like to learn about your proficiencies in the areas of mathematics, science, and engineering.
-4. Take part in a technical interview, during which you will spend approximately 10 minutes discussing your contributions to a previous technical project you have been involved in + 5 minutes discussing the project.
-5. Obtain a strong recommendation letter -- ideally from a faculty member. While a brief letter will suffice, a more comprehensive endorsement is preferred. If they are a faculty and do not have the time to write a letter -- an e-mail endorsing you would suffice. 
+4. Obtain a recommendation from a previous mentor/teacher/profess. At the very least an e-mail where someone endorses you. The best recommendation would be a strong letter of recommendation -- ideally from a faculty member. While a brief letter/e-mail helps, a more comprehensive endorsement is preferred.
 
+After reviewing the above I will reply with the following if it seems we are a good match within a week:
 
-By following these steps, you will demonstrate your commitment to excellence and your ability to work independently. 
+5. Take part in an 30 minutes interview; during which we will spend approximately 15 minutes discussing your contributions to a previous technical project + 7 minute discussing your background & motivations + 8 minutes discussing the potential future project.
+
+By following these steps, you will demonstrate your initiative along with your commitment to excellence and your ability to work independently.
+I do have to have a high bar but I've designed the requirements so that you can are encouraged to apply. If you are on the fence I encourage you to apply anyway and have your recommender write a brief e-mail. 
+While our standards are high, we have carefully designed the requirements to encourage a wide range of candidates to apply. If you're uncertain, we urge you to apply anyway. Your recommender can also assist by writing a brief email to support your application. We believe in potential and growth, and we encourage you to take this step with us.
 To foster a productive and professional working relationship I'd like to outline my minimum expectations:
 
 1. Independence, Initiative and Communication: I expect you to work independently while maintaining consistent communication. Ideally, we should stay in touch daily or weekly through asynchronous means, rather than relying on lengthy, unproductive meetings. I strongly prefer not to use Zoom for meetings. In-person meetings are preferred and I expect those encounters to be efficient and valuable for both of us.
