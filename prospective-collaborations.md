@@ -24,8 +24,8 @@ In order to be considered, please adhere to the following steps
 
 1. Submit a small paragraph detailing your motivation for engaging in research and career plans. Along stating if you can commit to a minimum of 10 hours per week. I typically recommend a 20-hour weekly commitment, as research can be challenging, and it is crucial for the time be productive for all parties involved. A commitment of at least two quarters is required, with a recommended duration of three to four quarters (~1 year ideal).
 2. Provide me a copy of your CV and all relevant academic transcripts. It is your responsibility to clarify any unfamiliar information or discrepancies that may be present in the documents. Completion of classes related to Machine Learning, such as CS 229 or Deep Learning CS 230, is a strongly suggested (or equivalent experience), as well as coding/software development experience.
-3. I would also like to learn about your proficiencies in the areas of mathematics, science, and engineering.
-4. Obtain a recommendation from a previous mentor/teacher/profess. At the very least an e-mail where someone endorses you. The best recommendation would be a strong letter of recommendation -- ideally from a faculty member. While a brief letter/e-mail helps, a more comprehensive endorsement is preferred.
+3. I would also like to learn about your proficiencies in the areas of mathematics, science, and engineering. Mention this in your e-mail please. 
+4. Obtain a recommendation from a previous mentor/teacher/profess. At the very least an e-mail where someone endorses you. The best recommendation would be a strong letter of recommendation -- ideally from a faculty member. While a brief letter/e-mail helps, a more comprehensive endorsement is preferred. If you've taken [CS 197](https://web.stanford.edu/class/cs197/) at Stanford please mention and if you can have either the instructor of your mentor write a brief e-mail of endorsement.
 
 After reviewing the above I will reply with the following if it seems we are a good match within a week:
 
