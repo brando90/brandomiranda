@@ -8,6 +8,8 @@ title: Publications
 
 # Selected Publications [ [Full List] ](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 
+[//]: # (Note: * denotes equal contribution.)
+
 [//]: # (TODO put full list in my own website like Tony? perhaps not more work to manage)
 
 Are Emergent Abilities of Large Language Models a Mirage?
@@ -16,15 +18,22 @@ Are Emergent Abilities of Large Language Models a Mirage?
 [**[PDF]**](https://arxiv.org/pdf/2304.15004.pdf) 
 [**[arXiv]**](https://arxiv.org/abs/2304.15004) 
 
-The Diversity Coefficient: a Data Quality Metric for Machine Learning shows that LLM are Pretrained on formally Diverse Data.
-*Alycia Lee, Brando Miranda, Patrick Yu, and Oluwasanmi Koyejo.*
-**Generative AI and Foundation Models Workshop 2023 - SAIL (Stanford Artificial Intelligence Laboratory).**
-[**2023 Stanford Data Science Conference.**](https://datascience.stanford.edu/2023-stanford-data-science-conference)
+Is Pre-training Truly Better Than Meta-Learning?
+Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
+**ICML Data-Centric Machine Learning Workshop 2023.**
+[**arxiv**](https://arxiv.org/abs/2306.13841)
+
+Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.
+*Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
 [**[Stanford Data Science Poster]**](https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true)
-[**[SAIL Poster]**](professional_documents/SAIL_2023_Poster.pdf)
+[**[arxiv]**](https://arxiv.org/abs/2306.13840)
 [**[Short 8 page paper]**](professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
 [**[Short 6 page paper]**](professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__6pg_.pdf)
 [**[Code]**](https://github.com/brando90/ultimate-utils/tree/master/ultimate-utils-proj-src/uutils/torch_uu/metrics)
+
+[//]: # (**Generative AI and Foundation Models Workshop 2023 - SAIL &#40;Stanford Artificial Intelligence Laboratory&#41;.**)
+[//]: # ([**2023 Stanford Data Science Conference.**]&#40;https://datascience.stanford.edu/2023-stanford-data-science-conference&#41;)
+[//]: # ([**[SAIL Poster]**]&#40;professional_documents/SAIL_2023_Poster.pdf&#41;)
 
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
