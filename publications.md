@@ -15,13 +15,12 @@ title: Publications
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 **Preprint.**
-[**[PDF]**](https://arxiv.org/pdf/2304.15004.pdf) 
 [**[arXiv]**](https://arxiv.org/abs/2304.15004) 
 
 Is Pre-training Truly Better Than Meta-Learning?
 Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
 **ICML Data-Centric Machine Learning Workshop 2023.**
-[**arxiv**](https://arxiv.org/abs/2306.13841)
+[**[arxiv]**](https://arxiv.org/abs/2306.13841)
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.
 *Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
@@ -49,7 +48,6 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [//]: # ([**[Code, contact me for now, coming soon I hope!]**]&#40;&#41;)
 [//]: # (5 min video from neurips)
 [//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
-
 
 [Does MAML Only Work via Feature Re-use? A Data Centric Perspective](https://arxiv.org/abs/2112.13137)
 *Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
