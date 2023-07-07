@@ -44,7 +44,7 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 [//]: # (https://cs.stanford.edu/~sanmi/preparation.html  working with me, TODO: )
 
 [//]: # (Our Culture:
-[//]: # (
+[//]: # (  
 [//]: # (Our lab has a high technical bar, including a coding interview for all applicants. We constantly push each other to improve through continuous, regular feedback. We take mentorship seriously and are committed to students' success beyond their time in our lab. As a member of our lab, you will be working alongside prior USACO and IMO participants. We have exceedingly high expectations of all collaborators and do not tolerate mediocrity. look for his lab page Sebastian Thrun's lab.)
 [//]: # (someone from caltech or something like htat?)
 
