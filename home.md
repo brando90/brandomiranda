@@ -26,8 +26,8 @@ Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanf
 in the department of Computer Science.
 Previously he has been a graduate student at [University of Illinois Urbana-Champaign](https://illinois.edu/), Research Assistant at MIT's 
 [Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/), and graduate student at the [Massachusetts Institute of Technology (MIT)](https://mit.edu/).
-Miranda's research interests lie in the field of meta-learning, foundation models for theorem proving, and human & brain
-inspired Artificial Intelligence (AI). 
+Miranda's research interests lie in data-centric machine learning for foundation models, 
+meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
 Miranda completed his Master of Engineering in Electrical Engineering and Computer Science under the supervision of 
 [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) -- where he did research on Deep Learning Theory.
 Miranda has been the recipient of several awards, 
@@ -35,6 +35,10 @@ including Most Cited Paper Certificate awarded by International Journal of Autom
 two Honorable Mention with the Ford Foundation Fellowship,
 Computer Science Excellence Saburo Muroga Endowed Fellow, 
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
+
+
+Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford. 
+Miranda’s research interests lie in data-centric machine learning for foundation models, meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
 
 
 [//]: # (https://cs.stanford.edu/~sanmi/preparation.html  working with me, TODO: )
