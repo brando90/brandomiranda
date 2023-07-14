@@ -14,7 +14,7 @@ title: Publications
 
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
-**Preprint.**
+**Preprint & ICML Challenges in Deployable Generative AI Workshop 2023.**
 [**[arXiv]**](https://arxiv.org/abs/2304.15004) 
 
 Is Pre-training Truly Better Than Meta-Learning?
@@ -24,6 +24,7 @@ Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.
 *Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
+**ICML Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023.**
 [**[Stanford Data Science Poster]**](https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true)
 [**[arxiv]**](https://arxiv.org/abs/2306.13840)
 [**[Short 8 page paper]**](professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
