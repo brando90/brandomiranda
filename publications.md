@@ -22,7 +22,7 @@ Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
 **ICML Data-Centric Machine Learning Workshop 2023.**
 [**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arxiv]**](https://arxiv.org/abs/2306.13841)
-[**[ICML WS]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf)
+[**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf)
 [**[Code Coming Soon]**]()
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.
@@ -30,7 +30,7 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 **ICML Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023.**
 [**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arxiv]**](https://arxiv.org/abs/2306.13840)
-[**[ICML WS]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
+[**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
 [**[Code]**](https://github.com/alycialee/beyond-scale-language-data-diversity)
 
 [//]: # ([**[Stanford Data Science Poster]**]&#40;https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true&#41;)
@@ -43,13 +43,13 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
 **NeurIPS Meta-Learning Workshop 2022, Contributed Talk.**
-[**[PDF]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
 [**[15 minute video Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 [**[Code Coming Soon]**]()
 
+[//]: # ([**[PDF]**]&#40;https://openreview.net/forum?id=Z75fwzPdty&#41;)
 [//]: # ([**[15 minute video Contributed Talk, pre-recording]**]&#40;https://youtu.be/3LfTWHIgmvM&#41;)
 [//]: # ([**[Code, contact me for now, coming soon I hope!]**]&#40;&#41;)
 [//]: # (5 min video from neurips)
