@@ -20,17 +20,22 @@ Are Emergent Abilities of Large Language Models a Mirage?
 Is Pre-training Truly Better Than Meta-Learning?
 Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
 **ICML Data-Centric Machine Learning Workshop 2023.**
+[**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arxiv]**](https://arxiv.org/abs/2306.13841)
+[**[ICML WS]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf)
+[**[Code Coming Soon]**]()
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.
 *Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
 **ICML Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023.**
-[**[Stanford Data Science Poster]**](https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true)
+[**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arxiv]**](https://arxiv.org/abs/2306.13840)
-[**[Short 8 page paper]**](professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
-[**[Short 6 page paper]**](professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__6pg_.pdf)
-[**[Code]**](https://github.com/brando90/ultimate-utils/tree/master/ultimate-utils-proj-src/uutils/torch_uu/metrics)
+[**[ICML WS]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
+[**[Code]**](https://github.com/alycialee/beyond-scale-language-data-diversity)
 
+[//]: # ([**[Stanford Data Science Poster]**]&#40;https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true&#41;)
+[//]: # ([**[Short 8 page paper]**]&#40;professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf&#41;)
+[//]: # ([**[Short 6 page paper]**]&#40;professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__6pg_.pdf&#41;)
 [//]: # (**Generative AI and Foundation Models Workshop 2023 - SAIL &#40;Stanford Artificial Intelligence Laboratory&#41;.**)
 [//]: # ([**2023 Stanford Data Science Conference.**]&#40;https://datascience.stanford.edu/2023-stanford-data-science-conference&#41;)
 [//]: # ([**[SAIL Poster]**]&#40;professional_documents/SAIL_2023_Poster.pdf&#41;)
@@ -42,10 +47,10 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
-[**[15 minute video Contributed Talk, pre-recording]**](https://youtu.be/3LfTWHIgmvM)
 [**[15 minute video Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
-[Code ping me]
+[**[Code Coming Soon]**]()
 
+[//]: # ([**[15 minute video Contributed Talk, pre-recording]**]&#40;https://youtu.be/3LfTWHIgmvM&#41;)
 [//]: # ([**[Code, contact me for now, coming soon I hope!]**]&#40;&#41;)
 [//]: # (5 min video from neurips)
 [//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
