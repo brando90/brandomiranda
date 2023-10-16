@@ -23,7 +23,7 @@ title: Home
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
-in the department of Computer Science.
+in the department of Computer Science at the [STAIR (Safe and Trustworthy AI) research group](https://cs.stanford.edu/~sanmi/index.html).
 Previously he has been a graduate student at [University of Illinois Urbana-Champaign](https://illinois.edu/), Research Assistant at MIT's 
 [Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/), and a graduate student at the [Massachusetts Institute of Technology (MIT)](https://mit.edu/).
 Miranda's research interests lie in data-centric machine learning for foundation models, 
@@ -37,7 +37,7 @@ Computer Science Excellence Saburo Muroga Endowed Fellow,
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
 
 # Shorter Bio #
-Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford. 
+Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford at the [STAIR (Safe and Trustworthy AI) research group](https://cs.stanford.edu/~sanmi/index.html).
 Miranda’s research interests lie in data-centric machine learning for foundation models, meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
 
 

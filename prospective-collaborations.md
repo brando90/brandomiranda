@@ -19,7 +19,7 @@ However, research is challenging -- yet rewarding -- and mentoring is a time-con
 Therefore, I've created this process to aid us in the matching processes.
 In exchange, you will get worldclass mentorship in research, (see my Bio and publications)[https://brando90.github.io/brandomiranda/home.html].
 
-The application process to work with me is designed to ensure dedicated, independent, and focused individuals are matched mentoring opportunities. 
+The application process to work with me is designed to ensure dedicated, independent, and focused individuals are matched mentoring opportunities.
 In order to be considered, please adhere to the following steps 
 -- where step 1-4 should be included in your first email to me:
 
