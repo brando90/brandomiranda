@@ -3,8 +3,7 @@ layout: page
 title: Awards
 ---
 
-- 
-NeurIPS Outstanding Main Track Papers Award (December 11 2023)
+- NeurIPS Outstanding Main Track Paper Award (December 11 2023)
 - EDGE Scholar, Stanford University (September 2022)
 - Stanford School of Engineering fellowship, Stanford University (September 2022)
 - Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang (December 2020).
