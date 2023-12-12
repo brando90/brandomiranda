@@ -14,8 +14,15 @@ title: Publications
 
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
+**NeurIPS Outstanding Main Track Paper Award 2023, NeurIPS Oral 2023, Invited Talk Stanford IEEE**
+[**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
+[**[Stanford IEEE Invited Talk 2023]**](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl)
+<!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
+
+<!-- Are Emergent Abilities of Large Language Models a Mirage?
+*Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 **Preprint & ICML Challenges in Deployable Generative AI Workshop 2023.**
-[**[arXiv]**](https://arxiv.org/abs/2304.15004) 
+[**[arXiv]**](https://arxiv.org/abs/2304.15004)  -->
 
 Is Pre-training Truly Better Than Meta-Learning?
 Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
