@@ -6,9 +6,9 @@ title: Awards
 - NeurIPS Outstanding Main Track Paper Award, (December 11 2023) (top 0.4% and only 2 papers selected)
 - EDGE Scholar, Stanford University (September 2022)
 - Stanford School of Engineering fellowship, Stanford University (September 2022)
-- Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang (December 2020).
+- Best Research Project Award for Graduate Course CS 598 "Learning to Learn" by professor Y. Wang (December 2020).
 - HSF (Hispanic Scholarship Fund) Scholar (2020)
-- Honorable Mention, Ford Foundation Fellowship (2020)
+- Honorable Mention, Ford Foundation Fellowship (2020, 2021)
 - Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC), (December 2019)
 - Computer Science Excellence Saburo Muroga Endowed Fellow, (2019-2020)
 - Sloan Scholar, Alfred P. Sloan Foundations Minority Ph.D. (MPHD) Program, awarded in (2018-2019)
