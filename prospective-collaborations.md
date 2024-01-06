@@ -58,7 +58,7 @@ I do encourage you to read this: [Professor Koyejo's advise for his own prospect
 
 ## Project Ideas
 
-Here are some potential projects I'm interested in: [project list](https://docs.google.com/document/d/1HBBmEKb2JJrhWab5Chnadpru_z_ZHF-1i28tKIXlq-U/edit?usp=sharing).
+Here are some potential projects I'm interested in: [project list](https://curis.stanford.edu/year_round_cs_projects/).
 If you have your own or an adaptation of my that aligns with my interests, I'm happy to discuss it with you -- 
 but  will expect that you have scoped it in a persuasive matter, thought about the impact, and have a clear plan for how you will execute it.
 Though, I don't expect you to come with your own project. 
@@ -67,9 +67,5 @@ Though, I don't expect you to come with your own project.
 
 [//]: # ()
 [//]: # (The lab I am part of has project openings for research collaborations with master students, taken for class credit. If you are interested e-mail brando9@stanford.edu and rschaef@stanford.edu with your CV & &#40;unofficial&#41; transcript, a small paragraph explaining your career plans/why you're interested in doing research, and also a time with us to schedule a 15-minute interview &#40;ideally in the late afternoon&#41;.)
-
-[//]: # ()
-[//]: # (https://docs.google.com/document/d/15YbR5tf2zqPwjYyb3KpyDKCUH5YLSqfVo8nwWIzkXsY/edit?usp=sharing)
-
 
 <!-- 4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions. -->

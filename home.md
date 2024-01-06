@@ -53,14 +53,6 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 
 # Contact #
 
-[//]: # (Department of Computer Science)
-
-[//]: # (3333 Siebel Center,)
-
-[//]: # (Urbana, Illinois, 61801.)
-
-[//]: # (miranda9 {at} illinois DoT edu)
-
 Department of Computer Science
 Gates Computer Science Building
 353 Jane Stanford Way
@@ -86,5 +78,3 @@ where I am hoping to share useful things I know: -->
 - [My Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
 - [My CV](/professional_documents/Brando_Miranda_long_CV.pdf)
 - [My Twitter](https://twitter.com/BrandoHablando)
-
-
