@@ -3,6 +3,8 @@ layout: page
 title: Awards
 ---
 
+# Awards
+
 - NeurIPS Outstanding Main Track Paper Award, (December 11 2023) (top 0.4% and only 2 papers selected)
 - EDGE Scholar, Stanford University (September 2022)
 - Stanford School of Engineering fellowship, Stanford University (September 2022)
@@ -20,3 +22,8 @@ title: Awards
 - Best all round student award, Greengates School (2010)
 - Achievement Prize award, Greengates School (2006)
 - Certificate for Progress award, Greengates School (2005)
+
+# Media Coverage
+<!-- make link to publications page -->
+
+See my [publications.](/publications)

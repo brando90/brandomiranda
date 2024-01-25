@@ -14,7 +14,7 @@ title: Publications
 
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
-**[**NeurIPS Outstanding Main Track Paper Award 2023**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/), NeurIPS Oral 2023, Invited Talk Stanford IEEE**
+[**[**NeurIPS Outstanding Main Track Paper Award 2023 & NeurIPS Oral**]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
 [**[Stanford IEEE Invited Talk 2023]**](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl)
 <!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
@@ -87,3 +87,14 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 **International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC).**
 [**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 [**[Award]**](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
+
+
+# Media Coverage
+
+Below are selected links showcasing media coverage of some of my work:
+
+[The New York Times: Silicon Valley Confronts the Idea That the ‘Singularity’ Is Here](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
+
+[Stanford's Institute for Human-Centered Artificial Intelligence (HAI): AI’s Ostensible Emergent Abilities Are a Mirage](https://hai.stanford.edu/news/ais-ostensible-emergent-abilities-are-mirage)
+
+We were also covered by [Forbes, Y Combinator News, Vice, Medium, Hackwernews, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage&sca_esv=601452934&rlz=1C5CHFA_enUS741US741&sxsrf=ACQVn0-c2GdoTGcENwUnRQq9OL9o9oMnRw%3A1706215019783&ei=a8ayZdCpL_DnkPIP4pu2yA4&oq=are+emergent+abilities+of+large++a+mirage&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFyZSBlbWVyZ2VudCBhYmlsaXRpZXMgb2YgbGFyZ2UgIGEgbWlyYWdlKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMc-UKcEWNw3cAB4AZABAJgBWqABqAmqAQIxN7gBA8gBAPgBAcICBBAAGEfCAgQQIxgnwgIKECMYgAQYigUYJ8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAggQABiABBixA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1), courtesy of Google search. 
