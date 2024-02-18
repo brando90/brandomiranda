@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Publications
+title: Publications & Media Coverage
 ---
 
 [//]: # (For now check [my Google Scholar profile]&#40;https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en&#41; and [my home page when I was at MIT's Center for Brain Minds & Machines]&#40;https://cbmm.mit.edu/about/people/miranda&#41;.)
@@ -88,13 +88,18 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 [**[Award]**](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
 
-
 # Media Coverage
 
 Below are selected links showcasing media coverage of some of my work:
 
-[The New York Times: Silicon Valley Confronts the Idea That the ‘Singularity’ Is Here](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
+[**The New York Times**: Silicon Valley Confronts the Idea That the ‘Singularity’ Is Here](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
 
-[Stanford's Institute for Human-Centered Artificial Intelligence (HAI): AI’s Ostensible Emergent Abilities Are a Mirage](https://hai.stanford.edu/news/ais-ostensible-emergent-abilities-are-mirage)
+[**Y Combinator News**: Are emergent abilities of large language models a mirage?](https://news.ycombinator.com/item?id=35768824)
 
-We were also covered by [Forbes, Y Combinator News, Vice, Medium, Hackwernews, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage&sca_esv=601452934&rlz=1C5CHFA_enUS741US741&sxsrf=ACQVn0-c2GdoTGcENwUnRQq9OL9o9oMnRw%3A1706215019783&ei=a8ayZdCpL_DnkPIP4pu2yA4&oq=are+emergent+abilities+of+large++a+mirage&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFyZSBlbWVyZ2VudCBhYmlsaXRpZXMgb2YgbGFyZ2UgIGEgbWlyYWdlKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMc-UKcEWNw3cAB4AZABAJgBWqABqAmqAQIxN7gBA8gBAPgBAcICBBAAGEfCAgQQIxgnwgIKECMYgAQYigUYJ8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAggQABiABBixA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1), courtesy of Google search. 
+[**Quanta Magazine**: How Quickly Do Large Language Models Learn Unexpected Skills? - A new study suggests that so-called emergent abilities actually develop gradually and predictably, depending on how you measure them.](https://www.quantamagazine.org/how-quickly-do-large-language-models-learn-unexpected-skills-20240213/)
+
+[**Stanford's Institute for Human-Centered Artificial Intelligence (HAI)**: AI’s Ostensible Emergent Abilities Are a Mirage](https://hai.stanford.edu/news/ais-ostensible-emergent-abilities-are-mirage)
+
+[**Forbes**: AI ‘Emergent Abilities’ Are A Mirage, Says AI Researcher](https://www.forbes.com/sites/andreamorris/2023/05/09/ai-emergent-abilities-are-a-mirage-says-ai-researcher/?sh=1ec9b33f283f)
+
+This work was also covered by: [Vice, Medium, Hackwernews, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage&sca_esv=601452934&rlz=1C5CHFA_enUS741US741&sxsrf=ACQVn0-c2GdoTGcENwUnRQq9OL9o9oMnRw%3A1706215019783&ei=a8ayZdCpL_DnkPIP4pu2yA4&oq=are+emergent+abilities+of+large++a+mirage&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFyZSBlbWVyZ2VudCBhYmlsaXRpZXMgb2YgbGFyZ2UgIGEgbWlyYWdlKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMc-UKcEWNw3cAB4AZABAJgBWqABqAmqAQIxN7gBA8gBAPgBAcICBBAAGEfCAgQQIxgnwgIKECMYgAQYigUYJ8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAggQABiABBixA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1), courtesy of Google search. 

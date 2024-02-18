@@ -3,23 +3,6 @@ layout: page
 title: Home
 ---
 
-[//]: # (# About me &#40;Informal&#41; #)
-
-[//]: # ()
-[//]: # (I am a scientist and an engineer that is interested in moving forward the powerful)
-
-[//]: # (and beautiful field of A.I. closer to true Artificial General Intelligence &#40;AGI&#41;.)
-
-[//]: # (I believe an important direction is understanding how to combine cognitive and neuro-inspired models, specially investigating how reasoning and learning work together.)
-
-[//]: # (In addition, I also believe being able to adapt to new tasks using prior experience and knowledge is crucial for AGI to occur.)
-
-[//]: # (Consequently, I decided to pursue a Ph.D in AI and machine learning. )
-
-[//]: # (I currently work on meta-learning and machine learning &#40;ML&#41; for)
-
-[//]: # (Theorem Proving &#40;TP&#41; at Stanford University. )
-
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
@@ -50,7 +33,6 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 
 ![me](/images/me.png){:class="img-responsive"}
 
-
 # Contact #
 
 Department of Computer Science
@@ -58,15 +40,6 @@ Gates Computer Science Building
 353 Jane Stanford Way
 Stanford, CA 94305
 brando9 {at} stanford DoT Edu
-
-<!-- # Navigating my site # -->
-
-<!-- I'm still organizing and continually working on my website but check my blog
-where I am hoping to share useful things I know: -->
-
-<!-- - Related to dance -->
-
-<!-- I have cool [projects](/miscellaneous-projects) you might want to check. -->
 
 # External links #
 
