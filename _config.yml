@@ -23,7 +23,7 @@ email: brando9 {at} stanford . edu
 description: >
   The views and opinions expressed on this site are strictly those of the author and do not reflect the views or 
   opinions of any entity I am affiliated or have been affiliated -- nor any past, present, or future clients/employers.
-baseurl: "/brandomiranda" # the subpath of your site, e.g. /blog
+baseurl: "/brandomiranda/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BrandoHablando
 github_username:  brando90

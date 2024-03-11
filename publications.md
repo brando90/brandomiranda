@@ -102,4 +102,6 @@ Below are selected links showcasing media coverage of some of my work:
 
 [**Forbes**: AI ‘Emergent Abilities’ Are A Mirage, Says AI Researcher](https://www.forbes.com/sites/andreamorris/2023/05/09/ai-emergent-abilities-are-a-mirage-says-ai-researcher/?sh=1ec9b33f283f)
 
+[**Andrew Ng** endorsed our paper & believes it is evidence that AGI won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
+
 This work was also covered by: [Vice, Medium, Hackwernews, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage&sca_esv=601452934&rlz=1C5CHFA_enUS741US741&sxsrf=ACQVn0-c2GdoTGcENwUnRQq9OL9o9oMnRw%3A1706215019783&ei=a8ayZdCpL_DnkPIP4pu2yA4&oq=are+emergent+abilities+of+large++a+mirage&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFyZSBlbWVyZ2VudCBhYmlsaXRpZXMgb2YgbGFyZ2UgIGEgbWlyYWdlKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMc-UKcEWNw3cAB4AZABAJgBWqABqAmqAQIxN7gBA8gBAPgBAcICBBAAGEfCAgQQIxgnwgIKECMYgAQYigUYJ8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAggQABiABBixA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1), courtesy of Google search. 
