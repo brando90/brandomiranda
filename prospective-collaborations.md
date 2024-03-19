@@ -63,6 +63,11 @@ If you have your own or an adaptation of my that aligns with my interests, I'm h
 but  will expect that you have scoped it in a persuasive matter, thought about the impact, and have a clear plan for how you will execute it.
 Though, I don't expect you to come with your own project. 
 
+## Requesting a Letter Of Recommendation (LOR) from me
+
+If would like a LOR from me, [please read these instructions](https://docs.google.com/document/d/1Z0pFw_f7ZorZzieOfFxEKkEA143rKQjggoIZved76qk/edit) and provide this info at least 3 weeks in advance to the deadline. 
+Best of luck!
+
 [//]: # (Hi everyone,)
 
 [//]: # ()
