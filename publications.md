@@ -92,7 +92,10 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 Below are selected links showcasing media coverage of some of my work:
 
-[**The New York Times**: Silicon Valley Confronts the Idea That the ‘Singularity’ Is Here](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
+[**Economic Report to the White House Washington**: our work was cited in the 2024 Economic Report of the president. Direct quote: "The Report presents an overview of the nation’s economic progress and makes the case for the Biden-Harris Administration’s economic policy priorities.](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/)[**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf)[**[ScreenShot]**](images/white_house_labor_substitute_huam_rs_bm_sk.png)
+<!-- [**[CopyReport]**](non_personal_documents/white house report schaeffer miranda koyejo cited.pdf) -->
+
+[**The New York Times**: Silicon Valley Confronts the Idea That the ‘Singularity’ Is Here.](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
 
 [**Y Combinator News**: Are emergent abilities of large language models a mirage?](https://news.ycombinator.com/item?id=35768824)
 
