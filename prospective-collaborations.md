@@ -5,7 +5,8 @@ title: Prospective Collaborations
 
 # Prospective Collaborations: Interested in a collaborating with me on a research project?
 
-This is a great read for everyone: [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html).
+This is a great read for everyone: [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html). 
+I also recommend reading [amazon's leadership principles](https://docs.google.com/document/d/1k3d3_AOp-Y22L-GbgHivDqKe9r9LC5nscaIzbm3LWYc/edit#heading=h.rzuft8oj1jyz).
 
 ## Postdocs, Junior student, fellow Graduates students, and the rest 
 
@@ -23,14 +24,18 @@ The application process to work with me is designed to ensure dedicated, indepen
 In order to be considered, please adhere to the following steps 
 -- where step 1-4 should be included in your first email to me:
 
-1. Submit a small paragraph detailing your motivation for engaging in research and career plans. Along stating if you can commit to a minimum of 10 hours per week. I typically recommend a 20-hour weekly commitment, as research can be challenging, and it is crucial for the time be productive for all parties involved. A commitment of at least two quarters is required, with a recommended duration of three to four quarters (~1 year ideal).
+1. Submit a small paragraph detailing your motivation for engaging in research and career plans. Along stating if you can commit to a minimum of 15 hours per week. Realistically 20-hour weekly commitment is what will get us results in research and make not only my time productive but also your time. Research is challenging. A commitment of at least two quarters is required, with a recommended duration of three to four quarters (~1 year ideal).
 2. Provide me a copy of your CV and all relevant academic transcripts. It is your responsibility to clarify any unfamiliar information or discrepancies that may be present in the documents. Completion of classes related to Machine Learning, such as CS 229 or Deep Learning CS 230, is a strongly suggested (or equivalent experience), as well as coding/software development experience.
 3. I would also like to learn about your proficiencies in the areas of mathematics, science, and engineering. Mention this in your e-mail please. 
 4. Obtain a recommendation from a previous mentor/teacher/profess. At the very least an e-mail where someone endorses you. The best recommendation would be a strong letter of recommendation -- ideally from a faculty member. While a brief letter/e-mail helps, a more comprehensive endorsement is preferred. If you've taken [CS 197](https://web.stanford.edu/class/cs197/) at Stanford please mention and if you can have either the instructor of your mentor write a brief e-mail of endorsement.
+5. Confirmation that you read [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html) 
+6. Confirm that you are interested in proceeding and prepare for your 30min coding & research interview. You will be tasked to 1. Go through [the starter task](https://docs.google.com/document/d/1k3d3_AOp-Y22L-GbgHivDqKe9r9LC5nscaIzbm3LWYc/edit#heading=h.rzuft8oj1jyz), 2. Go through the research papers for your project since I will ask you questions that tests your understanding & critical assestment of the papers (e.g., what is their main limitation?) 3. Go through your previous work experience where I want to know what **you** contributed.
+<!-- https://www.amazon.jobs/content/en/our-workplace/leadership-principles -->
+<!-- TODO: add amazon you own it -->
 
 After reviewing the above I will reply with the following if it seems we are a good match within a week:
 
-5. Take part in an 30 minutes interview; during which we will spend approximately 15 minutes discussing your contributions to a previous technical project + 7 minute discussing your background & motivations + 8 minutes discussing the potential future project.
+7. Take part in an 30 minutes interview; during which we will spend approximately 15 minutes discussing your contributions to a previous technical project + 7 minute discussing your background & motivations + 8 minutes discussing the potential future project.
 
 By following these steps, you will demonstrate your initiative along with your commitment to excellence and your ability to work independently.
 While the standards are high, we have carefully designed the requirements to encourage candidates to apply. 
