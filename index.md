@@ -5,6 +5,13 @@ title: Brando Miranda
 
 ![me](/images/me_rains_suit.jpg)
 
+- [My Google scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
+<!-- - [My home page when I was at MIT's Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda) -->
+- [Stanford profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0) and my [Stanford engineering profile](https://stanford.brightcrowd.com/eng-welcome-2022/brando-miranda)
+- [My Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
+- [My Twitter](https://twitter.com/BrandoHablando)
+- [(Maybe outdated) CV](/professional_documents/Brando_Miranda_long_CV.pdf)
+
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
@@ -43,15 +50,3 @@ Gates Computer Science Building
 353 Jane Stanford Way
 Stanford, CA 94305
 brando9 {at} stanford DoT Edu
-
-# External links #
-
-
-- [My Google scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
-- [My home page when I was at MIT's Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/about/people/miranda)
-- [My Stanford profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
-- [My Stanford engineering profile](https://stanford.brightcrowd.com/eng-welcome-2022/brando-miranda)
-<!-- - I have a passion to share my knowledge with the world. I love that with technology people have the improved opportunities to learn. With that motivation I can't help but enjoy sharing what I know in my [Quora profile](https://www.quora.com/profile/Brando-Miranda). -->
-- [My Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
-- [My CV](/professional_documents/Brando_Miranda_long_CV.pdf)
-- [My Twitter](https://twitter.com/BrandoHablando)
