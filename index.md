@@ -84,7 +84,7 @@ Ya somos como 50 en el equipo entre ambos equipos.
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?
 *Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
 ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop award.
-[**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)[**[ICML Award]**]((/professional_documents/tifa%20award%20elusive.png))
+[**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)[**[ICML Award]**]((/professional_documents/tifa_award_elusive.png))
 
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
@@ -193,7 +193,7 @@ This work was also covered by: [Vice, Medium, Hackwernews, NeurIPS blog, Reddit,
 
 # Awards
 
-- [ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop (July 2024)](/professional_documents/tifa_20award_20elusive.png)
+- [ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop (July 2024)](/professional_documents/tifa_award_elusive.png)
 - [NeurIPS Outstanding Main Track Paper Award, (December 11 2023) (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 - EDGE Scholar, Stanford University (September 2022)
 - Stanford School of Engineering fellowship, Stanford University (September 2022)
