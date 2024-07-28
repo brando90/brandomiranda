@@ -19,6 +19,8 @@ Stanford, CA 94305 -->
 
 -----
 
+<!-- https://chatgpt.com/share/34e27219-4ed4-4387-a2e9-ab06ef433409 -->
+
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
