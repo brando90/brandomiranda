@@ -52,7 +52,11 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 
 [//]: # (Note: * denotes equal contribution.)
 
-[//]: # (TODO put full list in my own website like Tony? perhaps not more work to manage)
+
+Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?
+*Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
+ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop award.
+[**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)[**[ICML Award]**]((/professional_documents/tifa%20award%20elusive.png))
 
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
