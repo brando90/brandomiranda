@@ -193,13 +193,13 @@ This work was also covered by: [Vice, Medium, Hackwernews, NeurIPS blog, Reddit,
 # Awards
 
 - [ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop (July 2024)](/professional_documents/tifa%20award%20elusive.png)
-- NeurIPS Outstanding Main Track Paper Award, (December 11 2023) (top 0.4% and only 2 papers selected)
+- [NeurIPS Outstanding Main Track Paper Award, (December 11 2023) (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 - EDGE Scholar, Stanford University (September 2022)
 - Stanford School of Engineering fellowship, Stanford University (September 2022)
 - Best Research Project Award for Graduate Course CS 598 "Learning to Learn" by professor Y. Wang (December 2020).
 - HSF (Hispanic Scholarship Fund) Scholar (2020)
 - Honorable Mention, Ford Foundation Fellowship (2020, 2021)
-- Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC), (December 2019)
+- [Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC), (December 2019)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
 - Computer Science Excellence Saburo Muroga Endowed Fellow, (2019-2020)
 - Sloan Scholar, Alfred P. Sloan Foundations Minority Ph.D. (MPHD) Program, awarded in (2018-2019)
 - Grainger Engineering SURGE Fellowship, awarded in (2018-2019)
