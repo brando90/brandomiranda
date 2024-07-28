@@ -26,8 +26,7 @@ Stanford, CA 94305 -->
 Brando Miranda is currently a Computer Science AI/ML Ph.D. student at [Stanford University ](https://stanford.edu)under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group.](https://cs.stanford.edu/~sanmi/index.html) 
 Previously, Miranda was a graduate researcher at [University of Illinois Urbana-Champaign](https://illinois.edu/), 
 a Research Assistant at the Massachusetts Institute of Technology (MIT)’s Center for Brain Minds and Machines (CBMM), and a graduate student at MIT.
-Miranda's research interests focuses in data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), 
-[Transformative Artificial Intelligence (TAI)](https://forum.effectivealtruism.org/topics/transformative-artificial-intelligence), and machine learning for mathematics and verified code. 
+Miranda's research interests focuses in data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Transformative Artificial Intelligence (TAI)](https://forum.effectivealtruism.org/topics/transformative-artificial-intelligence), and machine learning for mathematics and verified code. 
 Miranda earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting research on Deep Learning Theory under the guidance of [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/).
 Miranda has been the recipient of several awards; including the presitgious 
 [NeurIPS Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/),
@@ -36,7 +35,8 @@ two Honorable Mention with the Ford Foundation Fellowship,
 Computer Science Excellence Saburo Muroga Endowed Fellow, 
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
 Miranda is more than a researcher: he is an innovator, a communicator, and deeply passionate about the future.
-Therefore, he worked as a Machine Learning advisor at [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/) --  where he was a key contributor to developing the [Morph Prover,](https://huggingface.co/morph-labs/morph-prover-v0-7b) a frontier model for mathematics and verified code in [Lean 4](https://leanprover-community.github.io/), and [Moogle.ai,](https://www.moogle.ai/) a search engine for mathematical theorems in Lean 4.
+Therefore, he collaborated and worked as a Machine Learning advisor at the AI start up [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/).
+He was a key contributor to the [Morph Prover,](https://huggingface.co/morph-labs/morph-prover-v0-7b) a frontier model for mathematics and verified code in [Lean 4](https://leanprover-community.github.io/), and [Moogle.ai,](https://www.moogle.ai/) a search engine for verified code in Lean 4.
 Aligned with his passion for innovation and start ups, he has also advised [Wise](https://wise-sales.com/about/), a Stanford based startup focused on transforming sales performance with AI. 
 
 <!-- https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/ -->
@@ -44,10 +44,13 @@ Aligned with his passion for innovation and start ups, he has also advised [Wise
 ---
 
 # Shorter Bio #
-Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford at the [STAIR (Stanford Trustworthy AI Research) research group](https://cs.stanford.edu/~sanmi/index.html).
-Miranda’s research interests lie in data-centric machine learning for foundation models, meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
-Miranda is more than a researcher, he is an innovator, communicator -- passionate about the future.
-Thus, he has worked as a Machine Learning advisor at [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/)--  where he was a key contributor to developing the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b), a frontier model for verified programming and has also advise [Wise](https://wise-sales.com/about/) (Stanford startup focused on transforming sales with AI). 
+Brando Miranda is currently a Computer Science AI/ML Ph.D. student at [Stanford University ](https://stanford.edu)under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group.](https://cs.stanford.edu/~sanmi/index.html)
+Miranda's research interests focuses in data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Transformative Artificial Intelligence (TAI)](https://forum.effectivealtruism.org/topics/transformative-artificial-intelligence), and machine learning for mathematics and verified code. 
+Miranda has been the recipient of several awards; including the presitgious 
+[NeurIPS Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected).](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
+Miranda is more than a researcher: he is an innovator, a communicator, and deeply passionate about the future.
+Therefore, he collaborated and worked as a Machine Learning advisor at the AI start up [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/) where he was a key contributor to the [Morph Prover,](https://huggingface.co/morph-labs/morph-prover-v0-7b) a frontier model for mathematics and verified code, and [Moogle.ai,](https://www.moogle.ai/) a search engine for verified code.
+In addition, he advised [Wise](https://wise-sales.com/about/), a Stanford based startup focused on transforming sales performance with AI.
 
 <!-- 
 Sure! Mira todo anda en mi LinkedIn o personal website. 
