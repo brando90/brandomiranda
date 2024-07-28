@@ -48,8 +48,8 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 Miranda is more than a researcher, he is an innovator, communicator -- passionate about the future.
 Thus, he has worked as a Machine Learning advisor at [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/)--  where he was a key contributor to developing the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b), a frontier model for verified programming and has also advise [Wise](https://wise-sales.com/about/) (Stanford startup focused on transforming sales with AI). 
 
-
-<!-- Sure! Mira todo anda en mi LinkedIn o personal website. 
+<!-- 
+Sure! Mira todo anda en mi LinkedIn o personal website. 
 
 Mira las paginas:
 Wise-sales.com 
@@ -59,11 +59,10 @@ Este es un forbes article que habla de Wise Meetings:
 https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/
 
 Aqui el link donde hablo de ellas en mi personal website:
-https://www.santiagocampo.com/wise-meetings -->
-
+https://www.santiagocampo.com/wise-meetings 
 
 Ya somos como 50 en el equipo entre ambos equipos.
-
+ -->
 
 [//]: # (https://cs.stanford.edu/~sanmi/preparation.html  working with me, TODO: )
 
