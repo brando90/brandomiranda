@@ -30,7 +30,7 @@ Miranda's research interests focuses in data-centric machine learning for [Front
 Miranda earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting research on Deep Learning Theory under the guidance of [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/).
 Miranda has been the recipient of several awards; including the presitgious 
 [NeurIPS Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/),
-the Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC),
+the [Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg),
 two Honorable Mention with the Ford Foundation Fellowship,
 Computer Science Excellence Saburo Muroga Endowed Fellow, 
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
