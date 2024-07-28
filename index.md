@@ -34,12 +34,33 @@ including Most Cited Paper Certificate awarded by International Journal of Autom
 two Honorable Mention with the Ford Foundation Fellowship,
 Computer Science Excellence Saburo Muroga Endowed Fellow, 
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
+Miranda is more than a researcher, he is an innovator, communicator -- passionate about the future.
+Thus, he has worked as a Machine Learning advisor at Morph Labs --  where he was a key contributor to developing the Morph Prover, a frontier model for mathematics and formal verification (Lean 4), and Moogle.ai, a search engine for mathematical theorems in Lean 4.
+In addition, he has also advise Wise, a Stanford based startup focused on transforming sales performance with AI. 
 
 ---
 
 # Shorter Bio #
 Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford at the [STAIR (Safe and Trustworthy AI) research group](https://cs.stanford.edu/~sanmi/index.html).
 Miranda’s research interests lie in data-centric machine learning for foundation models, meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
+Miranda is more than a researcher, he is an innovator, communicator -- passionate about the future.
+Thus, he has worked as a Machine Learning advisor at Morph Labs --  where he was a key contributor to developing the Morph Prover, a frontier model for verified programming and has also advise Wise (Stanford startup focused on transforming sales with AI). 
+
+
+<!-- Sure! Mira todo anda en mi LinkedIn o personal website. 
+
+Mira las paginas:
+Wise-sales.com 
+Wise-meetings.com 
+
+Este es un forbes article que habla de Wise Meetings:
+https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/
+
+Aqui el link donde hablo de ellas en mi personal website:
+https://www.santiagocampo.com/wise-meetings -->
+
+
+Ya somos como 50 en el equipo entre ambos equipos.
 
 
 [//]: # (https://cs.stanford.edu/~sanmi/preparation.html  working with me, TODO: )
