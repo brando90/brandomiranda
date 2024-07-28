@@ -5,6 +5,7 @@ title: Awards
 
 # Awards
 
+- [ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop (July 2024)](/professional_documents/tifa%20award%20elusive.png)
 - NeurIPS Outstanding Main Track Paper Award, (December 11 2023) (top 0.4% and only 2 papers selected)
 - EDGE Scholar, Stanford University (September 2022)
 - Stanford School of Engineering fellowship, Stanford University (September 2022)
