@@ -24,7 +24,7 @@ Stanford, CA 94305 -->
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
-in the department of Computer Science at the [STAIR (Safe and Trustworthy AI) research group](https://cs.stanford.edu/~sanmi/index.html).
+in the department of Computer Science at the [STAIR (Stanford Trustworthy AI Research) research group](https://cs.stanford.edu/~sanmi/index.html).
 Previously he has been a graduate student at [University of Illinois Urbana-Champaign](https://illinois.edu/), Research Assistant at MIT's 
 [Center for Brain Minds and Machines (CBMM)](https://cbmm.mit.edu/), and a graduate student at the [Massachusetts Institute of Technology (MIT)](https://mit.edu/).
 Miranda's research interests lie in data-centric machine learning for foundation models, 
@@ -43,7 +43,7 @@ In addition, he has also advise [Wise](https://wise-sales.com/about/), a Stanfor
 ---
 
 # Shorter Bio #
-Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford at the [STAIR (Safe and Trustworthy AI) research group](https://cs.stanford.edu/~sanmi/index.html).
+Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford at the [STAIR (Stanford Trustworthy AI Research) research group](https://cs.stanford.edu/~sanmi/index.html).
 Miranda’s research interests lie in data-centric machine learning for foundation models, meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
 Miranda is more than a researcher, he is an innovator, communicator -- passionate about the future.
 Thus, he has worked as a Machine Learning advisor at [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/)--  where he was a key contributor to developing the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b), a frontier model for verified programming and has also advise [Wise](https://wise-sales.com/about/) (Stanford startup focused on transforming sales with AI). 
