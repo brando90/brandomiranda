@@ -17,6 +17,8 @@ Gates Computer Science Building
 353 Jane Stanford Way
 Stanford, CA 94305 -->
 
+-----
+
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
@@ -33,6 +35,8 @@ two Honorable Mention with the Ford Foundation Fellowship,
 Computer Science Excellence Saburo Muroga Endowed Fellow, 
 Stanford School of Engineering fellowship, and is currently an EDGE Scholar at Stanford University.
 
+---
+
 # Shorter Bio #
 Brando Miranda is a current Ph.D. Student at Stanford University under the supervision of Professor Sanmi Koyejo in the Department of Computer Science at Stanford at the [STAIR (Safe and Trustworthy AI) research group](https://cs.stanford.edu/~sanmi/index.html).
 Miranda’s research interests lie in data-centric machine learning for foundation models, meta-learning, machine learning for theorem proving, and human & brain-inspired Artificial Intelligence (AI). 
@@ -47,6 +51,8 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 
 <!-- ![me](/images/me_rains_suit.jpg){:class="img-responsive"} -->
 <!-- ![me](/images/me_rains_suit.jpg) -->
+
+---
 
 # Selected Publications [ [Full List] ](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 
@@ -69,6 +75,10 @@ Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 **Preprint & ICML Challenges in Deployable Generative AI Workshop 2023.**
 [**[arXiv]**](https://arxiv.org/abs/2304.15004)  -->
+
+Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language
+[**[blog]**](https://morph.so/blog/the-personal-ai-proof-engineer/)
+[**[HF Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
 
 Is Pre-training Truly Better Than Meta-Learning?
 Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
@@ -134,6 +144,8 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 [**[Award]**](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
 
+---
+
 # Media Coverage
 
 Below are selected links showcasing media coverage of some of my work:
@@ -155,6 +167,7 @@ Below are selected links showcasing media coverage of some of my work:
 
 This work was also covered by: [Vice, Medium, Hackwernews, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage&sca_esv=601452934&rlz=1C5CHFA_enUS741US741&sxsrf=ACQVn0-c2GdoTGcENwUnRQq9OL9o9oMnRw%3A1706215019783&ei=a8ayZdCpL_DnkPIP4pu2yA4&oq=are+emergent+abilities+of+large++a+mirage&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFyZSBlbWVyZ2VudCBhYmlsaXRpZXMgb2YgbGFyZ2UgIGEgbWlyYWdlKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMc-UKcEWNw3cAB4AZABAJgBWqABqAmqAQIxN7gBA8gBAPgBAcICBBAAGEfCAgQQIxgnwgIKECMYgAQYigUYJ8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAggQABiABBixA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1), courtesy of Google search. 
 
+---
 
 # Awards
 
