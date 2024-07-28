@@ -3,6 +3,8 @@ layout: page
 title: Brando Miranda
 ---
 
+![me](/images/me_rains_suit.jpg)
+
 # Bio #
 
 Brando Miranda is a current Ph.D. Student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html)
@@ -32,7 +34,7 @@ Miranda’s research interests lie in data-centric machine learning for foundati
 [//]: # (someone from caltech or something like htat?)
 
 <!-- ![me](/images/me_rains_suit.jpg){:class="img-responsive"} -->
-![me](/images/me_rains_suit.jpg)
+<!-- ![me](/images/me_rains_suit.jpg) -->
 
 # Contact #
 
