@@ -11,6 +11,7 @@ title: Brando Miranda
 - [Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
 - [MIT and CBMM Profile](https://cbmm.mit.edu/about/people/miranda)
 - brando9 {at} stanford DoT Edu
+- [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9) 
 <!-- - [(Maybe outdated) CV](/professional_documents/Brando_Miranda_long_CV.pdf) -->
 <!-- Department of Computer Science
 Gates Computer Science Building
