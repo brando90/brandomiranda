@@ -25,12 +25,12 @@ Stanford, CA 94305 -->
 
 # Bio #
 
-Brando Miranda is currently a Computer Science AI/ML Ph.D. student at [Stanford University ](https://stanford.edu)under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group.](https://cs.stanford.edu/~sanmi/index.html) 
+Brando Miranda is currently a Computer Science Artificial Intelligence/Machine Learning (AI/ML) Ph.D. student at [Stanford University ](https://stanford.edu)under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group.](https://cs.stanford.edu/~sanmi/index.html) 
 Previously, Miranda was a graduate researcher at [University of Illinois Urbana-Champaign](https://illinois.edu/), 
 a Research Assistant at the Massachusetts Institute of Technology (MIT)’s Center for Brain Minds and Machines (CBMM), and a graduate student at MIT.
 Miranda's research interests focuses in data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Transformative Artificial Intelligence (TAI)](https://forum.effectivealtruism.org/topics/transformative-artificial-intelligence), and machine learning for mathematics and verified code. 
 Miranda earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting research on Deep Learning Theory under the guidance of [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/).
-Miranda has been the recipient of several awards; including the presitgious 
+Miranda has been the recipient of several awards; including the prestigious 
 [NeurIPS Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/),
 the [Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg),
 two Honorable Mention with the Ford Foundation Fellowship,
@@ -46,9 +46,9 @@ Aligned with his passion for innovation and start ups, he has also advised [Wise
 ---
 
 # Shorter Bio #
-Brando Miranda is currently a Computer Science AI/ML Ph.D. student at [Stanford University ](https://stanford.edu)under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group.](https://cs.stanford.edu/~sanmi/index.html)
+Brando Miranda is currently a Computer Science Artificial Intelligence/Machine Learning (AI/ML) Ph.D. student at [Stanford University ](https://stanford.edu)under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group.](https://cs.stanford.edu/~sanmi/index.html)
 Miranda's research interests focuses in data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Transformative Artificial Intelligence (TAI)](https://forum.effectivealtruism.org/topics/transformative-artificial-intelligence), and machine learning for mathematics and verified code. 
-Miranda has been the recipient of several awards; including the presitgious 
+Miranda has been the recipient of several awards; including the prestigious 
 [NeurIPS Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected).](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 Miranda is more than a researcher: he is an innovator, a communicator, and deeply passionate about the future.
 Therefore, he collaborated and worked as a Machine Learning advisor at the AI start up [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/) where he was a key contributor to the [Morph Prover,](https://huggingface.co/morph-labs/morph-prover-v0-7b) a frontier model for mathematics and verified code, and [Moogle.ai,](https://www.moogle.ai/) a search engine for verified code.
@@ -74,7 +74,7 @@ Ya somos como 50 en el equipo entre ambos equipos.
 
 [//]: # (Our Culture:
 [//]: # (  
-[//]: # (Our lab has a high technical bar, including a coding interview for all applicants. We constantly push each other to improve through continuous, regular feedback. We take mentorship seriously and are committed to students' success beyond their time in our lab. As a member of our lab, you will be working alongside prior USACO and IMO participants. We have exceedingly high expectations of all collaborators and do not tolerate mediocrity. look for his lab page Sebastian Thrun's lab.)
+[//]: # (Our lab has a high technical bar, including a coding interview for all applicants. We constantly push each other to improve through continuous, regular feedback. We take mentorship seriously and are committed to students' success beyond their time in our lab. As a member of our lab, you will be working alongside prior USA Computing Olympiad (USACO) and International Mathematical Olympiad (IMO) participants. We have exceedingly high expectations of all collaborators and do not tolerate mediocrity. look for his lab page Sebastian Thrun's lab.)
 [//]: # (someone from caltech or something like htat?)
 
 <!-- ![me](/images/me_rains_suit.jpg){:class="img-responsive"} -->
@@ -86,22 +86,28 @@ Ya somos como 50 en el equipo entre ambos equipos.
 
 [//]: # (Note: * denotes equal contribution.)
 
-
-Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs
-*Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.*
-<!-- [**[arxiv]**](TODO) -->
-[**[International Conference on Machine Learning (ICML)]**](https://icml.cc/virtual/2025/poster/44232)
-[**[NeurIPS MATH-AI Workshop 2024]**]](https://neurips.cc/virtual/2024/98507) 
-<!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
-
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?
 *Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
-ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop award.
-[**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)[**[ICML Award]**]((/professional_documents/tifa_award_elusive.png))
+[**[International Conference on Machine Learning (ICML)]**](https://icml.cc/virtual/2025/poster/45753) <!-- TODO put icml paper link -->
+[[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award.**]](/professional_documents/tifa_award_elusive.png)
+[**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
+
+Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs
+*Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.* <!-- [**[arxiv]**](TODO) -->
+[**[International Conference on Machine Learning (ICML)]**](https://icml.cc/virtual/2025/poster/44232) <!-- TODO put icml paper link -->
+[**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
+<!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
+
+Failures to Find Transferable Image Jailbreaks Between Vision-Language Models
+*Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
+[**[International Conference on Machine Learning (ICML)]**]()
+[**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop Contributed Talk]**](https://neurips.cc/virtual/2024/106794)
+[**[International Conference on Learning Representations (ICLR)]**](https://openreview.net/forum?id=wvFnqVVUhN)
+<!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
 Are Emergent Abilities of Large Language Models a Mirage?
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
-[**[NeurIPS Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
+[**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
 [**[Stanford IEEE Invited Talk 2023]**](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl)
 <!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
@@ -113,19 +119,19 @@ Are Emergent Abilities of Large Language Models a Mirage?
 
 Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language
 [**[blog]**](https://morph.so/blog/the-personal-ai-proof-engineer/)
-[**[HF Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
+[**[Hugging Face Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
 
 Is Pre-training Truly Better Than Meta-Learning?
 Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.
-**ICML Data-Centric Machine Learning Workshop 2023.**
+[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**]
 [**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arxiv]**](https://arxiv.org/abs/2306.13841)
 [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf)
-[**[Code Coming Soon]**]()
+<!-- [**[Code Coming Soon]**]() -->
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.
 *Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
-**ICML Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023.**
+[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023]**]
 [**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arxiv]**](https://arxiv.org/abs/2306.13840)
 [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
@@ -140,7 +146,7 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 [The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence.](https://openreview.net/forum?id=Z75fwzPdty)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
-**NeurIPS Meta-Learning Workshop 2022, Contributed Talk.**
+[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022, Contributed Talk]**]
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
@@ -155,7 +161,7 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 [Does MAML Only Work via Feature Re-use? A Data Centric Perspective](https://arxiv.org/abs/2112.13137)
 *Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
-**Preprint, Best research project award for graduate course CS 598 “Learning to Learn” by professor Y. Wang UIUC (December 2020).**
+**Preprint, Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang UIUC (December 2020).**
 [**[arXiv]**](https://arxiv.org/abs/2112.13137)
 [**[5 minute video]**](https://youtu.be/WyG6bwGnbGc)
 
@@ -163,7 +169,7 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 [Weight and Batch Normalization implement Classical Generalization Bounds.](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 *Tomaso Poggio Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
-**ICML Workshop 2019**
+[**[International Conference on Machine Learning (ICML) Workshop 2019]**]
 [**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 
 [//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
@@ -185,20 +191,20 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 Below are selected links showcasing media coverage of some of my work:
 
-[**Economic Report to the White House Washington**: our work was cited in the 2024 Economic Report of the president. Direct quote: "The Report presents an overview of the nation’s economic progress and makes the case for the Biden-Harris Administration’s economic policy priorities.](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/)[**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf)[**[ScreenShot]**](images/white_house_labor_substitute_huam_rs_bm_sk.png)
+[**Economic Report to the White House Washington**: our work was cited in the 2024 Economic Report of the president. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities.](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/)[**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf)[**[ScreenShot]**](images/white_house_labor_substitute_huam_rs_bm_sk.png)
 <!-- [**[CopyReport]**](non_personal_documents/white house report schaeffer miranda koyejo cited.pdf) -->
 
-[**The New York Times**: Silicon Valley Confronts the Idea That the ‘Singularity’ Is Here.](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
+[**The New York Times**: Silicon Valley Confronts the Idea That the 'Singularity' Is Here.](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
 
 [**Y Combinator News**: Are emergent abilities of large language models a mirage?](https://news.ycombinator.com/item?id=35768824)
 
 [**Quanta Magazine**: How Quickly Do Large Language Models Learn Unexpected Skills? - A new study suggests that so-called emergent abilities actually develop gradually and predictably, depending on how you measure them.](https://www.quantamagazine.org/how-quickly-do-large-language-models-learn-unexpected-skills-20240213/)
 
-[**Stanford's Institute for Human-Centered Artificial Intelligence (HAI)**: AI’s Ostensible Emergent Abilities Are a Mirage](https://hai.stanford.edu/news/ais-ostensible-emergent-abilities-are-mirage)
+[**Stanford's Institute for Human-Centered Artificial Intelligence (HAI)**: AI's Ostensible Emergent Abilities Are a Mirage](https://hai.stanford.edu/news/ais-ostensible-emergent-abilities-are-mirage)
 
-[**Forbes**: AI ‘Emergent Abilities’ Are A Mirage, Says AI Researcher](https://www.forbes.com/sites/andreamorris/2023/05/09/ai-emergent-abilities-are-a-mirage-says-ai-researcher/?sh=1ec9b33f283f)
+[**Forbes**: AI 'Emergent Abilities' Are A Mirage, Says AI Researcher](https://www.forbes.com/sites/andreamorris/2023/05/09/ai-emergent-abilities-are-a-mirage-says-ai-researcher/?sh=1ec9b33f283f)
 
-[**Andrew Ng** endorsed our paper & believes it is evidence that AGI won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
+[**Andrew Ng** endorsed our paper & believes it is evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
 
 This work was also covered by: [Vice, Medium, Hackwernews, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage&sca_esv=601452934&rlz=1C5CHFA_enUS741US741&sxsrf=ACQVn0-c2GdoTGcENwUnRQq9OL9o9oMnRw%3A1706215019783&ei=a8ayZdCpL_DnkPIP4pu2yA4&oq=are+emergent+abilities+of+large++a+mirage&gs_lp=Egxnd3Mtd2l6LXNlcnAiKWFyZSBlbWVyZ2VudCBhYmlsaXRpZXMgb2YgbGFyZ2UgIGEgbWlyYWdlKgIIADIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeSMc-UKcEWNw3cAB4AZABAJgBWqABqAmqAQIxN7gBA8gBAPgBAcICBBAAGEfCAgQQIxgnwgIKECMYgAQYigUYJ8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICBRAAGIAEwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYkQIYsQMYgwHCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIOEAAYgAQYigUYsQMYgwHCAggQABiABBixA-IDBBgAIEGIBgGQBgg&sclient=gws-wiz-serp#ip=1), courtesy of Google search. 
 
