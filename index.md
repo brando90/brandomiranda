@@ -85,6 +85,13 @@ Ya somos como 50 en el equipo entre ambos equipos.
 [//]: # (Note: * denotes equal contribution.)
 
 
+Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs
+*Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.*
+<!-- [**[arxiv]**](TODO) -->
+[**[International Conference on Machine Learning (ICML)]**](https://icml.cc/virtual/2025/poster/44232)
+[**[NeurIPS MATH-AI Workshop 2024]**]](https://neurips.cc/virtual/2024/98507) 
+<!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
+
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?
 *Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
 ICML Outstanding Paper TiFA Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop award.
