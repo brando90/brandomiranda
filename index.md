@@ -100,19 +100,19 @@ Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Pr
 
 Is Pre-training Truly Better Than Meta-Learning? (2023)
 *Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.*
-[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**](https://icml.cc/virtual/2023/26924#:~:text=Abstract%3A,outperforms%20standard%20meta%2Dlearning%20algorithms.)
+[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**](https://icml.cc/virtual/2023/26924#:~:text=Abstract%3A,outperforms%20standard%20meta%2Dlearning%20algorithms)
 [**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13841)
-[**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf)
+<!-- [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf) -->
 <!-- [**[Code Coming Soon]**]() -->
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data (2023)
 *Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
-[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023]**]
+[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023]**](https://icml.cc/virtual/2023/28937)
 [**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13840)
-[**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf)
 [**[Code]**](https://github.com/alycialee/beyond-scale-language-data-diversity)
+<!-- [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf) -->
 
 [//]: # ([**[Stanford Data Science Poster]**]&#40;https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true&#41;)
 [//]: # ([**[Short 8 page paper]**]&#40;professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf&#41;)
@@ -123,12 +123,11 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence (2022)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
-[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022, Contributed Talk]**]
+[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022, Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 [**[OpenReview]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
-[**[15 minute video Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 <!-- [**[Code Coming Soon]**]() -->
 
 [//]: # ([**[PDF]**]&#40;https://openreview.net/forum?id=Z75fwzPdty&#41;)
@@ -139,7 +138,7 @@ The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperfo
 
 Does MAML Only Work via Feature Re-use? A Data Centric Perspective (2021)
 *Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
-**Preprint, Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang UIUC (December 2020).**
+**[Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang UIUC (December 2020)]**
 [**[arXiv]**](https://arxiv.org/abs/2112.13137)
 [**[5 minute video]**](https://youtu.be/WyG6bwGnbGc)
 
@@ -148,19 +147,17 @@ Does MAML Only Work via Feature Re-use? A Data Centric Perspective (2021)
 Weight and Batch Normalization implement Classical Generalization Bounds (2019)
 *Tomaso Poggio, Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
 [**[International Conference on Machine Learning (ICML) Workshop 2019]**](https://cbmm.mit.edu/publications/weight-and-batch-normalization-implement-classical-generalization-bounds)
-[**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers)
+[**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers) <!-- Ok to have pdf link for this one-->
 
 [//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
 
 High-performance and scalable on-chip digital Fourier transform spectroscopy (2018)
 *Derek M Kita, Brando Miranda, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
-**Nature Communications 2018.**
-[**[PDF]**](https://www.nature.com/articles/s41467-018-06773-2)
+[**[Nature Communications 2018]**](https://www.nature.com/articles/s41467-018-06773-2)
 
 Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review (2017)
 *Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao.*
-**International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC).**
-[**[PDF]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
+[**[International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC)]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 [**[Award]**](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
 
 ---
