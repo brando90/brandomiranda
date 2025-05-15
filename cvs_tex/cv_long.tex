@@ -1,0 +1,940 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{hyperref}
+%\usepackage{href}
+
+
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+%\usepackage[margin=0.0in]{geometry}
+\usepackage{geometry}
+ \geometry{
+% a4paper,
+ total={170mm,257mm},
+ left=1in,
+ top=20mm,
+ }
+
+% \leftmargin=0.25in
+% \oddsidemargin=0.25in
+% \textwidth=6.0in
+% \topmargin=-0.25in
+% \textheight=9.25in
+
+\raggedright
+
+\pagenumbering{gobble}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+\newcommand{\tab}{\hspace*{2em}}
+
+\newcommand{\bul}{$\bullet$ \hspace*{0em}}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{changemargin}{-0.5in}{-0.5in}
+\centering{{\Huge \scshape {\textbf{Brando Miranda}}}}\\ 
+\vspace{10 pt}
+\centering{
+{ 
+\href{https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en}{Google Scholar};
+\href{https://brando90.github.io/brandomiranda/}{Website};
+% \href{https://www.linkedin.com/in/brando-miranda-40821046/}{linkedin};
+% \href{https://github.com/brando90}{GitHub};
+% \href{https://www.quora.com/profile/Brando-Miranda}{Quora} }
+\href{https://profiles.stanford.edu/brando-miranda}{Stanford Website}
+\href{https://cbmm.mit.edu/about/people/miranda}{MIT website}
+\href{https://stackexchange.com/users/1589784/charlie-parker?tab=accounts}{Stack Exchange}; 
+}
+\\  
+\vspace{-30 pt}
+
+\textbf{brando9@stanford.edu}
+\hfill Gates Bldg., 353 Jane Stanford Way \\
+Stanford, CA, 94305. \hfill 
+\vspace{7 pt}
+} % Add this closing brace here
+\end{changemargin}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Ph.D. in Computer Science} \hfill \emph{2022-present}\\
+	\emph{Stanford University} \hfill \text{GPA: 4.045 /4.0}\\
+	\textbf{Master of Engineering in Electrical Engineering and Computer Science} \hfill \emph{2014-2016}\\
+	\emph{Massachusetts Institute of Technology} \hfill \text{GPA: 4.8/5.0}\\
+	\textbf{Bachelor of Science, Computer Science and Engineering} \hfill \emph{2010-2014} \\
+	\emph{Massachusetts Institute of Technology} \hfill \text{minor in Mathematics \& Music}\\
+\end{body}
+
+%\medskip
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Coursework}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{tabbing}
+	\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm}\=\hspace*{1cm} \kill
+	\bul Statistical Learning Theory \> \> \> \> \> \bul Intro to Machine Learning \> \> \> \> \> \> \bul Algorithmic Aspects of Machine Learning  \\
+	\bul Artificial Intelligence \> \> \> \> \> \bul Probability \& Random Variables \> \> \> \> \> \> \bul Algorithms for Inference (PGMs) \\
+	\bul Linear Algebra \> \> \> \> \> \bul Computability \& Complexity \> \> \> \> \> \> \bul Design \& Analysis of Algorithms \\
+	\bul Distributed Systems \> \> \> \> \> \bul Differential Equations \> \> \> \> \> \> \bul Online Methods in Machine Learning \\
+    \bul Computer System Security \> \> \> \> \> \bul Computer System Engineering \> \> \> \> \> \> \bul Programming Language Semantics  \\
+    \bul Learning to Learn \> \> \> \> \> \bul Reinforcement Learning \& MDPs \> \> \> \> \> \>  \bul Formal Software Development Methods \\
+    \bul Multi-variable Calculus \> \> \> \> \> \bul Mathematical Logic \> \> \> \> \> \>  \bul Advances in Foundation Models \\
+	\end{tabbing}
+	\end{body}
+%\medskip
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research Experience
+\header{Research Experience}
+
+\begin{body}
+	\vspace{16pt}
+ 
+ 	\textbf{Stanford University} - Stanford, CA \hfill \emph{September 2022 - present}\\
+	\emph{Graduate Student}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item Machine Learning PhD student with professor Sanmi Koyejo studying the foundations of meta-learning, formal data quality metrics and cognitively inspired deep learning methods for formal reasoning using Foundation Models.
+	\end{itemize}
+	\vspace{5 pt}
+
+	\textbf{IBM - ML Research Internship} - Yorktown Heights, NJ \hfill \emph{May 2022 - August 2022}\\
+	\emph{Graduate Research Intern}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item PhD research intern studying the ability of Transformer models to predict mathematical formal proofs using the program representation in the theorem proving language of Coq.
+	\end{itemize}
+
+	\textbf{University of Illinois Urbana-Champaign} - Urbana-Chmpaign, IL \hfill \emph{September 2018 - 2021}\\
+	\emph{Graduate Student}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item PhD student with professor Sanmi Koyejo working on the foundations of meta-learning and cognitively inspired deep learning methods for program synthesis, theorem proving and reasoning.
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{IBM - ML Research Internship} - Yorktown Heights, NJ \hfill \emph{May 2021 - August 2021}\\
+	\emph{Graduate Research Intern}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item PhD Research Intern studying the optimization and architectural inductive biases of Transformer models for the task of type inference of programs. 
+	\end{itemize}
+	\vspace{5 pt}
+
+	\textbf{MIT CBMM (Center for Brain Minds \& Machines)} - Cambridge, MA \hfill \emph{June 2015 - September 2018}\\
+	\emph{Research Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+        \item Research assistant with professor Tomaso Poggio working on Deep Learning Theory
+        \item Graduate research assistant, thesis topic; Training methods for Deep Gaussian Networks and function approximation for compositional hierarchical functions
+        \item My website at CBMM: \href{https://cbmm.mit.edu/about/people/miranda}{https://cbmm.mit.edu/about/people/miranda}
+	\end{itemize}
+	\vspace{5 pt}
+    
+	\textbf{MIT CBMM (Center for Brain Minds \& Machines), UIUC \& Stanford} \hfill \emph{June 2016 - present}\\
+	\emph{Research Mentor}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+        \item Stanford: Research mentor with an Undergraduate and two master students on studying data quality for Foundation Models.
+        \item UIUC: Research mentor for the REU programs
+        \item MIT CBMM: Research leader mentoring undergraduates with the Engineering of Intelligence Team \href{https://cbmm.mit.edu/eit/people}{(EIT)}
+	\end{itemize}
+	\vspace{5 pt}
+    
+ %        \textbf{MIT (Undergraduate Research Opportunity Program)} - Cambridge, MA \hfill \emph{June 2012 - August 2012}\\
+	% \emph{Undergraduate Research Assistant}\\
+	% \vspace*{-3pt}
+	% \begin{itemize} \itemsep -2pt
+	% 	\item Project: Crowd-Sourcing the Design of Drug-Delivery Vehicles for Cancer Treatment
+ %        \item Developed user interface (UI) that enables the general population to design drug delivery vehicles for cancer treatment
+ %        \item Built the communication network allowing reliable interaction amongst the user interface, database and back-end of the project
+ %        \item Presented and explained the project to the research lab.
+	% \end{itemize}
+    
+\end{body}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+\header{Selected Publications}
+\begin{body}
+    \vspace{4pt} % DONT REMOVE THIS
+
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/2304.15004}
+    {R. Schaeffer, B. Miranda, O. Koyejo, 
+    Are Emergent Abilities of Language Models a Mirage?}
+    \\
+    (NeurIPS Outstanding Paper Award \& Oral 2023, Stanford IEEE Invited Talk 2023)
+
+    % \vspace{10pt}
+    % \href{https://drive.google.com/file/d/1J_URheXRr5vbYxiSeDb1R9fKA7cLy-nj/view?usp=sharing, https://github.com/FormalML/type-parametric-synthesis}{B. Miranda, J. Rute, A. Shinnar, V. Pestun, B. Trager, 
+    % Theorem Proving as Program Prediction with Transformers}
+    % \\
+    % (Planned Release Date 2023)
+    % (In Prep.)
+
+    \vspace{10pt}
+    \href{https://drive.google.com/file/d/1J_URheXRr5vbYxiSeDb1R9fKA7cLy-nj/view?usp=sharing, https://github.com/FormalML/type-parametric-synthesis}
+    {B. Miranda, A. Shinnar, V. Pestun, B. Trager, 
+    Transformer Models for Type Inference in the Simply Typed Lambda Calculus: A Case Study in Deep Learning for Code.}
+    \\
+    (Preprint 2023)
+
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/2306.13840}
+    {A. Lee, B. Miranda, O. Koyejo,
+    Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data}
+    \\
+    (Preprint 2023)
+
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/2306.13841}
+    {B. Miranda, P. Yu, S. Goyal, Y.Wang, O. Koyejo,
+    Is Pre-training Truly Better Than Meta-Learning?}
+    \\
+    (Preprint 2023)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/2208.01545}{B. Miranda, P. Yu, Y.Wang, O. Koyejo,
+    The Curse of Zero Task Diversity: the Failure of Transfer Learning to Outperform MAML and their Empirical Equivalence.}
+    \\
+    (NeurIPS Contributed Talk - Meta-learning Workshop 2022)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/2112.13137}
+    {B. Miranda, Y.Wang, O. Koyejo.
+    Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective.} 
+    \\
+    (Preprint 2021)
+    
+    % \vspace{10pt}
+    % B. Miranda, N. Podder, V. Shitole, O. Koyejo, Learning to Prove via Complexity Minimization.
+    % (Planned Release Date 2022)
+    % (In Prep.)
+    
+    \vspace{10pt}
+    \href{https://www.ideals.illinois.edu/handle/2142/109139}
+    {B. Miranda.
+    An Empirical Study of Meta-Learning: a step towards rigorously understanding meta-learning algorithms.}
+    \\
+    (Preprint 2020)
+    
+    \vspace{10pt}
+    \href{https://drive.google.com/file/d/1G2IVmbENphwB3lxROEpCHQjsClKqRtKP/view}
+    {Tomaso Poggio Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary. 
+    ICML. 
+    Weight and Batch Normalization implement Classical Generalization Bounds.}
+    \\
+    (ICML Workshop 2019)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/1903.04991}
+    {A Banburski, Q Liao, B Miranda, L Rosasco, B Liang, J Hidary, T Poggio.
+    Theory III: Dynamics and Generalization in Deep Networks.}
+    \\
+    (Preprint 2019)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/1807.09659}
+    {Q. Liao, Miranda B., Banburski A., Hidary, J., and Poggio, T.
+    A Surprising Linear Relationship Predicts Test Performance in Deep Networks.}
+    \\
+    (Preprint 2018)
+    
+    % \vspace{10pt}
+    % \href{https://dspace.mit.edu/handle/1721.1/116911}{Q. Liao, Miranda B., Hidary, J., and Poggio, T.,
+    % Classical generalization bounds are surprisingly tight for Deep Networks.}
+    % \\
+    % (Preprint 2018)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/1801.02254}
+    {C. Zhang, Liao Q., Rakhlin A., Miranda B., Golowich N., and Poggio T., 
+    Theory of Deep Learning IIb: Optimization Properties of SGD.}
+    \\
+    (Preprint 2018)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/1806.11379}{T. Poggio, Liao, Q., Miranda, B., Banburski, A., Boix, X., and Hidary, J., Theory IIIb: Generalization in Deep Networks.}
+    \\
+    (Preprint 2018)
+    
+    \vspace{10pt}
+    \href{https://www.osapublishing.org/abstract.cfm?uri=CLEO_SI-2018-SF1A.1}{D. Kita, B. Miranda, H. Lin, J. Michon, D. Favela, J. Hu, High-resolution on-chip digital Fourier transform spectroscopy}
+    \\
+    (CLEO: Science and Innovations 2018)
+    
+    \vspace{10pt}
+    \href{https://www.nature.com/articles/s41467-018-06773-2}{D. Kita, B. Miranda, D. Favela, D. Bono, J. Michon, H. Lin, T Gu, J. Hu, High-performance and scalable on-chip digital Fourier transform spectroscopy.}
+    \\
+    (Nature communications 9 (1), 4405. 2018)
+    
+    % \vspace{10pt}
+    % \href{https://cbmm.mit.edu/publications/musings-deep-learning-properties-sgd}{C. Zhang, Liao Q., Rakhlin A., Miranda B., Golowich N., and Poggio T., Theory of Deep Learning III: Generalization Properties of SGD.}
+    % \\
+    % (Preprint 2017)
+    
+    \vspace{10pt}
+    \href{https://arxiv.org/abs/1801.00173}{Poggio T., Kawaguchi K., Liao Q., Miranda B., Rosasco L., Boix X., Hidary J., Mhaskar M. Theory of Deep Learning III: explaining the non-overfitting puzzle.}
+    \\
+    (Preprint 2017)
+    
+    \vspace{12pt}
+    \href{https://link.springer.com/article/10.1007/s11633-017-1054-2}{T. Poggio, Mhaskar H., Rosasco L., Miranda B., and Liao Q., Why and when can deep-but not shallow-networks avoid the curse of dimensionality: A review}
+    \\
+    (International Journal of Automation and Computing, pp. 1-17, 2017)
+    
+    % \vspace{10pt}
+    % C. Zhang, Liao Q., Rakhlin A., Sridharan K., Miranda B., Golowich N., and Poggio T., “Theory of Deep Learning III: Generalization Properties of SGD”. 2017.
+    
+    \vspace{10pt}
+    \href{https://dspace.mit.edu/handle/1721.1/105443}
+    {T. Poggio, Mhaskar H., Rosasco L., Miranda B., and Liao Q., “Why and When Can Deep - but Not Shallow - Networks Avoid the Curse of Dimensionality: a Review”.}
+    \\
+    (Preprint 2016)
+    
+    % \vspace{10pt}
+    % Miranda B., Nasr A., Liao Q., T.Poggio “Natural Language Understanding by Predicting Answer Quality on Stack Exchange“. (Work in progress with Engineering of Intelligence Team (EIT) at MIT CBMM).
+    
+    % \vspace{10pt}
+    % Miranda B., Liao Q., Ahmadi E., I. Jutamulia, M. Augustine, T.Poggio, MathNet: mathematics reasoning challenge for intelligent machines. (Work in progress with Engineering of Intelligence Team (EIT) at MIT CBMM).
+    
+    % \vspace{10pt}
+    % \href{https://www.ideals.illinois.edu/handle/2142/109133}{B. Miranda,
+    % Establishing the foundations of Meta-learning - a Proposal.
+    % 2020. (Research Proposal)}
+    
+    % \vspace{10pt}
+    % \href{https://www.ideals.illinois.edu/handle/2142/109134}{B. Miranda,
+    % Sketching: a Cognitively inspired Compositional Theorem Prover that Learns to Prove - a Proposal.
+    % 2020. (Research Proposal)}
+    
+    \vspace{4pt}
+\end{body}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards & Honors
+
+\header{Awards \& Honors}
+\begin{body}
+\vspace{16pt}
+\begin{itemize} \itemsep -2pt
+    \item NeurIPS Outstanding Main Track Paper Award, (December 11, 2023) (top 0.4\% and only 2 papers selected)
+    \item EDGE Scholar, Stanford University (September 2022)
+    \item Stanford School of Engineering fellowship, Stanford University (September 2022)
+    \item Honorable Mention, Ford Foundation Fellowship (2021)
+    \item Best research project award for the UIUC graduate course CS 598 ``Learning to Learn" by professor Y. Wang (December 2020).
+    \item HSF (Hispanic Scholarship Fund) Scholar (2020)
+    \item Honorable Mention, Ford Foundation Fellowship (2020)
+    \item Most Cited Paper Certificate, International Journal of Automation \& Computing (IJAC) (December 2019)
+    \item Computer Science Excellence Saburo Muroga Endowed Fellow, (2019-2020)
+	\item Sloan Scholar, Alfred P. Sloan Foundation’s Minority Ph.D. (MPHD) Program, awarded in (2018-2019)
+	\item Grainger Engineering SURGE Fellowship, awarded in (2018-2019)
+	\item Chopper Trading, LLC, Best Strategy Report award, MIT Battle Code AI competition (2013)
+	\item MIT Mitchell B. Kaufman Memorial Scholarship (2012-2013, 2013-2014)
+	\item MIT Eugene and Margaret (HM) McDermott Scholarship (2012-2013, 2013-2014)
+ 	\item Greengates Scholarship (30\% 2007, 50\% 2008, 100\% 2009, 100\% 2010)
+	\item High Achievement Prize Award, Greengates School (2007, 2008, 2009, 2010) -- similar to Valedictorian
+        \item Achievement Prize award, Greengates School (2006)
+	\item Best all round student award, Greengates School (2010)
+	\item Certificate for Progress award, Greengates School (2005)
+\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Poster Presentations
+
+\header{Presentations and Posters}
+
+\begin{body}
+
+% \subheader{Posters}
+
+% 1) MIT Quest for Intelligence launch
+% 2) Center for Brains, Minds and Machines annual National Science Foundation meeting
+% 3) CBMM External Advisory Committee Meeting.
+% 4) guest lecture 9.520 neural nets
+
+% There was an ICML 2019 poster at a workshop on Generalization in Deep Learning
+% There were a few posters at the C-BRIC JUMP meetings
+% I gave a poster at the McGovern Institute retreat
+% also one at the National Academy of Sciences at the 2019 Sackler Colloquium on Science of Deep Learning
+	
+    \vspace{15 pt}
+
+    Emergent Abilities of Large Language Models? (Talk)
+    \hfill
+    Stanford IEEE
+	\hfill % introduces  space to put words at the end
+	\emph{Stanford, CA 2023}\\
+	\vspace*{-3pt}
+    
+    Curse of low Task Diversity (Talk \& Poster)
+    \hfill
+    NeurIPS 2022
+	\hfill % introduces  space to put words at the end
+	\emph{New Orleans, LA, December 2022}\\
+	\vspace*{-3pt}
+
+    \vspace{5 pt}
+    Compact, Fourier transform spectroscopy (Poster)
+    \hfill
+    Materials Day MIT
+	\hfill % introduces  space to put words at the end
+	\emph{Cambridge, MA, November 2018}\\
+	\vspace*{-3pt}
+    
+    \vspace{5 pt}
+    Theories of Deep Learning (Poster)
+    \hfill
+    MIT CBMM External Advisory Committee meeting
+	\hfill % introduces  space to put words at the end
+	\emph{Cambridge, MA, April 2018}\\
+	\vspace*{-3pt}
+	
+	\vspace{5 pt}
+    Theories of Deep Learning (Poster)
+    \hfill
+    MIT Quest for Intelligence launch
+	\hfill % introduces  space to put words at the end
+	\emph{Cambridge, MA, March 2018}\\
+	\vspace*{-3pt}
+	
+	\vspace{5 pt}
+    Theories of Deep Learning (Poster)
+    \hfill
+    MIT CBMM annual NSF meeting
+	\hfill % introduces  space to put words at the end
+	\emph{Cambridge, MA, March 2018}\\
+	\vspace*{-3pt}
+	
+% 	\vspace{5 pt}
+%     Guest presentation
+%     \hfill
+%     MIT course 9.520
+% 	\hfill % introduces  space to put words at the end
+% 	\emph{Cambridge, MA, November 2016}\\
+% 	\vspace*{-3pt}
+% 	\vspace{5 pt}
+	
+	\vspace{5 pt}
+    % Training Hierarchical Networks for Function Approximation
+    Thesis presentation
+    \hfill
+    Final M.Eng presentation MIT CBCL
+	\hfill % introduces  space to put words at the end
+	\emph{Cambridge, MA, August 2016}\\
+	\vspace*{-3pt}
+	
+	\vspace{5 pt}
+    Proxy for the Redis database
+    \hfill
+    Rackspace Final Internship Presentations
+	\hfill % introduces  space to put words at the end
+	\emph{San Antonio, TX, August 2014}\\
+	\vspace*{-3pt}
+
+	\vspace{5 pt}
+    Sentiment Analysis presentation
+    \hfill
+    Adobe’s Engineering Department
+	\hfill % introduces  space to put words at the end
+	\emph{San Jose, CA, August 2013}\\
+	\vspace*{-3pt}
+    
+% \begin{tabular}{ c c c }
+%  Theories of Deep Learning (Poster) & MIT Quest for Intelligence launch & Cambridge, MA, March 2018 \\ 
+%  Training Hierarchical Networks for Function Approximation & Final M.Eng presentation MIT CBCL & Cambridge, MA, August 2016 \\  
+%  cell7 & cell8 & cell9    
+% \end{tabular}
+    
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Service
+
+\header{Academic Service}
+
+\begin{body}
+
+\vspace{16pt}
+\begin{itemize}
+    \item ICLR 2020 (International Conference on Learning Representations) reviewer
+    \item JMLR 2018 (Journal of Machine Learning Research) joint review with Qianli Liao
+\end{itemize}
+
+\end{body}
+
+%%
+
+\header{Service \& Outreach}
+
+\begin{body}
+
+\vspace{16pt}
+\begin{itemize}
+    \item Graduate advisor for Latinos in Computer Science (LCS) UIUC 2019-Present
+    \item Outreach research mentorship Distributed Research Experiences for Undergraduates (DREU) UIUC 2019
+    \item Outreach research mentorship Undergradudate Research Opportunity Program (UROP) MIT 2017-2018 
+    \item Outreach research mentorship Engineering of Intelligence Team (EIT) CBMM MIT 2017-2018
+\end{itemize}
+
+\end{body}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Teaching
+
+\header{Teaching experience}
+\begin{body}
+	\vspace{16pt}
+	
+	\textbf{UIUC} - Cambridge, MA \hfill \emph{August 2020 - December 2020}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item \href{https://relate.cs.illinois.edu/course/CS446-fa20/}{CS 446 Machine Learning}
+		\item Responsible for problem sets and exam design. Held weekly office hours.
+	\end{itemize}
+    
+    \textbf{MIT CBMM} - Cambridge, MA \hfill \emph{September 2016 - December 2016}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Statistical Learning Theory \& Applications \href{http://www.mit.edu/~9.520/fall16/}{(9.520/6.860)} with professor Lorenzo Rosasco \& Tomaso Poggio
+        \item Made the first draft of course slides for MIT's OpenCourseWare (OCW)
+        \item Graded final projects
+        \item Provided extra support for office hours
+	\end{itemize}
+
+   	\textbf{MIT EECS} - Cambridge, MA \hfill \emph{February 2016 - June 2016}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+        \item Introduction to Algorithms (6.006) with professor Nancy Lynch, Bruce Tidor and Aleksander Madry
+        \item Held weekly office hours 
+        \item Helped prepare problem sets and exams
+        \item Graded exams
+	\end{itemize}
+    
+   	\textbf{MIT EECS} - Cambridge, MA \hfill \emph{September 2015 - December 2015}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+        \item Design \& Analysis of Algorithms (6.046) with Shafi Goldwasser, Dana Moshkovitz, Nir N. Shavit
+        \item Held weekly office hours
+        \item Instructed students across weekly recitations
+        \item Helped prepare problem sets and exams
+	\end{itemize}
+   
+    \textbf{MIT EECS} - Cambridge, MA \hfill \emph{February 2015 - May 2015}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+        \item Introduction to Machine Learning (6.036) with professor Tommi S Jaakkola, Suvrit Sra \& Regina Barzilay
+        \item Instructed students across bi-weekly recitations
+        \item Held weekly office hours
+        \item Helped prepare problem sets, projects and exams
+        \item Graded problem sets, projects and exams
+	\end{itemize}
+    
+    \textbf{MIT EECS} - Cambridge, MA \hfill \emph{September 2014 - December 2014}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Mathematics for Computer Science (6.042) with professor F.Thomson Leighton \& Ankur Moitra
+        \item Instructed students across four recitations and problem solving sessions weekly
+        \item Held weekly office hours
+        \item Graded exams
+	\end{itemize}
+    
+    \textbf{MIT} - Cambridge, MA \hfill \emph{September 2012 - June 2013}\\
+	\emph{National Honor Society for Computer Science and Electrical Engineering (Eta Kappa Nu)}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Algorithms tutor for undergraduates at MIT 
+	\end{itemize}
+
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Industry
+
+\header{Industry experience}
+\begin{body}
+	\vspace{16pt}
+    \textbf{Rackspace} - San Antonio, TX \hfill \emph{June 2014 - August 2014}\\
+	\emph{Software Engineering Intern}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Built a concurrent proxy to extend the functionality of the Redis Database
+        \item Added security functionality to the proxy
+        \item Presented and delivered a demo to engineering team and higher level management
+	\end{itemize}
+   
+   	\textbf{Adobe} - San Jose, CA \hfill \emph{June 2013 - August 2013}\\
+	\emph{Software Engineering Intern}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Developed and optimized Machine Learning software for Sentiment Analysis in Spanish
+        \item Researched different machine learning and natural language processing (NLP) techniques to optimize the Naive Bayes algorithm
+        \item Developed different methods for automatic extraction of training data
+        \item Presented and delivered a demo to Adobe's engineering department
+	\end{itemize}
+
+\end{body}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Projects
+\header{Projects}
+\begin{body}
+	\vspace{6pt}
+	\begin{multicols}{2}
+    
+    	\textbf {Function approximation with deep Neural and Gaussian Networks}\\
+		Masters of Engineering Thesis, advised by professor Tomaso Poggio \\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Researched the optimization landscape of Gaussian Networks with Gradient Descent
+			\item Discovered a novel source of vanishing gradient impeding the training using backpropagation
+		\end{itemize}
+		\vspace{5pt}
+        
+        \textbf {Collaborative filtering for movie rating prediction}\\
+		Matrix completion using mixture of Gaussians \\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Designed questions and solutions with fellow TA He Sun and professor Tommi S Jaakola
+            \item Helped implement code that solved project with EM algorithm for matrix completion
+		\end{itemize}
+		\vspace{5pt}
+        
+        \textbf {Survey in Statistical Learning Theory}\\
+		Graduate project for class 9.520/6.860 2014\\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Prepared a survey on Uniform Stability and Generalization in Learning theory
+            \item Survey contained conceptual explanation to mathematical concepts in learning theory
+            \item Survey also contained my own presentation of the proof for the theorems
+			\item Survey can be read at: \href{https://www.quora.com/profile/Brando-Miranda/Posts/Uniform-Stability-and-Generalization-in-Learning-theory}{project report}
+		\end{itemize}
+		\vspace{5pt}
+        
+        \textbf {Survey in Theoretical Computer Science}\\
+        Project for graduate class in mathematics 18.409 2015\\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Research paper survey on provable algorithms that require less computation time given more training examples
+            \item In the case of SVM optimization PEGASOS requires less runtime assuming a target generalization
+            \item When learning halfspaces over sparse vectors, more training examples reduce the training runtime from exponential to polynomial time
+            \item Provided my unique outline of the main proof for halfspaces time reduction
+		\end{itemize}
+		\vspace{5pt}
+        
+        \textbf {Evaluating sublinear estimators for big data}\\
+        undergraduate thesis project, advised by professor Samuel Madden \\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Designed sub-linear sampling algorithms for estimating groups from big data in databases
+            \item Designed and proved that the algorithmic estimators were statistically consistency and unbiased
+            \item Experimentally evaluated the algorithms with synthetic data sets using the Mean Absolute Percentage Error
+		\end{itemize}
+		\vspace{5pt}
+	
+		\textbf {Road Runner}\\
+		Persistent, fault-tolerant, high-performance KV store \\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Built Multipaxos library for efficient consensus
+			\item Optimized disk I/O with batching scheme
+			\item Tested with mocks simulating RPC delays on unreliable, long-distance network
+		\end{itemize}
+		\vspace{5pt}
+	
+		\textbf {Dark Cloud}\\
+		Secure, shared, cloud filesystem on untrusted server \\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Designed layered cryptography scheme
+			\item Implemented the cryptography API
+            \item Report can be read here:: \href{https://css.csail.mit.edu/6.858/2013/projects/mpolanco-pcattori-brando90.pdf}{report report}
+		\end{itemize}
+		\vspace{5pt}
+		
+		\textbf {BattleCode} \\
+		Artificial Intelligence competition\\
+		\vspace*{-3pt}
+		\begin{itemize} \itemsep -2pt
+			\item Wrote path finding algorithms \& distributed combat strategy
+			\item Finalists in competition pool of 300 teams
+			\item Awarded \emph{Best Strategy Report}
+		\end{itemize}
+	\end{multicols}
+\end{body}
+
+%\medskip
+%\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Certification
+
+\header{Certification}
+\begin{body}
+	\vspace{12pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item Coursera: Learning how to Learn: Powerful mental tools to help you master tough subjects (with Honors), awarded by UC San Diego, Dr. Barbara Oakley, Dr. Terrence Sejnowski \& Linda Walker
+	\end{itemize}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item Coursera: Mindshift: Break Through Obstacles to Learning and Discover Your Hidden Potential (with Honors), by McMaster University Dr. Barbara Oakley, Dr. Terrence Sejnowski \& Linda Walker
+	\end{itemize}
+	\begin{itemize}
+	    \item Certified Dance instructor with the World-Mastery program: completed the online training by world renowned artists Korke \& Judith
+	\end{itemize}
+% 	\begin{itemize} \itemsep -2pt  % reduce space between items
+% 		\item Coursera: Creativity, Innovation, and Change, by Pennsylvania State University, Dr. Jablokow, Dr. Velegol, Dr. Matson et al. (under progress)
+% 	\end{itemize}
+%     \begin{itemize} \itemsep -2pt  % reduce space between items
+%     \item Coursera: Synapses, Neurons and Brains, Hebrew University of Jerusalem, Dr. Idan Segev (under progress)
+%     \end{itemize}
+%     \vspace{14pt}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Coding:}}{} Python, Matlab, OCaml, Java, Go, Javascript, Maude, Coq, Isabelle \\
+	\smallskip
+	\emph{\textbf{Tools:}}{}  Pytorch, Jax, Tensorflow, Unix, vim, git\\
+	\smallskip
+	\emph{\textbf{Languages:}}{} English, Spanish (both native fluency)\\
+\end{body}
+%\medskip
+\smallskip
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Leadership}
+
+\begin{body}
+
+    \vspace{16pt}
+
+      \textbf{Stanford Research Mentor} - Stanford, CA \hfill \emph{September 2021 - Present}\\
+	\emph{Research Mentor}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Research mentor with an Undergraduate and two master students on the role of data quality on the ability of Foundation Models to do in context learning. 
+	\end{itemize}
+	\vspace{5 pt}
+
+ 	\textbf{Stanford Bachata Sensual \& Brazilian Zouk (Latin Dance Group)} - Stanford, CA \hfill \emph{September 2021 - Present}\\
+	\emph{President and Founder}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Founded the first Bachata Sensual \& Zouk (SBSBZ) dance group at the Stanford University -- and with our officers made it an officially recognized student organization
+    	\item Lead weekly practice and dance classes for students and local community members. Communication channels have over 200 members.
+    	\item In line with our commitment to providing accessible, zero-cost information to the wider community, we proudly offer comprehensive summaries of all our lessons on YouTube.
+	\end{itemize}
+	\vspace{5 pt}
+    
+    \textbf{UIUC Latinos in Computer Science (LCS)} - Urbana-Champaign, IL \hfill \emph{December 2019 - Present}\\
+	\emph{Graduate Advisor}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Graduate advisor for Latinos in Computer Science (LCS)
+    	\item Founded the ``LCS professional \& wellness development colloquium'' speaker series for LCS.
+    	\item Organizing ``LCS professional \& wellness development colloquium'' speaker series for LCS.
+    	Talks will be made available in the world wide web.
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{UIUC Bachata Sensual \& Zouk (Latin Dance Group)} - Urbana-Champaign, IL \hfill \emph{January 2019 - December 2021}\\
+	\emph{President and Founder}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Founded the first Bachata Sensual \& Zouk dance group at the UIUC campus
+    	\item Lead weekly practice and dance classes for students and local community members
+    	\item Organized first Bachata Sensual and Brazilian Zouk social with guest artist from Chicago
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{UIUC Undergraduate Research Mentor} - Urbana-Champaign, IL \hfill \emph{May 2019 - Present}\\
+	\emph{Research Mentor}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Research mentor for Research Experience for Undergraduates (REU).
+    	\item Mentoring one undergraduate students on the foundation of meta-learning project.
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{MIT CBMM (Center for Brain Minds \& Machines)} - Cambridge, MA \hfill \emph{June 2016 - May 2019}\\
+	\emph{Research Mentor}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Research leader mentoring undergraduates with the Engineering of Intelligence Team \href{https://cbmm.mit.edu/eit/people}{(EIT)} at MIT CBMM
+        \item Engaged in mentoring and research with MIT undergraduates
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{MIT Student Latin Dance Group} - Cambridge, MA \hfill \emph{September 2015 - July 2017}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Lead an unofficial but committed student dance group under the guidance of MIT Casino Rueda
+        \item Prepared and lead weekly dance practices
+        \item Compiled a foundations Bachata dance curriculum
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{Undergraduate Practice Opportunity Program (UPOP)} - Cambridge, MA \hfill \emph{January 2011 - June 2011}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Advanced professional skills with a one-week MIT intensive course and semester activities
+        \item Advance "firm skills" through guided discovery learning, team decision-making, leadership skills, project engineering, cross cultural communication and recognizing the presence of an ethical dilemma with guidance of seasoned industry professionals and UPOP MIT faculty
+	\end{itemize}
+	\vspace{5 pt}
+
+	\vspace{5pt}
+
+\end{body}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activities
+\header{Activities}
+
+\begin{body}
+	\vspace{16pt}
+    \textbf{MIT Chamber Music Society} - Cambridge, MA \hfill \emph{September 2011 - June 2014}\\
+	\emph{Jazz Musician}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Alto Saxophone player with MIT's Jazz combo as part of the Chamber Music Society lead by Boston jazz artist 
+		Keala Kaumeheiwa
+        \item Performed, Composed and arranged several Jazz pieces
+	\end{itemize}
+	\vspace{5 pt}
+    
+    \textbf{MIT Wind Ensemble (MITWE)} - Cambridge, MA \hfill \emph{February 2011 - June 2011}\\
+	\emph{Clarinetist}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+    	\item Clarinet player with director Dr. Harris
+        \item Performed with the Wind Ensemble at the MIT 150th Convocation 
+	\end{itemize}
+	\vspace{5 pt}
+    
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Websites
+
+% \header{Websites}
+% \begin{body}
+% 	\vspace{12pt}
+% 	https://brando90.github.io/brandomiranda/
+	
+% 	https://cbmm.mit.edu/about/people/miranda
+
+% 	https://www.linkedin.com/in/brando-miranda-40821046/
+    
+%     https://github.com/brando90
+    
+%     https://stackexchange.com/users/1589784/charlie-parker?tab=accounts
+    
+%     https://www.quora.com/profile/Brando-Miranda
+    
+% \end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Group Identity
+\header{Family Background}
+
+\begin{body}
+	\vspace{12pt}
+Latino/Hispanic, Mexican heritage.
+\end{body}
+
+%\medskip
+\smallskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+%\header{Awards and Honors}
+
+\end{document}
