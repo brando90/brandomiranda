@@ -24,48 +24,27 @@ Stanford, CA 94305 -->
 # Bio #
 <!-- ref: https://chatgpt.com/c/68252ede-9708-8001-837e-5f556b905e53 -->
 
-Brando Miranda is currently a Computer Science Artificial Intelligence/Machine Learning (AI/ML) Ph.D. student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group](https://cs.stanford.edu/~sanmi/index.html). 
-Previously, Miranda was a graduate researcher at [University of Illinois Urbana-Champaign](https://illinois.edu/), 
-a Research Assistant at the Massachusetts Institute of Technology (MIT)'s Center for Brain Minds and Machines (CBMM), and a graduate student at MIT.
-Miranda's research focuses on data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence), and machine learning for mathematics and verified code. 
-Miranda earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting research on Deep Learning Theory under the guidance of [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) — who also supervised DeepMind co-founder Demis Hassabis during his post-doctoral fellowship.
-Miranda has been the recipient of several awards, including the prestigious 
-[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/),
-the [Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg),
-two Honorable Mentions with the Ford Foundation Fellowship,
-Computer Science Excellence Saburo Muroga Endowed Fellow, 
-Stanford School of Engineering Fellowship, and is currently an EDGE Scholar at Stanford University.
-Miranda is more than a researcher — he is an innovator, communicator, and is deeply passionate about the future of AI. 
-As a Machine Learning Research Scientist Consultant at the venture-backed AI startup [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), he made key contributions to the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b) foundation model and helped launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code with [Lean](https://leanprover-community.github.io/).
-He later applied the same expertise as an AI consultant to [Wise Agents](https://wiseagents.com/) — featured in [Forbes Mexico](https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/) — a Stanford spin-out leveraging AI agents to transform sales performance.
+Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning (AI/ML) at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group](https://cs.stanford.edu/~sanmi/index.html). 
+Previously, he was a graduate researcher at the [University of Illinois Urbana-Champaign](https://illinois.edu/) and held research appointments at the Massachusetts Institute of Technology (MIT) — including a Research Assistantship in MIT’s Center for Brains, Minds and Machines (CBMM). 
+He earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting deep-learning-theory research under [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) — who also supervised DeepMind co-founder Demis Hassabis during his post-doctoral fellowship.
+
+Miranda’s research centers on data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence), and reasoning for mathematics and verified code. 
+His work has earned the [NeurIPS Outstanding Main Track Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%, 2 papers selected), the [International Journal of Automation & Computing “Most Cited Paper” Certificate](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg), two Honorable Mentions from the Ford Foundation Fellowship, the Saburo Muroga Computer Science Excellence Fellowship, the Stanford School of Engineering Fellowship, and selection as an EDGE Scholar at Stanford.
+
+Miranda is more than a researcher—he is an innovator, communicator, and deeply passionate about the future of AI. 
+As a Machine Learning Research Scientist Consultant at the venture-backed AI startup [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), he made key contributions to the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b) model and helped launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/). 
+He later applied the same expertise as an AI consultant to [Wise Agents](https://wiseagents.com/)—featured in [Forbes Mexico](https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/) — a Stanford spin-out leveraging AI agents to transform sales performance.
+
 
 ---
 
 # Shorter Bio #
-Brando Miranda is currently a Computer Science Artificial Intelligence/Machine Learning (AI/ML) Ph.D. student at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group](https://cs.stanford.edu/~sanmi/index.html).
-Miranda's research focuses on data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence), and machine learning for mathematics and verified code. 
-Miranda has been the recipient of several awards, including the prestigious 
-[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/).
-Miranda is more than a researcher — he is an innovator, communicator, and is deeply passionate about the future of AI. 
-As a Machine Learning Research Scientist Consultant at the venture-backed AI startup [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), he made key contributions to the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b) foundation model and helped launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code with [Lean](https://leanprover-community.github.io/).
-He later applied the same expertise as an AI consultant to [Wise Agents](https://wiseagents.com/) — a Stanford spin-out leveraging AI agents to transform sales performance.
 
-
-<!-- 
-Sure! Mira todo anda en mi LinkedIn o personal website. 
-
-Mira las paginas:
-Wise-sales.com 
-Wise-meetings.com 
-
-Este es un forbes article que habla de Wise Meetings:
-https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/
-
-Aqui el link donde hablo de ellas en mi personal website:
-https://www.santiagocampo.com/wise-meetings 
-
-Ya somos como 50 en el equipo entre ambos equipos.
- -->
+Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning at [Stanford University](https://stanford.edu), advised by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the Trustworthy AI Research (STAIR) group.
+His work targets data-centric techniques for [Frontier Models](https://openai.com/index/frontier-model-forum/), [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence), and machine-learning methods that generate or verify mathematical code.
+Miranda received the [NeurIPS Outstanding Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%) and other honors for his research.
+In industry, he served as Machine-Learning Research Scientist Consultant at venture-backed [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), helping build the [Morph Prover v0-7B](https://huggingface.co/morph-labs/morph-prover-v0-7b) and launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
+He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a Stanford spin-out that uses AI agents to transform sales performance.
 
 [//]: # (https://cs.stanford.edu/~sanmi/preparation.html  working with me, TODO: )
 
