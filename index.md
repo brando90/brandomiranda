@@ -147,7 +147,7 @@ Does MAML Only Work via Feature Re-use? A Data Centric Perspective (2021)
 
 Weight and Batch Normalization implement Classical Generalization Bounds (2019)
 *Tomaso Poggio, Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
-[**[International Conference on Machine Learning (ICML) Workshop 2019]**]
+[**[International Conference on Machine Learning (ICML) Workshop 2019]**](https://cbmm.mit.edu/publications/weight-and-batch-normalization-implement-classical-generalization-bounds)
 [**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 
 [//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
