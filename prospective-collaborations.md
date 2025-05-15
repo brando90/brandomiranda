@@ -33,9 +33,9 @@ In order to be considered, please adhere to the following steps
 <!-- https://www.amazon.jobs/content/en/our-workplace/leadership-principles -->
 <!-- TODO: add amazon you own it -->
 
-After reviewing the above I will reply with the following if it seems we are a good match within a week:
+If we are a good match I will invite you to:
 
-7. Take part in an 30 minutes interview; during which we will spend approximately 15 minutes discussing your contributions to a previous technical project + 7 minute discussing your background & motivations + 8 minutes discussing the potential future project.
+7. Take part in an 30 minutes behavioral interview and a 60 minute technical interview. For the behavioral interview we will discuss your contributions to a previous technical project, your background, motivations and potential future projects. For the technical interview you will have 1-2 weeks to complete an AI/ML research engineering task related to your potential project and then present to me your technical solution for 60 minutes -- where we will go through the code, experiment results & runs, and mathematical details.
 
 By following these steps, you will demonstrate your initiative along with your commitment to excellence and your ability to work independently.
 While the standards are high, we have carefully designed the requirements to encourage candidates to apply. 
