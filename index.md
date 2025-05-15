@@ -68,20 +68,24 @@ Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Rema
 [[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award**]](/professional_documents/tifa_award_elusive.png)
 [**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
 
-Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2024)
+Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2025)
 *Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.* <!-- [**[arxiv]**](TODO) -->
 [**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/44232) <!-- TODO put icml paper link -->
 [**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
 <!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
 
+Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in lean 4 (2025)
+*Leni Aniva, Chuyue Sun, Brando Miranda, Clark Barrett, Sanmi Koyejo.*
+[**[International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)]**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6)
+
 Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2024)
 *Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
-[**[International Conference on Machine Learning (ICML) 2025]**]()
+[**[International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=wvFnqVVUhN)
 [**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop Contributed Talk 2024]**](https://neurips.cc/virtual/2024/106794)
 [**[International Conference on Learning Representations (ICLR) 2024]**](https://openreview.net/forum?id=wvFnqVVUhN)
 <!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
-Are Emergent Abilities of Large Language Models a Mirage? (2023)
+Are Emergent Abilities of Large Language Models a Mirage? (2024)
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
