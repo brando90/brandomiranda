@@ -65,7 +65,7 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
 *Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
 [**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/45753) <!-- TODO put icml paper link -->
-[[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award.**]](/professional_documents/tifa_award_elusive.png)
+[[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award**]](/professional_documents/tifa_award_elusive.png)
 [**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
 
 Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2024)
@@ -100,7 +100,7 @@ Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Pr
 
 Is Pre-training Truly Better Than Meta-Learning? (2023)
 *Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.*
-[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**]
+[**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**](https://icml.cc/virtual/2023/26924#:~:text=Abstract%3A,outperforms%20standard%20meta%2Dlearning%20algorithms.)
 [**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13841)
 [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf)
