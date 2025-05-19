@@ -80,9 +80,8 @@ Pantograph: A machine-to-machine interaction interface for advanced theorem prov
 
 Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2024)
 *Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
-[**[International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=wvFnqVVUhN)
-[**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop Contributed Talk 2024]**](https://neurips.cc/virtual/2024/106794)
 [**[International Conference on Learning Representations (ICLR) 2024]**](https://openreview.net/forum?id=wvFnqVVUhN)
+[**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop Contributed Talk 2024]**](https://neurips.cc/virtual/2024/106794)
 <!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
 Are Emergent Abilities of Large Language Models a Mirage? (2024)
