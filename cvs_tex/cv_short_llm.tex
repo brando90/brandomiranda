@@ -1,0 +1,380 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{hyperref}
+%\usepackage{href}
+
+
+\newcommand\textbox[1]{%
+  \parbox{.333\textwidth}{#1}%
+}
+
+%\usepackage[margin=0.0in]{geometry}
+\usepackage{geometry}
+ \geometry{
+% a4paper,
+ total={170mm,257mm},
+ left=1in,
+ top=20mm,
+ }
+
+% \leftmargin=0.25in
+% \oddsidemargin=0.25in
+% \textwidth=6.0in
+% \topmargin=-0.25in
+% \textheight=9.25in
+
+\raggedright
+
+\pagenumbering{gobble}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+\newcommand{\tab}{\hspace*{2em}}
+
+\newcommand{\bul}{$\bullet$ \hspace*{0em}}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{changemargin}{-0.5in}{-0.5in}
+\centering{{\Huge \scshape {\textbf{Brando Miranda}}}}\\ 
+\vspace{10 pt}
+\centering{
+{ 
+\href{https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en}{Google Scholar};
+\href{https://brando90.github.io/brandomiranda/}{Website};
+\href{https://profiles.stanford.edu/brando-miranda}{Stanford Profile};
+\href{https://cbmm.mit.edu/about/people/miranda}{MIT Website}
+}
+\\  
+\vspace{-30 pt}
+
+\textbf{brando9@stanford.edu}
+\hfill Gates Bldg., 353 Jane Stanford Way \\
+Stanford, CA, 94305. \hfill 
+\vspace{7 pt}
+} % Add this closing brace here
+\end{changemargin}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research Interests
+\header{Research Interests}
+
+\begin{body}
+	\vspace{14pt}
+	Data-centric machine learning for Frontier Models (FMs), Artificial General Intelligence (AGI), and reasoning for mathematics and verified code. Focus on scaling laws, formal reasoning, and the emergence of capabilities in large language models.
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Ph.D. in Computer Science} \hfill \emph{2022-present}\\
+	\emph{Stanford University} \hfill \text{GPA: 4.045/4.0}\\
+	Advisor: Prof. Sanmi Koyejo, Stanford Trustworthy AI Research (STAIR) group\\
+    Fellowships: Stanford School of Engineering Fellowship, EDGE Scholar
+    
+	\textbf{Master of Engineering in Electrical Engineering and Computer Science} \hfill \emph{2014-2016}\\
+	\emph{Massachusetts Institute of Technology} \hfill \text{GPA: 4.8/5.0}\\
+    Advisor: Prof. Tomaso Poggio, Center for Brains, Minds and Machines (CBMM)\\
+    Focus: Deep learning theory
+    
+	\textbf{Bachelor of Science, Computer Science and Engineering} \hfill \emph{2010-2014} \\
+	\emph{Massachusetts Institute of Technology} \hfill \text{minor in Mathematics \& Music}\\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards & Honors
+\header{Awards \& Honors}
+\begin{body}
+\vspace{16pt}
+\begin{itemize} \itemsep -2pt
+    \item \textbf{NeurIPS Outstanding Main Track Paper Award} (December 2023) (top 0.4\%, only 2 papers selected)
+    \item \textbf{ICML Outstanding Paper TiFA Workshop Award} (July 2024)
+    \item \textbf{EDGE Scholar}, Stanford University (September 2022)
+    \item \textbf{Stanford School of Engineering Fellowship} (September 2022)
+    \item \textbf{Honorable Mention}, Ford Foundation Fellowship (2020, 2021)
+    \item \textbf{Best Research Project Award}, UIUC graduate course CS 598 "Learning to Learn" (December 2020)
+    \item \textbf{Most Cited Paper Certificate}, International Journal of Automation \& Computing (IJAC) (December 2019)
+    \item \textbf{Computer Science Excellence Saburo Muroga Endowed Fellow}, UIUC (2019-2020)
+	\item \textbf{Sloan Scholar}, Alfred P. Sloan Foundation's Minority Ph.D. (MPHD) Program (2018-2019)
+	\item \textbf{Grainger Engineering SURGE Fellowship} (2018-2019)
+\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Selected Publications
+\header{Selected Publications}
+\begin{body}
+    \vspace{4pt} % DONT REMOVE THIS
+    
+    \vspace{10pt}
+    \textbf{Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?} (2025)\\
+    \emph{Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo}\\
+    \textbf{International Conference on Machine Learning (ICML) 2025} \& \textbf{ICML TiFA Workshop Outstanding Paper Award 2024}\\
+    \href{https://arxiv.org/pdf/2406.04391}{[arXiv]}
+
+    \vspace{10pt}
+    \textbf{Putnam-AXIOM: A Functional \& Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs} (2025)\\
+    \emph{Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo}\\
+    \textbf{International Conference on Machine Learning (ICML) 2025} \& \textbf{NeurIPS MATH-AI Workshop 2024}
+    
+    \vspace{10pt}
+    \textbf{Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in lean 4} (2025)\\
+    \emph{Leni Aniva, Chuyue Sun, Brando Miranda, Clark Barrett, Sanmi Koyejo}\\
+    \textbf{International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) 2025}\\
+    \href{https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6}{[Springer Link]}
+    
+    \vspace{10pt}
+    \textbf{Failures to Find Transferable Image Jailbreaks Between Vision-Language Models} (2024)\\
+    \emph{Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, et al., Brando Miranda, et al., Sanmi Koyejo, Ethan Perez}\\
+    \textbf{International Conference on Learning Representations (ICLR) 2024} \& \textbf{NeurIPS Red Teaming GenAI Workshop 2024}\\
+    \href{https://openreview.net/forum?id=wvFnqVVUhN}{[OpenReview]}
+    
+    \vspace{10pt}
+    \textbf{Are Emergent Abilities of Large Language Models a Mirage?} (2023)\\
+    \emph{Rylan Schaeffer, Brando Miranda, Sanmi Koyejo}\\
+    \textbf{Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award \& Oral 2023}\\
+    \textbf{Featured in: New York Times, Quanta Magazine, Forbes, Stanford HAI}\\
+    \textbf{Cited in the 2024 Economic Report of the President (White House)}\\
+    \href{https://arxiv.org/abs/2304.15004}{[arXiv]} \href{https://openreview.net/forum?id=ITw9edRDlD}{[OpenReview]}
+    
+    \vspace{10pt}
+    \textbf{Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language} (2023)\\
+    \emph{Brando Miranda (Machine Learning Research Scientist Consultant) \& Morph Labs Team}\\
+    \href{https://morph.so/blog/the-personal-ai-proof-engineer/}{[Blog]} \href{https://huggingface.co/morph-labs/morph-prover-v0-7b}{[Hugging Face Model Card]}
+    
+    \vspace{10pt}
+    \textbf{Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data} (2023)\\
+    \emph{Alycia Lee*, Brando Miranda*, Patrick Yu, Oluwasanmi Koyejo} (∗equal contribution)\\
+    \textbf{ICML Data-Centric Machine Learning Workshop \& ICML Deployable Generative AI Workshop 2023}\\
+    \href{https://arxiv.org/abs/2306.13840}{[arXiv]} \href{https://github.com/alycialee/beyond-scale-language-data-diversity}{[Code]}
+    
+    \vspace{10pt}
+    \textbf{Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review} (2017)\\
+    \emph{Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao}\\
+    \textbf{International Journal of Automation and Computing 2017, Most Cited Paper Certificate}\\
+    \href{https://link.springer.com/article/10.1007/s11633-017-1054-2}{[Journal Link]}
+    
+    \vspace{8pt}
+    \emph{Google Scholar metrics: 2,176+ citations | h-index: 14 | i10-index: 15}
+\end{body}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Research Experience
+\header{Research \& Professional Experience}
+
+\begin{body}
+	\vspace{16pt}
+ 
+    \textbf{Stanford University} - Stanford, CA \hfill \emph{September 2022 - present}\\
+	\emph{Ph.D. Student in Computer Science}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt  % reduce space between items
+		\item Conducting research on data-centric machine learning for Frontier Models, formal reasoning, and scaling laws for LLMs
+		\item Published award-winning work challenging prevailing notions of "emergent abilities" in large language models
+		\item Research mentor for undergraduate and master's students focused on data quality for Foundation Models
+	\end{itemize}
+	\vspace{5 pt}
+
+    \textbf{Morph Labs} - Remote \hfill \emph{2023}\\
+	\emph{Machine Learning Research Scientist Consultant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Made key contributions to Morph Prover v0-7B, the first frontier model for Lean 4 formal verification language
+		\item Helped launch Moogle.ai, the first search engine for verified code in Lean
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{Wise Agents} - Stanford Spin-out \hfill \emph{2023}\\
+	\emph{AI Research Consultant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Deployed AI agent-based systems to transform sales performance
+		\item Company featured in Forbes Mexico
+	\end{itemize}
+	\vspace{5 pt}
+
+	\textbf{IBM Research} - Yorktown Heights, NY \hfill \emph{May 2022 - August 2022}\\
+	\emph{Graduate Research Intern}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Developed transformer models to predict mathematical formal proofs using the Coq theorem proving language
+	\end{itemize}
+	\vspace{5 pt}
+
+	\textbf{University of Illinois Urbana-Champaign} - Urbana-Champaign, IL \hfill \emph{September 2018 - 2021}\\
+	\emph{Ph.D. Student in Computer Science}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Conducted foundational research on meta-learning, transfer learning, and data diversity
+		\item Published multiple papers on the relationship between task diversity and learning performance
+	\end{itemize}
+	\vspace{5 pt}
+	
+	\textbf{IBM Research} - Yorktown Heights, NY \hfill \emph{May 2021 - August 2021}\\
+	\emph{Graduate Research Intern}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item Studied optimization and architectural inductive biases of Transformer models for program type inference
+	\end{itemize}
+	\vspace{5 pt}
+
+	\textbf{MIT CBMM (Center for Brain Minds \& Machines)} - Cambridge, MA \hfill \emph{June 2015 - September 2018}\\
+	\emph{Research Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+        \item Conducted deep learning theory research with Prof. Tomaso Poggio (who also mentored DeepMind co-founder Demis Hassabis)
+        \item Contributed to highly-cited work on generalization theory and function approximation for neural networks
+	\end{itemize}
+    
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Media Coverage
+
+\header{Media Coverage}
+\begin{body}
+\vspace{16pt}
+\begin{itemize} \itemsep -2pt
+    \item \textbf{White House Economic Report of the President (2024)}: Our work on emergent abilities was cited in the official economic report to the President
+    \item \textbf{The New York Times (2023)}: "Silicon Valley Confronts the Idea That the 'Singularity' Is Here"
+    \item \textbf{Quanta Magazine (2024)}: "How Quickly Do Large Language Models Learn Unexpected Skills?"
+    \item \textbf{Forbes (2023)}: "AI 'Emergent Abilities' Are A Mirage, Says AI Researcher"
+    \item \textbf{Andrew Ng (2024)}: Endorsed our paper as evidence that AGI development will be smooth and predictable
+    \item \textbf{Additional coverage}: Stanford HAI, Y Combinator News, Vice, Medium, HackerNews, NeurIPS blog
+\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Teaching
+
+\header{Teaching Experience}
+\begin{body}
+	\vspace{16pt}
+	
+    \textbf{University of Illinois Urbana-Champaign} \hfill \emph{August 2020 - December 2020}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item CS 446 Machine Learning
+		\item Designed problem sets and exams; held weekly office hours
+	\end{itemize}
+    
+    \textbf{Massachusetts Institute of Technology} \hfill \emph{2014-2016}\\
+	\emph{Graduate Teaching Assistant}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+	\item Statistical Learning Theory \& Applications (9.520/6.860) with Prof. Lorenzo Rosasco \& Tomaso Poggio
+        \item Introduction to Algorithms (6.006) with Prof. Nancy Lynch, Bruce Tidor and Aleksander Madry
+        \item Design \& Analysis of Algorithms (6.046) with Prof. Shafi Goldwasser, Dana Moshkovitz, Nir Shavit
+        \item Introduction to Machine Learning (6.036) with Prof. Tommi Jaakkola, Suvrit Sra \& Regina Barzilay
+	\end{itemize}
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Leadership \& Service}
+
+\begin{body}
+    \vspace{11pt}
+
+\textbf{Research Mentorship} \hfill \emph{2016 - Present}\\
+\vspace*{-3pt}
+\begin{itemize} \itemsep -2pt
+    \item Mentored undergraduate and graduate students at Stanford, UIUC, and MIT CBMM
+    \item Led research teams on data quality metrics, meta-learning, and formal reasoning
+\end{itemize}
+\vspace{5 pt}
+
+\textbf{Academic Service} \hfill \emph{2018 - Present}\\
+\vspace*{-3pt}
+\begin{itemize} \itemsep -2pt
+    \item Reviewer for ICLR 2020, JMLR 2018
+    \item Graduate advisor for Latinos in Computer Science (LCS) at UIUC
+    \item Founded "Stanford Bachata Sensual \& Brazilian Zouk" and "UIUC Bachata Sensual \& Zouk" official student organizations
+\end{itemize}
+\vspace{5 pt}
+
+\textbf{Outreach} \hfill \emph{2017 - Present}\\
+\vspace*{-3pt}
+\begin{itemize} \itemsep -2pt
+    \item Distributed Research Experiences for Undergraduates (DREU) UIUC 2019
+    \item Undergraduate Research Opportunity Program (UROP) MIT 2017-2018 
+    \item Engineering of Intelligence Team (EIT) CBMM MIT 2017-2018
+\end{itemize}
+
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+
+\header{Skills \& Tools}
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} Python, PyTorch, TensorFlow, JAX, Lean 4, OCaml, Coq\\
+	\smallskip
+	\emph{\textbf{ML/AI Tools:}}{}  Hugging Face, Weights \& Biases, DSPy, git, UNIX\\
+	\smallskip
+	\emph{\textbf{Languages:}}{} English, Spanish (native fluency)\\
+\end{body}
+
+\end{document}
