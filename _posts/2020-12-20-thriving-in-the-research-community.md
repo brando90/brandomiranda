@@ -9,25 +9,25 @@ date: 2020-12-20 22:12 -0500
 
 I've been working this past year as the graduate advisor for 
 [LCS (Latinxs in Computer Science)](http://latinoscs.web.illinois.edu/) at [UIUC](https://illinois.edu/).
-The main project I've been leading with LCS the 
-Professional development & wellness colloquium.
-It is aimed at improving students' general career and personal life.
+The main project I've been leading with LCS is the
+professional development and wellness colloquium,
+aimed at improving students' general career and personal life.
 I believe that career development and well-being are 
 strongly interrelated, especially after my lower back injury from 2018 that challenges me every day.
 
-We had the honor to have as a speaker computer vision researcher [Professor Derek Hoiem](http://dhoiem.cs.illinois.edu/)
-from Univeristy of Illinois Urbana-Champaign and share us his wisdom on how to thrive in the research community.
+We had the honor of hosting computer vision researcher [Professor Derek Hoiem](http://dhoiem.cs.illinois.edu/)
+from the University of Illinois Urbana-Champaign, who shared his wisdom on how to thrive in the research community.
 
-Hope you learn a lot from the talk, just as much as we did!
+I hope you learn a lot from the talk, just as much as we did!
 
-I will include the original description for the talk we had when we advertized the talk.
+Below is the original description we used when we advertised the talk.
 
 ## LCS - Thriving in the Research Community
 
-LCS is excited to host professor Derek Hoiem to discuss how to thrive in the research community! Professor Hoeim has been part of the 
+LCS is excited to host professor Derek Hoiem to discuss how to thrive in the research community! Professor Hoiem has been part of the
 fantastic course offered by the CS department named "Improving your Research Skills" and he will share with us advice 
-on how to improve ourselves during the research process. He will talk about, choosing projects, how to write good papers, how to grow and adapt in your career, 
-advice at different stages in PhD process, advice if you getting stuck, general career advice and more! Great opportunity to improve your research skills 
+on how to improve ourselves during the research process. He will talk about choosing projects, how to write good papers, how to grow and adapt in your career, 
+advice at different stages in PhD process, advice if you're getting stuck, general career advice and more! Great opportunity to improve your research skills 
 and get direct advice from a great professor in the CS department!
 Join us Tuesday Nov 17th 2020 4pm-4:30pm + 15 minutes questions.
 Zoom link: https://illinois.zoom.us/j/87690132860?pwd=VGVsUGEwcnBrMGR4Ykt6Z0EweDlIQT09 

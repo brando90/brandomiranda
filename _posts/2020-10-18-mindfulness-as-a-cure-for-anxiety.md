@@ -1,27 +1,27 @@
 ---
 layout: post
-title: "Mindfulness as a cure for Anxiety"
+title: "Mindfulness as a Cure for Anxiety"
 date: 2020-10-18 21:09 -0500
 ---
 
 
-# Mindfulness as a cure for Anxiety 
+# Mindfulness as a Cure for Anxiety 
 
 I've been working this past year as the graduate advisor for 
 [LCS (Latinxs in Computer Science)](http://latinoscs.web.illinois.edu/) at [UIUC](https://illinois.edu/).
-The main project I've been leading with LCS the 
-Professional development & wellness colloquium.
-It is aimed at improving students' general career and personal life.
+The main project I've been leading with LCS is the
+professional development and wellness colloquium,
+aimed at improving students' general career and personal life.
 I believe that career development and well-being are 
 strongly interrelated.
 
-We had the honor to have as a speaker neuroscientist [Professor Judson Brewer](https://drjud.com/)
-from Brown Univeristy and share us his ground breaking research on mindfulness as a tool for
-anxiety reduction (and habit formation).
+We had the honor of hosting neuroscientist [Professor Judson Brewer](https://drjud.com/)
+from Brown University, who shared his groundbreaking research on mindfulness as a tool for
+anxiety reduction and habit formation.
 
-Hope you learn a lot from the talk, just as much as I did!
+I hope you learn a lot from the talk, just as much as I did!
 
-I will include the original description for the talk we had when we advertized the talk.
+Below is the original description we used when we advertised the talk.
 
 ## LCS - Mindfulness: A cure for Anxiety with Dr Judson Brewer
 
@@ -31,7 +31,7 @@ Judson Brewer, MD, PhD
 Director, Research & Innovation, Mindfulness Center
 Brown University & School of Public Health
  
-“How to use novel discoveries in neuroscience on how to improve well-being an habits.”
+“How to use novel discoveries in neuroscience to improve well-being and habits.”
 Tuesday, September 8, 2020
 6:30 PM
  

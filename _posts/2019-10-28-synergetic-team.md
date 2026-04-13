@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building a Synergetic team - Mastering the art & science of solving open ended problems (in research & startups)"
+title: "Building Synergetic Teams for Research and Startups"
 date: 2019-10-28 14:23 -0500
 ---
 

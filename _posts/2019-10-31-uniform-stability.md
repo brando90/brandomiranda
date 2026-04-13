@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Uniform Stability - Machine Learning Theory"
+title: "Uniform Stability in Machine Learning Theory"
 date: 2019-10-31 21:09 -0500
 ---
 
@@ -8,6 +8,6 @@ date: 2019-10-31 21:09 -0500
 [Lorenzo Rosasco](http://web.mit.edu/lrosasco/www/) and
 [Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/),
 I made a survey of my own explanation of the concepts and
-mathematical proofs of [Uniforms Stability and Generalization in (statistical)
+mathematical proofs of [Uniform Stability and Generalization in (statistical)
 Learning Theory](https://qr.ae/TWo7oy).
 - Document available [here](https://www.ideals.illinois.edu/handle/2142/112788). Enjoy!
