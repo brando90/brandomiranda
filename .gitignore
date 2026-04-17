@@ -32,3 +32,6 @@ Temporary Items
 .apdisk
 
 .idea
+
+# Local-only CS197 materials (backup + transcripts) — keep out of git
+exclude/cs197/
