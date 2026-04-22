@@ -4,7 +4,7 @@ title: "Building Synergetic Teams for Research and Startups"
 date: 2019-10-28 14:23 -0500
 ---
 
-**TL;DR.** Synergistic teams — teams that produce more than the sum of their parts — happen when leaders genuinely invest in each member's aspirations. Offer the best opportunities and you naturally attract the best people. Notes distilled from Professor Lui Sha's CS 598 lectures at UIUC.
+**TL;DR.** Great teams run on positive reward loops. When a leader genuinely works to fulfill each member's aspirations, members reciprocate with their best effort — and offering the best opportunities is what attracts the best people in the first place.
 
 First and foremost, allow me to elucidate the concept of synergy, an indispensable term which I discovered through this educational journey:
 
