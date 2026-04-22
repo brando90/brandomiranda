@@ -4,6 +4,8 @@ title: "Thriving in the Research Community"
 date: 2020-12-20 22:12 -0500
 ---
 
+**TL;DR.** Notes and recording from a talk by Professor Derek Hoiem (UIUC) on how to thrive as a researcher — choosing projects, writing papers, navigating PhD stages, and adapting across a career. Hosted by LCS at UIUC.
+
 
 # Thriving in the Research Community 
 

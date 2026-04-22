@@ -4,6 +4,8 @@ title: "Jazz Improvisation"
 date: 2019-10-31 21:25 -0500
 ---
 
+**TL;DR.** A short reflection on Jazz improvisation — originally written as a Quora answer — and why I think improvisation in music and in dance share the same underlying skill.
+
 I originally wrote [this](https://qr.ae/TUK1i7) answer on Quora on
 Jazz improvisation.
 Jazz and improvisation are two activities close to my heart.

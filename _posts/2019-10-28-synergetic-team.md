@@ -4,6 +4,8 @@ title: "Building Synergetic Teams for Research and Startups"
 date: 2019-10-28 14:23 -0500
 ---
 
+**TL;DR.** Synergistic teams — teams that produce more than the sum of their parts — happen when leaders genuinely invest in each member's aspirations. Offer the best opportunities and you naturally attract the best people. Notes distilled from Professor Lui Sha's CS 598 lectures at UIUC.
+
 First and foremost, allow me to elucidate the concept of synergy, an indispensable term which I discovered through this educational journey:
 
 Synergy is the interaction or cooperation of two or more organizations, substances, or other agents to produce a combined effect greater than the sum of their separate effects.

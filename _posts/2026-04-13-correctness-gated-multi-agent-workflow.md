@@ -6,6 +6,8 @@ date: 2026-04-13
 
 *Brando Miranda — April 2026*
 
+**TL;DR.** The right question with AI coding agents isn't "which model is best?" — it's "what process makes model mistakes cheap to detect?" I built a modular, correctness-gated multi-agent workflow (cross-agent review, structural QA, formal verification via Lean) and published the setup as an open-source documentation architecture called [agents-config](https://github.com/brando90/agents-config).
+
 Over the past year I've been working on a simple question: how do you use coding agents for serious work without letting them quietly degrade quality?
 
 The question matters to me because my research sits at the intersection of AI, mathematics, and formal verification. I build tools for theorem proving in Lean 4, benchmarks for mathematical reasoning, and interfaces that let AI systems interact with proof assistants. Fluent output is not enough in that world. Proofs either check or they don't. That standard has shaped how I think about AI-assisted work more broadly.
