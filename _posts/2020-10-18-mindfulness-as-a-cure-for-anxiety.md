@@ -4,7 +4,7 @@ title: "Mindfulness as a Cure for Anxiety"
 date: 2020-10-18 21:09 -0500
 ---
 
-**TL;DR.** Recording and notes from a talk by Dr. Judson Brewer (Brown) on using neuroscience-backed mindfulness techniques to reduce anxiety and reshape habits — hosted through the LCS Professional Development and Wellness Colloquium at UIUC.
+**TL;DR.** Anxiety behaves like a habit loop — cue, behavior, reward. Mindfulness works by turning curiosity onto the reward itself, which weakens the loop and the anxiety with it. Neuroscience-backed and directly applicable to everyday habits.
 
 
 # Mindfulness as a Cure for Anxiety 

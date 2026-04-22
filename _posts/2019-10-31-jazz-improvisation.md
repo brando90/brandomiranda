@@ -4,7 +4,7 @@ title: "Jazz Improvisation"
 date: 2019-10-31 21:25 -0500
 ---
 
-**TL;DR.** A short reflection on Jazz improvisation — originally written as a Quora answer — and why I think improvisation in music and in dance share the same underlying skill.
+**TL;DR.** Jazz and dance improvisation are the same skill wearing different clothes: internalize structure deeply enough that you can leave it on purpose without falling apart.
 
 I originally wrote [this](https://qr.ae/TUK1i7) answer on Quora on
 Jazz improvisation.
