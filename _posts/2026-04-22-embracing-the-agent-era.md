@@ -62,6 +62,16 @@ This is why I think the creative end of any field is about to get more valuable,
 
 The flip side is honest too: if your value was mostly in the execution layer, the ground is moving. That's uncomfortable, but it's information. It tells you where to invest.
 
+## Be creative about how you work, not just what you work on
+
+Something I don't see discussed enough: the agent era also reshapes *where* and *how* creative work happens, not only what gets produced. When execution used to require a big machine, a specific desk, and a full engineering environment, your body had to be there too. That tethered creativity to the place where the work could physically run.
+
+It doesn't anymore. I bought a MacBook Air and a couple of portable monitors, and now I can direct a handful of agents from almost anywhere — a lounger at the pool, a bench on a walk, a café in a town I don't live in. The heavy lifting runs on a remote machine; what I carry is the part that actually needs me: taste, direction, judgment on the outputs. The rest of it is coordination.
+
+What I didn't expect is how much this changes the quality of the ideas. Nature, movement, and variety are some of the best creativity inducers we know of, and for most of my career they were in direct tension with "getting work done." You could walk, or you could execute, not both. Now I can take the walk *and* have real work advance while I'm on it. The creative front end and the execution back end decouple, and the front end gets to live in the environments that actually make it better.
+
+So when I say creativity is the scarce resource, I don't just mean creativity about ideas. I mean creativity about the shape of the working day — where you are, what you're looking at, what rhythm you're on, what loop you've set up between your mind and the agents doing the typing. Being creative about your process is itself a large source of leverage now, and it was much harder to pull off before.
+
 ## Education and writing have to change
 
 If writing is commoditized, "can you write a coherent five-paragraph essay" stops measuring what it used to measure. That was always a proxy for clear thinking, and the proxy just got leaky. Leaning harder on it — more essays, stricter formatting, policing the tools — doesn't fix the measurement, it just makes the proxy noisier.
