@@ -30,7 +30,7 @@ github_username:  brando90
 
 
 
-exclude: [exclude/]
+exclude: [exclude/, CLAUDE.md, agents.md]
 
 # Build settings
 theme: minima
