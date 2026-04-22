@@ -4,6 +4,8 @@ title: "Mindfulness as a Cure for Anxiety"
 date: 2020-10-18 21:09 -0500
 ---
 
+**TL;DR.** Recording and notes from a talk by Dr. Judson Brewer (Brown) on using neuroscience-backed mindfulness techniques to reduce anxiety and reshape habits — hosted through the LCS Professional Development and Wellness Colloquium at UIUC.
+
 
 # Mindfulness as a Cure for Anxiety 
 
