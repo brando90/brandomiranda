@@ -6,7 +6,7 @@ date: 2026-04-22
 
 *Brando Miranda — April 2026*
 
-**TL;DR.** In the era of AI agents, formal methods like Lean are finally within practical reach for scalable oversight of complex arguments. Let the verifier check the answer; let the human check the question. Deciding what to ask — knowing what we actually want — is the part we can't outsource.
+**TL;DR.** In the era of AI agents, formal methods like Lean are finally within practical reach for scalable oversight of complex arguments. Let the verifier check the answer; let the human check the question. Deciding what to ask — knowing what we actually want — is the part we may not be able to outsource.
 
 A conversation broke out in my lab channel this week about whether AI coding assistants are actually helping us do better research, or just helping us feel like we are. It's a question I keep coming back to, and I want to write down where I've landed.
 
