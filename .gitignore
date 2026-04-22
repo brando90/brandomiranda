@@ -35,3 +35,12 @@ Temporary Items
 
 # Local-only CS197 materials (backup + transcripts) — keep out of git
 exclude/cs197/
+
+# LaTeX build artifacts (keep .tex and .pdf in cvs/, ignore the rest)
+cvs/*.aux
+cvs/*.log
+cvs/*.out
+cvs/*.toc
+cvs/*.fls
+cvs/*.fdb_latexmk
+cvs/*.synctex.gz

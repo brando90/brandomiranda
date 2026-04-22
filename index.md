@@ -13,7 +13,7 @@ title: Brando Miranda
 - [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9)
 - brando9 {at} stanford DoT Edu
 
-<!-- - [(Maybe outdated) CV](/professional_documents/Brando_Miranda_long_CV.pdf) -->
+<!-- - [(Maybe outdated) CV](/cvs/cv_long.pdf) -->
 <!-- Department of Computer Science
 Gates Computer Science Building
 353 Jane Stanford Way
