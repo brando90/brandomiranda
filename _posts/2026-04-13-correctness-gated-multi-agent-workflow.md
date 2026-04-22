@@ -67,3 +67,18 @@ That's why I founded [Stanford AI for Lean](https://aiforlean.org/) — a studen
 *[agents-config](https://github.com/brando90/agents-config) is open source under Apache 2.0. Contributions welcome.*
 
 *[Stanford AI for Lean](https://aiforlean.org/) — Formalizing the future of mathematics.*
+
+---
+
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2026correctnessgated,
+  author = {Miranda, Brando},
+  title  = {What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research},
+  year   = {2026},
+  month  = {April},
+  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html}},
+  note   = {Blog post}
+}
+```

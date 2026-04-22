@@ -13,3 +13,18 @@ I made a survey of my own explanation of the concepts and
 mathematical proofs of [Uniform Stability and Generalization in (statistical)
 Learning Theory](https://qr.ae/TWo7oy).
 - Document available [here](https://www.ideals.illinois.edu/handle/2142/112788). Enjoy!
+
+---
+
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2019uniformstability,
+  author = {Miranda, Brando},
+  title  = {Uniform Stability in Machine Learning Theory},
+  year   = {2019},
+  month  = {October},
+  howpublished = {\url{https://brando90.github.io/brandomiranda/2019/10/31/uniform-stability.html}},
+  note   = {Blog post}
+}
+```

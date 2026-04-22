@@ -40,3 +40,18 @@ Sources:
 Lui Sha
 - Class piazza for [CS 598 Improving Your Research Skills](https://piazza.com/class/k0zszwui9i0gg)
 - Slides made by [my CS 598 team on Synergetic team](https://docs.google.com/presentation/d/1vB46nsmF8u_YPtI3iBgDe9PoX77R2TZbTlgE2am5Liw/edit?usp=sharing)
+
+---
+
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2019synergeticteams,
+  author = {Miranda, Brando},
+  title  = {Building Synergetic Teams for Research and Startups},
+  year   = {2019},
+  month  = {October},
+  howpublished = {\url{https://brando90.github.io/brandomiranda/2019/10/28/synergetic-team.html}},
+  note   = {Blog post}
+}
+```

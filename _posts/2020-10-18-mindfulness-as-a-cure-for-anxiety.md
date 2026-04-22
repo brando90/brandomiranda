@@ -65,3 +65,18 @@ If you want to follow us at LCS here are some useful links:
 - facebook group: https://www.facebook.com/groups/latinocomputerscienceclub 
 - youtube page: https://www.youtube.com/channel/UCB40buA2ZnFGM9yCBF0IepA 
 
+
+---
+
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2020mindfulnessanxiety,
+  author = {Miranda, Brando},
+  title  = {Mindfulness as a Cure for Anxiety},
+  year   = {2020},
+  month  = {October},
+  howpublished = {\url{https://brando90.github.io/brandomiranda/2020/10/18/mindfulness-as-a-cure-for-anxiety.html}},
+  note   = {Blog post}
+}
+```

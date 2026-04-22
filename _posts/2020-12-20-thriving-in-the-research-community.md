@@ -63,3 +63,18 @@ If you want to follow us at LCS here are some useful links:
 - facebook group: https://www.facebook.com/groups/latinocomputerscienceclub 
 - youtube page: https://www.youtube.com/channel/UCB40buA2ZnFGM9yCBF0IepA 
 
+
+---
+
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2020thrivingresearch,
+  author = {Miranda, Brando},
+  title  = {Thriving in the Research Community},
+  year   = {2020},
+  month  = {December},
+  howpublished = {\url{https://brando90.github.io/brandomiranda/2020/12/20/thriving-in-the-research-community.html}},
+  note   = {Blog post}
+}
+```

@@ -15,3 +15,18 @@ I hope to expand on the dancing side someday.
 
 I owe this to the many American Jazz musicians that have influenced my life
 like Larry Russell, George Michael and the local blues musician Brooks in McAllen Texas.
+
+---
+
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2019jazzimprovisation,
+  author = {Miranda, Brando},
+  title  = {Jazz Improvisation},
+  year   = {2019},
+  month  = {October},
+  howpublished = {\url{https://brando90.github.io/brandomiranda/2019/10/31/jazz-improvisation.html}},
+  note   = {Blog post}
+}
+```
