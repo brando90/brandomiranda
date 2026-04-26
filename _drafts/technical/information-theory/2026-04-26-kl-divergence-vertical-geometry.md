@@ -20,6 +20,8 @@ That's not just an aesthetic preference — it's the same instinct that pulls me
 
 So this post is a worked example of that instinct. I went back to KL divergence — a thing I have used for years — because I noticed that my own mental picture didn't quite match the algebra, and that bothered me enough to redraw it. What follows is what I found.
 
+(For the broader reason I'm writing posts like this one — explaining concepts the way I actually think about them, in a single place I can later use to prompt models to think the way I do — see the companion post: [*Models Don't Think Like Me: Why I'm Building a Personal Concept Database*](https://brando90.github.io/brandomiranda/2026/04/26/personal-concept-database.html).)
+
 ## Setup: who is who
 
 I'll use two consistent words throughout, **goal** and **viewpoint**, and translate them between the Euclidean and Shannon worlds.
@@ -41,6 +43,15 @@ I'll use two consistent words throughout, **goal** and **viewpoint**, and transl
 
 Stick figure stands at $A$ (viewpoint). $B$ (goal) is off in some direction.
 
+```
+   viewpoint                                            goal
+       A                                                 B
+       o                                                 ●
+      /|\  ────────────────────────────────────────►
+       |              Δ  =  B − A
+      / \         "from A to B"  /  "B from A"
+```
+
 $$\vec{B} - \vec{A} \quad = \quad \text{"displacement from } A \text{ (viewpoint) to } B \text{ (goal)"}$$
 
 English phrasings that all mean $\vec{B} - \vec{A}$:
@@ -55,7 +66,18 @@ Operationally: $A$ (viewpoint, where we stand) plus $\Delta$ (displacement) equa
 
 ## 2. The Shannon / KL picture — and why it's NOT horizontal
 
-If we naively transplant the Euclidean picture, we'd want some $\Delta$ such that:
+If we naively transplant the Euclidean picture, we'd draw it like this:
+
+```
+   viewpoint                                            goal
+       q̂                                                p*
+       o                                                 ●
+      /|\  ────────────── Δ_p ? ────────────────────►
+       |       wishful:  q̂ + Δ = p*    (WRONG)
+      / \   "we are at q̂, we want to approximate p*"
+```
+
+That is, we'd want some $\Delta$ such that:
 
 $$\hat{q} \;+\; \Delta \;=\; p^* \quad \text{(Euclidean wishful thinking)}$$
 
@@ -71,14 +93,24 @@ where:
 The viewpoint $\hat{q}$ **cannot** have a smaller expected code length than the goal $p^*$ on the goal's own data. The goal $p^*$ is the *floor* — there is no "below $p^*$" in code-length space. So the picture is **vertical, not horizontal**:
 
 ```
-        ┌─── H(p*, q̂)   ← viewpoint q̂'s cost (always above the floor)
-        │
-   Δ_KL │   = excess
-        │
-        └─── H(p*)       ← goal p*'s cost (the FLOOR — unbeatable)
+   expected
+   code
+   length
+      ▲
+      │
+      │     ┌── H(p*, q̂)    ← viewpoint q̂'s cost
+      │     │                  (always above the floor)
+      │     │
+      │     │   Δ_KL  =  D_KL(p* ‖ q̂)   ≥ 0
+      │     │   ↓ excess paid by viewpoint
+      │     │
+      │     └── H(p*)        ← goal p*'s cost
+      │                        (the FLOOR — unbeatable)
+      │
+      └────────────────────────────────────────►
 ```
 
-The viewpoint $\hat{q}$ sits *above* the goal $p^*$ in expected-code-length space. There's no "left" or "right" of $p^*$ — only "above."
+The viewpoint $\hat{q}$ sits *above* the goal $p^*$ in expected-code-length space. There's no "left" or "right" of $p^*$ — only "above." The arrow we care about points *down* from the viewpoint to the goal's floor: that downward gap is the excess.
 
 The gap is:
 
