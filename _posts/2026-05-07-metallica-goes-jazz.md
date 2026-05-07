@@ -36,9 +36,9 @@ That question used to be a thought experiment. Now it is a Suno prompt.
 
 I sat down and wrote six style prompts, one for each player whose voice I wanted to hear interpret the piece. The prompts live alongside the arrangement files in [`agents.md`](https://github.com/brando90/brandomiranda/blob/main/experiments/00_metallica_goes_jazz/agents.md), tuned for Suno V5 — short, era-tagged, instrument-explicit, and aggressively non-rock to keep the model from falling back on power chords. A representative one:
 
-> Cool jazz ballad, 65 BPM, intimate muted trumpet lead, breathy vulnerable tone, brushed drums with soft ride cymbal, walking upright bass, sparse piano with maj7 voicings, smoky late-night club, melancholic and tender, 1950s West Coast cool jazz.
+> Bebop, 200 BPM, virtuosic alto saxophone with rapid eighth-note runs and chromatic passing tones, walking upright bass, busy bebop drums with snare comping, piano with rootless voicings and tritone substitutions, frantic and intricate, 1940s bebop quintet.
 
-That is the Chet Baker prompt. The others — Cannonball, Bird, Joe Henderson, Stan Getz, Sonny Rollins — follow the same shape: subgenre, BPM, lead instrument and tone, rhythm-section behavior, mood, era. Each one is a hypothesis about how the harmonic skeleton of the song would refract through a different musical sensibility.
+That is the Charlie Parker prompt — the one behind the first take below. The others — Chet Baker, Cannonball, Joe Henderson, Stan Getz, Sonny Rollins — follow the same shape: subgenre, BPM, lead instrument and tone, rhythm-section behavior, mood, era. Each one is a hypothesis about how the harmonic skeleton of the song would refract through a different musical sensibility.
 
 ## First listen
 
