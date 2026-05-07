@@ -28,7 +28,7 @@ Once these systems digest the whole universe of human knowledge — and they're 
 
 Here's the part people get wrong. The fear isn't that AI replaces you. Not directly. The fear is that people who embrace AI will leave you behind.
 
-A researcher who uses AI to draft, review, iterate, and verify will produce more, catch more errors, and explore more ideas than one who doesn't. A formal methods group that integrates language models into proof search — the way Leo de Moura's team does with Lean — will make faster progress than one that spends years grinding for a 0.02% improvement on a benchmark no one uses. The technology doesn't care about your preferences. But the people who adopt it will outpace the people who don't, and that gap compounds.
+A researcher who uses AI to draft, review, iterate, and verify will produce more, catch more errors, and explore more ideas than one who doesn't. A formal methods group that integrates language models into proof search will make faster progress than one that spends years grinding for a 0.02% improvement on a benchmark no one uses. The technology doesn't care about your preferences. But the people who adopt it will outpace the people who don't, and that gap compounds.
 
 I don't want to be left behind. And to put it more bluntly — being left behind in a world that moves this fast isn't a career inconvenience. It's closer to an existential risk. Not from AI itself, but from the people who wield it while you're still deciding whether to try.
 
@@ -47,6 +47,14 @@ I think about this through the lens of my own research. I work on AI for formal 
 Every one of these decisions was an adaptation. I saw where the wave was going, and I chose to ride it instead of watching it from shore. Sometimes that means my tools are better than me at specific subtasks, and that's fine. The point was never to be the best at everything — it was to be the person who knows how to direct the best tools at the right problems.
 
 That's the real skill now. Not whether you can write code faster than a model — you can't. Not whether you can review a paper more carefully than an ensemble of models — you probably can't. But whether you can choose the right problem, formulate the right question, and structure a process that catches errors before they matter. That's still ours. For now.
+
+## Why I'm here in the first place
+
+I should also say plainly: I find this incredible. The fact that we built systems that learn from data, generalize beyond what they were shown, and now reason across nearly the entire written record of humanity — it's astonishing. I'm here because I'm fascinated by *how it actually works*, not only because the wave is unavoidable. Curiosity got me into this field long before it was fashionable.
+
+I've been at this since 2012, training base learning algorithms back when neural nets were still a slightly disreputable thing to bring up at a serious ML group meeting. I can pinpoint the exact moment I committed to it: a clip from Andrew Ng's Stanford machine learning course where the VC-dimension generalization bound goes up on the board. That equation made the argument concrete for me. Learning is a quantifiable thing. Generalization is bounded by structure plus data. If you can automate the loop — hypothesize, test, update — you can automate the scientific method itself. And if you can automate the scientific method, you can solve intelligence; and if you can solve intelligence, you can in principle solve any problem science is capable of solving. That was the argument that hooked me, and it still is.
+
+That conviction is why "force of nature" doesn't read as fatalism to me. It reads as the field finally catching up to what the theory implied a long time ago.
 
 ## I have no choice
 
