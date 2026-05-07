@@ -15,20 +15,20 @@ I was sixteen, and I wanted my school orchestra to play Metallica. Specifically 
 I cannot overstate how primitive my workflow was. Sibelius 4. A laptop. A pirated MIDI rip of the song to reference by ear. No engraving expertise, no orchestration class, no internet community to ask. Just me, a deadline, and a stubborn belief that *this song would sound good with strings.* The PDF and the `.sib` files still exist — I keep them in [`experiments/00_metallica_goes_jazz/`](https://github.com/brando90/brandomiranda/tree/main/experiments/00_metallica_goes_jazz) on this site. The audio below is the Sibelius playback of the score. It is not a real ensemble recording. It is what 2010-me thought the arrangement should sound like, rendered by a sample library that, charitably, did its best:
 
 <audio controls preload="none" style="width: 100%; max-width: 600px;">
-  <source src="{{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.mp3" type="audio/mpeg">
-  <source src="{{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.wav" type="audio/wav">
-  Your browser does not support inline audio. <a href="{{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.mp3">Download the MP3</a>.
+  <source src="{{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.mp3" type="audio/mpeg">
+  <source src="{{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.wav" type="audio/wav">
+  Your browser does not support inline audio. <a href="{{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.mp3">Download the MP3</a>.
 </audio>
 
 The full score (PDF) is here:
 
-<embed src="{{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.pdf" type="application/pdf" width="100%" height="600px" style="max-width: 800px;">
+<embed src="{{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.pdf" type="application/pdf" width="100%" height="600px" style="max-width: 800px;">
 
-If the embed does not render in your browser, [open the PDF directly]({{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.pdf).
+If the embed does not render in your browser, [open the PDF directly]({{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.pdf).
 
 ## Why jazz, why now
 
-I have always loved jazz. I wrote about that [back in 2019]({{ site.baseurl }}/2019/10/31/jazz-improvisation.html) — jazz and improvisation are two activities close to my heart, and the deepest skill in either is internalizing structure so completely that you can leave it on purpose without falling apart. I do not have the technique to actually *play* a Charlie Parker line. I do not have a working quintet on call. I cannot book Stan Getz for an afternoon. But the curiosity has always been there: *what would my Metallica arrangement sound like if a 1957 Blue Note session got hold of it?*
+I have always loved jazz. I wrote about that [back in 2019]({{ site.baseurl }}2019/10/31/jazz-improvisation.html) — jazz and improvisation are two activities close to my heart, and the deepest skill in either is internalizing structure so completely that you can leave it on purpose without falling apart. I do not have the technique to actually *play* a Charlie Parker line. I do not have a working quintet on call. I cannot book Stan Getz for an afternoon. But the curiosity has always been there: *what would my Metallica arrangement sound like if a 1957 Blue Note session got hold of it?*
 
 That question used to be a thought experiment. Now it is a Suno prompt.
 
@@ -46,7 +46,7 @@ The first take is [here on Suno](https://suno.com/s/1RTl4ch6L6LlbIFP). I will le
 
 ## What this is really about
 
-I have written before that [AI is a force of nature, and the rational response is to merge with it rather than fight it]({{ site.baseurl }}/2026/04/27/embrace-ai-or-be-left-behind.html). That post was about research and peer review and career stakes. This one is the lighter cousin. It is the same thesis applied to a personal artifact from sixteen years ago.
+I have written before that [AI is a force of nature, and the rational response is to merge with it rather than fight it]({{ site.baseurl }}2026/04/27/embrace-ai-or-be-left-behind.html). That post was about research and peer review and career stakes. This one is the lighter cousin. It is the same thesis applied to a personal artifact from sixteen years ago.
 
 Here is the thing: if you had told sixteen-year-old me, while I was hand-engraving viola parts at midnight, that one day I would be able to type six sentences and hear what *The Day That Never Comes* sounds like in the voice of Charlie Parker, I would not have believed you. Not because the technology seemed impossible — I had no model for the technology at all — but because the *gap between intent and execution* felt like the thing that defined being an amateur. You wanted to hear it; you couldn't; that was the deal.
 
@@ -60,11 +60,11 @@ That is enough for a Wednesday afternoon.
 
 *All files for this experiment (downloadable):*
 
-- [Score — PDF]({{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.pdf)
-- [Sibelius source — `.sib`]({{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.sib)
-- [Sibelius 4 export — `.sib`]({{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20sibelius%204.sib)
-- [Original Sibelius playback — MP3]({{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.mp3)
-- [Original Sibelius playback — WAV (lossless)]({{ site.baseurl }}/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.wav)
+- [Score — PDF]({{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.pdf)
+- [Sibelius source — `.sib`]({{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes.sib)
+- [Sibelius 4 export — `.sib`]({{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20sibelius%204.sib)
+- [Original Sibelius playback — MP3]({{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.mp3)
+- [Original Sibelius playback — WAV (lossless)]({{ site.baseurl }}experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.wav)
 - [Suno prompts (`agents.md`) on GitHub](https://github.com/brando90/brandomiranda/blob/main/experiments/00_metallica_goes_jazz/agents.md)
 - [First Suno take — Chet Baker style](https://suno.com/s/1RTl4ch6L6LlbIFP)
 - [Experiment folder on GitHub](https://github.com/brando90/brandomiranda/tree/main/experiments/00_metallica_goes_jazz)
