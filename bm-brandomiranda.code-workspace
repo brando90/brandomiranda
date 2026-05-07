@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "../brandomiranda"
+		},
+		{
+			"path": "../agents-config"
+		},
+		{
+			"path": "../veribench"
+		},
+		{
+			"path": "../agentic-nl-fl-maths"
+		},
+		{
+			"path": "../cert-judge"
+		},
+		{
+			"path": "."
+		}
+	]
+}
