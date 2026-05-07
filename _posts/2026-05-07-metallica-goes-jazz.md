@@ -28,7 +28,7 @@ If the embed does not render in your browser, [open the PDF directly]({{ site.ba
 
 ## Why jazz, why now
 
-I have always loved jazz. I wrote about that [back in 2019]({{ site.baseurl }}2019/10/31/jazz-improvisation.html) — jazz and improvisation are two activities close to my heart, and the deepest skill in either is internalizing structure so completely that you can leave it on purpose without falling apart. I do not have the technique to actually *play* a Charlie Parker line. I do not have a working quintet on call. I cannot book Stan Getz for an afternoon. But the curiosity has always been there: *what would my Metallica arrangement sound like if a 1957 Blue Note session got hold of it?*
+I have always loved jazz. I wrote about that [back in 2019]({{ site.baseurl }}2019/10/31/jazz-improvisation.html) — jazz and improvisation are two activities close to my heart, and the deepest skill in either is internalizing structure so completely that you can leave it on purpose without falling apart. I am confident I can *play* a Charlie Parker line — I've played *Confirmation* before. I do not have a working quintet on call. I cannot book Stan Getz for an afternoon. But the curiosity has always been there: *what would my Metallica arrangement sound like if a 1957 Blue Note session got hold of it?*
 
 That question used to be a thought experiment. Now it is a Suno prompt.
 
