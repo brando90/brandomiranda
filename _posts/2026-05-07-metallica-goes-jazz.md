@@ -28,7 +28,7 @@ If the embed does not render in your browser, [open the PDF directly]({{ site.ba
 
 ## Why jazz, why now
 
-I have always loved jazz. I wrote about that [back in 2019]({{ site.baseurl }}2019/10/31/jazz-improvisation.html) — jazz and improvisation are two activities close to my heart, and the deepest skill in either is internalizing structure so completely that you can leave it on purpose without falling apart. I do not have the technique to actually *play* a Charlie Parker line. I do not have a working quintet on call. I cannot book Stan Getz for an afternoon. But the curiosity has always been there: *what would my Metallica arrangement sound like if a 1957 Blue Note session got hold of it?*
+I have always loved jazz. I wrote about that [back in 2019]({{ site.baseurl }}2019/10/31/jazz-improvisation.html) — jazz and improvisation are two activities close to my heart, and the deepest skill in either is internalizing structure so completely that you can leave it on purpose without falling apart. I am confident I can *play* a Charlie Parker line — I've played *Confirmation* before. I do not have a working quintet on call. I cannot book Stan Getz for an afternoon. But the curiosity has always been there: *what would my Metallica arrangement sound like if a 1957 Blue Note session got hold of it?*
 
 That question used to be a thought experiment. Now it is a Suno prompt.
 
@@ -36,9 +36,9 @@ That question used to be a thought experiment. Now it is a Suno prompt.
 
 I sat down and wrote six style prompts, one for each player whose voice I wanted to hear interpret the piece. The prompts live alongside the arrangement files in [`agents.md`](https://github.com/brando90/brandomiranda/blob/main/experiments/00_metallica_goes_jazz/agents.md), tuned for Suno V5 — short, era-tagged, instrument-explicit, and aggressively non-rock to keep the model from falling back on power chords. A representative one:
 
-> Cool jazz ballad, 65 BPM, intimate muted trumpet lead, breathy vulnerable tone, brushed drums with soft ride cymbal, walking upright bass, sparse piano with maj7 voicings, smoky late-night club, melancholic and tender, 1950s West Coast cool jazz.
+> Bebop, 200 BPM, virtuosic alto saxophone with rapid eighth-note runs and chromatic passing tones, walking upright bass, busy bebop drums with snare comping, piano with rootless voicings and tritone substitutions, frantic and intricate, 1940s bebop quintet.
 
-That is the Chet Baker prompt. The others — Cannonball, Bird, Joe Henderson, Stan Getz, Sonny Rollins — follow the same shape: subgenre, BPM, lead instrument and tone, rhythm-section behavior, mood, era. Each one is a hypothesis about how the harmonic skeleton of the song would refract through a different musical sensibility.
+That is the Charlie Parker prompt — the one behind the first take below. The others — Chet Baker, Cannonball, Joe Henderson, Stan Getz, Sonny Rollins — follow the same shape: subgenre, BPM, lead instrument and tone, rhythm-section behavior, mood, era. Each one is a hypothesis about how the harmonic skeleton of the song would refract through a different musical sensibility.
 
 ## First listen
 
