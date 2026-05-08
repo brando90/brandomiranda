@@ -4,6 +4,8 @@ title: "Mindfulness as a Cure for Anxiety"
 date: 2020-10-18 21:09 -0500
 ---
 
+*~3 min read*
+
 **TL;DR.** Anxiety behaves like a habit loop — cue, behavior, reward. Mindfulness works by turning curiosity onto the reward itself, which weakens the loop and the anxiety with it. Neuroscience-backed and directly applicable to everyday habits.
 
 

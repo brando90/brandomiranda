@@ -4,6 +4,8 @@ title: "Metallica Goes Jazz: A 2010 High School Arrangement, Reanimated by AI"
 date: 2026-05-07
 ---
 
+*~6 min read*
+
 *Brando Miranda — May 2026*
 
 **TL;DR.** In 2010, as a high schooler at Greengates, I arranged Metallica's *The Day That Never Comes* by hand for the school orchestra. Sixteen years later, I fed that same arrangement into [Suno](https://suno.com/) and asked it to recast the piece in the styles of Chet Baker, Cannonball Adderley, Charlie Parker, Joe Henderson, Stan Getz, and Sonny Rollins. [Here is the first take.](https://suno.com/s/1RTl4ch6L6LlbIFP) The point isn't novelty. The point is that AI lets you keep playing with old work in ways your past self never had the chops — or the time, or the ensemble — to attempt.
