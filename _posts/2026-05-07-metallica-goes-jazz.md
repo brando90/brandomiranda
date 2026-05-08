@@ -83,3 +83,9 @@ That is enough for a Wednesday afternoon.
   note   = {Blog post}
 }
 ```
+
+---
+
+## Acknowledgments
+
+Thanks to my friend [Audriix](https://www.audriix.com/) — a professional pop artist and songwriter based in the Bay Area — for cheering this experiment on and for the conversation that nudged me toward the next iteration of it. Go listen to her music.
