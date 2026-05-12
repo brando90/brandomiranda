@@ -1,0 +1,3 @@
+[submodule "experiments/02_picoml_to_toy_itp/cs421"]
+	path = experiments/02_picoml_to_toy_itp/cs421
+	url = https://github.com/brando90/cs421.git
