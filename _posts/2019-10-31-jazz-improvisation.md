@@ -4,6 +4,8 @@ title: "Jazz Improvisation"
 date: 2019-10-31 21:25 -0500
 ---
 
+*~1 min read*
+
 **TL;DR.** Jazz and dance improvisation are the same skill wearing different clothes: internalize structure deeply enough that you can leave it on purpose without falling apart.
 
 I originally wrote [this](https://qr.ae/TUK1i7) answer on Quora on
