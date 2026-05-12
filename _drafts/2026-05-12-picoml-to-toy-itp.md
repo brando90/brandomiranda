@@ -204,8 +204,9 @@ going on underneath: this is the experiment. The first commit is a
 ## Where to follow along
 
 - Tracking issue:
-  [brando90/brandomiranda#XX](https://github.com/brando90/brandomiranda/issues)
-  (open as of this post)
+  [brando90/brandomiranda#51](https://github.com/brando90/brandomiranda/issues/51)
+- PR (Phase 1 + scaffolding):
+  [brando90/brandomiranda#52](https://github.com/brando90/brandomiranda/pull/52)
 - Experiment directory:
   [`experiments/02_picoml_to_toy_itp/`](https://github.com/brando90/brandomiranda/tree/main/experiments/02_picoml_to_toy_itp)
 - CS421 reference (vendored submodule):
