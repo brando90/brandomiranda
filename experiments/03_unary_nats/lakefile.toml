@@ -1,0 +1,5 @@
+name = "unaryNats"
+defaultTargets = ["UnaryNats"]
+
+[[lean_lib]]
+name = "UnaryNats"
