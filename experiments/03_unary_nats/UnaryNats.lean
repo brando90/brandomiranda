@@ -78,3 +78,30 @@ theorem n_add_zero_eq_n : ∀ n : UnaryNat, n + zero = n := by
   | succ n' ih => rw [add_left, ih]
 
 #print n_add_zero_eq_n
+
+-- ============================================================
+-- Seeing proof terms in the InfoView
+-- ============================================================
+-- Three ways to inspect the term a tactic block synthesised.
+--
+-- (1) `#print` — top-level command. The term shows up in the
+--     InfoView's "All Messages" tab. This is what we did above.
+--
+-- (2) `show_term tac` — *inline*. Wraps a tactic; when your cursor
+--     is on `show_term`, the synthesised term appears right there
+--     in the InfoView. Best for "what did `induction` build here?"
+example : ∀ n : UnaryNat, zero + n = n := by
+  intro n
+  show_term rfl
+
+example : ∀ n : UnaryNat, n + zero = n := by
+  intro n
+  show_term
+    induction n with
+    | zero       => rfl
+    | succ n' ih => rw [add_left, ih]
+
+-- (3) For *fully expanded* terms (no `_proof_i` placeholders), bump
+--     `pp.proofs` first. Useful for tiny proofs; noisy for big ones.
+set_option pp.proofs true in
+#print n_add_zero_eq_n
