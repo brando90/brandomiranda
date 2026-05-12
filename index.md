@@ -12,7 +12,7 @@ title: Brando Miranda
 - [MIT and CBMM Profile](https://cbmm.mit.edu/about/people/miranda)
 - [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9)
 - brando9 {at} stanford DoT Edu
-- [CV (long)](/cvs/cv_long.pdf) &nbsp;·&nbsp; [CV (short)](/cvs/cv_short.pdf)
+- [CV (long)](/professional_documents/cvs/cv_long.pdf) &nbsp;·&nbsp; [CV (short)](/professional_documents/cvs/cv_short.pdf)
 <!-- Department of Computer Science
 Gates Computer Science Building
 353 Jane Stanford Way
