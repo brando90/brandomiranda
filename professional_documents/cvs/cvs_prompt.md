@@ -303,6 +303,27 @@ You MUST NOT:
 
 ---
 
+## Dual-CV update rule (this repo)
+
+This repo keeps **two canonical CVs in parallel**: `cv_long.tex` / `cv_long.pdf` (full) and `cv_short.tex` / `cv_short.pdf` (compact). The dual-update rule:
+
+> Whenever you edit one CV, propagate the change to the other **where appropriate**.
+
+| Change type | Long | Short |
+|---|---|---|
+| New award / honor | yes | yes (top of list) |
+| New invited or contributed talk | yes (dedicated Talks section, full title) | yes (compact bullet) |
+| New media mention | yes | yes |
+| New advisee | yes | only if role is significant |
+| New publication | yes (Publications) | only if strong enough for Selected Publications |
+| Reframed Research Summary / Research Interests | yes | yes (mirror, possibly trimmed) |
+| Coursework reorder | yes | n/a (short has no Coursework) |
+| Full poster list, internship presentations | yes | n/a |
+
+After every `.tex` edit, **immediately** rebuild the matching PDF and commit both.
+
+This rule is also enforced in `CLAUDE.md` and `AGENTS.md` at the repo root.
+
 ## Local files and toolchain
 
 - **Canonical sources:** `cv_long.tex` / `cv_long.pdf` (long), `cv_short.tex` / `cv_short.pdf` (short). Both in this directory.
