@@ -30,6 +30,15 @@
 
 \raggedright
 
+% Even bottom margin across pages: stretch inter-paragraph glue
+% rather than letting pages end short (default \raggedbottom).
+% Publication entries use \\* (not \\) between title/authors/venue so
+% LaTeX cannot insert a page break inside an entry — see CV margin rule.
+\flushbottom
+\widowpenalty=10000     % no widow lines (first line of paragraph at page bottom)
+\clubpenalty=10000      % no orphan lines (last line of paragraph at page top)
+\setlength{\parskip}{0pt plus 6pt}
+
 \pagenumbering{gobble}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
@@ -115,7 +124,7 @@ Stanford, CA, 94305. \hfill
 
 \begin{body}
 \vspace{12pt}
-AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-end formal verification, and contamination-resistant evaluation of LLM mathematical reasoning; data-centric machine learning for foundation models.
+AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end-to-end formal verification of software and mathematics; contamination-resistant evaluation of LLM mathematical reasoning; data-centric machine learning for foundation and frontier models; alternative architectures (e.g.\ energy-based models) toward Artificial General Intelligence.
 \end{body}
 
 
@@ -172,6 +181,10 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 	\emph{Ph.D. Student in Computer Science. Advisor: Professor Sanmi Koyejo}\\
 	\vspace{8pt}
 
+	\textbf{MIT CBMM, UIUC \& Stanford} \hfill \emph{June 2016 - present}\\
+	\emph{Research Mentor}\\
+	\vspace{8pt}
+
 	\textbf{Amazon Web Services (AWS)} - Cupertino, CA \hfill \emph{June 2024 - September 2024}\\
 	\emph{Applied Scientist Intern}\\
 	\vspace{8pt}
@@ -200,9 +213,13 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 	\emph{Research Assistant. Advisor: Professor Tomaso Poggio}\\
 	\vspace{8pt}
 
-	\textbf{MIT CBMM, UIUC \& Stanford} \hfill \emph{June 2016 - present}\\
-	\emph{Research Mentor}\\
-    
+	\textbf{Rackspace} - San Antonio, TX \hfill \emph{June 2014 - August 2014}\\
+	\emph{Software Engineering Intern}\\
+	\vspace{8pt}
+
+	\textbf{Adobe} - San Jose, CA \hfill \emph{June 2013 - August 2013}\\
+	\emph{Software Engineering Intern --- ML/NLP for Spanish Sentiment Analysis}\\
+
  %        \textbf{MIT (Undergraduate Research Opportunity Program)} - Cambridge, MA \hfill \emph{June 2012 - August 2012}\\
 	% \emph{Undergraduate Research Assistant}\\
 	% \vspace*{-3pt}
@@ -214,8 +231,6 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 	% \end{itemize}
     
 \end{body}
-
-\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Publications
@@ -234,162 +249,161 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{10pt}
     \pubitem {E. Chen, A. Gulati, B. Miranda, Z. Tang, S. Koyejo,
     \emph{Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading}.}
-    \\
+    \\*
     (\textbf{International Conference on Learning Representations (ICLR) Workshop on Logical Reasoning of Large Language Models. 2026})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=O9CYgZFtm7}
     {Z. Zhou, X. Lu, C. Cao, B. Miranda, T. Liu, B. Han, S. Koyejo,
     \emph{CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning}.}
-    \\
+    \\*
     (\textbf{International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents: Learning, Aligning, Evolving. 2026})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/pdf/2406.04391}
     {R. Schaeffer, H. Schoelkopf, B. Miranda, G. Mukobi, V. Madan, A. Ibrahim, H. Bradley, S. Biderman, S. Koyejo,
     \emph{Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive}?}
-    \\
+    \\*
     (\textbf{International Conference on Machine Learning (ICML). 2025 \& International Conference on Machine Learning (ICML) Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) --- Outstanding Paper Award. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2508.08292}
     {A. Gulati, B. Miranda, E. Chen, E. Xia, K. Fronsdal, B. de Moraes Dumont, S. Koyejo,
     \emph{Putnam-AXIOM: A Functional \& Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs}.}
-    \\
+    \\*
     (\textbf{International Conference on Machine Learning (ICML). 2025 \& Neural Information Processing Systems (NeurIPS) Workshop on Mathematics and AI (MATH-AI). 2024})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=rWkGFmnSNl}
     {B. Miranda, Z. Zhou, A. Nie, E. Obbad, L. Aniva, K. Fronsdal, W. Kirk, D. Soylu, et al.,
     \emph{VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4}.}
-    \\
+    \\*
     (\textbf{2nd Workshop on AI for Math at International Conference on Machine Learning (ICML). 2025}; reviewer recommendation: \textbf{Accept (Oral, Top 1)})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=OfgyKeQdBg}
     {Z. Zhou, X. Lu, C. Cao, B. Miranda, T. Liu, B. Han, S. Koyejo,
     \emph{CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for Post-Training Language Models}.}
-    \\
+    \\*
     (\textbf{2nd Workshop on AI for Math at International Conference on Machine Learning (ICML). 2025})
 
     \vspace{10pt}
     \pubitem \href{https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6}
     {L. Aniva, C. Sun, B. Miranda, C. Barrett, S. Koyejo,
     \emph{Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in Lean 4}.}
-    \\
+    \\*
     (\textbf{International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS). 2025})
 
     \vspace{10pt}
     \pubitem {R. Schaeffer, B. Miranda, J. Kazdan, K. Liu, A. M. Ahmed, N. Mireshghallah, et al.,
     \emph{Causally Quantifying the Effect of Test Set Contamination on Generative Benchmarks}.}
-    \\
+    \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle. 2025})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2506.19882}
     {R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, B. Miranda, M. Gerstgrasser, et al.,
     \emph{Position: Machine Learning Conferences Should Establish a `Refutations and Critiques' Track}.}
-    \\
+    \\*
     (\textbf{Neural Information Processing Systems (NeurIPS), Main Track. 2025})
 
     \vspace{10pt}
     \pubitem {S. Barkallah, S. Daruru, B. Miranda, L. Aniva, A. Nie, S. Koyejo,
     \emph{VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification}.}
-    \\
+    \\*
     (\textbf{5th Neural Information Processing Systems (NeurIPS) Workshop on Mathematical Reasoning and AI. 2025})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=Ajr8YtfhVO}
     {R. Schaeffer, K. Liu, B. Miranda, A. M. Ahmed, N. Mireshghallah, S. Koyejo,
     \emph{The Contamination Paradox: Why Test Set Leakage Can Be Both Potent and Negligible}.}
-    \\
+    \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle. 2025})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=wvFnqVVUhN}
     {R. Schaeffer, D. Valentine, L. Bailey, J. Chua, et al., B. Miranda, et al., S. Koyejo, E. Perez,
     \emph{Failures to Find Transferable Image Jailbreaks Between Vision-Language Models}.}
-    \\
+    \\*
     (\textbf{International Conference on Learning Representations (ICLR). 2024 \& Neural Information Processing Systems (NeurIPS) Workshop on Red Teaming Generative AI, Contributed Talk. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=f6IB0WrOKS}
     {R. Schaeffer, M. Khona, S. Chandra, M. Ostrow, B. Miranda, S. Koyejo,
     \emph{Does Maximizing Neural Regression Scores Teach Us About The Brain}?}
-    \\
+    \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Unifying Representations in Neural Models (UniReps), 2nd Edition. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2501.08496}
     {K. Chawla, A. Sahai, M. DePavia, S. Sundar, B. Miranda,
     \emph{Quantifying the Importance of Data Alignment in Downstream Model Performance}.}
-    \\
+    \\*
     (\textbf{International Conference on Learning Representations (ICLR) Workshop on Data-Centric Machine Learning Research (DMLR). 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2406.06555}
     {A. Gulati, D. Ladsaria, S. Mishra, J. Sidhu, B. Miranda,
     \emph{An Evaluation Benchmark for Autoformalization in Lean4}.}
-    \\
+    \\*
     (\textbf{International Conference on Learning Representations (ICLR) Tiny Papers Track, Second Edition. 2024})
 
     \vspace{10pt}
     \pubitem {K. Chawla, A. Sahai, M. DePavia, B. Miranda,
     \emph{A Systematic Study of the Role of Data Quality and Alignment for Fine-tuning LLMs for Enhanced Autoformalization}.}
-    \\
+    \\*
     (\textbf{International Conference on Learning Representations (ICLR) Tiny Papers Track, Second Edition. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2304.15004}
     {R. Schaeffer, B. Miranda, S. Koyejo,
     \emph{Are Emergent Abilities of Language Models a Mirage}?}
-    \\
-    (\textbf{Neural Information Processing Systems (NeurIPS). 2023 --- Outstanding Paper Award \& Oral, Stanford IEEE Invited Talk 2023})
+    \\*
+    (\textbf{Neural Information Processing Systems (NeurIPS), Main Track. 2023 --- Outstanding Paper Award \& Oral})
 
-    Featured in: New York Times, Quanta Magazine, Forbes, Stanford HAI.
-    Cited in the 2024 Economic Report of the President (White House).
+    \textbf{Featured in: New York Times, Quanta Magazine, Forbes, Stanford HAI; Cited in the 2024 Economic Report of the President (White House).}
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2306.13840}
-    {A. Lee*, B. Miranda*, P. Yu, S. Koyejo,
+    {B. Miranda*, A. Lee*, P. Yu, S. Koyejo,
     \emph{Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data}.}
-    \\
-    (\textbf{International Conference on Machine Learning (ICML) Workshop on Data-Centric Machine Learning \& International Conference on Machine Learning (ICML) Workshop on Deployable Generative AI. 2023) (*equal contribution})
+    \\*
+    (\textbf{International Conference on Machine Learning (ICML) Workshop on Data-Centric Machine Learning \& International Conference on Machine Learning (ICML) Workshop on Deployable Generative AI. 2023}) (*equal contribution)
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2208.01545}
     {B. Miranda, P. Yu, Y. Wang, S. Koyejo,
     \emph{The Curse of Zero Task Diversity: the Failure of Transfer Learning to Outperform MAML and their Empirical Equivalence}.}
-    \\
+    \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Meta-Learning, Contributed Talk. 2022})
 
     \vspace{10pt}
     \pubitem \href{https://drive.google.com/file/d/1G2IVmbENphwB3lxROEpCHQjsClKqRtKP/view}
     {T. Poggio, A. Banburski, Q. Liao, B. Miranda, L. Rosasco, J. Hidary,
     \emph{Weight and Batch Normalization implement Classical Generalization Bounds}.}
-    \\
+    \\*
     (\textbf{International Conference on Machine Learning (ICML) Workshop. 2019})
 
     \vspace{10pt}
     \pubitem \href{https://www.osapublishing.org/abstract.cfm?uri=CLEO_SI-2018-SF1A.1}
     {D. Kita, B. Miranda, H. Lin, J. Michon, D. Favela, J. Hu,
     \emph{High-resolution on-chip digital Fourier transform spectroscopy}.}
-    \\
+    \\*
     (\textbf{Conference on Lasers and Electro-Optics (CLEO): Science and Innovations. 2018})
 
     \vspace{10pt}
     \pubitem \href{https://www.nature.com/articles/s41467-018-06773-2}
     {D. Kita, B. Miranda, D. Favela, D. Bono, J. Michon, H. Lin, T. Gu, J. Hu,
     \emph{High-performance and scalable on-chip digital Fourier transform spectroscopy}.}
-    \\
+    \\*
     (\textbf{Nature Communications 9 (1), 4405. 2018})
 
     \vspace{10pt}
     \pubitem \href{https://link.springer.com/article/10.1007/s11633-017-1054-2}
     {T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, Q. Liao,
     \emph{Why and when can deep-but not shallow-networks avoid the curse of dimensionality: A review}.}
-    \\
-    (International Journal of Automation and Computing (IJAC), pp. 1-17, 2017. \textbf{Most Cited Paper Certificate.})
+    \\*
+    (\textbf{International Journal of Automation and Computing (IJAC), pp. 1-17, 2017. Most Cited Paper Certificate.})
 
     \vspace{20pt}
     {\scshape \large \textbf{Preprints and Technical Reports}}
@@ -400,74 +414,74 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \pubitem \href{https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf}
     {D. Amrollahi, M. Karimi, B. Miranda, L. Aniva, C. Sun, C. Barrett, S. Koyejo,
     \emph{AI Coding Benchmarks Need Proofs, Not Just Tests}.}
-    \\
+    \\*
     (\textbf{Preprint 2026})
 
     \vspace{10pt}
     \pubitem {E. Obbad, B. Miranda, D. L. W. Hall, R. Schaeffer, S. Koyejo, P. Liang,
     \emph{Curating High Quality Pretraining Data for Language Models via Compression Ratios}.}
-    \\
+    \\*
     (\textbf{Preprint 2026})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2601.04301}
     {R. Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, B. Miranda, A. M. Ahmed, F. Berez, et al.,
     \emph{Quantifying the Effect of Test Set Contamination on Generative Evaluations}.}
-    \\
+    \\*
     (\textbf{Preprint 2026, arXiv:2601.04301})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2509.24012}
     {R. Schaeffer, N. Levi, B. Miranda, S. Koyejo,
     \emph{Pretraining Scaling Laws for Generative Evaluations of Language Models}.}
-    \\
+    \\*
     (\textbf{Preprint 2025, arXiv:2509.24012})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2509.23963}
     {R. Schaeffer, N. Levi, A. Kirsch, T. Guenais, B. Miranda, E. Obbad, S. Koyejo,
     \emph{Evaluating the Robustness of Chinchilla Compute-Optimal Scaling}.}
-    \\
+    \\*
     (\textbf{Preprint 2025, arXiv:2509.23963})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2502.15795}
     {W. Chan, M. Souliman, J. Nordhagen, B. Miranda, E. Obbad, S. Koyejo,
     \emph{Lean-ing on Quality: How High-Quality Data Beats Diverse Multilingual Data in Autoformalization}.}
-    \\
+    \\*
     (\textbf{Preprint 2025, arXiv:2502.15795})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2510.06261}
     {Z. Zhou, C. Cao, X. Feng, X. Li, Z. Li, X. Lu, J. Yao, W. Huang, T. Cheng, et al., B. Miranda,
     \emph{AlphaApollo: Orchestrating Foundation Models and Professional Tools into a Self-Evolving System for Deep Agentic Reasoning}.}
-    \\
+    \\*
     (\textbf{Preprint 2025, arXiv:2510.06261})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2501.08506}
     {K. Selva, S. Vittayaareekul, B. Miranda,
     \emph{Exploring the Efficacy of Meta-Learning: Unveiling Superior Data Diversity Utilization of MAML Over Pre-training}.}
-    \\
+    \\*
     (\textbf{Preprint 2025, arXiv:2501.08506})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2410.18194}
     {E. Obbad, I. Mlauzi, B. Miranda, R. Schaeffer, K. Obbad, S. Bedi, S. Koyejo,
     \emph{ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment}.}
-    \\
+    \\*
     (\textbf{Preprint, arXiv 2024})
 
     \vspace{10pt}
     \pubitem {J. Rotella, Z. Qin, A. Z. H. Yang, B. Miranda, M. E. A. Seddik, J. Zuo, H. Hacid, et al.,
     \emph{Synthetic Theorem Generation in Lean}.}
-    \\
+    \\*
     (\textbf{Preprint 2024})
 
     \vspace{10pt}
     \pubitem {B. Miranda (ML Research Scientist Consultant) \& Morph Labs Team,
     \emph{Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language}.}
-    \\
+    \\*
     \href{https://morph.so/blog/the-personal-ai-proof-engineer/}{[Blog]}
     \href{https://huggingface.co/morph-labs/morph-prover-v0-7b}{[Hugging Face Model Card]}
 
@@ -475,69 +489,67 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \pubitem \href{https://arxiv.org/abs/2306.13841}
     {B. Miranda, P. Yu, S. Goyal, Y. Wang, S. Koyejo,
     \emph{Is Pre-training Truly Better Than Meta-Learning}?}
-    \\
+    \\*
     (\textbf{Preprint 2023})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2304.10500}
     {B. Miranda, A. Shinnar, V. Pestun, B. Trager,
     \emph{Transformer Models for Type Inference in the Simply Typed Lambda Calculus: A Case Study in Deep Learning for Code}.}
-    \\
+    \\*
     (\textbf{Preprint 2023})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2112.13137}
     {B. Miranda, Y. Wang, S. Koyejo,
     \emph{Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective}.}
-    \\
+    \\*
     (\textbf{Preprint 2021})
 
     \vspace{10pt}
     \pubitem \href{https://www.ideals.illinois.edu/handle/2142/109139}
     {B. Miranda,
     \emph{An Empirical Study of Meta-Learning: a step towards rigorously understanding meta-learning algorithms}.}
-    \\
+    \\*
     (\textbf{Preprint 2020})
 
     \vspace{10pt}
     \href{https://arxiv.org/abs/1903.04991}
     {A. Banburski, Q. Liao, B. Miranda, L. Rosasco, B. Liang, J. Hidary, T. Poggio,
     Theory III: Dynamics and Generalization in Deep Networks.}
-    \\
+    \\*
     (\textbf{Preprint 2019})
 
     \vspace{10pt}
     \href{https://arxiv.org/abs/1807.09659}
     {Q. Liao, B. Miranda, A. Banburski, J. Hidary, T. Poggio,
     A Surprising Linear Relationship Predicts Test Performance in Deep Networks.}
-    \\
+    \\*
     (\textbf{Preprint 2018})
 
     \vspace{10pt}
     \href{https://arxiv.org/abs/1801.02254}
     {C. Zhang, Q. Liao, A. Rakhlin, B. Miranda, N. Golowich, T. Poggio,
     Theory of Deep Learning IIb: Optimization Properties of SGD.}
-    \\
+    \\*
     (\textbf{Preprint 2018})
 
     \vspace{10pt}
     \href{https://arxiv.org/abs/1806.11379}
     {T. Poggio, Q. Liao, B. Miranda, A. Banburski, X. Boix, J. Hidary,
     Theory IIIb: Generalization in Deep Networks.}
-    \\
+    \\*
     (\textbf{Preprint 2018})
 
     \vspace{10pt}
     \href{https://arxiv.org/abs/1801.00173}
     {T. Poggio, K. Kawaguchi, Q. Liao, B. Miranda, L. Rosasco, X. Boix, J. Hidary, M. Mhaskar,
     Theory of Deep Learning III: explaining the non-overfitting puzzle.}
-    \\
+    \\*
     (\textbf{Preprint 2017})
 
     \vspace{6pt}
 \end{body}
-
-\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Awards & Honors
@@ -548,7 +560,8 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 \begin{itemize} \itemsep -2pt
     \item \textbf{ICML 2026 Silver Reviewer} (May 2026) --- top reviewer recognition signed by the ICML 2026 Program Chairs.
     \item \textbf{Oral Recommendation (Top 1)}, 2nd AI for Math Workshop @ ICML 2025 --- for \textit{VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4} (Miranda et al.); reviewer recommendation ``Accept (Oral, Top 1)''.
-    \item ICML Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) --- Outstanding Paper Award (July 2024) --- for ``Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?'' (Schaeffer, Schoelkopf, Miranda, et al.).
+    \item \textbf{Pear AI Researchers Circle} (July 2025) --- selective AI-researcher network convened by Pear VC; invited following the final round (R3) of the Pear AI Researcher Grant program.
+    \item \textbf{ICML Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) --- Outstanding Paper Award} (July 2024) --- for ``Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?'' (Schaeffer, Schoelkopf, Miranda, et al.).
     \item \textbf{NeurIPS Outstanding Main Track Paper Award} (December 2023) --- top 0.4\% of NeurIPS submissions; only 2 main-track papers selected. For ``Are Emergent Abilities of Large Language Models a Mirage?'' (Schaeffer, Miranda, Koyejo).
     \item \textbf{EDGE Scholar}, Stanford University (September 2022) --- Stanford fellowship supporting first-generation / low-income PhD students with additional mentorship and stipend.
     \item \textbf{Stanford School of Engineering Fellowship} (September 2022) --- multi-year departmental fellowship for incoming Stanford engineering PhD students.
@@ -559,14 +572,14 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \item \textbf{Computer Science Excellence Saburo Muroga Endowed Fellowship}, UIUC (2019-2020) --- top departmental fellowship for outstanding incoming CS PhD students.
     \item \textbf{Sloan Scholar}, Alfred P. Sloan Foundation Minority Ph.D. (MPHD) Program (2018-2019) --- prestigious national fellowship supporting underrepresented STEM PhD students.
     \item \textbf{Grainger Engineering SURGE Fellowship}, UIUC (2018-2019) --- multi-year college-level fellowship for diverse engineering PhD students.
-	\item Chopper Trading, LLC, Best Strategy Report Award, MIT BattleCode AI competition (2013) --- top finisher among $\sim$300 teams.
-	\item MIT Mitchell B. Kaufman Memorial Scholarship (2012-2013, 2013-2014).
-	\item MIT Eugene and Margaret McDermott Scholarship (2012-2013, 2013-2014).
- 	\item Greengates Scholarship (30\% 2007, 50\% 2008, 100\% 2009, 100\% 2010).
-	\item High Achievement Prize Award, Greengates School (2007, 2008, 2009, 2010) --- equivalent to Valedictorian.
-	\item Best All-Round Student Award, Greengates School (2010).
-	\item Achievement Prize Award, Greengates School (2006).
-	\item Certificate for Progress Award, Greengates School (2005).
+	\item \textbf{Chopper Trading, LLC, Best Strategy Report Award}, MIT BattleCode AI competition (2013) --- top finisher among $\sim$300 teams.
+	\item \textbf{MIT Mitchell B. Kaufman Memorial Scholarship} (2012-2013, 2013-2014).
+	\item \textbf{MIT Eugene and Margaret McDermott Scholarship} (2012-2013, 2013-2014).
+ 	\item \textbf{Greengates Scholarship} (30\% 2007, 50\% 2008, 100\% 2009, 100\% 2010).
+	\item \textbf{High Achievement Prize Award}, Greengates School (2007, 2008, 2009, 2010) --- equivalent to Valedictorian.
+	\item \textbf{Best All-Round Student Award}, Greengates School (2010).
+	\item \textbf{Achievement Prize Award}, Greengates School (2006).
+	\item \textbf{Certificate for Progress Award}, Greengates School (2005).
 \end{itemize}
 \end{body}
 
@@ -577,12 +590,12 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 \begin{body}
 \vspace{12pt}
 \begin{itemize} \itemsep -2pt
-    \item \textbf{White House Economic Report of the President (2024)}: Our work on emergent abilities was cited in the 2024 Economic Report of the President -- the White House's annual flagship document on national economic policy
-    \item \textbf{The New York Times (2023)}: ``Silicon Valley Confronts the Idea That the `Singularity' Is Here''
-    \item \textbf{Quanta Magazine (2024)}: ``How Quickly Do Large Language Models Learn Unexpected Skills?''
-    \item \textbf{Forbes (2023)}: ``AI `Emergent Abilities' Are A Mirage, Says AI Researcher''
-    \item \textbf{Andrew Ng (2024)}: Endorsed our paper as evidence that AGI development will be smooth and predictable
     \item \textbf{Hacker News / Y Combinator (2025)}: \href{https://news.ycombinator.com/item?id=42565606}{Putnam-AXIOM benchmark posted on Hacker News} --- our \textit{Putnam-AXIOM} benchmark for higher-level LLM mathematical reasoning drew front-page attention on Y Combinator's influential tech-news forum
+    \item \textbf{White House Economic Report of the President (2024)}: Our work on emergent abilities was cited in the 2024 Economic Report of the President -- the White House's annual flagship document on national economic policy
+    \item \textbf{Quanta Magazine (2024)}: ``How Quickly Do Large Language Models Learn Unexpected Skills?''
+    \item \textbf{Andrew Ng (2024)}: Endorsed our paper as evidence that AGI development will be smooth and predictable
+    \item \textbf{The New York Times (2023)}: ``Silicon Valley Confronts the Idea That the `Singularity' Is Here''
+    \item \textbf{Forbes (2023)}: ``AI `Emergent Abilities' Are A Mirage, Says AI Researcher''
     \item \textbf{AK / @\_akhaliq on X (2023)}: \href{https://x.com/_akhaliq/status/1673507375515594766}{AK shared our \textit{Beyond Scale} paper on X} --- the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace) tweeted our \textit{Beyond Scale} data-diversity paper to his large research audience (68.9K views)
     \item \textbf{Stanford AI Lab Blog (ICML 2023)}: \href{https://ai.stanford.edu/blog/icml-2023/}{Our \textit{Beyond Scale} and \textit{Is Pre-training Truly Better Than Meta-Learning?} papers were featured in the Stanford AI Lab blog roundup of ICML 2023}
     \item \textbf{Additional coverage}: Stanford HAI, Y Combinator News, Vice, Medium, HackerNews, NeurIPS blog, Reddit
@@ -613,81 +626,24 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \href{https://docs.google.com/presentation/d/1KRBym-sOORaxszOJQHdD4u80wAl7jHy8Pda0KAcdeZw/edit?usp=sharing}{Prof. Azalia Mirhoseini's Lab Meeting, Stanford} (invited).
 
     \vspace{8pt}
-    \textbf{Are Emergent Abilities of Large Language Models a Mirage? --- Why Has Predicting Downstream Capabilities Remained Elusive?}\\
-    \href{https://docs.google.com/presentation/d/1cr_X6jzZxShHMUVjzHAkitCnPZCbBfyxxxgZg8S90SI/edit?usp=sharing}{Lawrence Livermore National Laboratory} (invited talk).
-
-    \vspace{8pt}
-    \textbf{Emergent Abilities of Large Language Models --- Koyejo Lab perspective}\\
-    \href{https://docs.google.com/presentation/d/1UDqPg06xQKga1oWSEMS2jyzignQwkot6ZbjQMhdZngs/edit?usp=sharing}{Amazon Research} (invited talk).
+    \textbf{Failures to Find Transferable Image Jailbreaks Between Vision-Language Models}\\
+    NeurIPS Red Teaming GenAI Workshop, Contributed Talk. \emph{December 2024.}
 
     \vspace{8pt}
     \textbf{Are Emergent Abilities of Large Language Models a Mirage?}\\
     Stanford IEEE Invited Talk. \emph{Stanford, CA, 2023.}
 
     \vspace{8pt}
-    \textbf{Failures to Find Transferable Image Jailbreaks Between Vision-Language Models}\\
-    NeurIPS Red Teaming GenAI Workshop, Contributed Talk. \emph{December 2024.}
+    \textbf{Are Emergent Abilities of Large Language Models a Mirage? --- Why Has Predicting Downstream Capabilities Remained Elusive?}\\
+    \href{https://docs.google.com/presentation/d/1cr_X6jzZxShHMUVjzHAkitCnPZCbBfyxxxgZg8S90SI/edit?usp=sharing}{Lawrence Livermore National Laboratory} (invited talk). \emph{2023.}
+
+    \vspace{8pt}
+    \textbf{Emergent Abilities of Large Language Models}\\
+    \href{https://docs.google.com/presentation/d/1UDqPg06xQKga1oWSEMS2jyzignQwkot6ZbjQMhdZngs/edit?usp=sharing}{Amazon Research} (invited talk). \emph{2023.}
 
     \vspace{8pt}
     \textbf{The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence}\\
     NeurIPS Meta-Learning Workshop, Contributed Talk. \emph{New Orleans, LA, December 2022.}
-
-\end{body}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Posters & Other Presentations
-
-\header{Posters \& Other Presentations}
-
-\begin{body}
-    \vspace{12pt}
-
-    The Curse of Low Task Diversity (Poster)
-    \hfill
-    NeurIPS 2022
-	\hfill
-	\emph{New Orleans, LA, December 2022}\\
-	\vspace*{-3pt}
-
-    \vspace{8pt}
-    Compact, Fourier transform spectroscopy (Poster)
-    \hfill
-    Materials Day MIT
-	\hfill
-	\emph{Cambridge, MA, November 2018}\\
-	\vspace*{-3pt}
-
-    \vspace{8pt}
-    Theories of Deep Learning (Poster)
-    \hfill
-    MIT CBMM External Advisory Committee meeting
-	\hfill
-	\emph{Cambridge, MA, April 2018}\\
-	\vspace*{-3pt}
-
-	\vspace{8pt}
-    Theories of Deep Learning (Poster)
-    \hfill
-    MIT Quest for Intelligence launch
-	\hfill
-	\emph{Cambridge, MA, March 2018}\\
-	\vspace*{-3pt}
-
-	\vspace{8pt}
-    Theories of Deep Learning (Poster)
-    \hfill
-    MIT CBMM annual NSF meeting
-	\hfill
-	\emph{Cambridge, MA, March 2018}\\
-	\vspace*{-3pt}
-
-	\vspace{8pt}
-    Thesis Presentation: Training Methods for Deep Gaussian Networks
-    \hfill
-    Final M.Eng presentation, MIT CBCL
-	\hfill
-	\emph{Cambridge, MA, August 2016}\\
-	\vspace*{-3pt}
 
 \end{body}
 
@@ -700,9 +656,15 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 
 \vspace{12pt}
 \begin{itemize}
-    \item ICML 2026 (International Conference on Machine Learning) reviewer -- \textbf{Silver Reviewer designation} (top reviewer recognition)
-    \item ICLR 2020 (International Conference on Learning Representations) reviewer
-    \item JMLR 2018 (Journal of Machine Learning Research) joint review with Qianli Liao
+    \item \textbf{NeurIPS 2026} (Neural Information Processing Systems) Conference reviewer
+    \item \textbf{ICLR 2026} (International Conference on Learning Representations) Conference reviewer
+    \item \textbf{ICML 2026} (International Conference on Machine Learning) Conference reviewer -- \textbf{Silver Reviewer designation} (top reviewer recognition)
+    \item \textbf{ICLR 2025} (International Conference on Learning Representations) Conference reviewer
+    \item \textbf{ICML 2025} 2nd AI for Math (AI4MATH) Workshop reviewer
+    \item \textbf{ICLR 2024} Data-centric Machine Learning Research (DMLR) Workshop reviewer
+    \item \textbf{NeurIPS 2023} Mathematical Reasoning and AI (MATH-AI) Workshop reviewer
+    \item \textbf{ICLR 2020} (International Conference on Learning Representations) Conference reviewer
+    \item \textbf{JMLR 2018} (Journal of Machine Learning Research) joint review with Qianli Liao
 \end{itemize}
 
 \end{body}
@@ -723,15 +685,21 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 
 \end{body}
 
-\newpage
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Teaching
 
 \header{Teaching experience}
 \begin{body}
 	\vspace{12pt}
-	
+
+	\textbf{Stanford University} - Stanford, CA \hfill \emph{2023 - 2025}\\
+	\emph{Course Assistant (3 quarters) \& Instructor of Record (Spring)}\\
+	\vspace*{-3pt}
+	\begin{itemize} \itemsep -2pt
+		\item CS 197 \textit{How to Do CS Research} with Prof. Michael Bernstein --- TA'd 3 quarters; served as \textbf{Instructor of Record} for the Spring offering
+		\item Mentored undergraduate research projects from the course that produced \textbf{2 workshop publications} (including ICML workshop tracks)
+	\end{itemize}
+
 	\textbf{UIUC} - Urbana-Champaign, IL \hfill \emph{August 2020 - December 2020}\\
 	\emph{Graduate Teaching Assistant}\\
 	\vspace*{-3pt}
@@ -795,127 +763,125 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 	\emph{National Honor Society for Computer Science and Electrical Engineering (Eta Kappa Nu)}\\
 	\vspace*{-3pt}
 	\begin{itemize} \itemsep -2pt
-		\item Algorithms tutor for undergraduates at MIT 
+		\item Algorithms tutor for undergraduates at MIT
 	\end{itemize}
 
 \end{body}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Industry
-
-\header{Industry experience}
-\begin{body}
-	\vspace{12pt}
-    \textbf{Rackspace} - San Antonio, TX \hfill \emph{June 2014 - August 2014}\\
-	\emph{Software Engineering Intern}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt
-		\item Built a concurrent proxy to extend the functionality of the Redis Database
-        \item Added security functionality to the proxy
-        \item Presented and delivered a demo to engineering team and higher level management
-	\end{itemize}
-   
-   	\textbf{Adobe} - San Jose, CA \hfill \emph{June 2013 - August 2013}\\
-	\emph{Software Engineering Intern}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt
-		\item Developed and optimized Machine Learning software for Sentiment Analysis in Spanish
-        \item Researched different machine learning and natural language processing (NLP) techniques to optimize the Naive Bayes algorithm
-        \item Developed different methods for automatic extraction of training data
-        \item Presented and delivered a demo to Adobe's engineering department
-	\end{itemize}
-
-\end{body}
-
-\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Industry (moved into Professional Experience above)
+%
+%\header{Industry experience}
+%\begin{body}
+%	\vspace{12pt}
+%    \textbf{Rackspace} - San Antonio, TX \hfill \emph{June 2014 - August 2014}\\
+%	\emph{Software Engineering Intern}\\
+%	\vspace*{-3pt}
+%	\begin{itemize} \itemsep -2pt
+%		\item Built a concurrent proxy to extend the functionality of the Redis Database
+%        \item Added security functionality to the proxy
+%        \item Presented and delivered a demo to engineering team and higher level management
+%	\end{itemize}
+%
+%   	\textbf{Adobe} - San Jose, CA \hfill \emph{June 2013 - August 2013}\\
+%	\emph{Software Engineering Intern}\\
+%	\vspace*{-3pt}
+%	\begin{itemize} \itemsep -2pt
+%		\item Developed and optimized Machine Learning software for Sentiment Analysis in Spanish
+%        \item Researched different machine learning and natural language processing (NLP) techniques to optimize the Naive Bayes algorithm
+%        \item Developed different methods for automatic extraction of training data
+%        \item Presented and delivered a demo to Adobe's engineering department
+%	\end{itemize}
+%
+%\end{body}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Projects
-\header{Projects}
-\begin{body}
-	\vspace{8pt}
-	\begin{multicols}{2}
-    
-    	\textbf {Function approximation with deep Neural and Gaussian Networks}\\
-		Masters of Engineering Thesis, advised by professor Tomaso Poggio \\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Researched the optimization landscape of Gaussian Networks with Gradient Descent
-			\item Discovered a novel source of vanishing gradient impeding the training using backpropagation
-		\end{itemize}
-		\vspace{8pt}
-        
-        \textbf {Collaborative filtering for movie rating prediction}\\
-		Matrix completion using mixture of Gaussians \\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Designed questions and solutions with fellow TA He Sun and professor Tommi S Jaakola
-            \item Helped implement code that solved project with EM algorithm for matrix completion
-		\end{itemize}
-		\vspace{8pt}
-        
-        \textbf {Survey in Statistical Learning Theory}\\
-		Graduate project for class 9.520/6.860 2014\\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Prepared a survey on Uniform Stability and Generalization in Learning theory
-            \item Survey contained conceptual explanation to mathematical concepts in learning theory
-            \item Survey also contained my own presentation of the proof for the theorems
-			\item Survey can be read at: \href{https://www.quora.com/profile/Brando-Miranda/Posts/Uniform-Stability-and-Generalization-in-Learning-theory}{project report}
-		\end{itemize}
-		\vspace{8pt}
-        
-        \textbf {Survey in Theoretical Computer Science}\\
-        Project for graduate class in mathematics 18.409 2015\\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Research paper survey on provable algorithms that require less computation time given more training examples
-            \item In the case of SVM optimization PEGASOS requires less runtime assuming a target generalization
-            \item When learning halfspaces over sparse vectors, more training examples reduce the training runtime from exponential to polynomial time
-            \item Provided my unique outline of the main proof for halfspaces time reduction
-		\end{itemize}
-		\vspace{8pt}
-        
-        \textbf {Evaluating sublinear estimators for big data}\\
-        undergraduate thesis project, advised by professor Samuel Madden \\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Designed sub-linear sampling algorithms for estimating groups from big data in databases
-            \item Designed and proved that the algorithmic estimators were statistically consistency and unbiased
-            \item Experimentally evaluated the algorithms with synthetic data sets using the Mean Absolute Percentage Error
-		\end{itemize}
-		\vspace{8pt}
-	
-		\textbf {Road Runner}\\
-		Persistent, fault-tolerant, high-performance KV store \\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Built Multipaxos library for efficient consensus
-			\item Optimized disk I/O with batching scheme
-			\item Tested with mocks simulating RPC delays on unreliable, long-distance network
-		\end{itemize}
-		\vspace{8pt}
-	
-		\textbf {Dark Cloud}\\
-		Secure, shared, cloud filesystem on untrusted server \\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Designed layered cryptography scheme
-			\item Implemented the cryptography API
-            \item Report: \href{https://css.csail.mit.edu/6.858/2013/projects/mpolanco-pcattori-brando90.pdf}{project report}
-		\end{itemize}
-		\vspace{8pt}
-		
-		\textbf {BattleCode} \\
-		Artificial Intelligence competition\\
-		\vspace*{-3pt}
-		\begin{itemize} \itemsep -2pt
-			\item Wrote path finding algorithms \& distributed combat strategy
-			\item Finalists in competition pool of 300 teams
-			\item Awarded \emph{Best Strategy Report}
-		\end{itemize}
-	\end{multicols}
-\end{body}
+%\header{Projects}
+%\begin{body}
+%	\vspace{8pt}
+%	\begin{multicols}{2}
+%    
+%    	\textbf {Function approximation with deep Neural and Gaussian Networks}\\
+%		Masters of Engineering Thesis, advised by professor Tomaso Poggio \\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Researched the optimization landscape of Gaussian Networks with Gradient Descent
+%			\item Discovered a novel source of vanishing gradient impeding the training using backpropagation
+%		\end{itemize}
+%		\vspace{8pt}
+%        
+%        \textbf {Collaborative filtering for movie rating prediction}\\
+%		Matrix completion using mixture of Gaussians \\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Designed questions and solutions with fellow TA He Sun and professor Tommi S Jaakola
+%            \item Helped implement code that solved project with EM algorithm for matrix completion
+%		\end{itemize}
+%		\vspace{8pt}
+%        
+%        \textbf {Survey in Statistical Learning Theory}\\
+%		Graduate project for class 9.520/6.860 2014\\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Prepared a survey on Uniform Stability and Generalization in Learning theory
+%            \item Survey contained conceptual explanation to mathematical concepts in learning theory
+%            \item Survey also contained my own presentation of the proof for the theorems
+%			\item Survey can be read at: \href{https://www.quora.com/profile/Brando-Miranda/Posts/Uniform-Stability-and-Generalization-in-Learning-theory}{project report}
+%		\end{itemize}
+%		\vspace{8pt}
+%        
+%        \textbf {Survey in Theoretical Computer Science}\\
+%        Project for graduate class in mathematics 18.409 2015\\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Research paper survey on provable algorithms that require less computation time given more training examples
+%            \item In the case of SVM optimization PEGASOS requires less runtime assuming a target generalization
+%            \item When learning halfspaces over sparse vectors, more training examples reduce the training runtime from exponential to polynomial time
+%            \item Provided my unique outline of the main proof for halfspaces time reduction
+%		\end{itemize}
+%		\vspace{8pt}
+%        
+%        \textbf {Evaluating sublinear estimators for big data}\\
+%        undergraduate thesis project, advised by professor Samuel Madden \\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Designed sub-linear sampling algorithms for estimating groups from big data in databases
+%            \item Designed and proved that the algorithmic estimators were statistically consistency and unbiased
+%            \item Experimentally evaluated the algorithms with synthetic data sets using the Mean Absolute Percentage Error
+%		\end{itemize}
+%		\vspace{8pt}
+%	
+%		\textbf {Road Runner}\\
+%		Persistent, fault-tolerant, high-performance KV store \\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Built Multipaxos library for efficient consensus
+%			\item Optimized disk I/O with batching scheme
+%			\item Tested with mocks simulating RPC delays on unreliable, long-distance network
+%		\end{itemize}
+%		\vspace{8pt}
+%	
+%		\textbf {Dark Cloud}\\
+%		Secure, shared, cloud filesystem on untrusted server \\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Designed layered cryptography scheme
+%			\item Implemented the cryptography API
+%            \item Report: \href{https://css.csail.mit.edu/6.858/2013/projects/mpolanco-pcattori-brando90.pdf}{project report}
+%		\end{itemize}
+%		\vspace{8pt}
+%		
+%		\textbf {BattleCode} \\
+%		Artificial Intelligence competition\\
+%		\vspace*{-3pt}
+%		\begin{itemize} \itemsep -2pt
+%			\item Wrote path finding algorithms \& distributed combat strategy
+%			\item Finalists in competition pool of 300 teams
+%			\item Awarded \emph{Best Strategy Report}
+%		\end{itemize}
+%	\end{multicols}
+%\end{body}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -955,103 +921,29 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
 	\emph{\textbf{Languages:}}{} English, Spanish (both native fluency)\\
 \end{body}
 
-\newpage
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Leadership
 \header{Leadership}
 
 \begin{body}
-
-    \vspace{12pt}
-
-      \textbf{Stanford Research Mentor} - Stanford, CA \hfill \emph{September 2022 - Present}\\
-	\emph{Research Mentor}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Research mentor with an undergraduate and two master's students on the role of data quality on the ability of Foundation Models to do in context learning. 
-	\end{itemize}
-	\vspace{8pt}
+	\vspace{12pt}
 
 	\textbf{Stanford AI for Lean (Lean AI Club)} - Stanford, CA \hfill \emph{2025 - Present}\\
-	\emph{Founding Member}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Founding member of \href{https://aiforlean.org/}{Stanford AI for Lean}, a community of researchers and students dedicated to advancing AI for Lean theorem proving and formalizing mathematics
-	\end{itemize}
+	\emph{Founding Member} --- \href{https://www.stanfordlean.club/}{Stanford Lean AI Club} (also \href{https://aiforlean.org/}{aiforlean.org}), a research community advancing AI for Lean theorem proving and formalizing mathematics.\\
 	\vspace{8pt}
 
- 	\textbf{Stanford Bachata Sensual \& Brazilian Zouk (Latin Dance Group)} - Stanford, CA \hfill \emph{September 2021 - Present}\\
-	\emph{President and Founder}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Founded the first Bachata Sensual \& Zouk (SBSBZ) dance group at the Stanford University -- and with our officers made it an officially recognized student organization
-    	\item Lead weekly practice and dance classes for students and local community members. Communication channels have over 200 members.
-    	\item In line with our commitment to providing accessible, zero-cost information to the wider community, we proudly offer comprehensive summaries of all our lessons on YouTube.
-	\end{itemize}
+	\textbf{Stanford Bachata Sensual \& Brazilian Zouk (\href{https://sbsbz-dance.manus.space/}{SBSBZ})} - Stanford, CA \hfill \emph{September 2021 - Present}\\
+	\emph{Founder \& President} --- founded the first Bachata Sensual \& Zouk student organization at Stanford; 200+ members; open-access lesson summaries on YouTube.\\
 	\vspace{8pt}
-    
-    \textbf{UIUC Latinos in Computer Science (LCS)} - Urbana-Champaign, IL \hfill \emph{December 2019 - Present}\\
-	\emph{Graduate Advisor}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Graduate advisor for Latinos in Computer Science (LCS)
-    	\item Founded the ``LCS professional \& wellness development colloquium'' speaker series for LCS.
-    	\item Organizing ``LCS professional \& wellness development colloquium'' speaker series for LCS.
-    	Talks will be made available in the world wide web.
-	\end{itemize}
+
+	\textbf{UIUC Latinos in Computer Science (LCS)} - Urbana-Champaign, IL \hfill \emph{December 2019 - Present}\\
+	\emph{Graduate Advisor} --- founded the LCS Professional \& Wellness Development Colloquium speaker series.\\
 	\vspace{8pt}
-	
+
 	\textbf{UIUC Bachata Sensual \& Zouk (Latin Dance Group)} - Urbana-Champaign, IL \hfill \emph{January 2019 - December 2021}\\
-	\emph{President and Founder}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Founded the first Bachata Sensual \& Zouk dance group at the UIUC campus
-    	\item Lead weekly practice and dance classes for students and local community members
-    	\item Organized first Bachata Sensual and Brazilian Zouk social with guest artist from Chicago
-	\end{itemize}
-	\vspace{8pt}
-	
-	\textbf{UIUC Undergraduate Research Mentor} - Urbana-Champaign, IL \hfill \emph{May 2019 - Present}\\
-	\emph{Research Mentor}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Research mentor for Research Experience for Undergraduates (REU).
-    	\item Mentoring an undergraduate student on the foundations of meta-learning project.
-	\end{itemize}
-	\vspace{8pt}
-	
-	\textbf{MIT CBMM (Center for Brain Minds \& Machines)} - Cambridge, MA \hfill \emph{June 2016 - May 2019}\\
-	\emph{Research Mentor}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt  % reduce space between items
-    	\item Research leader mentoring undergraduates with the Engineering of Intelligence Team \href{https://cbmm.mit.edu/eit/people}{(EIT)} at MIT CBMM
-        \item Engaged in mentoring and research with MIT undergraduates
-	\end{itemize}
-	\vspace{8pt}
-	
-	\textbf{MIT Student Latin Dance Group} - Cambridge, MA \hfill \emph{September 2015 - July 2017}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt
-		\item Lead an unofficial but committed student dance group under the guidance of MIT Casino Rueda
-        \item Prepared and lead weekly dance practices
-        \item Compiled a foundations Bachata dance curriculum
-	\end{itemize}
-	\vspace{8pt}
-	
-	\textbf{Undergraduate Practice Opportunity Program (UPOP)} - Cambridge, MA \hfill \emph{January 2011 - June 2011}\\
-	\vspace*{-3pt}
-	\begin{itemize} \itemsep -2pt
-		\item Advanced professional skills with a one-week MIT intensive course and semester activities
-        \item Advance "firm skills" through guided discovery learning, team decision-making, leadership skills, project engineering, cross cultural communication and recognizing the presence of an ethical dilemma with guidance of seasoned industry professionals and UPOP MIT faculty
-	\end{itemize}
-	\vspace{8pt}
-
-	\vspace{8pt}
+	\emph{Founder \& President} --- founded the first Bachata Sensual \& Zouk group at UIUC. \textbf{Bachata Sensual Excellence Diploma}, Korke \& Judith \textit{World Mastery} (Beginner, Intermediate, Advanced), 2019.\\
 
 \end{body}
-
-\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Activities
