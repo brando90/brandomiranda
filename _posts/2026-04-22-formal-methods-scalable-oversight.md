@@ -4,7 +4,6 @@ title: "Asking the Right Question: Formal Methods as Scalable Oversight"
 date: 2026-04-22
 ---
 
-
 *Brando Miranda — April 2026 · ~3–4 min read*
 
 **TL;DR.** In the era of AI agents, formal methods, and [Lean](https://lean-lang.org) specifically, are finally within practical reach for scalable oversight of complex arguments. Let the verifier check the answer; let the human check the question. Deciding what to ask, knowing what we actually want, is the part we may not be able to outsource.

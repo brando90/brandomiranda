@@ -4,7 +4,6 @@ title: "Embrace AI or Be Left Behind — By People, Not Machines"
 date: 2026-04-27
 ---
 
-
 *Brando Miranda — April 2026 · ~6 min read*
 
 **TL;DR.** The real risk of ignoring AI isn't that machines replace you — it's that people who use them will. AI is a force of nature: trained on the world's data, improving relentlessly. Adapting isn't optional enthusiasm; it's survival. I'd rather merge with the wave than fight it.

@@ -30,7 +30,7 @@ github_username:  brando90
 
 
 
-exclude: [exclude/, experiments/, _drafts/, README.md, CLAUDE.md, AGENTS.md, professional_documents/cvs/cvs_prompt.md]
+exclude: [exclude/, experiments/, _drafts/, scripts/, README.md, CLAUDE.md, AGENTS.md, professional_documents/cvs/cvs_prompt.md]
 
 # Build settings
 theme: minima

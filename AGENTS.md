@@ -49,4 +49,26 @@ Every line break inside a publication / award / talk entry — between authors, 
 
 For *what* to write and *how* to phrase it, the authoritative style guide is `professional_documents/cvs/cvs_prompt.md`. Reference CVs live in `professional_documents/cvs/example_cvs/` — Finn and Barrett (Stanford CS faculty) are the structural prototypes; Eric Mitchell and Rylan Schaeffer (peer PhD-student/recent-grad files) are for length/density calibration only.
 
+## Blog post header format (HARD)
+
+Every `_posts/*.md` post MUST start (immediately after frontmatter) with this canonical block, in this exact order:
+
+```
+*Brando Miranda — Month YYYY · ~X min read*
+
+**TL;DR.** [single paragraph]
+
+---
+
+[body]
+```
+
+Rules:
+- Byline is one **plain-markdown italic** line, left-aligned. No `<p style="text-align: right;">`. Month is full name (`April`, not `Apr`); read time is `~X min read` (en-dash for ranges, e.g., `~3–4 min read`).
+- TL;DR paragraph starts with literal `**TL;DR.**` (period inside the bold). If no TL;DR exists, label the first body paragraph rather than omit.
+- Horizontal rule `---` on its own line (blank line above + below) separates TL;DR from body — non-negotiable.
+- No redundant `# Title` H1 at the top of body (Jekyll already renders the frontmatter `title`).
+
+See `CLAUDE.md` § "Blog post header format (HARD)" for the canonical version.
+
 Branch model: `main` only.

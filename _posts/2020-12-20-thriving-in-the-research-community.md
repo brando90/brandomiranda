@@ -4,14 +4,11 @@ title: "Thriving in the Research Community"
 date: 2020-12-20 22:12 -0500
 ---
 
-
 *Brando Miranda — December 2020 · ~3 min read*
 
 **TL;DR.** How to thrive as a researcher: pick problems you genuinely care about, write papers to share ideas rather than to impress, and when you're stuck, change the question instead of grinding harder on the wrong one.
 
 ---
-
-# Thriving in the Research Community 
 
 I've been working this past year as the graduate advisor for 
 [LCS (Latinxs in Computer Science)](http://latinoscs.web.illinois.edu/) at [UIUC](https://illinois.edu/).

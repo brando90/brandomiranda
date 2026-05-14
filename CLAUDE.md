@@ -158,3 +158,32 @@ Site `baseurl: /brandomiranda/`. Use either form:
 - `{{ site.baseurl }}path` — manual, **no slash** after `baseurl`
 
 **Never** write `{{ site.baseurl }}/path` — that produces a broken `//path` on rendered pages. The build excludes `experiments/`, `_drafts/`, `exclude/`, and `README.md` from publishing.
+
+### Blog post header format (HARD)
+
+Every published post in `_posts/` MUST have this canonical header structure immediately after the Jekyll frontmatter, in this exact order — no exceptions:
+
+```markdown
+---
+layout: post
+title: "..."
+date: YYYY-MM-DD
+---
+
+*Brando Miranda — Month YYYY · ~X min read*
+
+**TL;DR.** [single-paragraph summary, ends with a period]
+
+---
+
+[Body starts here]
+```
+
+Specifics:
+- **Byline line** is one italic line: `*Brando Miranda — Month YYYY · ~X min read*` — left-aligned plain markdown italic (never right-aligned via `<p style="text-align: right;">`; never split across two lines). Month is full name (`April`, not `Apr`). Read time is `~X min read` (`~` prefix, `min` not `minute`); ranges use en dash (`~3–4 min read`).
+- **TL;DR paragraph** starts with literal `**TL;DR.**` (note the period inside the bold). Exactly one paragraph (one blank line on each side). If a post genuinely has no TL;DR yet, label the first body paragraph with `**TL;DR.**` rather than omitting the line.
+- **Horizontal rule (`---`)** on its own line separates the TL;DR from the body. This is non-negotiable — without it the TL;DR visually bleeds into the body. The rule comes after a blank line and is followed by a blank line.
+- **No redundant H1.** Jekyll renders the frontmatter `title:` as the page H1. Do not repeat the title as a `# Title` heading at the top of the body.
+- **No HTML byline blocks** (`<p style="text-align: right;">`, `<em>...</em>` wrappers, etc.) — use plain markdown italic only.
+
+When editing or creating a post, normalize the header to this format. The repo ships an idempotent rewriter at `scripts/normalize_post_headers.py` — run `python3 scripts/normalize_post_headers.py` from the repo root after any post edit and verify the diff is what you intend (running twice on a canonical post produces no change).

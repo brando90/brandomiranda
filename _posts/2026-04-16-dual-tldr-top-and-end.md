@@ -4,7 +4,6 @@ title: "Two TLDRs Are Better Than One: A Small Prompt-Design Fix That Matters Mo
 date: 2026-04-16
 ---
 
-
 *Brando Miranda — April 2026 · ~5 min read*
 
 **TL;DR.** A short post about a tiny change I made to my [agents-config](https://github.com/brando90/agents-config) rules — adding a second TLDR to the top of every agent response — and why the tiny change is actually a lesson about how position on the page interacts with chain-of-thought.

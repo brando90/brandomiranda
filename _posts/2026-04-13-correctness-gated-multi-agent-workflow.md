@@ -4,7 +4,6 @@ title: "What I Learned Building a Correctness-Gated Multi-Agent Workflow for Res
 date: 2026-04-13
 ---
 
-
 *Brando Miranda — April 2026 · ~7 min read*
 
 **TL;DR.** The right question with AI coding agents isn't "which model is best?" — it's "what process makes model mistakes cheap to detect?" I built a modular, correctness-gated multi-agent workflow (cross-agent review, structural QA, formal verification via Lean) and published the setup as an open-source documentation architecture called [agents-config](https://github.com/brando90/agents-config).
