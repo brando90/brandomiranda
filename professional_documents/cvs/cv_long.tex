@@ -37,7 +37,7 @@
 \flushbottom
 \widowpenalty=10000     % no widow lines (first line of paragraph at page bottom)
 \clubpenalty=10000      % no orphan lines (last line of paragraph at page top)
-\setlength{\parskip}{0pt plus 6pt}
+\setlength{\parskip}{0pt plus 18pt}   % stretchable glue for \flushbottom to consume
 
 \pagenumbering{gobble}
 
@@ -69,13 +69,14 @@
 		\scshape{#1}\\
   	\lineover
 	\end{changemargin}
+	\nopagebreak[4]    % keep section content with its header (prevent orphan headers)
 }
 
 \newenvironment{body} {
 	\vspace*{-16pt}
 	\begin{changemargin}{-0.25in}{-0.5in}
   }
-	{\end{changemargin}\vspace{8pt}
+	{\end{changemargin}\vspace{8pt plus 100pt}
 }
 
 \newcommand{\school}[4]{
@@ -645,6 +646,18 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
     \textbf{The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence}\\
     NeurIPS Meta-Learning Workshop, Contributed Talk. \emph{New Orleans, LA, December 2022.}
 
+\end{body}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Selected Writing
+\header{Selected Writing}
+
+\begin{body}
+	\vspace{12pt}
+	\begin{itemize} \itemsep -2pt
+		\item \textbf{\href{https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html}{Asking the Right Question: Formal Methods as Scalable Oversight}} \hfill \emph{April 2026}
+		\item \textbf{\href{https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html}{What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research}} \hfill \emph{April 2026}
+	\end{itemize}
 \end{body}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

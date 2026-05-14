@@ -37,7 +37,7 @@
 \flushbottom
 \widowpenalty=10000     % no widow lines (first line of paragraph at page bottom)
 \clubpenalty=10000      % no orphan lines (last line of paragraph at page top)
-\setlength{\parskip}{0pt plus 6pt}
+\setlength{\parskip}{0pt plus 18pt}   % stretchable glue for \flushbottom to consume
 
 \pagenumbering{gobble}
 
@@ -69,13 +69,14 @@
 		\scshape{#1}\\
   	\lineover
 	\end{changemargin}
+	\nopagebreak[4]    % keep section content with its header (prevent orphan headers)
 }
 
 \newenvironment{body} {
 	\vspace*{-16pt}
 	\begin{changemargin}{-0.25in}{-0.5in}
   }
-	{\end{changemargin}\vspace{8pt}
+	{\end{changemargin}\vspace{8pt plus 100pt}
 }
 
 \newcommand{\school}[4]{
