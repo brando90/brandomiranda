@@ -5,7 +5,7 @@
 \usepackage[usenames]{color}
 \usepackage{lipsum}
 \usepackage{multicol}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks,pageanchor=false]{hyperref}
 %\usepackage{href}
 
 
@@ -38,6 +38,7 @@
 \widowpenalty=10000     % no widow lines (first line of paragraph at page bottom)
 \clubpenalty=10000      % no orphan lines (last line of paragraph at page top)
 \setlength{\parskip}{0pt plus 18pt}   % stretchable glue for \flushbottom to consume
+\setlength{\parskip}{0pt plus 6pt}
 
 \pagenumbering{gobble}
 
@@ -73,11 +74,11 @@
 }
 
 \newenvironment{body} {
-	\vspace*{-16pt}
-	\begin{changemargin}{-0.25in}{-0.5in}
-  }
-	{\end{changemargin}\vspace{8pt plus 100pt}
-}
+		\vspace*{-16pt}
+		\begin{changemargin}{-0.25in}{-0.5in}
+	  }
+		{\end{changemargin}\vspace{8pt plus 12pt}
+	}
 
 \newcommand{\school}[4]{
 	\textbf{#1} \hfill \emph{#2\\}
@@ -99,23 +100,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{changemargin}{-0.5in}{-0.5in}
-\centering{{\Huge \scshape {\textbf{Brando Miranda}}}}\\ 
-\vspace{10pt}
-\centering{
-{ 
-\href{https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en}{Google Scholar};
-\href{https://brando90.github.io/brandomiranda/}{Website};
-\href{https://profiles.stanford.edu/brando-miranda}{Stanford Profile};
-\href{https://cbmm.mit.edu/about/people/miranda}{MIT Website}
-}
-\\  
-\vspace{-30pt}
-
-\textbf{brando9@stanford.edu}
-\hfill Gates Bldg., 353 Jane Stanford Way \\
-Stanford, CA, 94305. \hfill 
+\begin{center}
+{\Huge \bfseries Brando Miranda}\\
 \vspace{8pt}
-} % Add this closing brace here
+Gates Bldg., 353 Jane Stanford Way, Stanford, CA 94305\\
+\textbf{brando9@stanford.edu}\\
+\href{https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en}{Google Scholar} $\mid$
+\href{https://brando90.github.io/brandomiranda/}{Website} $\mid$
+\href{https://profiles.stanford.edu/brando-miranda}{Stanford Profile} $\mid$
+\href{https://cbmm.mit.edu/about/people/miranda}{MIT CBMM Profile}
+\end{center}
+\vspace{8pt}
 \end{changemargin}
 
 
@@ -136,12 +131,12 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 \begin{body}
 	\vspace{12pt}
 	\textbf{Ph.D. in Computer Science} \hfill \emph{2022-2026 (expected)}\\
-	\emph{Stanford University} \hfill \text{GPA: 4.045/4.0}\\
+	\emph{Stanford University}\\
 	Advisor: Prof. Sanmi Koyejo, Stanford Trustworthy AI Research Group (STAIR).\\
 
 	\smallskip
 	\textbf{Master of Engineering in Electrical Engineering and Computer Science} \hfill \emph{2014-2016}\\
-	\emph{Massachusetts Institute of Technology} \hfill \text{GPA: 4.8/5.0}\\
+	\emph{Massachusetts Institute of Technology}\\
 	Advisor: Prof. Tomaso Poggio, Center for Brains, Minds and Machines (CBMM).\\
 	Thesis Title: \emph{Function Approximation with Deep Neural and Gaussian Networks}.\\
 
@@ -235,6 +230,7 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Publications
+\newpage
 \header{Publications}
 \begin{body}
     \vspace{6pt} % DONT REMOVE THIS
@@ -242,309 +238,294 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
     \vspace{8pt}
     \emph{Google Scholar metrics (as of May 14, 2026): 3,014+ citations | h-index: 17 | i10-index: 22.}
 
-    \vspace{12pt}
-    {\scshape \large \textbf{Refereed Publications}}
-    \\[-6pt]\hrulefill
+    \vspace{8pt}
+    \textbf{Refereed Publications}
+    \par\nopagebreak[4]\vspace{4pt}
     \setcounter{pubnum}{0}
 
-    \vspace{10pt}
-    \pubitem {E. Chen, A. Gulati, B. Miranda, Z. Tang, S. Koyejo,
+    \pubitem \href{https://openreview.net/forum?id=vdXPorr099}
+    {E. Chen, A. Gulati, \textbf{B. Miranda}, Z. Tang, S. Koyejo,
     \emph{Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading}.}
     \\*
     (\textbf{International Conference on Learning Representations (ICLR) Workshop on Logical Reasoning of Large Language Models. 2026})
 
     \vspace{10pt}
-    \pubitem \href{https://openreview.net/forum?id=O9CYgZFtm7}
-    {Z. Zhou, X. Lu, C. Cao, B. Miranda, T. Liu, B. Han, S. Koyejo,
+    \pubitem \href{https://openreview.net/forum?id=8OoZ8dnvIT}
+    {Z. Zhou, X. Lu, C. Cao, \textbf{B. Miranda}, T. Liu, B. Han, S. Koyejo,
     \emph{CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning}.}
     \\*
-    (\textbf{International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents: Learning, Aligning, Evolving. 2026})
+    (\textbf{International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents: Learning, Aligning, Evolving. 2026} \& \textbf{2nd Workshop on AI for Math at International Conference on Machine Learning (ICML). 2025})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/pdf/2406.04391}
-    {R. Schaeffer, H. Schoelkopf, B. Miranda, G. Mukobi, V. Madan, A. Ibrahim, H. Bradley, S. Biderman, S. Koyejo,
+    {R. Schaeffer, H. Schoelkopf, \textbf{B. Miranda}, G. Mukobi, V. Madan, A. Ibrahim, H. Bradley, S. Biderman, S. Koyejo,
     \emph{Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?}.}
     \\*
-    (\textbf{International Conference on Machine Learning (ICML). 2025} \& \textbf{International Conference on Machine Learning (ICML) Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) --- Outstanding Paper Award. 2024})
+    (\textbf{International Conference on Machine Learning (ICML). 2025} \& \textbf{International Conference on Machine Learning (ICML) Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA). 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2508.08292}
-    {A. Gulati, B. Miranda, E. Chen, E. Xia, K. Fronsdal, B. de Moraes Dumont, S. Koyejo,
+    {A. Gulati, \textbf{B. Miranda}, E. Chen, E. Xia, K. Fronsdal, B. de Moraes Dumont, S. Koyejo,
     \emph{Putnam-AXIOM: A Functional \& Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs}.}
     \\*
     (\textbf{International Conference on Machine Learning (ICML). 2025} \& \textbf{Neural Information Processing Systems (NeurIPS) Workshop on Mathematics and AI (MATH-AI). 2024})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=rWkGFmnSNl}
-    {B. Miranda, Z. Zhou, A. Nie, E. Obbad, L. Aniva, K. Fronsdal, W. Kirk, D. Soylu, et al.,
+    {\textbf{B. Miranda}, Z. Zhou, A. Nie, E. Obbad, L. Aniva, K. Fronsdal, W. Kirk, D. Soylu, et al.,
     \emph{VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4}.}
-    \\*
-    (\textbf{2nd Workshop on AI for Math at International Conference on Machine Learning (ICML). 2025}; reviewer recommendation: \textbf{Accept (Oral, Top 1)})
-
-    \vspace{10pt}
-    \pubitem \href{https://openreview.net/forum?id=OfgyKeQdBg}
-    {Z. Zhou, X. Lu, C. Cao, B. Miranda, T. Liu, B. Han, S. Koyejo,
-    \emph{CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for Post-Training Language Models}.}
     \\*
     (\textbf{2nd Workshop on AI for Math at International Conference on Machine Learning (ICML). 2025})
 
     \vspace{10pt}
     \pubitem \href{https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6}
-    {L. Aniva, C. Sun, B. Miranda, C. Barrett, S. Koyejo,
+    {L. Aniva, C. Sun, \textbf{B. Miranda}, C. Barrett, S. Koyejo,
     \emph{Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in Lean 4}.}
     \\*
     (\textbf{International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS). 2025})
 
     \vspace{10pt}
-    \pubitem {R. Schaeffer, B. Miranda, J. Kazdan, K. Liu, A. M. Ahmed, N. Mireshghallah, et al.,
-    \emph{Causally Quantifying the Effect of Test Set Contamination on Generative Benchmarks}.}
+    \pubitem \href{https://arxiv.org/abs/2601.04301}
+    {R. Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, \textbf{B. Miranda}, A. M. Ahmed, F. Berez, et al.,
+    \emph{Quantifying the Effect of Test Set Contamination on Generative Evaluations}.}
     \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle. 2025})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2506.19882}
-    {R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, B. Miranda, M. Gerstgrasser, et al.,
+    {R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, \textbf{B. Miranda}, M. Gerstgrasser, et al.,
     \emph{Position: Machine Learning Conferences Should Establish a `Refutations and Critiques' Track}.}
     \\*
     (\textbf{Neural Information Processing Systems (NeurIPS), Main Track. 2025})
 
     \vspace{10pt}
-    \pubitem {S. Barkallah, S. Daruru, B. Miranda, L. Aniva, A. Nie, S. Koyejo,
+    \pubitem \href{https://openreview.net/forum?id=wDjOpXKgtU}
+    {S. Barkallah, S. Daruru, \textbf{B. Miranda}, L. Aniva, A. Nie, S. Koyejo,
     \emph{VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification}.}
     \\*
     (\textbf{5th Neural Information Processing Systems (NeurIPS) Workshop on Mathematical Reasoning and AI. 2025})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=Ajr8YtfhVO}
-    {R. Schaeffer, K. Liu, B. Miranda, A. M. Ahmed, N. Mireshghallah, S. Koyejo,
+    {R. Schaeffer, K. Liu, \textbf{B. Miranda}, A. M. Ahmed, N. Mireshghallah, S. Koyejo,
     \emph{The Contamination Paradox: Why Test Set Leakage Can Be Both Potent and Negligible}.}
     \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle. 2025})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=wvFnqVVUhN}
-    {R. Schaeffer, D. Valentine, L. Bailey, J. Chua, et al., B. Miranda, et al., S. Koyejo, E. Perez,
+    {R. Schaeffer, D. Valentine, L. Bailey, J. Chua, et al., \textbf{B. Miranda}, et al., S. Koyejo, E. Perez,
     \emph{Failures to Find Transferable Image Jailbreaks Between Vision-Language Models}.}
     \\*
     (\textbf{International Conference on Learning Representations (ICLR). 2024} \& \textbf{Neural Information Processing Systems (NeurIPS) Workshop on Red Teaming Generative AI. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://openreview.net/forum?id=f6IB0WrOKS}
-    {R. Schaeffer, M. Khona, S. Chandra, M. Ostrow, B. Miranda, S. Koyejo,
+    {R. Schaeffer, M. Khona, S. Chandra, M. Ostrow, \textbf{B. Miranda}, S. Koyejo,
     \emph{Does Maximizing Neural Regression Scores Teach Us About The Brain?}.}
     \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Unifying Representations in Neural Models (UniReps), 2nd Edition. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2501.08496}
-    {K. Chawla, A. Sahai, M. DePavia, S. Sundar, B. Miranda,
+    {K. Chawla, A. Sahai, M. DePavia, S. Sundar, \textbf{B. Miranda},
     \emph{Quantifying the Importance of Data Alignment in Downstream Model Performance}.}
     \\*
     (\textbf{International Conference on Learning Representations (ICLR) Workshop on Data-Centric Machine Learning Research (DMLR). 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2406.06555}
-    {A. Gulati, D. Ladsaria, S. Mishra, J. Sidhu, B. Miranda,
+    {A. Gulati, D. Ladsaria, S. Mishra, J. Sidhu, \textbf{B. Miranda},
     \emph{An Evaluation Benchmark for Autoformalization in Lean4}.}
     \\*
     (\textbf{International Conference on Learning Representations (ICLR) Tiny Papers Track, Second Edition. 2024})
 
     \vspace{10pt}
-    \pubitem {K. Chawla, A. Sahai, M. DePavia, B. Miranda,
+    \pubitem {K. Chawla, A. Sahai, M. DePavia, \textbf{B. Miranda},
     \emph{A Systematic Study of the Role of Data Quality and Alignment for Fine-tuning LLMs for Enhanced Autoformalization}.}
     \\*
     (\textbf{International Conference on Learning Representations (ICLR) Tiny Papers Track, Second Edition. 2024})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2304.15004}
-    {R. Schaeffer, B. Miranda, S. Koyejo,
+    {R. Schaeffer, \textbf{B. Miranda}, S. Koyejo,
     \emph{Are Emergent Abilities of Language Models a Mirage?}.}
     \\*
-    (\textbf{Neural Information Processing Systems (NeurIPS), Main Track. 2023 --- Outstanding Paper Award \& Oral})
+    (\textbf{Neural Information Processing Systems (NeurIPS), Main Track. 2023})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2306.13840}
-    {B. Miranda*, A. Lee*, P. Yu, S. Koyejo,
+    {\textbf{B. Miranda}*, A. Lee*, P. Yu, S. Koyejo,
     \emph{Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data}.}
     \\*
     (\textbf{International Conference on Machine Learning (ICML) Workshop on Data-Centric Machine Learning. 2023} \& \textbf{International Conference on Machine Learning (ICML) Workshop on Deployable Generative AI. 2023}) (*equal contribution)
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2208.01545}
-    {B. Miranda, P. Yu, Y. Wang, S. Koyejo,
+    {\textbf{B. Miranda}, P. Yu, Y. Wang, S. Koyejo,
     \emph{The Curse of Zero Task Diversity: the Failure of Transfer Learning to Outperform MAML and their Empirical Equivalence}.}
     \\*
     (\textbf{Neural Information Processing Systems (NeurIPS) Workshop on Meta-Learning. 2022})
 
     \vspace{10pt}
-    \pubitem \href{https://drive.google.com/file/d/1G2IVmbENphwB3lxROEpCHQjsClKqRtKP/view}
-    {T. Poggio, A. Banburski, Q. Liao, B. Miranda, L. Rosasco, J. Hidary,
+    \pubitem \href{https://cbmm.mit.edu/publications/weight-and-batch-normalization-implement-classical-generalization-bounds}
+    {T. Poggio, A. Banburski, Q. Liao, \textbf{B. Miranda}, L. Rosasco, J. Hidary,
     \emph{Weight and Batch Normalization implement Classical Generalization Bounds}.}
     \\*
     (\textbf{International Conference on Machine Learning (ICML) Workshop. 2019})
 
     \vspace{10pt}
-    \pubitem \href{https://www.osapublishing.org/abstract.cfm?uri=CLEO_SI-2018-SF1A.1}
-    {D. Kita, B. Miranda, H. Lin, J. Michon, D. Favela, J. Hu,
+    \pubitem \href{https://opg.optica.org/abstract.cfm?uri=cleo_si-2018-SF1A.1}
+    {D. Kita, \textbf{B. Miranda}, H. Lin, J. Michon, D. Favela, J. Hu,
     \emph{High-resolution on-chip digital Fourier transform spectroscopy}.}
     \\*
     (\textbf{Conference on Lasers and Electro-Optics (CLEO): Science and Innovations. 2018})
 
     \vspace{10pt}
     \pubitem \href{https://www.nature.com/articles/s41467-018-06773-2}
-    {D. Kita, B. Miranda, D. Favela, D. Bono, J. Michon, H. Lin, T. Gu, J. Hu,
+    {D. Kita, \textbf{B. Miranda}, D. Favela, D. Bono, J. Michon, H. Lin, T. Gu, J. Hu,
     \emph{High-performance and scalable on-chip digital Fourier transform spectroscopy}.}
     \\*
     (\textbf{Nature Communications 9 (1), 4405. 2018})
 
     \vspace{10pt}
     \pubitem \href{https://link.springer.com/article/10.1007/s11633-017-1054-2}
-    {T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, Q. Liao,
+    {T. Poggio, H. Mhaskar, L. Rosasco, \textbf{B. Miranda}, Q. Liao,
     \emph{Why and when can deep-but not shallow-networks avoid the curse of dimensionality: A review}.}
     \\*
-    (\textbf{International Journal of Automation and Computing (IJAC). 2017 --- Most Cited Paper Certificate})
+    (\textbf{International Journal of Automation and Computing (IJAC). 2017})
 
-    \vspace{20pt}
-    {\scshape \large \textbf{Preprints and Technical Reports}}
-    \\[-6pt]\hrulefill
+    \vspace{12pt}
+    \textbf{Preprints and Technical Reports}
+    \par\nopagebreak[4]\vspace{4pt}
     \setcounter{pubnum}{0}
 
-    \vspace{10pt}
     \pubitem \href{https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf}
-    {D. Amrollahi, M. Karimi, B. Miranda, L. Aniva, C. Sun, C. Barrett, S. Koyejo,
+    {D. Amrollahi, M. Karimi, \textbf{B. Miranda}, L. Aniva, C. Sun, C. Barrett, S. Koyejo,
     \emph{AI Coding Benchmarks Need Proofs, Not Just Tests}.}
     \\*
     (\textbf{Preprint 2026})
 
     \vspace{10pt}
-    \pubitem {E. Obbad, B. Miranda, D. L. W. Hall, R. Schaeffer, S. Koyejo, P. Liang,
+    \pubitem {E. Obbad, \textbf{B. Miranda}, D. L. W. Hall, R. Schaeffer, S. Koyejo, P. Liang,
     \emph{Curating High Quality Pretraining Data for Language Models via Compression Ratios}.}
     \\*
     (\textbf{Preprint 2026})
 
     \vspace{10pt}
-    \pubitem \href{https://arxiv.org/abs/2601.04301}
-    {R. Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, B. Miranda, A. M. Ahmed, F. Berez, et al.,
-    \emph{Quantifying the Effect of Test Set Contamination on Generative Evaluations}.}
-    \\*
-    (\textbf{Preprint 2026, arXiv:2601.04301})
-
-    \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2510.06261}
-    {Z. Zhou, C. Cao, X. Feng, X. Li, Z. Li, X. Lu, J. Yao, W. Huang, T. Cheng, et al., B. Miranda,
+    {Z. Zhou, C. Cao, X. Feng, X. Li, Z. Li, X. Lu, J. Yao, W. Huang, T. Cheng, et al., \textbf{B. Miranda},
     \emph{AlphaApollo: Orchestrating Foundation Models and Professional Tools into a Self-Evolving System for Deep Agentic Reasoning}.}
     \\*
     (\textbf{Preprint 2025, arXiv:2510.06261})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2509.24012}
-    {R. Schaeffer, N. Levi, B. Miranda, S. Koyejo,
+    {R. Schaeffer, N. Levi, \textbf{B. Miranda}, S. Koyejo,
     \emph{Pretraining Scaling Laws for Generative Evaluations of Language Models}.}
     \\*
     (\textbf{Preprint 2025, arXiv:2509.24012})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2509.23963}
-    {R. Schaeffer, N. Levi, A. Kirsch, T. Guenais, B. Miranda, E. Obbad, S. Koyejo,
+    {R. Schaeffer, N. Levi, A. Kirsch, T. Guenais, \textbf{B. Miranda}, E. Obbad, S. Koyejo,
     \emph{Evaluating the Robustness of Chinchilla Compute-Optimal Scaling}.}
     \\*
     (\textbf{Preprint 2025, arXiv:2509.23963})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2502.15795}
-    {W. Chan, M. Souliman, J. Nordhagen, B. Miranda, E. Obbad, S. Koyejo,
+    {W. Chan, M. Souliman, J. Nordhagen, \textbf{B. Miranda}, E. Obbad, S. Koyejo,
     \emph{Lean-ing on Quality: How High-Quality Data Beats Diverse Multilingual Data in Autoformalization}.}
     \\*
     (\textbf{Preprint 2025, arXiv:2502.15795})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2501.08506}
-    {K. Selva, S. Vittayaareekul, B. Miranda,
+    {K. Selva, S. Vittayaareekul, \textbf{B. Miranda},
     \emph{Exploring the Efficacy of Meta-Learning: Unveiling Superior Data Diversity Utilization of MAML Over Pre-training}.}
     \\*
     (\textbf{Preprint 2025, arXiv:2501.08506})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2410.18194}
-    {E. Obbad, I. Mlauzi, B. Miranda, R. Schaeffer, K. Obbad, S. Bedi, S. Koyejo,
+    {E. Obbad, I. Mlauzi, \textbf{B. Miranda}, R. Schaeffer, K. Obbad, S. Bedi, S. Koyejo,
     \emph{ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment}.}
     \\*
     (\textbf{Preprint, arXiv 2024})
 
     \vspace{10pt}
-    \pubitem {J. Rotella, Z. Qin, A. Z. H. Yang, B. Miranda, M. E. A. Seddik, J. Zuo, H. Hacid, et al.,
+    \pubitem {J. Rotella, Z. Qin, A. Z. H. Yang, \textbf{B. Miranda}, M. E. A. Seddik, J. Zuo, H. Hacid, et al.,
     \emph{Synthetic Theorem Generation in Lean}.}
     \\*
     (\textbf{Preprint 2024})
 
     \vspace{10pt}
-    \pubitem {B. Miranda (ML Research Scientist Consultant) \& Morph Labs Team,
+    \pubitem \href{https://huggingface.co/typeof/morph-prover-v0-7b-sharded}
+    {\textbf{B. Miranda} (ML Research Scientist Consultant) \& Morph Labs Team,
     \emph{Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language}.}
     \\*
     (\textbf{Technical Report and Model Card. 2024})
-    \\*
-    \href{https://morph.so/blog/the-personal-ai-proof-engineer/}{[Blog]}
-    \href{https://huggingface.co/morph-labs/morph-prover-v0-7b}{[Hugging Face Model Card]}
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2306.13841}
-    {B. Miranda, P. Yu, S. Goyal, Y. Wang, S. Koyejo,
+    {\textbf{B. Miranda}, P. Yu, S. Goyal, Y. Wang, S. Koyejo,
     \emph{Is Pre-training Truly Better Than Meta-Learning?}.}
     \\*
     (\textbf{Preprint 2023})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2304.10500}
-    {B. Miranda, A. Shinnar, V. Pestun, B. Trager,
+    {\textbf{B. Miranda}, A. Shinnar, V. Pestun, B. Trager,
     \emph{Transformer Models for Type Inference in the Simply Typed Lambda Calculus: A Case Study in Deep Learning for Code}.}
     \\*
     (\textbf{Preprint 2023})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/2112.13137}
-    {B. Miranda, Y. Wang, S. Koyejo,
+    {\textbf{B. Miranda}, Y. Wang, S. Koyejo,
     \emph{Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective}.}
     \\*
     (\textbf{Preprint 2021})
 
     \vspace{10pt}
     \pubitem \href{https://www.ideals.illinois.edu/handle/2142/109139}
-    {B. Miranda,
+    {\textbf{B. Miranda},
     \emph{An Empirical Study of Meta-Learning: a step towards rigorously understanding meta-learning algorithms}.}
     \\*
     (\textbf{Preprint 2020})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/1903.04991}
-    {A. Banburski, Q. Liao, B. Miranda, L. Rosasco, B. Liang, J. Hidary, T. Poggio,
+    {A. Banburski, Q. Liao, \textbf{B. Miranda}, L. Rosasco, B. Liang, J. Hidary, T. Poggio,
     \emph{Theory III: Dynamics and Generalization in Deep Networks}.}
     \\*
     (\textbf{Preprint 2019})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/1807.09659}
-    {Q. Liao, B. Miranda, A. Banburski, J. Hidary, T. Poggio,
+    {Q. Liao, \textbf{B. Miranda}, A. Banburski, J. Hidary, T. Poggio,
     \emph{A Surprising Linear Relationship Predicts Test Performance in Deep Networks}.}
     \\*
     (\textbf{Preprint 2018})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/1801.02254}
-    {C. Zhang, Q. Liao, A. Rakhlin, B. Miranda, N. Golowich, T. Poggio,
+    {C. Zhang, Q. Liao, A. Rakhlin, \textbf{B. Miranda}, N. Golowich, T. Poggio,
     \emph{Theory of Deep Learning IIb: Optimization Properties of SGD}.}
     \\*
     (\textbf{Preprint 2018})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/1806.11379}
-    {T. Poggio, Q. Liao, B. Miranda, A. Banburski, X. Boix, J. Hidary,
+    {T. Poggio, Q. Liao, \textbf{B. Miranda}, A. Banburski, X. Boix, J. Hidary,
     \emph{Theory IIIb: Generalization in Deep Networks}.}
     \\*
     (\textbf{Preprint 2018})
 
     \vspace{10pt}
     \pubitem \href{https://arxiv.org/abs/1801.00173}
-    {T. Poggio, K. Kawaguchi, Q. Liao, B. Miranda, L. Rosasco, X. Boix, J. Hidary, M. Mhaskar,
+    {T. Poggio, K. Kawaguchi, Q. Liao, \textbf{B. Miranda}, L. Rosasco, X. Boix, J. Hidary, M. Mhaskar,
     \emph{Theory of Deep Learning III: explaining the non-overfitting puzzle}.}
     \\*
     (\textbf{Preprint 2017})
@@ -567,20 +548,20 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
     \item \textbf{EDGE Scholar}, Stanford University (September 2022) --- Stanford fellowship supporting first-generation / low-income PhD students with additional mentorship and stipend.
     \item \textbf{Stanford School of Engineering Fellowship} (September 2022) --- multi-year departmental fellowship for incoming Stanford engineering PhD students.
     \item \textbf{Honorable Mention, Ford Foundation Predoctoral Fellowship} (2020, 2021) --- national fellowship recognizing PhD applicants with potential to diversify the U.S. professoriate.
-    \item \textbf{Best Research Project Award}, UIUC graduate course CS 598 ``Learning to Learn'' (Prof. Y. Wang, December 2020).
+    \item \textbf{Best Research Project Award}, UIUC graduate course CS 598 ``Learning to Learn'' (Prof. Y. Wang, December 2020) --- course-level award for the top research project.
     \item \textbf{HSF Scholar}, Hispanic Scholarship Fund (2020) --- competitive national merit fellowship for Hispanic graduate students.
     \item \textbf{Computer Science Excellence Saburo Muroga Endowed Fellowship}, UIUC (2019-2020) --- top departmental fellowship for outstanding incoming CS PhD students.
     \item \textbf{Most Cited Paper Certificate}, International Journal of Automation \& Computing (IJAC, December 2019) --- for ``Why and when can deep- but not shallow-networks avoid the curse of dimensionality: a review'' (Poggio, Mhaskar, Rosasco, Miranda, Liao).
     \item \textbf{Sloan Scholar}, Alfred P. Sloan Foundation Minority Ph.D. (MPHD) Program (2018-2019) --- prestigious national fellowship supporting underrepresented STEM PhD students.
     \item \textbf{Grainger Engineering SURGE Fellowship}, UIUC (2018-2019) --- multi-year college-level fellowship for diverse engineering PhD students.
+		\item \textbf{MIT Mitchell B. Kaufman Memorial Scholarship} (2012-2013, 2013-2014) --- MIT undergraduate scholarship support.
+		\item \textbf{MIT Eugene and Margaret McDermott Scholarship} (2012-2013, 2013-2014) --- MIT undergraduate scholarship support.
 	\item \textbf{Chopper Trading, LLC, Best Strategy Report Award}, MIT BattleCode AI competition (2013) --- top finisher among $\sim$300 teams.
-	\item \textbf{MIT Mitchell B. Kaufman Memorial Scholarship} (2012-2013, 2013-2014).
-	\item \textbf{MIT Eugene and Margaret McDermott Scholarship} (2012-2013, 2013-2014).
- 	\item \textbf{Greengates Scholarship} (30\% 2007, 50\% 2008, 100\% 2009, 100\% 2010).
+	 	\item \textbf{Greengates Scholarship} (30\% 2007, 50\% 2008, 100\% 2009, 100\% 2010) --- merit scholarship that increased to full-tuition support.
 	\item \textbf{High Achievement Prize Award}, Greengates School (2007, 2008, 2009, 2010) --- equivalent to Valedictorian.
-	\item \textbf{Best All-Round Student Award}, Greengates School (2010).
-	\item \textbf{Achievement Prize Award}, Greengates School (2006).
-	\item \textbf{Certificate for Progress Award}, Greengates School (2005).
+		\item \textbf{Best All-Round Student Award}, Greengates School (2010) --- school-wide award recognizing the top all-around student.
+		\item \textbf{Achievement Prize Award}, Greengates School (2006) --- school recognition for academic achievement.
+		\item \textbf{Certificate for Progress Award}, Greengates School (2005) --- school recognition for academic progress.
 \end{itemize}
 \end{body}
 
@@ -591,14 +572,14 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 \begin{body}
 \vspace{12pt}
 \begin{itemize} \itemsep -2pt
-    \item \textbf{Hacker News / Y Combinator (2025)}: \href{https://news.ycombinator.com/item?id=42565606}{Putnam-AXIOM benchmark posted on Hacker News} --- our \textit{Putnam-AXIOM} benchmark for higher-level LLM mathematical reasoning drew front-page attention on Y Combinator's influential tech-news forum
-    \item \textbf{White House Economic Report of the President (2024)}: Our work on emergent abilities was cited in the 2024 Economic Report of the President -- the White House's annual flagship document on national economic policy
+    \item \textbf{Hacker News / Y Combinator (2025)}: \href{https://news.ycombinator.com/item?id=42565606}{Putnam-AXIOM benchmark posted on Hacker News} --- the \textit{Putnam-AXIOM} benchmark for higher-level LLM mathematical reasoning drew front-page attention on Y Combinator's influential tech-news forum
+    \item \textbf{White House Economic Report of the President (2024)}: Miranda et al.'s work on emergent abilities was cited in the 2024 Economic Report of the President -- the White House's annual flagship document on national economic policy
     \item \textbf{Quanta Magazine (2024)}: ``How Quickly Do Large Language Models Learn Unexpected Skills?''
-    \item \textbf{Andrew Ng (2024)}: Endorsed our paper as evidence that AGI development will be smooth and predictable
+    \item \textbf{Andrew Ng (2024)}: Endorsed the emergent-abilities paper as evidence that AGI development will be smooth and predictable
     \item \textbf{The New York Times (2023)}: ``Silicon Valley Confronts the Idea That the `Singularity' Is Here''
     \item \textbf{Forbes (2023)}: ``AI `Emergent Abilities' Are A Mirage, Says AI Researcher''
-    \item \textbf{AK / @\_akhaliq on X (2023)}: \href{https://x.com/_akhaliq/status/1673507375515594766}{AK shared our \textit{Beyond Scale} paper on X} --- the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace) tweeted our \textit{Beyond Scale} data-diversity paper to his large research audience (68.9K views)
-    \item \textbf{Stanford AI Lab Blog (ICML 2023)}: \href{https://ai.stanford.edu/blog/icml-2023/}{Our \textit{Beyond Scale} and \textit{Is Pre-training Truly Better Than Meta-Learning?} papers were featured in the Stanford AI Lab blog roundup of ICML 2023}
+    \item \textbf{AK / @\_akhaliq on X (2023)}: \href{https://x.com/_akhaliq/status/1673507375515594766}{AK shared the \textit{Beyond Scale} paper on X} --- the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace) tweeted the \textit{Beyond Scale} data-diversity paper to his large research audience (68.9K views)
+    \item \textbf{Stanford AI Lab Blog (ICML 2023)}: \href{https://ai.stanford.edu/blog/icml-2023/}{The \textit{Beyond Scale} and \textit{Is Pre-training Truly Better Than Meta-Learning?} papers were featured in the Stanford AI Lab blog roundup of ICML 2023}
     \item \textbf{Additional coverage}: Stanford HAI, Y Combinator News, Vice, Medium, HackerNews, NeurIPS blog, Reddit
 \end{itemize}
 \end{body}
@@ -606,6 +587,7 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Invited & Contributed Talks
 
+\newpage
 \header{Invited \& Contributed Talks}
 
 \begin{body}
@@ -656,7 +638,7 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 	\vspace{12pt}
 	\begin{itemize} \itemsep -2pt
 		\item \textbf{\href{https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html}{Asking the Right Question: Formal Methods as Scalable Oversight}} \hfill \emph{April 2026}
-		\item \textbf{\href{https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html}{What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research}} \hfill \emph{April 2026}
+		\item \textbf{\href{https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html}{Building a Correctness-Gated Multi-Agent Workflow for Research}} \hfill \emph{April 2026}
 	\end{itemize}
 \end{body}
 
@@ -701,6 +683,7 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Teaching
 
+\newpage
 \header{Teaching experience}
 \begin{body}
 	\vspace{12pt}
@@ -922,20 +905,8 @@ AI for formal mathematics --- Lean 4 theorem proving, autoformalization, and end
 \end{body}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Skills
-\header{Skills}
-
-\begin{body}
-	\vspace{12pt}
-	\emph{\textbf{Programming:}}{} Python, PyTorch, TensorFlow, JAX, Lean 4, OCaml, Coq, Java, Go, Javascript \\
-	\smallskip
-	\emph{\textbf{ML/AI Tools:}}{}  Hugging Face, Weights \& Biases, DSPy, git, UNIX, vim\\
-	\smallskip
-	\emph{\textbf{Languages:}}{} English, Spanish (both native fluency)\\
-\end{body}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Leadership
+\newpage
 \header{Leadership}
 
 \begin{body}
