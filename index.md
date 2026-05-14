@@ -192,6 +192,8 @@ Below are selected links showcasing media coverage of some of my work:
 
 [**Andrew Ng (March 2024)**: Endorsed our paper & believes it is evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
 
+[**Hacker News / Y Combinator (2025)**: Our **Putnam-AXIOM** benchmark for higher-level LLM mathematical reasoning was posted on Hacker News, Y Combinator's influential tech-news front page](https://news.ycombinator.com/item?id=42565606).
+
 This work was also covered by: [Vice, Medium, Hacker News, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage), courtesy of Google search.
 
 ---
