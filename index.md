@@ -196,7 +196,7 @@ Below are selected links showcasing media coverage of some of my work:
 
 [**AK / @_akhaliq on X (2023)**: AK shared our **Beyond Scale** data-diversity paper to his AI-research audience — the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace), 68.9K views](https://x.com/_akhaliq/status/1673507375515594766).
 
-[**Stanford AI Lab Blog (ICML 2023)**: Our work was featured in the Stanford AI Lab blog roundup of ICML 2023 papers](https://ai.stanford.edu/blog/icml-2023/).
+[**Stanford AI Lab Blog (ICML 2023)**: Our **Beyond Scale** and **Is Pre-training Truly Better Than Meta-Learning?** papers were featured in the Stanford AI Lab blog roundup of ICML 2023](https://ai.stanford.edu/blog/icml-2023/).
 
 This work was also covered by: [Vice, Medium, Hacker News, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage), courtesy of Google search.
 
