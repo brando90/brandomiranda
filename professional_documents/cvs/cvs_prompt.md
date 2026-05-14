@@ -5,8 +5,13 @@
 Given a target audience (fellowship application, faculty job, industry research role, conference reviewer profile, etc.), produce or revise an academic CV that matches the structural and stylistic standard set by strong Stanford CS faculty.
 
 Two local PDFs serve as the prototypes — **open and skim them before writing.**
-- `two_example_cvs_stanford_profs/cfinn_cv.pdf` — Chelsea Finn (Stanford CS, ML/robotics; awards-heavy, deep advising tree, talks-heavy)
-- `two_example_cvs_stanford_profs/clark_b_cv.pdf` — Clark Barrett (Stanford CS, formal methods/SMT; tool-builder, deep professional service)
+**Structural prototypes (Stanford CS faculty — copy patterns from these):**
+- `example_cvs/cfinn_cv.pdf` — Chelsea Finn (Stanford CS, ML/robotics; awards-heavy, deep advising tree, talks-heavy)
+- `example_cvs/clark_b_cv.pdf` — Clark Barrett (Stanford CS, formal methods/SMT; tool-builder, deep professional service)
+
+**Peer calibration files (Stanford PhD-stage; for length/density signal, NOT structural patterns):**
+- `example_cvs/cv_eric_mitchell.pdf` — Eric Mitchell (Stanford PhD → OpenAI; 3pp PhD-student CV)
+- `example_cvs/Rylan_Schaeffer_Resume_2023.pdf` — Rylan Schaeffer (Stanford PhD; labelled a *Resume*, industry-job-search artifact — not a full academic CV)
 
 When uncertain about a section's structure, density, or tone, copy these two.
 
@@ -327,6 +332,6 @@ This rule is also enforced in `CLAUDE.md` and `AGENTS.md` at the repo root.
 ## Local files and toolchain
 
 - **Canonical sources:** `cv_long.tex` / `cv_long.pdf` (long), `cv_short.tex` / `cv_short.pdf` (short). Both in this directory.
-- **Reference PDFs:** `two_example_cvs_stanford_profs/cfinn_cv.pdf`, `two_example_cvs_stanford_profs/clark_b_cv.pdf`.
+- **Reference PDFs:** `example_cvs/cfinn_cv.pdf`, `example_cvs/clark_b_cv.pdf` (structural prototypes); `example_cvs/cv_eric_mitchell.pdf`, `example_cvs/Rylan_Schaeffer_Resume_2023.pdf` (peer calibration).
 - **Build:** `latexmk -pdf -interaction=nonstopmode cv_long.tex` (or `cv_short.tex`) from inside this directory. Aux files (`.aux`, `.log`, `.out`, `.toc`, `.fls`, `.fdb_latexmk`, `.synctex.gz`) are gitignored; `.pdf` is committed.
 - **Rule:** every `.tex` edit triggers an immediate rebuild — the Cursor preview should always reflect the latest source.

@@ -9,6 +9,6 @@ The repo holds two canonical CVs in `professional_documents/cvs/`:
 
 **Whenever you edit one, also propagate the change to the other where appropriate** (new awards, talks, media, publications, advisees — yes; long-only detail sections like Coursework or full Poster lists — no). After editing any `.tex`, immediately rebuild the matching PDF with `latexmk -pdf -interaction=nonstopmode` from inside `professional_documents/cvs/`.
 
-For *what* to write and *how* to phrase it, the authoritative style guide is `professional_documents/cvs/cvs_prompt.md`. Two reference Stanford CS faculty CVs (Chelsea Finn, Clark Barrett) are committed under `professional_documents/cvs/two_example_cvs_stanford_profs/`.
+For *what* to write and *how* to phrase it, the authoritative style guide is `professional_documents/cvs/cvs_prompt.md`. Reference CVs live in `professional_documents/cvs/example_cvs/` — Finn and Barrett (Stanford CS faculty) are the structural prototypes; Eric Mitchell and Rylan Schaeffer (peer PhD-student/recent-grad files) are for length/density calibration only.
 
 Branch model: `main` only.
