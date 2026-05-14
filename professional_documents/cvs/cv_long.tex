@@ -79,6 +79,9 @@
 
 \newcommand{\bul}{$\bullet$ \hspace*{0em}}
 
+\newcounter{pubnum}
+\newcommand{\pubitem}{\stepcounter{pubnum}(\thepubnum)~}
+
 % END RESUME DEFINITIONS
 
 \begin{document}
@@ -224,40 +227,26 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{4pt} % DONT REMOVE THIS
 
     \vspace{8pt}
-    \emph{Google Scholar metrics: 3,014+ citations | h-index: 17 | i10-index: 22}
+    \emph{Google Scholar metrics: 3,014+ citations | h-index: 17 | i10-index: 22.}\\
+    \emph{Publications below are split into \textbf{Refereed Publications} (peer-reviewed at conferences, journals, or refereed workshops) and \textbf{Preprints and Technical Reports} (arXiv-only or not-yet-refereed). Each paper appears exactly once.}
 
-    \vspace{12pt}
+    \vspace{16pt}
+    {\scshape \large \textbf{Refereed Publications}}
+    \\[-6pt]\hrulefill
+    \setcounter{pubnum}{0}
+
+    \vspace{8pt}
     \textbf{\large 2026}
     \vspace{4pt}
 
     \vspace{10pt}
-    \href{https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf}
-    {D. Amrollahi, M. Karimi, B. Miranda, L. Aniva, C. Sun, C. Barrett, S. Koyejo,
-    AI Coding Benchmarks Need Proofs, Not Just Tests.}
-    \\
-    (Preprint 2026) --- \textbf{Lean 4} formal-proof-based evaluation of AI-generated code.
-
-    \vspace{10pt}
-    {E. Obbad, B. Miranda, D. L. W. Hall, R. Schaeffer, S. Koyejo, P. Liang,
-    Curating High Quality Pretraining Data for Language Models via Compression Ratios.}
-    \\
-    (Preprint 2026)
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2601.04301}
-    {R. Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, B. Miranda, A. M. Ahmed, F. Berez, et al.,
-    Quantifying the Effect of Test Set Contamination on Generative Evaluations.}
-    \\
-    (Preprint 2026, arXiv:2601.04301)
-
-    \vspace{10pt}
-    {E. Chen, A. Gulati, B. Miranda, Z. Tang, S. Koyejo,
+    \pubitem {E. Chen, A. Gulati, B. Miranda, Z. Tang, S. Koyejo,
     Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading.}
     \\
     (\textbf{ICLR 2026 Workshop on Logical Reasoning of Large Language Models})
 
     \vspace{10pt}
-    \href{https://openreview.net/forum?id=O9CYgZFtm7}
+    \pubitem \href{https://openreview.net/forum?id=O9CYgZFtm7}
     {Z. Zhou, X. Lu, C. Cao, B. Miranda, T. Liu, B. Han, S. Koyejo,
     CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning.}
     \\
@@ -268,96 +257,239 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{4pt}
 
     \vspace{10pt}
-    \href{https://arxiv.org/pdf/2406.04391}
+    \pubitem \href{https://arxiv.org/pdf/2406.04391}
     {R. Schaeffer, H. Schoelkopf, B. Miranda, G. Mukobi, V. Madan, A. Ibrahim, H. Bradley, S. Biderman, S. Koyejo,
     Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?}
     \\
     (\textbf{ICML 2025} \& \textbf{ICML TiFA Workshop Outstanding Paper Award 2024})
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2508.08292}
+    \pubitem \href{https://arxiv.org/abs/2508.08292}
     {A. Gulati, B. Miranda, E. Chen, E. Xia, K. Fronsdal, B. de Moraes Dumont, S. Koyejo,
     Putnam-AXIOM: A Functional \& Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs.}
     \\
     (\textbf{ICML 2025} \& NeurIPS MATH-AI Workshop 2024)
 
     \vspace{10pt}
-    \href{https://openreview.net/forum?id=rWkGFmnSNl}
+    \pubitem \href{https://openreview.net/forum?id=rWkGFmnSNl}
     {B. Miranda, Z. Zhou, A. Nie, E. Obbad, L. Aniva, K. Fronsdal, W. Kirk, D. Soylu, et al.,
     VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4.}
     \\
     (\textbf{2nd AI for Math Workshop @ ICML 2025})
 
     \vspace{10pt}
-    \href{https://openreview.net/forum?id=OfgyKeQdBg}
+    \pubitem \href{https://openreview.net/forum?id=OfgyKeQdBg}
     {Z. Zhou, X. Lu, C. Cao, B. Miranda, T. Liu, B. Han, S. Koyejo,
     CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for Post-Training Language Models.}
     \\
     (\textbf{2nd AI for Math Workshop @ ICML 2025})
 
     \vspace{10pt}
-    \href{https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6}
+    \pubitem \href{https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6}
     {L. Aniva, C. Sun, B. Miranda, C. Barrett, S. Koyejo,
     Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in Lean 4.}
     \\
     (\textbf{TACAS 2025} - International Conference on Tools and Algorithms for the Construction and Analysis of Systems)
 
     \vspace{10pt}
-    {R. Schaeffer, B. Miranda, J. Kazdan, K. Liu, A. M. Ahmed, N. Mireshghallah, et al.,
+    \pubitem {R. Schaeffer, B. Miranda, J. Kazdan, K. Liu, A. M. Ahmed, N. Mireshghallah, et al.,
     Causally Quantifying the Effect of Test Set Contamination on Generative Benchmarks.}
     \\
     (NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle)
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2506.19882}
+    \pubitem \href{https://arxiv.org/abs/2506.19882}
     {R. Schaeffer, J. Kazdan, Y. Denisov-Blanch, B. Miranda, M. Gerstgrasser, et al.,
     Position: Machine Learning Conferences Should Establish a `Refutations and Critiques' Track.}
     \\
     (\textbf{Advances in Neural Information Processing Systems 38 (NeurIPS 2025) Main Track})
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2509.24012}
+    \pubitem {S. Barkallah, S. Daruru, B. Miranda, L. Aniva, A. Nie, S. Koyejo,
+    VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification.}
+    \\
+    (\textbf{5th Workshop on Mathematical Reasoning and AI at NeurIPS 2025}) --- \textbf{Lean 4} formal theorem proving benchmark.
+
+    \vspace{10pt}
+    \pubitem \href{https://openreview.net/forum?id=Ajr8YtfhVO}
+    {R. Schaeffer, K. Liu, B. Miranda, A. M. Ahmed, N. Mireshghallah, S. Koyejo,
+    The Contamination Paradox: Why Test Set Leakage Can Be Both Potent and Negligible.}
+    \\
+    (NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle)
+
+    \vspace{12pt}
+    \textbf{\large 2024}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://openreview.net/forum?id=wvFnqVVUhN}
+    {R. Schaeffer, D. Valentine, L. Bailey, J. Chua, et al., B. Miranda, et al., S. Koyejo, E. Perez,
+    Failures to Find Transferable Image Jailbreaks Between Vision-Language Models.}
+    \\
+    (\textbf{ICLR 2024} \& NeurIPS Red Teaming GenAI Workshop Contributed Talk 2024)
+
+    \vspace{10pt}
+    \pubitem \href{https://openreview.net/forum?id=f6IB0WrOKS}
+    {R. Schaeffer, M. Khona, S. Chandra, M. Ostrow, B. Miranda, S. Koyejo,
+    Does Maximizing Neural Regression Scores Teach Us About The Brain?}
+    \\
+    (UniReps Workshop 2nd Edition, NeurIPS 2024)
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2501.08496}
+    {K. Chawla, A. Sahai, M. DePavia, S. Sundar, B. Miranda,
+    Quantifying the Importance of Data Alignment in Downstream Model Performance.}
+    \\
+    (ICLR 2024 Workshop on Data-centric Machine Learning Research)
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2406.06555}
+    {A. Gulati, D. Ladsaria, S. Mishra, J. Sidhu, B. Miranda,
+    An Evaluation Benchmark for Autoformalization in Lean4.}
+    \\
+    (The Second Tiny Papers Track at ICLR 2024)
+
+    \vspace{10pt}
+    \pubitem {K. Chawla, A. Sahai, M. DePavia, B. Miranda,
+    A Systematic Study of the Role of Data Quality and Alignment for Fine-tuning LLMs for Enhanced Autoformalization.}
+    \\
+    (The Second Tiny Papers Track at ICLR 2024) --- \textbf{Lean} autoformalization data-quality study.
+
+    \vspace{12pt}
+    \textbf{\large 2023}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2304.15004}
+    {R. Schaeffer, B. Miranda, S. Koyejo,
+    Are Emergent Abilities of Language Models a Mirage?}
+    \\
+    (\textbf{NeurIPS Outstanding Paper Award \& Oral 2023}, Stanford IEEE Invited Talk 2023)
+    \\
+    Featured in: New York Times, Quanta Magazine, Forbes, Stanford HAI.
+    Cited in the 2024 Economic Report of the President (White House).
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2306.13840}
+    {A. Lee*, B. Miranda*, P. Yu, S. Koyejo,
+    Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.}
+    \\
+    (ICML Data-Centric ML Workshop \& ICML Deployable Generative AI Workshop 2023) (*equal contribution)
+
+    \vspace{12pt}
+    \textbf{\large 2022}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2208.01545}
+    {B. Miranda, P. Yu, Y. Wang, S. Koyejo,
+    The Curse of Zero Task Diversity: the Failure of Transfer Learning to Outperform MAML and their Empirical Equivalence.}
+    \\
+    (NeurIPS Contributed Talk - Meta-learning Workshop 2022)
+
+    \vspace{12pt}
+    \textbf{\large 2019}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://drive.google.com/file/d/1G2IVmbENphwB3lxROEpCHQjsClKqRtKP/view}
+    {T. Poggio, A. Banburski, Q. Liao, B. Miranda, L. Rosasco, J. Hidary,
+    Weight and Batch Normalization implement Classical Generalization Bounds.}
+    \\
+    (ICML Workshop 2019)
+
+    \vspace{12pt}
+    \textbf{\large 2018}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://www.osapublishing.org/abstract.cfm?uri=CLEO_SI-2018-SF1A.1}
+    {D. Kita, B. Miranda, H. Lin, J. Michon, D. Favela, J. Hu,
+    High-resolution on-chip digital Fourier transform spectroscopy.}
+    \\
+    (CLEO: Science and Innovations 2018)
+
+    \vspace{10pt}
+    \pubitem \href{https://www.nature.com/articles/s41467-018-06773-2}
+    {D. Kita, B. Miranda, D. Favela, D. Bono, J. Michon, H. Lin, T. Gu, J. Hu,
+    High-performance and scalable on-chip digital Fourier transform spectroscopy.}
+    \\
+    (\textbf{Nature Communications} 9 (1), 4405. 2018)
+
+    \vspace{12pt}
+    \textbf{\large 2017}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://link.springer.com/article/10.1007/s11633-017-1054-2}
+    {T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, Q. Liao,
+    Why and when can deep-but not shallow-networks avoid the curse of dimensionality: A review.}
+    \\
+    (\textbf{International Journal of Automation and Computing}, pp. 1-17, 2017. \textbf{Most Cited Paper Certificate.})
+
+    \vspace{20pt}
+    {\scshape \large \textbf{Preprints and Technical Reports}}
+    \\[-6pt]\hrulefill
+    \setcounter{pubnum}{0}
+
+    \vspace{8pt}
+    \textbf{\large 2026}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf}
+    {D. Amrollahi, M. Karimi, B. Miranda, L. Aniva, C. Sun, C. Barrett, S. Koyejo,
+    AI Coding Benchmarks Need Proofs, Not Just Tests.}
+    \\
+    (Preprint 2026) --- \textbf{Lean 4} formal-proof-based evaluation of AI-generated code.
+
+    \vspace{10pt}
+    \pubitem {E. Obbad, B. Miranda, D. L. W. Hall, R. Schaeffer, S. Koyejo, P. Liang,
+    Curating High Quality Pretraining Data for Language Models via Compression Ratios.}
+    \\
+    (Preprint 2026)
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2601.04301}
+    {R. Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, B. Miranda, A. M. Ahmed, F. Berez, et al.,
+    Quantifying the Effect of Test Set Contamination on Generative Evaluations.}
+    \\
+    (Preprint 2026, arXiv:2601.04301)
+
+    \vspace{12pt}
+    \textbf{\large 2025}
+    \vspace{4pt}
+
+    \vspace{10pt}
+    \pubitem \href{https://arxiv.org/abs/2509.24012}
     {R. Schaeffer, N. Levi, B. Miranda, S. Koyejo,
     Pretraining Scaling Laws for Generative Evaluations of Language Models.}
     \\
     (Preprint 2025, arXiv:2509.24012)
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2509.23963}
+    \pubitem \href{https://arxiv.org/abs/2509.23963}
     {R. Schaeffer, N. Levi, A. Kirsch, T. Guenais, B. Miranda, E. Obbad, S. Koyejo,
     Evaluating the Robustness of Chinchilla Compute-Optimal Scaling.}
     \\
     (Preprint 2025, arXiv:2509.23963)
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2502.15795}
+    \pubitem \href{https://arxiv.org/abs/2502.15795}
     {W. Chan, M. Souliman, J. Nordhagen, B. Miranda, E. Obbad, S. Koyejo,
     Lean-ing on Quality: How High-Quality Data Beats Diverse Multilingual Data in Autoformalization.}
     \\
     (Preprint 2025, arXiv:2502.15795) --- \textbf{Lean 4} autoformalization data-quality study.
 
     \vspace{10pt}
-    {S. Barkallah, S. Daruru, B. Miranda, L. Aniva, A. Nie, S. Koyejo,
-    VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification.}
-    \\
-    (\textbf{5th Workshop on Mathematical Reasoning and AI at NeurIPS 2025}) --- \textbf{Lean 4} formal theorem proving benchmark.
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2510.06261}
+    \pubitem \href{https://arxiv.org/abs/2510.06261}
     {Z. Zhou, C. Cao, X. Feng, X. Li, Z. Li, X. Lu, J. Yao, W. Huang, T. Cheng, et al., B. Miranda,
     AlphaApollo: Orchestrating Foundation Models and Professional Tools into a Self-Evolving System for Deep Agentic Reasoning.}
     \\
     (Preprint 2025, arXiv:2510.06261)
 
     \vspace{10pt}
-    \href{https://openreview.net/forum?id=Ajr8YtfhVO}
-    {R. Schaeffer, K. Liu, B. Miranda, A. M. Ahmed, N. Mireshghallah, S. Koyejo,
-    The Contamination Paradox: Why Test Set Leakage Can Be Both Potent and Negligible.}
-    \\
-    (NeurIPS 2025 Workshop on Evaluating the Evolving LLM Lifecycle)
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2501.08506}
+    \pubitem \href{https://arxiv.org/abs/2501.08506}
     {K. Selva, S. Vittayaareekul, B. Miranda,
     Exploring the Efficacy of Meta-Learning: Unveiling Superior Data Diversity Utilization of MAML Over Pre-training.}
     \\
@@ -368,111 +500,49 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{4pt}
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2410.18194}
+    \pubitem \href{https://arxiv.org/abs/2410.18194}
     {E. Obbad, I. Mlauzi, B. Miranda, R. Schaeffer, K. Obbad, S. Bedi, S. Koyejo,
     ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment.}
     \\
-    (Preprint, arXiv 2024) --- gzip-based data-selection framework demonstrated on \textbf{autoformalization} (Lean) and code-generation pipelines; outperforms DSIR and D4 baselines by significant margins.
+    (Preprint, arXiv 2024) --- gzip-based data-selection framework demonstrated on \textbf{autoformalization} (Lean) and code-generation pipelines.
 
     \vspace{10pt}
-    \href{https://openreview.net/forum?id=wvFnqVVUhN}
-    {R. Schaeffer, D. Valentine, L. Bailey, J. Chua, et al., B. Miranda, et al., S. Koyejo, E. Perez,
-    Failures to Find Transferable Image Jailbreaks Between Vision-Language Models.}
-    \\
-    (\textbf{ICLR 2024} \& NeurIPS Red Teaming GenAI Workshop Contributed Talk 2024)
-
-    \vspace{10pt}
-    \href{https://openreview.net/forum?id=f6IB0WrOKS}
-    {R. Schaeffer, M. Khona, S. Chandra, M. Ostrow, B. Miranda, S. Koyejo,
-    Does Maximizing Neural Regression Scores Teach Us About The Brain?}
-    \\
-    (UniReps Workshop 2nd Edition, NeurIPS 2024)
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2501.08496}
-    {K. Chawla, A. Sahai, M. DePavia, S. Sundar, B. Miranda,
-    Quantifying the Importance of Data Alignment in Downstream Model Performance.}
-    \\
-    (ICLR 2024 Workshop on Data-centric Machine Learning Research)
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2406.06555}
-    {A. Gulati, D. Ladsaria, S. Mishra, J. Sidhu, B. Miranda,
-    An Evaluation Benchmark for Autoformalization in Lean4.}
-    \\
-    (The Second Tiny Papers Track at ICLR 2024)
-
-    \vspace{10pt}
-    {J. Rotella, Z. Qin, A. Z. H. Yang, B. Miranda, M. E. A. Seddik, J. Zuo, H. Hacid, et al.,
+    \pubitem {J. Rotella, Z. Qin, A. Z. H. Yang, B. Miranda, M. E. A. Seddik, J. Zuo, H. Hacid, et al.,
     Synthetic Theorem Generation in Lean.}
     \\
     (Preprint 2024) --- \textbf{Lean 4} synthetic theorem-proof data generation.
-
-    \vspace{10pt}
-    {K. Chawla, A. Sahai, M. DePavia, B. Miranda,
-    A Systematic Study of the Role of Data Quality and Alignment for Fine-tuning LLMs for Enhanced Autoformalization.}
-    \\
-    (The Second Tiny Papers Track at ICLR 2024) --- \textbf{Lean} autoformalization data-quality study.
 
     \vspace{12pt}
     \textbf{\large 2023}
     \vspace{4pt}
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2304.15004}
-    {R. Schaeffer, B. Miranda, S. Koyejo,
-    Are Emergent Abilities of Language Models a Mirage?}
-    \\
-    (\textbf{NeurIPS Outstanding Paper Award \& Oral 2023}, Stanford IEEE Invited Talk 2023)
-    \\
-    Featured in: New York Times, Quanta Magazine, Forbes, Stanford HAI.
-    Cited in the 2024 Economic Report of the President (White House).
-
-    \vspace{10pt}
-    {B. Miranda (ML Research Scientist Consultant) \& Morph Labs Team,
+    \pubitem {B. Miranda (ML Research Scientist Consultant) \& Morph Labs Team,
     Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language.}
     \\
     \href{https://morph.so/blog/the-personal-ai-proof-engineer/}{[Blog]}
     \href{https://huggingface.co/morph-labs/morph-prover-v0-7b}{[Hugging Face Model Card]}
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2306.13840}
-    {A. Lee*, B. Miranda*, P. Yu, S. Koyejo,
-    Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data.}
-    \\
-    (ICML Data-Centric ML Workshop \& ICML Deployable Generative AI Workshop 2023) (*equal contribution)
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2306.13841}
+    \pubitem \href{https://arxiv.org/abs/2306.13841}
     {B. Miranda, P. Yu, S. Goyal, Y. Wang, S. Koyejo,
     Is Pre-training Truly Better Than Meta-Learning?}
     \\
     (Preprint 2023)
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2304.10500}
+    \pubitem \href{https://arxiv.org/abs/2304.10500}
     {B. Miranda, A. Shinnar, V. Pestun, B. Trager,
     Transformer Models for Type Inference in the Simply Typed Lambda Calculus: A Case Study in Deep Learning for Code.}
     \\
     (Preprint 2023)
 
     \vspace{12pt}
-    \textbf{\large 2022}
-    \vspace{4pt}
-
-    \vspace{10pt}
-    \href{https://arxiv.org/abs/2208.01545}
-    {B. Miranda, P. Yu, Y. Wang, S. Koyejo,
-    The Curse of Zero Task Diversity: the Failure of Transfer Learning to Outperform MAML and their Empirical Equivalence.}
-    \\
-    (NeurIPS Contributed Talk - Meta-learning Workshop 2022)
-
-    \vspace{12pt}
     \textbf{\large 2021}
     \vspace{4pt}
 
     \vspace{10pt}
-    \href{https://arxiv.org/abs/2112.13137}
+    \pubitem \href{https://arxiv.org/abs/2112.13137}
     {B. Miranda, Y. Wang, S. Koyejo,
     Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective.}
     \\
@@ -483,7 +553,7 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{4pt}
 
     \vspace{10pt}
-    \href{https://www.ideals.illinois.edu/handle/2142/109139}
+    \pubitem \href{https://www.ideals.illinois.edu/handle/2142/109139}
     {B. Miranda,
     An Empirical Study of Meta-Learning: a step towards rigorously understanding meta-learning algorithms.}
     \\
@@ -492,13 +562,6 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{12pt}
     \textbf{\large 2019}
     \vspace{4pt}
-
-    \vspace{10pt}
-    \href{https://drive.google.com/file/d/1G2IVmbENphwB3lxROEpCHQjsClKqRtKP/view}
-    {T. Poggio, A. Banburski, Q. Liao, B. Miranda, L. Rosasco, J. Hidary,
-    Weight and Batch Normalization implement Classical Generalization Bounds.}
-    \\
-    (ICML Workshop 2019)
 
     \vspace{10pt}
     \href{https://arxiv.org/abs/1903.04991}
@@ -532,20 +595,6 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \\
     (Preprint 2018)
 
-    \vspace{10pt}
-    \href{https://www.osapublishing.org/abstract.cfm?uri=CLEO_SI-2018-SF1A.1}
-    {D. Kita, B. Miranda, H. Lin, J. Michon, D. Favela, J. Hu,
-    High-resolution on-chip digital Fourier transform spectroscopy.}
-    \\
-    (CLEO: Science and Innovations 2018)
-
-    \vspace{10pt}
-    \href{https://www.nature.com/articles/s41467-018-06773-2}
-    {D. Kita, B. Miranda, D. Favela, D. Bono, J. Michon, H. Lin, T. Gu, J. Hu,
-    High-performance and scalable on-chip digital Fourier transform spectroscopy.}
-    \\
-    (\textbf{Nature Communications} 9 (1), 4405. 2018)
-
     \vspace{12pt}
     \textbf{\large 2017}
     \vspace{4pt}
@@ -556,13 +605,6 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     Theory of Deep Learning III: explaining the non-overfitting puzzle.}
     \\
     (Preprint 2017)
-
-    \vspace{10pt}
-    \href{https://link.springer.com/article/10.1007/s11633-017-1054-2}
-    {T. Poggio, H. Mhaskar, L. Rosasco, B. Miranda, Q. Liao,
-    Why and when can deep-but not shallow-networks avoid the curse of dimensionality: A review.}
-    \\
-    (\textbf{International Journal of Automation and Computing}, pp. 1-17, 2017. \textbf{Most Cited Paper Certificate.})
 
     \vspace{4pt}
 \end{body}
@@ -629,6 +671,22 @@ AI for formal mathematics and Lean 4 theorem proving; autoformalization, end-to-
     \vspace{6 pt}
     \textbf{Emergent Abilities in Large Language Models: Mirage or an Elusive Predictive Frontier?}\\
     Hong Kong Baptist University, Department of Computer Science Seminar (2026 Series). \emph{Hong Kong, January 19, 2026.}
+
+    \vspace{6 pt}
+    \textbf{VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4}\\
+    \href{https://docs.google.com/presentation/d/11w7Q9wbfimfs0e87XuLagkhj7Q1lk8Wq-ASM-xJVHdg/edit?usp=sharing}{Lawrence Livermore National Laboratory Reading Group} (invited). \emph{July 31, 2025.}
+
+    \vspace{6 pt}
+    \textbf{Intro to Lean 4, VeriBench, and Trustworthy Testing of AI-Generated Code}\\
+    \href{https://docs.google.com/presentation/d/1KRBym-sOORaxszOJQHdD4u80wAl7jHy8Pda0KAcdeZw/edit?usp=sharing}{Prof. Azalia Mirhoseini's Lab Meeting, Stanford} (invited).
+
+    \vspace{6 pt}
+    \textbf{Are Emergent Abilities of Large Language Models a Mirage? --- Why Has Predicting Downstream Capabilities Remained Elusive?}\\
+    \href{https://docs.google.com/presentation/d/1cr_X6jzZxShHMUVjzHAkitCnPZCbBfyxxxgZg8S90SI/edit?usp=sharing}{Lawrence Livermore National Laboratory} (invited talk).
+
+    \vspace{6 pt}
+    \textbf{Emergent Abilities of Large Language Models --- Koyejo Lab perspective}\\
+    \href{https://docs.google.com/presentation/d/1UDqPg06xQKga1oWSEMS2jyzignQwkot6ZbjQMhdZngs/edit?usp=sharing}{Amazon Research} (invited talk).
 
     \vspace{6 pt}
     \textbf{Are Emergent Abilities of Large Language Models a Mirage?}\\
