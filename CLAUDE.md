@@ -76,7 +76,61 @@ The Publications section (and cv_short's *Selected Publications*) must be split 
 - **Refereed Publications** — peer-reviewed at conferences, journals, or refereed workshops.
 - **Preprints and Technical Reports** — arXiv-only, model cards, blog-released artifacts, or not-yet-refereed.
 
-Within each subsection, entries are grouped by year, most-recent-first. **Each paper appears exactly once.** If a paper moved from preprint → workshop → conference, list it ONCE under the most prestigious venue with a combined venue line (e.g., "ICML 2025 & NeurIPS MATH-AI Workshop 2024") — never duplicate.
+Entries inside each subsection are listed flat (no year sub-headers — year lives in the venue line), most-recent-first, numbered via `\pubitem`. **Each paper appears exactly once.** If a paper moved from preprint → workshop → conference, list it ONCE under the most prestigious venue with a combined venue line (e.g., "International Conference on Machine Learning (ICML). 2025 \& NeurIPS Workshop on Mathematics and AI (MATH-AI). 2024") — never duplicate.
+
+### Publication entry formatting (HARD)
+
+Every publication entry follows this canonical format:
+
+```
+\pubitem [\href{URL}]
+{Authors,
+\emph{Title}.}
+\\
+(\textbf{Full Conference Name (ACRONYM). YEAR})
+```
+
+Rules:
+- **Title**: wrapped in `\emph{...}` (italic). Makes the title scannable when readers skim the page. **NO underline** — was tried, found visually noisy.
+- **Venue**: full conference name, acronym in parentheses, year as plain sentence (`International Conference on Machine Learning (ICML). 2025`). Whole venue line wrapped in `\textbf{}` so it stands out.
+- **No trailing descriptions** on publication entries (e.g., do NOT add `--- Lean 4 autoformalization data-quality study` after the venue). Description belongs in Research Summary, not the publications list. Consistency > color commentary.
+- **Multi-venue entries**: bold each venue part separately, joined by `\&` (e.g., `\textbf{ICML 2025} \& \textbf{NeurIPS Workshop ...}` — never half-bold).
+- **Award annotations on a paper** (e.g., "NeurIPS Outstanding Paper Award & Oral"): include as a tail of the venue line, escape `\&` properly.
+
+Awards section uses a different format (`\item \textbf{Award Name} (date) --- prestige frame`) — the `---` separator there is for prestige framing, not publication description, and stays.
+
+### Chronological order — descending (HARD)
+
+Every dated list in the CV — Publications, Preprints, Talks, Posters (if present), Awards & Honors, Media Coverage, Professional Experience, Teaching, Service — must be in **strict descending order by end-date** (newest first). Ongoing roles with "present" / "expected" sort to the top of their section. When you edit one entry, **audit the whole containing section**, not just the line you touched — chronology bugs cluster (e.g., July 2024 silently behind December 2023, NeurIPS Red Teaming Dec 2024 silently behind Stanford IEEE 2023).
+
+### Equal-contribution authorship
+
+When an author list contains `*` markers (equal first authors), **Brando goes first**. Keep the `*` on both names. The `(*equal contribution)` annotation goes **outside** any `\textbf{}` / `\emph{}` — it's neither bold nor italic, just a parenthetical note.
+
+### Talks live only in the Talks section
+
+Invited / contributed talks belong in the **Invited & Contributed Talks** section. Do not pile a talk venue ("Stanford IEEE Invited Talk 2023") into the publication venue line of the paper it was about — the talk is recorded separately, and mixing the two breaks the bolded-venue format and double-counts the talk.
+
+### CV bottom-margin & page-break parity (HARD)
+
+The CVs use `\flushbottom` so bottom margins stay flush across all pages. For this to work *without splitting a publication entry across pages* (title on page N, venue on page N+1 — a previously observed regression), the preamble of both `cv_long.tex` and `cv_short.tex` MUST contain exactly:
+
+```
+\flushbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\setlength{\parskip}{0pt plus 18pt}
+```
+
+and every line break inside a publication entry (between authors, title, and venue) MUST use `\\*` (page-break-forbidden) — never bare `\\`. Same applies to award/talk multi-line entries.
+
+**After every CV `.tex` edit, before reporting the task done:**
+
+1. Rebuild the PDF: `latexmk -pdf -interaction=nonstopmode` from inside `professional_documents/cvs/`. Confirm the `.pdf` mtime advanced.
+2. Open the PDF and visually scan every page transition to verify (a) no publication / award / talk entry is split across pages, and (b) bottom margins are visually flush across pages.
+3. If a split or short-page is detected, find the offending bare `\\` (most likely culprit) or fixed inter-section `\vspace{Npt}` (less common), convert to `\\*` or `\vspace{Npt plus Mpt}`, re-render, re-verify.
+
+This is a HARD verification step; skipping it is the most common source of the recurring "uneven bottom margin" complaint.
 
 ### CV style standard
 

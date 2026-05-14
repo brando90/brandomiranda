@@ -13,7 +13,39 @@ The repo holds two canonical CVs in `professional_documents/cvs/`:
 The website `index.md` mirrors specific CV sections: **Bio / Research Summary, Selected Publications, Media Coverage, Awards, and Talks**. **Whenever you edit any of these in a CV, also update `index.md`** (and vice versa) in the same commit. CV-only sections — Teaching, Professional Service, Posters, Professional Experience, Education, Mentoring, Coursework — do not propagate to the website. No build step is needed on the `index.md` side; the LaTeX rebuild on the CV side still applies.
 
 ## Publications categorization (HARD)
-The Publications section (and cv_short's *Selected Publications*) must be split into **Refereed Publications** (peer-reviewed: conferences, journals, refereed workshops) and **Preprints and Technical Reports** (arXiv-only, model cards, not-yet-refereed). Within each subsection, group by year, most-recent-first. **Each paper appears exactly once** — if a paper moved venues, list it under the most prestigious with a combined venue line, never duplicate.
+The Publications section (and cv_short's *Selected Publications*) must be split into **Refereed Publications** (peer-reviewed: conferences, journals, refereed workshops) and **Preprints and Technical Reports** (arXiv-only, model cards, not-yet-refereed). Entries listed flat (no year sub-headers — year lives in the venue line), most-recent-first, numbered via `\pubitem`. **Each paper appears exactly once** — if a paper moved venues, list it under the most prestigious with a combined venue line, never duplicate.
+
+## Publication entry formatting (HARD)
+Every publication entry: `\pubitem [\href{URL}] {Authors, \emph{Title}.}\\(\textbf{Full Conference Name (ACRONYM). YEAR})`.
+- Title wrapped in `\emph{...}` (italic, scannable). NO underline — tried, found visually noisy.
+- Venue: full conference name + (acronym) + year as plain sentence, whole venue line in `\textbf{}`.
+- Multi-venue: bold each part separately (`\textbf{X} \& \textbf{Y}`), never half-bold.
+- No trailing `--- description` text on publication entries (consistency > color commentary; descriptions belong in Research Summary). Awards section uses `---` differently (prestige frame) and is exempt.
+
+## Chronological order — descending (HARD)
+Every dated list — Publications, Preprints, Talks, Posters (if present), Awards & Honors, Media Coverage, Professional Experience, Teaching, Service — must be in **strict descending order by end-date** (newest first). Ongoing roles with "present" / "expected" sort to the top. When editing one entry, audit the whole containing section.
+
+## Equal-contribution authorship
+On equal-contribution papers (`*` markers), **Brando goes first**. Keep `*` on both names. The `(*equal contribution)` annotation sits outside `\textbf{}` / `\emph{}` — neither bold nor italic.
+
+## Talks live only in the Talks section
+Invited / contributed talks belong in **Invited & Contributed Talks**. Do not pile a talk venue into a publication's venue line — the talk is recorded separately, and mixing breaks the bolded-venue format.
+
+## CV bottom-margin & page-break parity (HARD)
+Both `cv_long.tex` and `cv_short.tex` use `\flushbottom` for flush bottom margins. To avoid splitting a publication entry across pages (title on page N, venue on page N+1):
+
+Preamble of both CVs MUST contain:
+```
+\flushbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\setlength{\parskip}{0pt plus 18pt}
+\setlength{\parskip}{0pt plus 6pt}
+```
+
+Every line break inside a publication / award / talk entry — between authors, title, and venue — MUST use `\\*` (page-break-forbidden), never bare `\\`.
+
+**After every CV `.tex` edit:** rebuild the PDF, then visually verify across all pages that (a) no entry is split between pages and (b) bottom margins are flush. If broken, look for a bare `\\` (most likely) or a fixed `\vspace{Npt}` between sections (less likely) and convert to `\\*` or `\vspace{Npt plus Mpt}`. Re-render before reporting done.
 
 For *what* to write and *how* to phrase it, the authoritative style guide is `professional_documents/cvs/cvs_prompt.md`. Reference CVs live in `professional_documents/cvs/example_cvs/` — Finn and Barrett (Stanford CS faculty) are the structural prototypes; Eric Mitchell and Rylan Schaeffer (peer PhD-student/recent-grad files) are for length/density calibration only.
 
