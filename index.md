@@ -164,6 +164,15 @@ Why and when can deep-but not shallow-networks avoid the curse of dimensionality
 
 ---
 
+# Talks
+
+- **Applications of Trustworthy Machine Reasoning with AI Coding Agents** — [AAAI 2026 Tutorial](https://trustworthy-machine-reasoning.github.io/) "Trustworthy Machine Reasoning with Foundation Models" (Part IV, 50 min). Co-presented with B. Han, Z. Zhou, C. Cao, P. Lu, S. Koyejo. *Singapore, January 20, 2026.*
+- **Failures to Find Transferable Image Jailbreaks Between Vision-Language Models** — NeurIPS Red Teaming GenAI Workshop, Contributed Talk. *December 2024.*
+- **Are Emergent Abilities of Large Language Models a Mirage?** — [Stanford IEEE Invited Talk](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl). *Stanford, CA, 2023.*
+- **The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence** — [NeurIPS Meta-Learning Workshop, Contributed Talk](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence). *New Orleans, LA, December 2022.*
+
+---
+
 # Media Coverage
 
 Below are selected links showcasing media coverage of some of my work:

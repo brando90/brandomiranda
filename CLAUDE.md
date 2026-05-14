@@ -55,6 +55,21 @@ The repo holds two canonical CVs under `professional_documents/cvs/`:
 | New advisee | yes | only if role is significant |
 | Coursework, full Poster list, internship-presentation list | yes | n/a (short intentionally drops these) |
 
+### CV ↔ website dual-update rule (HARD)
+
+The website `index.md` mirrors a subset of CV sections. **Whenever you edit any of the sections listed below in `cv_long.tex` (or `cv_short.tex`), propagate the change to `index.md` in the same commit** — and vice versa. Both CV ↔ CV (long ↔ short) and CV ↔ website (CV ↔ `index.md`) propagation rules apply concurrently.
+
+| CV section | `index.md` section | Mirror? |
+|---|---|---|
+| Research Summary / Interests | Bio / Shorter Bio | yes (mirror, possibly trimmed) |
+| Selected Publications | `# Selected Publications` | yes (only highlight-tier papers) |
+| Media Coverage | `# Media Coverage` | yes |
+| Awards & Honors | `# Awards` | yes |
+| Invited & Contributed Talks | `# Talks` | yes |
+| Teaching, Professional Service, Posters, Professional Experience, Education, Mentoring, Coursework | n/a | CV-only — do **not** add to website |
+
+`index.md` does not need a build step (Jekyll/GitHub Pages handles publish on push). The CV side still requires the immediate `latexmk` rebuild from inside `professional_documents/cvs/`.
+
 ### Publications categorization (HARD)
 
 The Publications section (and cv_short's *Selected Publications*) must be split into two top-level subsections:
