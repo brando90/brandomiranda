@@ -8,7 +8,7 @@ Brando Miranda's personal/professional website (Jekyll, deployed at https://bran
 
 - **Website source:** Jekyll + Minima theme via `github-pages` gem (so local renders match what Pages will publish). Entry point `index.md`; posts in `_posts/`; drafts in `_drafts/`; standalone pages at root (`blog.md`, `dance.md`, `peformance-psychology.md`, `prospective-collaborations.md`).
 - **Public docs:** `professional_documents/` (`cvs/`, `awards/`, `papers/`, `posters/`) — these *are* shipped to the site.
-- **Local-only / excluded from publishing:** `exclude/` (incl. `cs197/` materials), `experiments/` (research scratch including Lean/ATP work), `_drafts/`, `README.md`. The exclusion list lives in `_config.yml` under `exclude:`.
+- **Local-only / excluded from publishing:** `exclude/` (incl. `cs197/` materials), `experiments/` (research scratch including Lean/ATP work), `_drafts/`, `README.md`, `CLAUDE.md`, `AGENTS.md`, `professional_documents/cvs/cvs_prompt.md`. The exclusion list lives in `_config.yml` under `exclude:`. **HARD RULE:** whenever you add a new top-level `.md` (or any `.md` in a published directory) that is repo-internal docs / agent rules / style guides / etc. — i.e. NOT meant to appear at `brando90.github.io/brandomiranda/<name>.html` — you MUST add it to `_config.yml`'s `exclude:` list in the same commit. Minima auto-publishes every `.md` it finds, including in the nav bar.
 - **Site `baseurl`:** `/brandomiranda/`. Local serve binds at `http://127.0.0.1:4000/brandomiranda/`.
 - **`AGENTS.md`** at root is a one-page mirror pointer for non-Claude agents (Codex, Cursor). If you change the rules below, also update `AGENTS.md` so the two stay in sync.
 
@@ -54,6 +54,14 @@ The repo holds two canonical CVs under `professional_documents/cvs/`:
 | New publication | yes | only if strong enough for Selected Publications |
 | New advisee | yes | only if role is significant |
 | Coursework, full Poster list, internship-presentation list | yes | n/a (short intentionally drops these) |
+
+### Publications categorization (HARD)
+
+The Publications section (and cv_short's *Selected Publications*) must be split into two top-level subsections:
+- **Refereed Publications** — peer-reviewed at conferences, journals, or refereed workshops.
+- **Preprints and Technical Reports** — arXiv-only, model cards, blog-released artifacts, or not-yet-refereed.
+
+Within each subsection, entries are grouped by year, most-recent-first. **Each paper appears exactly once.** If a paper moved from preprint → workshop → conference, list it ONCE under the most prestigious venue with a combined venue line (e.g., "ICML 2025 & NeurIPS MATH-AI Workshop 2024") — never duplicate.
 
 ### CV style standard
 
