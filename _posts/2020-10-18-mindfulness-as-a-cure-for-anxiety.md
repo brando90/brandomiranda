@@ -4,10 +4,12 @@ title: "Mindfulness as a Cure for Anxiety"
 date: 2020-10-18 21:09 -0500
 ---
 
-*~3 min read*
+
+*Brando Miranda — October 2020 · ~3 min read*
 
 **TL;DR.** Anxiety behaves like a habit loop — cue, behavior, reward. Mindfulness works by turning curiosity onto the reward itself, which weakens the loop and the anxiety with it. Neuroscience-backed and directly applicable to everyday habits.
 
+---
 
 # Mindfulness as a Cure for Anxiety 
 
@@ -49,7 +51,6 @@ Dr. Brewer founded MindSciences to move his discoveries of clinical evidence beh
  
 He is the author of The Craving Mind: from cigarettes to smartphones to love, why we get hooked and how we can break bad habits (New Haven: Yale University Press, 2017). Follow him on twitter @judbrewer.
 
-
 <!---
 to embed videos
 http://embedyoutube.org/
@@ -58,7 +59,6 @@ http://embedyoutube.org/
 
 I also uploaded the talk to [my personal youtube channel.](https://youtu.be/eBsPbrwCyHA)
 
-
 ### Follow LCS!
 
 If you want to follow us at LCS here are some useful links:
@@ -66,7 +66,6 @@ If you want to follow us at LCS here are some useful links:
 - facebook page: https://www.facebook.com/LCSillinois  
 - facebook group: https://www.facebook.com/groups/latinocomputerscienceclub 
 - youtube page: https://www.youtube.com/channel/UCB40buA2ZnFGM9yCBF0IepA 
-
 
 ---
 

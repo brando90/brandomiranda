@@ -4,11 +4,12 @@ title: "Embrace AI or Be Left Behind — By People, Not Machines"
 date: 2026-04-27
 ---
 
-*~6 min read*
 
-*Brando Miranda — April 2026*
+*Brando Miranda — April 2026 · ~6 min read*
 
 **TL;DR.** The real risk of ignoring AI isn't that machines replace you — it's that people who use them will. AI is a force of nature: trained on the world's data, improving relentlessly. Adapting isn't optional enthusiasm; it's survival. I'd rather merge with the wave than fight it.
+
+---
 
 A conversation with my collaborator [Dan](https://github.com/daneshvar-amrollahi) this week crystallized something I've felt for a while but hadn't written down. He mentioned wanting to opt out of AI-assisted peer review, half-joking that he didn't trust me not to use Claude Code for mine. I told him what I tell everyone: I personally feel morally obliged to always say AI is allowed — if not encouraged — to help. Otherwise I'd be inconsistent with my own values, and worse, I'd be promoting a future I think is dangerous.
 

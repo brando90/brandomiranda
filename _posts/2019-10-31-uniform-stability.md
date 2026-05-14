@@ -4,9 +4,12 @@ title: "Uniform Stability in Machine Learning Theory"
 date: 2019-10-31 21:09 -0500
 ---
 
-*~1 min read*
+
+*Brando Miranda — October 2019 · ~1 min read*
 
 **TL;DR.** Uniform stability — an algorithm whose output barely changes when you swap one training point — directly implies generalization, without needing VC dimension or Rademacher complexity. This writeup walks through the proofs end to end.
+
+---
 
 - When I took 9.520 at MIT with the wonderful professors
 [Lorenzo Rosasco](http://web.mit.edu/lrosasco/www/) and

@@ -27,7 +27,7 @@ Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning 
 Previously, he was a graduate researcher at the [University of Illinois Urbana-Champaign](https://illinois.edu/) and held research appointments at the Massachusetts Institute of Technology (MIT) — including a Research Assistantship in MIT’s Center for Brains, Minds and Machines (CBMM). 
 He earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting deep-learning-theory research under [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) — who also supervised DeepMind co-founder Demis Hassabis during his post-doctoral fellowship.
 
-Miranda’s research centers on data-centric machine learning for [Frontier Models (FMs)](https://openai.com/index/frontier-model-forum/), [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence), and reasoning for mathematics and verified code. 
+Miranda’s research centers on AI for formal mathematics — [Lean 4](https://leanprover-community.github.io/) theorem proving, autoformalization, and end-to-end formal verification of software and mathematics — alongside contamination-resistant evaluation of LLM mathematical reasoning and data-centric machine learning for [foundation and frontier models](https://openai.com/index/frontier-model-forum/), with broader interest in alternative architectures (e.g. energy-based models) toward [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence). 
 His work has earned the [NeurIPS Outstanding Main Track Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%, 2 papers selected), the [International Journal of Automation & Computing “Most Cited Paper” Certificate](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg), two Honorable Mentions from the Ford Foundation Fellowship, the Saburo Muroga Computer Science Excellence Fellowship, the Stanford School of Engineering Fellowship, and selection as an EDGE Scholar at Stanford.
 
 Miranda is more than a researcher—he is an innovator, communicator, and deeply passionate about the future of AI. 
@@ -40,7 +40,7 @@ He later applied the same expertise as an AI consultant to [Wise Agents](https:/
 # Shorter Bio #
 
 Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning at [Stanford University](https://stanford.edu), advised by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the Trustworthy AI Research (STAIR) group.
-His work targets data-centric techniques for [Frontier Models](https://openai.com/index/frontier-model-forum/), [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence), and machine-learning methods that generate or verify mathematical code.
+His work targets AI for formal mathematics ([Lean 4](https://leanprover-community.github.io/) theorem proving, autoformalization, end-to-end formal verification of software and mathematics), contamination-resistant evaluation of LLM math reasoning, and data-centric techniques for [foundation/frontier models](https://openai.com/index/frontier-model-forum/) toward [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence).
 Miranda received the [NeurIPS Outstanding Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%) and other honors for his research.
 In industry, he served as Machine-Learning Research Scientist Consultant at venture-backed [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), helping build the [Morph Prover v0-7B](https://huggingface.co/morph-labs/morph-prover-v0-7b) and launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
 He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a Stanford spin-out that uses AI agents to transform sales performance.
@@ -204,6 +204,7 @@ This work was also covered by: [Vice, Medium, Hacker News, NeurIPS blog, Reddit,
 
 # Awards
 
+- **Pear AI Researchers Circle** (July 2025) — selective AI-researcher network convened by [Pear VC](https://pear.vc); invited following the final round (R3) of the Pear AI Researcher Grant program
 - [ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop (July 2024)](/professional_documents/tifa_award_elusive.png)
 - [Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award (December 2023) (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 - EDGE Scholar, Stanford University (September 2022)
