@@ -30,6 +30,8 @@ Stanford AI for Lean exists to train students and accelerate research in that di
 
 Relevant Stanford-led work includes [VeriBench](https://openreview.net/forum?id=rWkGFmnSNl), [VeriBench-FTP](https://openreview.net/forum?id=wDjOpXKgtU), [Pantograph](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6), [Putnam-AXIOM](https://icml.cc/virtual/2025/poster/44232), and public writing on [formal methods as scalable oversight]({{ site.baseurl }}2026/04/22/formal-methods-scalable-oversight.html).
 
+{% comment %}
+Hidden from the public page for now; company sponsorship language needs careful handling.
 ## What Sponsorship Supports
 
 Sponsorship helps keep the community active, open, and technically serious. Typical support needs include:
@@ -58,10 +60,11 @@ Sponsor support may be recognized through public acknowledgments, approved spons
 - **Support tooling:** provide compute credits, APIs, proof-assistant tooling, or infrastructure.
 - **Give a technical talk:** share real problems from industry that would benefit from Lean, verification, or AI-assisted proof search.
 - **Propose a collaboration:** bring a public, technically meaningful problem that students can study through an open research or reading-group format.
+{% endcomment %}
 
 ## Contact
 
-For sponsorship, collaborations, or Stanford student participation, contact Brando Miranda at `brando9 {at} stanford dot edu`.
+For collaborations or Stanford student participation, contact Brando Miranda at `brando9 {at} stanford dot edu`.
 
 Useful links:
 
