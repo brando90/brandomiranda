@@ -1,0 +1,5 @@
+name = "leanVsAtp"
+defaultTargets = ["LeanVsATP"]
+
+[[lean_lib]]
+name = "LeanVsATP"

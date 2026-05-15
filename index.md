@@ -5,7 +5,7 @@ title: Brando Miranda
 
 ![me](/images/me_rains_suit.jpg)
 
-- [My Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
+- [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 - [Stanford Profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
 - [Twitter](https://twitter.com/BrandoHablando)
 - [Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
@@ -61,6 +61,23 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 
 [//]: # (Note: * denotes equal contribution.)
 
+Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading (2026)
+*Eric Chen, Aryan Gulati, Brando Miranda, Zeyu Tang, Sanmi Koyejo.*
+[**[International Conference on Learning Representations (ICLR) Workshop on Logical Reasoning of Large Language Models 2026]**](https://openreview.net/forum?id=vdXPorr099)
+
+CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
+*Zhanke Zhou, Xiangyu Lu, Chentao Cao, Brando Miranda, Tongliang Liu, Bo Han, Sanmi Koyejo.*
+[**[International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents 2026]**](https://openreview.net/forum?id=8OoZ8dnvIT)
+[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/52428)
+
+VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification (2025)
+*Slim Barkallah, Srivatsava Daruru, Brando Miranda, Leni Aniva, Allen Nie, Sanmi Koyejo.*
+[**[Neural Information Processing Systems (NeurIPS) Mathematical Reasoning and AI Workshop 2025]**](https://openreview.net/forum?id=wDjOpXKgtU)
+
+VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4 (2025)
+*Brando Miranda, Zhangir Zhou, Anima Nie, Elio Obbad, Leni Aniva, Kai Fronsdal, William Kirk, Dogus Soylu, et al.*
+[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
+
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
 *Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
 [**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/45753) <!-- TODO put icml paper link -->
@@ -109,7 +126,7 @@ Is Pre-training Truly Better Than Meta-Learning? (2023)
 <!-- [**[Code Coming Soon]**]() -->
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data (2023)
-*Alycia Lee\*, Brando Miranda\*, Patrick Yu, and Oluwasanmi Koyejo.*
+*Brando Miranda\*, Alycia Lee\*, Patrick Yu, and Oluwasanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023]**](https://icml.cc/virtual/2023/28937)
 [**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13840)
@@ -175,9 +192,9 @@ Why and when can deep-but not shallow-networks avoid the curse of dimensionality
 
 # Media Coverage
 
-Below are selected links showcasing media coverage of some of my work:
+Below are selected links showcasing media coverage of selected work:
 
-[**Economic Report to the White House Washington (2024)**: Our work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**](/images/white_house_labor_substitute_huam_rs_bm_sk.png)
+[**Economic Report to the White House Washington (2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**](/images/white_house_labor_substitute_huam_rs_bm_sk.png)
 <!-- [**[CopyReport]**](non_personal_documents/white house report schaeffer miranda koyejo cited.pdf) -->
 
 [**The New York Times (June 2023)**: "Silicon Valley Confronts the Idea That the 'Singularity' Is Here"](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
@@ -190,13 +207,13 @@ Below are selected links showcasing media coverage of some of my work:
 
 [**Forbes (May 2023)**: "AI 'Emergent Abilities' Are A Mirage, Says AI Researcher"](https://www.forbes.com/sites/andreamorris/2023/05/09/ai-emergent-abilities-are-a-mirage-says-ai-researcher/?sh=1ec9b33f283f)
 
-[**Andrew Ng (March 2024)**: Endorsed our paper & believes it is evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
+[**Andrew Ng (March 2024)**: Endorsed the emergent-abilities paper as evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
 
-[**Hacker News / Y Combinator (2025)**: Our **Putnam-AXIOM** benchmark for higher-level LLM mathematical reasoning was posted on Hacker News, Y Combinator's influential tech-news front page](https://news.ycombinator.com/item?id=42565606).
+[**Hacker News / Y Combinator (2025)**: The **Putnam-AXIOM** benchmark for higher-level LLM mathematical reasoning was posted on Hacker News, Y Combinator's influential tech-news front page](https://news.ycombinator.com/item?id=42565606).
 
-[**AK / @_akhaliq on X (2023)**: AK shared our **Beyond Scale** data-diversity paper to his AI-research audience — the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace), 68.9K views](https://x.com/_akhaliq/status/1673507375515594766).
+[**AK / @_akhaliq on X (2023)**: AK shared the **Beyond Scale** data-diversity paper to his AI-research audience — the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace), 68.9K views](https://x.com/_akhaliq/status/1673507375515594766).
 
-[**Stanford AI Lab Blog (ICML 2023)**: Our **Beyond Scale** and **Is Pre-training Truly Better Than Meta-Learning?** papers were featured in the Stanford AI Lab blog roundup of ICML 2023](https://ai.stanford.edu/blog/icml-2023/).
+[**Stanford AI Lab Blog (ICML 2023)**: The **Beyond Scale** and **Is Pre-training Truly Better Than Meta-Learning?** papers were featured in the Stanford AI Lab blog roundup of ICML 2023](https://ai.stanford.edu/blog/icml-2023/).
 
 This work was also covered by: [Vice, Medium, Hacker News, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage), courtesy of Google search.
 
@@ -204,22 +221,25 @@ This work was also covered by: [Vice, Medium, Hacker News, NeurIPS blog, Reddit,
 
 # Awards
 
-- **Pear AI Researchers Circle** (July 2025) — selective AI-researcher network convened by [Pear VC](https://pear.vc); invited following the final round (R3) of the Pear AI Researcher Grant program
-- [ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop (July 2024)](/professional_documents/tifa_award_elusive.png)
-- [Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award (December 2023) (top 0.4% and only 2 papers selected)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
-- EDGE Scholar, Stanford University (September 2022)
-- Stanford School of Engineering Fellowship, Stanford University (September 2022)
-- Best Research Project Award for Graduate Course CS 598 "Learning to Learn" by Professor Y. Wang, UIUC (December 2020)
-- Hispanic Scholarship Fund (HSF) Scholar (2020)
-- Honorable Mention, Ford Foundation Fellowship (2020, 2021)
-- [Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC) (December 2019)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
-- Computer Science Excellence Saburo Muroga Endowed Fellow, UIUC (2019-2020)
-- Sloan Scholar, Alfred P. Sloan Foundations Minority Ph.D. (MPHD) Program (2018-2019)
-- Grainger Engineering SURGE Fellowship (2018-2019)
-- Chopper Trading, LLC, Best Strategy Report Award, MIT Battle Code AI Competition (2013)
-- MIT Mitchell B. Kaufman Memorial Scholarship (2012-2013, 2013-2014)
-- MIT Eugene and Margaret (HM) McDermott Scholarship (2012-2013, 2013-2014)
-- High Achievement Prize Award, Greengates School (2007, 2008, 2009, 2010), similar to Valedictorian
-- Best All-Round Student Award, Greengates School (2010)
-- Achievement Prize Award, Greengates School (2006)
-- Certificate for Progress Award, Greengates School (2005)
+- **ICML 2026 Silver Reviewer** (May 2026) — top reviewer recognition signed by the ICML 2026 Program Chairs.
+- **Oral Recommendation (Top 1)**, 2nd AI for Math Workshop @ ICML 2025 — for *VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4* (Miranda et al.); reviewer recommendation "Accept (Oral, Top 1)".
+- **Pear AI Researchers Circle** (July 2025) — selective AI-researcher network convened by [Pear VC](https://pear.vc); invited following the final round (R3) of the Pear AI Researcher Grant program.
+- [**ICML Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) — Outstanding Paper Award** (July 2024)](/professional_documents/tifa_award_elusive.png) — for "Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?" (Schaeffer, Schoelkopf, Miranda, et al.).
+- [**Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award** (December 2023)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) — top 0.4% of NeurIPS submissions; only 2 main-track papers selected. For "Are Emergent Abilities of Large Language Models a Mirage?" (Schaeffer, Miranda, Koyejo).
+- **EDGE Scholar**, Stanford University (September 2022) — Stanford fellowship supporting first-generation / low-income PhD scholars.
+- **Stanford School of Engineering Fellowship** (September 2022) — multi-year departmental fellowship for incoming engineering PhDs.
+- **Honorable Mention**, Ford Foundation Predoctoral Fellowship (2020, 2021) — national fellowship recognizing PhD applicants with potential to diversify the U.S. professoriate.
+- **Best Research Project Award**, UIUC graduate course CS 598 "Learning to Learn" (December 2020) — course-level award for the top research project.
+- **HSF Scholar**, Hispanic Scholarship Fund (2020) — competitive national merit fellowship for Hispanic graduate students.
+- **Computer Science Excellence Saburo Muroga Endowed Fellow**, UIUC (2019-2020) — top departmental fellowship for incoming CS PhDs.
+- [**Most Cited Paper Certificate**, International Journal of Automation & Computing (IJAC, December 2019)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg) — for "Why and when can deep- but not shallow-networks avoid the curse of dimensionality: a review".
+- **Sloan Scholar**, Alfred P. Sloan Foundation Minority Ph.D. (MPHD) Program (2018-2019) — national fellowship for underrepresented STEM PhD students.
+- **Grainger Engineering SURGE Fellowship**, UIUC (2018-2019) — multi-year college-level fellowship for diverse engineering PhDs.
+- **MIT Mitchell B. Kaufman Memorial Scholarship** (2012-2013, 2013-2014) — MIT undergraduate scholarship support.
+- **MIT Eugene and Margaret McDermott Scholarship** (2012-2013, 2013-2014) — MIT undergraduate scholarship support.
+- **Chopper Trading, LLC, Best Strategy Report Award**, MIT BattleCode AI competition (2013) — top finisher among ~300 teams.
+- **Greengates Scholarship** (30% 2007, 50% 2008, 100% 2009, 100% 2010) — merit scholarship that increased to full-tuition support.
+- **High Achievement Prize Award**, Greengates School (2007, 2008, 2009, 2010) — equivalent to Valedictorian.
+- **Best All-Round Student Award**, Greengates School (2010) — school-wide award recognizing the top all-around student.
+- **Achievement Prize Award**, Greengates School (2006) — school recognition for academic achievement.
+- **Certificate for Progress Award**, Greengates School (2005) — school recognition for academic progress.
