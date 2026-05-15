@@ -28,7 +28,7 @@ Stanford AI for Lean exists to train students and accelerate research in that di
 - **Trustworthy evaluation:** designing contamination-resistant and verification-aware benchmarks for mathematical reasoning.
 - **Lean infrastructure:** improving interfaces, datasets, tutorials, and workflows that make Lean 4 useful to researchers and engineers.
 
-Relevant Stanford-led work includes [VeriBench](https://openreview.net/forum?id=rWkGFmnSNl), [VeriBench-FTP](https://openreview.net/forum?id=wDjOpXKgtU), [Pantograph](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6), [Putnam-AXIOM](https://icml.cc/virtual/2025/poster/44232), and public writing on [formal methods as scalable oversight](/2026/04/22/formal-methods-scalable-oversight.html).
+Relevant Stanford-led work includes [VeriBench](https://openreview.net/forum?id=rWkGFmnSNl), [VeriBench-FTP](https://openreview.net/forum?id=wDjOpXKgtU), [Pantograph](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6), [Putnam-AXIOM](https://icml.cc/virtual/2025/poster/44232), and public writing on [formal methods as scalable oversight]({{ site.baseurl }}2026/04/22/formal-methods-scalable-oversight.html).
 
 ## What Sponsorship Supports
 
@@ -66,7 +66,7 @@ For sponsorship, collaborations, or Stanford student participation, contact Bran
 Useful links:
 
 - [Stanford AI for Lean](https://aiforlean.org/)
-- [Brando Miranda](/)
+- [Brando Miranda]({{ site.baseurl }})
 - [Prof. Sanmi Koyejo / STAIR group](https://cs.stanford.edu/~sanmi/index.html)
 - [Lean](https://lean-lang.org/)
 - [Lean community / Mathlib](https://leanprover-community.github.io/)
