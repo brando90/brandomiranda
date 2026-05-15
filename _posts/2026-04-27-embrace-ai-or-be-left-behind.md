@@ -44,7 +44,7 @@ If I told my students not to use AI, I'd be promoting a future where they're les
 
 ## Adaptation is the only strategy
 
-I think about this through the lens of my own research. I work on AI for formal verification in Lean 4. I co-founded [Stanford AI for Lean](https://aiforlean.org/) because I believe the intersection of AI and formal methods is where the future of mathematics lives. I built a [multi-agent workflow](https://github.com/brando90/agents-config) because I wanted to use AI agents seriously — not as toys, but as structured components of a rigorous process.
+I think about this through the lens of my own research. I work on AI for formal verification in Lean 4. I co-founded [Stanford AI for Lean](https://www.stanfordlean.club/) because I believe the intersection of AI and formal methods is where the future of mathematics lives. I built a [multi-agent workflow](https://github.com/brando90/agents-config) because I wanted to use AI agents seriously — not as toys, but as structured components of a rigorous process.
 
 Every one of these decisions was an adaptation. I saw where the wave was going, and I chose to ride it instead of watching it from shore. Sometimes that means my tools are better than me at specific subtasks, and that's fine. The point was never to be the best at everything — it was to be the person who knows how to direct the best tools at the right problems.
 

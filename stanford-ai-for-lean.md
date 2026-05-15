@@ -6,7 +6,7 @@ permalink: /stanford-ai-for-lean/
 
 *Formalizing the future of mathematics.*
 
-[Stanford AI for Lean](https://aiforlean.org/) is a student-led research community at Stanford focused on AI-assisted theorem proving, Lean 4, formal verification, and the future of trustworthy mathematical reasoning.
+[Stanford AI for Lean](https://www.stanfordlean.club/) is a student-led research community at Stanford focused on AI-assisted theorem proving, Lean 4, formal verification, and the future of trustworthy mathematical reasoning.
 
 We bring together students and researchers who want to build the next generation of tools for verified mathematics and software. The group is closely connected to ongoing AI-for-formal-methods research in [Prof. Sanmi Koyejo's](https://cs.stanford.edu/~sanmi/index.html) Stanford Trustworthy AI Research group, including work on Lean 4 benchmarks, autoformalization, formal proof search, and end-to-end verification of AI-generated code.
 
@@ -65,7 +65,7 @@ For sponsorship, collaborations, or Stanford student participation, contact Bran
 
 Useful links:
 
-- [Stanford AI for Lean](https://aiforlean.org/)
+- [Stanford AI for Lean](https://www.stanfordlean.club/)
 - [Brando Miranda]({{ site.baseurl }})
 - [Prof. Sanmi Koyejo / STAIR group](https://cs.stanford.edu/~sanmi/index.html)
 - [Lean](https://lean-lang.org/)

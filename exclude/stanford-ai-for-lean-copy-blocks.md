@@ -59,7 +59,7 @@ Stanford AI for Lean would like to invite [Speaker] from [Company] to give a tec
 ## Useful Links
 
 - Public sponsor page: <https://brando90.github.io/brandomiranda/stanford-ai-for-lean/>
-- Stanford AI for Lean: <https://aiforlean.org/>
+- Stanford AI for Lean: <https://www.stanfordlean.club/>
 - Brando Miranda: <https://brando90.github.io/brandomiranda/>
 - Prof. Sanmi Koyejo / STAIR group: <https://cs.stanford.edu/~sanmi/index.html>
 - Lean: <https://lean-lang.org/>

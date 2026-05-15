@@ -62,13 +62,13 @@ The workflow above uses existing verification tools. But as AI systems generate 
 
 This workflow is not separate from my research interests. It's an extension of them. I care about theorem proving and verified code because they force us to take reasoning seriously. They also make it obvious that fluent output is not enough.
 
-That's why I founded [Stanford AI for Lean](https://aiforlean.org/) — a student-led research community focused on AI-assisted theorem proving and formal verification. And it's why I think the future of AI-assisted work will belong less to people who merely use agents and more to people who learn to structure them well: modular, correctness-gated, built in public, and always subject to verification.
+That's why I founded [Stanford AI for Lean](https://www.stanfordlean.club/) — a student-led research community focused on AI-assisted theorem proving and formal verification. And it's why I think the future of AI-assisted work will belong less to people who merely use agents and more to people who learn to structure them well: modular, correctness-gated, built in public, and always subject to verification.
 
 ---
 
 *[agents-config](https://github.com/brando90/agents-config) is open source under Apache 2.0. Contributions welcome.*
 
-*[Stanford AI for Lean](https://aiforlean.org/) — Formalizing the future of mathematics.*
+*[Stanford AI for Lean](https://www.stanfordlean.club/) — Formalizing the future of mathematics.*
 
 ---
 
