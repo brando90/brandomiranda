@@ -7,8 +7,8 @@ title: Brando Miranda
 
 - [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 - [Stanford Profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
-- [Twitter](https://twitter.com/BrandoHablando)
-- [Linkedin](https://www.linkedin.com/in/brando-miranda-40821046/)
+- [X](https://x.com/BrandoHablando)
+- [LinkedIn](https://www.linkedin.com/in/brando-miranda-40821046/)
 - [MIT and CBMM Profile](https://cbmm.mit.edu/about/people/miranda)
 - [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9)
 - brando9 {at} stanford DoT Edu
