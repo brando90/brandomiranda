@@ -73,6 +73,17 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 
 ---
 
+# Selected Writing
+
+- [**Metallica Goes Jazz: A 2010 High School Arrangement, Reanimated by AI**]({{ site.baseurl }}2026/05/07/metallica-goes-jazz.html) — May 2026.
+- [**Embrace AI or Be Left Behind — By People, Not Machines**]({{ site.baseurl }}2026/04/27/embrace-ai-or-be-left-behind.html) — April 2026.
+- [**Asking the Right Question: Formal Methods as Scalable Oversight**]({{ site.baseurl }}2026/04/22/formal-methods-scalable-oversight.html) — April 2026.
+- [**What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research**]({{ site.baseurl }}2026/04/13/correctness-gated-multi-agent-workflow.html) — April 2026.
+
+Selected service and mentoring writing is available in the [blog archive]({{ site.baseurl }}blog.html), including posts on research community, graduate-school statements, mindfulness, and team-building.
+
+---
+
 # Selected Publications [ [Full List] ](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 
 [//]: # (Note: * denotes equal contribution.)
