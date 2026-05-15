@@ -8,7 +8,7 @@ title: Brando Miranda
 - [CV (long)](/professional_documents/cvs/cv_long.pdf) &nbsp;·&nbsp; [CV (short)](/professional_documents/cvs/cv_short.pdf)
 - [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 - [Stanford Profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
-- [X](https://x.com/BrandoHablando)
+- [X (formerly known as Twitter)](https://x.com/BrandoHablando)
 - [LinkedIn](https://www.linkedin.com/in/brando-miranda-40821046/)
 - [MIT and CBMM Profile](https://cbmm.mit.edu/about/people/miranda)
 - [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9)
