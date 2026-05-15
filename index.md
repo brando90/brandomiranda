@@ -198,26 +198,28 @@ Why and when can deep-but not shallow-networks avoid the curse of dimensionality
 
 Below are selected links showcasing media coverage of selected work:
 
-[**Economic Report to the White House Washington (2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**](/images/white_house_labor_substitute_huam_rs_bm_sk.png)
+[**Hacker News / Y Combinator (2025)**: The **Putnam-AXIOM** benchmark for higher-level LLM mathematical reasoning was posted on Hacker News, Y Combinator's influential tech-news front page](https://news.ycombinator.com/item?id=42565606).
+
+[**Aran Komatsuzaki / @arankomatsuzaki on X (June 2024)**: Shared the **Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?** paper to his AI-research audience — an AI-research commentator with early work on GPT-J, LAION, scaling, and MoE](https://x.com/arankomatsuzaki/status/1799976398331011173).
+
+[**White House Economic Report of the President (March 2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**](/images/white_house_labor_substitute_huam_rs_bm_sk.png)
 <!-- [**[CopyReport]**](non_personal_documents/white house report schaeffer miranda koyejo cited.pdf) -->
+
+[**Andrew Ng (March 2024)**: Endorsed the emergent-abilities paper as evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
+
+[**Quanta Magazine (February 2024)**: "How Quickly Do Large Language Models Learn Unexpected Skills? - A new study suggests that so-called emergent abilities actually develop gradually and predictably, depending on how you measure them."](https://www.quantamagazine.org/how-quickly-do-large-language-models-learn-unexpected-skills-20240213/)
+
+[**Stanford AI Lab Blog (ICML 2023)**: The **Beyond Scale** and **Is Pre-training Truly Better Than Meta-Learning?** papers were featured in the Stanford AI Lab blog roundup of ICML 2023](https://ai.stanford.edu/blog/icml-2023/).
+
+[**AK / @_akhaliq on X (June 2023)**: AK shared the **Beyond Scale** data-diversity paper to his AI-research audience — the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace), 68.9K views](https://x.com/_akhaliq/status/1673507375515594766).
 
 [**The New York Times (June 2023)**: "Silicon Valley Confronts the Idea That the 'Singularity' Is Here"](https://www.nytimes.com/2023/06/11/technology/silicon-valley-confronts-the-idea-that-the-singularity-is-here.html)
 
 [**Y Combinator News (May 2023)**: "Are emergent abilities of large language models a mirage?"](https://news.ycombinator.com/item?id=35768824)
 
-[**Quanta Magazine (February 2024)**: "How Quickly Do Large Language Models Learn Unexpected Skills? - A new study suggests that so-called emergent abilities actually develop gradually and predictably, depending on how you measure them."](https://www.quantamagazine.org/how-quickly-do-large-language-models-learn-unexpected-skills-20240213/)
-
 [**Stanford's Institute for Human-Centered Artificial Intelligence (HAI) (May 2023)**: "AI's Ostensible Emergent Abilities Are a Mirage"](https://hai.stanford.edu/news/ais-ostensible-emergent-abilities-are-mirage)
 
 [**Forbes (May 2023)**: "AI 'Emergent Abilities' Are A Mirage, Says AI Researcher"](https://www.forbes.com/sites/andreamorris/2023/05/09/ai-emergent-abilities-are-a-mirage-says-ai-researcher/?sh=1ec9b33f283f)
-
-[**Andrew Ng (March 2024)**: Endorsed the emergent-abilities paper as evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
-
-[**Hacker News / Y Combinator (2025)**: The **Putnam-AXIOM** benchmark for higher-level LLM mathematical reasoning was posted on Hacker News, Y Combinator's influential tech-news front page](https://news.ycombinator.com/item?id=42565606).
-
-[**AK / @_akhaliq on X (2023)**: AK shared the **Beyond Scale** data-diversity paper to his AI-research audience — the influential AI-research-paper aggregator (Gradio founder; now at HuggingFace), 68.9K views](https://x.com/_akhaliq/status/1673507375515594766).
-
-[**Stanford AI Lab Blog (ICML 2023)**: The **Beyond Scale** and **Is Pre-training Truly Better Than Meta-Learning?** papers were featured in the Stanford AI Lab blog roundup of ICML 2023](https://ai.stanford.edu/blog/icml-2023/).
 
 This work was also covered by: [Vice, Medium, Hacker News, NeurIPS blog, Reddit, and more](https://www.google.com/search?q=are+emergent+abilities+of+large+language+models+a+mirage), courtesy of Google search.
 
