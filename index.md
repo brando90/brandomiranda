@@ -28,6 +28,7 @@ Previously, he was a graduate researcher at the [University of Illinois Urbana-C
 He earned his Master of Engineering in Electrical Engineering and Computer Science at MIT, conducting deep-learning-theory research under [Professor Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/) — who also supervised DeepMind co-founder Demis Hassabis during his post-doctoral fellowship.
 
 Miranda’s research centers on AI for formal mathematics — [Lean 4](https://leanprover-community.github.io/) theorem proving, autoformalization, and end-to-end formal verification of software and mathematics — alongside contamination-resistant evaluation of LLM mathematical reasoning and data-centric machine learning for [foundation and frontier models](https://openai.com/index/frontier-model-forum/), with broader interest in alternative architectures (e.g. energy-based models) toward [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence). 
+He is a founding member of [Stanford AI for Lean](https://www.stanfordlean.club/), a research community advancing AI for Lean theorem proving and formalizing mathematics.
 His work has earned the [NeurIPS Outstanding Main Track Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%, 2 papers selected), the [International Journal of Automation & Computing “Most Cited Paper” Certificate](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg), two Honorable Mentions from the Ford Foundation Fellowship, the Saburo Muroga Computer Science Excellence Fellowship, the Stanford School of Engineering Fellowship, and selection as an EDGE Scholar at Stanford.
 
 Miranda is more than a researcher—he is an innovator, communicator, and deeply passionate about the future of AI. 
@@ -41,6 +42,7 @@ He later applied the same expertise as an AI consultant to [Wise Agents](https:/
 
 Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning at [Stanford University](https://stanford.edu), advised by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the Trustworthy AI Research (STAIR) group.
 His work targets AI for formal mathematics ([Lean 4](https://leanprover-community.github.io/) theorem proving, autoformalization, end-to-end formal verification of software and mathematics), contamination-resistant evaluation of LLM math reasoning, and data-centric techniques for [foundation/frontier models](https://openai.com/index/frontier-model-forum/) toward [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence).
+He is a founding member of [Stanford AI for Lean](https://www.stanfordlean.club/), a research community advancing AI for Lean theorem proving and formalizing mathematics.
 Miranda received the [NeurIPS Outstanding Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%) and other honors for his research.
 In industry, he served as Machine-Learning Research Scientist Consultant at venture-backed [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), helping build the [Morph Prover v0-7B](https://huggingface.co/morph-labs/morph-prover-v0-7b) and launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
 He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a Stanford spin-out that uses AI agents to transform sales performance.
@@ -70,29 +72,46 @@ CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning
 [**[International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents 2026]**](https://openreview.net/forum?id=8OoZ8dnvIT)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/52428)
 
+AI Coding Benchmarks Need Proofs, Not Just Tests (2026)
+*Danesh Amrollahi, M. Karimi, Brando Miranda, Leni Aniva, Chuyue Sun, Clark Barrett, Sanmi Koyejo.*
+[**[Preprint]**](https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf)
+
 VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification (2025)
 *Slim Barkallah, Srivatsava Daruru, Brando Miranda, Leni Aniva, Allen Nie, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Mathematical Reasoning and AI Workshop 2025]**](https://openreview.net/forum?id=wDjOpXKgtU)
 
 VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4 (2025)
-*Brando Miranda, Zhangir Zhou, Anima Nie, Elio Obbad, Leni Aniva, Kai Fronsdal, William Kirk, Dogus Soylu, et al.*
+*Brando Miranda, Zhanke Zhou, Allen Nie, Elyas Obbad, Leni Aniva, Kai Fronsdal, Weston Kirk, Dilara Soylu, et al.*
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
 
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
-*Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.* 
-[**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/45753) <!-- TODO put icml paper link -->
+*Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.*
+[**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/45753)
 [[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award**]](/professional_documents/tifa_award_elusive.png)
 [**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
 
 Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2025)
-*Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.* <!-- [**[arxiv]**](TODO) -->
-[**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/44232) <!-- TODO put icml paper link -->
+*Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.*
+[**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/44232)
 [**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
+[**[arXiv]**](https://arxiv.org/abs/2508.08292)
 <!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
 
-Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in lean 4 (2025)
+Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in Lean 4 (2025)
 *Leni Aniva, Chuyue Sun, Brando Miranda, Clark Barrett, Sanmi Koyejo.*
-[**[International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS)]**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6)
+[**[International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) 2025]**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6)
+
+Quantifying the Effect of Test Set Contamination on Generative Evaluations (2025)
+*Rylan Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, Brando Miranda, A. M. Ahmed, F. Berez, et al.*
+[**[Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle 2025]**](https://arxiv.org/abs/2601.04301)
+
+Position: Machine Learning Conferences Should Establish a "Refutations and Critiques" Track (2025)
+*Rylan Schaeffer, J. Kazdan, Y. Denisov-Blanch, Brando Miranda, M. Gerstgrasser, et al.*
+[**[Neural Information Processing Systems (NeurIPS) Main Track 2025]**](https://arxiv.org/abs/2506.19882)
+
+Lean-ing on Quality: How High-Quality Data Beats Diverse Multilingual Data in Autoformalization (2025)
+*W. Chan, M. Souliman, J. Nordhagen, Brando Miranda, Elyas Obbad, Sanmi Koyejo.*
+[**[arXiv]**](https://arxiv.org/abs/2502.15795)
 
 Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2024)
 *Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
@@ -100,7 +119,23 @@ Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2
 [**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop 2024]**](https://neurips.cc/virtual/2024/106794)
 <!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
-Are Emergent Abilities of Large Language Models a Mirage? (2024)
+Does Maximizing Neural Regression Scores Teach Us About The Brain? (2024)
+*Rylan Schaeffer, M. Khona, S. Chandra, M. Ostrow, Brando Miranda, Sanmi Koyejo.*
+[**[Neural Information Processing Systems (NeurIPS) Workshop on Unifying Representations in Neural Models (UniReps), 2nd Edition 2024]**](https://openreview.net/forum?id=f6IB0WrOKS)
+
+Quantifying the Importance of Data Alignment in Downstream Model Performance (2024)
+*K. Chawla, A. Sahai, M. DePavia, S. Sundar, Brando Miranda.*
+[**[International Conference on Learning Representations (ICLR) Workshop on Data-Centric Machine Learning Research (DMLR) 2024]**](https://arxiv.org/abs/2501.08496)
+
+An Evaluation Benchmark for Autoformalization in Lean4 (2024)
+*Aryan Gulati, D. Ladsaria, S. Mishra, J. Sidhu, Brando Miranda.*
+[**[International Conference on Learning Representations (ICLR) Tiny Papers Track, Second Edition 2024]**](https://arxiv.org/abs/2406.06555)
+
+ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment (2024)
+*Elyas Obbad, Iddah Mlauzi, Brando Miranda, Rylan Schaeffer, K. Obbad, S. Bedi, Sanmi Koyejo.*
+[**[arXiv]**](https://arxiv.org/abs/2410.18194)
+
+Are Emergent Abilities of Large Language Models a Mirage? (2023)
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
@@ -112,7 +147,7 @@ Are Emergent Abilities of Large Language Models a Mirage? (2024)
 **Preprint & ICML Challenges in Deployable Generative AI Workshop 2023.**
 [**[arXiv]**](https://arxiv.org/abs/2304.15004)  -->
 
-Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language (2023)
+Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language (2024)
 [**[blog]**](https://morph.so/blog/the-personal-ai-proof-engineer/)
 [**[Hugging Face Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
 
@@ -154,7 +189,7 @@ The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperfo
 [//]: # (5 min video from neurips)
 [//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 
-Does MAML Only Work via Feature Re-use? A Data Centric Perspective (2021)
+Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective (2021)
 *Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
 **[Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang UIUC (December 2020)]**
 [**[arXiv]**](https://arxiv.org/abs/2112.13137)
