@@ -59,9 +59,25 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 
 ---
 
+# Research Artifacts & Systems
+
+- [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
+- [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
+- [**AlphaDiana**](https://github.com/dhoemenk97-star/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
+- [**VeriBench**](https://openreview.net/forum?id=rWkGFmnSNl): end-to-end Lean 4 benchmark for evaluating AI-generated code with formal verification proofs.
+- [**VeriBench-FTP**](https://openreview.net/forum?id=wDjOpXKgtU): formal theorem-proving benchmark in Lean 4 for code verification.
+- [**Putnam-AXIOM**](https://icml.cc/virtual/2025/poster/44232): functional and static benchmark for higher-level LLM mathematical reasoning.
+- [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
+- [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
+- [**ultimate-utils**](https://github.com/brando90/ultimate-utils): reusable ML and research-engineering utility library for experiment workflows.
+
+---
+
 # Selected Publications [ [Full List] ](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 
 [//]: # (Note: * denotes equal contribution.)
+
+Selected publications are listed reverse-chronologically; see [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en) for the full list and citation metrics.
 
 Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading (2026)
 *Eric Chen, Aryan Gulati, Brando Miranda, Zeyu Tang, Sanmi Koyejo.*
@@ -135,21 +151,16 @@ ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment (2024)
 *Elyas Obbad, Iddah Mlauzi, Brando Miranda, Rylan Schaeffer, K. Obbad, S. Bedi, Sanmi Koyejo.*
 [**[arXiv]**](https://arxiv.org/abs/2410.18194)
 
+Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language (2024)
+[**[blog]**](https://morph.so/blog/the-personal-ai-proof-engineer/)
+[**[Hugging Face Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
+
 Are Emergent Abilities of Large Language Models a Mirage? (2023)
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
 [**[arXiv]**](https://arxiv.org/abs/2304.15004)
 <!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
-
-<!-- Are Emergent Abilities of Large Language Models a Mirage?
-*Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
-**Preprint & ICML Challenges in Deployable Generative AI Workshop 2023.**
-[**[arXiv]**](https://arxiv.org/abs/2304.15004)  -->
-
-Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language (2024)
-[**[blog]**](https://morph.so/blog/the-personal-ai-proof-engineer/)
-[**[Hugging Face Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
 
 Is Pre-training Truly Better Than Meta-Learning? (2023)
 *Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.*
