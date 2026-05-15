@@ -30,6 +30,10 @@ Stanford AI for Lean exists to train students and accelerate research in that di
 
 Relevant Stanford-led work includes [VeriBench](https://openreview.net/forum?id=rWkGFmnSNl), [VeriBench-FTP](https://openreview.net/forum?id=wDjOpXKgtU), [Pantograph](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6), [Putnam-AXIOM](https://icml.cc/virtual/2025/poster/44232), and public writing on [formal methods as scalable oversight]({{ site.baseurl }}2026/04/22/formal-methods-scalable-oversight.html).
 
+## Learning Resources
+
+For students getting started with Lean, Brando maintains a public [Learning the Lean 4 Interactive Theorem Prover](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt68MTR6kdI0Jc85Uuw1YWV) tutorial playlist, with a companion [learning_lean](https://github.com/brando90/learning_lean/tree/main) code repository and [X announcement](https://x.com/BrandoHablando/status/1763698776378843495).
+
 {% comment %}
 Hidden from the public page for now; company sponsorship language needs careful handling.
 ## What Sponsorship Supports
