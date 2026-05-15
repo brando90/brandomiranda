@@ -97,14 +97,13 @@ Pantograph: A machine-to-machine interaction interface for advanced theorem prov
 Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2024)
 *Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
 [**[International Conference on Learning Representations (ICLR) 2024]**](https://openreview.net/forum?id=wvFnqVVUhN)
-[**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop Contributed Talk 2024]**](https://neurips.cc/virtual/2024/106794)
+[**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop 2024]**](https://neurips.cc/virtual/2024/106794)
 <!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
 Are Emergent Abilities of Large Language Models a Mirage? (2024)
 *Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
-[**[Stanford IEEE Invited Talk 2023]**](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl)
 [**[arXiv]**](https://arxiv.org/abs/2304.15004)
 <!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
 
@@ -142,7 +141,7 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence (2022)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
-[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022, Contributed Talk]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
+[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 [**[OpenReview]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
@@ -184,8 +183,13 @@ Why and when can deep-but not shallow-networks avoid the curse of dimensionality
 # Talks
 
 - **Applications of Trustworthy Machine Reasoning with AI Coding Agents** — [AAAI 2026 Tutorial](https://trustworthy-machine-reasoning.github.io/) "Trustworthy Machine Reasoning with Foundation Models" (Part IV, 50 min). Co-presented with B. Han, Z. Zhou, C. Cao, P. Lu, S. Koyejo. *Singapore, January 20, 2026.*
-- **Failures to Find Transferable Image Jailbreaks Between Vision-Language Models** — NeurIPS Red Teaming GenAI Workshop, Contributed Talk. *December 2024.*
+- **Emergent Abilities in Large Language Models: Mirage or an Elusive Predictive Frontier?** — Hong Kong Baptist University, Department of Computer Science Seminar. *Hong Kong, January 19, 2026.*
+- **VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4** — [Lawrence Livermore National Laboratory Reading Group](https://docs.google.com/presentation/d/11w7Q9wbfimfs0e87XuLagkhj7Q1lk8Wq-ASM-xJVHdg/edit?usp=sharing), invited. *July 31, 2025.*
+- **Intro to Lean 4, VeriBench, and Trustworthy Testing of AI-Generated Code** — [Prof. Azalia Mirhoseini's Lab Meeting, Stanford](https://docs.google.com/presentation/d/1KRBym-sOORaxszOJQHdD4u80wAl7jHy8Pda0KAcdeZw/edit?usp=sharing), invited. *2025.*
+- **Failures to Find Transferable Image Jailbreaks Between Vision-Language Models** — [NeurIPS Red Teaming GenAI Workshop](https://neurips.cc/virtual/2024/106794), contributed talk. *December 2024.*
 - **Are Emergent Abilities of Large Language Models a Mirage?** — [Stanford IEEE Invited Talk](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl). *Stanford, CA, 2023.*
+- **Are Emergent Abilities of Large Language Models a Mirage? — Why Has Predicting Downstream Capabilities Remained Elusive?** — [Lawrence Livermore National Laboratory](https://docs.google.com/presentation/d/1cr_X6jzZxShHMUVjzHAkitCnPZCbBfyxxxgZg8S90SI/edit?usp=sharing), invited talk. *2023.*
+- **Emergent Abilities of Large Language Models** — [Amazon Research](https://docs.google.com/presentation/d/1UDqPg06xQKga1oWSEMS2jyzignQwkot6ZbjQMhdZngs/edit?usp=sharing), invited talk. *2023.*
 - **The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence** — [NeurIPS Meta-Learning Workshop, Contributed Talk](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence). *New Orleans, LA, December 2022.*
 
 ---
