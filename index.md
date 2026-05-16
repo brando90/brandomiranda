@@ -90,14 +90,15 @@ Selected service and mentoring writing is available in the [blog archive]({{ sit
 
 Selected publications are listed reverse-chronologically; see [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en) for the full list and citation metrics.
 
+CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
+*Zhanke Zhou, Xiangyu Lu, Chentao Cao, Brando Miranda, Tongliang Liu, Bo Han, Sanmi Koyejo.*
+[**[International Conference on Machine Learning (ICML) Main Track 2026]**](https://icml.cc/Conferences/2026)
+[**[International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents 2026]**](https://openreview.net/forum?id=8OoZ8dnvIT)
+[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/52428)
+
 Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading (2026)
 *Eric Chen, Aryan Gulati, Brando Miranda, Zeyu Tang, Sanmi Koyejo.*
 [**[International Conference on Learning Representations (ICLR) Workshop on Logical Reasoning of Large Language Models 2026]**](https://openreview.net/forum?id=vdXPorr099)
-
-CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
-*Zhanke Zhou, Xiangyu Lu, Chentao Cao, Brando Miranda, Tongliang Liu, Bo Han, Sanmi Koyejo.*
-[**[International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents 2026]**](https://openreview.net/forum?id=8OoZ8dnvIT)
-[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/52428)
 
 AI Coding Benchmarks Need Proofs, Not Just Tests (2026)
 *Danesh Amrollahi, M. Karimi, Brando Miranda, Leni Aniva, Chuyue Sun, Clark Barrett, Sanmi Koyejo.*
