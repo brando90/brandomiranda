@@ -20,6 +20,8 @@ This directly matches Harmonic's Rising Mathematician criteria:
 - Demonstrated interest in the future of math and AI: research agenda centered on AI for formal mathematics and proof-carrying reasoning.
 - Builds in public: Stanford AI for Lean, Learning Lean 4 playlist, public writing, open-source workflows, talks, and student mentoring.
 
+Curation note: do not sell service recognitions or tutorials as primary prestige signals. The main evidence should be papers/artifacts and Harmonic-fit research direction. Tutorials belong only as "builds in public" evidence.
+
 ## Copy-Paste Application
 
 ### 1. Tell us about yourself
@@ -107,8 +109,7 @@ Selected credentials:
 - Co-first author on Putnam-AXIOM, an ICML 2025 Main Track benchmark for higher-level mathematical reasoning in LLMs.
 - Co-author of Pantograph, a TACAS 2025 machine-to-machine interaction interface for Lean 4 theorem proving and proof search.
 - Contributor to Morph Prover v0 7B and Moogle.ai at Morph Labs, connecting Lean proof models with search over verified Lean code.
-- AAAI 2026 tutorial speaker on trustworthy machine reasoning with AI coding agents.
-- ICML 2026 Silver Reviewer, a top reviewer recognition signed by the ICML Program Chairs.
+- Co-author of CoDaPO, an ICML 2026 Main Track paper on confidence- and difficulty-adaptive policy optimization for LLM reasoning.
 - Stanford CS 197 Course Assistant for 3 quarters and Instructor of Record for the Spring offering; mentored undergraduate research projects that produced 2 workshop publications.
 - Co-author of "Are Emergent Abilities of Large Language Models a Mirage?", which received the NeurIPS 2023 Outstanding Main Track Paper Award and was covered by The New York Times, Quanta Magazine, Forbes, Stanford HAI, and the 2024 Economic Report of the President.
 

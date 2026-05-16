@@ -25,6 +25,8 @@ The strongest story is:
 - Build-in-public evidence: Stanford AI for Lean, Learning Lean 4 videos, public essays, code, talks, and CS 197 teaching/mentoring.
 - Direct Harmonic fit: history of exploration in math/formal verification, demonstrated interest in future math + AI, and public building.
 
+Do not over-weight lower-signal service recognitions or tutorials. The main prestige evidence should be publications, systems, and formal-methods artifacts; tutorials matter only because Harmonic explicitly values people who build and share in public.
+
 The Sanmi / STAIR PI-track application should remain the lab-scale application: PI-led research infrastructure, student support, benchmark engineering, Aristotle evaluation, and Stanford routing/compliance.
 
 If both are eventually submitted, keep the framing complementary:
