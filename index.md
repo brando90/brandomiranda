@@ -140,7 +140,9 @@ Quantifying the Effect of Test Set Contamination on Generative Evaluations (2025
 
 Position: Machine Learning Conferences Should Establish a "Refutations and Critiques" Track (2025)
 *Rylan Schaeffer, J. Kazdan, Y. Denisov-Blanch, Brando Miranda, M. Gerstgrasser, et al.*
-[**[Neural Information Processing Systems (NeurIPS) Main Track 2025]**](https://arxiv.org/abs/2506.19882)
+[**[Advances in Neural Information Processing Systems 38 (NeurIPS) Position Paper Track Oral 2025]**](https://papers.nips.cc/paper_files/paper/2025/hash/9118ad115831e52cfeec1acd40c6e0f3-Abstract-Position_Paper_Track.html)
+[**[OpenReview]**](https://openreview.net/forum?id=DS1XSAPvKs)
+[**[arXiv]**](https://arxiv.org/abs/2506.19882)
 
 Lean-ing on Quality: How High-Quality Data Beats Diverse Multilingual Data in Autoformalization (2025)
 *W. Chan, M. Souliman, J. Nordhagen, Brando Miranda, Elyas Obbad, Sanmi Koyejo.*
