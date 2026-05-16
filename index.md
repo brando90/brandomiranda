@@ -63,7 +63,7 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 
 - [**VeriBench**](https://openreview.net/forum?id=rWkGFmnSNl): end-to-end Lean 4 benchmark for evaluating AI-generated code with formal verification proofs.
 - [**VeriBench-FTP**](https://openreview.net/forum?id=wDjOpXKgtU): formal theorem-proving benchmark in Lean 4 for code verification.
-- [**Putnam-AXIOM**](https://icml.cc/virtual/2025/poster/44232): functional and static benchmark for higher-level LLM mathematical reasoning.
+- [**Putnam-AXIOM**](https://openreview.net/forum?id=kqj2Cn3Sxr): functional and static benchmark for higher-level LLM mathematical reasoning.
 - [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
 - [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
 - [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
@@ -120,7 +120,7 @@ Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Rema
 
 Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2025)
 *Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.*
-[**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/44232)
+[**[International Conference on Machine Learning (ICML) Main Track 2025]**](https://openreview.net/forum?id=kqj2Cn3Sxr)
 [**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
 [**[arXiv]**](https://arxiv.org/abs/2508.08292)
 <!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
