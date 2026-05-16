@@ -96,6 +96,11 @@ CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning
 [**[International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents 2026]**](https://openreview.net/forum?id=8OoZ8dnvIT)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/52428)
 
+Pretraining Scaling Laws for Generative Evaluations of Language Models (2026)
+*Rylan Schaeffer, Noam Levi, Brando Miranda, Sanmi Koyejo.*
+[**[International Conference on Learning Representations (ICLR) Main Track 2026]**](https://openreview.net/forum?id=Ym33xJYINV)
+[**[arXiv]**](https://arxiv.org/abs/2509.24012)
+
 Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading (2026)
 *Eric Chen, Aryan Gulati, Brando Miranda, Zeyu Tang, Sanmi Koyejo.*
 [**[International Conference on Learning Representations (ICLR) Workshop on Logical Reasoning of Large Language Models 2026]**](https://openreview.net/forum?id=vdXPorr099)
