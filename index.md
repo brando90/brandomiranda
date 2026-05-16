@@ -198,9 +198,10 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 
 The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence (2022)
 *Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
-[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022]**](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
+[**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022]**](https://neurips.cc/virtual/2022/63778)
 [**[OpenReview]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
+[**[Slides]**](https://docs.google.com/presentation/d/1nY39x8u8j7k6KpOhD6Vqto78YzLOwyR9B24kuoHJijY/edit?usp=sharing)
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
 <!-- [**[Code Coming Soon]**]() -->
@@ -247,7 +248,7 @@ Why and when can deep-but not shallow-networks avoid the curse of dimensionality
 - **Are Emergent Abilities of Large Language Models a Mirage? — Why Has Predicting Downstream Capabilities Remained Elusive?** — [Lawrence Livermore National Laboratory](https://docs.google.com/presentation/d/1cr_X6jzZxShHMUVjzHAkitCnPZCbBfyxxxgZg8S90SI/edit?usp=sharing), invited talk. *2025.*
 - **Are Emergent Abilities of Large Language Models a Mirage?** — [Stanford IEEE Invited Talk](https://www.youtube.com/live/ypKwNrmuuPM?si=G8mfIdPaAFx82Jcl), [slides](https://docs.google.com/presentation/d/1k-yCVLob1eSyg71jT-k2w2mi--gkTQGAK_H2x3sPqpA/edit?usp=sharing). *Stanford, CA, 2023.*
 - **Emergent Abilities of Large Language Models** — [Amazon Research](https://docs.google.com/presentation/d/1UDqPg06xQKga1oWSEMS2jyzignQwkot6ZbjQMhdZngs/edit?usp=sharing), invited talk. *2023.*
-- **The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence** — [NeurIPS Meta-Learning Workshop, Contributed Talk](https://slideslive.com/38996684/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence). *New Orleans, LA, December 2022.*
+- **The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence** — [NeurIPS Meta-Learning Workshop, Contributed Talk](https://neurips.cc/virtual/2022/63778), [slides](https://docs.google.com/presentation/d/1nY39x8u8j7k6KpOhD6Vqto78YzLOwyR9B24kuoHJijY/edit?usp=sharing). *New Orleans, LA, December 2022.*
 
 ---
 
