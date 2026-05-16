@@ -61,14 +61,14 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 
 # Research Artifacts & Systems
 
-- [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
-- [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
-- [**AlphaDiana**](https://github.com/dhoemenk97-star/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
 - [**VeriBench**](https://openreview.net/forum?id=rWkGFmnSNl): end-to-end Lean 4 benchmark for evaluating AI-generated code with formal verification proofs.
 - [**VeriBench-FTP**](https://openreview.net/forum?id=wDjOpXKgtU): formal theorem-proving benchmark in Lean 4 for code verification.
 - [**Putnam-AXIOM**](https://icml.cc/virtual/2025/poster/44232): functional and static benchmark for higher-level LLM mathematical reasoning.
+- [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
 - [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
 - [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
+- [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
+- [**AlphaDiana**](https://github.com/dhoemenk97-star/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
 - [**ultimate-utils**](https://github.com/brando90/ultimate-utils): reusable ML and research-engineering utility library for experiment workflows.
 
 ---
