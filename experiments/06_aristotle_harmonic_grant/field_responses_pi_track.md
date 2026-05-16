@@ -4,6 +4,17 @@ Status: draft for Sanmi / STAIR review. Do not submit without Sanmi's approval a
 
 Last updated: May 15, 2026.
 
+## Coordination With Brando Rising Mathematician Application
+
+There is now a separate student-track draft at `../07_aristotle_harmonic_rising_mathematician/brando_rising_mathematician_application.md`.
+
+If both applications are submitted, the distinction should be explicit:
+
+- This PI-track application is the lab-scale research-infrastructure proposal: faculty-led STAIR work on proof-carrying AI, benchmark engineering, Aristotle evaluation, student support, and Stanford routing/compliance.
+- Brando's Rising Mathematician application is the individual student application: VeriBench, public Lean learning, Stanford AI for Lean community building, and essays/workflows about formal methods and AI agents.
+
+If Harmonic prefers only one application, the safer combined route is this PI-track application with Brando named as student research lead.
+
 ## Recommended Project Title
 
 Proof-Carrying AI for Mathematics and Software: Benchmarks, Agents, and Trust Boundaries in Lean

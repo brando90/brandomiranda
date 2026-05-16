@@ -38,3 +38,12 @@ Scratch space for drafting the Aristotle/Harmonic grant for the PI-track applica
 - `field_responses_pi_track.md` - direct answers for the visible Typeform fields.
 - `sanmi_cv_context_from_user.md` - curated notes from the newer CV text pasted by Brando.
 - `sanmi_koyejo_cv_reference.pdf` - local reference copy of the existing Koyejo CV PDF; likely not the final current CV.
+
+## Related Student-Track Application
+
+- `../07_aristotle_harmonic_rising_mathematician/brando_rising_mathematician_application.md`
+
+The two applications should be complementary, not duplicative:
+
+- PI track: Sanmi / STAIR as the faculty-led research infrastructure application.
+- Rising Mathematician track: Brando as the student-facing application focused on personal exploration, public learning, VeriBench, Stanford AI for Lean, and sharing AI/formal-verification workflows.
