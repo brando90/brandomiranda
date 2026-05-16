@@ -134,9 +134,11 @@ Pantograph: A machine-to-machine interaction interface for advanced theorem prov
 *Leni Aniva, Chuyue Sun, Brando Miranda, Clark Barrett, Sanmi Koyejo.*
 [**[International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) 2025]**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6)
 
-Quantifying the Effect of Test Set Contamination on Generative Evaluations (2025)
-*Rylan Schaeffer, J. Kazdan, B. Abbasi, K. Z. Liu, Brando Miranda, A. M. Ahmed, F. Berez, et al.*
-[**[Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle 2025]**](https://arxiv.org/abs/2601.04301)
+Causally Quantifying the Effect of Test Set Contamination on Generative Benchmarks (2025)
+*Rylan Schaeffer, Brando Miranda, Joshua Kazdan, Ken Liu, Ahmed M. Ahmed, Niloofar Mireshghallah, Sanmi Koyejo.*
+[**[Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle: Benchmarks, Emergent Abilities, and Scaling 2025]**](https://openreview.net/forum?id=RsmjshBEDP)
+[**[NeurIPS]**](https://neurips.cc/virtual/2025/loc/san-diego/122430)
+[**[arXiv]**](https://arxiv.org/abs/2601.04301)
 
 Position: Machine Learning Conferences Should Establish a "Refutations and Critiques" Track (2025)
 *Rylan Schaeffer, J. Kazdan, Y. Denisov-Blanch, Brando Miranda, M. Gerstgrasser, et al.*
