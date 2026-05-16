@@ -59,6 +59,7 @@ we recorded summary videos of our lessons
 with counts and explanations and made them available on the
 [World Wide Web via my personal YouTube channel](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).
 The public SBSBZ playlist has 83 lesson-summary videos and 25K+ total video views across the listed videos.
+The group also shares updates on Instagram at [@stanford_bachata_sensual_zouk](https://www.instagram.com/stanford_bachata_sensual_zouk/), with 770+ followers.
 
 ## Bachata Sensual and Zouk @ University of Illinois Urbana-Champaign (UIUC)
 
