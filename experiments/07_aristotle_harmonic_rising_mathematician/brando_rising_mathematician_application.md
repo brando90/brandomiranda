@@ -1,20 +1,28 @@
-# Harmonic / Aristotle Sponsorship Application - Brando Miranda
+# Harmonic / Aristotle Rising Mathematician Application - Brando Miranda
 
-Status: ready-to-paste draft for Brando review. Do not submit until Brando confirms final links and whether to mention the parallel Sanmi / STAIR PI-track application.
+Status: final paste-ready draft for Brando review.
 
-Last updated: May 15, 2026.
+Last updated: May 16, 2026.
 
 Track: Rising Mathematician.
 
-## Curation TL;DR
+## Final Recommendation
 
-Use the Rising Mathematician track for Brando's individual student application. The key story is:
+Submit the Rising Mathematician application as an individual student-builder application. Do not mention the parallel Sanmi / STAIR PI-track draft unless the form explicitly asks about a PI, research group, or related application.
 
-> I am a Stanford CS Ph.D. student working at the intersection of Lean 4, formal verification, and AI evaluation. I lead VeriBench, co-founded and run Stanford AI for Lean, publish public writing about formal methods as scalable oversight, and build/share workflows for using AI agents with correctness gates. Aristotle access would let me push realistic Lean 4 verification tasks further while sharing the lessons publicly with students and researchers.
+The strongest story is:
 
-This is complementary to the Sanmi / STAIR PI-track draft in `../06_aristotle_harmonic_grant/`: Brando's application is the student-facing exploration/community application; Sanmi's is the faculty-led research-infrastructure application.
+> I am a Stanford CS Ph.D. student working where AI meets Lean 4, formal verification, and mathematical reasoning. I build public artifacts - VeriBench, Stanford AI for Lean, Lean tutorials, essays, talks, and code - that move AI reasoning from plausible text toward machine-checkable proof. Aristotle support would let me explore the limits of next-generation formal-reasoning models on realistic Lean workflows and share what I learn with students and the broader AI-for-math community.
 
-## 1. Tell Us About Yourself
+This directly matches Harmonic's Rising Mathematician criteria:
+
+- History of exploration in math or an adjacent field: Lean 4, VeriBench, Putnam-AXIOM, Pantograph, Morph Prover, formal verification.
+- Demonstrated interest in the future of math and AI: research agenda centered on AI for formal mathematics and proof-carrying reasoning.
+- Builds in public: Stanford AI for Lean, Learning Lean 4 playlist, public writing, open-source workflows, talks, and student mentoring.
+
+## Copy-Paste Application
+
+### 1. Tell us about yourself
 
 Name: Brando Miranda
 
@@ -26,103 +34,111 @@ X Profile: https://x.com/BrandoHablando
 
 Institution: Stanford University
 
-Current role: Ph.D. student in Computer Science, advised by Prof. Sanmi Koyejo in the Stanford Trustworthy AI Research group.
+Current role: 4th-year Ph.D. student in Computer Science, advised by Prof. Sanmi Koyejo in the Stanford Trustworthy AI Research group.
 
-## 2. Which Sponsorship Are You Applying For?
+### 2. Which sponsorship are you applying for?
 
-Answer: Rising Mathematician.
+Rising Mathematician.
 
-Optional note if the form allows clarification:
+I am applying as an individual student researcher. I am a Stanford CS Ph.D. student rather than an undergraduate, but the Rising Mathematician track is the best fit for this application because it is centered on personal exploration, building with AI and formal verification tools, and sharing that process publicly.
 
-I am applying as a student researcher. I am currently a Stanford CS Ph.D. student rather than an undergraduate, but the Rising Mathematician track is the best fit for this individual application because it asks about personal exploration, project building, AI/formal-verification tool use, and sharing what I learn. A separate PI-track draft exists for Prof. Sanmi Koyejo / STAIR if Harmonic wants to support the broader research-group infrastructure around the same agenda.
+### 3. Tell us more about your interest in mathematics and AI
 
-## 3. Tell Us More About Your Interest In Mathematics And AI
+What I find most interesting in mathematics and AI is the moment when a plausible explanation becomes a machine-checkable artifact. Lean 4's kernel gives us a standard that ordinary AI benchmarks do not: a generated theorem, proof, or verified program either checks or it does not. That is the through-line behind my current research and public work: VeriBench, Stanford AI for Lean, Lean 4 tutorials, and essays about formal methods as scalable oversight for AI agents.
 
-My interest in mathematics and AI is centered on one question: when an AI system claims to have reasoned correctly, what would make that claim trustworthy?
+My personal exploration has moved from asking whether language models can look mathematically competent to asking whether they can produce artifacts that deserve trust. I am especially interested in the interface between informal mathematical intuition, software specifications, and formal proof. In practice, this means building benchmarks and workflows where AI systems must state the right theorem, write the right code, and produce a proof that survives deterministic verification.
 
-Lean 4 is the most compelling answer I know. It lets us move from plausible explanations to machine-checkable artifacts: theorem statements, proof terms, specifications, and verified code. I am especially interested in the interface between informal mathematical intuition, software specifications, and formal proof. In practice, this means building benchmarks, workflows, and communities where AI systems must produce outputs that survive deterministic verification rather than merely look convincing.
+If selected, I would use Aristotle access and support to stress-test next-generation formal-reasoning models on realistic Lean 4 tasks: verified-code generation, theorem statement quality, proof repair, and multi-step agent workflows. I would share the lessons through Stanford AI for Lean, public write-ups, tutorial material, and open research artifacts so other students can learn from both the successes and the failure modes.
 
-At Stanford, I work on AI for formal mathematics, Lean 4 theorem proving, autoformalization, and end-to-end formal verification of software and mathematics. I also co-founded and serve as president of Stanford AI for Lean, a student research community focused on Lean 4, AI-assisted theorem proving, formal verification, and trustworthy machine reasoning. I have tried to make my own learning public: tutorial videos, code repositories, essays, and research artifacts that let other students get started faster.
-
-## 4. Project Link I Am Most Proud Of
+### 4. Relevant project I am most proud of
 
 Project: VeriBench
 
 Link: https://openreview.net/forum?id=rWkGFmnSNl
 
-VeriBench is the Lean 4 benchmark I lead at Stanford for end-to-end formal verification of real code. The motivation is simple: if we want AI systems to generate trustworthy software, we need benchmarks where success means producing code, specifications, and proofs that actually check.
+VeriBench is a Lean 4 benchmark I lead at Stanford for end-to-end formal verification of real code. It asks AI systems to generate Lean implementations, specifications, theorems, and proofs for realistic tasks drawn from Python standard-library routines, classical algorithms, and security-relevant examples inspired by MIT 6.858.
 
-I chose VeriBench because verified software is one of the highest-leverage applications of formal methods. A proof assistant is not just a math toy; it can become a correctness layer for code that people actually rely on. That is why VeriBench includes Python standard-library routines, classical algorithms, and security-relevant examples inspired by MIT 6.858, rather than only synthetic LeetCode-style exercises. The benchmark asks models to operate across the whole verification stack: understand an informal problem, write Lean code, state the right theorem, and prove it.
+I chose VeriBench because verified software is one of the highest-leverage applications of formal methods. If AI systems are going to write code that people rely on, we should evaluate them with proof obligations that actually check, not only with final-answer benchmarks or toy programming tasks. The benchmark deliberately includes tasks where universally quantified "no failure ever" properties are exactly where formal methods shine.
 
-The part I am proudest of is the evaluation design. Formal verification has an all-or-nothing character: if the theorem is wrong, the code is disconnected from the theorem, or the proof fails, the result should not count as verified. VeriBench captures this with SCSC, the Smooth Conjunctive Score for Code verification: a five-factor geometric mean that rewards progress across the relevant dimensions but collapses when a required verification component is missing. This gives a smoother research signal without losing the semantics of formal verification.
+The part I am proudest of is the evaluation design. Formal verification is conjunctive: the code, theorem, specification, proof, and consistency all have to line up. VeriBench captures this with SCSC, the Smooth Conjunctive Score for Code verification, a five-factor geometric mean that gives models a smooth research signal while preserving the all-or-nothing semantics of verification. One missing verification component should collapse the score, because one broken link means the artifact is not actually verified.
 
-VeriBench was presented at the 2nd AI for Math Workshop at ICML 2025 with reviewer recommendation "Accept (Oral, Top 1)" and is part of my broader effort to make AI-for-formal-methods progress measurable, reproducible, and useful to people building real systems.
+VeriBench received reviewer recommendation "Accept (Oral, Top 1)" at the 2nd AI for Math Workshop at ICML 2025. More importantly, it is the kind of benchmark I want the field to build more of: realistic, proof-checked, reproducible, and hard to game with plausible-looking text.
 
-Shorter paste option:
+### 5. Blog post, thread, or community discussion
 
-> I am most proud of VeriBench, a Lean 4 benchmark I lead at Stanford for end-to-end formal verification of real code. It asks AI systems to generate Lean implementations, specifications, and proofs for realistic Python standard-library, algorithmic, and security-relevant tasks. I chose it because verified software is one of the highest-leverage applications of formal methods: progress should be measured by artifacts that actually check, not by plausible explanations or toy exercises. The benchmark's SCSC metric enforces the conjunctive nature of verification while still giving a smooth research signal across code, specification, theorem, proof, and consistency dimensions.
+I would include two links if the form allows it.
 
-## 5. Blog Post, Thread, Or Community Discussion
-
-If the form allows one link, use the formal-methods post:
+First, a mathematical / conceptual post:
 
 https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
 
-"Asking the Right Question: Formal Methods as Scalable Oversight" explains why I think formal verification is becoming a practical oversight mechanism for AI agents. The core idea is: let the verifier check the answer; let the human check the question. As AI systems produce longer proofs, code, and research artifacts, the human bottleneck should shrink from checking every generated step to checking short, human-readable formal specifications and theorem statements.
+"Asking the Right Question: Formal Methods as Scalable Oversight" explains why I think Lean-style verification is becoming a practical oversight mechanism for AI agents. The thesis is: let the verifier check the answer; let the human check the question. As AI systems generate longer proofs, programs, and research artifacts, the human bottleneck should move from checking every generated step to checking the short, human-readable theorem statement or specification.
 
-If the form allows two links, include this second one:
+Second, a tool-use / build-in-public post:
 
 https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
 
-"What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research" describes how I use AI coding agents in daily research while making model mistakes cheap to detect. The workflow uses cross-agent review, structural QA, repository rules, and Lean 4-style correctness gates. I also released the setup as an open-source documentation architecture, `agents-config`, because the process matters as much as the model: the right question is not just "which model is best?" but "what workflow makes mistakes visible before they compound?"
+"What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research" describes how I use AI coding agents in daily research while making mistakes cheap to detect. The workflow uses cross-agent review, structural QA, repository rules, and Lean 4-style correctness gates. I also released the setup as an open-source documentation architecture called agents-config, because the process matters as much as the model: the right question is not only "which model is best?" but "what workflow makes mistakes visible before they compound?"
 
-Additional public learning resource if useful:
+Additional public learning resources:
 
 - Learning Lean 4 tutorial playlist: https://www.youtube.com/playlist?list=PLB3sDpSRdrOt68MTR6kdI0Jc85Uuw1YWV
-- Code repository: https://github.com/brando90/learning_lean/tree/main
-- X announcement: https://x.com/BrandoHablando/status/1763698776378843495
+- Companion code repository: https://github.com/brando90/learning_lean/tree/main
+- Stanford AI for Lean: https://www.stanfordlean.club/
 
-## 6. Optional: Resume Or Other Information
+### 6. Optional: resume or other information
 
 CV (long form): https://brando90.github.io/brandomiranda/professional_documents/cvs/cv_long.pdf
 
 CV (short form): https://brando90.github.io/brandomiranda/professional_documents/cvs/cv_short.pdf
 
-Google Scholar: https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en
+Google Scholar: https://scholar.google.com/citations?user=_NQJoBkAAAAJ
 
 Stanford AI for Lean: https://www.stanfordlean.club/
 
 Personal website: https://brando90.github.io/brandomiranda/
 
-Additional context at a glance:
+Current role: 4th-year Stanford CS Ph.D. student advised by Prof. Sanmi Koyejo, Stanford Trustworthy AI Research (STAIR). Stanford School of Engineering Fellow; EDGE Scholar.
 
-- Stanford CS Ph.D. student advised by Prof. Sanmi Koyejo in the Stanford Trustworthy AI Research group.
-- Co-founder and president of Stanford AI for Lean, a student research community advancing AI for Lean theorem proving and formalizing mathematics.
-- First author / lead on VeriBench, an end-to-end Lean 4 benchmark for formal verification of AI-generated code; presented at the 2nd AI for Math Workshop at ICML 2025 with reviewer recommendation "Accept (Oral, Top 1)."
-- Contributor to Putnam-AXIOM, an ICML 2025 benchmark for higher-level mathematical reasoning in LLMs.
+Selected credentials:
+
+- Co-founder and president of Stanford AI for Lean, a student research community focused on Lean 4, AI-assisted theorem proving, formal verification, and trustworthy machine reasoning.
+- First author / lead on VeriBench, an end-to-end Lean 4 benchmark for formal verification of AI-generated code; reviewer recommendation "Accept (Oral, Top 1)" at the 2nd AI for Math Workshop at ICML 2025.
+- Co-first author on Putnam-AXIOM, an ICML 2025 Main Track benchmark for higher-level mathematical reasoning in LLMs.
 - Co-author of Pantograph, a TACAS 2025 machine-to-machine interaction interface for Lean 4 theorem proving and proof search.
-- Contributor to Morph Prover v0 7B and Moogle.ai at Morph Labs, connecting Lean proof models with search over verified code.
-- Co-author of "Are Emergent Abilities of Large Language Models a Mirage?", which received the NeurIPS 2023 Outstanding Main Track Paper Award (top 0.4%, 2 papers selected) and was covered by The New York Times, Quanta Magazine, Forbes, Stanford HAI, and the 2024 Economic Report of the President.
-- Stanford School of Engineering Fellow and EDGE Scholar.
+- Contributor to Morph Prover v0 7B and Moogle.ai at Morph Labs, connecting Lean proof models with search over verified Lean code.
+- AAAI 2026 tutorial speaker on trustworthy machine reasoning with AI coding agents.
+- ICML 2026 Silver Reviewer, a top reviewer recognition signed by the ICML Program Chairs.
+- Stanford CS 197 Course Assistant for 3 quarters and Instructor of Record for the Spring offering; mentored undergraduate research projects that produced 2 workshop publications.
+- Co-author of "Are Emergent Abilities of Large Language Models a Mirage?", which received the NeurIPS 2023 Outstanding Main Track Paper Award and was covered by The New York Times, Quanta Magazine, Forbes, Stanford HAI, and the 2024 Economic Report of the President.
 
-## 7. Sanmi / STAIR PI-Track Relationship
+How I share what I learn:
 
-Do not paste this unless the application asks for relationship to a PI or broader project.
+- I run Stanford AI for Lean and organize community learning around Lean 4, formal verification, and AI theorem proving.
+- I publish public Lean tutorials, code repositories, and research-engineering workflows so other students can reproduce what I am learning.
+- I write public essays on formal methods as scalable oversight, correctness-gated AI-agent workflows, and how to use AI systems without losing correctness discipline.
+- I give talks on VeriBench, Lean 4, emergent abilities, and trustworthy machine reasoning, including Lawrence Livermore National Laboratory, Hong Kong Baptist University, Stanford IEEE, Prof. Azalia Mirhoseini's Stanford lab meeting, and the AAAI 2026 tutorial.
 
-Brando's Rising Mathematician application and Prof. Sanmi Koyejo's PI-track application should be framed as complementary. The Rising Mathematician application is Brando's individual student application centered on learning, building, and sharing AI/formal-math tools. The PI-track application is a broader STAIR research-infrastructure proposal for proof-carrying AI: benchmarks, Lean workflows, Aristotle evaluations, student support, and public research artifacts under faculty supervision and Stanford routing.
+## Shorter Version If The Form Has Tight Limits
 
-If Harmonic prefers a single combined application, the clean fallback is to submit the PI-track application with Brando named as student research lead. If Harmonic welcomes both, Brando's application can show the student/community surface while Sanmi's application shows the lab-scale research program.
+### Interest in mathematics and AI
 
-## 8. One-Paragraph Version
+I am interested in the moment when plausible AI reasoning becomes a machine-checkable artifact. Lean 4's kernel gives us a standard ordinary benchmarks do not: a generated theorem, proof, or verified program either checks or it does not. My current work asks whether AI systems can produce artifacts that deserve trust, not merely explanations that sound mathematical. I explore this through VeriBench, Stanford AI for Lean, public Learning Lean 4 tutorials, and writing about formal methods as scalable oversight for AI agents. With Aristotle access, I would stress-test next-generation formal-reasoning models on realistic Lean 4 workflows and share the results publicly with students and researchers.
 
-I am a Stanford CS Ph.D. student advised by Prof. Sanmi Koyejo, working on AI for formal mathematics, Lean 4 theorem proving, autoformalization, and verified code generation. I co-founded and serve as president of Stanford AI for Lean, and I try to make the field accessible through public writing, Lean tutorials, and open research artifacts. The project I am most proud of is VeriBench, a Lean 4 benchmark for end-to-end formal verification of real code, because it turns AI evaluation from "does this answer look plausible?" into "does this artifact actually check?" Aristotle access would let me stress-test frontier formal-reasoning systems on realistic Lean workflows and share the results with the Stanford AI for Lean community and the broader AI-for-math ecosystem.
+### Project
 
-## 9. Final Submission Checklist
+I am most proud of VeriBench: https://openreview.net/forum?id=rWkGFmnSNl. VeriBench is a Lean 4 benchmark I lead at Stanford for end-to-end formal verification of real code. It asks AI systems to generate Lean implementations, specifications, theorems, and proofs for realistic Python, algorithmic, and security-relevant tasks. I chose it because verified software is one of the highest-leverage applications of formal methods, and progress should be measured by artifacts that actually check. Its SCSC metric captures the conjunctive nature of verification while still giving models a smooth research signal. VeriBench received "Accept (Oral, Top 1)" recommendation at the 2nd AI for Math Workshop at ICML 2025.
 
-- Confirm whether Harmonic wants `twitter.com` or `x.com`; current draft uses `x.com`.
-- Confirm whether the form allows a Ph.D. student under Rising Mathematician. If not, route Brando through Sanmi's PI-track application.
-- Confirm final date line; this draft uses May 2026.
-- Confirm whether to mention the parallel PI-track application.
-- Confirm which CV link to attach: long CV is strongest; short CV may be more reviewer-friendly.
-- Confirm whether to include both blog posts or only one.
-- Confirm whether to include Learning Lean 4 playlist as additional public-sharing evidence.
+### Public sharing
+
+I build in public through Stanford AI for Lean, a student research community I co-founded and run; a Learning Lean 4 YouTube tutorial playlist with companion code; public essays on formal methods and correctness-gated AI workflows; and talks at Stanford, LLNL, HKBU, Stanford IEEE, and AAAI 2026.
+
+## Pre-Submission Checklist
+
+- Use `x.com/BrandoHablando`, not `twitter.com`.
+- Use Google Scholar ID `_NQJoBkAAAAJ`.
+- Use the `professional_documents/cvs` CV URLs unless the website publishing path changes.
+- Do not mention the Sanmi / STAIR PI-track application in the submitted Rising Mathematician text unless explicitly asked.
+- If the form allows only one blog/community link, use the formal-methods post first.
+- If the form allows one upload, use the short CV for speed and the long CV link in the text.
+- If the form asks whether you are undergraduate, be direct: "I am a Stanford CS Ph.D. student applying as an individual student researcher."
