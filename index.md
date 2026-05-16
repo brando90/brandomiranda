@@ -124,7 +124,7 @@ Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Rema
 [**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
 
 Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2025)
-*Aryan Gulati, Brando Miranda, Eric Chen, Emily Xia, Kai Fronsdal, Bruno de Moraes Dumont, Sanmi Koyejo.*
+*Brando Miranda\*, Aryan Gulati\*, Eric Chen\*, Emily Xia\*, Kai Fronsdal\*, Bruno de Moraes Dumont, Sanmi Koyejo.* (*equal contribution)
 [**[International Conference on Machine Learning (ICML) Main Track 2025]**](https://openreview.net/forum?id=kqj2Cn3Sxr)
 [**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
 [**[arXiv]**](https://arxiv.org/abs/2508.08292)
