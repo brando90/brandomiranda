@@ -59,31 +59,6 @@ He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a
 
 ---
 
-# Research Artifacts & Systems
-
-- [**VeriBench**](https://openreview.net/forum?id=rWkGFmnSNl): end-to-end Lean 4 benchmark for evaluating AI-generated code with formal verification proofs.
-- [**VeriBench-FTP**](https://openreview.net/forum?id=wDjOpXKgtU): formal theorem-proving benchmark in Lean 4 for code verification.
-- [**Putnam-AXIOM**](https://openreview.net/forum?id=kqj2Cn3Sxr): functional and static benchmark for higher-level LLM mathematical reasoning.
-- [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
-- [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
-- [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
-- [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
-- [**AlphaDiana**](https://github.com/dhoemenk97-star/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
-- [**ultimate-utils**](https://github.com/brando90/ultimate-utils): reusable ML and research-engineering utility library for experiment workflows.
-
----
-
-# Selected Writing
-
-- [**Metallica Goes Jazz: A 2010 High School Arrangement, Reanimated by AI**]({{ site.baseurl }}2026/05/07/metallica-goes-jazz.html) — May 2026.
-- [**Embrace AI or Be Left Behind — By People, Not Machines**]({{ site.baseurl }}2026/04/27/embrace-ai-or-be-left-behind.html) — April 2026.
-- [**Asking the Right Question: Formal Methods as Scalable Oversight**]({{ site.baseurl }}2026/04/22/formal-methods-scalable-oversight.html) — April 2026.
-- [**What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research**]({{ site.baseurl }}2026/04/13/correctness-gated-multi-agent-workflow.html) — April 2026.
-
-Selected service and mentoring writing is available in the [blog archive]({{ site.baseurl }}blog.html), including posts on research community, graduate-school statements, mindfulness, and team-building.
-
----
-
 # Selected Publications [ [Full List] ](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 
 [//]: # (Note: * denotes equal contribution.)
@@ -91,86 +66,86 @@ Selected service and mentoring writing is available in the [blog archive]({{ sit
 Selected publications are listed reverse-chronologically; see [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en) for the full list and citation metrics.
 
 VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean 4 (2026)
-*Brando Miranda, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, et al.*
+*<strong>Brando Miranda</strong>, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, et al.*
 [**[Preprint]**]({{ site.baseurl }}professional_documents/papers/NeurIPS_2026_VeriBench.pdf)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
 
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
-*Zhanke Zhou, Xiangyu Lu, Chentao Cao, Brando Miranda, Tongliang Liu, Bo Han, Sanmi Koyejo.*
+*Zhanke Zhou, Xiangyu Lu, Chentao Cao, <strong>Brando Miranda</strong>, Tongliang Liu, Bo Han, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Main Track 2026]**](https://icml.cc/Conferences/2026)
 [**[International Conference on Learning Representations (ICLR) Workshop on Lifelong Agents 2026]**](https://openreview.net/forum?id=8OoZ8dnvIT)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/52428)
 
 Pretraining Scaling Laws for Generative Evaluations of Language Models (2026)
-*Rylan Schaeffer, Noam Levi, Brando Miranda, Sanmi Koyejo.*
+*Rylan Schaeffer, Noam Levi, <strong>Brando Miranda</strong>, Sanmi Koyejo.*
 [**[International Conference on Learning Representations (ICLR) Main Track 2026]**](https://openreview.net/forum?id=Ym33xJYINV)
 [**[arXiv]**](https://arxiv.org/abs/2509.24012)
 
 Rethinking LLM Judges: Chain-of-Thought and Multi-Step Pipelines for Math Grading (2026)
-*Eric Chen, Aryan Gulati, Brando Miranda, Zeyu Tang, Sanmi Koyejo.*
+*Eric Chen, Aryan Gulati, <strong>Brando Miranda</strong>, Zeyu Tang, Sanmi Koyejo.*
 [**[International Conference on Learning Representations (ICLR) Workshop on Logical Reasoning of Large Language Models 2026]**](https://openreview.net/forum?id=vdXPorr099)
 
 AI Coding Benchmarks Need Proofs, Not Just Tests (2026)
-*Danesh Amrollahi, M. Karimi, Brando Miranda, Leni Aniva, Chuyue Sun, Clark Barrett, Sanmi Koyejo.*
+*Danesh Amrollahi, M. Karimi, <strong>Brando Miranda</strong>, Leni Aniva, Chuyue Sun, Clark Barrett, Sanmi Koyejo.*
 [**[Preprint]**](https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf)
 
 VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification (2025)
-*Slim Barkallah, Srivatsava Daruru, Brando Miranda, Leni Aniva, Allen Nie, Sanmi Koyejo.*
+*Slim Barkallah, Srivatsava Daruru, <strong>Brando Miranda</strong>, Leni Aniva, Allen Nie, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Mathematical Reasoning and AI Workshop 2025]**](https://openreview.net/forum?id=wDjOpXKgtU)
 
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
-*Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.*
+*Rylan Schaeffer, Hailey Schoelkopf, <strong>Brando Miranda</strong>, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/45753)
 [[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award**]](/professional_documents/tifa_award_elusive.png)
 [**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
 
 Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2025)
-*Brando Miranda\*, Aryan Gulati\*, Eric Chen\*, Emily Xia\*, Kai Fronsdal\*, Bruno de Moraes Dumont, Sanmi Koyejo.* (*equal contribution)
+*<strong>Brando Miranda</strong>\*, Aryan Gulati\*, Eric Chen\*, Emily Xia\*, Kai Fronsdal\*, Bruno de Moraes Dumont, Sanmi Koyejo.* (*equal contribution)
 [**[International Conference on Machine Learning (ICML) Main Track 2025]**](https://openreview.net/forum?id=kqj2Cn3Sxr)
 [**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
 [**[arXiv]**](https://arxiv.org/abs/2508.08292)
 <!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
 
 Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in Lean 4 (2025)
-*Leni Aniva, Chuyue Sun, Brando Miranda, Clark Barrett, Sanmi Koyejo.*
+*Leni Aniva, Chuyue Sun, <strong>Brando Miranda</strong>, Clark Barrett, Sanmi Koyejo.*
 [**[International Conference on Tools and Algorithms for the Construction and Analysis of Systems (TACAS) 2025]**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6)
 
 Causally Quantifying the Effect of Test Set Contamination on Generative Benchmarks (2025)
-*Rylan Schaeffer, Brando Miranda, Joshua Kazdan, Ken Liu, Ahmed M. Ahmed, Niloofar Mireshghallah, Sanmi Koyejo.*
+*Rylan Schaeffer, <strong>Brando Miranda</strong>, Joshua Kazdan, Ken Liu, Ahmed M. Ahmed, Niloofar Mireshghallah, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Workshop on Evaluating the Evolving LLM Lifecycle: Benchmarks, Emergent Abilities, and Scaling 2025]**](https://openreview.net/forum?id=RsmjshBEDP)
 [**[NeurIPS]**](https://neurips.cc/virtual/2025/loc/san-diego/122430)
 [**[arXiv]**](https://arxiv.org/abs/2601.04301)
 
 Position: Machine Learning Conferences Should Establish a "Refutations and Critiques" Track (2025)
-*Rylan Schaeffer, J. Kazdan, Y. Denisov-Blanch, Brando Miranda, M. Gerstgrasser, et al.*
+*Rylan Schaeffer, J. Kazdan, Y. Denisov-Blanch, <strong>Brando Miranda</strong>, M. Gerstgrasser, et al.*
 [**[Advances in Neural Information Processing Systems 38 (NeurIPS) Position Paper Track Oral 2025]**](https://papers.nips.cc/paper_files/paper/2025/hash/9118ad115831e52cfeec1acd40c6e0f3-Abstract-Position_Paper_Track.html)
 [**[OpenReview]**](https://openreview.net/forum?id=DS1XSAPvKs)
 [**[arXiv]**](https://arxiv.org/abs/2506.19882)
 
 Lean-ing on Quality: How High-Quality Data Beats Diverse Multilingual Data in Autoformalization (2025)
-*W. Chan, M. Souliman, J. Nordhagen, Brando Miranda, Elyas Obbad, Sanmi Koyejo.*
+*W. Chan, M. Souliman, J. Nordhagen, <strong>Brando Miranda</strong>, Elyas Obbad, Sanmi Koyejo.*
 [**[arXiv]**](https://arxiv.org/abs/2502.15795)
 
 Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2024)
-*Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, Brando Miranda, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
+*Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, <strong>Brando Miranda</strong>, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
 [**[International Conference on Learning Representations (ICLR) 2024]**](https://openreview.net/forum?id=wvFnqVVUhN)
 [**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop 2024]**](https://neurips.cc/virtual/2024/106794)
 <!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
 Does Maximizing Neural Regression Scores Teach Us About The Brain? (2024)
-*Rylan Schaeffer, M. Khona, S. Chandra, M. Ostrow, Brando Miranda, Sanmi Koyejo.*
+*Rylan Schaeffer, M. Khona, S. Chandra, M. Ostrow, <strong>Brando Miranda</strong>, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Workshop on Unifying Representations in Neural Models (UniReps), 2nd Edition 2024]**](https://openreview.net/forum?id=f6IB0WrOKS)
 
 Quantifying the Importance of Data Alignment in Downstream Model Performance (2024)
-*K. Chawla, A. Sahai, M. DePavia, S. Sundar, Brando Miranda.*
+*K. Chawla, A. Sahai, M. DePavia, S. Sundar, <strong>Brando Miranda</strong>.*
 [**[International Conference on Learning Representations (ICLR) Workshop on Data-Centric Machine Learning Research (DMLR) 2024]**](https://arxiv.org/abs/2501.08496)
 
 An Evaluation Benchmark for Autoformalization in Lean4 (2024)
-*Aryan Gulati, D. Ladsaria, S. Mishra, J. Sidhu, Brando Miranda.*
+*Aryan Gulati, D. Ladsaria, S. Mishra, J. Sidhu, <strong>Brando Miranda</strong>.*
 [**[International Conference on Learning Representations (ICLR) Tiny Papers Track, Second Edition 2024]**](https://arxiv.org/abs/2406.06555)
 
 ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment (2024)
-*Elyas Obbad, Iddah Mlauzi, Brando Miranda, Rylan Schaeffer, K. Obbad, S. Bedi, Sanmi Koyejo.*
+*Elyas Obbad, Iddah Mlauzi, <strong>Brando Miranda</strong>, Rylan Schaeffer, K. Obbad, S. Bedi, Sanmi Koyejo.*
 [**[arXiv]**](https://arxiv.org/abs/2410.18194)
 
 Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language (2024)
@@ -178,14 +153,14 @@ Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Pr
 [**[Hugging Face Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
 
 Are Emergent Abilities of Large Language Models a Mirage? (2023)
-*Rylan Schaeffer, Brando Miranda, Sanmi Koyejo.*
+*Rylan Schaeffer, <strong>Brando Miranda</strong>, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
 [**[arXiv]**](https://arxiv.org/abs/2304.15004)
 <!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
 
 Is Pre-training Truly Better Than Meta-Learning? (2023)
-*Brando Miranda, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.*
+*<strong>Brando Miranda</strong>, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**](https://icml.cc/virtual/2023/26924#:~:text=Abstract%3A,outperforms%20standard%20meta%2Dlearning%20algorithms)
 [**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13841)
@@ -193,7 +168,7 @@ Is Pre-training Truly Better Than Meta-Learning? (2023)
 <!-- [**[Code Coming Soon]**]() -->
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data (2023)
-*Brando Miranda\*, Alycia Lee\*, Patrick Yu, and Oluwasanmi Koyejo.*
+*<strong>Brando Miranda</strong>\*, Alycia Lee\*, Patrick Yu, and Oluwasanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023 & ICML Challenges in Deployable Generative AI Workshop 2023]**](https://icml.cc/virtual/2023/28937)
 [**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13840)
@@ -208,7 +183,7 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [//]: # ([**[SAIL Poster]**]&#40;professional_documents/SAIL_2023_Poster.pdf&#41;)
 
 The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence (2022)
-*Brando Miranda, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
+*<strong>Brando Miranda</strong>, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Meta-Learning Workshop 2022]**](https://neurips.cc/virtual/2022/63778)
 [**[OpenReview]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
@@ -224,7 +199,7 @@ The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperfo
 [//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 
 Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective (2021)
-*Brando Miranda, Yu-Xiong Wang, Oluwasanmi Koyejo.*
+*<strong>Brando Miranda</strong>, Yu-Xiong Wang, Oluwasanmi Koyejo.*
 **[Best research project award for graduate course CS 598 "Learning to Learn" by professor Y. Wang UIUC (December 2020)]**
 [**[arXiv]**](https://arxiv.org/abs/2112.13137)
 [**[5 minute video]**](https://youtu.be/WyG6bwGnbGc)
@@ -232,18 +207,18 @@ Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective (2021)
 [//]: # ([**[PDF]**]&#40;https://www.ideals.illinois.edu/handle/2142/109139&#41;)
 
 Weight and Batch Normalization implement Classical Generalization Bounds (2019)
-*Tomaso Poggio, Andrzej Banburski, Qianli Liao, Brando Miranda, Lorenzo Rosasco, Jack Hidary.*
+*Tomaso Poggio, Andrzej Banburski, Qianli Liao, <strong>Brando Miranda</strong>, Lorenzo Rosasco, Jack Hidary.*
 [**[International Conference on Machine Learning (ICML) Workshop 2019]**](https://cbmm.mit.edu/publications/weight-and-batch-normalization-implement-classical-generalization-bounds)
 [**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers) <!-- Ok to have pdf link for this one-->
 
 [//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
 
 High-performance and scalable on-chip digital Fourier transform spectroscopy (2018)
-*Derek M Kita, Brando Miranda, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
+*Derek M Kita, <strong>Brando Miranda</strong>, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
 [**[Nature Communications 2018]**](https://www.nature.com/articles/s41467-018-06773-2)
 
 Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review (2017)
-*Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, Brando Miranda, Qianli Liao.*
+*Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, <strong>Brando Miranda</strong>, Qianli Liao.*
 [**[International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC)]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
 [**[Award]**](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
 
@@ -326,3 +301,28 @@ This work was also covered by: [Medium, Hacker News, NeurIPS blog, Reddit, and m
 - **Best All-Round Student Award**, Greengates School (2010) — school-wide award recognizing the top all-around student.
 - **Achievement Prize Award**, Greengates School (2006) — school recognition for academic achievement.
 - **Certificate for Progress Award**, Greengates School (2005) — school recognition for academic progress.
+
+---
+
+# Research Artifacts & Systems
+
+- [**VeriBench**](https://openreview.net/forum?id=rWkGFmnSNl): end-to-end Lean 4 benchmark for evaluating AI-generated code with formal verification proofs.
+- [**VeriBench-FTP**](https://openreview.net/forum?id=wDjOpXKgtU): formal theorem-proving benchmark in Lean 4 for code verification.
+- [**Putnam-AXIOM**](https://openreview.net/forum?id=kqj2Cn3Sxr): functional and static benchmark for higher-level LLM mathematical reasoning.
+- [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
+- [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
+- [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
+- [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
+- [**AlphaDiana**](https://github.com/dhoemenk97-star/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
+- [**ultimate-utils**](https://github.com/brando90/ultimate-utils): reusable ML and research-engineering utility library for experiment workflows.
+
+---
+
+# Selected Writing
+
+- [**Metallica Goes Jazz: A 2010 High School Arrangement, Reanimated by AI**]({{ site.baseurl }}2026/05/07/metallica-goes-jazz.html) — May 2026.
+- [**Embrace AI or Be Left Behind — By People, Not Machines**]({{ site.baseurl }}2026/04/27/embrace-ai-or-be-left-behind.html) — April 2026.
+- [**Asking the Right Question: Formal Methods as Scalable Oversight**]({{ site.baseurl }}2026/04/22/formal-methods-scalable-oversight.html) — April 2026.
+- [**What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research**]({{ site.baseurl }}2026/04/13/correctness-gated-multi-agent-workflow.html) — April 2026.
+
+Selected service and mentoring writing is available in the [blog archive]({{ site.baseurl }}blog.html), including posts on research community, graduate-school statements, mindfulness, and team-building.
