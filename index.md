@@ -90,6 +90,11 @@ Selected service and mentoring writing is available in the [blog archive]({{ sit
 
 Selected publications are listed reverse-chronologically; see [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en) for the full list and citation metrics.
 
+VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean 4 (2026)
+*Brando Miranda, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, et al.*
+[**[Preprint]**]({{ site.baseurl }}professional_documents/papers/NeurIPS_2026_VeriBench.pdf)
+[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
+
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
 *Zhanke Zhou, Xiangyu Lu, Chentao Cao, Brando Miranda, Tongliang Liu, Bo Han, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Main Track 2026]**](https://icml.cc/Conferences/2026)
@@ -112,10 +117,6 @@ AI Coding Benchmarks Need Proofs, Not Just Tests (2026)
 VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification (2025)
 *Slim Barkallah, Srivatsava Daruru, Brando Miranda, Leni Aniva, Allen Nie, Sanmi Koyejo.*
 [**[Neural Information Processing Systems (NeurIPS) Mathematical Reasoning and AI Workshop 2025]**](https://openreview.net/forum?id=wDjOpXKgtU)
-
-VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4 (2025)
-*Brando Miranda, Zhanke Zhou, Allen Nie, Elyas Obbad, Leni Aniva, Kai Fronsdal, Weston Kirk, Dilara Soylu, et al.*
-[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
 
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
 *Rylan Schaeffer, Hailey Schoelkopf, Brando Miranda, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.*
