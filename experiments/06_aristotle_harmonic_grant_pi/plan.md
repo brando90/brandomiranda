@@ -2,7 +2,7 @@
 
 Status: planning note only. Do not submit either application from this file.
 
-Last updated: May 15, 2026.
+Last updated: May 17, 2026.
 
 ## Goal
 
@@ -16,9 +16,9 @@ Keep the two Aristotle / Harmonic applications mutually reinforcing without maki
 - Sanmi PI draft lives in this folder:
   - `draft_application_pi_track.md`
   - `field_responses_pi_track.md`
-- Brando Rising Mathematician draft is being worked on by another Codex instance / Google Doc:
-  - Google Doc: `https://docs.google.com/document/d/1kX0VkLSZ_AZ-Uhbzd4GxWH-98W1u5rKWqi3WIkFaFm8/edit?tab=t.0`
-- Do not edit the Brando draft here until that separate draft is finished or explicitly handed back.
+- Brando Rising Mathematician draft is finalized separately:
+  - Local draft: `../07_aristotle_harmonic_rising_mathematician/brando_rising_mathematician_application.md`
+  - Google Doc: `https://docs.google.com/document/d/1kX0VkLSZ_AZ-Uhbzd4GxWH-98W1u5rKWqi3WIkFaFm8/edit?tab=t.82h7kn44yami`
 
 ## Narrative Separation
 
@@ -54,8 +54,9 @@ After Brando's Rising Mathematician draft is finalized, audit the Sanmi PI draft
    - In Brando's application, VeriBench is evidence of individual execution.
    - In Sanmi's application, VeriBench is one component of a broader STAIR research program.
 
-3. Strengthen the mentorship relationship.
+3. Strengthen the mentorship relationship and feedback loop.
    - Add one sentence to the PI draft, if space allows: "The proposal also supports a concrete mentorship pipeline: Brando's student-led Lean benchmark work becomes reusable STAIR infrastructure for training additional students in proof-based AI evaluation."
+   - Sanmi's feedback-loop framing should be explicit: Aristotle results guide what students work on next.
 
 4. Avoid duplicate budget language.
    - Brando's application should not request the same support items as the PI application in the same words.
@@ -106,9 +107,11 @@ Best sequence:
 
 Do not apply these until the Brando draft is final:
 
-- Add "Smooth Conjunctive Score for Code verification (SCSC)" if the PI draft needs a sharper metric example.
-- Add "VeriBench AC-nominated Accept / Oral, top 1" only after confirming the exact public status and whether it should be disclosed.
-- Add a short paragraph on how Brando's Rising Mathematician application complements the PI proposal.
+- Add "Smooth Conjunctive Score for Code verification (SCSC)" if the PI draft needs a sharper metric example. Applied as a coordination note; do not over-explain unless Sanmi wants more technical detail.
+- Add "VeriBench AC-nominated Accept / Oral, top 1" only after confirming the exact public status and whether it should be disclosed. Not yet added to the PI pasted field responses.
+- Add a short paragraph on how Brando's Rising Mathematician application complements the PI proposal. Applied in `field_responses_pi_track.md`.
+- Add Conjecture Prover as a student prototype / demonstration surface, not as the whole PI agenda. Applied.
+- Add feedback loop language: Aristotle evaluation results guide student projects and benchmark priorities. Applied.
 - Add Cert-Judge once its scope is known.
 - Decide whether the PI ask remains `$150,000` or should be adjusted if Brando also asks for individual funding.
 

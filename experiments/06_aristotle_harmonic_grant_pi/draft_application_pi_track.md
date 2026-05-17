@@ -2,7 +2,7 @@
 
 Status: draft only. Do not submit without Sanmi's approval and Stanford sponsorship/gift-routing review.
 
-Last updated: May 15, 2026.
+Last updated: May 17, 2026.
 
 ## Curator TL;DR
 
@@ -26,8 +26,8 @@ Use this as a faculty-PI research application, not as public sponsorship copy fo
 - CV materials:
   - Brando CV short: `professional_documents/cvs/cv_short.pdf`
   - Brando CV long: `professional_documents/cvs/cv_long.pdf`
-  - Sanmi CV reference copy: `experiments/06_aristotle_harmonic_grant/sanmi_koyejo_cv_reference.pdf`
-  - Sanmi CV context from newer pasted text: `experiments/06_aristotle_harmonic_grant/sanmi_cv_context_from_user.md`
+  - Sanmi CV reference copy: `experiments/06_aristotle_harmonic_grant_pi/sanmi_koyejo_cv_reference.pdf`
+  - Sanmi CV context from newer pasted text: `experiments/06_aristotle_harmonic_grant_pi/sanmi_cv_context_from_user.md`
   - TODO before submission: use the exact current CV Sanmi wants attached.
 
 ## Source Notes
@@ -42,10 +42,12 @@ Use this as a faculty-PI research application, not as public sponsorship copy fo
 - Stanford Lean Club repositories: https://github.com/orgs/StanfordLeanClub/repositories
 - VeriBench-DT: https://github.com/brando90/veribench-dt
 - VeriBench-Deps: https://github.com/brando90/veribench-deps/tree/e3d26b4d8f5e88dd2a8fd2ecc290a0f0c6dd39a4
+- Conjecture Prover: https://brando90.github.io/conjecture-prover/
 - Proof-based AI coding benchmark paper: https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf
 - Brando website source: `index.md`
 - Brando CV sources: `professional_documents/cvs/cv_long.tex`, `professional_documents/cvs/cv_short.tex`
 - Stanford AI for Lean source: `stanford-ai-for-lean.md`
+- Final Brando Rising Mathematician draft: `../07_aristotle_harmonic_rising_mathematician/brando_rising_mathematician_application.md`
 - Note: the Typeform fields were not readable as plain text in this pass, so this draft is modular rather than field-for-field.
 - Field-ready Typeform responses are in `field_responses_pi_track.md`.
 - Note: there is a local Koyejo CV PDF, but it may be stale. Prefer Sanmi's official current CV before final submission.
@@ -64,6 +66,16 @@ Use this as a faculty-PI research application, not as public sponsorship copy fo
 - Add a compliance sentence if the form permits it: sponsorship would be administered subject to Stanford policies and would not imply Stanford endorsement, exclusive recruiting access, research control, or use of Stanford marks without authorization.
 - Do not list a dollar amount until Sanmi and the appropriate Stanford office decide whether the mechanism is a gift, sponsored research agreement, unrestricted research support, or API/model-access sponsorship.
 - Confirm whether Harmonic wants a PI-only submission, a student-nominated PI submission, or a student collaborator named under a PI.
+
+## Relationship To Brando's Rising Mathematician Application
+
+Brando's finalized Rising Mathematician application should influence this PI draft in three narrow ways:
+
+- Use VeriBench / SCSC as the shared technical anchor: Brando's application presents it as individual execution; this PI application presents it as one component of a broader STAIR research program.
+- Mention Conjecture Prover only as a student-built prototype or demonstration surface for NL-to-Lean workflows, not as the whole PI agenda.
+- Keep Sanmi's feedback-loop framing: Aristotle results should guide student projects and benchmark priorities, creating research capacity rather than only producing one evaluation report.
+
+Do not import Brando's personal first-person narrative, "AGI" framing, or student-track voice into the PI application.
 
 ## 1. One-Sentence Pitch
 
@@ -124,7 +136,7 @@ Deliverables:
 
 ### Workstream B: Agentic Lean Evaluation Harness
 
-Build a reproducible harness for evaluating proof agents that interact with Lean projects over many steps. The harness should record trajectories, tool calls, failed states, successful proofs, dependency changes, and verifier outcomes.
+Build a reproducible harness for evaluating proof agents that interact with Lean projects over many steps. The harness should record trajectories, tool calls, failed states, successful proofs, dependency changes, and verifier outcomes. Student-built surfaces such as Conjecture Prover can serve as demonstration layers, but the PI-track deliverable should be the underlying reusable evaluation infrastructure.
 
 Deliverables:
 
@@ -132,6 +144,7 @@ Deliverables:
 - Trajectory logs and metrics for proof-agent behavior.
 - Integration experiments with Aristotle access, subject to Harmonic's terms.
 - Documentation for external researchers to run or extend the evaluations.
+- Public case studies showing where Aristotle-style agents succeed or fail on VeriBench-style tasks, with comparisons against existing Lean-agent baselines where permitted.
 
 ### Workstream C: Autoformalization and Statement Quality
 
@@ -146,19 +159,21 @@ Deliverables:
 
 ### Workstream D: Student Research Infrastructure
 
-Use support to train and coordinate students working at the intersection of ML, Lean, programming languages, and formal verification. Keep this as research infrastructure, not public sponsor advertising.
+Use support to train and coordinate students working at the intersection of ML, Lean, programming languages, and formal verification. Keep this as research infrastructure, not public sponsor advertising. Aristotle evaluation results should feed back into student project selection: which benchmarks need more coverage, which proof-agent failure modes are most important, and which Lean libraries or examples would most accelerate the community.
 
 Deliverables:
 
 - Internal Lean onboarding materials for researchers.
 - Focused reading groups or mini-workshops on AI theorem proving and formal verification.
 - Public artifacts when appropriate: tutorials, examples, datasets, and technical notes.
+- Guided student projects shaped by concrete Aristotle evaluation results rather than generic interest in AI theorem proving.
 
 ## 8. Expected Deliverables
 
 - Public benchmark release extending or refining VeriBench / VeriBench-FTP.
 - Reproducible Lean 4 evaluation harness for proof agents.
 - Baseline evaluations of frontier formal-reasoning models, including Aristotle if approved.
+- Independent third-party case studies of Aristotle on VeriBench / proof-carrying-code tasks, subject to Harmonic's publication terms.
 - Technical report, workshop paper, or conference submission on benchmark methodology and results.
 - Curated error taxonomy for Lean proof-agent failures.
 - Student training materials for AI-assisted theorem proving and formal verification.

@@ -2,7 +2,7 @@
 
 Status: draft for Sanmi / STAIR review. Do not submit without Sanmi's approval and Stanford routing review.
 
-Last updated: May 15, 2026.
+Last updated: May 17, 2026.
 
 ## Coordination With Brando Rising Mathematician Application
 
@@ -14,6 +14,8 @@ If both applications are submitted, the distinction should be explicit:
 - Brando's Rising Mathematician application is the individual student application: VeriBench, public Lean learning, Stanford AI for Lean community building, and essays/workflows about formal methods and AI agents.
 
 If Harmonic prefers only one application, the safer combined route is this PI-track application with Brando named as student research lead.
+
+Brando's final personal application adds three useful PI-safe refinements: use VeriBench/SCSC as the common technical anchor, mention Conjecture Prover only as a student-built NL-to-Lean prototype, and make the feedback loop explicit: Aristotle evaluations should shape what STAIR / Stanford AI for Lean students work on next.
 
 ## Recommended Project Title
 
@@ -37,7 +39,7 @@ First, we will expand proof-based evaluation for AI coding. VeriBench-DT tests w
 
 Second, we will study repository-level autoformalization through VeriBench-Deps. Real software has dependencies: internal modules, external libraries, file systems, HTTP calls, databases, and mutable state. Agents must decide what to implement, what to axiomatize, and where the trust boundary lies. VeriBench-Deps introduces the Axiom Trust Boundary, a deterministic metric computed from Lean's `#print axioms`, and a 2x2 dependency taxonomy that predicts when an agent should prove, assume, or model IO. This lets us measure not only whether a proof checks, but what the proof actually depends on.
 
-Third, we will use Stanford AI for Lean under STAIR as a research training and artifact-production engine. Students will work on Lean formalization tasks, proof-agent workflows, CSLib-style formal libraries, software verification, Erdős-problem formalization, and evaluation infrastructure. The goal is not a one-off demo. The goal is a reusable research ecosystem: datasets, Lean environments, proof-agent logs, metrics, technical reports, and papers that make progress in AI for formal mathematics measurable.
+Third, we will use Stanford AI for Lean under STAIR as a research training and artifact-production engine. Students will work on Lean formalization tasks, proof-agent workflows, CSLib-style formal libraries, software verification, Erdős-problem formalization, and evaluation infrastructure. Aristotle evaluation results would feed directly into this project pipeline: if a frontier model fails because of theorem-statement quality, dependency modeling, proof repair, or axiom misuse, that failure mode becomes a concrete student research direction. The goal is not a one-off demo. The goal is a reusable research ecosystem: datasets, Lean environments, proof-agent logs, metrics, technical reports, and papers that make progress in AI for formal mathematics measurable.
 
 Sanmi is the right PI because STAIR studies trustworthy AI and AI measurement science: how to evaluate capabilities, limitations, reliability, and failure modes of AI systems. This proposal brings that measurement-science lens to formal reasoning. Brando Miranda, a Stanford CS Ph.D. student advised by Prof. Koyejo, would help lead execution, building on his work in Lean 4, autoformalization, verified code generation, contamination-resistant evaluation, and proof-based AI coding benchmarks.
 
@@ -48,6 +50,7 @@ Project description and relevant public context:
 - Aristotle / Harmonic sponsorship page: https://aristotle.harmonic.fun/sponsorships
 - Stanford Lean Club: https://www.stanfordlean.club/
 - Stanford Lean Club repositories: https://github.com/orgs/StanfordLeanClub/repositories
+- Conjecture Prover: https://brando90.github.io/conjecture-prover/
 - VeriBench-DT: https://github.com/brando90/veribench-dt
 - VeriBench-Deps: https://github.com/brando90/veribench-deps/tree/e3d26b4d8f5e88dd2a8fd2ecc290a0f0c6dd39a4
 - Proof-based AI coding benchmark paper: https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf
@@ -85,7 +88,7 @@ Second, we would evaluate Aristotle on repository-level autoformalization. In Ve
 
 Third, we would use Aristotle as a proof-agent component inside reproducible Lean workflows. We want to study complete trajectories: theorem statement generation, proof search, error repair, dependency selection, axiom introduction, and final verification. This gives a much richer picture than pass/fail final answers.
 
-Fourth, we would deploy Aristotle access in STAIR / Stanford AI for Lean research sprints, where students work on Lean formalization, software verification, CSLib-style library development, and mathematical formalization projects such as the Stanford Lean Club Erdős-problem repository. This would create a feedback loop between frontier model access and a trained student research community.
+Fourth, we would deploy Aristotle access in STAIR / Stanford AI for Lean research sprints, where students work on Lean formalization, software verification, CSLib-style library development, and mathematical formalization projects such as the Stanford Lean Club Erdős-problem repository. Student-facing prototypes such as Conjecture Prover can help expose the workflow, but the core PI deliverable is the reusable benchmark and evaluation infrastructure underneath. This would create a feedback loop between frontier model access and a trained student research community.
 
 The expected output is not a private demo. It is a set of reusable benchmarks, evaluation protocols, error taxonomies, and technical results that help Harmonic and the broader research community understand where AI-assisted formal reasoning genuinely works, where it fails, and what capabilities are needed next.
 
