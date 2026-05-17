@@ -4,7 +4,7 @@ title: "The Em Dash Is Not an AI Fingerprint"
 date: 2026-05-04
 ---
 
-*Brando Miranda — May 2026 · ~2 min read*
+*Brando Miranda — May 2026 · ~1 min read*
 
 **TL;DR.** People have decided the em dash is an AI tell, which is annoying mostly because some of us were already dash people. I got mine from William Zinsser's *On Writing Well*, where the dash is treated as a normal, useful piece of nonfiction craft. Cool people were using em dashes before AI made them suspicious; the mark is not the giveaway. The thinking is.
 
