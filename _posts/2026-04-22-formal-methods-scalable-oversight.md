@@ -54,9 +54,7 @@ One reason industry is converging on Lean rather than treating it as a math-only
 
 The point, for this post: when you formalize a system in Lean, you are not crossing a chasm into "the math world." You are writing a program in a language whose compiler happens to also be a proof checker. That is why the same artifact can both run and be verified, and why formal methods stop being exotic and start being a normal thing a working engineer can do.
 
-## Appendix B: A note on the em dashes
-
-If you have read this post and noticed that I lean on em dashes, I want to flag that this is a habit I picked up from William Zinsser's *On Writing Well*, in the "Bits & Pieces" chapter on the dash. Zinsser called the dash an *invaluable tool*, "widely regarded as not quite proper, a bumpkin at the genteel dinner table of good English," but one that "will get you out of many tight corners." I bought the book years before generative AI was a thing, and the punctuation has been mine ever since. I am leaving this note here because the em dash has lately been treated as a fingerprint of AI writing, and I do not want a stylistic preference I learned from a book to be mistaken for laziness. (A future post on this is in the queue.)
+If you noticed the em dashes: yes, I have always used them, people should still use them, and they do not mean the writing was ML-generated; I wrote a short note on that here: [The Em Dash Is Not an AI Fingerprint](https://brando90.github.io/brandomiranda/2026/05/04/em-dash-not-an-ai-fingerprint.html).
 
 ---
 

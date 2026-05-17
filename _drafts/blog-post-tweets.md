@@ -76,6 +76,17 @@ https://brando90.github.io/brandomiranda/2026/04/27/embrace-ai-or-be-left-behind
 
 ---
 
+## 2026 — The Em Dash Is Not an AI Fingerprint
+
+The em dash is not an AI fingerprint. It is punctuation. 😎
+
+I used em dashes before it was cool, because William Zinsser told me to. Use the dash when it fits. Judge the thinking, not the typography.
+
+Post:
+https://brando90.github.io/brandomiranda/2026/05/04/em-dash-not-an-ai-fingerprint.html
+
+---
+
 ## 2026 — Metallica Goes Jazz
 
 In 2010 I hand-arranged Metallica's *The Day That Never Comes* for my high school orchestra. 16 years later I fed that score into Suno and asked it to recast the piece in the voices of Charlie Parker, Chet Baker, Stan Getz... Take 1 inside:
