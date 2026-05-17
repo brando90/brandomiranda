@@ -58,6 +58,12 @@ If you noticed the em dashes: yes, I have always used them, people should still 
 
 ---
 
+## Discuss
+
+I shared this post on X/Twitter here: [discussion thread](https://x.com/BrandoHablando/status/2056074520491139400?s=20). Replies, disagreements, pointers, and follow-up questions are welcome there.
+
+---
+
 *If you'd like to cite this post:*
 
 ```bibtex
