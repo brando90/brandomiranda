@@ -54,7 +54,7 @@ One reason industry is converging on Lean rather than treating it as a math-only
 
 The point, for this post: when you formalize a system in Lean, you are not crossing a chasm into "the math world." You are writing a program in a language whose compiler happens to also be a proof checker. That is why the same artifact can both run and be verified, and why formal methods stop being exotic and start being a normal thing a working engineer can do.
 
-If you noticed the em dashes: yes, I have always used them, people should still use them, and they do not mean the writing was ML-generated; I wrote a short note on that here: [The Em Dash Is Not an AI Fingerprint](https://brando90.github.io/brandomiranda/2026/05/04/em-dash-not-an-ai-fingerprint.html).
+If you noticed the em dashes: yes, I have always used them, people should still use them, and they do not mean the writing was ML-generated; I wrote a short note on that here: [The Em Dash Is Only an AI Fingerprint If You Didn't Already Use It ;)](https://brando90.github.io/brandomiranda/2026/05/04/em-dash-not-an-ai-fingerprint.html).
 
 ---
 
