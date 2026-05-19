@@ -4,9 +4,10 @@ Use this file for copy-paste-ready X/Twitter drafts that have not been posted ye
 After posting one, move its exact text to already_posted_tweets.txt and add the X/Twitter URL.
 
 -------------------------------------------------------------------------------
-What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research
 
-🚨 New on my blog: correctness-gated workflows for AI coding agents.
+🚨 New on my blog: What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research
+
+➡️ https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
 
 The question isn't just "which model is best?"
 
@@ -16,18 +17,21 @@ It's: what process makes model mistakes cheap to catch?
 👥 agents review each other
 🔒 Lean checks proofs/specs
 
-This became agents-config. h/t @yegordb for the modular agent-docs insight, @KIRILL_HANDLE for the convos, and @garrytan for the self-improving skill-files post.
+This became agents-config: https://github.com/brando90/agents-config
 
-More details:
-https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
+Credit where it's due:
+
+- @yegordb for the modular agent-docs insight. It was his idea tbh.
+- @kirillacharya for the convos + amazing feedback.
+- @garrytan for a nice related post on self-improving skill-files. I read it after mine; happy to share my thoughts later :)
+
+Stay tuned. I want to write my thoughts from first principles on why this might be an intrinsic necessity in autoregressive models, and why alternatives to LLMs may be worth thinking about.
+
+PS: I always believed in scaling laws. Can write a post about this too later 😉
 
 Companion RT / quote-tweet target:
 https://x.com/garrytan/status/2042925773300908103
 
-Optional quote text:
-This is the same direction I keep converging on: thin harness, fat reusable skills, and explicit correctness gates.
-
-Agents are much better when the workflow learns from what the gates catch.
 
 -------------------------------------------------------------------------------
 Building Synergetic Teams for Research and Startups
