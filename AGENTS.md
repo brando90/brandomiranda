@@ -71,4 +71,8 @@ Rules:
 
 See `CLAUDE.md` § "Blog post header format (HARD)" for the canonical version.
 
+## Tweet draft workflow
+
+Blog-post tweet drafts live in `exclude/tweets/` as plain `.txt` files, not `.md`, so emojis and copy-paste-ready X/Twitter formatting stay literal. Keep unpublished drafts in `exclude/tweets/tweet_drafts.txt` with the next tweet at the top. When a tweet is published, move the exact posted text to `exclude/tweets/already_posted_tweets.txt` and add the X/Twitter status URL. Do not create tweet drafts under `_drafts/`, `experiments/`, or blog-post-specific folders unless explicitly asked.
+
 Branch model: `main` only.

@@ -1,0 +1,21 @@
+BLOG TWEETS - ALREADY POSTED
+
+Use this file for X/Twitter posts that have already been published.
+Keep the exact posted text plus the X/Twitter URL so drafts do not get reposted by mistake.
+
+-------------------------------------------------------------------------------
+Asking the Right Question: Formal Methods as Scalable Oversight
+
+🚨 New on my blog: formal methods as scalable oversight for AI agents.
+
+Lean changes the shape of checking: don't make humans audit every complex reasoning argument.
+
+Let the verifier check the complex reasoning; let the human check the question (e.g., theorem!).
+
+✅ verifier checks the answer
+🧠 human checks the question
+
+More details:
+
+X/Twitter URL:
+https://x.com/BrandoHablando/status/2056074520491139400
