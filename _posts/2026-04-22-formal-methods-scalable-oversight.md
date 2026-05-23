@@ -48,6 +48,12 @@ This is why I find formal methods so generative as a research direction, and why
 
 ---
 
+## Addendum: the OpenAI geometry result
+
+Several people asked how this post relates to OpenAI's May 2026 report, [An OpenAI model has disproved a central conjecture in discrete geometry](https://openai.com/index/model-disproves-discrete-geometry-conjecture/). My reaction is mostly that it makes the point more urgent. I don't understand the construction well enough to comment on the math, and the philosophical difference between a counterexample and a "normal proof" is not the main thing. The oversight lesson is: as model-generated arguments become increasingly superhuman, informal expert review will not scale by itself. Lean-style formalization becomes more important, not less, because it lets us reduce the human job to the part that still has to be human: checking that the formal statement is the theorem we meant.
+
+---
+
 ## Appendix A: Lean is also a real programming language
 
 One reason industry is converging on Lean rather than treating it as a math-only artifact is that it is a full-fledged programming language, not a proof tool with a side of code. [Lean 4 compiles to native code via C](https://lean-lang.org/lean4/doc/whatsnew.html), the [standard library (batteries)](https://github.com/leanprover/std4) ships with hash maps, datetime, and concurrency primitives, and the [`IO` monad](https://github.com/leanprover/lean4/blob/master/src/Init/System/IO.lean) covers the system-call surface: files, processes, threads, refs, environment. Lean is implemented in Lean. In 2025 it [won the SIGPLAN Programming Languages Software Award](https://www.sigplan.org/Awards/Software/) for "significant impact on mathematics, hardware and software verification, and AI." For a guided tour of the language as a language, see [*Functional Programming in Lean*](https://lean-lang.org/functional_programming_in_lean/).
