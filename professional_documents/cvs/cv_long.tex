@@ -192,7 +192,7 @@ AI for formal mathematics, Lean 4 theorem proving, theorem generation, autoforma
 
 	\textbf{Morph Labs} - Remote \hfill \emph{October 2023 - December 2023}\\
 	\emph{Machine Learning Research Scientist Consultant}\\
-	Contributed to Morph Prover v0 7b and Moogle.ai, a search engine for verified Lean code.\\
+	Key contributor to Morph Prover v0 7b and Moogle.ai; designed and built the embedding-based vector database powering Moogle's semantic search over Mathlib.\\
 	\vspace{8pt}
 
 	\textbf{Wise Agents} - Stanford Spin-out \hfill \emph{2023}\\
@@ -250,10 +250,13 @@ AI for formal mathematics, Lean 4 theorem proving, theorem generation, autoforma
 	\begin{itemize} \itemsep -2pt
 		\item \textbf{\href{https://openreview.net/forum?id=rWkGFmnSNl}{VeriBench}}: End-to-end Lean 4 benchmark for evaluating AI-generated code with formal verification proofs.
 		\item \textbf{\href{https://openreview.net/forum?id=wDjOpXKgtU}{VeriBench-FTP}}: Formal theorem-proving benchmark in Lean 4 for code verification.
+		\item \textbf{\href{https://github.com/brando90/veribench-dt}{VeriBench-DT}}: Trustworthy agentic autoformalization benchmark verifying original-code equivalence via differential testing across Python source, gold Lean reference, and model output (Three-Way Semantic Triangulation).
+		\item \textbf{\href{https://github.com/brando90/veribench-deps}{VeriBench-Deps}}: Repository-level autoformalization benchmark for multi-file Python programs into Lean 4; introduces the Axiom Trust Boundary (ATB) metric and a 2$\times$2 provenance/effect dependency taxonomy.
+		\item \textbf{\href{https://github.com/Stanford-AI-for-LEAN-Club/lean-ebm}{lean-ebm}}: Energy-Based Models for Lean 4 theorem proving --- Stanford AI for Lean Club project unifying policy and value via Langevin-dynamics tactic search; pairs a synthetic-data track with an EBM-based MCTS proof-search fallback.
 		\item \textbf{\href{https://openreview.net/forum?id=kqj2Cn3Sxr}{Putnam-AXIOM}}: Functional and static benchmark for higher-level LLM mathematical reasoning.
 		\item \textbf{\href{https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading}{Putnam-AXIOM-Grading}}: Human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
 		\item \textbf{\href{https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6}{Pantograph}}: Machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
-		\item \textbf{\href{https://huggingface.co/morph-labs/morph-prover-v0-7b}{Morph Prover v0 7b} and \href{https://www.moogle.ai/}{Moogle.ai}}: Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
+		\item \textbf{\href{https://huggingface.co/morph-labs/morph-prover-v0-7b}{Morph Prover v0 7b} and \href{https://www.moogle.ai/}{Moogle.ai}}: Lean 4 proof model and verified-code search engine developed with Morph Labs; designed and built the embedding-based vector database powering Moogle's semantic search over Mathlib.
 		\item \textbf{\href{https://alphaapollo.org/}{AlphaApollo}}: Agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows.
 		\item \textbf{\href{https://github.com/dhoemenk97-star/AlphaDiana}{AlphaDiana}}: Harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
 		\item \textbf{\href{https://github.com/brando90/ultimate-utils}{ultimate-utils}}: Reusable ML and research-engineering utility library for experiment workflows.
