@@ -14,6 +14,11 @@ There is a clean argument against autoregressive language models that I keep com
 
 It is often associated with Yann LeCun's criticism of autoregressive generation. The argument is not complicated, which is part of why it is useful.
 
+This post is the human-facing entry point for the experiment suite in
+`experiments/02_ar_pros_cons`. The suite's job is to separate the real
+advantages of autoregressive language models from the objections that are
+theorem-level, empirical-but-contingent, or merely rhetorical.
+
 Let a model generate a sequence one token at a time. Suppose each token has probability `epsilon` of taking the generation off the manifold of correct answers. Then each token is correct with probability `1 - epsilon`. If errors are independent, and if one wrong token is unrecoverable, then the probability of generating a completely correct length-`T` sequence is:
 
 ```text
@@ -190,10 +195,19 @@ What prevents one local mistake from becoming a global failure?
 
 ## Source Notes
 
-The handwritten notes and transcription for this post live in the experiment folder:
+The experiment plan, probes, and source notes for this post live in the
+`free-energy` experiment folder:
 
-- [Experiment folder](https://github.com/brando90/brandomiranda/tree/main/experiments/10_autoregressive_llm_pros_cons)
-- [Combined transcription](https://github.com/brando90/brandomiranda/blob/main/experiments/10_autoregressive_llm_pros_cons/transcription.md)
+- [Experiment folder](https://github.com/brando90/free-energy/tree/main/experiments/02_ar_pros_cons)
+- [Claims under test](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/CLAIMS.md)
+- [Probe specifications](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/PROBE_SPECS.md)
+- [LeCun error-compounding experiment draft](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/blog/2026-05-26-lecun-error-compounding-experiment.md)
+- [Handwritten AR/error-compounding note](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/assets/handwritten_ar_pros_cons_lecun_argument.md)
+
+The website-side source-note archive, including the EBM partition-function
+photo used below, lives in:
+
+- [Website AR/EBM source-note workspace](https://github.com/brando90/brandomiranda/tree/main/experiments/10_autoregressive_llm_pros_cons)
 
 Useful technical background:
 
