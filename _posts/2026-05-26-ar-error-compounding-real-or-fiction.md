@@ -43,18 +43,6 @@ unrecoverable error processes?
 
 If a **recoverable-Markov** process — a 2-state chain `{on-manifold, off-manifold}` with a nonzero per-step recovery probability — fits success-vs-length curves better than the geometric model, then the right contrast is *not* AR vs. EBM. It is **AR-without-verifier vs. AR-with-verifier** (recovery changes the exponent). That is a different research program from "abandon autoregressive models."
 
-## What would change my mind
-
-If verifier-guided pass probability decays geometrically with proof/program length even after recovery, then the critique bites hard. It would mean the feedback loop is not changing the effective error process enough — and we owe a serious rethink of how recovery is structured.
-
-If the geometric model only fits blind sampling while the recoverable model fits verifier-guided systems, then the core research question changes:
-
-```text
-How do we design feedback loops that change the exponent?
-```
-
-That is the experiment this folder is built to make concrete.
-
 ---
 
 ## Appendix A — TODO: Implementation Plan (toy controls + VeriBench)
@@ -128,6 +116,22 @@ Compare by held-out log-likelihood / AIC with bootstrap CIs. The expected outcom
 | AR | Autoregressive: the factorization `p(x_{1:T_y}) = ∏_t p(x_t | x_{<t})`. |
 | EBM | Energy-based model: scores configurations with `E_θ(x)` and normalizer `Z_θ = ∑_x exp(-E_θ(x))`. |
 | verifier | A hard checker (e.g., the Lean type-checker) that returns *valid / invalid* on a generated step or object, enabling recovery via backtrack / resample. |
+
+---
+
+## Appendix C — Draft: What Would Change My Mind (needs author review)
+
+*This section is parked here because the author isn't sure he stands behind the phrasing yet — flagged as a draft decision rule to revisit, not a committed claim.*
+
+If verifier-guided pass probability decays geometrically with proof/program length even after recovery, then the critique bites hard. It would mean the feedback loop is not changing the effective error process enough — and we owe a serious rethink of how recovery is structured.
+
+If the geometric model only fits blind sampling while the recoverable model fits verifier-guided systems, then the core research question changes:
+
+```text
+How do we design feedback loops that change the exponent?
+```
+
+That is the experiment this folder is built to make concrete.
 
 ---
 
