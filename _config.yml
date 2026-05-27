@@ -40,6 +40,12 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# MathJax 3 handles math at runtime via _includes/custom-head.html.
+# Tell kramdown NOT to pre-process math (so $...$ and $$...$$ pass through to MathJax).
+markdown: kramdown
+kramdown:
+  math_engine: ~
+
 future: true
 
 # Exclude from processing.
