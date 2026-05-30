@@ -6,7 +6,7 @@ date: 2026-04-16
 
 *Brando Miranda — April 2026 · ~6 min read*
 
-**TL;DR.** **[In development — work in progress; published early while I refine it.]** The hardest part of research is choosing what to attack next when everything is uncertain. **Vectoring** (Michael Bernstein's term) is the answer: pick the single dimension where, if you are wrong, the whole project falls apart, and reduce that uncertainty first with the cheapest experiment that actually answers it. Split the work into **core** (the central assumption you test now) and **periphery** (scaffold it with the laziest thing that works). Worked examples: the *Mirage* emergent-abilities paper and a study of internet trolling. Vector first, then velocity.
+**TL;DR.** **[In development — work in progress; published early while I refine it.]** The hardest part of research is choosing what to attack next when everything is uncertain. **Vectoring** (Michael Bernstein's term) is the answer: pick the single dimension where, if you are wrong, the whole project falls apart — usually your **main hypothesis**, the central assumption behind the objective you actually care about, which you don't yet know is true — and reduce that uncertainty first with the cheapest experiment that actually answers it. Split the work into **core** (the central assumption you test now) and **periphery** (scaffold it with the laziest thing that works). Worked examples: the *Mirage* emergent-abilities paper and a study of internet trolling. Vector first, then velocity.
 
 ---
 
@@ -29,7 +29,7 @@ Here is the rule. **Pick the single dimension where, if you are wrong, the whole
 That sentence does a lot of work. Three parts:
 
 1. **One dimension.** Not five. The more dimensions you try to optimize at once, the harder gradient descent becomes — on neural nets and on careers. Pick one.
-2. **Biggest risk, most essential assumption.** If the vector you chose turned out false, would the project die? If not, you picked wrong.
+2. **Biggest risk, most essential assumption.** This is usually your **main hypothesis** — the central claim your whole project rests on, the thing tied to the objective you are actually passionate about — and the catch is you *don't yet know if it's true*. That unknown is exactly what makes it the riskiest direction. If the vector you chose turned out false, would the project die? If not, you picked wrong.
 3. **Cheapest experiment that answers it.** The point is not rigor for its own sake. The point is to learn. If you can answer the question with a manual check of thirty data points in thirty minutes, do that before you train a classifier.
 
 The output of a vectoring decision is a clear split between **core** and **periphery**. The core is what you attack. The periphery — infrastructure, polish, anything not testing the central assumption — gets scaffolded with the laziest thing that works. Reuse code. Draw the interface on paper. Hand-label ten examples. The periphery exists to let the core experiment run.
