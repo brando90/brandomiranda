@@ -4,7 +4,11 @@ title: "Velocity in Research"
 date: 2026-04-16
 ---
 
-*Brando Miranda — April 2026*
+*Brando Miranda — April 2026 · ~5 min read*
+
+**TL;DR.** **[In development — work in progress; published early while I refine it.]** Research feels slow because we grade ourselves on whether experiments *worked* — something largely outside our control. The better metric is **velocity**: the rate at which you reduce uncertainty in a chosen direction. Vectoring picks the riskiest question; velocity answers it as cheaply as possible. Be ruthless about core versus periphery (fake, mock, or skip everything inessential), and lean on $v = d/t$ — the fastest way to go faster is almost never doing *more*, it's doing less, faster, and ignoring the rest.
+
+---
 
 Most of my students arrive with the same complaint. Research feels slow. Weeks disappear, experiments fail, deadlines pass, and the advisor starts to look worried. I've been there myself, more than once. The instinct is to work harder — longer hours, more code, a bigger system. That instinct is almost always wrong.
 
