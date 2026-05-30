@@ -4,7 +4,11 @@ title: "Vectoring: Attack the Biggest Uncertainty First"
 date: 2026-04-16
 ---
 
-*Brando Miranda — April 2026*
+*Brando Miranda — April 2026 · ~6 min read*
+
+**TL;DR.** **[In development — work in progress; published early while I refine it.]** The hardest part of research is choosing what to attack next when everything is uncertain. **Vectoring** (Michael Bernstein's term) is the answer: pick the single dimension where, if you are wrong, the whole project falls apart, and reduce that uncertainty first with the cheapest experiment that actually answers it. Split the work into **core** (the central assumption you test now) and **periphery** (scaffold it with the laziest thing that works). Worked examples: the *Mirage* emergent-abilities paper and a study of internet trolling. Vector first, then velocity.
+
+---
 
 Most research advice I got early on was useless because it assumed I already knew what to work on. The hardest part of a research project is not executing a plan — it is choosing what to attack next when everything is uncertain and nothing is proven. The single most important technique I teach in CS197 for this is what Michael Bernstein calls **vectoring**: identify the direction of biggest uncertainty in your project, and reduce it first.
 
