@@ -10,7 +10,7 @@ date: 2026-04-16
 
 ---
 
-Most research advice I got early on was useless because it assumed I already knew what to work on. The hardest part of a research project is not executing a plan — it is choosing what to attack next when everything is uncertain and nothing is proven. The single most important technique I teach in CS197 for this is what Michael Bernstein calls **vectoring**: identify the direction of biggest uncertainty in your project, and reduce it first.
+Most research advice I got early on was useless because it assumed I already knew what to work on. The hardest part of a research project is not executing a plan — it is choosing what to attack next when everything is uncertain and nothing is proven. The single most important technique I teach in [CS197](https://cs197.stanford.edu/) for this is what [Michael Bernstein](https://hci.stanford.edu/msb/) at Stanford calls **vectoring**: identify the direction of biggest uncertainty in your project, and reduce it first.
 
 This is one of two skills that separate researchers who ship from researchers who flounder. The other is velocity — the speed at which you reduce risk once you have picked a direction. They operate in a tight loop. Pick the wrong vector and velocity does not save you; move too slowly on the right vector and the project dies anyway. Today I want to focus on the picking.
 
@@ -78,3 +78,9 @@ One trick I use on myself: put the result on a calendar as if I have to present 
 - **Iterate honestly.** When a vector resolves, new unknowns appear — that is the job. Reprioritize. Unexpected results are a gift, not a failure.
 
 Iteration beats planning. Hemingway, Picasso, every researcher I admire — all wrong on the first try. Assume you will be too, and make your first try cheap.
+
+## References
+
+- Michael S. Bernstein. *CS197: Computer Science Research* — Stanford University. **Vectoring** is Bernstein's term, taught in CS197; this post is my take on it. [cs197.stanford.edu](https://cs197.stanford.edu/) · [Bernstein's homepage](https://hci.stanford.edu/msb/).
+- Rylan Schaeffer, **Brando Miranda**, Sanmi Koyejo. *Are Emergent Abilities of Large Language Models a Mirage?* Neural Information Processing Systems (NeurIPS), 2023 — Outstanding Main Track Paper Award & Oral. [arXiv:2304.15004](https://arxiv.org/abs/2304.15004) · [OpenReview](https://openreview.net/forum?id=ITw9edRDlD). The *Mirage* emergent-abilities walkthrough in this post.
+- Justin Cheng, Michael Bernstein, Cristian Danescu-Niculescu-Mizil, Jure Leskovec. *Anyone Can Become a Troll: Causes of Trolling Behavior in Online Discussions.* CSCW, 2017. [arXiv:1702.01119](https://arxiv.org/abs/1702.01119). The ~16M CNN-comments trolling study used as the non-ML walkthrough.

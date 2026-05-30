@@ -24,7 +24,7 @@ Gowers — the mathematician — put it well. Research is an iterative process o
 
 ## Vectoring sets the question, velocity answers it
 
-Vectoring and velocity are different jobs. Vectoring is picking the most uncertain assumption in your project — the one that, if wrong, kills everything downstream. It's an abstract question: is assumption X actually valid? Is the metric the reason LLMs look like they have emergent jumps?
+Vectoring and velocity are different jobs. Vectoring — a term I borrow from [Michael Bernstein](https://hci.stanford.edu/msb/)'s [CS197](https://cs197.stanford.edu/) at Stanford — is picking the most uncertain assumption in your project — the one that, if wrong, kills everything downstream. It's an abstract question: is assumption X actually valid? Is the metric the reason LLMs look like they have emergent jumps?
 
 Velocity is what you do after vectoring. You have the question; now how do you answer it this week, with the least possible work? This separation matters because it's easy to conflate them and end up prototyping the wrong thing fast, or the right thing slowly. Pick the question first. Then sprint.
 
@@ -68,3 +68,10 @@ A few practices I actually run on myself:
 - Lean on 1/t. The fastest way to increase velocity is almost never doing more — it's doing less, faster, and ignoring the rest.
 
 If you're stuck right now, walk home without your headphones and ask yourself one thing: what is the actual question this week, and what is the smallest possible experiment that would answer it? Then go do that experiment tomorrow. The rest can wait.
+
+## References
+
+- Michael S. Bernstein. *CS197: Computer Science Research* — Stanford University. The **vectoring** / **velocity** framing for navigating research projects comes from this course. [cs197.stanford.edu](https://cs197.stanford.edu/) · [Bernstein's homepage](https://hci.stanford.edu/msb/).
+- Rylan Schaeffer, **Brando Miranda**, Sanmi Koyejo. *Are Emergent Abilities of Large Language Models a Mirage?* Neural Information Processing Systems (NeurIPS), 2023 — Outstanding Main Track Paper Award & Oral. [arXiv:2304.15004](https://arxiv.org/abs/2304.15004) · [OpenReview](https://openreview.net/forum?id=ITw9edRDlD). The one-line metric change (accuracy → token edit distance) that this post uses as the canonical high-velocity example.
+- W. T. Gowers. *The Two Cultures of Mathematics* and related writing on research as iterative exploration. [gowers.wordpress.com](https://gowers.wordpress.com/).
+- David Bayles & Ted Orland. *Art & Fear: Observations on the Perils (and Rewards) of Artmaking* (1993). The quantity-over-perfection ceramics-class parable.
