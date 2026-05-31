@@ -25,12 +25,28 @@ description: >
   opinions of any entity I am affiliated or have been affiliated -- nor any past, present, or future clients/employers.
 baseurl: "/brandomiranda/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+canonical_base_url: "https://cs.stanford.edu/people/brando9"
+use_custom_canonical: true
+redirect_to_canonical: true
 twitter_username: BrandoHablando
 github_username:  brando90
 
 
 
-exclude: [exclude/, experiments/, _drafts/, scripts/, README.md, CLAUDE.md, AGENTS.md, professional_documents/cvs/cvs_prompt.md]
+exclude:
+  - exclude/
+  - experiments/
+  - _drafts/
+  - scripts/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - Gemfile2
+  - "*.code-workspace"
+  - README.md
+  - CLAUDE.md
+  - AGENTS.md
+  - professional_documents/cvs/cvs_prompt.md
 
 # Build settings
 theme: minima

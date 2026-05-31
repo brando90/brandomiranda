@@ -1,0 +1,13 @@
+# Stanford CS personal-page build overlay.
+#
+# Build with:
+#   jekyll build --config _config.yml,_config_stanford_cs.yml
+#
+# Public target:
+#   https://cs.stanford.edu/people/brando9/
+
+url: "https://cs.stanford.edu"
+baseurl: "/people/brando9/"
+canonical_base_url: "https://cs.stanford.edu/people/brando9"
+use_custom_canonical: false
+redirect_to_canonical: false
