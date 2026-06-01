@@ -13,15 +13,10 @@ title: Brando Miranda
 - [MIT and CBMM Profile](https://cbmm.mit.edu/about/people/miranda)
 - [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9)
 - brando9 {at} stanford DoT Edu
-<!-- Department of Computer Science
-Gates Computer Science Building
-353 Jane Stanford Way
-Stanford, CA 94305 -->
 
 -----
 
 # Bio #
-<!-- ref: https://chatgpt.com/c/68252ede-9708-8001-837e-5f556b905e53 -->
 
 Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning (AI/ML) at [Stanford University](https://stanford.edu) under the supervision of [Professor Sanmi Koyejo](https://cs.stanford.edu/~sanmi/index.html) in the [Stanford Trustworthy AI Research (STAIR) group](https://cs.stanford.edu/~sanmi/index.html). 
 Previously, he was a graduate researcher at the [University of Illinois Urbana-Champaign](https://illinois.edu/) and held research appointments at the Massachusetts Institute of Technology (MIT) — including a Research Assistantship in MIT’s Center for Brains, Minds and Machines (CBMM). 
@@ -47,28 +42,21 @@ Miranda received the [NeurIPS Outstanding Paper Award](https://blog.neurips.cc/2
 In industry, he served as Machine-Learning Research Scientist Consultant at venture-backed [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), helping build the [Morph Prover v0-7B](https://huggingface.co/morph-labs/morph-prover-v0-7b) and launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
 He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a Stanford spin-out that uses AI agents to transform sales performance.
 
-<!-- [//]: # (https://cs.stanford.edu/~sanmi/preparation.html  working with me, TODO: )
-
-[//]: # (Our Culture:
-[//]: # (  
-[//]: # (Our lab has a high technical bar, including a coding interview for all applicants. We constantly push each other to improve through continuous, regular feedback. We take mentorship seriously and are committed to students' success beyond their time in our lab. As a member of our lab, you will be working alongside prior USA Computing Olympiad (USACO) and International Mathematical Olympiad (IMO) participants. We have exceedingly high expectations of all collaborators and do not tolerate mediocrity. look for his lab page Sebastian Thrun's lab.)
-[//]: # (someone from caltech or something like htat?) -->
-
-<!-- ![me](/images/me_rains_suit.jpg){:class="img-responsive"} -->
-<!-- ![me](/images/me_rains_suit.jpg) -->
-
 ---
 
 # Selected Publications [ [Full List] ](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
-
-[//]: # (Note: * denotes equal contribution.)
 
 Selected publications are listed reverse-chronologically; see [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en) for the full list and citation metrics.
 
 VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean 4 (2026)
 *<strong>Brando Miranda</strong>, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, et al.*
 [**[Preprint]**]({{ site.baseurl }}professional_documents/papers/NeurIPS_2026_VeriBench.pdf)
+[**[Run Tutorial (Colab)]**](https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing)
+[**[Harbor Hub]**](https://harborframework.com/registry)
+[**[Blog]**](https://brando90.github.io/veribench/blog/veribench-launch/)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
+
+VeriBench uses Harbor for agentic, containerized evaluation: agents run inside isolated Docker tasks and are evaluated against held-out gold artifacts, rather than being given access to the solutions. The [Colab tutorial](https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing) shows how to run the public `veribench@1.1` release.
 
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
 *Zhanke Zhou, Xiangyu Lu, Chentao Cao, <strong>Brando Miranda</strong>, Tongliang Liu, Bo Han, Sanmi Koyejo.*
@@ -104,7 +92,6 @@ Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathema
 [**[International Conference on Machine Learning (ICML) Main Track 2025]**](https://openreview.net/forum?id=kqj2Cn3Sxr)
 [**[Neural Information Processing Systems (NeurIPS) Mathematics and AI (MATH-AI) Workshop 2024]**](https://neurips.cc/virtual/2024/98507) 
 [**[arXiv]**](https://arxiv.org/abs/2508.08292)
-<!-- in case neurips link goes down for math-ai: https://openreview.net/forum?id=YXnwlZe0yf -->
 
 Pantograph: A machine-to-machine interaction interface for advanced theorem proving, high level reasoning, and data extraction in Lean 4 (2025)
 *Leni Aniva, Chuyue Sun, <strong>Brando Miranda</strong>, Clark Barrett, Sanmi Koyejo.*
@@ -130,7 +117,6 @@ Failures to Find Transferable Image Jailbreaks Between Vision-Language Models (2
 *Rylan Schaeffer, Dan Valentine, Luke Bailey, James Chua, Cristobal Eyzaguirre, Zane Durante, Joe Benton, <strong>Brando Miranda</strong>, Henry Sleight, Tony Tong Wang, John Hughes, Rajashree Agrawal, Mrinank Sharma, Scott Emmons, Sanmi Koyejo, Ethan Perez.*
 [**[International Conference on Learning Representations (ICLR) 2024]**](https://openreview.net/forum?id=wvFnqVVUhN)
 [**[Neural Information Processing Systems (NeurIPS) Red Teaming GenAI Workshop 2024]**](https://neurips.cc/virtual/2024/106794)
-<!-- https://slideslive.com/39031025/failures-to-find-transferable-image-jailbreaks-between-visionlanguage-models -->
 
 Does Maximizing Neural Regression Scores Teach Us About The Brain? (2024)
 *Rylan Schaeffer, M. Khona, S. Chandra, M. Ostrow, <strong>Brando Miranda</strong>, Sanmi Koyejo.*
@@ -157,15 +143,12 @@ Are Emergent Abilities of Large Language Models a Mirage? (2023)
 [**[Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award 2023 & NeurIPS Oral]**](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/)
 [**[OpenReview]**](https://openreview.net/forum?id=ITw9edRDlD) 
 [**[arXiv]**](https://arxiv.org/abs/2304.15004)
-<!-- [**[NeurIPS Oral]**](https://neurips.cc/virtual/2023/poster/72117) -->
 
 Is Pre-training Truly Better Than Meta-Learning? (2023)
 *<strong>Brando Miranda</strong>, Patrick Yu, Saumya Goyal, Yu-Xiong Wang, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Data-Centric Machine Learning Workshop 2023]**](https://icml.cc/virtual/2023/26924#:~:text=Abstract%3A,outperforms%20standard%20meta%2Dlearning%20algorithms)
 [**[Poster]**](https://docs.google.com/presentation/d/127Kmbi93dZOtGFnTEgyAvAWv4sX-RRPlEZh8p4zuUOw/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13841)
-<!-- [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/117/CameraReady/MAML_vs_PT___NeurIPS__ICML_2023__Draft_2_.pdf) -->
-<!-- [**[Code Coming Soon]**]() -->
 
 Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LLMs are Pre-trained on Formally Diverse Data (2023)
 *<strong>Brando Miranda</strong>\*, Alycia Lee\*, Patrick Yu, and Oluwasanmi Koyejo.*
@@ -173,14 +156,6 @@ Beyond Scale: the Diversity Coefficient as a Data Quality Metric Demonstrates LL
 [**[Poster]**](https://docs.google.com/presentation/d/1QF-S8URtOMWxsdaam_rVCWsotEC3CDsvQoNnboQ1CEI/edit?usp=sharing)
 [**[arXiv]**](https://arxiv.org/abs/2306.13840)
 [**[Code]**](https://github.com/alycialee/beyond-scale-language-data-diversity)
-<!-- [**[ICML PDF]**](https://dmlr.ai/assets/accepted-papers/113/CameraReady/ICML_2023_DMLR_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf) -->
-
-[//]: # ([**[Stanford Data Science Poster]**]&#40;https://docs.google.com/presentation/d/1W4biGEKO7jGOviClEtkqM6sscsth1mK9/edit?usp=sharing&ouid=111989168652781065814&rtpof=true&sd=true&#41;)
-[//]: # ([**[Short 8 page paper]**]&#40;professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__8pg_.pdf&#41;)
-[//]: # ([**[Short 6 page paper]**]&#40;professional_documents/ICML_2023_DeployGenAI_Workshop__Diversity_Coefficient___LLMs__6pg_.pdf&#41;)
-[//]: # (**Generative AI and Foundation Models Workshop 2023 - SAIL &#40;Stanford Artificial Intelligence Laboratory&#41;.**)
-[//]: # ([**2023 Stanford Data Science Conference.**]&#40;https://datascience.stanford.edu/2023-stanford-data-science-conference&#41;)
-[//]: # ([**[SAIL Poster]**]&#40;professional_documents/SAIL_2023_Poster.pdf&#41;)
 
 The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperform MAML and Their Empirical Equivalence (2022)
 *<strong>Brando Miranda</strong>, Patrick Yu, Yu-Xiong Wang, Oluwasanmi Koyejo.*
@@ -190,13 +165,6 @@ The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperfo
 [**[Slides]**](https://docs.google.com/presentation/d/1nY39x8u8j7k6KpOhD6Vqto78YzLOwyR9B24kuoHJijY/edit?usp=sharing)
 [**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
-<!-- [**[Code Coming Soon]**]() -->
-
-[//]: # ([**[PDF]**]&#40;https://openreview.net/forum?id=Z75fwzPdty&#41;)
-[//]: # ([**[15 minute video Contributed Talk, pre-recording]**]&#40;https://youtu.be/3LfTWHIgmvM&#41;)
-[//]: # ([**[Code, contact me for now, coming soon I hope!]**]&#40;&#41;)
-[//]: # (5 min video from neurips)
-[//]: # (https://slideslive.com/38994633/the-curse-of-low-task-diversity-on-the-failure-of-transfer-learning-to-outperform-maml-and-their-empirical-equivalence?ref=search-presentations-low+diversity)
 
 Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective (2021)
 *<strong>Brando Miranda</strong>, Yu-Xiong Wang, Oluwasanmi Koyejo.*
@@ -204,14 +172,10 @@ Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective (2021)
 [**[arXiv]**](https://arxiv.org/abs/2112.13137)
 [**[5 minute video]**](https://youtu.be/WyG6bwGnbGc)
 
-[//]: # ([**[PDF]**]&#40;https://www.ideals.illinois.edu/handle/2142/109139&#41;)
-
 Weight and Batch Normalization implement Classical Generalization Bounds (2019)
 *Tomaso Poggio, Andrzej Banburski, Qianli Liao, <strong>Brando Miranda</strong>, Lorenzo Rosasco, Jack Hidary.*
 [**[International Conference on Machine Learning (ICML) Workshop 2019]**](https://cbmm.mit.edu/publications/weight-and-batch-normalization-implement-classical-generalization-bounds)
-[**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers) <!-- Ok to have pdf link for this one-->
-
-[//]: # ([**[PDF]**]&#40;/professional_documents/ICML2019_paper_53.pdf&#41;)
+[**[PDF]**](https://sites.google.com/view/icml2019-generalization/accepted-papers)
 
 High-performance and scalable on-chip digital Fourier transform spectroscopy (2018)
 *Derek M Kita, <strong>Brando Miranda</strong>, David Favela, David Bono, Jérôme Michon, Hongtao Lin, Tian Gu, Juejun Hu.*
@@ -251,7 +215,6 @@ Below are selected links showcasing media coverage of selected work:
 [**American Scientist (March-April 2024)**: "Is There an AI Metrics Mirage?"](https://www.americanscientist.org/article/an-education-in-irrationality)
 
 [**White House Economic Report of the President (March 2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**](/images/white_house_labor_substitute_huam_rs_bm_sk.png)
-<!-- [**[CopyReport]**](non_personal_documents/white house report schaeffer miranda koyejo cited.pdf) -->
 
 [**Andrew Ng (March 2024)**: Endorsed the emergent-abilities paper as evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
 
@@ -314,7 +277,7 @@ This work was also covered by: [Medium, Hacker News, NeurIPS blog, Reddit, and m
 - [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
 - [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
 - [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
-- [**AlphaDiana**](https://github.com/dhoemenk97-star/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
+- [**AlphaDiana**](https://github.com/tmlr-group/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
 - [**ultimate-utils**](https://github.com/brando90/ultimate-utils): reusable ML and research-engineering utility library for experiment workflows.
 
 ---
