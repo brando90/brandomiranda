@@ -28,16 +28,3 @@ I am, of course, an avid listener of [his podact](https://www.calnewport.com/pod
 
 3. I also love [Dr. Andrew Huberman's podcast](https://hubermanlab.com/) on science
 (and neuroscience!) based protocols for health, wellness, and performance. 
-
-[//]: # (Other related activties that I've pursued that have had an impact on me:)
-
-[//]: # ()
-[//]: # (- I've also done [Accomplishment Coaching]&#40;https://www.accomplishmentcoaching.com/&#41;)
-
-[//]: # (with [Anthony Vargas]&#40;https://www.linkedin.com/in/anthony-vargas/&#41;.)
-
-[//]: # (I found it a valuable experience where I learned to recognize and overcome )
-
-[//]: # (self-imposed limiting beliefs.)
-
-[//]: # (It's focus is on empowerning people and I believe it's an effective framework. )

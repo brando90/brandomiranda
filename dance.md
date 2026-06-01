@@ -31,10 +31,6 @@ I trained under the beautiful
 [World Master course led by the creators of the style
 — Korke & Judith](professional_documents/BRANDO_MIRANDA_DIPLOMA_EXCELLENCE_KYJ_EN.jpg).
 
-[//]: # (- Click [here]&#40;https://illinois.campuslabs.com/engage/organization/facebookuiucsbachata&#41; for the university website.)
-
-[//]: # (We post them in [our youtube page]&#40;https://www.youtube.com/channel/UCcT5YnFyYs_hXm76MGMJ8TQ&#41;. )
-
 # Spreading the Bachata Sensual Love
 
 I've started two university [bachata sensual](https://www.bachatasensual.com/historia-bs/) groups as part of my efforts 

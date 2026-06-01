@@ -30,9 +30,6 @@ In order to be considered, please adhere to the following steps
 4. Obtain a recommendation from a previous mentor/teacher/profess. At the very least an e-mail where someone endorses you. The best recommendation would be a strong letter of recommendation -- ideally from a faculty member. While a brief letter/e-mail helps, a more comprehensive endorsement is preferred. If you've taken [CS 197](https://web.stanford.edu/class/cs197/) at Stanford please mention and if you can have either the instructor of your mentor write a brief e-mail of endorsement.
 5. Confirmation that you read [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html) 
 6. Confirm that you are interested in proceeding and prepare for your 30min coding & research interview. You will be tasked to 1. Go through [the starter task](https://docs.google.com/document/d/1k3d3_AOp-Y22L-GbgHivDqKe9r9LC5nscaIzbm3LWYc/edit#heading=h.rzuft8oj1jyz), 2. Go through the research papers for your project since I will ask you questions that tests your understanding & critical assestment of the papers (e.g., what is their main limitation?) 3. Go through your previous work experience where I want to know what **you** contributed.
-<!-- https://www.amazon.jobs/content/en/our-workplace/leadership-principles -->
-<!-- TODO: add amazon you own it -->
-
 If we are a good match I will invite you to:
 
 7. Take part in an 30 minutes behavioral interview and a 60 minute technical interview. For the behavioral interview we will discuss your contributions to a previous technical project, your background, motivations and potential future projects. For the technical interview you will have 1-2 weeks to complete an AI/ML research engineering task related to your potential project and then present to me your technical solution for 60 minutes -- where we will go through the code, experiment results & runs, and mathematical details.
@@ -49,8 +46,6 @@ To foster a productive and professional working relationship I'd like to outline
 2. Recommended Reading: I encourage prospective mentees and collaborators to review the following resource, which I plan to include on my webpage: [Professor Koyejo's advise for his own prospective students](https://cs.stanford.edu/~sanmi/preparation.html). 
 3. Intrinsic motivation and curiosity are essential for successful research, as they encourage critical thinking and a detective's mindset. In addition, genuine interest serves as a driving force to persevere through challenging moments in research and cultivate enduring motivation.
 4. My Mentoring Style: tackling complex challenges necessitates empowering mentees to work independently and resourcefully. My degree of involvement will be directly proportional to your level of engagement.  
-
-[//]: # (Consequently, I expect you to operate independently and optimize the use of available resources. Meetings will typically be ideally held once every one to two weeks, with a focus on efficient asynchronous communication. It is crucial that you capitalize on the wealth of resources at Stanford. To illustrate the importance of independence, my intervention in debugging your code will be limited and sparing. I do recommend to use GPT-4 and always verify it's output rigorously. )
 
 By adhering to these expectations, we can establish a productive and professional mentoring relationship, marked by independence, initiative, and open communication.
 The pursuit of discovery and the opportunity to contribute knowledge to our field is a profoundly beautiful and rewarding experience. 
@@ -72,10 +67,3 @@ Though, I don't expect you to come with your own project.
 
 If would like a LOR from me, [please read these instructions](https://docs.google.com/document/d/1Z0pFw_f7ZorZzieOfFxEKkEA143rKQjggoIZved76qk/edit) and provide this info at least 3 weeks in advance to the deadline. 
 Best of luck!
-
-[//]: # (Hi everyone,)
-
-[//]: # ()
-[//]: # (The lab I am part of has project openings for research collaborations with master students, taken for class credit. If you are interested e-mail brando9@stanford.edu and rschaef@stanford.edu with your CV & &#40;unofficial&#41; transcript, a small paragraph explaining your career plans/why you're interested in doing research, and also a time with us to schedule a 15-minute interview &#40;ideally in the late afternoon&#41;.)
-
-<!-- 4. Participate in a technical interview, which will consist of a 15-minute discussion about a question related to your project, followed by a 15-minute coding interview based on the style of "Cracking the Coding Interview." Alternatively, you may opt for a week or two week long interview mini-project related to your research project. Including describing your past technical projects and technical contributions. -->
