@@ -4,9 +4,9 @@ title: "Autoregressive Models + LLMs Exponential Error-Compounding Argument — 
 date: 2026-05-26
 ---
 
-*Brando Miranda — May 2026 · ~5 min read*
+*Brando Miranda — May 2026 · ~3 min read*
 
-**TL;DR.** **[In development — not fully finished. Published as a work-in-progress while the experiment runs; the toy + VeriBench implementation lives in the appendix as a TODO.]** The **Exponential Error Compounding Argument** against autoregressive language models says that if each generated token has an independent unrecoverable error probability $e$, then the chance of producing a fully correct length-$T_y$ object is $(1 - e)^{T_y}$ — which goes to zero exponentially fast in $T_y$. This post asks whether real verifier-guided systems actually behave like that. The algebra is fine. The empirical question is whether the **independence + unrecoverable** assumption survives in trained, verifier-guided AR systems. If a recoverable-error model fits the data better than $(1 - e)^{T_y}$, the argument is not false algebraically; it is false as a model of the system we actually run.
+**TL;DR.** The **Exponential Error Compounding Argument** against autoregressive language models says that if each generated token has an independent unrecoverable error probability $e$, then the chance of producing a fully correct length-$T_y$ object is $(1 - e)^{T_y}$ — which goes to zero exponentially fast in $T_y$. This post asks whether real verifier-guided systems actually behave like that. The algebra is fine. The empirical question is whether the **independence + unrecoverable** assumption survives in trained, verifier-guided AR systems. If a recoverable-error model fits the data better than $(1 - e)^{T_y}$, the argument is not false algebraically; it is false as a model of the system we actually run.
 
 ---
 
@@ -41,6 +41,9 @@ That is the hinge. The point of this experiment is not to argue with $(1 - e)^{T
 If a **recoverable-Markov** process — a 2-state chain $\{\text{on-manifold},\ \text{off-manifold}\}$ with a nonzero per-step recovery probability — fits success-vs-length curves better than the geometric model, then the right contrast is *not* AR vs. EBM. It is **AR-without-verifier vs. AR-with-verifier** (recovery changes the exponent). That is a different research program from "abandon autoregressive models."
 
 ---
+
+{% comment %}
+TODO: Publicly hidden until the implementation is complete.
 
 ## Appendix A — TODO: Implementation Plan (toy controls + VeriBench)
 
@@ -100,6 +103,8 @@ Compare by held-out log-likelihood / AIC with bootstrap CIs. The expected outcom
 
 ---
 
+{% endcomment %}
+
 ## Appendix B — Notation
 
 | Symbol | Meaning |
@@ -116,6 +121,9 @@ Compare by held-out log-likelihood / AIC with bootstrap CIs. The expected outcom
 
 ---
 
+{% comment %}
+TODO: Draft decision rule parked until the author review is complete.
+
 ## Appendix C — Draft: What Would Change My Mind (needs author review)
 
 *This section is parked here because the author isn't sure he stands behind the phrasing yet — flagged as a draft decision rule to revisit, not a committed claim.*
@@ -130,23 +138,13 @@ That is the experiment this folder is built to make concrete.
 
 ---
 
-## Source Notes & References
+{% endcomment %}
 
-The experiment plan, probes, and source notes for this post live in the `free-energy` experiment folder:
+## References
 
-- [Experiment folder (`02_ar_pros_cons`)](https://github.com/brando90/free-energy/tree/main/experiments/02_ar_pros_cons)
-- [Claims under test](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/CLAIMS.md) (Claim 6 is the Exponential Error Compounding Argument)
-- [Probe specifications](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/PROBE_SPECS.md) (Probe 06 is the $(1-\varepsilon)^{T_y}$ test)
-- [Living findings log](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/FINDINGS.md)
-- [Handwritten note: the Exponential Error Compounding Argument](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/assets/handwritten_ar_pros_cons_lecun_argument.md) (transcription + image)
-- [Personal notes & slides on the Exponential Error Compounding Argument (Google Doc)](https://docs.google.com/document/d/1LUfRZdK0pPhMVQTHqjy_DXdAKQWQO67fR142NSimuqg/edit?usp=sharing) — slides and personal notes generated with Claude from the handwritten page above.
-- Sibling blog draft: [*Autoregressive models: pros, cons, and where EBMs fit*](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/blog/2026-05-24-autoregressive-models-pros-cons.md)
-
-Primary technical references:
-
-- [Yann LeCun, *A Path Towards Autonomous Machine Intelligence* (2022)](https://openreview.net/pdf?id=BZ5a1r-kVsf) — the position paper that articulates the $(1 - \varepsilon)^{T_y}$ critique of autoregressive generation and motivates EBM/JEPA alternatives.
-- [LeCun, Chopra, Hadsell, Ranzato, Huang, *A Tutorial on Energy-Based Learning* (2006)](https://yann.lecun.org/exdb/publis/pdf/lecun-06.pdf) — the canonical EBM reference, including the partition-function machinery the alternative model has to deal with.
-- [Yang et al., *Breaking the Softmax Bottleneck* (2017)](https://arxiv.org/abs/1711.03953) — relevant to the separate but related question of whether the AR output head, not the factorization, is what limits expressiveness.
+- [Yann LeCun. *A Path Towards Autonomous Machine Intelligence*. OpenReview, 2022.](https://openreview.net/pdf?id=BZ5a1r-kVsf)
+- [Yann LeCun, Sumit Chopra, Raia Hadsell, Marc'Aurelio Ranzato, and Fu Jie Huang. *A Tutorial on Energy-Based Learning*. In *Predicting Structured Data*. MIT Press, 2006.](https://yann.lecun.org/exdb/publis/pdf/lecun-06.pdf)
+- [Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, and William W. Cohen. *Breaking the Softmax Bottleneck: A High-Rank RNN Language Model*. arXiv:1711.03953, 2017.](https://arxiv.org/abs/1711.03953)
 
 ---
 
