@@ -42,69 +42,6 @@ If a **recoverable-Markov** process — a 2-state chain $\{\text{on-manifold},\ 
 
 ---
 
-{% comment %}
-TODO: Publicly hidden until the implementation is complete.
-
-## Appendix A — TODO: Implementation Plan (toy controls + VeriBench)
-
-*This appendix records the staged plan the experiment will execute. It is **not yet done** — treat each stage as a TODO. Probe 06 in [`PROBE_SPECS.md`](https://github.com/brando90/free-energy/blob/main/experiments/02_ar_pros_cons/PROBE_SPECS.md) is the canonical spec; this is the blog-side mirror.*
-
-### Stage 1 (TODO): Toy Controls
-
-The toy script makes the assumptions visible:
-
-```bash
-cd experiments/02_ar_pros_cons
-python toy/toy_error_process.py
-```
-
-It compares three processes:
-
-| Process | What it tests |
-|---|---|
-| blind AR rollout | the exact premise: independent unrecoverable errors |
-| verifier resampling | a checker rejects bad local moves before they survive |
-| recoverable process | the trajectory can leave and return to a valid state |
-
-The blind rollout should match $(1 - e)^{T_y}$. If it does not, the toy is broken. The verifier and recoverable versions should deviate from the geometric curve. That deviation is the entire point.
-
-### Stage 2 (TODO): VeriBench Split
-
-The real-data setup starts from the local VeriBench checkout:
-
-```bash
-python -m data.setup --smoke
-python -m data.setup --include-generated-agents
-```
-
-This writes deterministic train/val/test JSONL manifests under:
-
-```text
-data/splits/
-```
-
-Splits are task-level, not file-level, so generated variants of the same task do not leak across train, validation, and test. Each row records the Lean path, family, theorem count, `sorry` count, a tactic-count proxy, and source metadata.
-
-### Stage 3 (TODO): The Key Test
-
-For VeriBench, the important outcome is not raw token mismatch. It is verifier survival:
-
-$$
-P(\text{a consequential error survives checking, recovery, and resampling}).
-$$
-
-Probe 06 fits three models to success-vs-length curves:
-
-1. geometric $(1 - e)^{T_y}$;
-2. constant pass probability $p$;
-3. recoverable Markov process with a nonzero recovery probability.
-
-Compare by held-out log-likelihood / AIC with bootstrap CIs. The expected outcome is that the recoverable model beats the geometric model in the verifier setting — that is the "real or fiction" verdict for the Exponential Error Compounding Argument as applied to verifier-guided AR systems.
-
----
-
-{% endcomment %}
-
 ## Appendix B — Notation
 
 | Symbol | Meaning |
@@ -120,25 +57,6 @@ Compare by held-out log-likelihood / AIC with bootstrap CIs. The expected outcom
 | verifier | A hard checker (e.g., the Lean type-checker) that returns *valid / invalid* on a generated step or object, enabling recovery via backtrack / resample. |
 
 ---
-
-{% comment %}
-TODO: Draft decision rule parked until the author review is complete.
-
-## Appendix C — Draft: What Would Change My Mind (needs author review)
-
-*This section is parked here because the author isn't sure he stands behind the phrasing yet — flagged as a draft decision rule to revisit, not a committed claim.*
-
-If verifier-guided pass probability decays geometrically with proof/program length even after recovery, then the critique bites hard. It would mean the feedback loop is not changing the effective error process enough — and we owe a serious rethink of how recovery is structured.
-
-If the geometric model only fits blind sampling while the recoverable model fits verifier-guided systems, then the core research question changes:
-
-> *How do we design feedback loops that change the exponent?*
-
-That is the experiment this folder is built to make concrete.
-
----
-
-{% endcomment %}
 
 ## References
 
