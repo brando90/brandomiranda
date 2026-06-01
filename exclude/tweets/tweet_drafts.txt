@@ -7,8 +7,6 @@ After posting one, move its exact text to already_posted_tweets.txt and add the 
 
 🚨 New on my blog: What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research
 
-➡️ https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
-
 The question isn't just "which model is best?"
 
 It's: what process makes model mistakes cheap to catch?
@@ -19,18 +17,19 @@ It's: what process makes model mistakes cheap to catch?
 
 This became agents-config: https://github.com/brando90/agents-config
 
+➡️ https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
+
+Stay tuned. I want to write my thoughts from first principles on why this might be an intrinsic necessity in autoregressive models, and why alternatives to LLMs may be worth thinking about.
+
+PS: I always believed in scaling laws/bitter lesson. Can write a post about this too later why it's not contradictory 😉
+
 Credit where it's due:
 
 - @yegordb for the modular agent-docs insight. It was his idea tbh.
 - @kirillacharya for the convos + amazing feedback.
-- @garrytan for a nice related post on self-improving skill-files. I read it after mine; happy to share my thoughts later :)
+- @garrytan for a nice related post on self-improving skill-files. I read it after mine; happy to share my thoughts later :) https://x.com/garrytan/status/2042925773300908103
 
-Stay tuned. I want to write my thoughts from first principles on why this might be an intrinsic necessity in autoregressive models, and why alternatives to LLMs may be worth thinking about.
 
-PS: I always believed in scaling laws. Can write a post about this too later 😉
-
-Companion RT / quote-tweet target:
-https://x.com/garrytan/status/2042925773300908103
 
 
 -------------------------------------------------------------------------------

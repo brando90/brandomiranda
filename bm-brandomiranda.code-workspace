@@ -16,7 +16,10 @@
 			"path": "../cert-judge"
 		},
 		{
-			"path": "."
+			"path": "../stanford-lean-website"
+		},
+		{
+			"path": "../lean-ebm"
 		}
 	]
 }
