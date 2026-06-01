@@ -6,7 +6,7 @@ date: 2026-04-16
 
 *Brando Miranda — April 2026 · ~6 min read*
 
-**TL;DR.** **[In development — work in progress; published early while I refine it.]** The hardest part of research is choosing what to attack next when everything is uncertain. **Vectoring** (Michael Bernstein's term) is the answer: pick the single dimension where, if you are wrong, the whole project falls apart — usually your **main hypothesis**, the central assumption behind the objective you actually care about, which you don't yet know is true — and reduce that uncertainty first with the cheapest experiment that actually answers it. Split the work into **core** (the central assumption you test now) and **periphery** (scaffold it with the laziest thing that works). Worked examples: the *Mirage* emergent-abilities paper and a study of internet trolling. Vector first, then velocity.
+**TL;DR.** The hardest part of research is choosing what to attack next when everything is uncertain. **Vectoring** (Michael Bernstein's term) is the answer: pick the single dimension where, if you are wrong, the whole project falls apart — usually your **main hypothesis**, the central assumption behind the objective you actually care about, which you don't yet know is true — and reduce that uncertainty first with the cheapest experiment that actually answers it. Split the work into **core** (the central assumption you test now) and **periphery** (scaffold it with the laziest thing that works). Worked examples: the *Mirage* emergent-abilities paper and a study of internet trolling. Vector first, then velocity.
 
 ---
 

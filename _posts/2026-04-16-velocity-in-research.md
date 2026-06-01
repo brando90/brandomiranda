@@ -6,7 +6,7 @@ date: 2026-04-16
 
 *Brando Miranda — April 2026 · ~5 min read*
 
-**TL;DR.** **[In development — work in progress; published early while I refine it.]** Research feels slow because we grade ourselves on whether experiments *worked* — something largely outside our control. The better metric is **velocity**: the rate at which you reduce uncertainty in a chosen direction. Vectoring picks the riskiest question; velocity answers it as cheaply as possible. Be ruthless about core versus periphery (fake, mock, or skip everything inessential), and lean on $v = d/t$ — the fastest way to go faster is almost never doing *more*, it's doing less, faster, and ignoring the rest.
+**TL;DR.** Research feels slow because we grade ourselves on whether experiments *worked* — something largely outside our control. The better metric is **velocity**: the rate at which you reduce uncertainty in a chosen direction. Vectoring picks the riskiest question; velocity answers it as cheaply as possible. Be ruthless about core versus periphery (fake, mock, or skip everything inessential), and lean on $v = d/t$ — the fastest way to go faster is almost never doing *more*, it's doing less, faster, and ignoring the rest.
 
 ---
 
