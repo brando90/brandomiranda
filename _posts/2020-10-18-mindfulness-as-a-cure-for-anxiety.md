@@ -48,10 +48,6 @@ Dr. Brewer founded MindSciences to move his discoveries of clinical evidence beh
  
 He is the author of The Craving Mind: from cigarettes to smartphones to love, why we get hooked and how we can break bad habits (New Haven: Yale University Press, 2017). Follow him on twitter @judbrewer.
 
-<!---
-to embed videos
-http://embedyoutube.org/
--->
 [![](http://img.youtube.com/vi/aVQCQecIg-I/0.jpg)](http://www.youtube.com/watch?v=aVQCQecIg-I "jud")
 
 I also uploaded the talk to [my personal youtube channel.](https://youtu.be/eBsPbrwCyHA)

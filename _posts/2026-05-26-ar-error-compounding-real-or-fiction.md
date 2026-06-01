@@ -42,7 +42,7 @@ If a **recoverable-Markov** process — a 2-state chain $\{\text{on-manifold},\ 
 
 ---
 
-## Appendix B — Notation
+## Appendix A — Notation
 
 | Symbol | Meaning |
 |---|---|

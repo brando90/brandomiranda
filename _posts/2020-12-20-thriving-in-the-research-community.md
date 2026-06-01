@@ -47,10 +47,6 @@ Derek has published dozens of papers and several patents, and his work has been 
 CVPR best paper award, Intel Early Career Faculty award, Sloan Fellowship, and PAMI Significant Young Researcher award. Derek Hoiem is also co-founder and CTO of Reconstruct, 
 which visually documents construction sites, matching images to plans and analyzing productivity and risk for delay.
 
-<!---
-to embed videos
-http://embedyoutube.org/
--->
 [![](http://img.youtube.com/vi/kosDOu6SPuk/0.jpg)](http://www.youtube.com/watch?v=kosDOu6SPuk)
 
 I also uploaded the talk to [my personal youtube channel.](https://www.youtube.com/watch?v=c2TZ-t3O_ho&t=1s)
