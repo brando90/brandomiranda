@@ -3,8 +3,6 @@ layout: page
 title: Blog
 ---
 
-Posts are grouped by topic; within each section, newest first.
-
 {% assign ml_posts = site.posts | where: "section", "ml" %}
 {% assign music_posts = site.posts | where: "section", "music" %}
 {% assign meta_posts = site.posts | where: "section", "meta-research" %}
