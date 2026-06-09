@@ -56,8 +56,6 @@ VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean
 [**[Blog]**](https://brando90.github.io/veribench/blog/veribench-launch/)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
 
-VeriBench uses Harbor for agentic, containerized evaluation: agents run inside isolated Docker tasks and are evaluated against held-out gold artifacts, rather than being given access to the solutions. The [Colab tutorial](https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing) shows how to run the public `veribench@1.1` release.
-
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
 *Zhanke Zhou, Xiangyu Lu, Chentao Cao, <strong>Brando Miranda</strong>, Tongliang Liu, Bo Han, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) Main Track 2026]**](https://icml.cc/Conferences/2026)
