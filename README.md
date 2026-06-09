@@ -156,6 +156,18 @@ bundle exec jekyll post "post name"
 
 now the file is created automatically. TODO: add how discuss works.
 
+# Adding a draft (unpublished post)
+
+Unpublished blog posts live in `_drafts/` — NOT in `exclude/` (that folder is for non-blog local-only stuff like cs197 materials and tweet drafts). Name the file like a post, `YYYY-MM-DD-slug.md`.
+
+Preview drafts locally as if they were published:
+
+```
+bundle exec jekyll serve --drafts
+```
+
+To publish a draft: move the file from `_drafts/` to `_posts/`, update the filename date and the frontmatter `date:` to the actual publish date, then commit & push. Both `_drafts/` and `exclude/` are in `_config.yml`'s `exclude:` list so neither ever appears on the live site.
+
 # Adding a seperate standalone page
 
 To create a standlone page with jekyll run the following command:

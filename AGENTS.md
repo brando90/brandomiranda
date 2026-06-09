@@ -71,6 +71,10 @@ Rules:
 
 See `CLAUDE.md` § "Blog post header format (HARD)" for the canonical version.
 
+## Blog drafts live in `_drafts/` (HARD)
+
+Unpublished blog posts go in `_drafts/` (filename `YYYY-MM-DD-slug.md`) — never in `exclude/` or `experiments/`. `exclude/` is for non-blog local-only material (cs197, tweet drafts, scratch notes). Preview drafts with `bundle exec jekyll serve --drafts`. Publishing = move the file to `_posts/`, update filename + frontmatter `date:` to the actual publish date, normalize the header (`python3 scripts/normalize_post_headers.py`), push to `main`.
+
 ## Tweet draft workflow
 
 Blog-post tweet drafts live in `exclude/tweets/` as plain `.txt` files, not `.md`, so emojis and copy-paste-ready X/Twitter formatting stay literal. Keep unpublished drafts in `exclude/tweets/tweet_drafts.txt` with the next tweet at the top. When a tweet is published, move the exact posted text to `exclude/tweets/already_posted_tweets.txt` and add the X/Twitter status URL. Do not create tweet drafts under `_drafts/`, `experiments/`, or blog-post-specific folders unless explicitly asked.

@@ -150,6 +150,15 @@ Highlights from that prompt that are easy to forget: every honor gets a 1-line p
 
 The repo uses `main` only — `master` was retired 2026-04-22. Push CV / website changes directly to `main`.
 
+### Blog drafts live in `_drafts/` (HARD)
+
+Unpublished blog posts go in **`_drafts/`** — never in `exclude/`, `experiments/`, or anywhere else. `exclude/` is for *non-blog* local-only material (cs197 course files, tweet drafts, scratch notes); a draft blog post placed there breaks the workflow below.
+
+- Filename: `YYYY-MM-DD-slug.md`, same as `_posts/` (date = expected/working publish date; update it at publish time).
+- Preview drafts locally: `bundle exec jekyll serve --drafts` (renders drafts as if published, newest-dated first).
+- **Publishing = moving the file** from `_drafts/` to `_posts/`: update the filename date and frontmatter `date:` to the actual publish date, normalize the header per "Blog post header format" below (run `python3 scripts/normalize_post_headers.py`), and push to `main`.
+- Both `_drafts/` and `exclude/` are in `_config.yml`'s `exclude:` list, so neither is ever published — the split is workflow, not privacy: blog drafts in `_drafts/` so Jekyll can preview them and publishing stays a one-file move.
+
 ### Tweet draft workflow
 
 Blog-post tweet drafts live in `exclude/tweets/` and MUST be plain `.txt` files, not `.md`, so emojis and copy-paste-ready X/Twitter formatting stay literal and the files remain obviously local-only.
