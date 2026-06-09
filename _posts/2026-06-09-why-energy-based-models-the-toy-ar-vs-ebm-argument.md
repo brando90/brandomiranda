@@ -107,13 +107,13 @@ To run the fixed-resources comparison we have to *train* the EBM, and the obviou
 | Symbol | Meaning |
 | --- | --- |
 | $X$ | The vocabulary (alphabet) $\{x_1, \dots, x_V\}$; $V = \lvert X \rvert$. |
-| $x$, $x^{<t>}$ | A sequence $x \in X^{T_x}$ and its token at position $t$. |
+| $x$, $$x^{<t>}$$ | A sequence $x \in X^{T_x}$ and its token at position $t$. |
 | $T_x$ | Length of the modeled object $x$ (unconditional setting). In the conditional setting of [the error-compounding post](https://cs.stanford.edu/people/brando9/2026/05/26/ar-error-compounding-real-or-fiction.html), the exponent variable is the *output* length $T_y$; the prompt length never enters the exponent. |
 | $\varepsilon$ | Per-step unrecoverable error probability. (Written $e$ in the earlier post; renamed here to avoid collision with the exponential base.) |
 | $f_\theta(v; \cdot)$ | The AR model's logit for token $v$ given the context. |
 | $E_\theta$ | Energy function $X^{T_x} \to \mathbb{R}$; $-E_\theta(x)$ is an unnormalized confidence score for the whole sequence. |
 | $Z_\theta$ | Partition function. AR: $\sum_{v \in X} e^{f_\theta(v)}$ per step ($V$ terms). EBM: $\sum_{\tilde x \in X^{T_x}} e^{-E_\theta(\tilde x)}$ ($V^{T_x}$ terms). |
-| AR | Autoregressive factorization $p(x) = \prod_t p(x^{<t>} \mid x^{<1:t-1>})$. |
+| AR | Autoregressive factorization $$p(x) = \prod_t p(x^{<t>} \mid x^{<1:t-1>})$$. |
 | EBM | Energy-based model: scores configurations with $E_\theta(x)$; probabilities only via $e^{-E_\theta}/Z_\theta$. |
 
 ---

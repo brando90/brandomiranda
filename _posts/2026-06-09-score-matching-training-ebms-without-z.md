@@ -143,7 +143,7 @@ Song & Kingma's tutorial treats this trace as *the* computational bottleneck of 
 | $Z_\theta$ | Partition function $\sum_{\tilde x} e^{-E_\theta(\tilde x)}$ — constant in $x$, which is the whole trick. |
 | $s(x)$ | The **score** of a density: $s(x) := \nabla_x \log p(x)$. Model: $s_\theta = -\nabla_x E_\theta$. Data: $s^* = \nabla_x \log p^*$. Note: gradient w.r.t. the *input* $x$, not the parameters $\theta$. |
 | $D^{F}_{p^*}(p^* \Vert p_\theta)$ | Fisher divergence; the subscript names the distribution the expectation is taken under (it is not symmetric). |
-| $\theta^{<t>}$ | Parameters at optimization step $t$. |
+| $$\theta^{<t>}$$ | Parameters at optimization step $t$. |
 | $\eta$ | Step size. |
 | $F$, $H$ | The update-rule abstraction: $F$ transforms the raw gradient (Adam moments, Shampoo/Muon preconditioning); $H$ folds the step into the iterate (momentum, weight decay, schedules). SGD: $F=\mathrm{id}$, $H=\mathrm{add}$. |
 

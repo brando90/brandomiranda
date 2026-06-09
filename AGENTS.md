@@ -56,6 +56,8 @@ Every `_posts/*.md` post MUST start (immediately after frontmatter) with this ca
 ```
 *Brando Miranda — Month YYYY · ~X min read*
 
+**Warning: this post is a draft — content may change and errors may remain.**   ← optional, draft posts only
+
 **TL;DR.** [single paragraph]
 
 ---
@@ -65,6 +67,7 @@ Every `_posts/*.md` post MUST start (immediately after frontmatter) with this ca
 
 Rules:
 - Byline is one **plain-markdown italic** line, left-aligned. No `<p style="text-align: right;">`. Month is full name (`April`, not `Apr`); read time is `~X min read` (en-dash for ranges, e.g., `~3–4 min read`).
+- Draft warning (optional): a still-in-development post carries the bold line `**Warning: this post is a draft — content may change and errors may remain.**` between the byline and the TL;DR — never below the `---` / in the body. Remove when final; the normalizer relocates misplaced warnings automatically.
 - TL;DR paragraph starts with literal `**TL;DR.**` (period inside the bold). If no TL;DR exists, label the first body paragraph rather than omit.
 - Horizontal rule `---` on its own line (blank line above + below) separates TL;DR from body — non-negotiable.
 - No redundant `# Title` H1 at the top of body (Jekyll already renders the frontmatter `title`).
@@ -82,5 +85,9 @@ Blog-post tweet drafts live in `exclude/tweets/` as plain `.txt` files, not `.md
 ## GitHub Pages ↔ Stanford mirror sync (HARD)
 
 Every push to `main` rebuilds GitHub Pages automatically, but the Stanford mirror (https://cs.stanford.edu/people/brando9/) only updates when `scripts/deploy_stanford_cs.sh` is run. The two must **always** be in sync — no exceptions: after every push, run the deploy script and verify the changed URLs return 200 on both domains. See `CLAUDE.md` § "GitHub Pages ↔ Stanford mirror sync (HARD)".
+
+## Math rendering (HARD)
+
+MathJax 3 renders all math client-side; `_config.yml` MUST keep `kramdown: math_engine: mathjax` (GitHub Pages forces it anyway — any other value silently diverges local/mirror builds from the live site). Never put `<`+letter inside single-dollar inline math (`$x^{<t>}$` → raw HTML tag, broken equation on both deploys); use kramdown's inline form `$$x^{<t>}$$` instead. After any math edit: build, scan output for raw-tag leaks / leftover `$$`, and verify rendered equations on BOTH domains. See `CLAUDE.md` § "Math rendering (HARD)".
 
 Branch model: `main` only.

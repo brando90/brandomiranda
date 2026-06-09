@@ -193,6 +193,14 @@ Site `baseurl: /brandomiranda/`. Use either form:
 
 **Never** write `{{ site.baseurl }}/path` — that produces a broken `//path` on rendered pages. The build excludes `experiments/`, `_drafts/`, `exclude/`, and `README.md` from publishing.
 
+### Math rendering (HARD)
+
+All math renders client-side with MathJax 3 (`_includes/custom-head.html`): `$...$` / `\(...\)` inline, `$$...$$` / `\[...\]` display. Equations must always render properly — on **both** deploys.
+
+- `_config.yml` MUST keep `kramdown: math_engine: mathjax`. GitHub Pages force-overrides the value to `mathjax` regardless, so anything else only changes local / Stanford-mirror builds and silently diverges them from the live site. (With `~` (nil), raw TeX like `x^{<t>}` reached the browser unescaped, got parsed as an HTML tag, and broke every equation on the mirror — observed 2026-06-09.)
+- **Never put `<` immediately followed by a letter inside single-dollar inline math** (`$x^{<t>}$`). kramdown treats single-`$` spans as ordinary text, so the `<t>` becomes a raw HTML tag and visibly breaks the equation on BOTH deploys. Use kramdown's inline math form instead: `$$x^{<t>}$$` inside a sentence or table cell renders inline (kramdown emits HTML-escaped `\(...\)`). `<` before a digit or space is safe; display `$$...$$` blocks on their own lines are always safe.
+- After editing or adding any page with math, before reporting done: build locally (`scripts/build_stanford_cs.sh` or `jekyll build`) and scan the output for raw TeX leaking as HTML — no unknown tags, no leftover literal `$$` (e.g. `grep -o '<t[>+]' _site/path.html` must return nothing). After deploying, verify the rendered equations on BOTH domains.
+
 ### Blog post header format (HARD)
 
 Every published post in `_posts/` MUST have this canonical header structure immediately after the Jekyll frontmatter, in this exact order — no exceptions:
@@ -206,6 +214,8 @@ date: YYYY-MM-DD
 
 *Brando Miranda — Month YYYY · ~X min read*
 
+**Warning: this post is a draft — content may change and errors may remain.**   ← optional, draft posts only
+
 **TL;DR.** [single-paragraph summary, ends with a period]
 
 ---
@@ -215,6 +225,7 @@ date: YYYY-MM-DD
 
 Specifics:
 - **Byline line** is one italic line: `*Brando Miranda — Month YYYY · ~X min read*` — left-aligned plain markdown italic (never right-aligned via `<p style="text-align: right;">`; never split across two lines). Month is full name (`April`, not `Apr`). Read time is `~X min read` (`~` prefix, `min` not `minute`); ranges use en dash (`~3–4 min read`).
+- **Draft warning (optional)** — a published post that is still in development carries the bold standalone line `**Warning: this post is a draft — content may change and errors may remain.**` in exactly one place: between the byline and the TL;DR. Never below the `---` rule or anywhere in the body. Remove the line when the post is final. The normalizer relocates a misplaced warning to this slot automatically.
 - **TL;DR paragraph** starts with literal `**TL;DR.**` (note the period inside the bold). Exactly one paragraph (one blank line on each side). If a post genuinely has no TL;DR yet, label the first body paragraph with `**TL;DR.**` rather than omitting the line.
 - **Horizontal rule (`---`)** on its own line separates the TL;DR from the body. This is non-negotiable — without it the TL;DR visually bleeds into the body. The rule comes after a blank line and is followed by a blank line.
 - **No redundant H1.** Jekyll renders the frontmatter `title:` as the page H1. Do not repeat the title as a `# Title` heading at the top of the body.
