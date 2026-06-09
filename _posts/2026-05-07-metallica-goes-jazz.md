@@ -2,6 +2,7 @@
 layout: post
 title: "Metallica Goes Jazz: A 2010 High School Arrangement, Reanimated by AI"
 date: 2026-05-07
+section: music
 ---
 
 *Brando Miranda — May 2026 · ~6 min read*

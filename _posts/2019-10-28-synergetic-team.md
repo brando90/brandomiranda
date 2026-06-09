@@ -2,6 +2,7 @@
 layout: post
 title: "Building Synergetic Teams for Research and Startups"
 date: 2019-10-28 14:23 -0500
+section: meta-research
 ---
 
 *Brando Miranda — October 2019 · ~3 min read*

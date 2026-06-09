@@ -2,6 +2,7 @@
 layout: post
 title: "What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research"
 date: 2026-04-13
+section: agentic-coding
 ---
 
 *Brando Miranda — April 2026 · ~7 min read*

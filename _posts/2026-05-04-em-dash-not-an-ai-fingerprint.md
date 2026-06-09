@@ -2,6 +2,7 @@
 layout: post
 title: "The Em Dash Is Only an AI Fingerprint If You Didn't Already Use It ;)"
 date: 2026-05-04
+section: agentic-coding
 ---
 
 *Brando Miranda — May 2026 · ~1 min read*

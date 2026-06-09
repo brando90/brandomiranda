@@ -2,6 +2,7 @@
 layout: post
 title: "Autoregressive Models + LLMs Exponential Error-Compounding Argument — Is It Real or Fiction?"
 date: 2026-05-26
+section: ml
 ---
 
 *Brando Miranda — May 2026 · ~3 min read*

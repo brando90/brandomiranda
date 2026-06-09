@@ -2,6 +2,7 @@
 layout: post
 title: "Mindfulness as a Cure for Anxiety"
 date: 2020-10-18 21:09 -0500
+section: meta-research
 ---
 
 *Brando Miranda — October 2020 · ~3 min read*

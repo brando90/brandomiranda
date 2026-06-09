@@ -2,6 +2,7 @@
 layout: post
 title: "Thriving in the Research Community"
 date: 2020-12-20 22:12 -0500
+section: meta-research
 ---
 
 *Brando Miranda — December 2020 · ~3 min read*

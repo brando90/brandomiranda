@@ -2,15 +2,16 @@
 layout: post
 title: "Score Matching: Training EBMs Without Ever Computing Z"
 date: 2026-06-09
+section: ml
 ---
 
 *Brando Miranda — June 2026 · ~8 min read*
 
+**Warning: this post is a draft — content may change and errors may remain.**
+
 **TL;DR.** An EBM defines $p_\theta(x) = e^{-E_\theta(x)}/Z_\theta$, where $Z_\theta$ is intractable. But $Z_\theta$ is a sum over *all* configurations — it does not depend on the particular $x$ you evaluate at — so differentiating $\log p_\theta$ with respect to the **input** kills it: $\nabla_x \log p_\theta(x) = -\nabla_x E_\theta(x)$. **Score matching** turns this observation into a training principle: match the model's score $\nabla_x \log p_\theta$ to the data's score $\nabla_x \log p^*$. Because normalization removes exactly one degree of freedom, matching scores forces matching *distributions* — $Z$ never appears. The resulting loss is the **Fisher divergence** $D^{F}_{p^*}(p^* \Vert p_\theta)$, training is (any) gradient descent on it, and every choice in the update rule — SGD vs. AdamW vs. Muon vs. Shampoo — is an open experimental question for EBMs. One thing gets swept under the rug: the objective contains the *data's* score, which we don't have. Fixing that introduces a Hessian-trace term whose alleged intractability I'll interrogate in the next post.
 
 ---
-
-**Warning: this post is a draft — content may change and errors may remain.**
 
 ## The problem: $Z$ is the enemy
 

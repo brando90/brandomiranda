@@ -2,6 +2,7 @@
 layout: post
 title: "Embrace AI or Be Left Behind — By People, Not Machines"
 date: 2026-04-27
+section: agentic-coding
 ---
 
 *Brando Miranda — April 2026 · ~6 min read*

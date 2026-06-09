@@ -2,6 +2,7 @@
 layout: post
 title: "Two TLDRs Are Better Than One: A Small Prompt-Design Fix That Matters More Than It Looks"
 date: 2026-04-16
+section: agentic-coding
 ---
 
 *Brando Miranda — April 2026 · ~5 min read*

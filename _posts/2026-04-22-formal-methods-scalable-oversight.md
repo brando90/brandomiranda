@@ -2,6 +2,7 @@
 layout: post
 title: "Asking the Right Question: Formal Methods as Scalable Oversight"
 date: 2026-04-22
+section: ml
 ---
 
 *Brando Miranda — April 2026 · ~3–4 min read*

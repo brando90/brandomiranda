@@ -2,6 +2,7 @@
 layout: post
 title: "Uniform Stability in Machine Learning Theory"
 date: 2019-10-31 21:09 -0500
+section: ml
 ---
 
 *Brando Miranda — October 2019 · ~1 min read*

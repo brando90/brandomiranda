@@ -2,15 +2,16 @@
 layout: post
 title: "Why Energy-Based Models? The Toy AR-vs-EBM Argument"
 date: 2026-06-09
+section: ml
 ---
 
 *Brando Miranda — June 2026 · ~6 min read*
 
+**Warning: this post is a draft — content may change and errors may remain.**
+
 **TL;DR.** Autoregressive models and sequence-level energy-based models owe the *same* debt — the partition function $Z$ — on different payment plans. AR pays $Z$ in $T_x$ installments of $O(V)$ each (one softmax per token); a sequence-level EBM owes one balloon payment of $O(V^{T_x})$ (a single normalization over *all* sequences). The installment plan is exactly what makes AR cheap, and the per-token factorization it requires is exactly what the error-compounding critique attacks. This post is the toy version of that tradeoff I use to explain why EBMs exist at all — plus my hypothesis for why AR works in practice anyway (frontier labs buy the error rate down with scale), and what that implies an academic lab should do instead.
 
 ---
-
-**Warning: this post is a draft — content may change and errors may remain.**
 
 ## The autoregressive contract
 
@@ -18,7 +19,7 @@ An autoregressive (AR) model commits to the factorization
 
 $$p_\theta(x) \;=\; \prod_{t=1}^{T_x} p_\theta\!\left(x^{<t>} \,\middle|\, x^{<1:t-1>}\right),$$
 
-where $x = (x^{<1>}, \dots, x^{<T_x>})$ is a sequence over a vocabulary $X = \{x_1, \dots, x_V\}$ with $|X| = V$. Each conditional is a softmax:
+where $$x = (x^{<1>}, \dots, x^{<T_x>})$$ is a sequence over a vocabulary $X = \{x_1, \dots, x_V\}$ with $|X| = V$. Each conditional is a softmax:
 
 $$p_\theta\!\left(x^{<t>} = v \,\middle|\, x^{<1:t-1>}\right) \;=\; \frac{e^{f_\theta(v;\, x^{<1:t-1>})}}{Z_\theta\!\left(x^{<1:t-1>}\right)},
 \qquad
