@@ -6,7 +6,14 @@ cd "$repo_root"
 
 export JEKYLL_ENV="${JEKYLL_ENV:-production}"
 
-if bundle exec jekyll -v >/dev/null 2>&1; then
+# Homebrew-ruby standalone jekyll (gems: jekyll, minima, jekyll-feed).
+# JEKYLL_NO_BUNDLER_REQUIRE skips the repo Gemfile — the github-pages bundle is
+# not installed locally, and the legacy ~/.gem/ruby/2.6.0 shims are dead (their
+# shebang points at Homebrew ruby, which has moved past the gems they were built for).
+brew_ruby_jekyll="$(/usr/local/opt/ruby/bin/gem environment gemdir 2>/dev/null)/bin/jekyll"
+if [[ -x "$brew_ruby_jekyll" ]]; then
+  JEKYLL_NO_BUNDLER_REQUIRE=true "$brew_ruby_jekyll" build --config _config.yml,_config_stanford_cs.yml
+elif bundle exec jekyll -v >/dev/null 2>&1; then
   bundle exec jekyll build --config _config.yml,_config_stanford_cs.yml
 elif command -v jekyll >/dev/null 2>&1; then
   jekyll build --config _config.yml,_config_stanford_cs.yml

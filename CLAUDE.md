@@ -150,6 +150,23 @@ Highlights from that prompt that are easy to forget: every honor gets a 1-line p
 
 The repo uses `main` only — `master` was retired 2026-04-22. Push CV / website changes directly to `main`.
 
+### GitHub Pages ↔ Stanford mirror sync (HARD)
+
+The website deploys to TWO targets that must **always** be in sync — no exceptions:
+
+1. **GitHub Pages** — https://brando90.github.io/brandomiranda/ — rebuilds automatically on every push to `main`.
+2. **Stanford CS mirror** — https://cs.stanford.edu/people/brando9/ — static AFS copy; does **NOT** update on push.
+
+After **every** push to `main`, immediately run `scripts/deploy_stanford_cs.sh` (Jekyll build with the `_config_stanford_cs.yml` baseurl overlay, then rsync of `_site/` to `brando9@xenon.stanford.edu:~/www/`). Then verify the changed URLs return 200 on **both** domains before reporting the change live — a push without the mirror deploy is an incomplete task.
+
+If the working tree has unrelated in-flight edits (e.g., another agent's), deploy from a clean worktree of the pushed commit so the mirror matches exactly what Pages serves:
+
+```bash
+git worktree add --detach /tmp/bm-deploy origin/main
+bash /tmp/bm-deploy/scripts/deploy_stanford_cs.sh
+git worktree remove --force /tmp/bm-deploy
+```
+
 ### Blog drafts live in `_drafts/` (HARD)
 
 Unpublished blog posts go in **`_drafts/`** — never in `exclude/`, `experiments/`, or anywhere else. `exclude/` is for *non-blog* local-only material (cs197 course files, tweet drafts, scratch notes); a draft blog post placed there breaks the workflow below.

@@ -79,4 +79,8 @@ Unpublished blog posts go in `_drafts/` (filename `YYYY-MM-DD-slug.md`) — neve
 
 Blog-post tweet drafts live in `exclude/tweets/` as plain `.txt` files, not `.md`, so emojis and copy-paste-ready X/Twitter formatting stay literal. Keep unpublished drafts in `exclude/tweets/tweet_drafts.txt` with the next tweet at the top. When a tweet is published, move the exact posted text to `exclude/tweets/already_posted_tweets.txt` and add the X/Twitter status URL. Do not create tweet drafts under `_drafts/`, `experiments/`, or blog-post-specific folders unless explicitly asked.
 
+## GitHub Pages ↔ Stanford mirror sync (HARD)
+
+Every push to `main` rebuilds GitHub Pages automatically, but the Stanford mirror (https://cs.stanford.edu/people/brando9/) only updates when `scripts/deploy_stanford_cs.sh` is run. The two must **always** be in sync — no exceptions: after every push, run the deploy script and verify the changed URLs return 200 on both domains. See `CLAUDE.md` § "GitHub Pages ↔ Stanford mirror sync (HARD)".
+
 Branch model: `main` only.
