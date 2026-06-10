@@ -25,6 +25,12 @@ description: >
   opinions of any entity I am affiliated or have been affiliated -- nor any past, present, or future clients/employers.
 baseurl: "/brandomiranda/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Pin the build timezone. Five old posts carry late-evening "-0500" timestamps;
+# GitHub's UTC builders rolled them into the NEXT calendar day, publishing them
+# at /2019/11/01/... while local (Pacific) builds and the Stanford mirror used
+# /2019/10/31/... — diverging URLs and 404 canonical links (found 2026-06-09).
+# With the timezone pinned, every builder emits filename-date URLs. Never remove.
+timezone: America/Los_Angeles
 canonical_base_url: "https://cs.stanford.edu/people/brando9"
 use_custom_canonical: true
 redirect_to_canonical: true

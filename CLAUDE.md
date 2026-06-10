@@ -159,6 +159,8 @@ The website deploys to TWO targets that must **always** be in sync — no except
 
 After **every** push to `main`, immediately run `scripts/deploy_stanford_cs.sh` (Jekyll build with the `_config_stanford_cs.yml` baseurl overlay, then rsync of `_site/` to `brando9@xenon.stanford.edu:~/www/`). Then verify the changed URLs return 200 on **both** domains before reporting the change live — a push without the mirror deploy is an incomplete task.
 
+`_config.yml` pins `timezone: America/Los_Angeles` so GitHub's UTC builders and local Pacific builds emit identical post URLs (without it, posts with late-evening `-0500` timestamps publish under the next calendar day on GitHub only — five 2019/2020 posts diverged this way until 2026-06-09). Never remove the pin.
+
 If the working tree has unrelated in-flight edits (e.g., another agent's), deploy from a clean worktree of the pushed commit so the mirror matches exactly what Pages serves:
 
 ```bash
