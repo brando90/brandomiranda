@@ -117,4 +117,5 @@ I'm curious what people are converging to. Are ppl converging to this?
 Future notes:
 - Add lab replies here as non-rendered notes before deciding whether to publish.
 - If promoted to `_posts/`, remove `published: false`, revisit read time, and decide whether any private context should stay in Liquid comments.
+- 2026-06-09: SUPERSEDED by _drafts/2026-06-09-how-people-write-research-papers-in-the-agentic-era.md, which integrates the lab replies (Dan, Allen, Sanmi, Kirill, Andrew) per the note above. Keep this file for reference; merge or retire it when the new draft publishes.
 {% endcomment %}
