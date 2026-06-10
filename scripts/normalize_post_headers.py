@@ -6,11 +6,18 @@ Canonical structure (right after Jekyll frontmatter):
 
     *Brando Miranda — Month YYYY · ~X min read*
 
+    **Warning: this post is a draft — content may change and errors may remain.**
+
     **TL;DR.** [single paragraph]
 
     ---
 
     [body]
+
+The Warning line is optional — present only while a published post is still
+in development. Wherever it appears in the source (legacy posts had it below
+the `---`, at the top of the body), it is relocated to the canonical slot
+between the byline and the TL;DR.
 
 This script is idempotent by construction: it parses the date / read-time /
 TL;DR / body out of each post, discards all other pre-body chrome, and
@@ -50,6 +57,13 @@ STRIP_RES = [
 ]
 
 TLDR_RE = re.compile(r"^\s*\*\*TL[;:]?DR\.?\*\*\s*(.*)$", re.IGNORECASE | re.DOTALL)
+
+# Draft-status banner. Matched as a standalone line anywhere in the body and
+# re-emitted in the canonical slot (between byline and TL;DR). The tail after
+# "draft" is left free so small wording tweaks survive normalization.
+DRAFT_WARNING_RE = re.compile(
+    r"^[ \t]*(\*\*Warning: this post is a draft[^\n]*\*\*)[ \t]*$", re.MULTILINE
+)
 
 
 def _extract_tldr_and_body(text: str) -> tuple[str, str]:
@@ -138,11 +152,20 @@ def transform(path: Path) -> tuple[bool, str]:
     if read_time is None:
         read_time = "X"
 
+    warning = None
+    wm = DRAFT_WARNING_RE.search(body)
+    if wm:
+        warning = wm.group(1)
+        body = body[: wm.start()] + body[wm.end():]
+
     tldr_text, rest = _extract_tldr_and_body(body)
 
     parts = [fm.rstrip("\n") + "\n", "\n"]
     parts.append(f"*Brando Miranda — {mname} {year} · ~{read_time} min read*\n")
     parts.append("\n")
+    if warning:
+        parts.append(warning + "\n")
+        parts.append("\n")
     if tldr_text:
         parts.append(f"**TL;DR.** {tldr_text}\n")
         parts.append("\n")
