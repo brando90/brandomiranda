@@ -77,7 +77,8 @@ AI Coding Benchmarks Need Proofs, Not Just Tests (2026)
 
 VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verification (2025)
 *Slim Barkallah, Srivatsava Daruru, <strong>Brando Miranda</strong>, Leni Aniva, Allen Nie, Sanmi Koyejo.*
-[**[Neural Information Processing Systems (NeurIPS) Mathematical Reasoning and AI Workshop 2025]**](https://openreview.net/forum?id=wDjOpXKgtU)
+[**[Neural Information Processing Systems (NeurIPS) Workshop on Mathematical Reasoning and AI 2025]**](https://neurips.cc/virtual/2025/loc/san-diego/131044)
+[**[OpenReview]**](https://openreview.net/forum?id=wDjOpXKgtU)
 
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
 *Rylan Schaeffer, Hailey Schoelkopf, <strong>Brando Miranda</strong>, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.*
