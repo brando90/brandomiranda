@@ -53,7 +53,7 @@ VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean
 [**[Preprint]**]({{ site.baseurl }}professional_documents/papers/NeurIPS_2026_VeriBench.pdf)
 [**[Run Tutorial (Colab)]**](https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing)
 [**[Harbor Hub]**](https://harborframework.com/registry)
-[**[Blog]**](https://ehersch.github.io/veribench-blog/blog/veribench-launch/)
+[**[Blog]**]({{ site.baseurl }}veribench/blog/veribench-launch/)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
 
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)

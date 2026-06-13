@@ -12,11 +12,19 @@ title: Blog
 
 *Energy-based models, autoregressive models, learning theory, and formal methods for AI.*
 
-<ul class="post-list">{% for post in ml_posts %}
+<ul class="post-list">{% for post in ml_posts %}{% assign post_yyyymmdd = post.date | date: "%Y%m%d" %}{% if post_yyyymmdd > "20260508" %}
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
-  </li>{% endfor %}
+  </li>{% endif %}{% endfor %}
+  <li>
+    <span class="post-meta">May 8, 2026</span>
+    <h3><a class="post-link" href="{{ site.baseurl }}veribench/blog/veribench-launch/">VeriBench: An End-to-End Formal Verification Benchmark for AI Coding Agents</a></h3>
+  </li>{% for post in ml_posts %}{% assign post_yyyymmdd = post.date | date: "%Y%m%d" %}{% if post_yyyymmdd <= "20260508" %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+  </li>{% endif %}{% endfor %}
 </ul>
 
 ## Music
