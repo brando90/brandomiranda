@@ -3,9 +3,9 @@ layout: page
 title: Brando Miranda
 ---
 
-![me](/images/me_rains_suit.jpg)
+![me]({{ site.baseurl }}images/me_rains_suit.jpg)
 
-- [CV (long)](/professional_documents/cvs/cv_long.pdf) &nbsp;·&nbsp; [CV (short)](/professional_documents/cvs/cv_short.pdf)
+- [CV (long)]({{ site.baseurl }}professional_documents/cvs/cv_long.pdf) &nbsp;·&nbsp; [CV (short)]({{ site.baseurl }}professional_documents/cvs/cv_short.pdf)
 - [Google Scholar](https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en)
 - [Stanford Profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
 - [X (formerly known as Twitter)](https://x.com/BrandoHablando)
@@ -24,7 +24,7 @@ He earned his Master of Engineering in Electrical Engineering and Computer Scien
 
 Miranda’s research centers on AI for formal mathematics — [Lean 4](https://leanprover-community.github.io/) theorem proving, autoformalization, and end-to-end formal verification of software and mathematics — alongside contamination-resistant evaluation of LLM mathematical reasoning and data-centric machine learning for [foundation and frontier models](https://openai.com/index/frontier-model-forum/), with broader interest in alternative architectures (e.g. energy-based models) toward [Artificial General Intelligence (AGI)](https://en.wikipedia.org/wiki/Artificial_general_intelligence). 
 He is the co-founder and president of [Stanford AI for Lean](https://www.stanfordlean.club/), a research community advancing AI for Lean theorem proving and formalizing mathematics.
-His work has earned the inaugural Veritas Scholar offer from [Math Inc.](https://www.math.inc/) (offered, declined), the [NeurIPS Outstanding Main Track Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%, 2 papers selected), the [International Journal of Automation & Computing “Most Cited Paper” Certificate](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg), two Honorable Mentions from the Ford Foundation Fellowship, the Saburo Muroga Computer Science Excellence Fellowship, the Stanford School of Engineering Fellowship, and selection as an EDGE Scholar at Stanford.
+His work has earned the inaugural Veritas Scholar offer from [Math Inc.](https://www.math.inc/) (offered, declined), the [NeurIPS Outstanding Main Track Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%, 2 papers selected), the [International Journal of Automation & Computing “Most Cited Paper” Certificate]({{ site.baseurl }}professional_documents/papers/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg), two Honorable Mentions from the Ford Foundation Fellowship, the Saburo Muroga Computer Science Excellence Fellowship, the Stanford School of Engineering Fellowship, and selection as an EDGE Scholar at Stanford.
 
 Miranda is more than a researcher—he is an innovator, communicator, and deeply passionate about the future of AI. 
 As a Machine Learning Research Scientist Consultant at the venture-backed AI startup [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), he made key contributions to the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b) model and helped launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/). 
@@ -82,7 +82,7 @@ VeriBench-FTP: A Formal Theorem Proving Benchmark in Lean 4 for Code Verificatio
 Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive? (2025)
 *Rylan Schaeffer, Hailey Schoelkopf, <strong>Brando Miranda</strong>, Gabriel Mukobi, Varun Madan, Adam Ibrahim, Herbie Bradley, Stella Biderman, Sanmi Koyejo.*
 [**[International Conference on Machine Learning (ICML) 2025]**](https://icml.cc/virtual/2025/poster/45753)
-[[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award**]](/professional_documents/tifa_award_elusive.png)
+[[**ICML Outstanding Paper Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) Workshop 2024 award**]]({{ site.baseurl }}professional_documents/awards/tifa_award_elusive.png)
 [**\[arxiv\]**](https://arxiv.org/pdf/2406.04391)
 
 Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs (2025)
@@ -182,7 +182,7 @@ High-performance and scalable on-chip digital Fourier transform spectroscopy (20
 Why and when can deep-but not shallow-networks avoid the curse of dimensionality: a review (2017)
 *Tomaso Poggio, Hrushikesh Mhaskar, Lorenzo Rosasco, <strong>Brando Miranda</strong>, Qianli Liao.*
 [**[International Journal of Automation and Computing 2017, Most Cited Paper Certificate awarded by International Journal of Automation & Computing (IJAC)]**](https://link.springer.com/article/10.1007/s11633-017-1054-2)
-[**[Award]**](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
+[**[Award]**]({{ site.baseurl }}professional_documents/papers/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg)
 
 ---
 
@@ -212,7 +212,7 @@ Below are selected links showcasing media coverage of selected work:
 
 [**American Scientist (March-April 2024)**: "Is There an AI Metrics Mirage?"](https://www.americanscientist.org/article/an-education-in-irrationality)
 
-[**White House Economic Report of the President (March 2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**](/images/white_house_labor_substitute_huam_rs_bm_sk.png)
+[**White House Economic Report of the President (March 2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**]({{ site.baseurl }}images/white_house_labor_substitute_huam_rs_bm_sk.png)
 
 [**Andrew Ng (March 2024)**: Endorsed the emergent-abilities paper as evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
 
@@ -244,7 +244,7 @@ This work was also covered by: [Medium, Hacker News, NeurIPS blog, Reddit, and m
 - **ICML 2026 Silver Reviewer** (May 2026) — top reviewer recognition signed by the ICML 2026 Program Chairs.
 - **Oral Recommendation (Top 1)**, 2nd AI for Math Workshop @ ICML 2025 — for *VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4* (Miranda et al.); reviewer recommendation "Accept (Oral, Top 1)".
 - **Pear AI Researchers Circle** (July 2025) — selective AI-researcher network convened by [Pear VC](https://pear.vc); invited following the final round (R3) of the Pear AI Researcher Grant program.
-- [**ICML Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) — Outstanding Paper Award** (July 2024)](/professional_documents/tifa_award_elusive.png) — for "Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?" (Schaeffer, Schoelkopf, Miranda, et al.).
+- [**ICML Workshop on Trustworthy Multi-modal Foundation Models and AI Agents (TiFA) — Outstanding Paper Award** (July 2024)]({{ site.baseurl }}professional_documents/awards/tifa_award_elusive.png) — for "Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?" (Schaeffer, Schoelkopf, Miranda, et al.).
 - [**Neural Information Processing Systems (NeurIPS) Outstanding Main Track Paper Award** (December 2023)](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) — top 0.4% of NeurIPS submissions; only 2 main-track papers selected. For "Are Emergent Abilities of Large Language Models a Mirage?" (Schaeffer, Miranda, Koyejo).
 - **EDGE Scholar**, Stanford University (September 2022) — Stanford fellowship supporting first-generation / low-income PhD scholars.
 - **Stanford School of Engineering Fellowship** (September 2022) — multi-year departmental fellowship for incoming engineering PhDs.
@@ -252,7 +252,7 @@ This work was also covered by: [Medium, Hacker News, NeurIPS blog, Reddit, and m
 - **Best Research Project Award**, UIUC graduate course CS 598 "Learning to Learn" (December 2020) — course-level award for the top research project.
 - **HSF Scholar**, Hispanic Scholarship Fund (2020) — competitive national merit fellowship for Hispanic graduate students.
 - **Computer Science Excellence Saburo Muroga Endowed Fellow**, UIUC (2019-2020) — top departmental fellowship for incoming CS PhDs.
-- [**Most Cited Paper Certificate**, International Journal of Automation & Computing (IJAC, December 2019)](/professional_documents/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg) — for "Why and when can deep- but not shallow-networks avoid the curse of dimensionality: a review".
+- [**Most Cited Paper Certificate**, International Journal of Automation & Computing (IJAC, December 2019)]({{ site.baseurl }}professional_documents/papers/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg) — for "Why and when can deep- but not shallow-networks avoid the curse of dimensionality: a review".
 - **Sloan Scholar**, Alfred P. Sloan Foundation Minority Ph.D. (MPHD) Program (2018-2019) — national fellowship for underrepresented STEM PhD students.
 - **Grainger Engineering SURGE Fellowship**, UIUC (2018-2019) — multi-year college-level fellowship for diverse engineering PhDs.
 - **MIT Mitchell B. Kaufman Memorial Scholarship** (2012-2013, 2013-2014) — MIT undergraduate scholarship support.
