@@ -1,29 +1,31 @@
 ---
 layout: post
-title: "Don't Watch the Spinner"
+title: "Don't Watch the Spinner: How a 'Done Thinking' Notification Makes You Less Dumb"
 date: 2026-06-16
 section: agentic-coding
 ---
 
-*Brando Miranda — June 2026 · ~2 min read*
+*Brando Miranda — June 2026 · ~3 min read*
 
-**TL;DR.** Watching an AI agent's spinner is the worst way to spend the wait — you're neither working nor resting, just leaking attention to whatever distraction fills the gap. One move fixes it: send the request, put the phone down, and let a notification — a sound and a vibration — pull you back when it's done. Let the agent interrupt you, not the other way around.
+**TL;DR.** I set my phone to ring and buzz when the model finishes a long task. Now I fire the request, put the phone down, and get pulled back exactly when there's something to do — instead of watching the spinner and letting it fragment my attention. Tiny change, real difference.
 
 ---
 
-I run a lot of agents. On a good day several are going at once — drafting, refactoring, searching, proving — and every one of them makes me wait. Seconds sometimes, minutes often. The spinner spins, and there's a pull to just sit and watch it.
+A few weeks ago I caught myself watching a spinner. I'd kicked off a long reasoning task — one of those multi-minute traces where the model is actually chewing on something hard — and I just... stared at it. Not reading, not working on anything else. Waiting, like standing in front of a microwave.
 
-That's the worst thing you can do with the time. Watching the spinner is neither working nor resting. You're idle, but you're also tethered — half-anxious, waiting for a result you can't speed up. It's the dead zone between focus and rest, and it's where most of my distraction used to live. "I'm just waiting" is the perfect excuse to open X, check email, chase whatever's shiny — and that detour almost always costs more than the run it was supposed to fill.
+I do this dozens of times a day. Most of my work runs through AI now, and the bottleneck isn't the model anymore — it's me, sitting in the gap between *I asked* and *it answered*, doing nothing with the gap.
 
-The wait was never the problem. The wait is fine. The problem is *guarding* it — sitting there as a human progress bar.
+Here's the problem with watching a spinner: you're not resting and you're not working. You're half-attending to something you can't speed up, while a little process in the back of your head nags you not to wander off in case it finishes. That split is expensive. There's a name for it — *attention residue* (Leroy, 2009): when your focus is divided, part of your mind stays stuck on the thing you're half-watching, and whatever you turn to next gets a dumber version of you. Gloria Mark clocks the recovery from a single interruption at around 23 minutes. Watching a spinner is a self-inflicted version of exactly that.
 
-So I stopped. The fix is embarrassingly small: notifications. In whatever app I run my agents from, I turn on alerts — sound and vibration — for when a task finishes. Then when I send a request, I put the phone down, screen off and out of reach, and start the next thing. When the agent is done, the phone buzzes. That ping is the only thing allowed to pull me back; until it fires, the agent isn't my problem.
+The fix is almost embarrassing: I made the model tap me on the shoulder when it's done. Send the request, **lock the phone**, walk away — and it rings and buzzes the moment it finishes. The one trick worth knowing is that the app only fires the notification when it's in the background, so locking the screen *is* the trigger; you just have to make sure the notification is actually set to make sound and vibrate, not sit there silent.
 
-That one change flips the dynamic. Instead of me polling the agent — *is it done yet?* — the agent pings me. Push, not pull. And it kills the thing that actually drives the distraction: the checking. You don't glance at the spinner because you enjoy it; you glance because you don't know whether it's ready. A notification you trust removes the not-knowing, and with it the urge to check. So you give the next task your full attention — or you actually rest.
+That one ping does two things, and they're worth separating. First, I can stop monitoring — the background process quietly reserving capacity for *is it done yet?* finally shuts off, and that capacity isn't small. Second, I can start the next thing without fear of dropping the first, because I'm no longer the one who has to remember to come back. The notification is. It's `async`/`await` for human attention.
 
-It generalizes past agents. A build, a long job, CI, a download — anything with a wait deserves the same treatment: don't watch it, get told when it's done.
+I call it making myself less dumb, and I half mean it literally. I'm not smarter — I've just stopped spending scarce focus on a job a sound can do for free. And I can feel the difference, which is the part that surprised me.
 
-So don't watch the spinner. Send the request, put the phone down, and let it call you back.
+None of this is really about a notification, of course. It's the same bet I keep [making](https://brando90.github.io/brandomiranda/2026/04/27/embrace-ai-or-be-left-behind.html): the people who do well with AI won't be the ones who refused it, or the ones who handed it their judgment — they'll be the ones who made a hundred small, unglamorous adjustments to keep their attention on the part that's still theirs. This is one of the small ones. It cost me five minutes.
+
+Don't watch the spinner. Let it call you.
 
 ---
 
@@ -32,7 +34,7 @@ So don't watch the spinner. Send the request, put the phone down, and let it cal
 ```bibtex
 @misc{miranda2026spinner,
   author = {Miranda, Brando},
-  title  = {Don't Watch the Spinner},
+  title  = {Don't Watch the Spinner: How a 'Done Thinking' Notification Makes You Less Dumb},
   year   = {2026},
   month  = {June},
   howpublished = {\url{https://brando90.github.io/brandomiranda/2026/06/16/dont-watch-the-spinner.html}},
