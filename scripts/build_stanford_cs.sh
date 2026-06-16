@@ -10,8 +10,12 @@ export JEKYLL_ENV="${JEKYLL_ENV:-production}"
 # JEKYLL_NO_BUNDLER_REQUIRE skips the repo Gemfile — the github-pages bundle is
 # not installed locally, and the legacy ~/.gem/ruby/2.6.0 shims are dead (their
 # shebang points at Homebrew ruby, which has moved past the gems they were built for).
-brew_ruby_jekyll="$(/usr/local/opt/ruby/bin/gem environment gemdir 2>/dev/null)/bin/jekyll"
-if [[ -x "$brew_ruby_jekyll" ]]; then
+brew_ruby_gem="${BREW_RUBY_GEM:-/usr/local/opt/ruby/bin/gem}"
+brew_ruby_jekyll=""
+if [[ -x "$brew_ruby_gem" ]]; then
+  brew_ruby_jekyll="$("$brew_ruby_gem" environment gemdir 2>/dev/null)/bin/jekyll"
+fi
+if [[ -n "$brew_ruby_jekyll" && -x "$brew_ruby_jekyll" ]]; then
   JEKYLL_NO_BUNDLER_REQUIRE=true "$brew_ruby_jekyll" build --config _config.yml,_config_stanford_cs.yml
 elif bundle exec jekyll -v >/dev/null 2>&1; then
   bundle exec jekyll build --config _config.yml,_config_stanford_cs.yml
