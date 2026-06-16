@@ -6,7 +6,7 @@ title: Dance
 # Dance through Bachata Sensual
 
 The best way to capture my feelings for dancing is through the statement I wrote when I was a 
-[bachata sensual](https://www.bachatasensual.com/historia-bs/) dance 
+[bachata sensual](https://bachatasensual.com/sobre-nosotros/) dance 
 instructor at the beautiful dance studio -- [Urbana Dance Company](https://www.urbanadancecompany.com/) --
 close to the lovely cornfields of Central Illinois:
 
@@ -29,11 +29,11 @@ close to the lovely cornfields of Central Illinois:
 
 I trained under the beautiful
 [World Master course led by the creators of the style
-— Korke & Judith](professional_documents/BRANDO_MIRANDA_DIPLOMA_EXCELLENCE_KYJ_EN.jpg).
+— Korke & Judith](professional_documents/awards/BRANDO_MIRANDA_DIPLOMA_EXCELLENCE_KYJ_EN.jpg).
 
 # Spreading the Bachata Sensual Love
 
-I've started two university [bachata sensual](https://www.bachatasensual.com/historia-bs/) groups as part of my efforts 
+I've started two university [bachata sensual](https://bachatasensual.com/sobre-nosotros/) groups as part of my efforts 
 to spread bachata sensual.
 If you are interested in teaming up feel free to email me at brando9 AT stanford dot edu.
 
@@ -43,14 +43,14 @@ I am currently leading the student organization called
 [Stanford Bachata Sensual & Brazilian Zouk (SBSBZ)](https://www.facebook.com/groups/857433758788901) 
 at [Stanford University](https://www.stanford.edu/).
 Our mission is to spread the beautiful technique of 
-[the original bachata sensual](https://www.bachatasensual.com/historia-bs/) 
+[the original bachata sensual](https://bachatasensual.com/sobre-nosotros/) 
 for **connection based social dancing**.
 What I love most about this style is that it was created with the goal of following the natural energy created during
 dancing -- and therefore being so natural that one can't help but follow the beautiful flow created during 
 the dance.
 
 In line with our mission of spreading the lovely technique of
-[bachata sensual](https://www.bachatasensual.com/historia-bs/),
+[bachata sensual](https://bachatasensual.com/sobre-nosotros/),
 we recorded summary videos of our lessons
 with counts and explanations and made them available on the
 [World Wide Web via my personal YouTube channel](https://www.youtube.com/playlist?list=PLB3sDpSRdrOt6iKyPucMJAwbwW2YtMs3V).

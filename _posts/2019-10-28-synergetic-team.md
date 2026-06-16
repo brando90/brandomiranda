@@ -41,7 +41,7 @@ I invite you to engage in the discussion section and embark on this learning jou
 ----
 Sources:
 
-- The class website for [CS 598L: Improving Your Research Skills](https://wiki.illinois.edu/wiki/display/cs598lrs/Home) taught by professor
+- The course listing for [CS 598L: Improving Your Research Skills](https://siebelschool.illinois.edu/academics/courses/cs591lrs-120248) taught by professor
 Lui Sha
 - Class piazza for [CS 598 Improving Your Research Skills](https://piazza.com/class/k0zszwui9i0gg)
 - Slides made by [my CS 598 team on Synergetic team](https://docs.google.com/presentation/d/1vB46nsmF8u_YPtI3iBgDe9PoX77R2TZbTlgE2am5Liw/edit?usp=sharing)
@@ -56,7 +56,7 @@ Lui Sha
   title  = {Building Synergetic Teams for Research and Startups},
   year   = {2019},
   month  = {October},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2019/10/28/synergetic-team.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2019/10/28/synergetic-team.html}},
   note   = {Blog post}
 }
 ```

@@ -30,7 +30,7 @@ Name: Brando Miranda
 
 Email: brando9@stanford.edu
 
-Personal Website: https://brando90.github.io/brandomiranda/
+Personal Website: https://cs.stanford.edu/people/brando9/
 
 X Profile: https://x.com/BrandoHablando
 
@@ -72,13 +72,13 @@ I would include two links if the form allows it.
 
 First, a mathematical / conceptual post:
 
-https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
+https://cs.stanford.edu/people/brando9/2026/04/22/formal-methods-scalable-oversight.html
 
 "Asking the Right Question: Formal Methods as Scalable Oversight" explains why I think Lean-style verification is becoming a practical oversight mechanism for AI agents. The thesis is: let the verifier check the answer; let the human check the question. As AI systems generate longer proofs, programs, and research artifacts, the human bottleneck should move from checking every generated step to checking the short, human-readable theorem statement or specification.
 
 Second, a tool-use / build-in-public post:
 
-https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
+https://cs.stanford.edu/people/brando9/2026/04/13/correctness-gated-multi-agent-workflow.html
 
 "What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research" describes how I use AI coding agents in daily research while making mistakes cheap to detect. The workflow uses cross-agent review, structural QA, repository rules, and Lean 4-style correctness gates. I also released the setup as an open-source documentation architecture called agents-config, because the process matters as much as the model: the right question is not only "which model is best?" but "what workflow makes mistakes visible before they compound?"
 
@@ -90,15 +90,15 @@ Additional public learning resources:
 
 ### 6. Optional: resume or other information
 
-CV (long form): https://brando90.github.io/brandomiranda/professional_documents/cvs/cv_long.pdf
+CV (long form): https://cs.stanford.edu/people/brando9/professional_documents/cvs/cv_long.pdf
 
-CV (short form): https://brando90.github.io/brandomiranda/professional_documents/cvs/cv_short.pdf
+CV (short form): https://cs.stanford.edu/people/brando9/professional_documents/cvs/cv_short.pdf
 
 Google Scholar: https://scholar.google.com/citations?user=_NQJoBkAAAAJ
 
 Stanford AI for Lean: https://www.stanfordlean.club/
 
-Personal website: https://brando90.github.io/brandomiranda/
+Personal website: https://cs.stanford.edu/people/brando9/
 
 Current role: 4th-year Stanford CS Ph.D. student advised by Prof. Sanmi Koyejo, Stanford Trustworthy AI Research (STAIR). Stanford School of Engineering Fellow; EDGE Scholar.
 

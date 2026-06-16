@@ -240,7 +240,7 @@ Song & Kingma's tutorial treats this trace as *the* computational bottleneck of 
   title  = {Why Energy-Based Models? The Toy AR-vs-EBM Argument},
   year   = {2026},
   month  = {June},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/06/09/why-energy-based-models-the-toy-ar-vs-ebm-argument.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/06/09/why-energy-based-models-the-toy-ar-vs-ebm-argument.html}},
   note   = {Blog post}
 }
 ```
@@ -255,7 +255,7 @@ Song & Kingma's tutorial treats this trace as *the* computational bottleneck of 
   title  = {Score Matching: Training EBMs Without Ever Computing Z},
   year   = {2026},
   month  = {June},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/06/09/score-matching-training-ebms-without-z.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/06/09/score-matching-training-ebms-without-z.html}},
   note   = {Blog post}
 }
 ```

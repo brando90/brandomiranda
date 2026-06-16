@@ -58,7 +58,7 @@ So: interpolation is when you fit the data. Overfitting is when generalization b
   title  = {Overfitting Is Not Interpolation: Stop Confusing the Two},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/}},
   note   = {Blog post draft}
 }
 ```

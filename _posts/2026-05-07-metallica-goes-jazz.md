@@ -81,7 +81,7 @@ That is enough for a Wednesday afternoon.
   title  = {Metallica Goes Jazz: A 2010 High School Arrangement, Reanimated by {AI}},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/05/07/metallica-goes-jazz.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/05/07/metallica-goes-jazz.html}},
   note   = {Blog post}
 }
 ```

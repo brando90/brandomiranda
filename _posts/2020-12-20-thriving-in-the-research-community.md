@@ -70,7 +70,7 @@ If you want to follow us at LCS here are some useful links:
   title  = {Thriving in the Research Community},
   year   = {2020},
   month  = {December},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2020/12/20/thriving-in-the-research-community.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2020/12/20/thriving-in-the-research-community.html}},
   note   = {Blog post}
 }
 ```

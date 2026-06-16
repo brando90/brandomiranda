@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repo at a glance
 
-Brando Miranda's personal/professional website (Jekyll, deployed at https://brando90.github.io/brandomiranda/) plus the canonical home of his academic CVs and other professional documents.
+Brando Miranda's personal/professional website (Jekyll, deployed at https://cs.stanford.edu/people/brando9/) plus the canonical home of his academic CVs and other professional documents.
 
 - **Website source:** Jekyll + Minima theme via `github-pages` gem (so local renders match what Pages will publish). Entry point `index.md`; posts in `_posts/`; drafts in `_drafts/`; standalone pages at root (`blog.md`, `dance.md`, `peformance-psychology.md`, `prospective-collaborations.md`).
 - **Public docs:** `professional_documents/` (`cvs/`, `awards/`, `papers/`, `posters/`) — these *are* shipped to the site.

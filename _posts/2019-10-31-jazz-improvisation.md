@@ -31,7 +31,7 @@ like Larry Russell, George Michael and the local blues musician Brooks in McAlle
   title  = {Jazz Improvisation},
   year   = {2019},
   month  = {October},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2019/10/31/jazz-improvisation.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2019/10/31/jazz-improvisation.html}},
   note   = {Blog post}
 }
 ```

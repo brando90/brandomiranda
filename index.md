@@ -27,7 +27,7 @@ He is the co-founder and president of [Stanford AI for Lean](https://www.stanfor
 His work has earned the inaugural Veritas Scholar offer from [Math Inc.](https://www.math.inc/) (offered, declined), the [NeurIPS Outstanding Main Track Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%, 2 papers selected), the [International Journal of Automation & Computing “Most Cited Paper” Certificate]({{ site.baseurl }}professional_documents/papers/Why_and_When_Can_Deep_but_Not_Shallow_networks_Avoid_the_Curse_of_Dimensionality_A_Review.jpg), two Honorable Mentions from the Ford Foundation Fellowship, the Saburo Muroga Computer Science Excellence Fellowship, the Stanford School of Engineering Fellowship, and selection as an EDGE Scholar at Stanford.
 
 Miranda is more than a researcher—he is an innovator, communicator, and deeply passionate about the future of AI. 
-As a Machine Learning Research Scientist Consultant at the venture-backed AI startup [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), he made key contributions to the [Morph Prover](https://huggingface.co/morph-labs/morph-prover-v0-7b) model and helped launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/). 
+As a Machine Learning Research Scientist Consultant at the venture-backed AI startup [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), he made key contributions to the [Morph Prover](https://huggingface.co/typeof/morph-prover-v0-7b-sharded) model and helped launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
 He later applied the same expertise as an AI consultant to [Wise Agents](https://wiseagents.com/)—featured in [Forbes Mexico](https://www.forbes.com.mx/la-revolucion-digital-en-america-latina-desbloqueando-el-potencial-de-la-region/) — a Stanford spin-out leveraging AI agents to transform sales performance.
 
 
@@ -39,7 +39,7 @@ Brando Miranda is a Ph.D. student in Artificial Intelligence / Machine Learning 
 His work targets AI for formal mathematics ([Lean 4](https://leanprover-community.github.io/) theorem proving, autoformalization, end-to-end formal verification of software and mathematics), contamination-resistant evaluation of LLM math reasoning, and data-centric techniques for [foundation/frontier models](https://openai.com/index/frontier-model-forum/) toward [AGI](https://en.wikipedia.org/wiki/Artificial_general_intelligence).
 He is the co-founder and president of [Stanford AI for Lean](https://www.stanfordlean.club/), a research community advancing AI for Lean theorem proving and formalizing mathematics.
 Miranda received the [NeurIPS Outstanding Paper Award](https://blog.neurips.cc/2023/12/11/announcing-the-neurips-2023-paper-awards/) (top 0.4%) and other honors for his research.
-In industry, he served as Machine-Learning Research Scientist Consultant at venture-backed [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), helping build the [Morph Prover v0-7B](https://huggingface.co/morph-labs/morph-prover-v0-7b) and launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
+In industry, he served as Machine-Learning Research Scientist Consultant at venture-backed [Morph Labs](https://morph.so/blog/the-personal-ai-proof-engineer/), helping build the [Morph Prover v0-7B](https://huggingface.co/typeof/morph-prover-v0-7b-sharded) and launch [Moogle.ai](https://www.moogle.ai/), the first search engine for verified code in [Lean](https://leanprover-community.github.io/).
 He later brought the same expertise to [Wise Agents](https://wiseagents.com/), a Stanford spin-out that uses AI agents to transform sales performance.
 
 ---
@@ -55,6 +55,7 @@ VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean
 [**[Harbor Hub]**](https://harborframework.com/registry)
 [**[Blog]**]({{ site.baseurl }}veribench/blog/veribench-launch/)
 [**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
+VeriBench uses Harbor for agentic, containerized evaluation: agents run inside isolated Docker tasks and are evaluated against held-out gold artifacts, rather than being given access to the solutions. The Colab tutorial shows how to run the public `veribench@1.1` release.
 
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
 *Zhanke Zhou, Xiangyu Lu, Chentao Cao, <strong>Brando Miranda</strong>, Tongliang Liu, Bo Han, Sanmi Koyejo.*
@@ -135,7 +136,7 @@ ZIP-FIT: Embedding-Free Data Selection via Compression-Based Alignment (2024)
 
 Morph Prover v0 7b: The 1st Frontier Model for the Lean 4 Formal Verification Programming Language (2024)
 [**[blog]**](https://morph.so/blog/the-personal-ai-proof-engineer/)
-[**[Hugging Face Model Card]**](https://huggingface.co/morph-labs/morph-prover-v0-7b)
+[**[Hugging Face Model Card]**](https://huggingface.co/typeof/morph-prover-v0-7b-sharded)
 
 Are Emergent Abilities of Large Language Models a Mirage? (2023)
 *Rylan Schaeffer, <strong>Brando Miranda</strong>, Sanmi Koyejo.*
@@ -162,7 +163,7 @@ The Curse of Low Task Diversity: On the Failure of Transfer Learning to Outperfo
 [**[OpenReview]**](https://openreview.net/forum?id=Z75fwzPdty)
 [**[arXiv]**](https://arxiv.org/abs/2208.01545) 
 [**[Slides]**](https://docs.google.com/presentation/d/1nY39x8u8j7k6KpOhD6Vqto78YzLOwyR9B24kuoHJijY/edit?usp=sharing)
-[**[Poster]**](professional_documents/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
+[**[Poster]**](professional_documents/posters/Poster_Low_Diversity____NeurIPS_WS_2022__Draft_2_.pdf)
 [**[5 minute video]**](https://youtu.be/mM5vllz1hPg)
 
 Does MAML Only Work via Feature Re-use? A Data Set Centric Perspective (2021)
@@ -213,7 +214,7 @@ Below are selected links showcasing media coverage of selected work:
 
 [**American Scientist (March-April 2024)**: "Is There an AI Metrics Mirage?"](https://www.americanscientist.org/article/an-education-in-irrationality)
 
-[**White House Economic Report of the President (March 2024)**: Miranda et al.'s work was cited in the 2024 Economic Report of the President. Direct quote: "The Report presents an overview of the nation's economic progress and makes the case for the Biden-Harris Administration's economic policy priorities."](https://www.whitehouse.gov/cea/written-materials/2024/03/21/the-2024-economic-report-of-the-president/) [**[Report]**](https://www.whitehouse.gov/wp-content/uploads/2024/03/ERP-2024-CHAPTER-7.pdf) [**[Screenshot]**]({{ site.baseurl }}images/white_house_labor_substitute_huam_rs_bm_sk.png)
+[**White House Economic Report of the President (March 2024)**: Miranda et al.'s work was cited in Chapter 7, "An Economic Framework for Understanding Artificial Intelligence," of the 2024 Economic Report of the President.](https://www.govinfo.gov/app/collection/erp/2024) [**[Report]**](https://www.govinfo.gov/content/pkg/ERP-2024/pdf/ERP-2024-chapter7.pdf) [**[Screenshot]**]({{ site.baseurl }}images/white_house_labor_substitute_huam_rs_bm_sk.png)
 
 [**Andrew Ng (March 2024)**: Endorsed the emergent-abilities paper as evidence that Artificial General Intelligence (AGI) won't come discontinuously, but instead, will come smoothly and predictably](https://x.com/AndrewYNg/status/1766554536192446957?s=20)
 
@@ -274,7 +275,7 @@ This work was also covered by: [Medium, Hacker News, NeurIPS blog, Reddit, and m
 - [**Putnam-AXIOM**](https://openreview.net/forum?id=kqj2Cn3Sxr): functional and static benchmark for higher-level LLM mathematical reasoning.
 - [**Putnam-AXIOM-Grading**](https://huggingface.co/datasets/3ricme/Putnam-AXIOM-Grading): human-graded 1,000-solution benchmark for Putnam-style partial-credit mathematical evaluation.
 - [**Pantograph**](https://link.springer.com/chapter/10.1007/978-3-031-90643-5_6): machine-to-machine interface for Lean 4 theorem proving, reasoning, and data extraction.
-- [**Morph Prover v0 7B**](https://huggingface.co/morph-labs/morph-prover-v0-7b) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
+- [**Morph Prover v0 7B**](https://huggingface.co/typeof/morph-prover-v0-7b-sharded) and [**Moogle.ai**](https://www.moogle.ai/): Lean 4 proof model and search engine for verified Lean code developed with Morph Labs.
 - [**AlphaApollo**](https://alphaapollo.org/): agentic reasoning framework for tool-integrated reasoning, agentic post-training, and self-evolving verification workflows. [[arXiv]](https://arxiv.org/abs/2510.06261)
 - [**AlphaDiana**](https://github.com/tmlr-group/AlphaDiana): harness-aware evaluation system for open agents on verifiable reasoning tasks with trajectory logging.
 - [**ultimate-utils**](https://github.com/brando90/ultimate-utils): reusable ML and research-engineering utility library for experiment workflows.

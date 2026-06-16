@@ -19,7 +19,7 @@ The problem is not that the heuristic is always false. The problem is that it ig
 
 In other words: the em dash is only an AI fingerprint if you did not already use it.
 
-I bought William Zinsser's [*On Writing Well*](https://www.harperacademic.com/book/9780060891541/on-writing-well) years before GPT-3, before ChatGPT, before "ChatGPT-style writing" was a phrase anyone said out loud. There is a chapter called "Bits & Pieces," and inside it Zinsser gives the dash full citizenship in good English. The em dash did not arrive with AI. Some of us were using it back when the hot productivity stack was underlining a paperback and feeling profound about it.
+I bought William Zinsser's [*On Writing Well*](https://www.porchlightbooks.com/products/on-writing-well-william-zinsser-9780060891541) years before GPT-3, before ChatGPT, before "ChatGPT-style writing" was a phrase anyone said out loud. There is a chapter called "Bits & Pieces," and inside it Zinsser gives the dash full citizenship in good English. The em dash did not arrive with AI. Some of us were using it back when the hot productivity stack was underlining a paperback and feeling profound about it.
 
 Zinsser's first example is simple: "We decided to keep going—it was only 100 miles more and we could get there in time for dinner." The dash is not decoration there. It turns the sentence forward and gives the reason. His other use is the parenthetical aside: a thought inside a thought, without stopping the sentence cold.
 
@@ -41,7 +41,7 @@ In the meantime, I am keeping my em dashes. Zinsser got there first, I got there
   title  = {The Em Dash Is Only an AI Fingerprint If You Didn't Already Use It ;)},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/05/04/em-dash-not-an-ai-fingerprint.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/05/04/em-dash-not-an-ai-fingerprint.html}},
   note   = {Blog post}
 }
 ```

@@ -12,7 +12,7 @@ section: ml
 ---
 
 - When I took 9.520 at MIT with the wonderful professors
-[Lorenzo Rosasco](http://web.mit.edu/lrosasco/www/) and
+[Lorenzo Rosasco](https://cbmm.mit.edu/about/people/rosasco) and
 [Tomaso Poggio](https://mcgovern.mit.edu/profile/tomaso-poggio/),
 I made a survey of my own explanation of the concepts and
 mathematical proofs of [Uniform Stability and Generalization in (statistical)
@@ -29,7 +29,7 @@ Learning Theory](https://qr.ae/TWo7oy).
   title  = {Uniform Stability in Machine Learning Theory},
   year   = {2019},
   month  = {October},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2019/10/31/uniform-stability.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2019/10/31/uniform-stability.html}},
   note   = {Blog post}
 }
 ```

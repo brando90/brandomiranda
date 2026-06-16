@@ -1,6 +1,6 @@
 # Stanford AI for Lean Copy Blocks
 
-This file is internal supporting copy for OSE/ASSU forms, sponsor outreach, room requests, and funding requests. The public page is <https://brando90.github.io/brandomiranda/stanford-ai-for-lean/>.
+This file is internal supporting copy for OSE/ASSU forms, sponsor outreach, room requests, and funding requests. The public page is <https://cs.stanford.edu/people/brando9/stanford-ai-for-lean/>.
 
 ## One-Line Description
 
@@ -58,9 +58,9 @@ Stanford AI for Lean would like to invite [Speaker] from [Company] to give a tec
 
 ## Useful Links
 
-- Public sponsor page: <https://brando90.github.io/brandomiranda/stanford-ai-for-lean/>
+- Public sponsor page: <https://cs.stanford.edu/people/brando9/stanford-ai-for-lean/>
 - Stanford AI for Lean: <https://www.stanfordlean.club/>
-- Brando Miranda: <https://brando90.github.io/brandomiranda/>
+- Brando Miranda: <https://cs.stanford.edu/people/brando9/>
 - Prof. Sanmi Koyejo / STAIR group: <https://cs.stanford.edu/~sanmi/index.html>
 - Lean: <https://lean-lang.org/>
 - Lean community / Mathlib: <https://leanprover-community.github.io/>

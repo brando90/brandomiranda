@@ -10,7 +10,7 @@ Decide whether Brando's blog should have native comments at the bottom of posts,
 
 Current target post:
 
-- Blog post: https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
+- Blog post: https://cs.stanford.edu/people/brando9/2026/04/22/formal-methods-scalable-oversight.html
 - X/Twitter thread: https://x.com/BrandoHablando/status/2056074520491139400?s=20
 
 Minimum already worth doing:

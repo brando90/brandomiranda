@@ -71,7 +71,7 @@ If you want to follow us at LCS here are some useful links:
   title  = {Mindfulness as a Cure for Anxiety},
   year   = {2020},
   month  = {October},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2020/10/18/mindfulness-as-a-cure-for-anxiety.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2020/10/18/mindfulness-as-a-cure-for-anxiety.html}},
   note   = {Blog post}
 }
 ```

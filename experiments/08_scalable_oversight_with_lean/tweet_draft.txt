@@ -1,0 +1,51 @@
+🚨 New on my blog: formal methods as scalable oversight for AI agents.
+
+Lean changes the shape of checking: don't make humans audit every complex reasoning argument.
+
+Let the verifier check the complex reasoning; let the human check the question (e.g., theorem!).
+
+✅ verifier checks the answer
+🧠 human checks the question
+
+More details:
+
+https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
+
+----
+
+Blog promo version:
+
+🤖 I've been writing more on my blog about AI agents, Lean, formal verification, and research taste.
+
+This post is the cleanest statement of the thesis so far:
+
+let the verifier check the answer; let the human check the question.
+
+https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
+
+Approx effective X count: 253/280
+
+Optional 2-tweet thread:
+
+Tweet 1:
+
+🚨 New on my blog: formal methods as scalable oversight for AI agents.
+
+The worry: models generate text faster than humans can understand it. If checking means one human eye against a wall of generated output, we lose.
+
+🧵 1/2
+
+Approx effective X count: 224/280
+
+Tweet 2:
+
+Lean suggests a better split:
+
+✅ let the verifier check the answer
+🧠 let the human check the question
+
+That is the oversight pattern I care about for AI, research, and formal methods.
+
+https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
+
+Approx effective X count: 208/280

@@ -11,7 +11,7 @@ Status: draft only. Stop before final submit.
 - Expected graduation: 2026
 - Field / discipline: Computer Science; Artificial Intelligence / Machine Learning; AI for formal mathematics; trustworthy AI; formal verification
 - Location: Stanford, CA
-- Website: https://brando90.github.io/brandomiranda/
+- Website: https://cs.stanford.edu/people/brando9/
 - Google Scholar: https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en
 - LinkedIn: https://www.linkedin.com/in/brando-miranda-40821046/
 - Resume/CV upload: `professional_documents/cvs/cv_short.pdf`

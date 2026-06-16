@@ -75,7 +75,7 @@ If a **recoverable-Markov** process — a 2-state chain $\{\text{on-manifold},\ 
   title  = {Autoregressive Models + LLMs Exponential Error-Compounding Argument --- Is It Real or Fiction?},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/05/26/ar-error-compounding-real-or-fiction.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/05/26/ar-error-compounding-real-or-fiction.html}},
   note   = {Blog post}
 }
 ```

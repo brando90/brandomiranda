@@ -53,7 +53,7 @@ All of these are the same lesson: an LLM response is not a document with a fixed
 
 ## The connection to everything else
 
-In [the workflow I wrote about last week](https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html), the headline idea was correctness gating: agents produce, gates check. Gates are the big lever. But the small lever — where on the page you ask the model to summarize, critique, or commit — is, in aggregate, doing a lot of work too. Both levers point at the same thing: the output is not just a function of the model, it is a function of the *shape* of the interaction.
+In [the workflow I wrote about last week](https://cs.stanford.edu/people/brando9/2026/04/13/correctness-gated-multi-agent-workflow.html), the headline idea was correctness gating: agents produce, gates check. Gates are the big lever. But the small lever — where on the page you ask the model to summarize, critique, or commit — is, in aggregate, doing a lot of work too. Both levers point at the same thing: the output is not just a function of the model, it is a function of the *shape* of the interaction.
 
 Agent output gets better when the rules take the shape of reasoning seriously. Dual-position TLDR is a five-line rule. It is also a small argument for the broader bet: the structure of how you ask matters as much as what you ask.
 

@@ -40,13 +40,13 @@ If both are eventually submitted, keep the framing complementary:
 - Aristotle sponsorship page: https://aristotle.harmonic.fun/sponsorships
 - User-provided Google Doc draft: https://docs.google.com/document/d/1kX0VkLSZ_AZ-Uhbzd4GxWH-98W1u5rKWqi3WIkFaFm8/edit?tab=t.0
 - User-provided revised Claude draft: https://docs.google.com/document/d/1yt0_GMLitM1pHBpHmRO6eJ1nYH5CJ7hxTCXCSlnvmO4/edit?usp=sharing
-- Brando website: https://brando90.github.io/brandomiranda/
-- Brando long CV: https://brando90.github.io/brandomiranda/professional_documents/cvs/cv_long.pdf
-- Brando short CV: https://brando90.github.io/brandomiranda/professional_documents/cvs/cv_short.pdf
+- Brando website: https://cs.stanford.edu/people/brando9/
+- Brando long CV: https://cs.stanford.edu/people/brando9/professional_documents/cvs/cv_long.pdf
+- Brando short CV: https://cs.stanford.edu/people/brando9/professional_documents/cvs/cv_short.pdf
 - Brando Google Scholar: https://scholar.google.com/citations?user=_NQJoBkAAAAJ&hl=en
 - Stanford AI for Lean: https://www.stanfordlean.club/
 - VeriBench: https://openreview.net/forum?id=rWkGFmnSNl
-- Formal methods blog post: https://brando90.github.io/brandomiranda/2026/04/22/formal-methods-scalable-oversight.html
-- Correctness-gated agents blog post: https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html
+- Formal methods blog post: https://cs.stanford.edu/people/brando9/2026/04/22/formal-methods-scalable-oversight.html
+- Correctness-gated agents blog post: https://cs.stanford.edu/people/brando9/2026/04/13/correctness-gated-multi-agent-workflow.html
 - Learning Lean 4 playlist: https://www.youtube.com/playlist?list=PLB3sDpSRdrOt68MTR6kdI0Jc85Uuw1YWV
 - Learning Lean 4 code: https://github.com/brando90/learning_lean/tree/main

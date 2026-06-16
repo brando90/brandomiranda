@@ -75,7 +75,7 @@ It's a force of nature. The only rational response is to learn to work with it.
   title  = {Embrace {AI} or Be Left Behind --- By People, Not Machines},
   year   = {2026},
   month  = {April},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/04/27/embrace-ai-or-be-left-behind.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/04/27/embrace-ai-or-be-left-behind.html}},
   note   = {Blog post}
 }
 ```

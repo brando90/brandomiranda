@@ -164,7 +164,7 @@ I'd love to hear other people's framings on this — especially from anyone who 
   title  = {Lean vs {ATPs}: There Are Things You Cannot Write in {SMT} Solvers},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/05/12/lean-vs-atp.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/05/12/lean-vs-atp.html}},
   note   = {Blog post}
 }
 ```

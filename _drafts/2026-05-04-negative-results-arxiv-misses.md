@@ -83,7 +83,7 @@ There is a thread that connects this post to [the formal-methods piece I wrote a
   title  = {What arXiv Misses: Negative Results and the Case for Joining a Lab},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/05/04/negative-results-arxiv-misses.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/05/04/negative-results-arxiv-misses.html}},
   note   = {Blog post draft}
 }
 ```

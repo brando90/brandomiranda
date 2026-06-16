@@ -156,7 +156,7 @@ To run the fixed-resources comparison we have to *train* the EBM, and the obviou
   title  = {Autoregressive Models + LLMs Exponential Error-Compounding Argument --- Is It Real or Fiction?},
   year   = {2026},
   month  = {May},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/05/26/ar-error-compounding-real-or-fiction.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/05/26/ar-error-compounding-real-or-fiction.html}},
   note   = {Blog post}
 }
 @inproceedings{dziri2023faith,
@@ -190,7 +190,7 @@ To run the fixed-resources comparison we have to *train* the EBM, and the obviou
   title  = {Why Energy-Based Models? The Toy AR-vs-EBM Argument},
   year   = {2026},
   month  = {June},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/06/09/why-energy-based-models-the-toy-ar-vs-ebm-argument.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/06/09/why-energy-based-models-the-toy-ar-vs-ebm-argument.html}},
   note   = {Blog post}
 }
 ```

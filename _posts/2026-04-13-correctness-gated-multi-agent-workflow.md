@@ -81,7 +81,7 @@ That's why I founded [Stanford AI for Lean](https://www.stanfordlean.club/) — 
   title  = {What I Learned Building a Correctness-Gated Multi-Agent Workflow for Research},
   year   = {2026},
   month  = {April},
-  howpublished = {\url{https://brando90.github.io/brandomiranda/2026/04/13/correctness-gated-multi-agent-workflow.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/04/13/correctness-gated-multi-agent-workflow.html}},
   note   = {Blog post}
 }
 ```
