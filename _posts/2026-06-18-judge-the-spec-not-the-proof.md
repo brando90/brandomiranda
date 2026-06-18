@@ -31,13 +31,11 @@ None of this removes the human, or the judge. It relocates them — to the short
 
 ---
 
-**TL;DR.** Lean checks proofs for free; the only thing left to judge is whether the formal spec is the theorem you meant. Benchmarks that grade natural-language proofs measure the Lean-replaceable part and skip the irreducible one. Judge the spec, not the proof.
-
----
-
 ## Discuss
 
-I'll share this on X — replies, disagreements, and pointers welcome. {% raw %}{{add link to the thread once posted}}{% endraw %}
+I'll share this on X — replies, disagreements, and pointers welcome.
+
+<!-- TODO: once posted on X, mirror the predecessor's Discuss format, e.g.: I shared this post on X/Twitter here: [discussion thread](https://x.com/BrandoHablando/status/...). -->
 
 ---
 
