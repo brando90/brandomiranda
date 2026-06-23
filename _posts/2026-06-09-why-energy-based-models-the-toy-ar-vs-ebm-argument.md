@@ -66,7 +66,7 @@ Both model classes write down $e^{\text{score}}/Z$. Neither escapes $Z$; they *d
 
 ## Then why would anyone sign the expensive contract?
 
-Because the installment plan has a hidden fee. The headline objection to AR — the [**Exponential Error Compounding Argument**](https://cs.stanford.edu/people/brando9/2026/05/26/ar-error-compounding-real-or-fiction.html) (LeCun, 2022) — goes: if each generated token independently steps off the "correct manifold" with probability $\varepsilon$, and errors are unrecoverable, then
+Because the installment plan has a hidden fee. The headline objection to AR — the [**Exponential Error Compounding Argument**](https://cs.stanford.edu/people/brando9/2026/05/26/ar-error-compounding-real-or-fiction.html) (LeCun, 2023 slides; Dziri et al., 2023) — goes: if each generated token independently steps off the "correct manifold" with probability $\varepsilon$, and errors are unrecoverable, then
 
 $$\Pr\!\left[\, x^{<t>} \in \text{correct},\ \forall\, t \le T_x \,\right] \;\approx\; (1-\varepsilon)^{T_x} \;\longrightarrow\; 0$$
 
@@ -120,7 +120,7 @@ To run the fixed-resources comparison we have to *train* the EBM, and the obviou
 
 ## References
 
-- [Yann LeCun. *A Path Towards Autonomous Machine Intelligence*. OpenReview, 2022.](https://openreview.net/pdf?id=BZ5a1r-kVsf)
+- [Yann LeCun. *Do large language models need sensory grounding for meaning and understanding?* NYU Philosophy slide deck, March 2023.](https://drive.google.com/file/d/1BU5bV3X5w65DwSMapKcsr0ZvrMRU_Nbi/view)
 - [Yann LeCun, Sumit Chopra, Raia Hadsell, Marc'Aurelio Ranzato, and Fu Jie Huang. *A Tutorial on Energy-Based Learning*. In *Predicting Structured Data*. MIT Press, 2006.](https://yann.lecun.org/exdb/publis/pdf/lecun-06.pdf)
 - [Yang Song and Diederik P. Kingma. *How to Train Your Energy-Based Models*. arXiv:2101.03288, 2021.](https://arxiv.org/abs/2101.03288)
 - [Brando Miranda. *Autoregressive Models + LLMs Exponential Error-Compounding Argument — Is It Real or Fiction?* Blog post, 2026.](https://cs.stanford.edu/people/brando9/2026/05/26/ar-error-compounding-real-or-fiction.html)
@@ -131,11 +131,13 @@ To run the fixed-resources comparison we have to *train* the EBM, and the obviou
 ### BibTeX for the references
 
 ```bibtex
-@misc{lecun2022path,
+@misc{lecun2023nyuphil,
   author = {LeCun, Yann},
-  title  = {A Path Towards Autonomous Machine Intelligence},
-  year   = {2022},
-  howpublished = {\url{https://openreview.net/pdf?id=BZ5a1r-kVsf}}
+  title  = {Do Large Language Models Need Sensory Grounding for Meaning and Understanding?},
+  year   = {2023},
+  month  = {March},
+  howpublished = {\url{https://drive.google.com/file/d/1BU5bV3X5w65DwSMapKcsr0ZvrMRU_Nbi/view}},
+  note   = {NYU Philosophy slide deck}
 }
 @incollection{lecun2006tutorial,
   author = {LeCun, Yann and Chopra, Sumit and Hadsell, Raia and Ranzato, Marc'Aurelio and Huang, Fu Jie},

@@ -13,7 +13,7 @@ section: ml
 
 ## The argument has a name
 
-The headline objection to autoregressive language models — *"errors compound, so long-form generation collapses"* — has a name worth keeping. Call it the **Exponential Error Compounding Argument**. The most-cited articulation is in [Yann LeCun, *A Path Towards Autonomous Machine Intelligence* (2022)](https://openreview.net/pdf?id=BZ5a1r-kVsf); the same shape appears in classical EBM writeups such as [LeCun et al., *A Tutorial on Energy-Based Learning* (2006)](https://yann.lecun.org/exdb/publis/pdf/lecun-06.pdf). The equation is one line:
+The headline objection to autoregressive language models — *"errors compound, so long-form generation collapses"* — has a name worth keeping. Call it the **Exponential Error Compounding Argument**. A clear LeCun source for the exponential version is his March 2023 NYU Philosophy slide deck, [*Do large language models need sensory grounding for meaning and understanding?*](https://drive.google.com/file/d/1BU5bV3X5w65DwSMapKcsr0ZvrMRU_Nbi/view), where the argument is stated as a per-token error probability leading to an answer-correctness probability of $(1-e)^n$. For a peer-reviewed empirical treatment of compounding errors in transformer compositionality, see [Dziri et al., *Faith and Fate: Limits of Transformers on Compositionality* (NeurIPS 2023)](https://openreview.net/forum?id=Fkckkr3ya8). The equation is one line:
 
 $$
 P(\text{success at length } T_y) \;=\; (1 - e)^{T_y} \;=\; \exp\!\bigl(T_y \log(1 - e)\bigr).
@@ -61,8 +61,8 @@ If a **recoverable-Markov** process — a 2-state chain $\{\text{on-manifold},\ 
 
 ## References
 
-- [Yann LeCun. *A Path Towards Autonomous Machine Intelligence*. OpenReview, 2022.](https://openreview.net/pdf?id=BZ5a1r-kVsf)
-- [Yann LeCun, Sumit Chopra, Raia Hadsell, Marc'Aurelio Ranzato, and Fu Jie Huang. *A Tutorial on Energy-Based Learning*. In *Predicting Structured Data*. MIT Press, 2006.](https://yann.lecun.org/exdb/publis/pdf/lecun-06.pdf)
+- [Yann LeCun. *Do large language models need sensory grounding for meaning and understanding?* NYU Philosophy slide deck, March 2023.](https://drive.google.com/file/d/1BU5bV3X5w65DwSMapKcsr0ZvrMRU_Nbi/view)
+- [Nouha Dziri, Ximing Lu, Melanie Sclar, et al. *Faith and Fate: Limits of Transformers on Compositionality*. NeurIPS, 2023.](https://openreview.net/forum?id=Fkckkr3ya8)
 - [Zhilin Yang, Zihang Dai, Ruslan Salakhutdinov, and William W. Cohen. *Breaking the Softmax Bottleneck: A High-Rank RNN Language Model*. arXiv:1711.03953, 2017.](https://arxiv.org/abs/1711.03953)
 
 ---
