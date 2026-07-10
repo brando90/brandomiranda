@@ -50,12 +50,8 @@ Selected publications are listed reverse-chronologically; see [Google Scholar](h
 
 VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean 4 (2026)
 *<strong>Brando Miranda</strong>, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, et al.*
+[**[Blog / Project Page]**]({{ site.baseurl }}veribench/blog/veribench-launch/)
 [**[Preprint]**]({{ site.baseurl }}professional_documents/papers/NeurIPS_2026_VeriBench.pdf)
-[**[Run Tutorial (Colab)]**](https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing)
-[**[Harbor Hub]**](https://harborframework.com/registry)
-[**[Blog]**]({{ site.baseurl }}veribench/blog/veribench-launch/)
-[**[2nd Workshop on AI for Math at International Conference on Machine Learning (ICML) 2025]**](https://openreview.net/forum?id=rWkGFmnSNl)
-VeriBench uses Harbor for agentic, containerized evaluation: agents run inside isolated Docker tasks and are evaluated against held-out gold artifacts, rather than being given access to the solutions. The Colab tutorial shows how to run the public `veribench@1.1` release.
 
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
 *Zhanke Zhou, Xiangyu Lu, Chentao Cao, <strong>Brando Miranda</strong>, Tongliang Liu, Bo Han, Sanmi Koyejo.*

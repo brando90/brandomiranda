@@ -72,6 +72,14 @@
               </span>
             </p>
           </div>
+          <nav class="resource-links" aria-label="VeriBench resources">
+            <a href="../../../professional_documents/papers/NeurIPS_2026_VeriBench.pdf">Preprint</a>
+            <a href="https://github.com/brando90/veribench">GitHub</a>
+            <a href="https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing">Colab Tutorial</a>
+            <a href="https://harborframework.com/registry">Harbor Hub</a>
+            <a href="https://openreview.net/forum?id=rWkGFmnSNl">ICML 2025 Workshop</a>
+            <a href="#citation">Citation</a>
+          </nav>
           <!-- <figure class="post-header-figure">
             <img src="../../figs/veribench_graphic_2.png" alt="VeriBench overview graphic" />
           </figure> -->
@@ -723,23 +731,9 @@ theorem correctnessThm (a b : Nat) :
             </div>
           </section>
 
-          <section>
-            <h2>Run It Yourself</h2>
-            <p>
-              VeriBench uses Harbor for agentic, containerized evaluation:
-              agents run inside isolated Docker tasks and are evaluated against
-              held-out gold artifacts, rather than being given access to the
-              solutions. The
-              <a href="https://colab.research.google.com/drive/1_TsBPSQTMrNK0WD2-qj5VpEYKTLuiUYc?usp=sharing">Colab
-              tutorial</a> shows how to run the public
-              <code>veribench@1.1</code> release.
-            </p>
-          </section>
-
-
         </div>
 
-        <section class="citation-footer">
+        <section class="citation-footer" id="citation">
           <h2>Citation</h2>
           <p>
             If you use VeriBench in your work, please cite the project using
