@@ -27,8 +27,8 @@ that the source does not contain.
 ### 1. Draft blog post — `/Users/brandomiranda/brandomiranda`
 
 - Path: `_drafts/YYYY-MM-DD-<slug>.md`. **`_drafts/`, not `_posts/`** — the post stays unpublished
-  ("private") until Brando moves it. `_drafts/` is in `_config.yml`'s `exclude:` list, so nothing
-  reaches the live site.
+  until Brando moves it. The draft remains visible in this public Git repository, but `_drafts/` is
+  in `_config.yml`'s `exclude:` list, so nothing reaches the live site.
 - Obey the **canonical post header** in `CLAUDE.md`: frontmatter (`layout: post`, `title:`, `date:`,
   `section:`), then the one-line italic byline `*Brando Miranda — Month YYYY · ~X min read*`, then the
   standalone bold draft-warning line, then a single `**TL;DR.**` paragraph, then `---`, then body.
@@ -59,7 +59,8 @@ that the source does not contain.
   header comment, `\section{...}` + `\label{sec:...}`, `\paragraph{}`/`\textbf{}` lead-ins,
   `` ``quoted'' `` LaTeX quotes, `\&` escaped, `---` for em-dashes.
 - Read `~/agents-config/writing/ml_research/ml_research_writing.md` before touching `.tex`.
-- Rebuild and verify: `cd ~/htdr/latex_paper && latexmk -pdf -interaction=nonstopmode 00_main.tex`.
+- Rebuild and verify: `cd ~/htdr/latex_paper && pdflatex -interaction=nonstopmode 00_main.tex`, run
+  twice (a pre-existing missing figure makes `latexmk` exit before the second pass).
   Confirm the PDF mtime advanced and the new section appears with a real number. No new LaTeX errors.
 - Do not add fabricated citations to `references.bib`. Cite only what exists, or cite nothing.
 
@@ -87,7 +88,8 @@ Repo `brando90/brandomiranda` is **public**; `brando90/htdr` is **private**. Bot
    `git worktree add --detach /tmp/bm-deploy origin/main && bash /tmp/bm-deploy/scripts/deploy_stanford_cs.sh && git worktree remove --force /tmp/bm-deploy`.
    A draft post changes no published URL, so the expectation is a no-op mirror; verify rather than
    assume.
-4. **htdr**: commit the section + rebuilt PDF and push to `main`.
+4. **htdr**: rebuild the PDF locally, then commit the section sources and push to `main`; this repo
+   ignores `*.pdf`.
 5. Commit only the files this task touches. Leave the pre-existing dirty CV / workspace edits alone.
 6. No secrets. No API keys. Review the diff before pushing.
 

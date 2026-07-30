@@ -27,14 +27,15 @@ Source chat: `https://claude.ai/chat/b152028d-b27c-4f83-ac0d-4bb84a1fb2c8`
 | Artifact | Location |
 |---|---|
 | Draft blog post | `_drafts/2026-07-29-write-the-rebuttal-for-the-ac.md` (unpublished — `_drafts/` is in `_config.yml`'s `exclude:`) |
-| Paper section | `~/htdr/latex_paper/23_rebuttals_and_ac_comments.tex`, `\input`-ed by `00_main.tex` as §23 |
+| Paper section | `~/htdr/latex_paper/23_rebuttals_and_ac_comments.tex`, `\input`-ed by `00_main.tex` as §25 |
 | Paper appendix checklist | `~/htdr/latex_paper/98_appendix.tex` (`\subsection{Rebuttal Checklist}`) |
 
 ## Rerun
 
 ```bash
 # 1. Re-read the prompt and the source
-cat experiments/14_rebuttal_ml_guide/preprompt.md
+cat experiments/14_rebuttal_ml_guide/preprompt.md \
+    experiments/14_rebuttal_ml_guide/rebuttal_playbook_source.md
 
 # 2. Blog side — verify the draft header is canonical (normalizer covers _posts/ only,
 #    so call transform() directly on the draft)
@@ -45,8 +46,10 @@ from normalize_post_headers import transform
 print(transform(Path('_drafts/2026-07-29-write-the-rebuttal-for-the-ac.md')))
 "   # expect (False, 'no change')
 
-# 3. Paper side — rebuild and confirm the PDF mtime advanced
-cd ~/htdr/latex_paper && latexmk -pdf -interaction=nonstopmode 00_main.tex
+# 3. Paper side — rebuild twice and confirm the PDF mtime advanced
+cd ~/htdr/latex_paper
+pdflatex -interaction=nonstopmode 00_main.tex
+pdflatex -interaction=nonstopmode 00_main.tex
 ```
 
 ## Self-check that matters here
