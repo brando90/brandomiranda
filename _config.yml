@@ -53,6 +53,7 @@ exclude:
   - CLAUDE.md
   - AGENTS.md
   - professional_documents/cvs/cvs_prompt.md
+  - professional_documents/cvs/typst/README.md
 
 # Build settings
 theme: minima
