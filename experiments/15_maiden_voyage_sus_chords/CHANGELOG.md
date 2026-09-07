@@ -68,3 +68,23 @@ STILL OPEN
 - A shareable conversation link, if Brando wants one public.
 - Brando's read-for-voice pass, then remove the draft-warning line and re-run the normalizer.
 - Posting the X announcement (x-announcement.md) with image 02 attached.
+
+v0.7 — September 6, 2026 (trim to ~8 min, draft banner retired)
+----------------------------------------------------------------
+
+Brando: "let's not have that [draft warning] anymore ... let's keep it 8mins and the appendix should also be shorter ... top 12 mins total. Remaining text can go in a google doc." And, separately: the heading "Snidero's one confusing sentence" "sounds like we are blaming."
+
+1. Cut the post from 5,481 words (~17 min main + ~11 min appendix) to 2,424 words: main 1,687 (~8.4 min, byline now reads "~8 min read"), appendix 737 (~3.7 min), total ~12.1 min. The argument is intact end to end; what went was length, not structure.
+2. Main post: the notation section is now one sentence; the five-case Lydian/Mixolydian procedure is gone (the one-question test stays); the compact twelve-options list and the four-block practice map moved from the body into the appendix; every remaining section was tightened line by line.
+3. Appendix rebuilt as three reference sections — A. the four-block map and practice plan, B. the twelve playing options (compact), C. sources and BibTeX. The old A (nine questions), B (fourteen takeaways), D (twelve options in detail), and E (chart-by-chart) are gone from the post; E's two-conventions caveat was kept as one paragraph in the main Lydian section so the honest qualification survives.
+4. Everything cut is preserved verbatim in a Google Doc, "Maiden Voyage sus chords — the long cut": https://docs.google.com/document/d/1ySI6iOZc4tVGSuePP5EILTYdshyR8fA0skPCuNvDme0/edit (private to Brando's account; not linked from the published post, since what to do with it is undecided). Nothing was rewritten or invented on the way in.
+5. Draft-warning banner removed from this post AND retired as a repo convention: the rule is deleted from CLAUDE.md and AGENTS.md, scripts/normalize_post_headers.py now STRIPS the line instead of relocating it, and the line was removed from the four other published posts that carried it (velocity, vectoring, score-matching, why-EBMs) plus three files in _drafts/.
+6. Heading "Snidero's one confusing sentence" renamed to "The sentence that stopped me", and its caption to "The sentence I had to sit with, and my margin note." The body now says "It took me a few readings, and the sentence is exactly right." New HARD rule in CLAUDE.md and AGENTS.md — "Blog voice: own the confusion, don't blame the source" — so this does not recur by default.
+
+STILL OPEN (unchanged from v0.6)
+
+- Image 05 (the Lydian-dominant lesson notes photo).
+- The second teacher's name.
+- A shareable conversation link, if Brando wants one public.
+- What to do with the long-cut Google Doc.
+- Posting the X announcement (x-announcement.md) with image 02 attached.

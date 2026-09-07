@@ -1,6 +1,6 @@
 # 15 — One Chord, Three Names (Maiden Voyage sus chords)
 
-Working folder for the blog post **"One Chord, Three Names: What Maiden Voyage Taught Me About Sus Chords"** (September 6, 2026; draft).
+Working folder for the blog post **"One Chord, Three Names: What Maiden Voyage Taught Me About Sus Chords"** (September 6, 2026). Published: ~8 min main post, ~12 min with the appendix.
 
 Argument in one line: Aebersold's F#-/B, Snidero's B7sus, F# Dorian, B Mixolydian, my teacher's "E pent / A pent," and "B bebop" are all the same seven notes of E major named from different roots, because a sus chord has no third — so Mixolydian is the default over a sus, Lydian dominant is off the table, and a modal tune is a chain of short keys.
 
@@ -16,7 +16,8 @@ Notation in the post: alto (Eb) key throughout; every pentatonic labeled major o
 
 ## Published
 
-- Post source: [`_posts/2026-09-06-maiden-voyage-sus-chords.md`](../../_posts/2026-09-06-maiden-voyage-sus-chords.md) (carries the draft warning line until final).
+- Post source: [`_posts/2026-09-06-maiden-voyage-sus-chords.md`](../../_posts/2026-09-06-maiden-voyage-sus-chords.md).
+- Long cut (everything trimmed out of the post, verbatim): [Google Doc](https://docs.google.com/document/d/1ySI6iOZc4tVGSuePP5EILTYdshyR8fA0skPCuNvDme0/edit) — private to Brando's account, deliberately not linked from the published post.
 - URL once live: <https://cs.stanford.edu/people/brando9/2026/09/06/maiden-voyage-sus-chords.html>
 - Listed under **Music** on the blog index (auto-generated from `section: music`).
 - Images: [`assets/maiden_voyage_sus_chords/`](../../assets/maiden_voyage_sus_chords/) — crops of chord symbols and pencil notes only (00 cover, 01 Snidero header, 02 Aebersold first chord, 03 Aebersold solo section, 04 Snidero appendix sentence, 06 Snidero scale page). File 05, the other teacher's Lydian-dominant notes, does not exist yet; the draft's `![...05...]` tag and its `[IMAGE TO ADD.]` caption were removed before publishing so the live page has no broken image. Re-add both when the photo exists.

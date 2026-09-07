@@ -7,8 +7,6 @@ section: meta-research
 
 *Brando Miranda — July 2026 · ~7 min read*
 
-**Warning: this post is a draft — content may change and errors may remain.**
-
 **TL;DR.** Reviewers mostly don't move their scores. The area chair reads every thread side by side and makes the decision. So write the rebuttal for the AC: answer the metareview first, spend what's left on the lowest score, and write the AC comment last, once you know what the reviewer threads actually say. Concede only what you've verified, concede the specific thing rather than the category, and put what survives in the same paragraph as what you gave up.
 
 ---

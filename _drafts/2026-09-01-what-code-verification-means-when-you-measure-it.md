@@ -6,8 +6,6 @@ date: 2026-09-01
 
 *Brando Miranda — September 2026 · ~10 min read*
 
-**Warning: this post is a draft — content may change and errors may remain.**
-
 **TL;DR.** A benchmark is an operational definition of a capability whether or not its authors say so, so say so. "Verified" has always meant verified *relative to a specification*, and whether that specification is adequate to what a human meant is not a formal question for anyone — not for a benchmark, not for a proof assistant, not for a certification standard. VeriBench operationalizes one scoped version of code verification — verification of a Lean 4 model of Python source, by an agent, against a fixed curated reference — and it should be read as exactly that: a measurement of prerequisite capabilities, with software verification as the motivation rather than the result.
 
 ---
