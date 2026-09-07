@@ -44,3 +44,7 @@ professional_documents/cvs/*.toc
 professional_documents/cvs/*.fls
 professional_documents/cvs/*.fdb_latexmk
 professional_documents/cvs/*.synctex.gz
+
+# Maiden Voyage blog bundle: source zips + unpacked copy (content already extracted into the repo)
+experiments/15_maiden_voyage_sus_chords/*.zip
+experiments/15_maiden_voyage_sus_chords/unpacked/
