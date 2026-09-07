@@ -72,6 +72,14 @@ Rules:
 
 See `CLAUDE.md` § "Blog post header format (HARD)" for the canonical version.
 
+## No appendix by default (HARD)
+
+No appendix on a post unless there's a strong specific reason. Brando, 2026-09-06: "it looks too long and Im trying to not be repetitive."
+
+An appendix makes a tight post look sprawling, and in practice it restates the body. If material is good enough to keep, put it in the body; if not, cut it to a private doc, not to a heading at the bottom of the post. Reference tables the writer uses but readers don't (practice maps, per-block breakdowns, option inventories) are the clearest cut.
+
+A post ends with: body, `bibtex` block, `## Acknowledgments`. See `CLAUDE.md` § "No appendix by default (HARD)".
+
 ## No sources / materials / process apparatus on blog posts (HARD)
 
 Blog posts carry no bibliography, no materials list, no provenance note, no pointer to how the post was made. Brando, 2026-09-06: "I def don't need that type of thing ANYWHERE ever."
@@ -80,7 +88,7 @@ Never add: a sources/materials bullet list (name things in the prose instead); l
 
 Linking to an actual creative artifact the reader would want (score PDF, audio, dataset, the code the post is about) is content, not apparatus, and stays.
 
-A post may end with: body, a real-content appendix, the `bibtex` citation block, and `## Acknowledgments`. Nothing else. See `CLAUDE.md` § "No sources / materials / process apparatus on blog posts (HARD)".
+A post may end with: body, the `bibtex` citation block, and `## Acknowledgments`. Nothing else. See `CLAUDE.md` § "No sources / materials / process apparatus on blog posts (HARD)".
 
 ## Blog voice: own the confusion, don't blame the source (HARD)
 

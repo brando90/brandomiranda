@@ -169,6 +169,19 @@ bash /tmp/bm-deploy/scripts/deploy_stanford_cs.sh
 git worktree remove --force /tmp/bm-deploy
 ```
 
+### No appendix by default (HARD)
+
+Posts do not get an appendix unless there is a strong, specific reason. Brando, 2026-09-06: "I think we should remove appendix...no? it looks too long and Im trying to not be repetitive."
+
+Two failure modes, both real:
+
+- **Length.** An appendix makes a finished post look unfinished-and-sprawling, even when the body is tight. The reader sees the scroll bar, not the word count.
+- **Repetition.** In practice an appendix restates the body. A list of "every way to play over X" after a post that already explained the two scales that matter is the same content twice, in a worse order.
+
+The test: if material is good enough to keep, put it in the body. If it isn't, cut it — to a private doc if it's worth keeping at all, not to a heading at the bottom of the post. Reference tables the writer uses but readers don't (practice maps, per-block breakdowns, option inventories) are the clearest case for cutting.
+
+A post ends with: the body, the `bibtex` citation block, and `## Acknowledgments`.
+
 ### No sources / materials / process apparatus on blog posts (HARD)
 
 Blog posts do not carry a bibliography, a materials list, a provenance note, or any pointer to how the post was made. Brando, 2026-09-06, on exactly these bullets: "wtf? I def don't need that type of thing ANYWHERE ever."
@@ -181,7 +194,7 @@ Never add, in any post:
 - **Defensive or legalistic hedging** — "crops only, not full pages", "no melody is transcribed", "paraphrased, not quoted", "fair use". Nobody writing their own blog talks like that; it reads as an agent covering itself.
 - **Redundant pointers to embedded assets** — a "photos of my annotated pages" link when the photos are already inline in the post.
 
-What a post may end with: the body, an appendix of real content if there is one, the `bibtex` citation block (a house convention across the blog), and `## Acknowledgments` thanking actual people. Nothing else.
+What a post may end with: the body, the `bibtex` citation block (a house convention across the blog), and `## Acknowledgments` thanking actual people. Nothing else — see "No appendix by default" above.
 
 ### Blog voice: own the confusion, don't blame the source (HARD)
 
