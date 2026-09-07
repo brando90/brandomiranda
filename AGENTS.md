@@ -56,8 +56,6 @@ Every `_posts/*.md` post MUST start (immediately after frontmatter) with this ca
 ```
 *Brando Miranda — Month YYYY · ~X min read*
 
-**Warning: this post is a draft — content may change and errors may remain.**   ← optional, draft posts only
-
 **TL;DR.** [single paragraph]
 
 ---
@@ -67,12 +65,22 @@ Every `_posts/*.md` post MUST start (immediately after frontmatter) with this ca
 
 Rules:
 - Byline is one **plain-markdown italic** line, left-aligned. No `<p style="text-align: right;">`. Month is full name (`April`, not `Apr`); read time is `~X min read` (en-dash for ranges, e.g., `~3–4 min read`).
-- Draft warning (optional): a still-in-development post carries the bold line `**Warning: this post is a draft — content may change and errors may remain.**` between the byline and the TL;DR — never below the `---` / in the body. Remove when final; the normalizer relocates misplaced warnings automatically.
+- No draft-warning banner. Published posts never carry `**Warning: this post is a draft ...**` or any variant (retired 2026-09-06); an unfinished post belongs in `_drafts/`, not live behind a disclaimer. The normalizer strips the line wherever it appears.
 - TL;DR paragraph starts with literal `**TL;DR.**` (period inside the bold). If no TL;DR exists, label the first body paragraph rather than omit.
 - Horizontal rule `---` on its own line (blank line above + below) separates TL;DR from body — non-negotiable.
 - No redundant `# Title` H1 at the top of body (Jekyll already renders the frontmatter `title`).
 
 See `CLAUDE.md` § "Blog post header format (HARD)" for the canonical version.
+
+## Blog voice: own the confusion, don't blame the source (HARD)
+
+When a post works through something confusing, the confusion is Brando's, not the source's fault. Never frame a heading or caption as an accusation against a named author.
+
+- Bad: `## Snidero's one confusing sentence`; good: `## The sentence that stopped me`.
+- Applies to captions and body prose too — describe your own reading process, not the source's quality.
+- Substantive, argued disagreement with a source is still fine; what's banned is framing ordinary personal confusion as the source's defect.
+
+See `CLAUDE.md` § "Blog voice: own the confusion, don't blame the source (HARD)".
 
 ## Blog drafts live in `_drafts/` (HARD)
 

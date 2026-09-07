@@ -8,8 +8,6 @@ published: false
 
 *Brando Miranda — June 2026 · ~6 min read*
 
-**Warning: this post is a draft — content may change and errors may remain.**
-
 **TL;DR.** I'm finishing VeriBench and I genuinely can't tell whether perfecting the prose is still worth it when many readers — human and agent — will only ever see a compressed version of the paper. So I asked my lab what they're converging to. Nobody defended the fully hand-crafted paper, and nobody defended the fully delegated one; the real disagreement is where scarce human attention should go. My synthesis after the discussion: polish what determines interpretation (title, abstract, intro, figures), verify what determines truth (claims, numbers, limitations — ideally with agents fact-checking the paper against the code), and write the body so that compression preserves the contribution. And the one rule nobody disputed: you own what you ship, no matter who drafted it.
 
 ---

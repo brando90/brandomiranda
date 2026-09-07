@@ -169,6 +169,17 @@ bash /tmp/bm-deploy/scripts/deploy_stanford_cs.sh
 git worktree remove --force /tmp/bm-deploy
 ```
 
+### Blog voice: own the confusion, don't blame the source (HARD)
+
+When a post works through something that was confusing, the confusion is Brando's, never the book's / paper's / author's fault. Headings and framing must not read as an accusation against a named source.
+
+- Bad: `## Snidero's one confusing sentence`, "the book gets this wrong", "a badly worded paragraph".
+- Good: `## The sentence that stopped me`, "the sentence I had to sit with", "it took me a few readings, and the sentence is exactly right."
+- The same applies to captions and body prose: describe your own reading process, not the source's quality.
+- This is not a ban on disagreement. A substantive, argued disagreement with a source is fine and should be stated plainly. What's banned is *framing ordinary personal confusion as the source's defect*, especially in a heading where it lands hardest.
+
+Rationale (Brando, 2026-09-06): "sounds like we are blaming ... maybe the unclear sentence from Snidero's book or idk something less accusatory."
+
 ### Blog drafts live in `_drafts/` (HARD)
 
 Unpublished blog posts go in **`_drafts/`** — never in `exclude/`, `experiments/`, or anywhere else. `exclude/` is for *non-blog* local-only material (cs197 course files, tweet drafts, scratch notes); a draft blog post placed there breaks the workflow below.
@@ -216,8 +227,6 @@ date: YYYY-MM-DD
 
 *Brando Miranda — Month YYYY · ~X min read*
 
-**Warning: this post is a draft — content may change and errors may remain.**   ← optional, draft posts only
-
 **TL;DR.** [single-paragraph summary, ends with a period]
 
 ---
@@ -227,7 +236,7 @@ date: YYYY-MM-DD
 
 Specifics:
 - **Byline line** is one italic line: `*Brando Miranda — Month YYYY · ~X min read*` — left-aligned plain markdown italic (never right-aligned via `<p style="text-align: right;">`; never split across two lines). Month is full name (`April`, not `Apr`). Read time is `~X min read` (`~` prefix, `min` not `minute`); ranges use en dash (`~3–4 min read`).
-- **Draft warning (optional)** — a published post that is still in development carries the bold standalone line `**Warning: this post is a draft — content may change and errors may remain.**` in exactly one place: between the byline and the TL;DR. Never below the `---` rule or anywhere in the body. Remove the line when the post is final. The normalizer relocates a misplaced warning to this slot automatically.
+- **No draft-warning banner.** Published posts never carry `**Warning: this post is a draft — content may change and errors may remain.**` or any variant. Retired 2026-09-06 — it was a long, self-deprecating line on top of every post, and an unfinished post belongs in `_drafts/`, not on the live site behind a disclaimer. `scripts/normalize_post_headers.py` strips the line wherever it appears, so a stray one disappears on the next normalizer run.
 - **TL;DR paragraph** starts with literal `**TL;DR.**` (note the period inside the bold). Exactly one paragraph (one blank line on each side). If a post genuinely has no TL;DR yet, label the first body paragraph with `**TL;DR.**` rather than omitting the line.
 - **Horizontal rule (`---`)** on its own line separates the TL;DR from the body. This is non-negotiable — without it the TL;DR visually bleeds into the body. The rule comes after a blank line and is followed by a blank line.
 - **No redundant H1.** Jekyll renders the frontmatter `title:` as the page H1. Do not repeat the title as a `# Title` heading at the top of the body.
