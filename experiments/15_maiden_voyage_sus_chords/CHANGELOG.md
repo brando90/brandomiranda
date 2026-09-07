@@ -88,3 +88,20 @@ STILL OPEN (unchanged from v0.6)
 - A shareable conversation link, if Brando wants one public.
 - What to do with the long-cut Google Doc.
 - Posting the X announcement (x-announcement.md) with image 02 attached.
+
+v0.8 — September 6, 2026 (sources / process apparatus removed)
+---------------------------------------------------------------
+
+Brando, on the appendix's source bullets: "wtf? I def don't need that type of thing ANYWHERE ever," then "I don't think this is needed either" (the four book/lesson bullets), then "nor this either" (the Claude-conversation bullet).
+
+1. Appendix C ("Sources, and how to cite this") deleted in full — every bullet:
+   - the two books and the Hancock record (all three are named in the prose where they matter),
+   - the lesson-notes bullet (George is named in the prose and thanked in the Acknowledgments),
+   - "Photos of my annotated pages ... crops of chord symbols and pencil notes, not full pages" (a defensive copyright hedge, plus a redundant link to photos already inline),
+   - "Experiment folder on GitHub — the X announcement, a read-aloud rendering, and the changelog" (build scaffolding, not reader content),
+   - "Distilled from a conversation with Claude (Anthropic) ..." (provenance / AI-disclosure note).
+2. The BibTeX citation block was kept — it is a house convention on 16 of the blog's posts — and lifted out of the appendix to stand on its own between the appendix and Acknowledgments, matching the Metallica post's structure. The appendix is now A. the four-block map and B. the twelve options, both pure musical content, ~3 min.
+3. Same cleanup applied to the one other post carrying the pattern: the Metallica post's bare "[Experiment folder on GitHub]" bullet is gone. Its links to real artifacts (score PDF, the two .sib files, MP3, WAV, the Suno prompts and the Suno take) all stay — those are content the reader wants, not apparatus.
+4. New HARD rule in CLAUDE.md and AGENTS.md — "No sources / materials / process apparatus on blog posts" — covering bibliographies, working-folder links, provenance/AI-disclosure notes, defensive hedging, and redundant links to embedded assets. It states explicitly that links to real creative artifacts are content and stay, so the rule cannot be over-applied.
+
+NOTE: read-aloud.md and x-announcement.md in this folder were written against the v0.5 full-length draft and are now stale — they still describe the ~15 min post with its five-section appendix. Regenerate them from the published post before using either.

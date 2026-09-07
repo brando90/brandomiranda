@@ -91,7 +91,7 @@ That is enough for a Sunday afternoon.
 
 ## Appendix
 
-*Skippable, about four minutes: the practice map, everything I can play over the chord, and the sources.*
+*Skippable, about three minutes: the practice map, and everything I can play over the chord.*
 
 ### A. The four-block map, and what I practice
 
@@ -125,15 +125,7 @@ Alto key. Move it all up a minor third for D7sus, up a half step for C7sus, and 
 
 Two spellings worth keeping: for any X7sus, the minor seventh on its fifth over X (F#-7/B) or the major triad on its flat seventh over X (A/B) both give you X9sus4.
 
-### C. Sources, and how to cite this
-
-- Jim Snidero, *Jazz Conception* (alto edition) — the etude *Voyage* and the appendix "Scales with correlating lines."
-- Jamey Aebersold, *Volume 54: Maiden Voyage*, Eb part, page 41.
-- Herbie Hancock, *Maiden Voyage* (Blue Note, 1965).
-- Lesson notes with George Michael (the pencil on the Aebersold page), and an earlier teacher's Lydian-dominant rule.
-- [Photos of my annotated pages]({{ site.baseurl }}assets/maiden_voyage_sus_chords/) — crops of chord symbols and pencil notes, not full pages.
-- [Experiment folder on GitHub](https://github.com/brando90/brandomiranda/tree/main/experiments/15_maiden_voyage_sus_chords) — the X announcement, a read-aloud rendering, and the changelog.
-- Distilled from a conversation with Claude (Anthropic) on September 6, 2026, books and pencil notes on the table.
+---
 
 *If you'd like to cite this post:*
 
