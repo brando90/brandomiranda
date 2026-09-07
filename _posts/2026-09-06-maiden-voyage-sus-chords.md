@@ -7,7 +7,7 @@ section: music
 
 *Brando Miranda — September 2026 · ~8 min read*
 
-**TL;DR.** I sat down with two versions of Herbie Hancock's *Maiden Voyage* — the Aebersold play-along and Jim Snidero's etude *Voyage* — plus lesson notes from two teachers, and they seemed to disagree about the very first chord. They don't. F#-/B, B7sus, F# Dorian, B Mixolydian, "E pent / A pent," and "B bebop" are the same seven notes of E major named from different roots. The chord has no third, so it never commits to major or minor, and that is why so many names fit it. The upshot: over a sus chord the natural fourth *is* the chord, so Mixolydian is the default and Lydian dominant is off the table — and a modal tune is a chain of short keys, four bars each. (The appendix adds about four minutes and is skippable.)
+**TL;DR.** I sat down with two versions of Herbie Hancock's *Maiden Voyage* — the Aebersold play-along and Jim Snidero's etude *Voyage* — plus lesson notes from two teachers, and they seemed to disagree about the very first chord. They don't. F#-/B, B7sus, F# Dorian, B Mixolydian, "E pent / A pent," and "B bebop" are the same seven notes of E major named from different roots. The chord has no third, so it never commits to major or minor, and that is why so many names fit it. The upshot: over a sus chord the natural fourth *is* the chord, so Mixolydian is the default and Lydian dominant is off the table — and a modal tune is a chain of short keys, four bars each.
 
 ---
 
@@ -86,44 +86,6 @@ One caveat worth naming: Snidero's page lists Mixolydian for plain C7 as well �
 The two books were never in conflict. I was confusing a name with a note. The chord symbol names the bass, the mode name names the home note, the pentatonic name names a subset of the parent scale. Once you know the chord has no third, all the names collapse into one sound, and the only real decision left is how much to lean on D# — which is not much.
 
 That is enough for a Sunday afternoon.
-
----
-
-## Appendix
-
-*Skippable, about three minutes: the practice map, and everything I can play over the chord.*
-
-### A. The four-block map, and what I practice
-
-For every block: the parent major scale, the two major pentatonics built inside it (same-notes minor twin in parentheses), and the bebop scale.
-
-1. **F#-/B = B7sus** (bars 1–4, 9–12, 25–28): parent scale E major. A major pentatonic (F# minor), E major pentatonic (C# minor). B bebop. Rest on B, E, F#, A, C#.
-2. **A-/D = D7sus** (bars 5–8, 13–16, 29–32): parent scale G major. C major pentatonic (A minor), G major pentatonic (E minor). D bebop. Everything from block one, up a minor third.
-3. **G-/C = C7sus** (bars 17–20): parent scale F major. Bb major pentatonic (G minor), F major pentatonic (D minor). C bebop.
-4. **Bb- = Bb-13** (bars 21–24): parent scale Ab major. Db major pentatonic (Bb minor), Ab major pentatonic (F minor), plus Eb major pentatonic (C minor) for the thirteenth. Eb bebop.
-
-George's rule in one sentence: over any X7sus, play the major pentatonic on the fourth of X and on the flat seventh of X, plus X bebop for runs.
-
-In the practice room: the flat-seven pentatonics through a chorus on the slower Aebersold track (A, C, A, C, Bb, Ab, A, C), then the pentatonics on the fourth (E, G, E, G, F, Db, E, G); then the Dorian and bebop scales, chord tones on downbeats; then all of it on Snidero's faster track, then his etude.
-
-### B. Every way to play over B7sus, inside to outside
-
-Alto key. Move it all up a minor third for D7sus, up a half step for C7sus, and use the Ab major set for Bb-13.
-
-1. **Chord tones and their arpeggios.** B, E, F#, A, C#, with G# as the thirteenth: F#-7, A, Amaj7, C#-7, the E major and F# minor triads.
-2. **B Mixolydian = E major = F# Dorian.** The official answer, under three names.
-3. **The two pentatonics.** A major pentatonic (same notes as F# minor) is home; E major pentatonic (C# minor) is brighter. B major pentatonic contains D#, so it's the least sus of the three.
-4. **The no-third hexatonic**, B C# E F# G# A: the two pentatonics combined, or the E major and F# minor triads alternated. The purest sus color.
-5. **Fourths.** The voicing F# B E A C# is three fourths and a third; the chain G# C# F# B E A gives quartal arpeggios. The McCoy Tyner and Herbie sound.
-6. **B blues** (B D E F F# A) and B minor pentatonic: funky rather than floating.
-7. **B Dorian** (the A major set): darker, and inside, because the chord has no third.
-8. **B bebop**: Mixolydian plus A#; aim downbeats at root, fourth, fifth, flat seven, ninth.
-9. **Darker colors, a bar at a time**: Mixolydian flat six, Dorian flat two, Phrygian.
-10. **Not Lydian dominant.** The sharp eleven collides with the E the chord is built on.
-11. **Outside devices**: side-slip a pentatonic a half step, anticipate the next block, resolve back.
-12. **Rhythm, motif, space.** State a cell, repeat it, displace it, transpose it up a minor third with the chord.
-
-Two spellings worth keeping: for any X7sus, the minor seventh on its fifth over X (F#-7/B) or the major triad on its flat seventh over X (A/B) both give you X9sus4.
 
 ---
 
