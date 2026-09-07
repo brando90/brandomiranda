@@ -8,8 +8,8 @@ Notation in the post: alto (Eb) key throughout; every pentatonic labeled major o
 
 ## Files
 
-- `x-announcement.md` — the X post: one standalone tweet and a six-tweet thread, all under 280 characters with links counted at 23.
-- `read-aloud.md` — the post with sharps, flats, and chord symbols spelled out in words, for listening via text-to-speech (generated from the post source; the post is authoritative).
+- `x-announcement.md` — the X post: one standalone tweet and a six-tweet thread, all under 280 characters with links counted at 23. STALE: references the ~15 min version.
+- `read-aloud.md` — the post with sharps, flats, and chord symbols spelled out in words, for listening via text-to-speech. STALE: written against the v0.5 full-length draft; regenerate from the published post before using.
 - `agents-config-prompt.md` — the Claude Code prompt to reconcile the music-blog and publishing-bundle rules in `brando90/agents-config` with the conventions this post established.
 - `PR_DESCRIPTION.md` — the pull request description used when this draft was opened.
 - `CHANGELOG.md` — the draft's decisions, placeholders, open items, and version history.

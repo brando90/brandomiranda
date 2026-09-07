@@ -15,7 +15,7 @@ section: music
 
 I was sixteen, and I wanted my school orchestra to play Metallica. Specifically *The Day That Never Comes* — the 2008 ballad off *Death Magnetic* with the long clean intro, the slow burn into distortion, and that anthemic final solo that I had been listening to on repeat. The orchestra was not a metal band. It was a school orchestra. So I sat down in Sibelius and wrote out parts: strings carrying the clean intro lines, brass and winds handling the rhythmic hits, percussion holding the long-form structure. It took weeks. I had no idea what I was doing.
 
-I cannot overstate how primitive my workflow was. Sibelius 4. A laptop. A pirated MIDI rip of the song to reference by ear. No engraving expertise, no orchestration class, no internet community to ask. Just me, a deadline, and a stubborn belief that *this song would sound good with strings.* The PDF and `.sib` files still exist in the [experiment folder on GitHub](https://github.com/brando90/brandomiranda/tree/main/experiments/00_metallica_goes_jazz), with public copies linked below. The audio below is the Sibelius playback of the score. It is not a real ensemble recording. It is what 2010-me thought the arrangement should sound like, rendered by a sample library that, charitably, did its best:
+I cannot overstate how primitive my workflow was. Sibelius 4. A laptop. A pirated MIDI rip of the song to reference by ear. No engraving expertise, no orchestration class, no internet community to ask. Just me, a deadline, and a stubborn belief that *this song would sound good with strings.* The PDF and `.sib` files still exist, and are linked below. The audio below is the Sibelius playback of the score. It is not a real ensemble recording. It is what 2010-me thought the arrangement should sound like, rendered by a sample library that, charitably, did its best:
 
 <audio controls preload="none" style="width: 100%; max-width: 600px;">
   <source src="{{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes-sibelius-playback.mp3" type="audio/mpeg">
@@ -69,7 +69,6 @@ That is enough for a Wednesday afternoon.
 - [Original Sibelius playback — WAV (lossless)](https://github.com/brando90/brandomiranda/raw/main/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.wav)
 - [Suno prompts (`agents.md`) on GitHub](https://github.com/brando90/brandomiranda/blob/main/experiments/00_metallica_goes_jazz/agents.md)
 - [First Suno take — Chet Baker style](https://suno.com/s/1RTl4ch6L6LlbIFP)
-- [Experiment folder on GitHub](https://github.com/brando90/brandomiranda/tree/main/experiments/00_metallica_goes_jazz)
 
 ---
 

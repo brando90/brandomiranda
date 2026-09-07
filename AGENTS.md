@@ -72,6 +72,16 @@ Rules:
 
 See `CLAUDE.md` § "Blog post header format (HARD)" for the canonical version.
 
+## No sources / materials / process apparatus on blog posts (HARD)
+
+Blog posts carry no bibliography, no materials list, no provenance note, no pointer to how the post was made. Brando, 2026-09-06: "I def don't need that type of thing ANYWHERE ever."
+
+Never add: a sources/materials bullet list (name things in the prose instead); links to internal working folders (`experiments/`, changelogs, PR descriptions, tweet drafts, read-aloud renderings, prompt files); provenance or AI-disclosure notes ("distilled from a conversation with Claude"); defensive hedging ("crops only, not full pages", "no melody transcribed", "fair use"); or redundant links to assets already embedded in the post.
+
+Linking to an actual creative artifact the reader would want (score PDF, audio, dataset, the code the post is about) is content, not apparatus, and stays.
+
+A post may end with: body, a real-content appendix, the `bibtex` citation block, and `## Acknowledgments`. Nothing else. See `CLAUDE.md` § "No sources / materials / process apparatus on blog posts (HARD)".
+
 ## Blog voice: own the confusion, don't blame the source (HARD)
 
 When a post works through something confusing, the confusion is Brando's, not the source's fault. Never frame a heading or caption as an accusation against a named author.

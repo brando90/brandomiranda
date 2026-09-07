@@ -169,6 +169,20 @@ bash /tmp/bm-deploy/scripts/deploy_stanford_cs.sh
 git worktree remove --force /tmp/bm-deploy
 ```
 
+### No sources / materials / process apparatus on blog posts (HARD)
+
+Blog posts do not carry a bibliography, a materials list, a provenance note, or any pointer to how the post was made. Brando, 2026-09-06, on exactly these bullets: "wtf? I def don't need that type of thing ANYWHERE ever."
+
+Never add, in any post:
+
+- **A sources or materials list.** Books, records, papers, and people are named in the prose where they matter. Repeating them as a bibliography at the end is academic apparatus bolted onto a personal blog.
+- **Links to internal working folders** — `experiments/`, changelogs, PR descriptions, X-announcement drafts, read-aloud renderings, prompt files. That is scaffolding for building the post, not content for reading it. Linking to an actual creative artifact the reader would want (a score PDF, an audio file, a dataset, code that the post is about) is fine and is not this rule.
+- **Provenance / AI-disclosure notes** — "distilled from a conversation with Claude", "written with AI assistance", "generated on <date>". Do not add them anywhere, in any wording.
+- **Defensive or legalistic hedging** — "crops only, not full pages", "no melody is transcribed", "paraphrased, not quoted", "fair use". Nobody writing their own blog talks like that; it reads as an agent covering itself.
+- **Redundant pointers to embedded assets** — a "photos of my annotated pages" link when the photos are already inline in the post.
+
+What a post may end with: the body, an appendix of real content if there is one, the `bibtex` citation block (a house convention across the blog), and `## Acknowledgments` thanking actual people. Nothing else.
+
 ### Blog voice: own the confusion, don't blame the source (HARD)
 
 When a post works through something that was confusing, the confusion is Brando's, never the book's / paper's / author's fault. Headings and framing must not read as an accusation against a named source.
