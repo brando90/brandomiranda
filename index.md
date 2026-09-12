@@ -18,11 +18,11 @@ title: Brando Miranda
 
 # About Me #
 
-I am committed to fearlessly and passionately proving that the number on the test is not the ceiling on the person. I repeated third grade. I never scored well on the SAT, however hard I studied. I have sleep apnea with a central component — some nights my body simply forgets to breathe — and I built a career on broken sleep before anyone found out why. I got into MIT anyway, then Illinois, then Stanford, where showing that a famous AI "ability" was an artifact of the metric won a NeurIPS Outstanding Paper Award and made The New York Times.
+I am committed to fearlessly and passionately proving that the number on the test is not the ceiling on the person. I repeated third grade. I never scored well on the SAT, however hard I studied. I have sleep apnea with a central component — some nights my body simply forgets to breathe — and much of my PhD has been done on the broken sleep that comes with it. I got into MIT anyway, then UIUC, then Stanford, and our work showing that a celebrated "emergent ability" of AI was an artifact of the metric was covered in The New York Times and won a NeurIPS Outstanding Paper Award.
 
-In 2012 a statistical learning theory class taught me that what a machine learns on the data it has bounds what it does on data it has never seen, and I thought: then learning can solve everything. The AI revolution since has confirmed it in my heart. Today I build AI that can prove, in Lean, that what it says is true, and my dream is that the next kid who is told what they cannot do finds out for themselves what they can.
+In 2012 a statistical learning theory class taught me that a machine's error on data it has never seen can be bounded by its error on the data it has, plus a price for complexity, and I thought: then learning can solve everything. The AI revolution since has confirmed it in my heart. Today I build AI whose answers must come with a proof that Lean can check, and my dream is that the next kid who is told what they cannot do finds out for themselves what they can.
 
-I taught myself jazz improvisation and linear algebra in the same summer, and I teach bachata and Brazilian zouk; it is my art and my sport. Thank you for reading, and please reach out.
+I taught myself jazz improvisation and linear algebra in the same summer. I teach bachata and Brazilian zouk — my art and my sport. Thank you for reading, and please reach out.
 
 -----
 
