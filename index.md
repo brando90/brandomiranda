@@ -18,9 +18,9 @@ title: Brando Miranda
 
 # About Me #
 
-I am committed to fearlessly and passionately proving that the number on the test is not the ceiling on the person. I repeated third grade. I never scored well on the SAT, however hard I studied. I have sleep apnea with a central component — some nights my body simply forgets to breathe — and much of my PhD has been done on the broken sleep that comes with it. I got into MIT anyway, then UIUC, then Stanford, and our work showing that a celebrated "emergent ability" of AI was an artifact of the metric was covered in The New York Times and won a NeurIPS Outstanding Paper Award.
+I am committed to fearlessly and passionately proving that a test score cannot tell you what a person can become. I repeated third grade. I never scored well on the SAT, however hard I studied. I got into MIT anyway, then UIUC, then Stanford. I have sleep apnea with a central component — some nights my body simply forgets to breathe — and the research I am proudest of was done on the broken sleep that comes with it. Our paper arguing that apparent AI "emergent abilities" were artifacts of measurement was covered in The New York Times and won the 2023 NeurIPS Outstanding Main Track Paper Award.
 
-In 2012 a statistical learning theory class taught me that a machine's error on data it has never seen can be bounded by its error on the data it has, plus a price for complexity, and I thought: then learning can solve everything. The AI revolution since has confirmed it in my heart. Today I build AI whose answers must come with a proof that Lean can check, and my dream is that the next kid who is told what they cannot do finds out for themselves what they can.
+In 2012, a statistical learning theory class taught me that a machine's error on new data can be bounded by its error on training data plus an allowance for complexity. I thought: then learning can solve everything. The AI revolution since has confirmed it in my heart. Today I work on AI that writes proofs Lean can check. My dream is that the next kid who is told what they cannot do finds out for themselves what they can.
 
 I taught myself jazz improvisation and linear algebra in the same summer. I teach bachata and Brazilian zouk — my art and my sport. Thank you for reading, and please reach out.
 

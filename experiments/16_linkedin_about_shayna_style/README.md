@@ -2,7 +2,7 @@
 
 Working folder for a **personal, first-person** LinkedIn About section, to sit alongside — not replace — the third-person academic bio in [`index.md`](../../index.md) (`# Bio #` / `# Shorter Bio #`).
 
-Status as of **September 12, 2026 (evening)**: Brando supplied the missing personal threads (the 2012 statistical-learning-theory conviction; central sleep apnea as the vulnerability; MIT → UIUC → Stanford → NYT as the resilience proof). Fable 5.1 drafted [`about_me_v1.md`](about_me_v1.md); it is on the site as `# About Me #` in `index.md` pending Mega QA (Codex gpt-6-astra → Fable → Codex).
+Status as of **September 12, 2026 (evening)**: Brando supplied the missing personal threads (the 2012 statistical-learning-theory conviction; central sleep apnea as the vulnerability; MIT → UIUC → Stanford → NYT as the resilience proof). Fable 5.1 drafted [`about_me_v1.md`](about_me_v1.md); it is live on the site as `# About Me #` in `index.md` after Mega QA (Codex gpt-6-astra/ultra → Fable 5.1/max → Codex gpt-6-astra/ultra in a fresh context; all three PASS-WITH-FIXES, reconciled by the builder). Not yet pasted into LinkedIn.
 
 ## Why this folder exists
 
