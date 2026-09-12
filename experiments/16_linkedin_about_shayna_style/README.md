@@ -2,7 +2,7 @@
 
 Working folder for a **personal, first-person** LinkedIn About section, to sit alongside — not replace — the third-person academic bio in [`index.md`](../../index.md) (`# Bio #` / `# Shorter Bio #`).
 
-Status as of **September 12, 2026**: five draft directions exist, none chosen; three open questions block the final version.
+Status as of **September 12, 2026 (evening)**: Brando supplied the missing personal threads (the 2012 statistical-learning-theory conviction; central sleep apnea as the vulnerability; MIT → UIUC → Stanford → NYT as the resilience proof). Fable 5.1 drafted [`about_me_v1.md`](about_me_v1.md); it is on the site as `# About Me #` in `index.md` pending Mega QA (Codex gpt-6-astra → Fable → Codex).
 
 ## Why this folder exists
 
@@ -21,7 +21,8 @@ Full model text is quoted in the source chat (see below); it is a third party's 
 
 ## Files
 
-- [`drafts.md`](drafts.md) — the five draft directions, verbatim: (1) proof, not persuasion; (2) identity-forward, the closest echo of Shayna's structure; (3) renaissance math-and-music; (4) trust as a dance; (5) short love letter.
+- [`about_me_v1.md`](about_me_v1.md) — the draft that shipped to `index.md` (main ~205 words + a strict-length ~150-word alternate), the Shayna-structure map, fact sources, open items.
+- [`drafts.md`](drafts.md) — the five earlier draft directions from the Opus chat, verbatim: (1) proof, not persuasion; (2) identity-forward, the closest echo of Shayna's structure; (3) renaissance math-and-music; (4) trust as a dance; (5) short love letter.
 
 ## Source
 
