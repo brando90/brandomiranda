@@ -16,6 +16,7 @@ title: Brando Miranda
 
 -----
 
+{% comment %}
 # About Me #
 
 I am committed to fearlessly and passionately proving that a test score cannot tell you what a person can become. I repeated third grade. I never scored well on the SAT, however hard I studied. I got into MIT anyway, then UIUC, then Stanford. I have sleep apnea with a central component — some nights my body simply forgets to breathe — and the research I am proudest of was done on the broken sleep that comes with it. Our paper arguing that apparent AI "emergent abilities" were artifacts of measurement was covered in The New York Times and won the 2023 NeurIPS Outstanding Main Track Paper Award.
@@ -25,6 +26,7 @@ In 2012, a statistical learning theory class taught me that a machine's error on
 I taught myself jazz improvisation and linear algebra in the same summer. I teach bachata and Brazilian zouk — my art and my sport. Thank you for reading, and please reach out.
 
 -----
+{% endcomment %}
 
 # Bio #
 
