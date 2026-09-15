@@ -7,19 +7,13 @@
 			"path": "../agents-config"
 		},
 		{
-			"path": "../veribench"
-		},
-		{
 			"path": "../agentic-nl-fl-maths"
-		},
-		{
-			"path": "../cert-judge"
 		},
 		{
 			"path": "../stanford-lean-website"
 		},
 		{
-			"path": "../lean-ebm"
+			"path": "../htdr"
 		}
 	]
 }

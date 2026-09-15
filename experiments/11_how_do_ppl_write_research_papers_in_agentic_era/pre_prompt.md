@@ -11,7 +11,7 @@ Brando
 9:37 AM
 curious to hear your thoughts dan
 Want to open this discussion to the lab. As I finish one my my fav projects (bet most of you have heard of VeriBench...maybe too many times!) I wonder what the right protocol/habit is for writing in the era of agents. I now put my papers on my github repos (don't use overleaf at all; I think it adds friction for no benefit -- for me) and I do the writing in tandem with my experiments. Before agents eg for my beyon scale paper -- I crafted each sentence to perfection (sometimes even pair programming/writing with my coauthors eg I remember fondly a time I did this with alycia). I'm reading and edit it now and I see the writing could be improve but honestly think marginally. So now I can't tell if this extra time is worth perfecting the writing or honestly moving on to the next project. Nothing is false or hallucinated. Just a tiny bit more verbose perhaps or not said my favorite way. I think my new workflow will move to only perfecting the title, abstract and intro (assuming that's what people read). And making sure nothing is false/hallucinated + the discussion/weakness section is accurate. I find it hard to motivate myself to perfect my prose as I used to when people will either (which are asumptions of course): not read it dump it to an agent and only read the agent's tldr. I'm curious what people are converging to. Are ppl converging to this?
-Dan
+Dan                  
 —
 9:42 AM
 who is alycia
