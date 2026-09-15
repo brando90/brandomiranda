@@ -15,8 +15,8 @@ Then I opened the Aebersold play-along (Volume 54) to the same tune, and the fir
 
 So: is the note that matters an E (Snidero's suspended fourth) or an F-sharp (the letter on Aebersold's chord)? Is the scale Dorian, Mixolydian, or a pentatonic? And in the back of my head, a rule from another teacher years ago: Lydian dominant is the default for dominant chords; Mixolydian is only for the real five chord, the one with a gravitational pull toward a tonic. Was I supposed to be thinking Lydian here too?
 
-
 I wanted this settled before I played another chorus over it. Here's where it landed.
+
 Notation, so nothing is ambiguous
 
 Two conventions for the whole post. First, every note and chord symbol is in alto key (E-flat): the charts I read are E-flat parts, so the notes on the page are the notes I finger, and concert pitch is a major sixth lower (my B seven sus is the piano's D seven sus). The photos show whatever the page shows. Second, every pentatonic is labeled major or minor, and when I quote my pencil — E pent, A pent — those are major pentatonics. The reason is the key signature: Snidero writes Voyage with four sharps, which is E major, and E major is the parent scale the first block derives from. B Mixolydian is E major from its fifth degree, F-sharp Dorian is E major from its second, and the pentatonics that fit the chord are the major pentatonics built inside E major on E and on A. Each major pentatonic has a relative-minor twin with the identical five notes (E major pentatonic is C-sharp minor pentatonic; A major is F-sharp minor), so I give the major name first, as the one built inside the parent key, and the twin in parentheses. The same logic names every block's parent scale: G major for D seven sus, F major for C seven sus, A-flat major for B-flat minor thirteen.
