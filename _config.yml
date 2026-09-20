@@ -40,6 +40,7 @@ github_username:  brando90
 
 
 exclude:
+  - technical_notes/
   - exclude/
   - experiments/
   - _drafts/
