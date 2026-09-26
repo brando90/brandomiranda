@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "We Didn't Know We Were Writing a Paper: How Mirage Happened"
-date: 2026-09-12
+date: 2026-09-26
 section: meta-research
 ---
 
@@ -23,7 +23,7 @@ Somewhere in there the arguing turned into writing things down so we could stop 
 
 <!-- TODO: insert photo of the wall of writing/notes from that period -->
 
-I found out it was a paper when I saw a draft with my name on it. I remember being genuinely surprised. And the funny part is that the disagreement resolved in the opposite direction from how it started — I was arguing that he was wrong, and it turned out I was the one who was wrong. Emergence, in a lot of the cases people were pointing to, wasn't a property of the model quietly waking up. It was an artifact of the metric you chose to score it with — pick a discontinuous metric and you get a dramatic jump, pick a smooth one and the same underlying model traces a smooth, predictable curve. (If you want the technical version of the argument — the bit flip, the figure, the six-sentence structure — I wrote that up separately in [Arguing a Research Project](/2026/04/16/arguing-a-research-project.html).)
+I found out it was a paper when I saw a draft with my name on it. I remember being genuinely surprised. And the funny part is that the disagreement resolved in the opposite direction from how it started — I was arguing that he was wrong, and it turned out I was the one who was wrong. Emergence, in a lot of the cases people were pointing to, wasn't a property of the model quietly waking up. It was an artifact of the metric you chose to score it with — pick a discontinuous metric and you get a dramatic jump, pick a smooth one and the same underlying model traces a smooth, predictable curve. (I've written up the technical version of that argument elsewhere — the bit flip, the figure, the six-sentence structure — for anyone who wants that instead of the personal story.)
 
 A friend, César, asked me about this over DM once he'd skimmed the arXiv link: *how do you not know you're writing a paper?* I sent him a voice memo, and the gist of what I told him was this — when you're younger in your career, you're more naive about it, in a good way. You're doing your PhD, you're studying, you're talking about research in general, and you don't even know yet what counts as "research" and what doesn't. So you're just in an app, your best friend brings something up, you tell him no, he tells you yes, and you argue about it every day. And after a few months it turned into a paper, and honestly I didn't even know I was making one — I was just having fun.
 
@@ -39,7 +39,7 @@ That's the whole technique, if there is one. My best papers and my best memories
   title  = {We Didn't Know We Were Writing a Paper: How Mirage Happened},
   year   = {2026},
   month  = {September},
-  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/09/12/how-the-mirage-paper-happened.html}},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/09/26/how-the-mirage-paper-happened.html}},
   note   = {Blog post}
 }
 ```
