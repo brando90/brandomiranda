@@ -5,7 +5,7 @@ date: 2026-10-17
 section: ml
 ---
 
-*Brando Miranda — October 2026 · ~14 min read*
+*Brando Miranda — October 2026 · ~15 min read*
 
 **TL;DR.** KL divergence gets taught with several personalities (extra bits, cross-entropy minus entropy, "relative entropy," a "divergence" that is not a distance), and for years each one felt like its own thing to me. This post builds one grammar for all of them. Start with what we trust: $$B - A$$ is the displacement of $$B$$ from $$A$$. Read $$D_{\mathrm{KL}}(p \Vert q)$$ the same way, as $$p \mathbin{-^{\mathrm{KL}}_{p}} q$$: the divergence of $$p$$ from $$q$$, with baseline $$q$$, measured on samples from $$p$$. Unroll it and it really is a subtraction: $$\mathbb{E}_{X \sim p}[\log p(X) - \log q(X)]$$, the average log-likelihood gap between the two models on $$p$$'s own data. Pointwise, that gap flips sign when you swap $$p$$ and $$q$$, exactly like $$B - A = -(A - B)$$. **All of KL's asymmetry comes from which distribution you average under**, which is why I put it in the notation. The view is not new as math (Kullback and Leibler motivated KL exactly this way in 1951), but in 14 years of ML I had never seen it taught first, and I think it should be. This is the first post in a series on thinking about ML with less arbitrariness.
 
@@ -152,14 +152,24 @@ I didn't get this from a course or a textbook. I got it while working through th
 
 So I went looking for whether it's new. **It isn't, as math.** Kullback and Leibler (1951) introduced the quantity as "the mean information for discrimination" between two hypotheses "per observation from" one of them, which is precisely the expected log-likelihood ratio, and Kullback (1959) preferred the name *discrimination information*. Akaike (1973) built AIC on the same reading, and Wikipedia's article has a whole "statistics" interpretation along these lines. There are good blog posts that lead with it too, like Alex Etz's 2018 notes: KL is "the expected log likelihood ratio in favor of the true distribution." Statisticians have had this view for 75 years.
 
-Then I went through my own shelf, and the formula is everywhere:
+Then I went through my own shelf: the books I was assigned or recommended at UIUC, MIT and Stanford. The subtraction is in almost all of them. What changes is what they tell you it means:
 
-- Goodfellow, Bengio and Courville's *Deep Learning* writes it exactly as $$\mathbb{E}_{x \sim P}[\log P(x) - \log Q(x)]$$ (eq. 3.50), and then explains it as extra bits.
-- MacKay's *Information Theory, Inference, and Learning Algorithms* defines relative entropy next to Gibbs' inequality (Section 2.6) and reads it as wasted bits. Much later, in the codebreaking chapter (Sections 18.3–18.4), he calls a log-likelihood ratio the "weight of evidence" and computes Turing's *expected* weight of evidence per line of text. That is a KL divergence, in decibans, without the link being drawn.
-- Hogg, McKean and Craig: the proof that the true parameter eventually has the highest likelihood (Theorem 6.1.1 in the 7th edition) averages $$\log \frac{f(X_i;\theta)}{f(X_i;\theta_0)}$$ over the sample and uses Jensen to show the limit is negative. That limit is minus a KL divergence, never named.
-- Wasserman's *All of Statistics* (Section 9.5) does name it, and proves maximum likelihood is consistent with exactly that average.
-- Bishop's PRML (Section 1.6.1) approximates KL by a sample average of $$\ln p(x_n) - \ln q(x_n \mid \theta)$$ to show maximum likelihood is minimizing KL.
-- *The Elements of Statistical Learning* names KL once, in independent component analysis (Section 14.7.2).
+| Book | Writes KL as an expected log-difference or log-ratio? | Sampled log-likelihood form? | Headline intuition | Where |
+| --- | --- | --- | --- | --- |
+| Hogg, McKean & Craig, *Introduction to Mathematical Statistics* (7th ed.) | Yes, unnamed: $$\mathbb{E}_{\theta_0}\big[\log \tfrac{f(X;\theta)}{f(X;\theta_0)}\big]$$ | Yes: the average log-likelihood ratio over the sample | None: KL is never named there | Theorem 6.1.1 and its proof |
+| MacKay, *Information Theory, Inference, and Learning Algorithms* | Yes, ratio form $$\sum_x P(x) \log \tfrac{P(x)}{Q(x)}$$ | Partly: expected "weight of evidence" when codebreaking, not linked back to KL | Wasted bits | Sec. 2.6 (eq. 2.45); ch. 5 (p. 102); Secs. 18.3–18.4 |
+| Hastie, Tibshirani & Friedman, *The Elements of Statistical Learning* (2nd ed.) | Only as ICA's mutual information | No | Dependence between components | Sec. 14.7.2 |
+| Koller & Friedman, *Probabilistic Graphical Models* | Yes, and a proof writes $$\mathbb{E}_P[\log P - \log P']$$ | Yes: to the expected log-likelihood, then the log-likelihood of the data | Extra coding cost, "compression loss (in bits)" | Def. A.5 (App. A.1.3); Prop. 16.1 (Sec. 16.2.1); Sec. 17.2.5 |
+| Shalev-Shwartz & Ben-David, *Understanding Machine Learning* | Yes, ratio form, inside the true risk of the log-loss | Yes: maximum likelihood as ERM with the log-loss | Log-loss risk = relative entropy + entropy | Sec. 24.1 (eq. 24.5), 24.1.2 |
+| Goodfellow, Bengio & Courville, *Deep Learning* | Yes, exactly $$\mathbb{E}_{x \sim P}[\log P(x) - \log Q(x)]$$ | Yes: maximum likelihood as KL to the empirical distribution | Extra bits (nats) | Sec. 3.13 (eq. 3.50); Sec. 5.5 (eq. 5.60) |
+| Bishop & Bishop, *Deep Learning: Foundations and Concepts* | As cross-entropy minus entropy, then $$-\int p \ln \tfrac{q}{p}\, dx$$ | Not on that page; in exercise 2.34 | Additional information (nats) from coding with the wrong distribution | Sec. 2.5.5 (eq. 2.100) |
+| Bishop, *Pattern Recognition and Machine Learning* | As cross-entropy minus entropy, then $$-\int p \ln \tfrac{q}{p}\, dx$$ | Yes: $$\tfrac1N \sum_n \lbrace -\ln q(x_n \mid \theta) + \ln p(x_n) \rbrace$$ | Additional information to transmit | Sec. 1.6.1 (eqs. 1.113, 1.119) |
+
+Shalev-Shwartz and Ben-David come closest: KL first shows up as the excess log-loss risk, which is this view in cost form. Here is the coding version, from one of the newest books on my shelf, in the form I always had to stare at:
+
+![Bishop and Bishop, Deep Learning, Section 2.5.5: KL of p from q introduced as the additional information needed when coding with q instead of p, written as minus the integral of p ln q minus minus the integral of p ln p, then minus the integral of p ln q over p (eq. 2.100)]({{ site.baseurl }}assets/kl_divergence_displacement/08-bishop-coding-view-eq-2-100.jpg)
+
+It's completely correct. It just puts three minus signs and a coding story between me and the idea, and for years I re-derived which way the ratio goes every single time.
 
 So the subtraction is written down in the standard books, sometimes even in its sampled form. What I could not find is any of them **leading** with it as the intuition: the headline is always bits. And I couldn't find anyone folding it into one displacement grammar where the averaging distribution is part of the notation and explains the asymmetry. That part is my framing, and it's the part I care about.
 
