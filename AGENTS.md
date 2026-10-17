@@ -110,7 +110,7 @@ Blog-post tweet drafts live in `exclude/tweets/` as plain `.txt` files, not `.md
 
 ## GitHub Pages ↔ Stanford mirror sync (HARD)
 
-Every push to `main` rebuilds GitHub Pages automatically, but the Stanford mirror (https://cs.stanford.edu/people/brando9/) only updates when `scripts/deploy_stanford_cs.sh` is run. The two must **always** be in sync — no exceptions: after every push, run the deploy script and verify the changed URLs return 200 on both domains. See `CLAUDE.md` § "GitHub Pages ↔ Stanford mirror sync (HARD)".
+The public URL is https://cs.stanford.edu/people/brando9/ . Every push to `main` rebuilds GitHub Pages, and a cron job on `ilc.stanford.edu` publishes that same commit to the Stanford page within 5 minutes. GitHub-hosted Actions cannot rsync to xenon: a key login gets no AFS token. See `CLAUDE.md` § "GitHub Pages ↔ Stanford mirror sync (HARD)" for the check commands and the immediate-publish fallback.
 
 ## Math rendering (HARD)
 

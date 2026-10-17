@@ -10,7 +10,23 @@ export JEKYLL_ENV="${JEKYLL_ENV:-production}"
 # JEKYLL_NO_BUNDLER_REQUIRE skips the repo Gemfile — the github-pages bundle is
 # not installed locally, and the legacy ~/.gem/ruby/2.6.0 shims are dead (their
 # shebang points at Homebrew ruby, which has moved past the gems they were built for).
-brew_ruby_gem="${BREW_RUBY_GEM:-/usr/local/opt/ruby/bin/gem}"
+# Prefer an explicit BREW_RUBY_GEM, then the default Apple-silicon prefix, then
+# Intel Homebrew, then whatever `brew --prefix ruby` points at.
+if [[ -z "${BREW_RUBY_GEM:-}" ]]; then
+  for candidate in /opt/homebrew/opt/ruby/bin/gem /usr/local/opt/ruby/bin/gem; do
+    if [[ -x "$candidate" ]]; then
+      BREW_RUBY_GEM="$candidate"
+      break
+    fi
+  done
+fi
+if [[ -z "${BREW_RUBY_GEM:-}" ]] && command -v brew >/dev/null 2>&1; then
+  brew_ruby_prefix="$(brew --prefix ruby 2>/dev/null || true)"
+  if [[ -n "$brew_ruby_prefix" && -x "$brew_ruby_prefix/bin/gem" ]]; then
+    BREW_RUBY_GEM="$brew_ruby_prefix/bin/gem"
+  fi
+fi
+brew_ruby_gem="${BREW_RUBY_GEM:-}"
 brew_ruby_jekyll=""
 if [[ -x "$brew_ruby_gem" ]]; then
   brew_ruby_jekyll="$("$brew_ruby_gem" environment gemdir 2>/dev/null)/bin/jekyll"

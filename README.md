@@ -1,5 +1,22 @@
 # My notes on making a static website
 
+# Publishing
+
+The public address is https://cs.stanford.edu/people/brando9/ . Pushing `main` on https://github.com/brando90/brandomiranda updates both copies:
+
+- GitHub Pages rebuilds https://brando90.github.io/brandomiranda/ and every page redirects to the Stanford address.
+- Within 5 minutes, a cron job on `ilc.stanford.edu` pulls `main`, builds the Jekyll site, and copies it to the Stanford page. It does not need a laptop awake, a password, or a Duo prompt. The job uses the existing SNAP Kerberos keytab on that host.
+
+GitHub's own runners cannot copy the files onto the Stanford page. A key login to `xenon.stanford.edu` is not given access to the AFS home directory, so the upload has nothing to write.
+
+To see whether the latest push is on the Stanford page:
+
+```bash
+ssh ilc.stanford.edu 'cat /dfs/scratch0/brando9/www-published-sha; tail -n 20 /dfs/scratch0/brando9/log/www-sync.log'
+```
+
+That SHA should match `git rev-parse origin/main`. To publish without waiting for the next 5-minute mark: `ssh ilc.stanford.edu /dfs/scratch0/brando9/bin/stanford-www-sync`.
+
 # Quick and dirty way to check if website builds
 
 Since right now bundle doesn't build you can do:

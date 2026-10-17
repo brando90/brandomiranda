@@ -43,6 +43,7 @@ exclude:
   - technical_notes/
   - exclude/
   - experiments/
+  - rl-env-scaling/
   - _drafts/
   - scripts/
   - vendor/

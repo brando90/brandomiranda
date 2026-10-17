@@ -152,22 +152,23 @@ The repo uses `main` only — `master` was retired 2026-04-22. Push CV / website
 
 ### GitHub Pages ↔ Stanford mirror sync (HARD)
 
-The website deploys to TWO targets that must **always** be in sync — no exceptions:
+The public site is https://cs.stanford.edu/people/brando9/ . A push to `main` updates both copies with no manual rsync:
 
-1. **GitHub Pages** — https://brando90.github.io/brandomiranda/ — rebuilds automatically on every push to `main`.
-2. **Stanford CS mirror** — https://cs.stanford.edu/people/brando9/ — static AFS copy; does **NOT** update on push.
+1. **GitHub Pages** — https://brando90.github.io/brandomiranda/ — GitHub rebuilds this on every push to `main`. `_includes/head.html` immediately redirects those pages to the Stanford URL, which is the canonical address.
+2. **Stanford CS page** — https://cs.stanford.edu/people/brando9/ — a cron job on `ilc.stanford.edu` runs every 5 minutes as `brando9`. `scripts/stanford_www_cron.sh` uses the existing SNAP keytab (`/dfs/scratch0/brando9/.keytab`, never committed) to get a CS Kerberos ticket, fast-forwards a clone at `/dfs/scratch0/brando9/brandomiranda-www` to `origin/main`, and `scripts/stanford_www_sync.sh` builds with Jekyll and rsyncs `_site/` to `brando9@xenon.stanford.edu:~/www/` only when that commit is not already published. The published commit is `/dfs/scratch0/brando9/www-published-sha`. The log is `/dfs/scratch0/brando9/log/www-sync.log`.
 
-After **every** push to `main`, immediately run `scripts/deploy_stanford_cs.sh` (Jekyll build with the `_config_stanford_cs.yml` baseurl overlay, then rsync of `_site/` to `brando9@xenon.stanford.edu:~/www/`). Then verify the changed URLs return 200 on **both** domains before reporting the change live — a push without the mirror deploy is an incomplete task.
+GitHub-hosted Actions cannot do this copy. xenon’s SSH server will accept a public key, but that login receives no AFS token, so it cannot write `~/www`. The department `akcron` helper that used to mint an unattended token now answers `akcron init` with `Unknown command`. The publisher therefore runs on `ilc`, which already has the keytab, Ruby, and user cron.
 
-`_config.yml` pins `timezone: America/Los_Angeles` so GitHub's UTC builders and local Pacific builds emit identical post URLs (without it, posts with late-evening `-0500` timestamps publish under the next calendar day on GitHub only — five 2019/2020 posts diverged this way until 2026-06-09). Never remove the pin.
-
-If the working tree has unrelated in-flight edits (e.g., another agent's), deploy from a clean worktree of the pushed commit so the mirror matches exactly what Pages serves:
+Check that a push arrived:
 
 ```bash
-git worktree add --detach /tmp/bm-deploy origin/main
-bash /tmp/bm-deploy/scripts/deploy_stanford_cs.sh
-git worktree remove --force /tmp/bm-deploy
+ssh ilc.stanford.edu 'cat /dfs/scratch0/brando9/www-published-sha; tail -n 20 /dfs/scratch0/brando9/log/www-sync.log'
+curl -sI https://cs.stanford.edu/people/brando9/ | head -n 1
 ```
+
+The Stanford page can lag a push by up to 5 minutes. To publish the current `origin/main` immediately from a machine that can SSH to `ilc`: `ssh ilc.stanford.edu /dfs/scratch0/brando9/bin/stanford-www-sync`. From a laptop that already has a CS Kerberos ticket, `scripts/deploy_stanford_cs.sh` still builds and rsyncs directly; do that from a clean `origin/main` worktree when the laptop checkout has unrelated edits. Before reporting a website change live, the changed URL must return 200 on both the Stanford host and GitHub Pages.
+
+`_config.yml` pins `timezone: America/Los_Angeles` so GitHub's UTC builders and the Stanford build emit identical post URLs (without it, posts with late-evening `-0500` timestamps publish under the next calendar day on GitHub only — five 2019/2020 posts diverged this way until 2026-06-09). Never remove the pin.
 
 ### No appendix by default (HARD)
 
