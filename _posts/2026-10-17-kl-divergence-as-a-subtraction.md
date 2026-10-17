@@ -40,17 +40,29 @@ Everything we like about distances is visible here. The length is nonnegative an
 
 ## Distributions as points
 
-Now take two distributions $$p$$ and $$q$$ over the same space. Think of each as a point: a vector of probabilities, one coordinate per outcome $$x$$ (infinitely many coordinates in the continuous case), normalized to sum to one. This is an analogy, not a theorem, but it suggests the question: **what is the displacement of $$p$$ from $$q$$?**
+Now take two distributions $$p$$ and $$q$$ over the same space $$\mathcal{X}$$. Think of each as a point. On a discrete space, $$p \in [0,1]^{\mathcal{X}}$$ is a vector with one coordinate per outcome $$x$$, the coordinate being $$p(x)$$, normalized so the coordinates sum to one. In the continuous case it's an "infinite vector" indexed by $$x$$: a density with $$\int p(x)\, dx = 1$$. This is an analogy, not a theorem, but it suggests the question: **what is the displacement of $$p$$ from $$q$$?**
 
 Here is the notation I'll use for the rest of the series:
 
-$$D_{\mathrm{KL}}(p \Vert q) \;=\; D^{\,p}_{\mathrm{KL}}(p \Vert q) \;=:\; p \mathbin{-^{\mathrm{KL}}_{p}} q \;=\; \Delta^{\mathrm{KL}}_{p}(q \to p).$$
+$$D_{\mathrm{KL}}(p \Vert q) \;=\; D^{\mathrm{KL}}_{p}(p \Vert q) \;=:\; p \mathbin{-^{\mathrm{KL}}_{p}} q$$
 
-Read it out loud: **the KL divergence of $$p$$ from $$q$$, measured on samples from $$p$$.** Baseline $$q$$, destination $$p$$, just like $$B - A$$ has baseline $$A$$. The superscript says which kind of subtraction; the subscript says whose samples we average over.
+$$p \mathbin{-^{\mathrm{KL}}_{p}} q \;=\; \Delta^{\mathrm{KL}}_{p}(p, q) \;=\; \Delta^{\mathrm{KL}}_{p}(q \to p) \;=\; \Delta^{\mathrm{KL}}_{p}(p \leftarrow q).$$
+
+Read it out loud: **the KL divergence of $$p$$ from $$q$$, measured on samples from $$p$$.** The $$\Delta$$ is for displacement, and "divergence" here just means an unsymmetric distance, difference or displacement. Baseline $$q$$, destination $$p$$, just like $$B - A$$ has baseline $$A$$. Usually $$p$$ is the target (the data) and $$q$$ is the model approximating it. The superscript says which kind of subtraction; the subscript says whose samples we average over, the measure we use as the ruler. Both arrows say the same thing read in opposite directions: start at $$q$$, arrive at $$p$$.
 
 I'll own a confusion here, because it's exactly the one this notation prevents. On my first pass, in blue ink in the margin of a book chapter, I drew the arrow as $$p \to q$$, as if $$p$$ were "going to" $$q$$. With the $$B - A$$ grammar it is the other way around: in $$p \mathbin{-^{\mathrm{KL}}_{p}} q$$, $$q$$ is the starting point and we are measuring how far $$p$$ sits from it. That's why I thought my blue notes were wrong.
 
 ![A later page: p minus-KL-sub-p q equals the divergence of p from q, with the triangle picture from q to p and the excess-bits reading next to it]({{ site.baseurl }}assets/kl_divergence_displacement/06-divergence-of-p-from-q.jpg)
+
+Put the two pictures side by side and the analogy is
+
+$$p \mathbin{-^{\mathrm{KL}}_{p}} q \;=\; \mathbb{E}_{X \sim p}\big[\log p(X) - \log q(X)\big] \;\approx\; \text{"}A - B\text{"},$$
+
+the divergence of $$p$$ from $$q$$ next to the distance of $$A$$ from $$B$$. It's a slight abuse of notation, which is why "$$A - B$$" is in quotes: $$p \mathbin{-^{\mathrm{KL}}_{p}} q$$ is not a vector, it's a scalar, like the Euclidean distance $$\Vert A - B \Vert_2$$. Unlike that distance it is asymmetric, and the direction lives in the subscript.
+
+![My vector-view page: the chain of notations for the divergence of p from q, distributions as normalized infinite vectors indexed by x, and two triangles side by side, p minus-KL-sub-p q next to A minus B, a note that this abuses notation a little because KL is not a vector, and the margin question of whether sampling from p makes the left side larger]({{ site.baseurl }}assets/kl_divergence_displacement/09-vector-view-delta-notation.jpg)
+
+A note on the margin question on that page, since you might have the same one: does sampling from $$p$$ make $$\log p(X)$$ the bigger side? **On average, yes**: $$\mathbb{E}_p[\log p(X) - \log q(X)] \ge 0$$ by Gibbs' inequality (one line, in the next section). **Not sample by sample**: a particular $$x$$ drawn from $$p$$ can still be likelier under $$q$$.
 
 ## Unroll it: KL really is a subtraction
 
