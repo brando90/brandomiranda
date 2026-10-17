@@ -56,7 +56,7 @@ I'll own a confusion here, because it's exactly the one this notation prevents. 
 
 Put the two pictures side by side and the analogy is
 
-$$p \mathbin{-^{\mathrm{KL}}_{p}} q \;=\; \mathbb{E}_{X \sim p}\big[\log p(X) - \log q(X)\big] \;\approx\; \text{"}A - B\text{"},$$
+$$p \mathbin{-^{\mathrm{KL}}_{p}} q \;=\; \mathbb{E}_{X \sim p}\big[\log p(X) - \log q(X)\big] \;\approx\; \text{“}A - B\text{”},$$
 
 the divergence of $$p$$ from $$q$$ next to the distance of $$A$$ from $$B$$. It's a slight abuse of notation, which is why "$$A - B$$" is in quotes: $$p \mathbin{-^{\mathrm{KL}}_{p}} q$$ is not a vector, it's a scalar, like the Euclidean distance $$\Vert A - B \Vert_2$$. Unlike that distance it is asymmetric, and the direction lives in the subscript.
 
