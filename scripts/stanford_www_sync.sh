@@ -27,6 +27,7 @@ kinit -kt "$HOME_DIR/.keytab" brando9@CS.STANFORD.EDU
 cd "$REPO"
 sha="$(git rev-parse HEAD)"
 if [[ -f "$MARKER" && "$(<"$MARKER")" == "$sha" ]]; then
+  echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) unchanged $sha"
   exit 0
 fi
 

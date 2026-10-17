@@ -5,7 +5,7 @@
 The public address is https://cs.stanford.edu/people/brando9/ . Pushing `main` on https://github.com/brando90/brandomiranda updates both copies:
 
 - GitHub Pages rebuilds https://brando90.github.io/brandomiranda/ and every page redirects to the Stanford address.
-- Within 5 minutes, a cron job on `ilc.stanford.edu` pulls `main`, builds the Jekyll site, and copies it to the Stanford page. It does not need a laptop awake, a password, or a Duo prompt. The job uses the existing SNAP Kerberos keytab on that host.
+- Every minute, a cron job on `ilc.stanford.edu` pulls `main`, builds the Jekyll site, and copies it to the Stanford page. A push from any computer, an edit on the GitHub website, or a merged pull request all update `main`, and this job publishes that commit. The job gets its own Kerberos ticket from the SNAP keytab stored on `ilc`. The laptop can be off, asleep, or without a Stanford ticket.
 
 GitHub's own runners cannot copy the files onto the Stanford page. A key login to `xenon.stanford.edu` is not given access to the AFS home directory, so the upload has nothing to write.
 
@@ -15,7 +15,7 @@ To see whether the latest push is on the Stanford page:
 ssh ilc.stanford.edu 'cat /dfs/scratch0/brando9/www-published-sha; tail -n 20 /dfs/scratch0/brando9/log/www-sync.log'
 ```
 
-That SHA should match `git rev-parse origin/main`. To publish without waiting for the next 5-minute mark: `ssh ilc.stanford.edu /dfs/scratch0/brando9/bin/stanford-www-sync`.
+That SHA should match `git rev-parse origin/main`. To publish without waiting for the next minute: `ssh ilc.stanford.edu /dfs/scratch0/brando9/bin/stanford-www-sync`.
 
 # Quick and dirty way to check if website builds
 

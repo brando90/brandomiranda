@@ -110,7 +110,7 @@ Blog-post tweet drafts live in `exclude/tweets/` as plain `.txt` files, not `.md
 
 ## GitHub Pages ↔ Stanford mirror sync (HARD)
 
-The public URL is https://cs.stanford.edu/people/brando9/ . Every push to `main` rebuilds GitHub Pages, and a cron job on `ilc.stanford.edu` publishes that same commit to the Stanford page within 5 minutes. GitHub-hosted Actions cannot rsync to xenon: a key login gets no AFS token. See `CLAUDE.md` § "GitHub Pages ↔ Stanford mirror sync (HARD)" for the check commands and the immediate-publish fallback.
+The public URL is https://cs.stanford.edu/people/brando9/ . Every push to `main` — from any computer, the GitHub website, or a merged pull request — rebuilds GitHub Pages, and a cron job on `ilc.stanford.edu` publishes that same commit to the Stanford page within 1 minute. The job runs on `ilc` and renews its own Kerberos ticket from the keytab stored there. GitHub-hosted Actions cannot rsync to xenon: a key login gets no AFS token. See `CLAUDE.md` § "GitHub Pages ↔ Stanford mirror sync (HARD)" for the check commands and the immediate-publish fallback.
 
 ## Math rendering (HARD)
 
