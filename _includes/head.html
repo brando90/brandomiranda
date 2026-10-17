@@ -10,7 +10,7 @@
   <meta name="description" content="{{ page_description | escape }}">
   <link rel="canonical" href="{{ site.canonical_base_url }}{{ canonical_path }}">
   <meta property="og:url" content="{{ site.canonical_base_url }}{{ canonical_path }}">
-    {%- if site.redirect_to_canonical -%}
+    {%- if site.redirect_to_canonical and page.no_stanford_redirect != true -%}
   <meta http-equiv="refresh" content="0; url={{ site.canonical_base_url }}{{ canonical_path }}">
   <script>window.location.replace("{{ site.canonical_base_url }}{{ canonical_path }}");</script>
     {%- endif -%}

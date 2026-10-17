@@ -3,6 +3,7 @@ layout: post
 title: "Reading KL Divergence as a Subtraction: Displacement, Asymmetry, and the Log-Likelihood View"
 date: 2026-10-17
 section: ml
+no_stanford_redirect: true
 ---
 
 *Brando Miranda — October 2026 · ~15 min read*
