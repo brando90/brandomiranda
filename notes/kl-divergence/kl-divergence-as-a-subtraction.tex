@@ -1,0 +1,773 @@
+% Reading KL Divergence as a Subtraction -- textbook-style chapter.
+% Companion to the blog post of the same name (October 2026).
+% Build: tectonic kl-divergence-as-a-subtraction.tex   (or latexmk -pdf)
+% Every figure is TikZ/pgfplots in this file; evidence_paths.py generates the
+% sample paths in Figure A.1.
+\documentclass[11pt,oneside]{book}
+
+\usepackage[letterpaper,top=1.05in,bottom=1.1in,inner=1.15in,outer=1.15in,headheight=14pt]{geometry}
+\usepackage{amsmath,amsthm,mathtools}
+\usepackage{newpxtext,newpxmath}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{microtype}
+\usepackage{booktabs,tabularx,array}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[most]{tcolorbox}
+\usepackage[font=small,labelfont={bf,sf},format=hang,margin=6pt]{caption}
+\usepackage{subcaption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[colorlinks=true,linkcolor=pcolor!80!black,citecolor=pcolor!80!black,urlcolor=pcolor!80!black]{hyperref}
+
+\usetikzlibrary{arrows.meta,decorations.pathreplacing,calc,positioning,shapes.geometric}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{fillbetween}
+
+% ---------- colours: p (target) blue, q (baseline) orange, displacement purple
+\definecolor{pcolor}{RGB}{31,78,140}
+\definecolor{qcolor}{RGB}{196,96,10}
+\definecolor{dcolor}{RGB}{122,46,142}
+\definecolor{inkgray}{RGB}{110,110,110}
+\definecolor{pos}{RGB}{58,140,90}
+\definecolor{neg}{RGB}{190,60,60}
+
+% ---------- notation
+\newcommand{\kl}[1]{\mathbin{-^{\mathrm{KL}}_{#1}}}       % p \kl{p} q
+\newcommand{\DKL}{D_{\mathrm{KL}}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\pp}{{\color{pcolor}p}}
+\newcommand{\qq}{{\color{qcolor}q}}
+\newcommand{\X}{\mathcal{X}}
+
+% ---------- theorem-like environments
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+\newtheorem{example}[definition]{Example}
+\newtheorem{exercise}{Exercise}[chapter]
+\theoremstyle{plain}
+\newtheorem{proposition}[definition]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[definition]{Remark}
+
+\tcbset{
+  keybox/.style={enhanced,breakable,colback=dcolor!4,colframe=dcolor!70,boxrule=0.6pt,
+    arc=2pt,left=8pt,right=8pt,top=6pt,bottom=6pt,fonttitle=\sffamily\bfseries\small,
+    coltitle=white,colbacktitle=dcolor!75},
+  notebox/.style={enhanced,breakable,colback=pcolor!3,colframe=pcolor!45,boxrule=0.5pt,
+    arc=2pt,left=8pt,right=8pt,top=5pt,bottom=5pt,fonttitle=\sffamily\bfseries\small,
+    coltitle=pcolor!90!black,colbacktitle=pcolor!10}
+}
+
+% ---------- tikz styles
+\tikzset{
+  >={Stealth[length=2.6mm,width=1.8mm]},
+  pt/.style={circle,fill=#1,inner sep=1.5pt},
+  vec/.style={->,thick,inkgray},
+  disp/.style={->,very thick,dcolor},
+  back/.style={->,thick,dashed,inkgray},
+  lbl/.style={font=\small},
+}
+
+% ---------- headings
+\titleformat{\chapter}[display]
+  {\normalfont\sffamily}{\large\scshape\color{dcolor}Chapter \thechapter}{4pt}
+  {\LARGE\bfseries}[\vspace{2pt}{\color{dcolor}\titlerule[0.8pt]}]
+\titlespacing*{\chapter}{0pt}{0pt}{18pt}
+\titleformat{\section}{\normalfont\sffamily\large\bfseries}{\color{dcolor}\thesection}{0.8em}{}
+\titleformat{\subsection}{\normalfont\sffamily\bfseries}{\color{dcolor}\thesubsection}{0.8em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{inkgray}\nouppercase{\leftmark}}
+\fancyhead[R]{\small\sffamily\color{inkgray}Brando Miranda}
+\fancyfoot[C]{\small\sffamily\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\small\sffamily\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+\setlist{itemsep=2pt,topsep=4pt}
+\setlength{\parskip}{2pt plus 1pt}
+
+\begin{document}
+
+\chapter{Reading KL Divergence as a Subtraction}
+
+\begin{tcolorbox}[notebox]
+\small\textit{Brando Miranda, October 2026.} A textbook-style companion to the blog post
+\href{https://cs.stanford.edu/people/brando9/2026/10/17/kl-divergence-as-a-subtraction.html}{\emph{Reading KL Divergence as a Subtraction}}.
+The figures are redrawn from my handwritten notes.
+
+\medskip
+\textbf{In this chapter.} We build one grammar for the Kullback--Leibler divergence. Read
+$\DKL(p\Vert q)$ as $p \kl{p} q$: the divergence of $p$ \emph{from} $q$, measured on samples from $p$.
+Unrolled, it is literally a subtraction, $\E_{X\sim p}[\log p(X)-\log q(X)]$. The pointwise gap is
+antisymmetric like a vector, the average is not, and \emph{all} of KL's asymmetry comes from which
+distribution we average under.
+\end{tcolorbox}
+
+\section{Why KL feels arbitrary}
+
+I have been doing machine learning since 2012, and KL divergence has shown up in my losses, my bounds,
+my RL regularizers and my variational objectives. Every time it wore a different costume:
+\begin{itemize}
+  \item the \textbf{excess bits} paid for coding data from $p$ with a code built for $q$;
+  \item \textbf{cross-entropy minus entropy}, $H_p(q)-H_p(p)$, with minus signs to babysit;
+  \item a \textbf{divergence}, which is ``like a distance'' until it isn't.
+\end{itemize}
+Each costume is correct. The trouble is having to switch mental models with each textbook. The goal of
+this chapter is to replace them with \emph{one notation and one picture} from which every classical formula
+falls out. In an earlier post on score matching I subscripted the Fisher divergence with the distribution
+that carries the expectation, and promised to do the same for KL. Here that subscript turns out to carry the
+whole story of the asymmetry.
+
+\section{The displacement we already trust}
+
+Take two points $A$ and $B$. The vector $B-A$ is the \textbf{displacement of $B$ from $A$}: start at $A$,
+end at $B$. Whatever we subtract is the baseline, the place we start from. Its length is the ordinary
+distance $d(A,B)=\lVert B-A\rVert_2$. Figure~\ref{fig:displacement}(a) draws it the way I first sketched it:
+subtracting $A$ means walking back along $-A$, then out along $B$.
+
+\begin{figure}[t]
+\centering
+\begin{subfigure}[b]{0.47\textwidth}\centering
+\begin{tikzpicture}[scale=1.05]
+  \coordinate (O) at (0,0); \coordinate (A) at (3.4,-0.15); \coordinate (B) at (3.6,2.1);
+  \draw[vec] (O) -- (B) node[pos=0.55,above left,lbl] {$B$};
+  \draw[vec] (O) -- (A) node[pos=0.55,above,lbl] {$A$};
+  \draw[back] ($(A)+(0,-0.42)$) -- ($(O)+(0,-0.42)$) node[pos=0.5,below,lbl] {$-A$ \ (undo the baseline)};
+  \draw[disp] (A) -- (B) node[midway,right,lbl,text=dcolor] {$B-A$};
+  \node[pt=black] at (O) {}; \node[below left,lbl] at (O) {$0$};
+  \node[pt=inkgray] at (A) {}; \node[right,lbl] at (A) {$A$ (start)};
+  \node[pt=dcolor] at (B) {};  \node[right,lbl] at (B) {$B$ (end)};
+\end{tikzpicture}
+\caption{$B-A$: the displacement of $B$ from $A$.}
+\end{subfigure}\hfill
+\begin{subfigure}[b]{0.47\textwidth}\centering
+\begin{tikzpicture}[scale=1.05]
+  \coordinate (O) at (0,0); \coordinate (Q) at (3.4,-0.15); \coordinate (P) at (3.6,2.1);
+  \draw[vec,pcolor!70] (O) -- (P);
+  \draw[vec,qcolor!80] (O) -- (Q);
+  \draw[back] ($(Q)+(0,-0.42)$) -- ($(O)+(0,-0.42)$) node[pos=0.5,below,lbl] {``$-q$'',\ i.e.\ $\kl{p} q$};
+  \draw[disp] (Q) -- (P) node[midway,right,lbl,text=dcolor] {$p \kl{p} q$};
+  \node[pt=black] at (O) {};
+  \node[pt=qcolor] at (Q) {}; \node[right,lbl] at (Q) {$\qq$ (baseline)};
+  \node[pt=pcolor] at (P) {}; \node[right,lbl] at (P) {$\pp$ (target)};
+\end{tikzpicture}
+\caption{The same grammar for distributions: $q$ ``goes to'' $p$.}
+\end{subfigure}
+\caption{Displacement grammar, redrawn from page~1 of my notes. Panel (b) is the reading I propose for
+KL: $q \xrightarrow[p]{\mathrm{KL}} p$, start at the baseline $q$ and arrive at the target $p$. On my first pass I
+had drawn the arrow the other way, $p\to q$; with the $B-A$ grammar it points from $q$ to $p$.}
+\label{fig:displacement}
+\end{figure}
+
+Everything we like about distances is visible in this picture. The length is nonnegative and zero only when
+$A=B$; it is symmetric; it obeys the triangle inequality. Keep one fact in mind for later:
+\begin{tcolorbox}[keybox]
+\centering The \textbf{displacement is antisymmetric}, $A-B=-(B-A)$; the \textbf{length is symmetric}, because
+the norm forgets the sign.
+\end{tcolorbox}
+That split is what explains KL.
+
+\section{Distributions as points, and the notation}
+
+Let $p$ and $q$ be distributions on the same space $\X$. On a finite space, $p\in[0,1]^{\X}$ is a vector
+with one coordinate per outcome $x$, its value $p(x)$, normalized so that $\sum_x p(x)=1$. In the continuous
+case it is an ``infinite vector'' indexed by $x$, a density with $\int_{\X} p(x)\,dx=1$. This is an analogy
+rather than a theorem, but it makes the right question obvious: \emph{what is the displacement of $p$ from $q$?}
+
+\begin{definition}[Displacement notation for KL]\label{def:notation}
+For distributions $p,q$ on $\X$ with $p\ll q$,
+\[
+\DKL(p\Vert q)\;=\;D^{\mathrm{KL}}_p(p\Vert q)\;=:\;p\kl{p}q
+\;=\;\Delta^{\mathrm{KL}}_p(p,q)\;=\;\Delta^{\mathrm{KL}}_p(q\to p)\;=\;\Delta^{\mathrm{KL}}_p(p\leftarrow q).
+\]
+Read it as \textbf{the divergence of $p$ from $q$, measured on samples from $p$}. The superscript names the
+kind of subtraction; the subscript names the measure we average under, the ``ruler''. The baseline is $q$
+and the destination is $p$, exactly as $B-A$ has baseline $A$. Usually $p$ is the target (the data) and $q$
+the model that approximates it.
+\end{definition}
+
+``Divergence'' here just means an unsymmetric distance, difference or displacement. Both arrows in
+Definition~\ref{def:notation} say the same thing read in opposite directions: start at $q$, arrive at $p$.
+Figure~\ref{fig:page6} is the small spiral-pad version of the same idea, where the reading in bits sits next
+to the triangle.
+
+\begin{figure}[t]
+\centering
+\begin{subfigure}[b]{0.44\textwidth}\centering
+\begin{tikzpicture}
+  \draw[inkgray!60] (-0.3,0) -- (4.6,0);
+  \node[pt=inkgray] (b) at (0.6,0) {}; \node[below=2pt,lbl] at (b) {$B$};
+  \node[pt=dcolor]  (a) at (3.8,0) {}; \node[below=2pt,lbl] at (a) {$A$};
+  \draw[disp] (0.6,0.35) -- (3.8,0.35) node[midway,above,lbl,text=dcolor] {$A-B$};
+  \node[lbl,align=center] at (2.2,-1.0) {distance of $A$ from $B$};
+  \node at (2.2,-1.75) {};
+\end{tikzpicture}
+\caption{On a line: $A-B$ is how far $A$ sits from $B$.}
+\end{subfigure}\hfill
+\begin{subfigure}[b]{0.52\textwidth}\centering
+\begin{tikzpicture}
+  \coordinate (O) at (0,0.2); \coordinate (Q) at (2.6,0); \coordinate (P) at (2.75,2.0);
+  \draw[inkgray] (O) -- (Q); \draw[inkgray] (O) -- (P);
+  \draw[disp] (Q) -- (P);
+  \node[pt=qcolor] at (Q) {}; \node[below,lbl] at (Q) {$\qq$};
+  \node[pt=pcolor] at (P) {}; \node[above,lbl] at (P) {$\pp$};
+  \draw[decorate,decoration={brace,amplitude=6pt},thick] ($(P)+(0.35,0)$) -- ($(Q)+(0.35,0)$)
+     node[midway,right=8pt,lbl,align=left] {excess bits to represent\\ $p$ using $q$, when\\ sampling from $p$};
+\end{tikzpicture}
+\caption{$p\kl{p}q$, the ``divergence'' of $p$ from $q$ w.r.t.\ $p$.}
+\end{subfigure}
+\caption{Redrawn from page~6 of my notes. The one-dimensional picture (a) is the one everyone trusts. In (b)
+the vertical edge is the KL divergence and the brace gives its classical reading:
+$p^{*}\kl{p^{*}}\hat q=H_{p^{*}}(\hat q)-H_{p^{*}}(p^{*})$.}
+\label{fig:page6}
+\end{figure}
+
+Put the two pictures side by side and the analogy reads
+\begin{equation}\label{eq:analogy}
+p\kl{p}q\;=\;\E_{X\sim p}\big[\log p(X)-\log q(X)\big]\;\approx\;\text{``}A-B\text{''},
+\end{equation}
+the divergence of $p$ from $q$ next to the distance of $A$ from $B$ (Figure~\ref{fig:vectorview}).
+
+\begin{remark}[A slight abuse of notation]
+The quotes around ``$A-B$'' matter. The vector $\vec{A}-\vec{B}$ is a displacement; the \emph{distance} is the
+scalar $\lVert A-B\rVert_2$, and here ``$A-B$'' is shorthand for it. Likewise $p\kl{p}q$ is not a vector: it is a
+scalar, like the Euclidean distance. Unlike that distance it is asymmetric, and the direction lives in the
+subscript.
+\end{remark}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+  % left: distributions
+  \begin{scope}
+    \coordinate (O) at (0,0.15); \coordinate (Q) at (2.7,0); \coordinate (P) at (2.85,2.3);
+    \draw[inkgray] (O) -- (P);
+    \draw[back] (Q) -- (O) node[midway,below,lbl] {$\kl{p}$};
+    \draw[disp] (Q) -- (P) node[midway,right,lbl,text=dcolor] {$p\kl{p}q$};
+    \node[pt=qcolor] at (Q) {}; \node[below right,lbl] at (Q) {$\qq$};
+    \node[pt=pcolor] at (P) {}; \node[above,lbl] at (P) {$\pp$};
+    \node[lbl,align=center] at (1.5,-1.0) {divergence (u-dist) of $p$ from $q$\\[1pt] $=\Delta^{\mathrm{KL}}_p(q\to p)$};
+  \end{scope}
+  \node[align=center] at (5.0,1.1) {\small analogy\\[2pt] {\Large$\approx$}};
+  % right: points
+  \begin{scope}[xshift=6.6cm]
+    \coordinate (O) at (0,0.15); \coordinate (B) at (2.7,0); \coordinate (A) at (2.85,2.3);
+    \draw[inkgray] (O) -- (A);
+    \draw[back] (B) -- (O) node[midway,below,lbl] {$-B$};
+    \draw[disp] (B) -- (A) node[midway,right,lbl,text=dcolor,align=left] {$\vec{A}-\vec{B}$\\ $=\Delta(A-B)$};
+    \node[pt=inkgray] at (B) {}; \node[below right,lbl] at (B) {$B$};
+    \node[pt=dcolor] at (A) {}; \node[above,lbl] at (A) {$A$};
+    \node[lbl,align=center] at (1.5,-1.0) {distance of $A$ from $B$\\[1pt] ``$A-B$'' $\stackrel{?}{=}\lVert A-B\rVert_2$};
+  \end{scope}
+  \node[draw=dcolor!60,rounded corners=2pt,fill=dcolor!4,font=\footnotesize,align=left,text width=11.2cm,inner sep=5pt]
+     at (4.95,-2.45) {\textbf{Note:} a little abuse of notation. $p\kl{p}q$ is not a vector, it is a scalar like
+     \mbox{$\lVert A-B\rVert_2$}. The Euclidean distance of $A$ from $B$ is symmetric; the divergence of $p$ from $q$ is not.};
+\end{tikzpicture}
+\caption{The vector view, redrawn from page~7 of my notes (its final version). Left: the divergence of $p$
+from $q$, with the measure $p$ in the subtraction sign. Right: the displacement of $A$ from $B$, with
+``$A-B$'' standing for the distance.}
+\label{fig:vectorview}
+\end{figure}
+
+The same page asks a question in the margin: since we sample from $p$, does $\log p(X)$ come out the bigger
+side? \textbf{On average, yes}, by Gibbs' inequality (Proposition~\ref{prop:gibbs}). \textbf{Not sample by sample}: a
+particular $x$ drawn from $p$ can still be likelier under $q$ (Figure~\ref{fig:pointwise}).
+
+\section{Unroll it: KL really is a subtraction}
+
+Write out the definition and the subtraction is sitting right there:
+\begin{equation}\label{eq:unrolled}
+p\kl{p}q\;=\;\E_{X\sim p}\big[\,\log p(X)\;-\;\log q(X)\,\big].
+\end{equation}
+
+\begin{definition}[Log-likelihood displacement]
+The pointwise log-likelihood displacement of $p$ from $q$ is $\ell(x):=\log p(x)-\log q(x)$.
+Then $p\kl{p}q=\E_p[\ell(X)]$.
+\end{definition}
+
+Read~\eqref{eq:unrolled} as a procedure (Figure~\ref{fig:loglik}b): sample $x\sim p$; score it under both models;
+subtract, which tells you how much likelier $p$ makes this $x$ than $q$ does, in log units (nats with $\ln$, bits
+with $\log_2$); average. So $\DKL(p\Vert q)$ is \textbf{the average log-likelihood advantage of $p$ over $q$ on $p$'s
+own data}. No codes, and no minus signs to keep track of.
+
+\begin{figure}[t]
+\centering
+\begin{subfigure}[b]{0.44\textwidth}\centering
+\begin{tikzpicture}[scale=1.05]
+  \coordinate (O) at (0,0); \coordinate (R) at (3.3,0); \coordinate (T) at (3.3,2.2);
+  \draw[vec,pcolor] (O) -- (T) node[midway,above left,lbl,text=pcolor] {$\log p(X)$};
+  \draw[vec,qcolor] ($(R)+(0,-0.35)$) -- ($(O)+(0,-0.35)$) node[midway,below,lbl,text=qcolor] {$-\log q(X)$};
+  \draw[inkgray!50] (O) -- (R);
+  \draw[disp] (R) -- (T) node[midway,right,lbl,text=dcolor,align=left] {$\ell(X)$};
+  \node[pt=black] at (O) {}; \node[pt=qcolor] at (R) {}; \node[pt=pcolor] at (T) {};
+\end{tikzpicture}
+\caption{The triangle in log-likelihood space.}
+\end{subfigure}\hfill
+\begin{subfigure}[b]{0.52\textwidth}\centering
+\begin{tikzpicture}[box/.style={draw=dcolor!70,rounded corners=2pt,fill=dcolor!5,font=\small,
+    minimum width=5.6cm,minimum height=0.62cm,align=center},node distance=0.33cm]
+  \node[box] (s) {\textbf{1. Sample} \ $x\sim p$};
+  \node[box,below=of s] (c) {\textbf{2. Score} \ ${\color{pcolor}\log p(x)}$ and ${\color{qcolor}\log q(x)}$};
+  \node[box,below=of c] (d) {\textbf{3. Subtract} \ $\ell(x)=\log p(x)-\log q(x)$};
+  \node[box,below=of d] (a) {\textbf{4. Average} \ $\frac1n\sum_i \ell(x_i)\to p\kl{p}q$};
+  \foreach \u/\v in {s/c,c/d,d/a} \draw[->,dcolor!80] (\u) -- (\v);
+\end{tikzpicture}
+\caption{KL as a recipe.}
+\end{subfigure}
+\caption{Redrawn from page~5 of my notes, the page where it clicked. (a) Walking out along $\log p(X)$ and back
+along $-\log q(X)$ leaves the displacement $\ell(X)=\log p(X)-\log q(X)$, just as $B-A=B+(-A)$. (b) Sample, compute
+log-probabilities, compare, average.}
+\label{fig:loglik}
+\end{figure}
+
+\begin{proposition}[Gibbs' inequality]\label{prop:gibbs}
+$p\kl{p}q\ge0$, with equality if and only if $p=q$ almost everywhere.
+\end{proposition}
+\begin{proof}
+By Jensen's inequality for the concave $\log$,
+\[
+-\E_p[\ell(X)]=\E_p\!\left[\log\frac{q(X)}{p(X)}\right]\le\log\E_p\!\left[\frac{q(X)}{p(X)}\right]
+=\log\!\int_{\{p>0\}} q(x)\,dx\le\log1=0,
+\]
+with equality only when $q/p$ is constant on the support of $p$, that is, when $p=q$.
+\end{proof}
+
+For a particular $x$, $\ell(x)$ can be negative: $q$ may like some of $p$'s samples more than $p$ does. On average,
+on $p$'s own turf, $p$ always wins or ties. Figure~\ref{fig:pointwise} shows both facts at once.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[name=top,width=12.4cm,height=4.0cm,xmin=-4.5,xmax=4.5,ymin=0,ymax=0.45,
+  axis lines=left,xticklabels={},ytick=\empty,ylabel={density},ylabel style={font=\small},
+  legend style={draw=none,font=\small,at={(0.98,0.95)},anchor=north east},clip=false]
+  \addplot[pcolor,very thick,domain=-4.5:4.5,samples=160]{exp(-x^2/2)/sqrt(2*pi)};
+  \addlegendentry{$p=\mathcal N(0,1)$}
+  \addplot[qcolor,very thick,dashed,domain=-4.5:4.5,samples=160]{exp(-x^2/8)/(2*sqrt(2*pi))};
+  \addlegendentry{$q=\mathcal N(0,2^2)$}
+\end{axis}
+\begin{axis}[at={(top.south west)},anchor=north west,yshift=-0.35cm,width=12.4cm,height=5.2cm,
+  xmin=-4.5,xmax=4.5,ymin=-6.0,ymax=2.0,axis lines=left,xlabel={$x$},
+  ytick={-6,-4,-2,0},ylabel={nats},ylabel style={font=\small},clip=true,
+  legend style={draw=none,font=\small,at={(0.02,0.04)},anchor=south west,fill=white,fill opacity=0.9,text opacity=1}]
+  \addplot[name path=ell,dcolor,very thick,domain=-4.5:4.5,samples=160]{ln(2)-3*x^2/8};
+  \addlegendentry{$\ell(x)=\log p(x)-\log q(x)$}
+  \addplot[black,thick,densely dotted,domain=-4.5:4.5,samples=160]{exp(-x^2/2)/sqrt(2*pi)*(ln(2)-3*x^2/8)};
+  \addlegendentry{integrand $p(x)\,\ell(x)$}
+  \path[name path=zero] (axis cs:-4.5,0) -- (axis cs:4.5,0);
+  \addplot[pos!25,forget plot] fill between[of=ell and zero,soft clip={domain=-1.36:1.36}];
+  \addplot[neg!18,forget plot] fill between[of=ell and zero,soft clip={domain=1.36:4.5}];
+  \addplot[neg!18,forget plot] fill between[of=ell and zero,soft clip={domain=-4.5:-1.36}];
+  \draw[inkgray] (axis cs:-4.5,0) -- (axis cs:4.5,0);
+  \node[font=\small,text=pos!70!black,anchor=south] at (axis cs:0,0.9) {$p$ wins here: $\ell>0$};
+  \node[font=\small,text=neg!80!black,align=center] at (axis cs:3.0,-1.3) {tails: $\ell<0$,\\ $q$ likes these $x$ more};
+\end{axis}
+\end{tikzpicture}
+\caption{Pointwise versus average, for $p=\mathcal N(0,1)$ and $q=\mathcal N(0,2^2)$, where
+$\ell(x)=\ln2-\tfrac38x^2$. Samples from $p$ with $|x|>\sqrt{(8\ln2)/3}\approx1.36$ (about 17\% of them) are
+\emph{likelier} under $q$. The dotted integrand still has positive total area,
+$p\kl{p}q=\ln2-\tfrac38\approx0.32$ nats, as Gibbs' inequality promises.}
+\label{fig:pointwise}
+\end{figure}
+
+\begin{example}[Sometimes it literally is a distance]\label{ex:equalvar}
+Let $p=\mathcal N(\mu_p,\sigma^2)$ and $q=\mathcal N(\mu_q,\sigma^2)$. Then
+$\ell(x)=\frac{(x-\mu_q)^2-(x-\mu_p)^2}{2\sigma^2}$, and averaging under $p$ gives
+\[
+p\kl{p}q=\frac{(\mu_p-\mu_q)^2}{2\sigma^2},
+\]
+half the squared Euclidean distance between the means, in units of $\sigma$ (Figure~\ref{fig:equalvar}). In the
+simplest case the displacement picture is not a mnemonic; it is exactly the old distance.
+\end{example}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=10.5cm,height=4.3cm,xmin=-3.4,xmax=5.4,ymin=0,ymax=0.56,axis lines=left,
+  ytick=\empty,xtick={0,2},xticklabels={$\mu_q$,$\mu_p$},clip=false]
+  \addplot[qcolor,very thick,dashed,domain=-3.4:5.4,samples=140]{exp(-x^2/2)/sqrt(2*pi)};
+  \addplot[pcolor,very thick,domain=-3.4:5.4,samples=140]{exp(-(x-2)^2/2)/sqrt(2*pi)};
+  \draw[inkgray,densely dotted] (axis cs:0,0) -- (axis cs:0,0.4);
+  \draw[inkgray,densely dotted] (axis cs:2,0) -- (axis cs:2,0.4);
+  \draw[disp] (axis cs:0,0.45) -- (axis cs:2,0.45);
+  \node[font=\small,text=dcolor,anchor=south] at (axis cs:1,0.46) {$p\kl{p}q=\frac{(\mu_p-\mu_q)^2}{2\sigma^2}$};
+  \node[font=\small,text=qcolor] at (axis cs:-1.9,0.27) {$q$};
+  \node[font=\small,text=pcolor] at (axis cs:3.9,0.27) {$p$};
+\end{axis}
+\end{tikzpicture}
+\caption{Example~\ref{ex:equalvar}: with equal variances the KL divergence is the displacement of the means
+from baseline $\mu_q$ to target $\mu_p$, squared and halved ($\sigma=1$ and $\mu_p-\mu_q=2$ give $2$ nats).
+Here it is symmetric; the asymmetry appears as soon as the shapes differ.}
+\label{fig:equalvar}
+\end{figure}
+
+\section{Where the asymmetry lives}
+
+Swap $p$ and $q$ in the pointwise displacement and it flips sign, exactly like a vector:
+$\log q(x)-\log p(x)=-\ell(x)$. So the reverse divergence is
+\begin{equation}\label{eq:reverse}
+q\kl{q}p\;=\;\E_{X\sim q}\big[-\ell(X)\big].
+\end{equation}
+\begin{tcolorbox}[keybox,title=Where the asymmetry comes from]
+Same pointwise displacement, opposite sign, \textbf{different averaging distribution}. In Euclidean space the norm
+forgets the sign and symmetry comes for free. In KL the ``norm'' is an average taken under one of the two
+endpoints; change the endpoint you sample from and you change the number. The subscript in $\kl{p}$ records
+exactly this.
+\end{tcolorbox}
+
+\begin{example}[Narrow versus wide]
+Let $p=\mathcal N(0,1)$ and $q=\mathcal N(0,2^2)$. Then
+\[
+p\kl{p}q=\ln2-\tfrac38\approx0.32\text{ nats},\qquad q\kl{q}p=\tfrac32-\ln2\approx0.81\text{ nats}.
+\]
+On $p$'s data the wide $q$ is a little diffuse but never shocked, so the cost is low. On $q$'s data the narrow $p$ keeps
+meeting samples in the tails that it thought nearly impossible, so the cost is high.
+\end{example}
+
+This is the fact behind ``forward KL is mode-covering, reverse KL is mode-seeking'', and behind the different
+behaviour of maximum likelihood (forward) and variational inference (reverse). Fit a single Gaussian $q$ to a
+two-mode $p$ in each direction and the subscript decides everything (Figure~\ref{fig:fwdrev}).
+
+\begin{figure}[t]
+\centering
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{exp(-((x-#1)^2)/(2*#2^2))/(#2*sqrt(2*pi))}}
+\begin{tikzpicture}
+\begin{axis}[name=L,width=7.0cm,height=4.8cm,xmin=-5,xmax=5,ymin=0,ymax=0.75,axis lines=left,
+  ytick=\empty,xtick={-4,-2,0,2,4},title={\small Forward: $\min_q\, p\kl{p}q$\\\footnotesize averaged under $p$},
+  title style={align=center,yshift=-3pt}]
+  \addplot[draw=none,fill=pcolor!22,domain=-5:5,samples=200]{0.35*gauss(-2,0.6)+0.65*gauss(2,0.6)}\closedcycle;
+  \addplot[pcolor!80,thick,domain=-5:5,samples=200]{0.35*gauss(-2,0.6)+0.65*gauss(2,0.6)};
+  \addplot[qcolor,very thick,domain=-5:5,samples=160]{gauss(0.6,2.0)};
+  \node[font=\small,text=qcolor,fill=white,fill opacity=0.8,text opacity=1,inner sep=1pt] at (axis cs:-1.2,0.5) {covers both modes};
+\end{axis}
+\begin{axis}[at={(L.east)},anchor=west,xshift=0.9cm,width=7.0cm,height=4.8cm,xmin=-5,xmax=5,ymin=0,ymax=0.75,
+  axis lines=left,ytick=\empty,xtick={-4,-2,0,2,4},title={\small Reverse: $\min_q\, q\kl{q}p$\\\footnotesize averaged under $q$},
+  title style={align=center,yshift=-3pt}]
+  \addplot[draw=none,fill=pcolor!22,domain=-5:5,samples=200]{0.35*gauss(-2,0.6)+0.65*gauss(2,0.6)}\closedcycle;
+  \addplot[pcolor!80,thick,domain=-5:5,samples=200]{0.35*gauss(-2,0.6)+0.65*gauss(2,0.6)};
+  \addplot[qcolor,very thick,domain=-5:5,samples=200]{gauss(2.0,0.6)};
+  \draw[->,inkgray] (axis cs:-0.4,0.6) -- (axis cs:1.45,0.6);
+  \node[font=\small,text=qcolor,align=right,anchor=east] at (axis cs:-0.4,0.6) {locks onto\\ one mode};
+  \node[font=\small,text=inkgray,align=center] at (axis cs:-2,0.34) {ignored};
+\end{axis}
+\end{tikzpicture}
+\caption{The best single Gaussian $q$ (orange) for the two-mode $p=0.35\,\mathcal N(-2,0.6^2)+0.65\,\mathcal N(2,0.6^2)$
+(shaded). Left: averaged under $p$, any place where $p$ has mass and $q$ does not costs a huge $\ell(x)$, so $q$
+stretches to cover everything; the optimum matches moments, $q=\mathcal N(0.6,2.0^2)$, at $0.56$ nats. Right:
+averaged under $q$, $q$ is scored only where it puts its own samples, so it may ignore a whole mode; the optimum
+is $q\approx\mathcal N(2.0,0.6^2)$, at $0.43\approx-\ln0.65$ nats.}
+\label{fig:fwdrev}
+\end{figure}
+
+Koller and Friedman's treatment of M- and I-projections \cite[Sec.~8.5]{koller2009} is the cleanest account of
+this I know. If a symmetric quantity is needed, add the two directions (Jeffreys' divergence):
+\begin{equation}\label{eq:jeffreys}
+p\kl{p}q\;+\;q\kl{q}p\;=\;\int\big(p(x)-q(x)\big)\big(\log p(x)-\log q(x)\big)\,dx .
+\end{equation}
+A difference in probability space times a difference in log space: both subtractions in one integrand.
+
+\section{How KL is, and is not, like a distance}
+
+Table~\ref{tab:distance} sets KL beside the quantity we started from.
+
+\begin{table}[h]
+\centering\small
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.6cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X@{}}
+\toprule
+ & Half squared Euclidean, $\tfrac12\lVert B-A\rVert^2$ & KL, $p\kl{p}q$\\
+\midrule
+Pointwise displacement & $B-A$ & $\log p(x)-\log q(x)$\\
+Swap the endpoints & flips the displacement's sign & flips the displacement's sign\\
+Nonnegative, zero only at equality & yes & yes (Gibbs)\\
+Symmetric & yes & no: the average is under one endpoint\\
+Triangle inequality & no (the unsquared distance has it) & no\\
+Bregman divergence of & $\tfrac12\lVert x\rVert^2$ & negative entropy $\sum_x p(x)\log p(x)$\\
+Locally, near equality & itself & $\tfrac12\,\delta^{\top}F(\theta)\,\delta$, $F$ the Fisher information\\
+\bottomrule
+\end{tabularx}
+\caption{KL next to half the squared Euclidean distance.}
+\label{tab:distance}
+\end{table}
+
+The honest summary: \textbf{KL is not a distance, but it behaves like half a squared distance.} Both belong to the
+family of Bregman divergences,
+\[
+D_F(p,q)\;=\;F(p)-F(q)-\langle\nabla F(q),\,p-q\rangle,
+\]
+the gap at $p$ between a convex function $F$ and its tangent drawn at the baseline $q$ (Figure~\ref{fig:bregman}).
+With $F(x)=\tfrac12\lVert x\rVert^2$ this is $\tfrac12\lVert p-q\rVert^2$; with the negative entropy it is
+$\DKL(p\Vert q)$. Nearby distributions see a quadratic form,
+$\DKL(p_\theta\Vert p_{\theta+\delta})\approx\tfrac12\delta^{\top}F(\theta)\delta$, so locally KL is a squared length in the
+Fisher metric. It even has a Pythagorean identity for projections onto nice families \cite{csiszar1975}. What it gives up is
+symmetry, and we now know exactly why.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=9.6cm,height=5.6cm,xmin=0,xmax=4.2,ymin=-0.6,ymax=4.4,axis lines=left,
+  xtick={1.1,3.4},xticklabels={$q$ (baseline),$p$ (target)},ytick=\empty,clip=false]
+  \addplot[black,very thick,domain=0.05:4.1,samples=120]{0.35*x^2-0.2*x+0.3};
+  \node[font=\small] at (axis cs:3.95,4.0) {$F$};
+  % tangent at q=1.1: F(1.1)=0.5035, F'(1.1)=0.57
+  \addplot[inkgray,thick,dashed,domain=0.1:4.0]{0.5035+0.57*(x-1.1)};
+  \node[font=\small,text=inkgray,anchor=west] at (axis cs:4.0,2.17) {tangent at $q$};
+  \addplot[only marks,mark=*,mark size=1.8pt,qcolor] coordinates {(1.1,0.5035)};
+  \addplot[only marks,mark=*,mark size=1.8pt,pcolor] coordinates {(3.4,3.666)};
+  \addplot[only marks,mark=*,mark size=1.6pt,inkgray] coordinates {(3.4,1.8145)};
+  \draw[inkgray,densely dotted] (axis cs:1.1,-0.6) -- (axis cs:1.1,0.5035);
+  \draw[inkgray,densely dotted] (axis cs:3.4,-0.6) -- (axis cs:3.4,1.8145);
+  \draw[disp,<->] (axis cs:3.4,1.86) -- (axis cs:3.4,3.62);
+  \node[font=\small,text=dcolor,anchor=west] at (axis cs:3.45,2.6) {$D_F(p,q)$};
+\end{axis}
+\end{tikzpicture}
+\caption{A Bregman divergence is the gap at the target $p$ between a convex $F$ and its tangent at the
+baseline $q$. Moving the tangent point changes the gap, which is why such divergences are asymmetric in general.
+Half the squared Euclidean distance ($F=\tfrac12\lVert x\rVert^2$) and KL ($F$ = negative entropy) are both of this form.}
+\label{fig:bregman}
+\end{figure}
+
+\section{Why I would teach the log-likelihood view first}
+
+\paragraph{The signs make sense.} The bits view counts \emph{cost}, so it is built from $-\log$ terms, and KL becomes
+cost minus cost with sign flips to babysit. The log-likelihood view counts \emph{plausibility}: bigger is better, and
+KL is the plausibility gap. It is the same gap on a mirrored axis (Figure~\ref{fig:axes}).
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[x=1.15cm]
+  % top: surprisal axis, cost
+  \node[anchor=west,font=\small\sffamily\bfseries] at (-0.2,1.85) {Surprisal $I(\cdot)=-\log(\cdot)$: cost, bigger is worse};
+  \draw[->,thick] (0,0.5) -- (10,0.5);
+  \foreach \x/\t in {0/$0$,3.5/${I(p)}$,7.0/${I(q)}$} {\draw (\x,0.4) -- (\x,0.6); \node[below,font=\small] at (\x,0.4) {\t};}
+  \node[pt=pcolor] at (3.5,0.5) {}; \node[pt=qcolor] at (7.0,0.5) {};
+  \draw[decorate,decoration={brace,amplitude=5pt},thick,dcolor] (3.5,0.72) -- (7.0,0.72)
+     node[midway,above=5pt,font=\small,text=dcolor] {excess bits $I(q)-I(p)$};
+  % bottom: log-likelihood axis, plausibility
+  \node[anchor=west,font=\small\sffamily\bfseries] at (-0.2,-0.6) {Log-likelihood $\log(\cdot)$: plausibility, bigger is better};
+  \draw[->,thick] (0,-1.9) -- (10,-1.9);
+  \foreach \x/\t in {3.0/${\log q}$,6.5/${\log p}$,9.5/$0$} {\draw (\x,-2.0) -- (\x,-1.8); \node[below,font=\small] at (\x,-2.0) {\t};}
+  \node[pt=qcolor] at (3.0,-1.9) {}; \node[pt=pcolor] at (6.5,-1.9) {};
+  \draw[decorate,decoration={brace,amplitude=5pt},thick,dcolor] (3.0,-1.68) -- (6.5,-1.68)
+     node[midway,above=5pt,font=\small,text=dcolor] {gap $\log p-\log q=\ell$};
+  
+\end{tikzpicture}
+\caption{Redrawn from page~4 of my notes, the margin of a book chapter ($p$ the reference distribution we sample
+from, $q$ the approximating one). On the surprisal axis KL is $\E_p[I(q)-I(p)]=H_p(q)-H_p(p)$; flip the axis and the
+same gap is $\E_p[\log p-\log q]$. Drawn for a typical $x\sim p$, where $p$ wins.}
+\label{fig:axes}
+\end{figure}
+
+\paragraph{Maximum likelihood falls out in one line.} With $p$ the data distribution and $q_\theta$ the model,
+\[
+p\kl{p}q_\theta\;=\;\underbrace{\E_p[\log p(X)]}_{\text{independent of }\theta}\;-\;\E_p[\log q_\theta(X)].
+\]
+Minimizing over $\theta$ is maximizing the expected log-likelihood, and with data we replace $\E_p$ by the
+empirical average. \textbf{Maximum likelihood minimizes the forward KL from the data to the model}: we move the
+baseline $q_\theta$ toward the data, scored on the data's own samples.
+
+\paragraph{It connects to the rest of statistics.} $\ell(x)$ is the log-likelihood ratio, the central object of
+hypothesis testing, Bayesian evidence, importance sampling and policy-gradient RL. Once KL is ``average $\ell$'',
+much of ML stops looking like a collection of unrelated tricks (Appendix~\ref{app:ratios}).
+
+\section{Notes and history}
+
+I did not get this view from a course or a textbook. I got it while working through these notes with an AI model:
+I asked about the excess-bits formula, and it rewrote KL as $\E_p[\log p-\log q]$ without my asking.
+
+\textbf{It is not new as mathematics.} Kullback and Leibler \cite{kullback1951} introduced the quantity as the mean
+information for discrimination between two hypotheses per observation from one of them, which is precisely the
+expected log-likelihood ratio, and Kullback \cite{kullback1959} preferred the name \emph{discrimination information}.
+Akaike built AIC on the same reading \cite{akaike1973}, and Etz \cite{etz2018} calls KL ``the expected log likelihood
+ratio in favor of the true distribution.'' What I could not find in the books on my shelf, those I was assigned or
+recommended at UIUC, MIT and Stanford, is any of them \emph{leading} with it as the intuition (Table~\ref{tab:books}).
+Nor could I find it folded into one displacement grammar in which the averaging distribution is part of the notation
+and explains the asymmetry. That part is my framing.
+
+\begin{table}[h]
+\centering\footnotesize
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{3.0cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{2.1cm}>{\raggedright\arraybackslash}p{2.3cm}@{}}
+\toprule
+Book & Expected log-difference or log-ratio? & Sampled log-likelihood form? & Headline intuition & Where\\
+\midrule
+Hogg, McKean \& Craig \cite{hogg2013} & Yes, unnamed: $\E_{\theta_0}\!\big[\log\frac{f(X;\theta)}{f(X;\theta_0)}\big]$ & Yes: average log-likelihood ratio over the sample & None; KL never named & Thm.~6.1.1 and proof\\
+MacKay \cite{mackay2003} & Yes, $\sum_x P(x)\log\frac{P(x)}{Q(x)}$ & Partly: expected weight of evidence, not linked to KL & Wasted bits & Sec.~2.6; ch.~5; Secs.~18.3--18.4\\
+Hastie, Tibshirani \& Friedman \cite{hastie2009} & Only as ICA's mutual information & No & Dependence & Sec.~14.7.2\\
+Koller \& Friedman \cite{koller2009} & Yes; a proof writes $\E_P[\log P-\log P']$ & Yes & Extra coding cost & Def.~A.5; Prop.~16.1; Sec.~17.2.5\\
+Shalev-Shwartz \& Ben-David \cite{ssbd2014} & Yes, inside the log-loss risk & Yes: MLE as ERM with log-loss & Log-loss risk $=$ relative entropy $+$ entropy & Sec.~24.1\\
+Goodfellow, Bengio \& Courville \cite{goodfellow2016} & Yes, exactly $\E_{x\sim P}[\log P(x)-\log Q(x)]$ & Yes: MLE as KL to the empirical distribution & Extra bits & Eq.~3.50; eq.~5.60\\
+Bishop \& Bishop \cite{bishop2024} & Cross-entropy minus entropy, then $-\int p\ln\frac qp$ & In Ex.~2.34 & Extra information from the wrong code & Sec.~2.5.5\\
+Bishop \cite{bishop2006} & Cross-entropy minus entropy, then $-\int p\ln\frac qp$ & Yes: $\frac1N\sum_n\{-\ln q(x_n|\theta)+\ln p(x_n)\}$ & Extra information to transmit & Sec.~1.6.1\\
+\bottomrule
+\end{tabularx}
+\caption{How the books on my shelf introduce KL. The subtraction is in almost all of them; the headline is always bits.}
+\label{tab:books}
+\end{table}
+
+Why did it take fourteen years? My guess, with no complaint against anyone, is that a class, a talk or a paper has a
+syllabus or a page limit, and ``why is it a ratio, and why that sign?'' feels like something one should already know.
+So nobody stops to rebuild the foundations. AI changes the economics of asking: a tireless sparring partner that never
+makes you feel slow. A curious person who works hard with it can now understand the foundations more deeply than any
+course gave them.
+
+\section*{Exercises}
+\addcontentsline{toc}{section}{Exercises}
+
+\begin{exercise}
+Derive Example~\ref{ex:equalvar}: for $p=\mathcal N(\mu_p,\sigma^2)$ and $q=\mathcal N(\mu_q,\sigma^2)$, show
+$p\kl{p}q=(\mu_p-\mu_q)^2/(2\sigma^2)$ by averaging $\ell(x)$ under $p$.
+\end{exercise}
+
+\begin{exercise}
+For $p=\mathcal N(0,1)$ and $q=\mathcal N(0,s^2)$, compute $p\kl{p}q$ and $q\kl{q}p$ as functions of $s$. For which $s$
+are they equal? Check the values $0.32$ and $0.81$ at $s=2$.
+\end{exercise}
+
+\begin{exercise}
+Prove the Jeffreys identity~\eqref{eq:jeffreys}, and show its integrand is pointwise nonnegative. Why does this not
+make each direction nonnegative pointwise?
+\end{exercise}
+
+\begin{exercise}
+Let $y=g(x)$ with $g$ smooth and invertible, and let $p_Y,q_Y$ be the induced densities. Show that
+$\ell$ is unchanged, $\log p_Y(y)-\log q_Y(y)=\log p(x)-\log q(x)$, so $p\kl{p}q$ is the same in both coordinates,
+while the pointwise difference $p_Y(y)-q_Y(y)$ is rescaled by the Jacobian.
+\end{exercise}
+
+\begin{exercise}
+Show that the Gaussian $q$ minimizing $p\kl{p}q$ matches the mean and variance of $p$. Recover the left panel of
+Figure~\ref{fig:fwdrev}: $\mu=0.6$, $\sigma=2.0$.
+\end{exercise}
+
+\begin{exercise}
+In PPO the ratio is $r_t(\theta)=\pi_\theta(a_t\mid s_t)/\pi_{\theta_{\mathrm{old}}}(a_t\mid s_t)$. Which KL do you get by
+averaging $\log r_t$ under the new policy, and which by averaging $-\log r_t$ under the old one? Write both in the
+notation $p\kl{p}q$.
+\end{exercise}
+
+\appendix
+\renewcommand{\thesection}{\Alph{section}}
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\setcounter{figure}{0}
+
+\section{Why ratios, and not differences?}\label{app:ratios}
+
+The note I left myself was: \emph{what is the fundamental thing going on, and why are ratios more natural than standard
+differences?} There are several answers, and they are one answer: $\log p-\log q$ is the right subtraction for
+probabilities.
+
+\begin{itemize}
+\item \textbf{Evidence multiplies.} For $n$ independent samples the likelihood ratio of the whole dataset is the
+product of the per-sample ratios, so its log is a sum, $S_n=\sum_{i\le n}\ell(x_i)$. KL is the expected evidence per
+sample: $S_n$ drifts upward at slope $p\kl{p}q$ (Figure~\ref{fig:evidence}). Raw differences $p(x)-q(x)$ do not
+compose across observations at all.
+\item \textbf{Coordinates do not matter.} Under a change of variables $y=g(x)$ both densities pick up the same Jacobian;
+in the ratio it cancels, in $p(x)-q(x)$ it does not. KL is a statement about distributions, not coordinates.
+\item \textbf{Bayes is additive in log-ratios.} Posterior odds are prior odds times the likelihood ratio, so $\ell(x)$
+is how far one observation moves your log-odds toward $p$, Good and Turing's \emph{weight of evidence}.
+\item \textbf{Hypothesis testing.} By the Neyman--Pearson lemma, thresholding the likelihood ratio is the most powerful
+test of $p$ against $q$. By Stein's lemma, with $n$ samples from $p$ the best achievable probability of wrongly
+accepting $q$ decays like $e^{-n\DKL(p\Vert q)}$: KL is the exponent of distinguishability.
+\item \textbf{Changing measure needs a ratio.} Importance sampling uses $\E_p[f(X)]=\E_q\big[\tfrac{p(X)}{q(X)}f(X)\big]$.
+That is PPO's ratio, \textbf{new over old}, reweighting samples collected by the old policy. Averaged under the new
+policy, $\log r$ gives $\DKL(\pi_\theta\Vert\pi_{\mathrm{old}})$; on the old policy's samples, $\E_{\mathrm{old}}[-\log r]$ gives
+$\DKL(\pi_{\mathrm{old}}\Vert\pi_\theta)$, the direction TRPO constrains.
+\end{itemize}
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=11cm,height=5.4cm,xmin=0,xmax=200,ymin=-5,ymax=80,axis lines=left,
+  xlabel={number of samples $n$ from $p$},ylabel={$S_n=\sum_{i\le n}\ell(x_i)$ (nats)},
+  label style={font=\small},tick label style={font=\small},
+  pathstyle/.style={dcolor!55,thick},
+  legend style={draw=none,font=\small,at={(0.03,0.97)},anchor=north west}]
+  \addplot[black,very thick,dashed,domain=0:200]{0.3181*x};
+  \addlegendentry{$n\cdot\big(p\kl{p}q\big)=0.318\,n$}
+  \input{evidence_paths.tex}
+  \addlegendentry{three runs}
+\end{axis}
+\end{tikzpicture}
+\caption{Evidence adds. Cumulative log-likelihood ratio for $p=\mathcal N(0,1)$ against $q=\mathcal N(0,2^2)$ on samples
+from $p$. Single steps can be negative (Figure~\ref{fig:pointwise}), but the sum drifts up at slope $p\kl{p}q\approx0.32$
+nats per sample. Paths generated by \texttt{evidence\_paths.py}.}
+\label{fig:evidence}
+\end{figure}
+
+Differences of probabilities do give real distances, such as total variation $\tfrac12\sum_x\lvert p(x)-q(x)\rvert$, and
+Pinsker's inequality bounds it by KL: $\mathrm{TV}(p,q)\le\sqrt{\DKL(p\Vert q)/2}$. They just lack the properties above,
+which is why ratios keep appearing everywhere in ML.
+
+\setcounter{figure}{0}
+\section{The classical bits view, side by side}
+
+The textbook route starts from surprisal. Seeing $x$ with probability $p(x)$ costs $-\log_2 p(x)$ bits; for example
+$p(x)=2^{-3}$ costs $3$ bits (Figure~\ref{fig:surprisal}). Averaging gives entropy. With the sampling distribution as a
+subscript, as everywhere in this chapter,
+\[
+H_p(q):=\E_{X\sim p}[-\log q(X)]\quad\text{(cross-entropy)},\qquad H_p(p)=\E_{X\sim p}[-\log p(X)]\quad\text{(entropy)}.
+\]
+$H_p(q)$ is the expected code length when the data come from $p$ but the code was built for $q$; $H_p(p)$ is the best
+possible. Their difference is the classical KL, the \textbf{excess bits} of using the wrong code:
+\[
+p\kl{p}q\;=\;H_p(q)-H_p(p)\;=\;\E_p[-\log q(X)]-\E_p[-\log p(X)]\;=\;\E_p[\log p(X)-\log q(X)].
+\]
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=8.6cm,height=5.2cm,xmin=0,xmax=1.05,ymin=0,ymax=6.2,axis lines=left,
+  xlabel={$p(x)$},ylabel={$-\log_2 p(x)$ (bits)},label style={font=\small},tick label style={font=\small},
+  xtick={0.125,0.25,0.5,1},xticklabels={$\frac18$,$\frac14$,$\frac12$,$1$},ytick={0,1,2,3,4,5,6},clip=false]
+  \addplot[black,very thick,domain=0.0156:1,samples=200]{-ln(x)/ln(2)};
+  \addplot[only marks,mark=*,mark size=1.8pt,dcolor] coordinates {(0.125,3) (0.5,1) (1,0)};
+  \draw[dcolor,densely dotted] (axis cs:0.125,0) -- (axis cs:0.125,3) -- (axis cs:0,3);
+  \draw[dcolor,densely dotted] (axis cs:0.5,0) -- (axis cs:0.5,1) -- (axis cs:0,1);
+  \node[font=\small,text=dcolor,anchor=west] at (axis cs:0.15,3.25) {$p(x)=2^{-3}\Rightarrow3$ bits of surprise};
+  \node[font=\small,text=dcolor,anchor=west] at (axis cs:0.52,1.3) {a fair coin flip: $1$ bit};
+\end{axis}
+\end{tikzpicture}
+\caption{Surprisal, from page~5 of my notes: a bit of information is $-\log_2 p(x)$ when $X=x$. Rare outcomes cost more
+bits; a sure outcome costs none.}
+\label{fig:surprisal}
+\end{figure}
+
+The two readings are the same number thought of two ways.
+\begin{itemize}
+\item \textbf{Bits:} a difference of \emph{costs}. Bigger is worse, so every term carries a minus sign, and we subtract
+the optimal cost from the suboptimal one.
+\item \textbf{Log-likelihood:} a difference of \emph{plausibilities}. Bigger is better, there are no minus signs, and we
+subtract the baseline model's log-likelihood from the true model's, on the true model's data.
+\end{itemize}
+The bits view is the right one when compression is the goal. For learning, where everything we optimize is already a
+log-likelihood, the second is far easier to hold in one's head. They are the same subtraction.
+
+\begin{thebibliography}{99}\small
+\bibitem{akaike1973} H.~Akaike. Information theory and an extension of the maximum likelihood principle.
+  \emph{2nd International Symposium on Information Theory}, 1973.
+\bibitem{bishop2006} C.~M.~Bishop. \emph{Pattern Recognition and Machine Learning}. Springer, 2006.
+\bibitem{bishop2024} C.~M.~Bishop and H.~Bishop. \emph{Deep Learning: Foundations and Concepts}. Springer, 2024.
+\bibitem{csiszar1975} I.~Csisz\'ar. $I$-divergence geometry of probability distributions and minimization problems.
+  \emph{Annals of Probability}, 3(1):146--158, 1975.
+\bibitem{etz2018} A.~Etz. Some technical notes on Kullback--Leibler divergence. Blog post, 2018.
+\bibitem{goodfellow2016} I.~Goodfellow, Y.~Bengio and A.~Courville. \emph{Deep Learning}. MIT Press, 2016.
+\bibitem{hastie2009} T.~Hastie, R.~Tibshirani and J.~Friedman. \emph{The Elements of Statistical Learning}, 2nd ed.
+  Springer, 2009.
+\bibitem{hogg2013} R.~V.~Hogg, J.~W.~McKean and A.~T.~Craig. \emph{Introduction to Mathematical Statistics}, 7th ed.
+  Pearson, 2013.
+\bibitem{koller2009} D.~Koller and N.~Friedman. \emph{Probabilistic Graphical Models}. MIT Press, 2009.
+\bibitem{kullback1959} S.~Kullback. \emph{Information Theory and Statistics}. Wiley, 1959.
+\bibitem{kullback1951} S.~Kullback and R.~A.~Leibler. On information and sufficiency. \emph{Annals of Mathematical
+  Statistics}, 22(1):79--86, 1951.
+\bibitem{mackay2003} D.~J.~C.~MacKay. \emph{Information Theory, Inference, and Learning Algorithms}. Cambridge
+  University Press, 2003.
+\bibitem{ssbd2014} S.~Shalev-Shwartz and S.~Ben-David. \emph{Understanding Machine Learning}. Cambridge University
+  Press, 2014.
+\end{thebibliography}
+
+\end{document}
