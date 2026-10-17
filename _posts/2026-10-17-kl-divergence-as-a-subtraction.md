@@ -164,18 +164,20 @@ I didn't get this from a course or a textbook. I got it while working through th
 
 So I went looking for whether it's new. **It isn't, as math.** Kullback and Leibler (1951) introduced the quantity as "the mean information for discrimination" between two hypotheses "per observation from" one of them, which is precisely the expected log-likelihood ratio, and Kullback (1959) preferred the name *discrimination information*. Akaike (1973) built AIC on the same reading, and Wikipedia's article has a whole "statistics" interpretation along these lines. There are good blog posts that lead with it too, like Alex Etz's 2018 notes: KL is "the expected log likelihood ratio in favor of the true distribution." Statisticians have had this view for 75 years.
 
-Then I went through my own shelf: the books I was assigned or recommended at UIUC, MIT and Stanford. The subtraction is in almost all of them. What changes is what they tell you it means:
+Then I went through my own shelf: the books I was assigned or recommended at UIUC, MIT and Stanford, plus the notes from the MIT courses I took (photos of every book, and links to the notes, are in [Appendix C](#appendix-c-the-shelf)). The subtraction is in almost all of them. What changes is what they tell you it means:
 
-| Book | Writes KL as an expected log-difference or log-ratio? | Sampled log-likelihood form? | Headline intuition | Where |
+| Book or course notes | Writes KL as an expected log-difference or log-ratio? | Sampled log-likelihood form? | Headline intuition | Where |
 | --- | --- | --- | --- | --- |
-| Hogg, McKean & Craig, *Introduction to Mathematical Statistics* (7th ed.) | Yes, unnamed: $$\mathbb{E}_{\theta_0}\big[\log \tfrac{f(X;\theta)}{f(X;\theta_0)}\big]$$ | Yes: the average log-likelihood ratio over the sample | None: KL is never named there | Theorem 6.1.1 and its proof |
-| MacKay, *Information Theory, Inference, and Learning Algorithms* | Yes, ratio form $$\sum_x P(x) \log \tfrac{P(x)}{Q(x)}$$ | Partly: expected "weight of evidence" when codebreaking, not linked back to KL | Wasted bits | Sec. 2.6 (eq. 2.45); ch. 5 (p. 102); Secs. 18.3–18.4 |
-| Hastie, Tibshirani & Friedman, *The Elements of Statistical Learning* (2nd ed.) | Only as ICA's mutual information | No | Dependence between components | Sec. 14.7.2 |
-| Koller & Friedman, *Probabilistic Graphical Models* | Yes, and a proof writes $$\mathbb{E}_P[\log P - \log P']$$ | Yes: to the expected log-likelihood, then the log-likelihood of the data | Extra coding cost, "compression loss (in bits)" | Def. A.5 (App. A.1.3); Prop. 16.1 (Sec. 16.2.1); Sec. 17.2.5 |
-| Shalev-Shwartz & Ben-David, *Understanding Machine Learning* | Yes, ratio form, inside the true risk of the log-loss | Yes: maximum likelihood as ERM with the log-loss | Log-loss risk = relative entropy + entropy | Sec. 24.1 (eq. 24.5), 24.1.2 |
-| Goodfellow, Bengio & Courville, *Deep Learning* | Yes, exactly $$\mathbb{E}_{x \sim P}[\log P(x) - \log Q(x)]$$ | Yes: maximum likelihood as KL to the empirical distribution | Extra bits (nats) | Sec. 3.13 (eq. 3.50); Sec. 5.5 (eq. 5.60) |
-| Bishop & Bishop, *Deep Learning: Foundations and Concepts* | As cross-entropy minus entropy, then $$-\int p \ln \tfrac{q}{p}\, dx$$ | Not on that page; in exercise 2.34 | Additional information (nats) from coding with the wrong distribution | Sec. 2.5.5 (eq. 2.100) |
-| Bishop, *Pattern Recognition and Machine Learning* | As cross-entropy minus entropy, then $$-\int p \ln \tfrac{q}{p}\, dx$$ | Yes: $$\tfrac1N \sum_n \lbrace -\ln q(x_n \mid \theta) + \ln p(x_n) \rbrace$$ | Additional information to transmit | Sec. 1.6.1 (eqs. 1.113, 1.119) |
+| Hogg, McKean & Craig, *Introduction to Mathematical Statistics* (7th ed.) ([photo](#shelf-hogg)) | Yes, unnamed: $$\mathbb{E}_{\theta_0}\big[\log \tfrac{f(X;\theta)}{f(X;\theta_0)}\big]$$ | Yes: the average log-likelihood ratio over the sample | None: KL is never named there | Theorem 6.1.1 and its proof |
+| MacKay, *Information Theory, Inference, and Learning Algorithms* ([photo](#shelf-mackay)) | Yes, ratio form $$\sum_x P(x) \log \tfrac{P(x)}{Q(x)}$$ | Partly: expected "weight of evidence" when codebreaking, not linked back to KL | Wasted bits | Sec. 2.6 (eq. 2.45); ch. 5 (p. 102); Secs. 18.3–18.4 |
+| Hastie, Tibshirani & Friedman, *The Elements of Statistical Learning* (2nd ed.) ([photo](#shelf-esl)) | Only as ICA's mutual information | No | Dependence between components | Sec. 14.7.2 |
+| Koller & Friedman, *Probabilistic Graphical Models* ([photo](#shelf-koller)) | Yes, and a proof writes $$\mathbb{E}_P[\log P - \log P']$$ | Yes: to the expected log-likelihood, then the log-likelihood of the data | Extra coding cost, "compression loss (in bits)" | Def. A.5 (App. A.1.3); Prop. 16.1 (Sec. 16.2.1); Sec. 17.2.5 |
+| Shalev-Shwartz & Ben-David, *Understanding Machine Learning* ([photo](#shelf-ssbd)) | Yes, ratio form, inside the true risk of the log-loss | Yes: maximum likelihood as ERM with the log-loss | Log-loss risk = relative entropy + entropy | Sec. 24.1 (eq. 24.5), 24.1.2 |
+| Goodfellow, Bengio & Courville, *Deep Learning* ([photo](#shelf-goodfellow)) | Yes, exactly $$\mathbb{E}_{x \sim P}[\log P(x) - \log Q(x)]$$ | Yes: maximum likelihood as KL to the empirical distribution | Extra bits (nats) | Sec. 3.13 (eq. 3.50); Sec. 5.5 (eq. 5.60) |
+| Bishop & Bishop, *Deep Learning: Foundations and Concepts* ([photo](#shelf-bishop-bishop)) | As cross-entropy minus entropy, then $$-\int p \ln \tfrac{q}{p}\, dx$$ | Not on that page; in exercise 2.34 | Additional information (nats) from coding with the wrong distribution | Sec. 2.5.5 (eq. 2.100) |
+| Bishop, *Pattern Recognition and Machine Learning* ([photo](#shelf-prml)) | As cross-entropy minus entropy, then $$-\int p \ln \tfrac{q}{p}\, dx$$ | Yes: $$\tfrac1N \sum_n \lbrace -\ln q(x_n \mid \theta) + \ln p(x_n) \rbrace$$ | Additional information to transmit | Sec. 1.6.1 (eqs. 1.113, 1.119) |
+| MIT 6.438 *Algorithms for Inference*, lecture notes, Fall 2014 ([notes](#shelf-6438)) | Ratio form $$\sum_x p(x) \log \tfrac{p(x)}{q(x)}$$, as a bare definition | Yes: maximum likelihood as minimizing $$D(\hat p_{\mathcal D} \Vert p(\cdot\,;\theta))$$, set against variational inference's $$D(q \Vert p)$$ | "How far apart two distributions are", but not symmetric | Lec. 15–16 (p. 5); Lec. 20, Sec. 20.1.3 (p. 5) |
+| MIT 6.867 *Machine Learning*, Jaakkola's lecture notes (public version: Fall 2006) ([notes](#shelf-6867)) | No: never named in the 23 lectures | Only implicitly: EM's lower bound on the log-likelihood, whose gap is a KL the notes never name | None | Lec. 16 (eq. 9, p. 4) |
 
 Shalev-Shwartz and Ben-David come closest: KL first shows up as the excess log-loss risk, which is this view in cost form. Here is the coding version, from one of the newest books on my shelf, in the form I always had to stare at:
 
@@ -223,6 +225,53 @@ Same number, two ways of thinking:
 - **Log-likelihood view:** a difference of *plausibilities*. Bigger is better, no minus signs, and you subtract the baseline model's log-likelihood from the true model's, on the true model's data.
 
 The bits view is the right one when you actually care about compression. For learning, where everything we optimize is a log-likelihood anyway, I find the second one far easier to hold in my head. Use whichever builds your intuition, but know that they are the same subtraction.
+
+## Appendix C: the shelf
+
+These are the eight books from the table, in the same order, photographed from my shelf. Each caption says in one line what the book does with KL; the sections and equation numbers are in the table.
+
+<div style="display: flex; flex-wrap: wrap; gap: 1.5em; justify-content: center;">
+<figure id="shelf-hogg" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/hogg-mckean-craig-7e.jpg" alt="Front cover of my copy of Hogg, McKean & Craig, Introduction to Mathematical Statistics, 7th ed. (Pearson)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Hogg, McKean & Craig, <em>Introduction to Mathematical Statistics</em>, 7th ed. (Pearson).</strong> My copy. KL is never named, but the proof of Theorem 6.1.1 averages the log-likelihood ratio over the sample: the subtraction, in a statistics costume.</figcaption>
+</figure>
+<figure id="shelf-mackay" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/mackay-itila.jpg" alt="Front cover of my copy of MacKay, Information Theory, Inference, and Learning Algorithms (Cambridge, 2003)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>MacKay, <em>Information Theory, Inference, and Learning Algorithms</em> (Cambridge, 2003).</strong> My copy. Ratio form, read as wasted bits. The weight-of-evidence version is there too, in the codebreaking chapter, but never tied back to KL.</figcaption>
+</figure>
+<figure id="shelf-esl" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/hastie-tibshirani-friedman-esl-2e.jpg" alt="Front cover of my copy of Hastie, Tibshirani & Friedman, The Elements of Statistical Learning, 2nd ed. (Springer, 2009)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Hastie, Tibshirani & Friedman, <em>The Elements of Statistical Learning</em>, 2nd ed. (Springer, 2009).</strong> My copy. KL only shows up as mutual information, in the ICA section.</figcaption>
+</figure>
+<figure id="shelf-koller" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/koller-friedman-pgm.jpg" alt="Front cover of my copy of Koller & Friedman, Probabilistic Graphical Models: Principles and Techniques (MIT Press, 2009)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Koller & Friedman, <em>Probabilistic Graphical Models: Principles and Techniques</em> (MIT Press, 2009).</strong> My copy. A proof writes it as the expected difference of log-probabilities and ties it to the log-likelihood of the data, but the headline is compression loss.</figcaption>
+</figure>
+<figure id="shelf-ssbd" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/shalev-shwartz-ben-david-uml.jpg" alt="Front cover of my copy of Shalev-Shwartz & Ben-David, Understanding Machine Learning: From Theory to Algorithms (Cambridge, 2014)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Shalev-Shwartz & Ben-David, <em>Understanding Machine Learning: From Theory to Algorithms</em> (Cambridge, 2014).</strong> My copy. The closest: KL first appears as the excess log-loss risk of maximum likelihood.</figcaption>
+</figure>
+<figure id="shelf-goodfellow" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/goodfellow-bengio-courville-deep-learning.jpg" alt="Front cover of my copy of Goodfellow, Bengio & Courville, Deep Learning (MIT Press, 2016)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Goodfellow, Bengio & Courville, <em>Deep Learning</em> (MIT Press, 2016).</strong> My copy. Writes exactly the expected log-difference under P, then explains it as extra bits.</figcaption>
+</figure>
+<figure id="shelf-bishop-bishop" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/bishop-bishop-deep-learning.jpg" alt="Front cover of my copy of Bishop & Bishop, Deep Learning: Foundations and Concepts (Springer, 2024)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Bishop & Bishop, <em>Deep Learning: Foundations and Concepts</em> (Springer, 2024).</strong> My copy. The coding view; its eq. 2.100 page is the one in the body above.</figcaption>
+</figure>
+<figure id="shelf-prml" style="flex: 1 1 260px; max-width: 320px; margin: 0;">
+<img src="{{ site.baseurl }}assets/kl_divergence_displacement/books/bishop-prml.jpg" alt="Front cover of my copy of Bishop, Pattern Recognition and Machine Learning (Springer, 2006)" style="width: 100%; height: auto;" loading="lazy">
+<figcaption style="font-size: 0.9em;"><strong>Bishop, <em>Pattern Recognition and Machine Learning</em> (Springer, 2006).</strong> My copy. Coding view first, then the sampled form: the average over data points of minus log q plus log p.</figcaption>
+</figure>
+</div>
+
+### The MIT course notes
+
+I took three MIT courses where KL should come up: 6.437 (Inference and Information), 6.438 (Algorithms for Inference) and 6.867 (Machine Learning). Here is how their notes introduce it, using the public versions closest to when I took them:
+
+- <a id="shelf-6438"></a>**6.438, Algorithms for Inference** (lecture notes, Fall 2014, [MIT OpenCourseWare](https://ocw.mit.edu/courses/6-438-algorithms-for-inference-fall-2014/)). KL first appears in the [Lecture 15–16 notes](https://ocw.mit.edu/courses/6-438-algorithms-for-inference-fall-2014/resources/mit6_438f14_lec15-16/) (p. 5), inside the variational characterization of $$\log Z$$, as the bare ratio formula: "a way to measure how far apart two distributions are", not a proper distance "because it is not symmetric." The [Lecture 20 notes](https://ocw.mit.edu/courses/6-438-algorithms-for-inference-fall-2014/resources/mit6_438f14_lec20/) (Sec. 20.1.3, p. 5) then show that maximum likelihood minimizes $$D(\hat p_{\mathcal D} \Vert p(\cdot\,;\theta))$$, and point out that this optimizes the *second* argument, while variational inference optimized the first. That is the asymmetry from this post, said in two sentences and then left there.
+- <a id="shelf-6867"></a>**6.867, Machine Learning** (Tommi Jaakkola's lecture notes; the public version is [Fall 2006 on OCW](https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/pages/lecture-notes/)). KL is never named in any of the 23 lectures. It is there implicitly in the [Lecture 16 notes](https://ocw.mit.edu/courses/6-867-machine-learning-fall-2006/resources/lec16/) (eq. 9, p. 4): EM's objective is the expected complete-data log-likelihood plus an entropy term, and it equals the log-likelihood exactly at the posterior. The gap between them is a KL divergence that the notes never call one.
+- **6.437, Inference and Information** (Golland and Wornell). I couldn't find its lecture notes online; they don't seem to be public. The [course description](https://sia.mit.edu/courses/inference-and-information/) lists "Log-loss inference criterion, entropy and model capacity. Kullback-Leibler distance and information geometry," so KL sits right next to log-loss on the syllabus, but I can't say how the notes framed it.
 
 ---
 
