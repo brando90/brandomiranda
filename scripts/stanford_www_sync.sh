@@ -17,7 +17,9 @@ export GEM_HOME
 export PATH="$GEM_HOME/bin:$HOME_DIR/ruby-3.4.11/x64/bin:/usr/bin:/bin"
 export GIT_TERMINAL_PROMPT=0
 export KRB5CCNAME="${KRB5CCNAME:-$HOME_DIR/krb5/www-sync.cc}"
-export LD_LIBRARY_PATH="$HOME_DIR/ruby-3.4.11/x64/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+RUBY_PREFIX="$HOME_DIR/ruby-3.4.11/x64"
+export LD_LIBRARY_PATH="$RUBY_PREFIX/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export RUBYLIB="$RUBY_PREFIX/lib/ruby/3.4.0:$RUBY_PREFIX/lib/ruby/3.4.0/x86_64-linux:$RUBY_PREFIX/lib/ruby/site_ruby/3.4.0:$RUBY_PREFIX/lib/ruby/site_ruby/3.4.0/x86_64-linux${RUBYLIB:+:$RUBYLIB}"
 
 mkdir -p "$HOME_DIR/.ssh" "$(dirname "$KRB5CCNAME")"
 kinit -kt "$HOME_DIR/.keytab" brando9@CS.STANFORD.EDU

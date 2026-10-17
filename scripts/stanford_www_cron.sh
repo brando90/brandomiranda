@@ -7,7 +7,9 @@ HOME_DIR="${WWW_SYNC_HOME:-/dfs/scratch0/brando9}"
 export HOME="$HOME_DIR"
 export GIT_TERMINAL_PROMPT=0
 export KRB5CCNAME="$HOME_DIR/krb5/www-sync.cc"
-export LD_LIBRARY_PATH="$HOME_DIR/ruby-3.4.11/x64/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+RUBY_PREFIX="$HOME_DIR/ruby-3.4.11/x64"
+export LD_LIBRARY_PATH="$RUBY_PREFIX/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+export RUBYLIB="$RUBY_PREFIX/lib/ruby/3.4.0:$RUBY_PREFIX/lib/ruby/3.4.0/x86_64-linux:$RUBY_PREFIX/lib/ruby/site_ruby/3.4.0:$RUBY_PREFIX/lib/ruby/site_ruby/3.4.0/x86_64-linux${RUBYLIB:+:$RUBYLIB}"
 
 mkdir -p "$HOME_DIR/krb5" "$HOME_DIR/bin" "$HOME_DIR/log" "$HOME_DIR/locks" "$HOME_DIR/.ssh"
 exec 9>"$HOME_DIR/locks/www-sync.lock"
