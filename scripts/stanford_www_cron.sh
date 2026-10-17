@@ -7,6 +7,7 @@ HOME_DIR="${WWW_SYNC_HOME:-/dfs/scratch0/brando9}"
 export HOME="$HOME_DIR"
 export GIT_TERMINAL_PROMPT=0
 export KRB5CCNAME="$HOME_DIR/krb5/www-sync.cc"
+export LD_LIBRARY_PATH="$HOME_DIR/ruby-3.4.11/x64/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 
 mkdir -p "$HOME_DIR/krb5" "$HOME_DIR/bin" "$HOME_DIR/log" "$HOME_DIR/locks" "$HOME_DIR/.ssh"
 exec 9>"$HOME_DIR/locks/www-sync.lock"

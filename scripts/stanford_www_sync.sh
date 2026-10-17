@@ -14,9 +14,10 @@ REMOTE="${WWW_SYNC_REMOTE:-brando9@xenon.stanford.edu}"
 
 export HOME="$HOME_DIR"
 export GEM_HOME
-export PATH="$GEM_HOME/bin:/usr/bin:/bin"
+export PATH="$GEM_HOME/bin:$HOME_DIR/ruby-3.4.11/x64/bin:/usr/bin:/bin"
 export GIT_TERMINAL_PROMPT=0
 export KRB5CCNAME="${KRB5CCNAME:-$HOME_DIR/krb5/www-sync.cc}"
+export LD_LIBRARY_PATH="$HOME_DIR/ruby-3.4.11/x64/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 
 mkdir -p "$HOME_DIR/.ssh" "$(dirname "$KRB5CCNAME")"
 kinit -kt "$HOME_DIR/.keytab" brando9@CS.STANFORD.EDU
