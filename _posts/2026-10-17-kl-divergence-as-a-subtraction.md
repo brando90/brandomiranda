@@ -104,7 +104,7 @@ $$p \mathbin{-^{\mathrm{KL}}_{p}} q \;\approx\; 0.32 \text{ nats}, \qquad q \mat
 
 On $$p$$'s data, the wide $$q$$ is a bit diffuse but never shocked: cheap. On $$q$$'s data, the narrow $$p$$ keeps seeing samples out in the tails that it thought were nearly impossible: expensive. This is the same fact behind "forward KL is mode-covering, reverse KL is mode-seeking," and why maximum likelihood (forward) and variational inference (reverse) behave so differently. Fit a single Gaussian $$q$$ to a two-mode $$p$$ both ways and the subscript decides everything:
 
-![Two panels. Left: the Gaussian q that minimizes D_KL(p||q) spreads out to cover both modes of p. Right: the Gaussian q that minimizes D_KL(q||p) sits on the larger mode and ignores the other]({{ site.baseurl }}assets/kl_divergence_displacement/07-forward-vs-reverse-kl.png)
+![Two panels. Left: the Gaussian q that minimizes the forward KL, averaged under p, spreads out to cover both modes of p. Right: the Gaussian q that minimizes the reverse KL, averaged under q, sits on the larger mode and ignores the other]({{ site.baseurl }}assets/kl_divergence_displacement/07-forward-vs-reverse-kl.png)
 
 Averaged under $$p$$ (left), any region where $$p$$ has mass and $$q$$ doesn't costs a huge $$\ell(x)$$, so $$q$$ stretches to cover everything. Averaged under $$q$$ (right), $$q$$ only gets scored where it puts its own samples, so it's free to ignore a whole mode. Koller and Friedman's section on M- and I-projections (Section 8.5) is the cleanest treatment of this I know.
 
