@@ -5,7 +5,7 @@ date: 2026-10-17
 section: ml
 ---
 
-*Brando Miranda — October 2026 · ~20 min read*
+*Brando Miranda — October 2026 · ~27 min read*
 
 **TL;DR.** KL divergence gets taught with several personalities (extra bits, cross-entropy minus entropy, "relative entropy," a "divergence" that is not a distance), and for years each one felt like its own thing to me. This post builds one grammar for all of them. Start with what we trust: $$B - A$$ is the displacement of $$B$$ from $$A$$. Read $$D_{\mathrm{KL}}(p \Vert q)$$ the same way, as $$p \mathbin{-^{\mathrm{KL}}_{p}} q$$: the divergence of $$p$$ from $$q$$, with baseline $$q$$, measured on samples from $$p$$. Unroll it and it really is a subtraction: $$\mathbb{E}_{X \sim p}[\log p(X) - \log q(X)]$$, the average log-likelihood gap between the two models on $$p$$'s own data. Pointwise, that gap flips sign when you swap $$p$$ and $$q$$, exactly like $$B - A = -(A - B)$$. **All of KL's asymmetry comes from which distribution you average under**, which is why I put it in the notation. The view is not new as math (Kullback and Leibler motivated KL exactly this way in 1951), but in 14 years of ML I had never seen it taught first, and I think it should be. This is the first post in a series on thinking about ML with less arbitrariness.
 
@@ -197,11 +197,11 @@ My note to myself was: *what is the fundamental thing going on? Why are ratios m
 
 ### A.1 The short version
 
-1. **Evidence multiplies.** For $$n$$ independent samples, the likelihood ratio of the whole dataset is the product of per-sample ratios, so its log is a sum: $$\sum_i \ell(x_i)$$. KL is the expected evidence per sample. Raw differences $$p(x) - q(x)$$ don't compose across independent observations at all.
-2. **It doesn't care about your coordinates.** Change variables $$y = g(x)$$ and both densities pick up the same Jacobian factor. In the ratio it cancels; in $$p(x) - q(x)$$ it doesn't. So KL is the same number in any parametrization of $$x$$, which is what you want from a statement about distributions rather than about coordinates.
-3. **Bayes is additive in log-ratios.** Posterior odds equal prior odds times the likelihood ratio, so $$\ell(x)$$ is literally how much one observation moves your log-odds toward $$p$$ (Good and Turing called it *weight of evidence*).
-4. **Hypothesis testing.** By the Neyman–Pearson lemma, thresholding the likelihood ratio is the most powerful test between $$p$$ and $$q$$. And by Stein's lemma, if you only allow a small fixed chance of rejecting $$p$$ when it's true, the best achievable chance of mistaking $$n$$ samples from $$q$$ for $$p$$ decays like $$e^{-n D_{\mathrm{KL}}(p \Vert q)}$$. KL is the exponent of distinguishability. (Kullback and Leibler's paper is titled *On Information and Sufficiency* for a reason: the likelihood ratio is a sufficient statistic for telling $$p$$ from $$q$$.)
-5. **Changing measure needs a ratio.** Importance sampling: $$\mathbb{E}_p[f(X)] = \mathbb{E}_q\big[\tfrac{p(X)}{q(X)} f(X)\big]$$. This is where PPO's ratio comes from. It's $$r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$$, **new over old** (I always forget which way), and it reweights samples collected by the old policy. Its log is our $$\ell$$ for the two policies. The ratio is not itself a KL: averaged under the new policy, $$\log r$$ gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$, and on the old policy's samples, $$\mathbb{E}_{\text{old}}[-\log r]$$ gives $$D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta)$$, the direction TRPO constrains. PPO's clipping of $$r$$ is a cheap trust region on that same pointwise quantity.
+1. **Evidence multiplies, so log-evidence adds up as subtractions.** For $$n$$ independent samples the likelihood ratio of the whole dataset is a product, $$\frac{p(x_1, \dots, x_n)}{q(x_1, \dots, x_n)} = \prod_i \frac{p(x_i)}{q(x_i)}$$, and its log is a sum of subtractions, $$\sum_i \big[\log p(x_i) - \log q(x_i)\big] = \sum_i \ell(x_i)$$: each sample adds one log subtraction. KL is that subtraction averaged per sample, $$D_{\mathrm{KL}}(p \Vert q) = \mathbb{E}_p[\log p(X) - \log q(X)]$$. Raw differences $$p(x) - q(x)$$ don't compose across independent observations at all.
+2. **Same answer in any units.** Relabel $$x$$ (meters to centimeters, $$x$$ to $$\log x$$, any smooth invertible $$y = g(x)$$) and both densities get multiplied by the same factor: $$p_Y(y) = p_X(x) \, \lvert dx/dy \rvert$$ and $$q_Y(y) = q_X(x) \, \lvert dx/dy \rvert$$. In the ratio a shared multiplicative factor cancels, $$p_Y(y)/q_Y(y) = p_X(x)/q_X(x)$$, so KL doesn't change. In the difference it stays: $$p_Y(y) - q_Y(y) = \big(p_X(x) - q_X(x)\big) \lvert dx/dy \rvert$$.
+3. **Bayes is additive in log-ratios.** Posterior odds = prior odds × likelihood ratio, $$\frac{P(p \mid x)}{P(q \mid x)} = \frac{P(p)}{P(q)} \cdot \frac{p(x)}{q(x)}$$, so one observation moves your log-odds toward $$p$$ by exactly $$\ell(x) = \log p(x) - \log q(x)$$ (Good and Turing called it *weight of evidence*).
+4. **Hypothesis testing.** By the Neyman–Pearson lemma, thresholding the likelihood ratio, "say $$p$$ when $$\sum_i \ell(x_i) > t$$", is the most powerful test between $$p$$ and $$q$$. And by Stein's lemma, if you only allow a small fixed chance of rejecting $$p$$ when it's true, the best achievable chance of mistaking $$n$$ samples from $$q$$ for $$p$$ decays like $$e^{-n D_{\mathrm{KL}}(p \Vert q)}$$. KL is the exponent of distinguishability. (Kullback and Leibler's paper is titled *On Information and Sufficiency* for a reason: the likelihood ratio is a sufficient statistic for telling $$p$$ from $$q$$.)
+5. **Changing measure needs a ratio.** Importance sampling: $$\mathbb{E}_p[f(X)] = \mathbb{E}_q\big[\tfrac{p(X)}{q(X)} f(X)\big]$$. This is where PPO's ratio comes from. It's $$r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$$, **new over old** (I always forget which way), and it reweights samples collected by the old policy so they score the new one. Its log is our subtraction for the two policies, $$\log r_t = \log \pi_\theta(a_t \mid s_t) - \log \pi_{\theta_{\text{old}}}(a_t \mid s_t)$$, which is how code computes it: $$r_t = \exp(\log \pi_\theta - \log \pi_{\text{old}})$$. The ratio is not itself a KL: averaged under the new policy, $$\log r$$ gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$, and on the old policy's samples, $$\mathbb{E}_{\text{old}}[-\log r]$$ gives $$D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta)$$, the direction TRPO constrains. PPO's clipping of $$r$$ is a cheap trust region on that same pointwise quantity.
 
 Differences of probabilities do give you real distances, for example total variation $$\tfrac12 \sum_x \lvert p(x) - q(x) \rvert$$, and Pinsker's inequality bounds it by KL: $$\mathrm{TV}(p, q) \le \sqrt{D_{\mathrm{KL}}(p \Vert q)/2}$$. They just don't have the properties above, which is why ratios keep showing up everywhere in ML.
 
@@ -217,33 +217,51 @@ A head is mild evidence for the bent coin; a tail is strong evidence against it.
 
 #### 1. Evidence multiplies
 
-**The math.** Take $$x_1, \dots, x_n$$ independent. The probability of the whole dataset is a product under either model, so the ratio is a product of per-sample ratios, and the log turns it into a sum:
+**The math.** Take $$x_1, \dots, x_n$$ independent. The probability of the whole dataset is a product under either model, so the ratio is a product of per-sample ratios:
 
-$$\log \frac{\prod_i p(x_i)}{\prod_i q(x_i)} \;=\; \sum_{i=1}^n \ell(x_i).$$
+$$\frac{p(x_1, \dots, x_n)}{q(x_1, \dots, x_n)} \;=\; \frac{\prod_i p(x_i)}{\prod_i q(x_i)} \;=\; \prod_{i=1}^n \frac{p(x_i)}{q(x_i)}.$$
 
-If the data really come from $$p$$, the law of large numbers says the average of those terms goes to $$\mathbb{E}_p[\ell(X)] = D_{\mathrm{KL}}(p \Vert q)$$. So the total evidence grows like $$n \cdot D_{\mathrm{KL}}(p \Vert q)$$: **KL is the rate at which evidence for $$p$$ piles up, per sample, when $$p$$ is the truth.**
+**Where the log subtraction comes in.** Two log rules do all the work: the log of a product is a sum, $$\log(ab) = \log a + \log b$$, and the log of a ratio is a subtraction, $$\log(a/b) = \log a - \log b$$. Apply the first to the product over samples and the second to each factor:
+
+$$\log \prod_{i=1}^n \frac{p(x_i)}{q(x_i)} \;=\; \sum_{i=1}^n \log \frac{p(x_i)}{q(x_i)} \;=\; \sum_{i=1}^n \big[\log p(x_i) - \log q(x_i)\big] \;=\; \sum_{i=1}^n \ell(x_i).$$
+
+So "evidence multiplies" and "KL is a subtraction" are the same fact seen on two scales. On the probability scale, each new sample **multiplies** the evidence by $$p(x_i)/q(x_i)$$. On the log scale, each new sample **adds** one subtraction, $$\log p(x_i) - \log q(x_i)$$, to a running total. KL is the average size of that one subtraction: if the data really come from $$p$$, the law of large numbers says $$\frac1n \sum_i \ell(x_i) \to \mathbb{E}_p[\log p(X) - \log q(X)] = D_{\mathrm{KL}}(p \Vert q)$$. So the total evidence grows like $$n \cdot D_{\mathrm{KL}}(p \Vert q)$$: **KL is the rate at which evidence for $$p$$ piles up, per sample, when $$p$$ is the truth.**
 
 **The example.** Ten flips of the bent coin typically give 9 heads and 1 tail. The evidence is $$9(0.588) - 1.609 \approx 3.68 = 10 \times 0.368$$ nats, so the data are $$e^{3.68} \approx 40$$ times likelier under $$p$$ than under $$q$$. A hundred flips (90 heads) give $$36.8$$ nats, a ratio of about $$10^{16}$$.
 
 **Why the difference fails.** Look at the same data through $$p(\text{data}) - q(\text{data})$$. At 10 flips it's $$0.0387 - 0.0010 \approx 0.038$$. At 100 flips it's $$7.6 \times 10^{-15} - 7.9 \times 10^{-31} \approx 7.6 \times 10^{-15}$$. The evidence went from "40 to 1" to "$$10^{16}$$ to 1" and the difference went **down** by thirteen orders of magnitude, because every specific long sequence is improbable under both models. The difference measures how small the probabilities are, not how much the data favor one model. The ratio throws away the part both models share and keeps exactly the part that discriminates.
 
-#### 2. It doesn't care about your coordinates
+#### 2. Same answer in any units
 
-**The math.** For a continuous variable, $$p(x)$$ isn't a probability, it's a probability **per unit of $$x$$**. Change variables with any smooth invertible $$y = g(x)$$ and the density has to be rescaled so probabilities still add up to one:
+**What "coordinates" means here.** The same random quantity can be written down in many ways: a height in meters or in centimeters, a positive number as $$x$$ or as $$\log x$$, a probability as itself or as its logit. These are relabelings. Nothing about the world changed, only the ruler you read it with. A comparison between two distributions should give the same answer whichever ruler you picked, and the log-ratio does. The pointwise difference doesn't.
 
-$$p_Y(y) = \frac{p_X(x)}{\lvert g'(x) \rvert}, \qquad q_Y(y) = \frac{q_X(x)}{\lvert g'(x) \rvert}.$$
+**The Jacobian factor, written out.** For a continuous variable, $$p(x)$$ isn't a probability, it's a probability **per unit of $$x$$**. Relabel with any smooth invertible $$y = g(x)$$, so $$x = g^{-1}(y)$$. The probability of a tiny interval can't depend on which ruler measures it, so $$p_Y(y) \, \lvert dy \rvert = p_X(x) \, \lvert dx \rvert$$, which gives
 
-Both models get divided by the **same** factor at the same point. In the ratio it cancels, so $$\ell_Y(y) = \ell_X(x)$$ point by point, and since $$y$$ is just $$x$$ relabeled, the average under $$p$$ is the same number too. In the difference it stays: $$p_Y(y) - q_Y(y) = \big(p_X(x) - q_X(x)\big) / \lvert g'(x) \rvert$$.
+$$p_Y(y) \;=\; p_X\big(g^{-1}(y)\big) \left\lvert \frac{dx}{dy} \right\rvert \;=\; \frac{p_X(x)}{\lvert g'(x) \rvert}.$$
 
-**The example.** Measure a length in meters, then in centimeters ($$y = 100x$$). Every density value drops by a factor of 100, so every pointwise difference $$p(x) - q(x)$$ drops by 100, but every ratio is unchanged. The Gaussian formula from the main text shows the same thing: in $$\frac{(\mu_p - \mu_q)^2}{2\sigma^2}$$ the numerator and $$\sigma^2$$ both grow by $$100^2$$, and KL doesn't move. Units are a choice you made, not a fact about the two distributions, and the log-ratio is the pointwise comparison that can't see that choice.
+That factor $$\lvert dx/dy \rvert = 1/\lvert g'(x) \rvert$$ is the Jacobian: how much the new ruler stretches or squeezes space near $$x$$. In $$d$$ dimensions it's $$\left\lvert \det \frac{\partial g^{-1}(y)}{\partial y} \right\rvert$$. The key point is that it depends only on the relabeling $$g$$ and the point, **not on which distribution you're transforming**, so $$q$$ gets exactly the same factor: $$q_Y(y) = q_X(x) \, \lvert dx/dy \rvert$$.
+
+**Ratio: the factor cancels.**
+
+$$\frac{p_Y(y)}{q_Y(y)} \;=\; \frac{p_X(x) \, \lvert dx/dy \rvert}{q_X(x) \, \lvert dx/dy \rvert} \;=\; \frac{p_X(x)}{q_X(x)}, \qquad \text{so } \ell_Y(y) = \ell_X(x).$$
+
+Since $$y$$ is just $$x$$ relabeled, averaging that same number under $$p$$ gives the same KL in either coordinate system.
+
+**Difference: the factor stays.**
+
+$$p_Y(y) - q_Y(y) \;=\; \big(p_X(x) - q_X(x)\big) \left\lvert \frac{dx}{dy} \right\rvert.$$
+
+**The intuition.** A ratio removes any multiplicative factor the two models share; a difference keeps it. The Jacobian is one such factor. The normalizer $$P(x)$$ in Bayes' rule (point 3) is another, and so is the $$\frac{1}{\sigma\sqrt{2\pi}}$$ in front of two Gaussians with the same $$\sigma$$. Whenever the two models are scaled by something that has nothing to do with which model is right, the ratio is the comparison that doesn't see it.
+
+**The example.** Heights: $$p = \mathcal{N}(1.70, 0.10^2)$$ and $$q = \mathcal{N}(1.60, 0.10^2)$$ in meters. At $$x = 1.70$$ m, $$p_X = 3.989$$ and $$q_X = 2.420$$ per meter: ratio $$1.649$$, difference $$1.570$$. Now measure in centimeters, $$y = 100x$$, so $$x = y/100$$ and $$\lvert dx/dy \rvert = 1/100$$. Both densities get multiplied by $$1/100$$: $$p_Y = 0.03989$$ and $$q_Y = 0.02420$$ per centimeter. The ratio is still $$1.649$$, while the difference fell 100-fold to $$0.0157$$. The Gaussian formula from the main text agrees: in $$\frac{(\mu_p - \mu_q)^2}{2\sigma^2}$$ the numerator and $$\sigma^2$$ both grow by $$100^2$$, so KL is $$\frac{0.1^2}{2 \times 0.01} = \frac{10^2}{2 \times 100} = 0.5$$ nats either way. Units are a choice you made, not a fact about the two distributions, and the log-ratio is the pointwise comparison that can't see that choice.
 
 **One honest caveat.** Integrated differences are fine: $$\int \lvert p(x) - q(x) \rvert \, dx$$ doesn't depend on coordinates either, because the $$dx$$ picks up the Jacobian back. The problem is only with the **pointwise** difference, and the pointwise comparison is what ML actually computes on samples. The pointwise log-ratio is meaningful on its own; the pointwise difference only becomes meaningful after you integrate it.
 
 #### 3. Bayes is additive in log-ratios
 
-**The math.** Put a prior on the two hypotheses, $$\pi_p$$ and $$\pi_q$$. Bayes' rule for each, divided one by the other (the normalizer $$P(x)$$ cancels):
+**The math.** Put a prior on the two hypotheses, $$P(p)$$ and $$P(q)$$. Bayes' rule for each is $$P(p \mid x) = P(p) \, p(x) / P(x)$$ and $$P(q \mid x) = P(q) \, q(x) / P(x)$$. Divide one by the other and the shared normalizer $$P(x)$$ cancels:
 
-$$\log \frac{P(p \mid x)}{P(q \mid x)} \;=\; \log \frac{\pi_p}{\pi_q} \;+\; \ell(x).$$
+$$\frac{P(p \mid x)}{P(q \mid x)} \;=\; \frac{P(p)}{P(q)} \cdot \frac{p(x)}{q(x)}, \qquad \text{so} \qquad \log \frac{P(p \mid x)}{P(q \mid x)} \;=\; \log \frac{P(p)}{P(q)} \;+\; \ell(x).$$
 
 Posterior log-odds = prior log-odds + $$\ell(x)$$. With $$n$$ independent samples you just keep adding: $$+\,\ell(x_1) + \dots + \ell(x_n)$$. So belief updating, on the log-odds scale, is **addition of $$\ell$$**, and KL is the expected step toward $$p$$ per sample when $$p$$ is true. Notice also that the posterior depends on the data **only through the ratio**: multiply $$p(x)$$ and $$q(x)$$ by the same constant and nothing changes, while their difference would.
 
@@ -273,13 +291,77 @@ valid as long as $$q(x) > 0$$ wherever $$p(x) f(x) \neq 0$$. The weight $$p(x)/q
 
 **The example.** Flip the fair coin and weight each head by $$0.9/0.5 = 1.8$$ and each tail by $$0.1/0.5 = 0.2$$. The weighted fraction of heads is $$0.5 \times 1.8 = 0.9$$: you've measured the bent coin using only fair-coin flips.
 
-**PPO.** In RL you collect trajectories with the old policy $$\pi_{\text{old}}$$ and want to improve the new one $$\pi_\theta$$ without collecting fresh data after every gradient step. Importance sampling, applied per action, gives the surrogate objective
+##### PPO, slowly: why the ratio is there
 
-$$L(\theta) = \mathbb{E}_{\text{old}}\big[\, r_t(\theta) \, \hat A_t \,\big], \qquad r_t(\theta) = \frac{\pi_\theta(a_t \mid s_t)}{\pi_{\text{old}}(a_t \mid s_t)},$$
+PPO's objective has $$r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$$ in it, and it's easy to accept it without seeing why. The one-line answer: **the data was collected by the old policy, but you're scoring the new one, and the ratio is the importance weight that converts one into the other.** Below is the whole chain, one step at a time. The equations follow Schulman et al.'s PPO paper ([2017](https://arxiv.org/abs/1707.06347)) and TRPO paper ([2015](https://arxiv.org/abs/1502.05477)); "PPO eq. 6" means equation 6 in their paper.
 
-where $$\hat A_t$$ is the advantage, how much better action $$a_t$$ was than usual. At $$\theta = \theta_{\text{old}}$$ the gradient of $$r_t$$ is $$\nabla_\theta \log \pi_\theta(a_t \mid s_t)$$, so this is the ordinary policy gradient. The weights are only trustworthy while $$\pi_\theta$$ stays close to $$\pi_{\text{old}}$$, so PPO clips them: it uses $$\min\big(r_t \hat A_t,\ \mathrm{clip}(r_t, 1 - \epsilon, 1 + \epsilon)\, \hat A_t\big)$$ with $$\epsilon$$ around $$0.2$$. If an update raises a good action's probability from $$0.2$$ to $$0.3$$, then $$r_t = 1.5$$, and the objective stops rewarding the move past $$1.2$$.
+**Step 1: what we're maximizing.** A policy $$\pi_\theta(a \mid s)$$ picks actions, and $$\eta(\pi)$$ is its expected discounted return. The advantage $$A_\pi(s, a) = Q_\pi(s, a) - V_\pi(s)$$ says how much better action $$a$$ is than what $$\pi$$ does on average in state $$s$$, so $$\mathbb{E}_{a \sim \pi}[A_\pi(s, a)] = 0$$ in every state. To push $$\pi_\theta$$ toward good actions, take the gradient of their average advantage. Fix a state and hold the advantages fixed:
 
-**How that connects to KL.** $$\log r_t$$ is exactly our $$\ell$$ with $$p = \pi_\theta$$ and $$q = \pi_{\text{old}}$$. Averaged on the new policy's samples it gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$; on the old policy's samples, $$\mathbb{E}_{\text{old}}[-\log r_t] = D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta)$$, which is the direction TRPO constrains to stay below a small $$\delta$$. Because $$\mathbb{E}_{\text{old}}[r_t] = 1$$, you can also estimate that same KL as $$\mathbb{E}_{\text{old}}\big[(r_t - 1) - \log r_t\big]$$, which is never negative sample by sample; that's the low-variance estimator many RL codebases log. TRPO bounds the average of $$\ell$$; PPO clips $$r$$ itself, sample by sample. Same pointwise quantity, two ways to keep it on a leash.
+$$\nabla_\theta \, \mathbb{E}_{a \sim \pi_\theta}[A(a)] \;=\; \sum_a \nabla_\theta \pi_\theta(a) \, A(a) \;=\; \sum_a \pi_\theta(a) \, \nabla_\theta \log \pi_\theta(a) \, A(a) \;=\; \mathbb{E}_{a \sim \pi_\theta}\big[\nabla_\theta \log \pi_\theta(a) \, A(a)\big],$$
+
+using $$\nabla \pi = \pi \, \nabla \log \pi$$. Averaged over the states the policy visits, this is the policy gradient estimator $$\hat g = \hat{\mathbb{E}}_t\big[\nabla_\theta \log \pi_\theta(a_t \mid s_t) \, \hat A_t\big]$$ (PPO eq. 1), the gradient of $$L^{PG}(\theta) = \hat{\mathbb{E}}_t\big[\log \pi_\theta(a_t \mid s_t) \, \hat A_t\big]$$ (PPO eq. 2). Here $$\hat{\mathbb{E}}_t$$ is an average over a batch of collected timesteps and $$\hat A_t$$ is an estimate of the advantage.
+
+**Step 2: why the samples come from the old policy.** That estimator is only right when the actions were sampled from $$\pi_\theta$$ itself. But collecting data is the expensive part (running the simulator, the robot, the language model), so PPO runs $$\pi_{\theta_{\text{old}}}$$ for a while, computes the $$\hat A_t$$, and then takes many gradient steps on that one batch: $$K$$ epochs of minibatch SGD (PPO Algorithm 1). After the first step, $$\theta \neq \theta_{\text{old}}$$, but every sample in the batch still came from $$\pi_{\text{old}}$$. Reusing $$L^{PG}$$ anyway is, in the paper's words, "not well-justified, and empirically it often leads to destructively large policy updates" (PPO §2.1). You can see exactly what goes wrong. On old data the gradient of $$L^{PG}$$ is $$\sum_a \pi_{\text{old}}(a) \, \nabla_\theta \log \pi_\theta(a) \, A(a)$$, while the gradient you wanted is $$\sum_a \pi_\theta(a) \, \nabla_\theta \log \pi_\theta(a) \, A(a)$$. The weights are off by a factor of $$\pi_\theta(a) / \pi_{\text{old}}(a)$$. That factor is the ratio.
+
+**Step 3: importance sampling puts the ratio in.** Point 5's identity, with $$p = \pi_\theta$$ and $$q = \pi_{\text{old}}$$, in one state $$s$$:
+
+$$\mathbb{E}_{a \sim \pi_\theta}\big[A(s, a)\big] \;=\; \sum_a \pi_\theta(a \mid s) \, A(s, a) \;=\; \sum_a \pi_{\text{old}}(a \mid s) \, \frac{\pi_\theta(a \mid s)}{\pi_{\text{old}}(a \mid s)} \, A(s, a) \;=\; \mathbb{E}_{a \sim \pi_{\text{old}}}\big[r(\theta) \, A(s, a)\big].$$
+
+It holds for **every** $$\theta$$, not just at the start, as long as $$\pi_{\text{old}}(a \mid s) > 0$$ wherever $$\pi_\theta(a \mid s) > 0$$ (true for the usual softmax and Gaussian policies). Averaged over the batch, that's the surrogate objective
+
+$$L^{CPI}(\theta) \;=\; \hat{\mathbb{E}}_t\!\left[\frac{\pi_\theta(a_t \mid s_t)}{\pi_{\theta_{\text{old}}}(a_t \mid s_t)} \, \hat A_t\right] \;=\; \hat{\mathbb{E}}_t\big[r_t(\theta) \, \hat A_t\big] \qquad \text{(PPO eq. 6)}.$$
+
+CPI stands for conservative policy iteration (Kakade and Langford, 2002), where this objective was proposed. TRPO eq. 14 writes the same thing with a general sampling distribution $$q(a \mid s)$$ in the denominator and $$Q$$-values in place of advantages. So the ratio is the reason one batch can be reused: it lets old samples estimate how the **new** policy would do, at whatever $$\theta$$ the optimizer has reached.
+
+**What the ratio fixes and what it doesn't.** The exact improvement from switching policies is (Kakade and Langford's identity, TRPO eq. 1, rewritten as a sum over states in TRPO eq. 2)
+
+$$\eta(\tilde\pi) \;=\; \eta(\pi) + \sum_s \rho_{\tilde\pi}(s) \sum_a \tilde\pi(a \mid s) \, A_\pi(s, a),$$
+
+where $$\rho_{\tilde\pi}$$ is how often the **new** policy visits each state. TRPO's surrogate (TRPO eq. 3) swaps that for the old policy's visits:
+
+$$L_\pi(\tilde\pi) \;=\; \eta(\pi) + \sum_s \rho_{\pi}(s) \sum_a \tilde\pi(a \mid s) \, A_\pi(s, a).$$
+
+The ratio corrects the **actions** exactly. The **states** stay uncorrected, because your batch only has states the old policy reached. Why not correct those too? The weight for a whole trajectory is a product of per-step ratios, $$\prod_t \pi_\theta(a_t \mid s_t) / \pi_{\text{old}}(a_t \mid s_t)$$. Evidence multiplies again (point 1), and products of many ratios blow up: a ratio of just $$1.1$$ per step over 100 steps is $$1.1^{100} \approx 13{,}800$$. So TRPO and PPO correct only the action at each step and keep the new policy close enough to the old one that the states it visits barely change. That's the main theoretical reason for the trust region; noisy advantage estimates (step 5) are the practical one.
+
+**Step 4: at the start, the ratio's gradient is the policy gradient.** The denominator $$\pi_{\text{old}}(a_t \mid s_t)$$ is a number saved during data collection, so it's a constant:
+
+$$\nabla_\theta r_t(\theta) \;=\; \frac{\nabla_\theta \pi_\theta(a_t \mid s_t)}{\pi_{\text{old}}(a_t \mid s_t)} \;=\; \frac{\pi_\theta(a_t \mid s_t)}{\pi_{\text{old}}(a_t \mid s_t)} \, \nabla_\theta \log \pi_\theta(a_t \mid s_t) \;=\; r_t(\theta) \, \nabla_\theta \log \pi_\theta(a_t \mid s_t).$$
+
+At $$\theta = \theta_{\text{old}}$$, $$r_t = 1$$, so
+
+$$\nabla_\theta L^{CPI}(\theta) \Big\vert_{\theta_{\text{old}}} \;=\; \hat{\mathbb{E}}_t\big[\nabla_\theta \log \pi_\theta(a_t \mid s_t) \big\vert_{\theta_{\text{old}}} \, \hat A_t\big] \;=\; \hat g.$$
+
+The first gradient PPO computes is exactly the vanilla policy gradient $$\hat g$$. From the second step on, the two differ: each sample's gradient gets multiplied by its current $$r_t$$, which is precisely the correction step 2 said was missing. In code, the ratio is computed as our subtraction, exponentiated: `ratio = exp(logp_new - logp_old)`, with `logp_old` stored from the rollout. So $$\log r_t = \log \pi_\theta(a_t \mid s_t) - \log \pi_{\text{old}}(a_t \mid s_t)$$ is the $$\ell$$ of this post, per sample, for the two policies.
+
+**Step 5: why clip, and what the min does.** $$L^{CPI}$$ is linear in $$r_t$$. Nothing stops the optimizer from pushing a good action's ratio to 5 or 50, and "without a constraint, maximization of $$L^{CPI}$$ would lead to an excessively large policy update" (PPO §3), far outside the region where the uncorrected states and the noisy $$\hat A_t$$ can be trusted. PPO's fix (PPO eq. 7, with $$\epsilon = 0.2$$ in the paper):
+
+$$L^{CLIP}(\theta) \;=\; \hat{\mathbb{E}}_t\Big[\min\big(r_t(\theta) \, \hat A_t,\ \mathrm{clip}(r_t(\theta), 1 - \epsilon, 1 + \epsilon) \, \hat A_t\big)\Big].$$
+
+Take one term, write $$c = \mathrm{clip}(r, 1 - \epsilon, 1 + \epsilon)$$, and work the two signs of $$A$$ separately.
+
+- **$$A > 0$$ (a good action).** Pull out the positive $$A$$: $$\min(rA, cA) = A \cdot \min(r, c)$$. If $$r \le 1 + \epsilon$$, then $$\min(r, c) = r$$ (below $$1 - \epsilon$$, $$c = 1 - \epsilon > r$$; in the middle, $$c = r$$). If $$r > 1 + \epsilon$$, then $$c = 1 + \epsilon < r$$ and the min is $$1 + \epsilon$$. So the term is $$A \cdot \min(r, 1 + \epsilon)$$: it rises with $$r$$ up to $$1 + \epsilon$$ and then goes **flat**. No reward for making a good action more than 1.2 times as likely as before, but if an update made it **less** likely, the full penalty stays and the gradient pulls it back.
+- **$$A < 0$$ (a bad action).** Pulling out a negative number flips min to max: $$\min(rA, cA) = A \cdot \max(r, c)$$. If $$r \ge 1 - \epsilon$$, then $$\max(r, c) = r$$ (above $$1 + \epsilon$$, $$c = 1 + \epsilon < r$$). If $$r < 1 - \epsilon$$, then $$c = 1 - \epsilon > r$$ and the max is $$1 - \epsilon$$. So the term is $$A \cdot \max(r, 1 - \epsilon)$$: flat once the bad action is below 0.8 times its old probability, but if an update made it **more** likely, the full penalty stays.
+- **$$A = 0$$.** The term is 0 whatever $$r$$ is.
+
+That's the paper's Figure 1, and its own summary: "we only ignore the change in probability ratio when it would make the objective improve, and we include it when it makes the objective worse." Since $$\min(r, 1 + \epsilon) \le r$$ when $$A > 0$$ and $$\max(r, 1 - \epsilon) \ge r$$ when $$A < 0$$, every clipped term is $$\le r_t \hat A_t$$: $$L^{CLIP}$$ is a pessimistic lower bound on $$L^{CPI}$$, and the two agree to first order around $$r = 1$$. One honest detail: in the flat region the gradient is zero, so a sample stops pushing. It doesn't pull the policy back. The clip is a soft fence, which is why some implementations also watch the KL from step 6 and stop the epochs early when it gets too big.
+
+**Step 6: the trust-region family, and where KL comes in.** TRPO (PPO eqs. 3–4, TRPO eq. 14) keeps the unclipped surrogate and adds a hard constraint:
+
+$$\max_\theta \ \hat{\mathbb{E}}_t\big[r_t(\theta) \, \hat A_t\big] \quad \text{subject to} \quad \hat{\mathbb{E}}_t\Big[D_{\mathrm{KL}}\big(\pi_{\text{old}}(\cdot \mid s_t) \,\Vert\, \pi_\theta(\cdot \mid s_t)\big)\Big] \le \delta.$$
+
+The theory behind it (TRPO Theorem 1 and eq. 9) is a lower bound on the true return, $$\eta(\tilde\pi) \ge L_\pi(\tilde\pi) - C \max_s D_{\mathrm{KL}}\big(\pi(\cdot \mid s) \Vert \tilde\pi(\cdot \mid s)\big)$$ with $$C = \frac{4 \varepsilon \gamma}{(1 - \gamma)^2}$$ and $$\varepsilon = \max_{s, a} \lvert A_\pi(s, a) \rvert$$ (a different $$\varepsilon$$ from PPO's clip). Maximize the right-hand side and the true return can't go down. That bound suggests a penalty, and PPO's other variant (PPO eq. 8) uses one: $$\hat{\mathbb{E}}_t\big[r_t \hat A_t - \beta \, D_{\mathrm{KL}}(\pi_{\text{old}}(\cdot \mid s_t) \Vert \pi_\theta(\cdot \mid s_t))\big]$$, halving $$\beta$$ when the measured KL is below $$d_{\text{targ}}/1.5$$ and doubling it when it's above $$1.5 \, d_{\text{targ}}$$. Clipping needs neither a KL computation nor TRPO's conjugate-gradient solve, just SGD or Adam on one loss. In the paper's MuJoCo comparison (Table 1, normalized so random = 0 and best = 1), no clipping or penalty scored $$-0.39$$, clipping with $$\epsilon = 0.2$$ scored $$0.82$$, and the best adaptive-KL setting scored $$0.74$$.
+
+The KL in all of these is $$D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta) = \mathbb{E}_{a \sim \pi_{\text{old}}}\big[\log \pi_{\text{old}}(a \mid s) - \log \pi_\theta(a \mid s)\big] = \mathbb{E}_{\text{old}}[-\log r]$$: our subtraction averaged on the old policy's turf, which is the direction you can estimate by plainly averaging over the batch you have, with no reweighting. Because $$\mathbb{E}_{\text{old}}[r] = 1$$, the same KL is also $$\mathbb{E}_{\text{old}}\big[(r - 1) - \log r\big]$$, and that version is never negative sample by sample, so it's the low-variance estimator many RL codebases log. (Averaged instead on the new policy's samples, $$\log r$$ gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$, the other direction.) TRPO bounds the old-policy average of $$-\ell$$; PPO clips $$r = e^{\ell}$$ itself, sample by sample. Same pointwise quantity, two ways to keep it on a leash.
+
+**Step 7: a small example you can check by hand.** One state, two actions. Under the old policy the good action $$g$$ has probability $$0.2$$ and advantage $$+1$$; the bad action $$b$$ has probability $$0.8$$ and advantage $$-0.25$$. Check: $$0.2(1) + 0.8(-0.25) = 0$$, as advantages under their own policy must average.
+
+- **One update** moves $$g$$ from $$0.2$$ to $$0.3$$ and $$b$$ from $$0.8$$ to $$0.7$$. Ratios: $$r_g = 0.3/0.2 = 1.5$$ and $$r_b = 0.7/0.8 = 0.875$$.
+- **The truth.** The new policy's average advantage is $$0.3(1) + 0.7(-0.25) = 0.125$$. In a one-step (bandit) problem that's exactly how much the return went up.
+- **Old samples, no ratio.** Averaging $$A$$ over the old policy's samples gives $$0.2(1) + 0.8(-0.25) = 0$$, whatever $$\theta$$ is. The batch can't see that anything changed.
+- **Old samples, with the ratio.** $$0.2(1.5)(1) + 0.8(0.875)(-0.25) = 0.3 - 0.175 = 0.125$$. Exactly right.
+- **Clipped, $$\epsilon = 0.2$$.** For $$g$$, $$A > 0$$ and $$r = 1.5 > 1.2$$, so its term is capped: $$0.2 \times 1.2 \times 1 = 0.24$$. For $$b$$, $$A < 0$$ and $$r = 0.875$$ is above $$0.8$$, so it isn't: $$0.8 \times 0.875 \times (-0.25) = -0.175$$. $$L^{CLIP} = 0.065$$, below $$L^{CPI} = 0.125$$, as the lower bound says.
+- **Where the optimizer stops.** Let $$p$$ be the new probability of $$g$$. The unclipped surrogate is $$1.25p - 0.25$$, and it keeps climbing all the way to $$p = 1$$, a deterministic policy, where $$D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta) = \infty$$. The clipped one goes flat at $$p = 0.36$$: past there $$g$$'s term is capped at $$0.24$$ and $$b$$'s ratio $$(1-p)/0.8$$ has dropped below $$0.8$$. Gradient ascent stops there, at $$D_{\mathrm{KL}} \approx 0.061$$ nats. For comparison, $$p = 0.3$$ is at $$D_{\mathrm{KL}} \approx 0.026$$, and a TRPO limit of $$\delta = 0.01$$ would stop at $$p \approx 0.26$$.
+- **Two lessons.** First, at the stopping point $$r_g = 0.36/0.2 = 1.8$$, well past $$1.2$$: $$g$$'s own term stopped pushing at $$p = 0.24$$, but $$b$$'s term kept lowering $$b$$, and with two actions that raises $$g$$. The clip limits each term's incentive, not each ratio. Second, in this toy the advantages are exact and there's only one state, so going all the way to $$p = 1$$ would actually be right. In real RL, $$\hat A_t$$ is a noisy estimate from one batch and the states shift as the policy moves, so a jump to a deterministic policy based on one batch is how training collapses. The ratio lets you reuse the batch; the clip keeps you near where the batch is still trustworthy.
 
 #### Differences aren't useless
 
