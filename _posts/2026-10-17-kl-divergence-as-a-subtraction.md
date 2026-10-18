@@ -5,7 +5,7 @@ date: 2026-10-17
 section: ml
 ---
 
-*Brando Miranda — October 2026 · ~15 min read*
+*Brando Miranda — October 2026 · ~20 min read*
 
 **TL;DR.** KL divergence gets taught with several personalities (extra bits, cross-entropy minus entropy, "relative entropy," a "divergence" that is not a distance), and for years each one felt like its own thing to me. This post builds one grammar for all of them. Start with what we trust: $$B - A$$ is the displacement of $$B$$ from $$A$$. Read $$D_{\mathrm{KL}}(p \Vert q)$$ the same way, as $$p \mathbin{-^{\mathrm{KL}}_{p}} q$$: the divergence of $$p$$ from $$q$$, with baseline $$q$$, measured on samples from $$p$$. Unroll it and it really is a subtraction: $$\mathbb{E}_{X \sim p}[\log p(X) - \log q(X)]$$, the average log-likelihood gap between the two models on $$p$$'s own data. Pointwise, that gap flips sign when you swap $$p$$ and $$q$$, exactly like $$B - A = -(A - B)$$. **All of KL's asymmetry comes from which distribution you average under**, which is why I put it in the notation. The view is not new as math (Kullback and Leibler motivated KL exactly this way in 1951), but in 14 years of ML I had never seen it taught first, and I think it should be. This is the first post in a series on thinking about ML with less arbitrariness.
 
@@ -193,15 +193,105 @@ Why did it take me so long? My guess, and this is not a complaint about anyone: 
 
 ![A notepad page: appendix comments, log p over q shows up in hypothesis testing and in PPO, and the question of why ratios appear instead of standard differences]({{ site.baseurl }}assets/kl_divergence_displacement/03-why-ratios-margin-note.jpg)
 
-My note to myself was: *what is the fundamental thing going on? Why are ratios more natural than standard differences?* A few reasons, all of which are really the same reason, that $$\log p - \log q$$ is the right subtraction for probabilities:
+My note to myself was: *what is the fundamental thing going on? Why are ratios more natural than standard differences?* A few reasons, all of which are really the same reason, that $$\log p - \log q$$ is the right subtraction for probabilities. A.1 is the short version; A.2 unpacks each point with the math and a small worked example.
 
-- **Evidence multiplies.** For $$n$$ independent samples, the likelihood ratio of the whole dataset is the product of per-sample ratios, so its log is a sum: $$\sum_i \ell(x_i)$$. KL is the expected evidence per sample. Raw differences $$p(x) - q(x)$$ don't compose across independent observations at all.
-- **It doesn't care about your coordinates.** Change variables $$y = g(x)$$ and both densities pick up the same Jacobian factor. In the ratio it cancels; in $$p(x) - q(x)$$ it doesn't. So KL is the same number in any parametrization of $$x$$, which is what you want from a statement about distributions rather than about coordinates.
-- **Bayes is additive in log-ratios.** Posterior odds equal prior odds times the likelihood ratio, so $$\ell(x)$$ is literally how much one observation moves your log-odds toward $$p$$ (Good and Turing called it *weight of evidence*).
-- **Hypothesis testing.** By the Neyman–Pearson lemma, thresholding the likelihood ratio is the most powerful test between $$p$$ and $$q$$. And by Stein's lemma, with $$n$$ samples from $$p$$ the best achievable probability of wrongly accepting $$q$$ decays like $$e^{-n D_{\mathrm{KL}}(p \Vert q)}$$. KL is the exponent of distinguishability. (Kullback and Leibler's paper is titled *On Information and Sufficiency* for a reason: the likelihood ratio is a sufficient statistic for telling $$p$$ from $$q$$.)
-- **Changing measure needs a ratio.** Importance sampling: $$\mathbb{E}_p[f(X)] = \mathbb{E}_q\big[\tfrac{p(X)}{q(X)} f(X)\big]$$. This is where PPO's ratio comes from. It's $$r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$$, **new over old** (I always forget which way), and it reweights samples collected by the old policy. Its log is our $$\ell$$ for the two policies. The ratio is not itself a KL: averaged under the new policy, $$\log r$$ gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$, and on the old policy's samples, $$\mathbb{E}_{\text{old}}[-\log r]$$ gives $$D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta)$$, the direction TRPO constrains. PPO's clipping of $$r$$ is a cheap trust region on that same pointwise quantity.
+### A.1 The short version
+
+1. **Evidence multiplies.** For $$n$$ independent samples, the likelihood ratio of the whole dataset is the product of per-sample ratios, so its log is a sum: $$\sum_i \ell(x_i)$$. KL is the expected evidence per sample. Raw differences $$p(x) - q(x)$$ don't compose across independent observations at all.
+2. **It doesn't care about your coordinates.** Change variables $$y = g(x)$$ and both densities pick up the same Jacobian factor. In the ratio it cancels; in $$p(x) - q(x)$$ it doesn't. So KL is the same number in any parametrization of $$x$$, which is what you want from a statement about distributions rather than about coordinates.
+3. **Bayes is additive in log-ratios.** Posterior odds equal prior odds times the likelihood ratio, so $$\ell(x)$$ is literally how much one observation moves your log-odds toward $$p$$ (Good and Turing called it *weight of evidence*).
+4. **Hypothesis testing.** By the Neyman–Pearson lemma, thresholding the likelihood ratio is the most powerful test between $$p$$ and $$q$$. And by Stein's lemma, if you only allow a small fixed chance of rejecting $$p$$ when it's true, the best achievable chance of mistaking $$n$$ samples from $$q$$ for $$p$$ decays like $$e^{-n D_{\mathrm{KL}}(p \Vert q)}$$. KL is the exponent of distinguishability. (Kullback and Leibler's paper is titled *On Information and Sufficiency* for a reason: the likelihood ratio is a sufficient statistic for telling $$p$$ from $$q$$.)
+5. **Changing measure needs a ratio.** Importance sampling: $$\mathbb{E}_p[f(X)] = \mathbb{E}_q\big[\tfrac{p(X)}{q(X)} f(X)\big]$$. This is where PPO's ratio comes from. It's $$r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \mid s_t)$$, **new over old** (I always forget which way), and it reweights samples collected by the old policy. Its log is our $$\ell$$ for the two policies. The ratio is not itself a KL: averaged under the new policy, $$\log r$$ gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$, and on the old policy's samples, $$\mathbb{E}_{\text{old}}[-\log r]$$ gives $$D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta)$$, the direction TRPO constrains. PPO's clipping of $$r$$ is a cheap trust region on that same pointwise quantity.
 
 Differences of probabilities do give you real distances, for example total variation $$\tfrac12 \sum_x \lvert p(x) - q(x) \rvert$$, and Pinsker's inequality bounds it by KL: $$\mathrm{TV}(p, q) \le \sqrt{D_{\mathrm{KL}}(p \Vert q)/2}$$. They just don't have the properties above, which is why ratios keep showing up everywhere in ML.
+
+### A.2 The details
+
+One running example for all five points, so the numbers can be checked by hand. Let $$p$$ be a bent coin that lands heads 90% of the time and $$q$$ a fair coin. In nats (natural log):
+
+$$\ell(H) = \log \frac{0.9}{0.5} \approx 0.588, \qquad \ell(T) = \log \frac{0.1}{0.5} \approx -1.609,$$
+
+$$D_{\mathrm{KL}}(p \Vert q) = 0.9 \cdot 0.588 + 0.1 \cdot (-1.609) \approx 0.368, \qquad D_{\mathrm{KL}}(q \Vert p) = 0.5 \cdot (-0.588) + 0.5 \cdot 1.609 \approx 0.511.$$
+
+A head is mild evidence for the bent coin; a tail is strong evidence against it. Keep those four numbers in mind.
+
+#### 1. Evidence multiplies
+
+**The math.** Take $$x_1, \dots, x_n$$ independent. The probability of the whole dataset is a product under either model, so the ratio is a product of per-sample ratios, and the log turns it into a sum:
+
+$$\log \frac{\prod_i p(x_i)}{\prod_i q(x_i)} \;=\; \sum_{i=1}^n \ell(x_i).$$
+
+If the data really come from $$p$$, the law of large numbers says the average of those terms goes to $$\mathbb{E}_p[\ell(X)] = D_{\mathrm{KL}}(p \Vert q)$$. So the total evidence grows like $$n \cdot D_{\mathrm{KL}}(p \Vert q)$$: **KL is the rate at which evidence for $$p$$ piles up, per sample, when $$p$$ is the truth.**
+
+**The example.** Ten flips of the bent coin typically give 9 heads and 1 tail. The evidence is $$9(0.588) - 1.609 \approx 3.68 = 10 \times 0.368$$ nats, so the data are $$e^{3.68} \approx 40$$ times likelier under $$p$$ than under $$q$$. A hundred flips (90 heads) give $$36.8$$ nats, a ratio of about $$10^{16}$$.
+
+**Why the difference fails.** Look at the same data through $$p(\text{data}) - q(\text{data})$$. At 10 flips it's $$0.0387 - 0.0010 \approx 0.038$$. At 100 flips it's $$7.6 \times 10^{-15} - 7.9 \times 10^{-31} \approx 7.6 \times 10^{-15}$$. The evidence went from "40 to 1" to "$$10^{16}$$ to 1" and the difference went **down** by thirteen orders of magnitude, because every specific long sequence is improbable under both models. The difference measures how small the probabilities are, not how much the data favor one model. The ratio throws away the part both models share and keeps exactly the part that discriminates.
+
+#### 2. It doesn't care about your coordinates
+
+**The math.** For a continuous variable, $$p(x)$$ isn't a probability, it's a probability **per unit of $$x$$**. Change variables with any smooth invertible $$y = g(x)$$ and the density has to be rescaled so probabilities still add up to one:
+
+$$p_Y(y) = \frac{p_X(x)}{\lvert g'(x) \rvert}, \qquad q_Y(y) = \frac{q_X(x)}{\lvert g'(x) \rvert}.$$
+
+Both models get divided by the **same** factor at the same point. In the ratio it cancels, so $$\ell_Y(y) = \ell_X(x)$$ point by point, and since $$y$$ is just $$x$$ relabeled, the average under $$p$$ is the same number too. In the difference it stays: $$p_Y(y) - q_Y(y) = \big(p_X(x) - q_X(x)\big) / \lvert g'(x) \rvert$$.
+
+**The example.** Measure a length in meters, then in centimeters ($$y = 100x$$). Every density value drops by a factor of 100, so every pointwise difference $$p(x) - q(x)$$ drops by 100, but every ratio is unchanged. The Gaussian formula from the main text shows the same thing: in $$\frac{(\mu_p - \mu_q)^2}{2\sigma^2}$$ the numerator and $$\sigma^2$$ both grow by $$100^2$$, and KL doesn't move. Units are a choice you made, not a fact about the two distributions, and the log-ratio is the pointwise comparison that can't see that choice.
+
+**One honest caveat.** Integrated differences are fine: $$\int \lvert p(x) - q(x) \rvert \, dx$$ doesn't depend on coordinates either, because the $$dx$$ picks up the Jacobian back. The problem is only with the **pointwise** difference, and the pointwise comparison is what ML actually computes on samples. The pointwise log-ratio is meaningful on its own; the pointwise difference only becomes meaningful after you integrate it.
+
+#### 3. Bayes is additive in log-ratios
+
+**The math.** Put a prior on the two hypotheses, $$\pi_p$$ and $$\pi_q$$. Bayes' rule for each, divided one by the other (the normalizer $$P(x)$$ cancels):
+
+$$\log \frac{P(p \mid x)}{P(q \mid x)} \;=\; \log \frac{\pi_p}{\pi_q} \;+\; \ell(x).$$
+
+Posterior log-odds = prior log-odds + $$\ell(x)$$. With $$n$$ independent samples you just keep adding: $$+\,\ell(x_1) + \dots + \ell(x_n)$$. So belief updating, on the log-odds scale, is **addition of $$\ell$$**, and KL is the expected step toward $$p$$ per sample when $$p$$ is true. Notice also that the posterior depends on the data **only through the ratio**: multiply $$p(x)$$ and $$q(x)$$ by the same constant and nothing changes, while their difference would.
+
+**Where the name comes from.** Turing used exactly this at Bletchley Park to score evidence about Enigma settings, in units he called *bans* (log base 10) and *decibans* (a tenth of that). I. J. Good, who worked with him, later wrote it up as *weight of evidence*.
+
+**The example.** Start skeptical: prior odds 1 to 100 against the bent coin, about $$-4.6$$ nats. Each head adds $$0.588$$, each tail subtracts $$1.609$$. If the coin really is bent you drift up by $$0.368$$ per flip on average, so you reach even odds after about $$4.6 / 0.368 \approx 12.5$$ flips. One tail costs you almost three heads' worth of progress, which is the asymmetry of $$\ell$$ showing up in practice.
+
+#### 4. Hypothesis testing
+
+**Neyman–Pearson.** You want a rule that looks at the data and says "$$p$$" or "$$q$$". Fix how often you're willing to wrongly reject one of them. The lemma says the rule that minimizes the other error is: compute $$\frac{p(x)}{q(x)}$$ and compare it to a threshold. With $$n$$ samples that's "is $$\sum_i \ell(x_i)$$ above $$t$$?". No other function of the data does better. That's what *sufficiency* means here: once you know the likelihood ratio, nothing else in the data helps you tell $$p$$ from $$q$$.
+
+**Stein's lemma.** Now ask how fast the errors can shrink as $$n$$ grows. Keep the chance of rejecting $$p$$ when $$p$$ is true below some small fixed $$\varepsilon$$. Then the smallest achievable chance of the other mistake, saying "$$p$$" when the samples actually came from $$q$$, behaves like
+
+$$\beta_n \approx e^{-n \, D_{\mathrm{KL}}(p \Vert q)}.$$
+
+**The intuition.** To keep the first error small, the test says "$$p$$" whenever the evidence $$\sum_i \ell(x_i)$$ is near its typical value under $$p$$, about $$n D_{\mathrm{KL}}(p \Vert q)$$. The second error happens when $$q$$'s samples happen to look like $$p$$'s, and by Sanov's theorem the chance that $$n$$ samples from $$q$$ look like typical samples from $$p$$ is about $$e^{-n D_{\mathrm{KL}}(p \Vert q)}$$. So KL in this direction is "how hard is it for $$q$$ to fake data from $$p$$", and the average is under $$p$$ because $$p$$'s typical data is what has to be faked.
+
+**The example.** For a fair coin to fake the bent one it has to produce about 90% heads: with 20 flips that's about $$e^{-20 \times 0.368} \approx 6 \times 10^{-4}$$. For the bent coin to fake the fair one it has to produce about 50% tails, which it rarely does, so that's harder: $$e^{-20 \times 0.511} \approx 4 \times 10^{-5}$$. Two different numbers, because the two directions of KL answer two different questions. That's the asymmetry from the main text, now as error rates. (These are rates; the exact probabilities carry slower-growing factors in front.)
+
+#### 5. Changing measure needs a ratio
+
+**The math.** You want an average under $$p$$, but your samples come from $$q$$. Multiply and divide by $$q$$:
+
+$$\mathbb{E}_p[f(X)] \;=\; \sum_x p(x) f(x) \;=\; \sum_x q(x) \, \frac{p(x)}{q(x)} \, f(x) \;=\; \mathbb{E}_q\!\left[\frac{p(X)}{q(X)} f(X)\right],$$
+
+valid as long as $$q(x) > 0$$ wherever $$p(x) f(x) \neq 0$$. The weight $$p(x)/q(x)$$ answers "how much more often would $$p$$ have produced this $$x$$ than $$q$$ did?", and that question has a ratio for an answer. Even an additive correction doesn't escape it: $$\mathbb{E}_p[f] - \mathbb{E}_q[f] = \mathbb{E}_q\big[(\tfrac{p}{q} - 1) f\big]$$, so estimating the difference from $$q$$'s samples still needs the ratio. KL itself can be computed this way: $$D_{\mathrm{KL}}(p \Vert q) = \mathbb{E}_q\big[\tfrac{p}{q} \log \tfrac{p}{q}\big]$$.
+
+**The example.** Flip the fair coin and weight each head by $$0.9/0.5 = 1.8$$ and each tail by $$0.1/0.5 = 0.2$$. The weighted fraction of heads is $$0.5 \times 1.8 = 0.9$$: you've measured the bent coin using only fair-coin flips.
+
+**PPO.** In RL you collect trajectories with the old policy $$\pi_{\text{old}}$$ and want to improve the new one $$\pi_\theta$$ without collecting fresh data after every gradient step. Importance sampling, applied per action, gives the surrogate objective
+
+$$L(\theta) = \mathbb{E}_{\text{old}}\big[\, r_t(\theta) \, \hat A_t \,\big], \qquad r_t(\theta) = \frac{\pi_\theta(a_t \mid s_t)}{\pi_{\text{old}}(a_t \mid s_t)},$$
+
+where $$\hat A_t$$ is the advantage, how much better action $$a_t$$ was than usual. At $$\theta = \theta_{\text{old}}$$ the gradient of $$r_t$$ is $$\nabla_\theta \log \pi_\theta(a_t \mid s_t)$$, so this is the ordinary policy gradient. The weights are only trustworthy while $$\pi_\theta$$ stays close to $$\pi_{\text{old}}$$, so PPO clips them: it uses $$\min\big(r_t \hat A_t,\ \mathrm{clip}(r_t, 1 - \epsilon, 1 + \epsilon)\, \hat A_t\big)$$ with $$\epsilon$$ around $$0.2$$. If an update raises a good action's probability from $$0.2$$ to $$0.3$$, then $$r_t = 1.5$$, and the objective stops rewarding the move past $$1.2$$.
+
+**How that connects to KL.** $$\log r_t$$ is exactly our $$\ell$$ with $$p = \pi_\theta$$ and $$q = \pi_{\text{old}}$$. Averaged on the new policy's samples it gives $$D_{\mathrm{KL}}(\pi_\theta \Vert \pi_{\text{old}})$$; on the old policy's samples, $$\mathbb{E}_{\text{old}}[-\log r_t] = D_{\mathrm{KL}}(\pi_{\text{old}} \Vert \pi_\theta)$$, which is the direction TRPO constrains to stay below a small $$\delta$$. Because $$\mathbb{E}_{\text{old}}[r_t] = 1$$, you can also estimate that same KL as $$\mathbb{E}_{\text{old}}\big[(r_t - 1) - \log r_t\big]$$, which is never negative sample by sample; that's the low-variance estimator many RL codebases log. TRPO bounds the average of $$\ell$$; PPO clips $$r$$ itself, sample by sample. Same pointwise quantity, two ways to keep it on a leash.
+
+#### Differences aren't useless
+
+Total variation is built from differences and it's a perfectly good distance:
+
+$$\mathrm{TV}(p, q) = \tfrac12 \sum_x \lvert p(x) - q(x) \rvert = \max_{A} \lvert P(A) - Q(A) \rvert,$$
+
+the biggest gap in probability the two models can disagree on for any single event. It's symmetric, satisfies the triangle inequality and stays between 0 and 1. Pinsker's inequality, $$\mathrm{TV}(p, q) \le \sqrt{D_{\mathrm{KL}}(p \Vert q)/2}$$, says small KL forces small TV. For the coins: $$\mathrm{TV} = \lvert 0.9 - 0.5 \rvert = 0.4$$ and $$\sqrt{0.368/2} \approx 0.43$$, so the bound holds and is nearly tight. What TV can't do is the four things above: it doesn't add up over independent samples, it isn't a per-sample Bayesian update, it isn't the error exponent, and it can't reweight samples.
+
+#### The one reason underneath
+
+Probabilities combine by **multiplying**: independent samples multiply, Bayes multiplies a prior by a likelihood, a change of variables multiplies by a Jacobian, reweighting multiplies by a weight. When the natural operation is multiplication, the natural comparison is division, and the log turns that division into a subtraction you can add up and average. So $$\log p - \log q$$ isn't a trick someone picked. It's the subtraction that respects how probability actually composes, and KL is its average on $$p$$'s turf.
 
 ## Appendix B: the classical bits view, side by side
 
