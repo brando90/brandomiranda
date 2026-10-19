@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{%- comment -%}
+  minima 2.5's post layout, plus a computed read time.
+
+  The byline's hand-written "~X min read" is replaced at build time with
+  the time to read the post up to its first "Appendix" heading; when there
+  is an appendix, the byline becomes "~N min read (+M min appendix)" and an
+  italic "Appendix: ~M min read" line goes right under that heading.
+  ~200 words per minute, rounded, at least 1; code blocks don't count.
+  The X in the markdown byline stays as the fallback (and for
+  scripts/normalize_post_headers.py), so nobody has to keep it current.
+{%- endcomment -%}
+{%- assign rt_wpm = 200 -%}
+{%- assign rt_body = content -%}
+{%- assign rt_parts = rt_body | split: ' id="appendix' -%}
+{%- assign rt_main_html = rt_parts | first -%}
+{%- assign rt_has_appendix = false -%}
+{%- if rt_parts.size > 1 -%}
+  {%- assign rt_has_appendix = true -%}
+  {%- assign rt_appendix_html = rt_body | remove_first: rt_main_html -%}
+{%- endif -%}
+
+{%- capture rt_main_text -%}
+  {%- assign rt_chunks = rt_main_html | split: '<pre' -%}
+  {%- for rt_chunk in rt_chunks -%}
+    {%- if forloop.first -%}{{ rt_chunk }}{%- else -%}{{ rt_chunk | append: ' ' | split: '</pre>' | last }}{%- endif %} {% endfor -%}
+{%- endcapture -%}
+{%- assign rt_main_words = rt_main_text | strip_html | number_of_words -%}
+{%- assign rt_main_min = rt_main_words | plus: 100 | divided_by: rt_wpm | at_least: 1 -%}
+{%- assign rt_new = '~' | append: rt_main_min | append: ' min read' -%}
+
+{%- if rt_has_appendix -%}
+  {%- capture rt_appendix_text -%}
+    {%- assign rt_chunks = rt_appendix_html | split: '<pre' -%}
+    {%- for rt_chunk in rt_chunks -%}
+      {%- if forloop.first -%}{{ rt_chunk }}{%- else -%}{{ rt_chunk | append: ' ' | split: '</pre>' | last }}{%- endif %} {% endfor -%}
+  {%- endcapture -%}
+  {%- assign rt_appendix_words = rt_appendix_text | strip_html | number_of_words -%}
+  {%- assign rt_appendix_min = rt_appendix_words | plus: 100 | divided_by: rt_wpm | at_least: 1 -%}
+  {%- assign rt_new = rt_new | append: ' (+' | append: rt_appendix_min | append: ' min appendix)' -%}
+
+  {%- comment -%} rt_main_html ends with the heading's opening tag, e.g. "<h2". {%- endcomment -%}
+  {%- assign rt_heading_tag = rt_main_html | slice: -2, 2 -%}
+  {%- assign rt_heading_close = '</' | append: rt_heading_tag | append: '>' -%}
+  {%- capture rt_appendix_line -%}{{ rt_heading_close }}
+<p class="read-time-appendix"><em>Appendix: ~{{ rt_appendix_min }} min read</em></p>{%- endcapture -%}
+  {%- assign rt_appendix_html = rt_appendix_html | replace_first: rt_heading_close, rt_appendix_line -%}
+  {%- assign rt_body = rt_main_html | append: rt_appendix_html -%}
+{%- endif -%}
+
+{%- if rt_body contains ' min read</em>' -%}
+  {%- assign rt_byline = rt_body | split: ' min read</em>' | first -%}
+  {%- assign rt_old = rt_byline | split: '~' | last | prepend: '~' | append: ' min read</em>' -%}
+  {%- assign rt_new_tagged = rt_new | append: '</em>' -%}
+  {%- assign rt_body = rt_body | replace_first: rt_old, rt_new_tagged -%}
+{%- endif -%}
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ rt_body }}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

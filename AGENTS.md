@@ -64,7 +64,7 @@ Every `_posts/*.md` post MUST start (immediately after frontmatter) with this ca
 ```
 
 Rules:
-- Byline is one **plain-markdown italic** line, left-aligned. No `<p style="text-align: right;">`. Month is full name (`April`, not `Apr`); read time is `~X min read` (en-dash for ranges, e.g., `~3–4 min read`).
+- Byline is one **plain-markdown italic** line, left-aligned. No `<p style="text-align: right;">`. Month is full name (`April`, not `Apr`); read time is `~X min read` (en-dash for ranges, e.g., `~3–4 min read`). The shown read time is computed at build time by `_layouts/post.html` (text before the first "Appendix" heading, plus `(+M min appendix)` and an `Appendix: ~M min read` line under that heading); the X in the markdown is only a fallback.
 - No draft-warning banner. Published posts never carry `**Warning: this post is a draft ...**` or any variant (retired 2026-09-06); an unfinished post belongs in `_drafts/`, not live behind a disclaimer. The normalizer strips the line wherever it appears.
 - TL;DR paragraph starts with literal `**TL;DR.**` (period inside the bold). If no TL;DR exists, label the first body paragraph rather than omit.
 - Horizontal rule `---` on its own line (blank line above + below) separates TL;DR from body — non-negotiable.
