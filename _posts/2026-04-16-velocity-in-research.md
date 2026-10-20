@@ -25,11 +25,11 @@ Gowers — the mathematician — put it well. Research is an iterative process o
 
 ## Vectoring sets the question, velocity answers it
 
-Vectoring and velocity are different jobs. Vectoring — a term I borrow from [Michael Bernstein](https://hci.stanford.edu/msb/)'s [CS197](https://cs197.stanford.edu/) at Stanford — is picking the most uncertain assumption in your project — the one that, if wrong, kills everything downstream. It's an abstract question: is assumption X actually valid? Is the metric the reason LLMs look like they have emergent jumps?
+Vectoring and velocity are different jobs. Vectoring — a term I borrow from [Michael Bernstein](https://hci.stanford.edu/msb/)'s [CS197](https://cs197.stanford.edu/) at Stanford — is picking the riskiest assumption in your project: usually your main hypothesis, the one tied to the objective you care about, which you don't yet know is true. If it's wrong, everything downstream dies. It's an abstract question: is assumption X actually valid? Is the metric the reason LLMs look like they have emergent jumps?
 
 Velocity is what you do after vectoring. You have the question; now how do you answer it this week, with the least possible work? This separation matters because it's easy to conflate them and end up prototyping the wrong thing fast, or the right thing slowly. Pick the question first. Then sprint.
 
-The emergence-in-LLMs paper is my favorite example. The vector was: maybe those sudden jumps in capability aren't intrinsic to scaling — maybe they're an artifact of the scoring metric. Fine. Now how do you test that as quickly as humanly possible? One line of code changes the metric from accuracy to token edit distance. Modular arithmetic instead of Persian QA, because you can generate modular arithmetic examples automatically in Python — no hiring Persian speakers, no new dataset. GPT-3.5 through the OpenAI API instead of training anything yourself, because the cluster and the GPUs and the out-of-memory errors are all someone else's problem. A plot in a week. That is velocity.
+The emergence-in-LLMs paper — our [*Mirage* paper](https://arxiv.org/abs/2304.15004) — is my favorite example. The vector was: maybe those sudden jumps in capability aren't intrinsic to scaling — maybe they're an artifact of the scoring metric. Fine. Now how do you test that as quickly as humanly possible? One line of code changes the metric from accuracy to token edit distance. Modular arithmetic instead of Persian QA, because you can generate modular arithmetic examples automatically in Python — no hiring Persian speakers, no new dataset. GPT-3.5 through the OpenAI API instead of training anything yourself, because the cluster and the GPUs and the out-of-memory errors are all someone else's problem. A plot in a week. That is velocity.
 
 ## Core versus periphery
 
@@ -70,9 +70,17 @@ A few practices I actually run on myself:
 
 If you're stuck right now, walk home without your headphones and ask yourself one thing: what is the actual question this week, and what is the smallest possible experiment that would answer it? Then go do that experiment tomorrow. The rest can wait.
 
-## References
+---
 
-- Michael S. Bernstein. *CS197: Computer Science Research* — Stanford University. The **vectoring** / **velocity** framing for navigating research projects comes from this course. [cs197.stanford.edu](https://cs197.stanford.edu/) · [Bernstein's homepage](https://hci.stanford.edu/msb/).
-- Rylan Schaeffer, **Brando Miranda**, Sanmi Koyejo. *Are Emergent Abilities of Large Language Models a Mirage?* Neural Information Processing Systems (NeurIPS), 2023 — Outstanding Main Track Paper Award & Oral. [arXiv:2304.15004](https://arxiv.org/abs/2304.15004) · [OpenReview](https://openreview.net/forum?id=ITw9edRDlD). The one-line metric change (accuracy → token edit distance) that this post uses as the canonical high-velocity example.
-- W. T. Gowers. *The Two Cultures of Mathematics* and related writing on research as iterative exploration. [gowers.wordpress.com](https://gowers.wordpress.com/).
-- David Bayles & Ted Orland. *Art & Fear: Observations on the Perils (and Rewards) of Artmaking* (1993). The quantity-over-perfection ceramics-class parable.
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2026velocity,
+  author = {Miranda, Brando},
+  title  = {Velocity in Research},
+  year   = {2026},
+  month  = {April},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/04/16/velocity-in-research.html}},
+  note   = {Blog post}
+}
+```

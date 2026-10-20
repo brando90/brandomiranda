@@ -37,7 +37,7 @@ The output of a vectoring decision is a clear split between **core** and **perip
 
 ## A walkthrough: emergent abilities in LLMs
 
-The cleanest example I teach is the *Mirage* paper — the one arguing that "emergent abilities" of large language models are not a fundamental property of scale but an artifact of how we measure.
+The cleanest example I teach is the [*Mirage* paper](https://arxiv.org/abs/2304.15004) — the one arguing that "emergent abilities" of large language models are not a fundamental property of scale but an artifact of how we measure.
 
 The prior belief everyone held was that as you scaled model size, certain capabilities appeared as sharp, unpredictable jumps. The authors had a hunch this was wrong. Their hypothesis: the jumps are caused by other factors — the scoring metric, the size of the test set, or the sparse sampling of model scales on the x-axis.
 
@@ -53,7 +53,7 @@ This is the coupling between vectoring and velocity. Sometimes the right vector 
 
 ## Another walkthrough: trolling on the internet
 
-A non-ML example, because vectoring generalizes. The common assumption is that online trolling is driven by a small number of antisocial users. The hypothesis a team explored: normal people also troll, when triggered. The dataset was roughly 16 million CNN comments with moderator flags.
+A non-ML example, because vectoring generalizes. The common assumption is that online trolling is driven by a small number of antisocial users. The hypothesis [Cheng et al. (2017)](https://arxiv.org/abs/1702.01119) explored: normal people also troll, when triggered. The dataset was roughly 16 million CNN comments with moderator flags.
 
 Candidate vectors:
 
@@ -80,8 +80,17 @@ One trick I use on myself: put the result on a calendar as if I have to present 
 
 Iteration beats planning. Hemingway, Picasso, every researcher I admire — all wrong on the first try. Assume you will be too, and make your first try cheap.
 
-## References
+---
 
-- Michael S. Bernstein. *CS197: Computer Science Research* — Stanford University. **Vectoring** is Bernstein's term, taught in CS197; this post is my take on it. [cs197.stanford.edu](https://cs197.stanford.edu/) · [Bernstein's homepage](https://hci.stanford.edu/msb/).
-- Rylan Schaeffer, **Brando Miranda**, Sanmi Koyejo. *Are Emergent Abilities of Large Language Models a Mirage?* Neural Information Processing Systems (NeurIPS), 2023 — Outstanding Main Track Paper Award & Oral. [arXiv:2304.15004](https://arxiv.org/abs/2304.15004) · [OpenReview](https://openreview.net/forum?id=ITw9edRDlD). The *Mirage* emergent-abilities walkthrough in this post.
-- Justin Cheng, Michael Bernstein, Cristian Danescu-Niculescu-Mizil, Jure Leskovec. *Anyone Can Become a Troll: Causes of Trolling Behavior in Online Discussions.* CSCW, 2017. [arXiv:1702.01119](https://arxiv.org/abs/1702.01119). The ~16M CNN-comments trolling study used as the non-ML walkthrough.
+*If you'd like to cite this post:*
+
+```bibtex
+@misc{miranda2026vectoring,
+  author = {Miranda, Brando},
+  title  = {Vectoring: Attack the Biggest Uncertainty First},
+  year   = {2026},
+  month  = {April},
+  howpublished = {\url{https://cs.stanford.edu/people/brando9/2026/04/16/vectoring-in-research.html}},
+  note   = {Blog post}
+}
+```
