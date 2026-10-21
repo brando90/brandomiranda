@@ -7,7 +7,7 @@ section: meta-research
 
 *Brando Miranda, October 2026. Draft, not published.*
 
-**TL;DR.** Most experiments fail. That is not bad luck, it is the job. Two habits make it survivable. Velocity: try many cheap things, reuse code that already works, because my intuition is imperfect and more attempts is the only fix. Vectoring: aim those attempts at the biggest assumption in the project, the one I don't even notice I'm making, and try to break it. And with agents around now, one more rule: let them do the typing, and keep the thinking. The example I use to practice all of this is GSM8K versus Putnam.
+**TL;DR.** Most experiments fail. That is not bad luck, it is the job. Two habits make it survivable. Velocity: try many cheap things, reuse code that already works, because my intuition is imperfect and more attempts is the only fix. Vectoring: aim those attempts at the biggest assumption in the project, the one I don't even notice I'm making, and try to break it. How do I pick that assumption? Talk to a diverse set of people, and listen to those with a track record. There is no magic bullet. And with agents around now, one more rule: let them do the typing, and keep the thinking. The example I use to practice all of this is GSM8K versus Putnam.
 
 ---
 
@@ -32,6 +32,18 @@ Speed in the wrong direction is just a fast way to be wrong. The real risk in a 
 So I go after it on purpose. I don't ask "can I find evidence for X?" I ask "if X is true, how could I break it?" Test it to the point of failure. If I tried hard and it held, I learned something. If it broke, I learned more.
 
 The two work as a loop. Vectoring picks the question, velocity answers it, and the answer tells me where to aim next. (I wrote about each separately: [Vectoring](https://brando90.github.io/brandomiranda/2026/04/16/vectoring-in-research.html) and [Velocity](https://brando90.github.io/brandomiranda/2026/04/16/velocity-in-research.html).)
+
+### How do you choose what to aim at?
+
+Laolu asked the obvious follow-up. If vectoring means aiming at the riskiest hypothesis, how do you choose which hypothesis to work on and de-risk in the first place? How do you train your vectoring?
+
+Honest answer: there is no formula. I lean on two things.
+
+**1. Talk to a diverse set of people.** Choosing a direction is an exploration problem, the same as in RL. When you are very uncertain, exploiting your current best guess is how you get stuck, and the more uncertain you are, the more diversity pays. The assumption you can't see is, by definition, invisible to you, so you need people who don't share it. I should have said this in the meeting.
+
+**2. Weight advice by track record.** If someone has a history of getting things right, listen harder to their hypotheses and advice. That is how society allocates resources too: funding goes to the PI who has been right before. A track record is evidence, so the thoughts of more experienced researchers are a cheap way to prune the list.
+
+**No magic bullets.** Those are the only two ways I know. If there were a trick, we would all be using it. You will still pick wrong sometimes, and that is what velocity is for.
 
 ## A practice exercise: GSM8K versus Putnam
 
