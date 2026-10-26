@@ -7,7 +7,7 @@ section: life
 
 *Brando Miranda — October 2026 · ~5 min read · Draft, not reviewed*
 
-After I wrote *Why CBT Doesn't Make Sense to Me*, I got a long comment from the strategic-therapy side of the field. It made five points. I am posting them roughly as they came, because they push on my argument from a direction I had not considered, and then I say what I plan to check.
+After I wrote *Why CBT Doesn't Make Sense to Me*, I got a long comment from the strategic-therapy side of the field. It made six points. I am posting them roughly as they came, because they push on my argument from a direction I had not considered, and then I say what I plan to check.
 
 ## 1. The studies are full of confounds
 
@@ -25,10 +25,14 @@ We live in what could be called the perversion of reason: we are reasoned over a
 
 The comment added a personal note: trying to optimize and control one's own health, which was the attempted solution, made things worse, and taking care of every detail meant losing the big things. Dropping the control helped. This one is an anecdote, not a study, but it is the same pattern as point 2.
 
-## 5. There is more, and it is easy to misread
+## 5. Sleep cannot be controlled
+
+Sleep is a good test case, because it is more complicated than the usual advice makes it sound. It is multifactorial: for some people the causes are habits, for others illness, often both. The standard hygiene routine (limit caffeine, screens off from five in the afternoon, bed only for sleep, restrict the time you lie in bed, a relaxation technique) is partly a privilege. Not everyone can step away from screens at five, and turning the whole evening into a sleep routine can make sleep more of a project. The deeper problem is what strategic therapy calls the spontaneity trap: the more you try to control something that has to happen on its own, the more it escapes. There is no switch for sleep. You can make it worse by forcing it, and there are things that help, though some of them are counterintuitive.
+
+## 6. There is more, and it is easy to misread
 
 This is a delicate topic, and it can be misread if it is not explained carefully, so the full version has to come in person. I will update this post when I have it.
 
 ## What I plan to check
 
-These are claims, not findings. I am running them through the literature as a separate, more careful outline for a paper, and I will say plainly where the evidence is thin or goes against them. Points 1 and 2 have an obvious test (attention-controlled trials; the sleep-effort and paradoxical-intention studies). Point 3 is the one I expect to be hardest to defend as stated, since pictorial warnings on cigarette packs are a testable claim with real data behind it. And Judson Brewer's work on anxiety and habit loops is the closest thing I know to a peer-reviewed version of points 2 and 3, so I will read it as evidence and not only as inspiration.
+These are claims, not findings. I am running them through the literature as a separate, more careful outline for a paper, and I will say plainly where the evidence is thin or goes against them. Points 1 and 2 have an obvious test (attention-controlled trials; the sleep-effort and paradoxical-intention studies). Point 3 is the one I expect to be hardest to defend as stated, since pictorial warnings on cigarette packs are a testable claim with real data behind it. Point 5 has a large literature behind it (sleep hygiene on its own against cognitive behavioral therapy for insomnia, sleep effort, paradoxical intention). I expect it to come out partly right, and partly inside CBT, because the counterintuitive methods that work, such as spending less time in bed, are components of CBT for insomnia. And Judson Brewer's work on anxiety and habit loops is the closest thing I know to a peer-reviewed version of points 2 and 3, so I will read it as evidence and not only as inspiration.
