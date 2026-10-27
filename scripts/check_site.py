@@ -31,12 +31,12 @@ class Links(html.parser.HTMLParser):
                 self.links.append(a[key])
 
 
-def internal(link, base):
-    """Return the path under base for an internal link, else None."""
+def internal(link, page, base):
+    """Return the path under base for an internal link found on page, else None."""
     link = link.split("#")[0]
     if not link or link.startswith(("mailto:", "tel:", "javascript:", "data:")):
         return None
-    absolute = urllib.parse.urljoin(base, link)
+    absolute = urllib.parse.urljoin(page, link)
     if not absolute.startswith(base):
         return None
     return absolute[len(base):].split("?")[0]
@@ -86,7 +86,7 @@ def main():
             parser = Links()
             parser.feed(body)
             for link in parser.links:
-                target = internal(link, urllib.parse.urljoin(base, path))
+                target = internal(link, urllib.parse.urljoin(base, path), base)
                 if target is not None and target not in seen:
                     if args.url and not target.endswith((".html", "/", "")):
                         seen.add(target)  # live mode: only crawl pages, assets are checked below
