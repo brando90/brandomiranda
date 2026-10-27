@@ -11,8 +11,13 @@
   <link rel="canonical" href="{{ site.canonical_base_url }}{{ canonical_path }}">
   <meta property="og:url" content="{{ site.canonical_base_url }}{{ canonical_path }}">
     {%- if site.redirect_to_canonical -%}
-  <meta http-equiv="refresh" content="0; url={{ site.canonical_base_url }}{{ canonical_path }}">
-  <script>window.location.replace("{{ site.canonical_base_url }}{{ canonical_path }}");</script>
+  {%- comment -%} Redirect to the Stanford address only when it answers; if cs.stanford.edu is unreachable (outage), this GitHub Pages copy stays on screen. {%- endcomment %}
+  <script>
+    (function () {
+      var target = "{{ site.canonical_base_url }}{{ canonical_path }}";
+      fetch(target, { mode: "no-cors", cache: "no-store" }).then(function () { window.location.replace(target); }).catch(function () {});
+    })();
+  </script>
     {%- endif -%}
   {%- else -%}
   {%- seo -%}

@@ -10,6 +10,7 @@ title: Brando Miranda
 - [Stanford Profile](https://profiles.stanford.edu/brando-miranda?releaseVersion=9.9.0)
 - [X (formerly known as Twitter)](https://x.com/BrandoHablando)
 - [LinkedIn](https://www.linkedin.com/in/brando-miranda-40821046/)
+- [GitHub (brando90)](https://github.com/brando90)
 - [MIT and CBMM Profile](https://cbmm.mit.edu/about/people/miranda)
 - [All social media - Professional and Personal](https://linktr.ee/ultimate_brando9)
 - brando9 {at} stanford DoT Edu

@@ -76,7 +76,7 @@ Therefore, we recorded summary videos of our lessons with counts and explanation
 
 # How to improvise in Jazz music
 
-In the past I wrote a detailed blog [on Jazz improvisation.](_posts/2019-10-31-jazz-improvisation.md) 
+In the past I wrote a detailed blog [on Jazz improvisation.](2019/10/31/jazz-improvisation.html) 
 I firmly believe my minor in Jazz, and its related training really helped me develop into the dancer I am today.
 Therefore, I am sharing this in my dance page since it gives context to my approach to dance.
 In addition, I believe it can help readers become better at improvising during social dancing. 
