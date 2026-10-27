@@ -11,10 +11,40 @@ import argparse
 import html.parser
 import http.client
 import os
+import re
 import sys
 import urllib.error
 import urllib.parse
 import urllib.request
+
+# Publish gate: the built tree must hold no private-looking file. Only these professional_documents/ folders
+# are meant to be public; anything else there (or a private-looking name anywhere) fails the build.
+PUBLIC_PROFESSIONAL_DOCUMENTS = ("papers", "posters", "cvs", "awards")
+PRIVATE_NAME_WORDS = {"application", "applications", "recommendation", "letter", "transcript", "password", "passwords",
+                      "secret", "secrets", "credential", "credentials", "token", "env", "private", "invoice", "passport",
+                      "ssn", "salary", "visa"}
+ALLOWED_PRIVATE_LOOKING = ("cvs/example_cvs/",)  # none today; list a public file here on purpose, with a reason
+
+
+def private_files(root):
+    """Return built files that look private: unlisted professional_documents/ content or a private-looking name."""
+    found = []
+    for dirpath, _, names in os.walk(root):
+        for n in names:
+            rel = os.path.relpath(os.path.join(dirpath, n), root).replace(os.sep, "/")
+            low = rel.lower()
+            if any(rel.startswith(a) or "/" + a in rel for a in ALLOWED_PRIVATE_LOOKING):
+                continue
+            parts = rel.split("/")
+            if "professional_documents" in parts:
+                after = parts[parts.index("professional_documents") + 1:]
+                if len(after) < 2 or after[0] not in PUBLIC_PROFESSIONAL_DOCUMENTS:
+                    found.append(rel)
+                    continue
+            if PRIVATE_NAME_WORDS & set(re.split(r"[^a-z0-9]+", low)):
+                found.append(rel)
+    return found
+
 
 KEY_PAGES = ["", "blog.html", "prospective-collaborations.html", "404.html"]
 MUST_CONTAIN = {"": ["Brando Miranda", 'href="https://github.com/brando90"']}
@@ -95,6 +125,8 @@ def main():
                             failures.append(f"broken asset /{target} (linked from /{path})")
                     else:
                         queue.append(target)
+    if args.dir:
+        failures += [f"private-looking file in the built site: {p}" for p in private_files(args.dir)]
     for f in failures:
         print("FAIL", f)
     print(f"checked {len(seen)} paths, {len(failures)} failures")

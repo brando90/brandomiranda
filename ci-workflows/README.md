@@ -9,3 +9,4 @@ someone with a normal login copies them once:
 - `site-uptime.yml`: every 30 minutes `scripts/check_site.py --url https://cs.stanford.edu/people/brando9/`; a failure emails the owner and opens a "Site down" issue.
 
 The publisher on `ilc.stanford.edu` also runs `scripts/check_site.py --dir _site` before copying, so a build that breaks links never reaches the live page.
+- Publish gate: `scripts/check_site.py --dir _site` also fails when the built site holds a private-looking file (anything under professional_documents/ outside papers, posters, cvs, awards, or a name with application, letter, token, private and similar words). Private drafts live in `exclude/`, which the build skips.
