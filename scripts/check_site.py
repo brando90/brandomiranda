@@ -9,6 +9,7 @@ Exit code 0 when everything passes, 1 when anything fails; every failure is prin
 """
 import argparse
 import html.parser
+import http.client
 import os
 import sys
 import urllib.error
@@ -43,7 +44,7 @@ def internal(link, page, base):
 
 
 def read_dir(root, path):
-    full = os.path.join(root, path)
+    full = os.path.join(root, urllib.parse.unquote(path))
     if os.path.isdir(full):
         full = os.path.join(full, "index.html")
     if os.path.exists(full):
@@ -53,9 +54,9 @@ def read_dir(root, path):
 
 def read_url(base, path):
     try:
-        with urllib.request.urlopen(urllib.request.Request(base + path, headers={"User-Agent": "site-check"}), timeout=30) as r:
+        with urllib.request.urlopen(urllib.request.Request(base + urllib.parse.quote(path, safe="/%"), headers={"User-Agent": "site-check"}), timeout=30) as r:
             return r.read().decode("utf-8", "replace") if r.status == 200 else None
-    except (urllib.error.URLError, OSError):
+    except (urllib.error.URLError, OSError, http.client.HTTPException, ValueError):
         return None
 
 
@@ -88,7 +89,7 @@ def main():
             for link in parser.links:
                 target = internal(link, urllib.parse.urljoin(base, path), base)
                 if target is not None and target not in seen:
-                    if args.url and not target.endswith((".html", "/", "")):
+                    if args.url and target and not target.endswith((".html", "/")):
                         seen.add(target)  # live mode: only crawl pages, assets are checked below
                         if fetch_head(args.url.rstrip("/") + "/" + target) is False:
                             failures.append(f"broken asset /{target} (linked from /{path})")
@@ -102,10 +103,11 @@ def main():
 
 def fetch_head(url):
     try:
+        url = urllib.parse.quote(url, safe=":/%")
         req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "site-check"})
         with urllib.request.urlopen(req, timeout=30) as r:
             return r.status == 200
-    except (urllib.error.URLError, OSError):
+    except (urllib.error.URLError, OSError, http.client.HTTPException, ValueError):
         return False
 
 

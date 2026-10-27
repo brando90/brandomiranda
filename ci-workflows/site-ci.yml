@@ -1,5 +1,5 @@
 name: Site CI
-# Builds the site exactly as the Stanford copy is built, then fails on a broken internal link or a missing key page.
+# Builds the site the way the Stanford publisher does (plain jekyll gems, Gemfile ignored), then fails on a broken internal link or a missing key page.
 on:
   push:
     branches: [main]
@@ -11,9 +11,10 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3"
-          bundler-cache: true
+          ruby-version: "3.4"
+      - name: Install Jekyll (same gems as the publisher)
+        run: gem install jekyll -v 4.3.4 && gem install jekyll-feed minima jekyll-seo-tag
       - name: Build (Stanford overlay)
-        run: JEKYLL_ENV=production bundle exec jekyll build --config _config.yml,_config_stanford_cs.yml
+        run: JEKYLL_ENV=production JEKYLL_NO_BUNDLER_REQUIRE=true jekyll build --config _config.yml,_config_stanford_cs.yml
       - name: Link and key-page check
         run: python3 scripts/check_site.py --dir _site

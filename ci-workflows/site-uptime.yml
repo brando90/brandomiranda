@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: check
+        shell: bash
         run: python3 scripts/check_site.py --url https://cs.stanford.edu/people/brando9/ | tee check.txt
       - name: Open or update the "Site down" issue
         if: failure()

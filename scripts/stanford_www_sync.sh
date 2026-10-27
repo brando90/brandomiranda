@@ -66,7 +66,9 @@ ssh_base=(
 rsync -az --delete -e "${ssh_base[*]}" _site/ "$REMOTE:www/"
 "${ssh_base[@]}" "$REMOTE" 'fs sa ~ www l && /afs/cs/software/bin/fsr sa ~/www www read'
 
-# After copying, the live page must answer; the marker is written only when it does.
+# Publishing succeeded: record it first, so a failing live check never makes cron rebuild and re-copy the same commit.
+printf '%s\n' "$sha" > "$MARKER"
+# Then the live page must answer; a failure here is logged and exits non-zero.
 for attempt in 1 2 3 4 5 6; do
   command -v python3 >/dev/null || break
   if python3 scripts/check_site.py --url "https://cs.stanford.edu/people/brando9/"; then break; fi
@@ -74,5 +76,4 @@ for attempt in 1 2 3 4 5 6; do
   sleep 20
 done
 
-printf '%s\n' "$sha" > "$MARKER"
 echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) published $sha"
