@@ -46,6 +46,7 @@ exclude:
   - rl-env-scaling/
   - _drafts/
   - scripts/
+  - ci-workflows/
   - vendor/
   - Gemfile
   - Gemfile.lock
