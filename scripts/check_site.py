@@ -23,7 +23,7 @@ PUBLIC_PROFESSIONAL_DOCUMENTS = ("papers", "posters", "cvs", "awards")
 PRIVATE_NAME_WORDS = {"application", "applications", "recommendation", "letter", "transcript", "password", "passwords",
                       "secret", "secrets", "credential", "credentials", "token", "env", "private", "invoice", "passport",
                       "ssn", "salary", "visa"}
-ALLOWED_PRIVATE_LOOKING = ("cvs/example_cvs/",)  # none today; list a public file here on purpose, with a reason
+ALLOWED_PRIVATE_LOOKING = ()  # list a public file here on purpose, with a reason; empty today
 
 
 def private_files(root):
