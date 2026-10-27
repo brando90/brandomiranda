@@ -16,7 +16,7 @@ import urllib.parse
 import urllib.request
 
 KEY_PAGES = ["", "blog.html", "prospective-collaborations.html", "404.html"]
-MUST_CONTAIN = {"": ["Brando Miranda", "github.com/brando90"]}
+MUST_CONTAIN = {"": ["Brando Miranda", 'href="https://github.com/brando90"']}
 
 
 class Links(html.parser.HTMLParser):

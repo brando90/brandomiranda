@@ -47,6 +47,8 @@ install -m 600 "$PINNED_HOSTS" "$KNOWN_HOSTS"
 JEKYLL_ENV=production JEKYLL_NO_BUNDLER_REQUIRE=true \
   "$jekyll" build --config _config.yml,_config_stanford_cs.yml
 test -s _site/index.html
+# Gate: a build with a missing key page or a broken internal link is never copied to the live page.
+python3 scripts/check_site.py --dir _site
 
 ssh_base=(
   ssh
@@ -59,6 +61,13 @@ ssh_base=(
 )
 rsync -az --delete -e "${ssh_base[*]}" _site/ "$REMOTE:www/"
 "${ssh_base[@]}" "$REMOTE" 'fs sa ~ www l && /afs/cs/software/bin/fsr sa ~/www www read'
+
+# After copying, the live page must answer; the marker is written only when it does.
+for attempt in 1 2 3 4 5 6; do
+  if python3 scripts/check_site.py --url "https://cs.stanford.edu/people/brando9/"; then break; fi
+  [[ "$attempt" == 6 ]] && { echo "Live page failed its check after publishing $sha" >&2; exit 1; }
+  sleep 20
+done
 
 printf '%s\n' "$sha" > "$MARKER"
 echo "$(date -u +%Y-%m-%dT%H:%M:%SZ) published $sha"

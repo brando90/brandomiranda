@@ -1,0 +1,25 @@
+name: Site uptime
+# Every 30 minutes: the live Stanford page must answer 200 on the key pages with no broken link.
+# A failure fails the run (GitHub emails the repo owner) and opens or updates one issue called "Site down".
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  uptime:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        run: python3 scripts/check_site.py --url https://cs.stanford.edu/people/brando9/ | tee check.txt
+      - name: Open or update the "Site down" issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="$(tail -n 20 check.txt 2>/dev/null)"
+          num="$(gh issue list --state open --search 'Site down in:title' --json number --jq '.[0].number')"
+          if [ -n "$num" ]; then gh issue comment "$num" --body "Still failing: $body"; else gh issue create --title "Site down" --body "https://cs.stanford.edu/people/brando9/ failed its check: $body"; fi
