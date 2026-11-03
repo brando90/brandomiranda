@@ -30,7 +30,7 @@ Scratch space for drafting the Aristotle/Harmonic grant for the PI-track applica
 - `https://aristotle.harmonic.fun/sponsorships`
 - `https://www.stanfordlean.club/`
 - `https://github.com/orgs/StanfordLeanClub/repositories`
-- `https://github.com/brando90/veribench-dt`
+- `https://github.com/brando90/veribench-inf`
 - `https://github.com/brando90/veribench-deps/tree/e3d26b4d8f5e88dd2a8fd2ecc290a0f0c6dd39a4`
 - `https://brando90.github.io/conjecture-prover/`
 - `https://cs.stanford.edu/~daneshva/publications/ai-coding-benchmarks-need-proofs-not-just-tests.pdf`
