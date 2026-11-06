@@ -224,6 +224,7 @@ Blog-post tweet drafts live in `exclude/tweets/` and MUST be plain `.txt` files,
 - `exclude/tweets/tweet_drafts.txt` holds unpublished drafts. Keep the next tweet to post at the top.
 - `exclude/tweets/already_posted_tweets.txt` holds published tweets. When Brando posts a draft, move the exact posted text out of `tweet_drafts.txt`, add it to `already_posted_tweets.txt`, and include the X/Twitter status URL.
 - Do not create tweet drafts under `_drafts/`, `experiments/`, or blog-post-specific folders unless explicitly asked; `exclude/tweets/` is the canonical home.
+- Instagram post plans and captions follow the same rules and live in `exclude/instagram/ig_drafts.txt` (plain `.txt`, next post at the top).
 
 ### Jekyll URLs
 

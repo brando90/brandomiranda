@@ -7,15 +7,19 @@ section: music
 
 *Brando Miranda — May 2026 · ~6 min read*
 
-**TL;DR.** In 2010, as a high schooler at Greengates, I arranged Metallica's *The Day That Never Comes* by hand for the school orchestra. Sixteen years later, I fed that same arrangement into [Suno](https://suno.com/) and asked it to recast the piece in the styles of Chet Baker, Cannonball Adderley, Charlie Parker, Joe Henderson, Stan Getz, and Sonny Rollins. [Here is the first take.](https://suno.com/s/1RTl4ch6L6LlbIFP) The point isn't novelty. The point is that AI lets you keep playing with old work in ways your past self never had the chops — or the time, or the ensemble — to attempt.
+**TL;DR.** In 2010, as a high schooler at Greengates, I arranged Metallica's *The Day That Never Comes* by hand for the school orchestra. Sixteen years later, I fed that same arrangement into [Suno](https://suno.com/) and asked it to recast the piece in the styles of Chet Baker, Cannonball Adderley, Charlie Parker, Joe Henderson, Stan Getz, and Sonny Rollins. The first take, Charlie Parker-style bebop, is now [out on Spotify](https://open.spotify.com/track/547tkBYnxsc3peaMILAcYB). The point isn't novelty. The point is that AI lets you keep playing with old work in ways your past self never had the chops — or the time, or the ensemble — to attempt.
 
 ---
+
+**Now on Spotify.** Press play, then scroll. This is what a 2010 high-school orchestra score sounds like as a 1940s bebop quintet:
+
+<iframe style="border-radius: 12px; max-width: 600px; display: block; margin-bottom: 20px;" src="https://open.spotify.com/embed/track/547tkBYnxsc3peaMILAcYB?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" title="The Day That Never Comes, Ultimate Brando, on Spotify"></iframe>
 
 ## Greengates, 2010
 
 I was sixteen, and I wanted my school orchestra to play Metallica. Specifically *The Day That Never Comes* — the 2008 ballad off *Death Magnetic* with the long clean intro, the slow burn into distortion, and that anthemic final solo that I had been listening to on repeat. The orchestra was not a metal band. It was a school orchestra. So I sat down in Sibelius and wrote out parts: strings carrying the clean intro lines, brass and winds handling the rhythmic hits, percussion holding the long-form structure. It took weeks. I had no idea what I was doing.
 
-I cannot overstate how primitive my workflow was. Sibelius 4. A laptop. A pirated MIDI rip of the song to reference by ear. No engraving expertise, no orchestration class, no internet community to ask. Just me, a deadline, and a stubborn belief that *this song would sound good with strings.* The PDF and `.sib` files still exist, and are linked below. The audio below is the Sibelius playback of the score. It is not a real ensemble recording. It is what 2010-me thought the arrangement should sound like, rendered by a sample library that, charitably, did its best:
+I cannot overstate how primitive my workflow was. Sibelius 4. A laptop. A pirated MIDI rip of the song to reference by ear. No engraving expertise, no orchestration class, no internet community to ask. Just me, a deadline, and a stubborn belief that *this song would sound good with strings.* The PDF and `.sib` files still exist: here is the [Sibelius source]({{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes.sib) and a [Sibelius 4 export]({{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes-sibelius-4.sib), if you want to open them yourself. The audio below is the Sibelius playback of the score. It is not a real ensemble recording. It is what 2010-me thought the arrangement should sound like, rendered by a sample library that, charitably, did its best:
 
 <audio controls preload="none" style="width: 100%; max-width: 600px;">
   <source src="{{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes-sibelius-playback.mp3" type="audio/mpeg">
@@ -36,15 +40,15 @@ That question used to be a thought experiment. Now it is a Suno prompt.
 
 ## The prompts
 
-I sat down and wrote six style prompts, one for each player whose voice I wanted to hear interpret the piece. The prompts live alongside the arrangement files in [`agents.md`](https://github.com/brando90/brandomiranda/blob/main/experiments/00_metallica_goes_jazz/agents.md), tuned for Suno V5 — short, era-tagged, instrument-explicit, and aggressively non-rock to keep the model from falling back on power chords. A representative one:
+I sat down and wrote six style prompts, one for each player whose voice I wanted to hear interpret the piece. I tuned them for Suno V5: short, era-tagged, instrument-explicit, and aggressively non-rock to keep the model from falling back on power chords. A representative one:
 
 > Bebop, 200 BPM, virtuosic alto saxophone with rapid eighth-note runs and chromatic passing tones, walking upright bass, busy bebop drums with snare comping, piano with rootless voicings and tritone substitutions, frantic and intricate, 1940s bebop quintet.
 
-That is the Charlie Parker prompt — the one behind the first take below. The others — Chet Baker, Cannonball, Joe Henderson, Stan Getz, Sonny Rollins — follow the same shape: subgenre, BPM, lead instrument and tone, rhythm-section behavior, mood, era. Each one is a hypothesis about how the harmonic skeleton of the song would refract through a different musical sensibility.
+That is the Charlie Parker prompt — the one behind the first take, which is the track now on Spotify. The others — Chet Baker, Cannonball, Joe Henderson, Stan Getz, Sonny Rollins — follow the same shape: subgenre, BPM, lead instrument and tone, rhythm-section behavior, mood, era. Each one is a hypothesis about how the harmonic skeleton of the song would refract through a different musical sensibility.
 
 ## First listen
 
-The first take is [here on Suno](https://suno.com/s/1RTl4ch6L6LlbIFP). I will let you form your own opinion before I form mine for you. What I will say is that it captured something I genuinely could not have produced on my own — not in 2010, and not now. Whether it captured what I *wanted* is a different question, and that gap is exactly the interesting part. I am going to keep iterating: more prompts, more takes, more comparisons across players. This is take one of an experiment, not a finished product.
+The first take is the player at the top of this post (the original is [here on Suno](https://suno.com/s/1RTl4ch6L6LlbIFP)). I will let you form your own opinion before I form mine for you. What I will say is that it captured something I genuinely could not have produced on my own — not in 2010, and not now. Whether it captured what I *wanted* is a different question, and that gap is exactly the interesting part. I am going to keep iterating: more prompts, more takes, more comparisons across players. This is take one of an experiment, not a finished product.
 
 ## What this is really about
 
@@ -58,17 +62,17 @@ The arrangement is the same arrangement. The structure I wrote down at sixteen h
 
 That is enough for a Wednesday afternoon.
 
----
+## Take one shipped
 
-*All files for this experiment (downloadable):*
+In May I called this take one of an experiment, not a finished product. It is still take one. It also shipped.
 
-- [Score — PDF]({{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes-score.pdf)
-- [Sibelius source — `.sib`]({{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes.sib)
-- [Sibelius 4 export — `.sib`]({{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes-sibelius-4.sib)
-- [Original Sibelius playback — MP3]({{ site.baseurl }}assets/metallica_goes_jazz/the-day-that-never-comes-sibelius-playback.mp3)
-- [Original Sibelius playback — WAV (lossless)](https://github.com/brando90/brandomiranda/raw/main/experiments/00_metallica_goes_jazz/The%20Day%20That%20Never%20Comes%20MP3.wav)
-- [Suno prompts (`agents.md`) on GitHub](https://github.com/brando90/brandomiranda/blob/main/experiments/00_metallica_goes_jazz/agents.md)
-- [First Suno take — Chet Baker style](https://suno.com/s/1RTl4ch6L6LlbIFP)
+**2010** — Sibelius 4, a laptop, and a score for a school orchestra.<br>
+**May 2026** — one Suno prompt: *bebop, 200 BPM, 1940s quintet.*<br>
+**November 2026** — [*The Day That Never Comes*, on Spotify](https://open.spotify.com/track/547tkBYnxsc3peaMILAcYB), under *Ultimate Brando*.
+
+The first gap that collapsed was between *I wonder what this would sound like* and *here is what it sounds like*. The second one is quieter, and I think bigger: between *here is what it sounds like* and *anyone, anywhere, can press play*. Sixteen-year-old me needed an orchestra to hear this arrangement. You need a phone.
+
+Go listen. Then tell me which of the other five I should try next: Chet, Cannonball, Joe Henderson, Getz, or Sonny.
 
 ---
 

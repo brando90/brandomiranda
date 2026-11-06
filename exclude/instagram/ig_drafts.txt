@@ -1,0 +1,62 @@
+INSTAGRAM DRAFTS - NOT POSTED
+
+Plain-text, copy-paste-ready Instagram plans and captions (local-only; exclude/ is never published).
+After posting one, delete it from this file or mark it POSTED with the IG URL.
+
+-------------------------------------------------------------------------------
+
+Metallica Goes Jazz — The Day That Never Comes (Ultimate Brando) is on Spotify
+
+Spotify: https://open.spotify.com/track/547tkBYnxsc3peaMILAcYB
+Blog:    https://cs.stanford.edu/people/brando9/2026/05/07/metallica-goes-jazz.html
+
+THE PLAN: one Reel, then Stories the same day. About 30 minutes of work.
+
+0. Before posting
+   - Put the Spotify link in your bio. Links in IG captions are not clickable.
+   - In the Reel editor, search the music library for "Ultimate Brando".
+     If the track is there, use it as the Reel's audio: the Reel then shows
+     "Ultimate Brando · The Day That Never Comes" and links to the song.
+     If it is not there yet (IG's library can lag a Spotify release), upload the
+     track as original audio instead.
+
+1. Reel (the main post), 9:16, ~20-25 s
+   0-4 s    Screen recording scrolling page 1 of the 2010 score PDF.
+            Audio: the Sibelius playback, clean intro
+            (assets/metallica_goes_jazz/the-day-that-never-comes-sibelius-playback.mp3).
+            Text on screen: "I arranged Metallica for my high school orchestra in 2010"
+   4-6 s    Hard cut on a downbeat into the bebop take.
+            Text on screen: "16 years later I asked AI for a 1940s bebop quintet"
+   6-22 s   The bebop take. Visuals: the Spotify cover art, more of the score,
+            or 5 s of you playing along on alto (best option if you can film it).
+            Text on screen, last 4 s: "Out now on Spotify · Ultimate Brando"
+   Cover:   the Spotify cover art.
+
+2. Stories (right after the Reel goes up)
+   Story 1: Spotify app → the track → Share → Instagram Stories.
+            This makes a card with a "Play on Spotify" link back to the track.
+   Story 2: Share the Reel to your Story.
+   Story 3: Link sticker → the blog post. Text: "the 2010 score + the whole story"
+   Story 4: Question sticker: "Which jazz legend should take it next?"
+
+3. If you'd rather not edit video: a 4-slide carousel instead of the Reel
+   Slide 1: the cover art. Text: "Metallica → bebop"
+   Slide 2: page 1 of the 2010 score. Text: "2010: arranged by hand for my school orchestra"
+   Slide 3: the prompt as text: "Bebop, 200 BPM, virtuosic alto saxophone ... 1940s bebop quintet"
+            Text: "2026: one prompt"
+   Slide 4: screenshot of the track in Spotify. Text: "Out now · Ultimate Brando"
+   Add the track as the carousel's music if it is in IG's library.
+
+CAPTION (copy-paste)
+
+In 2010 I arranged Metallica's The Day That Never Comes for my high school orchestra. By hand. Sibelius 4, a laptop, no idea what I was doing.
+
+16 years later I gave that score to AI and asked for a 1940s bebop quintet. 200 BPM. Charlie Parker-style alto.
+
+It's on Spotify now 🎷 Link in bio.
+
+Who should take it next: Chet, Cannonball, Joe Henderson, Getz, or Sonny? 👇
+
+#jazz #bebop #metallica #thedaythatnevercomes #charlieparker #altosax #saxophone #jazzcover #aimusic #suno
+
+-------------------------------------------------------------------------------
