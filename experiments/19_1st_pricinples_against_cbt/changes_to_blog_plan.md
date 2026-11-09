@@ -160,6 +160,12 @@ The later source notes prompted the subsection **The goal, the patient, and the 
 
 The private Google Doc companion remains unsynchronized: the configured connector returned an authentication challenge, and bounded browser reads did not complete. No Google document content or sharing was changed. The pending Markdown update is preserved locally; the public article and these notes are not evidence of Google synchronization.
 
+### Psychology section, 11-08-2026
+
+The blog index now has a dedicated [Psychology section](https://cs.stanford.edu/people/brando9/blog.html#psychology), grouping this CBT essay with the existing mindfulness-and-anxiety post. Both posts use `section: psychology`; neither is duplicated under another section. The Meta-Research description no longer lists mindfulness as part of its scope.
+
+Both titles, complete article bodies, and published URLs are unchanged. Builds for both site configurations and category-placement checks passed; the comparison against the preceding publication confirms that only the posts' section metadata changed.
+
 ## 7. Reusable editing prompt
 
 > Revise the existing CBT blog into a first-person argument about why learned responses may need changed consequences and repeated practice rather than another verbal explanation. Use the coverage audit above, preserve the evolutionary-ordering point, and distinguish operant conditioning, habit formation, threat learning, and cognitive restructuring. Frame comparative superiority as a falsifiable hypothesis. Keep the strongest cognitive and clinical counterevidence, cite checked sources inline, and do not equate reward with feelings or the prefrontal cortex with an on/off switch. Preserve Andrea's acknowledgment and the site's header, citation, and publication conventions. Keep the private source conversation out of the publication. Follow the owner's requested review tier, fix its findings, and verify the rendered article before claiming it is live.

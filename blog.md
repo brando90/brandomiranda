@@ -5,6 +5,7 @@ title: Blog
 
 {% assign ml_posts = site.posts | where: "section", "ml" %}
 {% assign music_posts = site.posts | where: "section", "music" %}
+{% assign psychology_posts = site.posts | where: "section", "psychology" %}
 {% assign meta_posts = site.posts | where: "section", "meta-research" %}
 {% assign agentic_posts = site.posts | where: "section", "agentic-coding" %}
 
@@ -38,9 +39,20 @@ title: Blog
   </li>{% endfor %}
 </ul>
 
+## Psychology
+
+*Therapy, anxiety, mindfulness, habits, and behavior change.*
+
+<ul class="post-list">{% for post in psychology_posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+  </li>{% endfor %}
+</ul>
+
 ## Meta-Research: How to Do Research
 
-*Research practice — picking directions, moving fast, writing, and thriving in the community — plus the self-development that supports it (e.g., mindfulness).*
+*Research practice — picking directions, moving fast, writing, and thriving in the community.*
 
 <ul class="post-list">{% for post in meta_posts %}
   <li>
@@ -60,7 +72,7 @@ title: Blog
   </li>{% endfor %}
 </ul>
 
-{% assign known_sections = "ml|music|meta-research|agentic-coding" | split: "|" %}
+{% assign known_sections = "ml|music|psychology|meta-research|agentic-coding" | split: "|" %}
 {% assign other_count = 0 %}
 {% for post in site.posts %}{% unless known_sections contains post.section %}{% assign other_count = other_count | plus: 1 %}{% endunless %}{% endfor %}
 {% if other_count > 0 %}

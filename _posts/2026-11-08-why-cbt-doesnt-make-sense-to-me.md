@@ -2,7 +2,7 @@
 layout: post
 title: "Why CBT Doesn't Make Sense to Me: Evolution, Habits, and the Limits of Insight"
 date: 2026-11-08
-section: life
+section: psychology
 ---
 
 *Brando Miranda — November 2026 · ~16 min read*
