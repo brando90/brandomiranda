@@ -4,7 +4,7 @@
 
 **TLDR:** Added a section explaining why a large cognitive behavioral therapy (CBT) literature does not automatically establish superiority to other treatments or identify verbal cognitive restructuring as the active component. The revision distinguishes documented researcher-allegiance associations and publication bias from the separate, unverified claim that CBT researchers dominate peer review or guideline panels.
 
-**Status, 11-08-2026:** Implemented in `_posts/2026-11-08-why-cbt-doesnt-make-sense-to-me.md`. The single requested Claude Fable 5.1 light quality-assurance review at maximum effort returned three minor fixes and no outstanding critical or major findings. The fixes have been reconciled; final release checks, publication, and the email asking Andrea to check the finished blog follow. The document address above remains the intended GitHub destination until pushed.
+**Status, 11-08-2026:** Published in [commit `55b7edf`](https://github.com/brando90/brandomiranda/commit/55b7edf3c920e658998e41fd6b8408acd054a6c9). The single requested Claude Fable 5.1 light quality-assurance review at maximum effort completed, with three minor fixes applied and no outstanding critical or major findings. Final checks passed, both live hosts match the checked article, and the email asking Andrea to check the finished blog was sent and verified in the sender's Sent folder. See [the release record](changes_to_blog_plan.md#verified-release-11-08-2026); her response is not assumed.
 
 ## 1. Editorial decision
 
@@ -103,10 +103,10 @@ A defensible audit would name a specific organization, committee, date, and reco
 - [x] Add the evidence-volume, allegiance, publication-bias, and institutional-concern section.
 - [x] Include favorable CBT evidence and distinguish package effects from component mechanisms.
 - [x] Preserve the learning-first argument, fair-test prediction, and Andrea acknowledgment.
-- [x] Leave both raw source conversations unchanged and locally excluded from Git publication.
+- [x] Leave all three raw source files unchanged and locally excluded from Git publication.
 - [x] Complete the single requested independent light review of the expanded post and both change notes; resolve findings.
-- [ ] Rerun citation, spelling, header, build, internal-link, and rendered-privacy checks on the final files.
-- [ ] Inspect the staged diff, commit and push the public post and notes, and verify the live article.
-- [ ] Email Andrea the finished link for her check, with delivery verification and the required private copies to Brando.
+- [x] Rerun citation, spelling, header, build, internal-link, and rendered-privacy checks on the final files.
+- [x] Inspect the staged diff, commit and push the public post and notes, and verify the live article.
+- [x] Email Andrea the finished link for her check, with delivery verification and the required private copies to Brando.
 
 **TLDR-end:** [CBT blog: bias revision] The new section challenges the inference from evidence volume to superiority or cognitive-mechanism necessity. It treats allegiance and missing publications as evidence to scrutinize, not proof that CBT is ineffective or that its reviewers have been shown to control the field.

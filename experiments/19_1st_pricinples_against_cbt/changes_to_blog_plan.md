@@ -4,7 +4,7 @@
 
 **TLDR:** The original cognitive behavioral therapy (CBT) draft developed the executive-function objection but did not adequately develop Brando's central evolutionary argument, learning from consequences, or repetition-driven habits. The revision makes those ideas central while treating their proposed superiority to verbal cognitive restructuring as a testable hypothesis—not a consequence proved by evolutionary age.
 
-**Status, 11-08-2026:** The expanded post and both change notes received the requested single light quality-assurance review with Claude Fable 5.1 at maximum effort. It returned three minor fixes and no outstanding critical or major findings. The fixes have been reconciled, including a fuller Johnco summary, Driessen's actual nonpublication breakdown, and the read-time fallback. Final release checks, authorized publication, and the email asking Andrea to check the finished blog follow. The document address above remains the intended GitHub destination until pushed.
+**Status, 11-08-2026:** Published in [commit `55b7edf`](https://github.com/brando90/brandomiranda/commit/55b7edf3c920e658998e41fd6b8408acd054a6c9). The single requested Claude Fable 5.1 light quality-assurance review at maximum effort completed; all three minor fixes were reconciled, with no outstanding critical or major findings. Final checks passed, both live hosts match the checked article, and Andrea was emailed the finished link for her check. Her response is not represented as received; the private Google Doc companion remains unsynchronized.
 
 ## 1. What the new post should say
 
@@ -148,9 +148,17 @@ The later source notes prompted the subsection **The goal, the patient, and the 
 7. Fetch and integrate upstream safely, push to `origin/main`, then verify the article on both GitHub Pages and the Stanford mirror. Update this status only from actual publication evidence.
 8. Email Andrea the finished article link and ask her to check the clinical framing and new bias discussion, using her verified address, required blind copies, and a delivery receipt. Do not imply her acknowledgment is an endorsement or that her check has already occurred.
 
-**Intended public article:** <https://cs.stanford.edu/people/brando9/2026/11/08/why-cbt-doesnt-make-sense-to-me.html>. This is not yet a verified live link.
+### Verified release, 11-08-2026
 
-The private Google Doc companion must be updated only through verified authorized access, preserving its audience and any intervening edits. The Markdown post is not evidence that the Google copy has been synchronized.
+**Public article:** <https://cs.stanford.edu/people/brando9/2026/11/08/why-cbt-doesnt-make-sense-to-me.html>.
+
+- **Publication:** The post, old draft retirement, and both change notes were committed and pushed to `origin/main` in `55b7edf`. Only those four public paths were staged; raw sources and private receipts were excluded.
+- **Review and sources:** One Claude Fable 5.1 review at maximum effort; zero outstanding critical or major findings, three minor fixes applied. All 30 cited identifiers match stored Crossref receipts: 16 abstract-level checks and 14 targeted full-text checks, not 30 complete paper reads.
+- **Deterministic checks:** Both site configurations built with Jekyll 4.4.1; the site checker reported **78 paths, 0 failures**. Spelling, whitespace, header normalization, source-integrity, private-material exclusion, and desktop/mobile rendering checks passed.
+- **Deployment:** [GitHub's site checks](https://github.com/brando90/brandomiranda/actions/runs/42543442475) and [Pages deployment](https://github.com/brando90/brandomiranda/actions/runs/42543441755) succeeded. Both the Stanford article and [GitHub Pages copy](https://brando90.github.io/brandomiranda/2026/11/08/why-cbt-doesnt-make-sense-to-me.html) returned successful web responses (status 200) and matched the checked article text, including all 30 scholarly links and Andrea's acknowledgment. A stale Git lock in the Stanford publisher was preserved and cleared only after checking that its checkout was clean and no publisher process held it; the publisher then completed its build and live checks.
+- **Andrea's check:** The finished link and a request for corrections to the clinical framing and bias discussion were emailed. The mail server accepted every intended recipient, and the exact message was verified in the sender's Sent folder. This verifies sending, not that Andrea has read or approved the article. Delivery receipts remain private.
+
+The private Google Doc companion remains unsynchronized: the configured connector returned an authentication challenge, and bounded browser reads did not complete. No Google document content or sharing was changed. The pending Markdown update is preserved locally; the public article and these notes are not evidence of Google synchronization.
 
 ## 7. Reusable editing prompt
 
