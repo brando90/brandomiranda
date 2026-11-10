@@ -251,6 +251,7 @@ This work was also covered by: [Medium, Hacker News, NeurIPS blog, Reddit, and m
 
 # Awards
 
+- **Vals AI Fellow**, Vals AI (August 2026 - December 2026) — industry research fellowship at Vals AI, an independent evaluation company for frontier AI models, supporting research on trustworthy AI evaluation.
 - **Inaugural Veritas Scholar**, [Math Inc.](https://www.math.inc/) (offered, declined; 2026) — selected for the inaugural Veritas Scholar offer, recognizing frontier work in AI-assisted formalization and verified mathematics.
 - **ICML 2026 Silver Reviewer** (May 2026) — top reviewer recognition signed by the ICML 2026 Program Chairs.
 - **Oral Recommendation (Top 1)**, 2nd AI for Math Workshop @ ICML 2025 — for *VeriBench: End-to-End Formal Verification Benchmark for AI Code Generation in Lean 4* (Miranda et al.); reviewer recommendation "Accept (Oral, Top 1)".
