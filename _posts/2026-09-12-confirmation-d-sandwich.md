@@ -99,3 +99,9 @@ That is enough for a Saturday afternoon.
   note   = {Blog post}
 }
 ```
+
+<!--
+Source conversation (Gemini):
+- Public share link: https://share.gemini.google/8ye26PXdy4LC
+- Private app link: https://gemini.google.com/app/df6f28241d72fbc3
+-->
