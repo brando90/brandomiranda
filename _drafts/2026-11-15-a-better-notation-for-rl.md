@@ -5,9 +5,9 @@ date: 2026-11-15
 section: ml
 ---
 
-*Brando Miranda — November 2026 · ~5 min read*
+*Brando Miranda — November 2026 · ~7 min read*
 
-**TL;DR.** I write a trajectory as repeated reward, state, action blocks, $\tau = (r_0, s_0, a_0, \ldots, r_T, s_T, a_T)$. The environment emits each reward and state together, $P_E(r_t, s_t \mid s_{t-1}, a_{t-1})$, and the agent emits each action, $P_A(a_t \mid s_t)$. The probability of a trajectory is then one product with the same two factors at every step, from the first state to the last. The initial distribution is the same environment kernel with an empty previous state and action, and the episode ends when the agent takes a "done" action. Both the Markov property and time invariance can be read straight off the formula.
+**TL;DR.** I write a trajectory as repeated reward, state, action blocks, $\tau = (r_0, s_0, a_0, \ldots, r_T, s_T, a_T)$. The environment emits each reward and state together, $P_E(r_t, s_t \mid s_{t-1}, a_{t-1})$, and the agent emits each action, $P_A(a_t \mid s_t)$. The probability of a trajectory is then one product with the same two factors at every step, from the first state to the last. The initial distribution is the same environment kernel with an empty previous state and action, and the episode ends when the agent takes a "done" action. Both the Markov property and time invariance can be read straight off the formula. Drawn as a picture, the formula also separates two things the usual single loop draws together: a rollout, where the reward leaves the loop, and training, where the reward changes the weights.
 
 ---
 
@@ -69,6 +69,32 @@ $$
 R(\tau) = \sum_{t=0}^{T} \gamma^t r_t, \qquad V_E^{P_A} = \mathbb{E}_{\tau \sim P}\big[R(\tau)\big].
 $$
 
+## Two pictures instead of one
+
+The usual picture of RL is a single loop. The agent sends an action to the environment, and the environment sends back a state and a reward, both drawn as arrows into the agent. Here is my own drawing of that loop, so I can compare against it:
+
+{% include rl_notation/fig1_textbook_loop.svg %}
+
+*Figure 1. The usual single loop, redrawn. The reward arrow (orange) goes into the agent.*
+
+The reward arrow into the agent is the part I had to sit with. During a rollout the policy computes $P_A(a_t \mid s_t)$, and nothing in that factor takes $r_t$ as an input. So while the agent is acting, the reward has nowhere to go inside it. It leaves the loop and adds up into the return. If I draw only the arguments of each factor in $P(\tau)$, I get this:
+
+{% include rl_notation/fig2_rollout.svg %}
+
+*Figure 2. A rollout in my notation. Every arrow is an argument of a factor in $P(\tau)$. The reward goes to the return, not to the agent, and the weights don't change.*
+
+Each arrow is one argument of one factor. $(s_{t-1}, a_{t-1})$ go into the environment, $s_t$ goes into the agent, and $r_t$ leaves the loop. The empty start and the $\texttt{done}$ action are on the picture too, so the two ends are drawn like every other step.
+
+The reward does reach the agent during training, but through a different door. It feeds a learner, the learner computes a gradient, and the gradient changes the weights $\theta$. That happens between rollouts, not inside the choice of $a_t$:
+
+{% include rl_notation/fig3_training.svg %}
+
+*Figure 3. RL training. The reward is consumed by the learner, which updates $\theta$. The action is still drawn from $P_A(a_t \mid s_t)$.*
+
+So the single loop is two systems drawn on top of each other: the policy that acts, and the learning algorithm that changes it. Putting both inside one "agent" box makes sense when the subject is learning agents, and that is the subject of the book I learned this from. For reading off the trajectory distribution, I find it clearer to keep them apart. Figure 2 is the picture of $P(\tau)$, and Figure 3 is the picture of what we do with it.
+
+Nothing stops a policy from seeing rewards. An LLM agent can be shown the score of its last attempt in its prompt. In that case the reward is part of what the agent observes, so it belongs inside $s_t$, and the factor is still $P_A(a_t \mid s_t)$. Figure 2 doesn't change; the arrow labelled $s_t$ just carries more.
+
 ## What the formula says about time
 
 Recall what conditional independence means:
@@ -93,7 +119,7 @@ The second is time invariance. $P_E$ is the same function at every $t$, includin
 
 When I first wrote this down, I wrote that the arrival $(r_t, s_t)$ is independent of everything "before and after" given $(s_{t-1}, a_{t-1})$. The "after" half took me a second look. What I meant is right: the future is not an input to $P_E$, and $(r_t, s_t)$ is sampled before any of it exists. But the future is not conditionally independent of $(r_t, s_t)$. The next state is drawn from $P_E(\cdot \mid s_t, a_t)$, so seeing $s_{t+1}$ tells you something about $s_t$. The independence statement is about the past only, and the "future doesn't matter" intuition is really a statement about the order in which things get generated.
 
-**TLDR-end:** Write each time step as one environment draw of $(r_t, s_t)$ and one agent draw of $a_t$. With an empty state and action before $t = 0$ and a "done" action at $t = T$, the probability of a trajectory is a single product with the same two factors everywhere, and Markov plus time invariance are both visible in it.
+**TLDR-end:** Write each time step as one environment draw of $(r_t, s_t)$ and one agent draw of $a_t$. With an empty state and action before $t = 0$ and a "done" action at $t = T$, the probability of a trajectory is a single product with the same two factors everywhere, and Markov plus time invariance are both visible in it. Drawing only the arguments of each factor gives a rollout picture where the reward never enters the agent; it reaches the agent only in training, through the weight update.
 
 ---
 

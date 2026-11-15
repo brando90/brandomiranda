@@ -3,6 +3,7 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
+\usepackage{graphicx}
 
 \newtheorem*{remark}{Remark}
 \newcommand{\done}{\texttt{done}}
@@ -20,7 +21,9 @@ $\tau = (r_0, s_0, a_0, \ldots, r_T, s_T, a_T)$. The environment emits each
 reward and state together, $P_E(r_t, s_t \mid s_{t-1}, a_{t-1})$, and the agent
 emits each action, $P_A(a_t \mid s_t)$. The probability of a trajectory is then
 a single product with the same two factors at every step, including the first
-and the last.
+and the last. Drawn as a picture, the product separates a rollout (the reward
+leaves the loop) from training (the reward changes the weights), which the
+usual single agent--environment loop draws together.
 \end{abstract}
 
 \section{The trajectory distribution}
@@ -75,6 +78,55 @@ The episode ends when the agent acts: $a_T = \done$. The final factor
 $P_A(a_T \mid s_T)$ therefore exists, and the product in~\eqref{eq:traj} runs to
 $T$ with both factors at every step. For an LLM agent, $a_T$ is the
 end-of-sequence token or the tool call that submits an answer.
+
+\section{Two pictures instead of one}
+
+The usual picture of RL is a single loop in which both the next state and the
+reward are drawn as inputs to the agent (Figure~\ref{fig:loop}, my redrawing).
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.72\linewidth]{figs/fig1_textbook_loop.pdf}
+\caption{The usual single loop, redrawn. The reward arrow (orange) enters the agent.}
+\label{fig:loop}
+\end{figure}
+
+During a rollout the policy computes $P_A(a_t \mid s_t)$; no factor takes $r_t$
+as an input, so the reward has nowhere to go inside the agent. Drawing only the
+arguments of each factor in~\eqref{eq:traj} gives Figure~\ref{fig:rollout}:
+$(s_{t-1}, a_{t-1})$ enter the environment, $s_t$ enters the agent, and $r_t$
+leaves the loop into the return. The empty start and the $\done$ action appear
+explicitly, so both ends are drawn like every other step.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/fig2_rollout.pdf}
+\caption{A rollout in this notation. Every arrow is an argument of a factor in
+$P(\tau)$. The reward goes to the return, not to the agent; $\theta$ is fixed.}
+\label{fig:rollout}
+\end{figure}
+
+The reward reaches the agent only during training, and only through the weights:
+a learner consumes $r_t$ (and $\log P_A(a_t \mid s_t)$), computes a gradient, and
+updates $\theta$ between rollouts (Figure~\ref{fig:train}). The action is still
+drawn from $P_A(a_t \mid s_t)$.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth]{figs/fig3_training.pdf}
+\caption{RL training. The reward is consumed by the learner, which updates $\theta$.}
+\label{fig:train}
+\end{figure}
+
+\begin{remark}
+The single loop draws two systems at once: the policy that acts and the learning
+algorithm that changes it. That is a natural choice when the subject is learning
+agents. For reading off $P(\tau)$, Figure~\ref{fig:rollout} is the picture of the
+distribution and Figure~\ref{fig:train} is the picture of what training does with
+it. If a policy is shown rewards (e.g.\ an LLM prompted with the score of its last
+attempt), the reward is part of the observation, so it belongs in $s_t$ and the
+factor is still $P_A(a_t \mid s_t)$.
+\end{remark}
 
 \section{Markov property and time invariance}
 
