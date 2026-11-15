@@ -3,6 +3,8 @@ layout: post
 title: "A Better Notation for RL"
 date: 2026-11-15
 section: ml
+draft: true
+permalink: /preview/0rgha01zbq/a-better-notation-for-rl/
 ---
 
 *Brando Miranda — November 2026 · ~7 min read*

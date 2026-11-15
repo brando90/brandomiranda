@@ -2,12 +2,14 @@
 layout: page
 title: Blog
 ---
+{% comment %}Hidden previews (front matter `draft: true`) are never listed. See CLAUDE.md "Hidden previews".{% endcomment %}
+{% assign listed_posts = site.posts | where_exp: "post", "post.draft != true" %}
 
-{% assign ml_posts = site.posts | where: "section", "ml" %}
-{% assign music_posts = site.posts | where: "section", "music" %}
-{% assign psychology_posts = site.posts | where: "section", "psychology" %}
-{% assign meta_posts = site.posts | where: "section", "meta-research" %}
-{% assign agentic_posts = site.posts | where: "section", "agentic-coding" %}
+{% assign ml_posts = listed_posts | where: "section", "ml" %}
+{% assign music_posts = listed_posts | where: "section", "music" %}
+{% assign psychology_posts = listed_posts | where: "section", "psychology" %}
+{% assign meta_posts = listed_posts | where: "section", "meta-research" %}
+{% assign agentic_posts = listed_posts | where: "section", "agentic-coding" %}
 
 ## Machine Learning
 
@@ -74,11 +76,11 @@ title: Blog
 
 {% assign known_sections = "ml|music|psychology|meta-research|agentic-coding" | split: "|" %}
 {% assign other_count = 0 %}
-{% for post in site.posts %}{% unless known_sections contains post.section %}{% assign other_count = other_count | plus: 1 %}{% endunless %}{% endfor %}
+{% for post in listed_posts %}{% unless known_sections contains post.section %}{% assign other_count = other_count | plus: 1 %}{% endunless %}{% endfor %}
 {% if other_count > 0 %}
 ## Other
 
-<ul class="post-list">{% for post in site.posts %}{% unless known_sections contains post.section %}
+<ul class="post-list">{% for post in listed_posts %}{% unless known_sections contains post.section %}
   <li>
     <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
     <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>

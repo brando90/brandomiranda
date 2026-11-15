@@ -210,12 +210,23 @@ Rationale (Brando, 2026-09-06): "sounds like we are blaming ... maybe the unclea
 
 ### Blog drafts live in `_drafts/` (HARD)
 
-Unpublished blog posts go in **`_drafts/`** — never in `exclude/`, `experiments/`, or anywhere else. `exclude/` is for *non-blog* local-only material (cs197 course files, tweet drafts, scratch notes); a draft blog post placed there breaks the workflow below.
+Unpublished blog posts go in **`_drafts/`** — never in `exclude/`, `experiments/`, or anywhere else. The one exception is a hidden preview: a post Brando wants to read on the live site goes in `_posts/` with `draft: true` and a hidden permalink (see "Hidden previews" below). `exclude/` is for *non-blog* local-only material (cs197 course files, tweet drafts, scratch notes); a draft blog post placed there breaks the workflow below.
 
 - Filename: `YYYY-MM-DD-slug.md`, same as `_posts/` (date = expected/working publish date; update it at publish time).
 - Preview drafts locally: `bundle exec jekyll serve --drafts` (renders drafts as if published, newest-dated first).
 - **Publishing = moving the file** from `_drafts/` to `_posts/`: update the filename date and frontmatter `date:` to the actual publish date, normalize the header per "Blog post header format" below (run `python3 scripts/normalize_post_headers.py`), and push to `main`.
 - Both `_drafts/` and `exclude/` are in `_config.yml`'s `exclude:` list, so neither is ever published — the split is workflow, not privacy: blog drafts in `_drafts/` so Jekyll can preview them and publishing stays a one-file move.
+
+### Hidden previews (HARD)
+
+A post can be live on the real site at a hidden address while it is still in development. Brando bookmarks one page, the **previews index**, and opens any in-progress post from there:
+
+- Previews index: `https://cs.stanford.edu/people/brando9/preview/0rgha01zbq/` (source: `preview.md`; it has no `title:`, so Minima keeps it out of the nav bar). It lists every post with `draft: true` automatically.
+- To make a draft previewable: move it from `_drafts/` to `_posts/` and add two front-matter lines: `draft: true` and `permalink: /preview/0rgha01zbq/<slug>/`. Push to `main`.
+- `draft: true` keeps the post off `blog.md` (which lists only `post.draft != true`), out of `feed.xml` (jekyll-feed skips `draft: true`), and adds `<meta name="robots" content="noindex, nofollow">` via `_includes/head.html`.
+- To publish for real: delete both lines (`draft:` and `permalink:`), set the filename date and `date:` to the publish date, run `python3 scripts/normalize_post_headers.py`, push.
+- This is obscurity, not privacy: anyone with the URL can read it, and this repo is public on GitHub. Never put anything confidential in a preview.
+- Do not add an "in development" banner or title marker instead. Draft banners were retired on 2026-09-06 (see "Blog post header format").
 
 ### Tweet draft workflow
 

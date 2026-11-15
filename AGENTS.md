@@ -117,3 +117,6 @@ The public URL is https://cs.stanford.edu/people/brando9/ . Every push to `main`
 MathJax 3 renders all math client-side; `_config.yml` MUST keep `kramdown: math_engine: mathjax` (GitHub Pages forces it anyway — any other value silently diverges local/mirror builds from the live site). Never put `<`+letter inside single-dollar inline math (`$x^{<t>}$` → raw HTML tag, broken equation on both deploys); use kramdown's inline form `$$x^{<t>}$$` instead. After any math edit: build, scan output for raw-tag leaks / leftover `$$`, and verify rendered equations on BOTH domains. See `CLAUDE.md` § "Math rendering (HARD)".
 
 Branch model: `main` only.
+
+## Hidden previews (HARD)
+In-progress posts can be viewed on the live site at a hidden address. Move the draft from `_drafts/` to `_posts/` and add `draft: true` and `permalink: /preview/0rgha01zbq/<slug>/`. `draft: true` keeps it off the blog list and RSS feed and adds a noindex tag. Every such post is listed on the bookmarked previews index, `/preview/0rgha01zbq/` (`preview.md`, no title so it stays out of the nav). To publish, delete both lines and fix the date. Obscurity only: the repo is public. No "in development" banners. Full rule in `CLAUDE.md`.
