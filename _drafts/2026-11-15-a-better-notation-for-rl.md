@@ -45,7 +45,7 @@ $$
 P(\tau) \;=\; \prod_{t=0}^{T} P_E(r_t, s_t \mid s_{t-1}, a_{t-1})\, P_A(a_t \mid s_t).
 $$
 
-The indexing is the one Sutton and Barto use for their four-argument dynamics function, $p(s', r \mid s, a) = \Pr\lbrace S_t = s', R_t = r \mid S_{t-1} = s, A_{t-1} = a \rbrace$: the reward and the next state come out together and carry the index of the step they arrive at. All I am doing is pushing that convention to both ends of the episode.
+The indexing is the one Sutton and Barto use for their four-argument dynamics function, $p(s^{\prime}, r \mid s, a) = \Pr\lbrace S_t = s^{\prime}, R_t = r \mid S_{t-1} = s, A_{t-1} = a \rbrace$: the reward and the next state come out together and carry the index of the step they arrive at. All I am doing is pushing that convention to both ends of the episode.
 
 ## The first step isn't special
 
