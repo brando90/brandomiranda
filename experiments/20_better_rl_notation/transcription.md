@@ -1,6 +1,6 @@
 # Transcription: handwritten notes on RL notation (Nov 15, 2026)
 
-Three photos: one loose sheet (photo 1, shot sideways) and one notebook page (photos 2 and 3 are the same page, two exposures). Text is transcribed as written, including shorthand. Math is in LaTeX. Readings I am unsure of are marked [?]. Margin notes and arrows are shown as `→ note`. Struck-through terms are shown as ~~strikethrough~~.
+Three photos: one loose sheet (photo 1, shot sideways) and one notebook page (photos 2 and 3 are the same page, two exposures). Text is transcribed as written, including shorthand. Math is in LaTeX. Readings I am unsure of are marked [?]. Margin notes and arrows are shown as `→ note`. Struck-through terms are shown with `\cancel{...}`.
 
 ---
 
@@ -33,8 +33,9 @@ $P(A \mid B C) = P(A \mid C) \iff A \perp B \mid C$
 $r_t s_t \perp \text{everything else} \mid s_{t-1} a_{t-1}$
   → (pointing at $s_{t-1} a_{t-1}$) previous time step state ("location") & action.
 
-$r_t s_t \perp r_0 s_0 a_0 \ldots r_{t-1},\ ~~s_{t-1} a_{t-1}~~,\ ~~r_t s_t~~\ \underline{a_t \ldots r_T s_T a_T} \mid s_{t-1}, a_{t-1}$
-  → (over the future block $a_t \ldots r_T s_T a_T$, which is struck) current transition doesn't depend on the future.
+$r_t s_t \perp r_0 s_0 a_0 \ldots r_{t-1},\ \cancel{s_{t-1} a_{t-1}},\ \cancel{r_t s_t}\ \underline{\cancel{a_t \ldots r_T s_T a_T}} \mid s_{t-1}, a_{t-1}$
+  (In words: three groups are struck through and bracketed underneath: $s_{t-1} a_{t-1}$, then $r_t s_t$, then the whole future block $a_t \ldots r_T s_T a_T$.)
+  → (over the struck future block) current transition doesn't depend on the future.
   → (over the struck $r_t s_t$) current state action "transition to", **does** depend on itself of course lol.
 
 ∴

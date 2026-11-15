@@ -31,7 +31,12 @@ I want every time step to look the same. Each step $t$ is one call to the enviro
 A trajectory is these blocks laid end to end, so its probability is the blocks multiplied together:
 
 $$
-P(\tau) \;=\; P_E(r_0, s_0 \mid s_{-1}, a_{-1})\, P_A(a_0 \mid s_0)\; P_E(r_1, s_1 \mid s_0, a_0)\, P_A(a_1 \mid s_1) \cdots P_E(r_T, s_T \mid s_{T-1}, a_{T-1})\, P_A(a_T \mid s_T),
+\begin{aligned}
+P(\tau) \;=\; {} & P_E(r_0, s_0 \mid s_{-1}, a_{-1})\, P_A(a_0 \mid s_0) \\
+& \cdot P_E(r_1, s_1 \mid s_0, a_0)\, P_A(a_1 \mid s_1) \\
+& \cdots \\
+& \cdot P_E(r_T, s_T \mid s_{T-1}, a_{T-1})\, P_A(a_T \mid s_T),
+\end{aligned}
 $$
 
 or, compactly,
@@ -40,7 +45,7 @@ $$
 P(\tau) \;=\; \prod_{t=0}^{T} P_E(r_t, s_t \mid s_{t-1}, a_{t-1})\, P_A(a_t \mid s_t).
 $$
 
-The indexing is the one Sutton and Barto use for their four-argument dynamics function, $p(s', r \mid s, a) = \Pr\{S_t = s', R_t = r \mid S_{t-1} = s, A_{t-1} = a\}$: the reward and the next state come out together and carry the index of the step they arrive at. All I am doing is pushing that convention to both ends of the episode.
+The indexing is the one Sutton and Barto use for their four-argument dynamics function, $p(s', r \mid s, a) = \Pr\lbrace S_t = s', R_t = r \mid S_{t-1} = s, A_{t-1} = a \rbrace$: the reward and the next state come out together and carry the index of the step they arrive at. All I am doing is pushing that convention to both ends of the episode.
 
 ## The first step isn't special
 
