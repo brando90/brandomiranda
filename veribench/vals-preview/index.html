@@ -1,0 +1,2121 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>VeriBench Leaderboard &amp; Methodology | Vals AI Preview</title>
+  <style>
+    @font-face {
+      font-family: "Soehne";
+      src: url("https://www.vals.ai/fonts/Soehne/soehne-buch.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Soehne";
+      src: url("https://www.vals.ai/fonts/Soehne/soehne-kraftig.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Soehne";
+      src: url("https://www.vals.ai/fonts/Soehne/soehne-halbfett.woff2") format("woff2");
+      font-weight: 600;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Martina Plantijn";
+      src: url("https://www.vals.ai/fonts/MartinaPlantijn/martina-plantijn-regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Martina Plantijn";
+      src: url("https://www.vals.ai/fonts/MartinaPlantijn/martina-plantijn-medium.woff2") format("woff2");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Berkeley Mono";
+      src: url("https://www.vals.ai/fonts/BerkeleyMono/BerkeleyMono-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --theme-50: #eef6f0;
+      --theme-100: #d0e7d6;
+      --theme-300: #94c7a2;
+      --theme-600: #488959;
+      --theme-700: #386b46;
+      --theme-900: #182f1f;
+      --theme-950: #102015;
+      --ink: #111814;
+      --ink-muted: #4b5a51;
+      --border: #d5e0d8;
+      --surface: #ffffff;
+      --surface-subtle: #f7faf8;
+      --proprietary: #C0453F;
+      --openweight: #2E7D52;
+      --openai: #1e6f5c;
+      --anthropic: #b65336;
+      --other-lab: #52616b;
+      --mono: "Berkeley Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --sans: "Soehne", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --serif: "Martina Plantijn", Georgia, Cambria, serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #fbfdfb;
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--theme-700); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(251, 253, 251, 0.94);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+    .topbar-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-logo {
+      height: 22px;
+      width: auto;
+      display: block;
+    }
+    .preview-pill {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      background: var(--theme-50);
+      color: var(--theme-700);
+      border: 1px solid var(--theme-300);
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-muted);
+      flex-wrap: wrap;
+    }
+    .nav-links a { color: var(--ink-muted); }
+    .nav-links a:hover { color: var(--theme-700); }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 32px 24px 64px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--theme-950) 0%, #173321 58%, #224a30 100%);
+      color: #f6fbf7;
+      border-radius: 16px;
+      padding: 34px 36px;
+      margin-bottom: 24px;
+      border: 1px solid #264d33;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(208, 231, 214, 0.11) 1px, transparent 1px);
+      background-size: 20px 20px;
+      pointer-events: none;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-kicker {
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--theme-300);
+      margin-bottom: 10px;
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(28px, 4vw, 42px);
+      line-height: 1.15;
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .hero-sub {
+      max-width: 820px;
+      color: #d6e7db;
+      font-size: 15.5px;
+      margin: 0 0 24px;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 12px;
+    }
+    .stat-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(208, 231, 214, 0.2);
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+    .stat-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--theme-300);
+    }
+    .stat-value {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 2px 0;
+      color: #ffffff;
+    }
+    .stat-note {
+      font-size: 12px;
+      color: #cbe0d1;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px 24px;
+      margin-bottom: 22px;
+      box-shadow: 0 1px 2px rgba(16, 32, 21, 0.03);
+    }
+
+    .controls-header {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .suite-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tab-btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface-subtle);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 13.5px;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 9px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .tab-btn:hover {
+      border-color: var(--theme-600);
+      background: var(--theme-50);
+    }
+    .tab-btn.active {
+      background: var(--theme-700);
+      color: #ffffff;
+      border-color: var(--theme-700);
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding-top: 10px;
+      border-top: 1px solid #edf2ee;
+    }
+    .control-group {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .group-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-right: 4px;
+    }
+    .seg-btn, .chip-btn {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      color: var(--ink-muted);
+      font-family: var(--sans);
+      font-size: 12.5px;
+      padding: 5px 11px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .seg-btn.active, .chip-btn.active {
+      background: var(--theme-50);
+      color: var(--theme-900);
+      border-color: var(--theme-600);
+      font-weight: 600;
+    }
+    .toggle-check {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12.5px;
+      color: var(--ink);
+      cursor: pointer;
+      user-select: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      background: var(--surface-subtle);
+      border: 1px solid #e5ede7;
+    }
+
+    .suite-banner {
+      background: var(--theme-50);
+      border: 1px solid var(--theme-100);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 13.5px;
+      color: var(--theme-900);
+      margin-bottom: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chart-wrap {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #e4ece6;
+      border-radius: 12px;
+      padding: 14px 16px 10px;
+    }
+    .chart-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .chart-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .chart-subtitle {
+      font-family: var(--mono);
+      font-size: 11.5px;
+      color: var(--ink-muted);
+    }
+    #scatter-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .legend-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      font-size: 12px;
+      color: var(--ink-muted);
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px dashed #e2ebe4;
+    }
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .unmeasured-strip {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--ink-muted);
+      font-family: var(--mono);
+    }
+
+    .table-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .table-scroll {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    table.lb {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.2px;
+      min-width: 720px;
+    }
+    table.lb th {
+      background: var(--surface-subtle);
+      color: var(--ink-muted);
+      font-family: var(--mono);
+      font-size: 10.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      text-align: left;
+      padding: 8px 8px;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+    }
+    table.lb th:hover { color: var(--theme-700); }
+    table.lb td {
+      padding: 8px 8px;
+      border-bottom: 1px solid #edf2ee;
+      vertical-align: middle;
+    }
+    table.lb tr.main-row {
+      cursor: pointer;
+      transition: background 0.12s ease;
+    }
+    table.lb tr.main-row:hover {
+      background: #f4f9f5;
+    }
+    table.lb tr.detail-row td {
+      background: #f9fcfa;
+      padding: 12px 16px;
+      font-size: 12.5px;
+      color: var(--ink-muted);
+      border-bottom: 1px solid var(--border);
+    }
+    .hidden { display: none; }
+
+    .badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+    .badge-prop { background: #fdf2f2; color: #9c2b26; border-color: #f4cccc; }
+    .badge-open { background: #eef7f1; color: #22623f; border-color: #bfe0ca; }
+    .badge-warn { background: #fff8eb; color: #8c5a00; border-color: #f3dba8; }
+    .badge-neutral { background: #f2f5f3; color: #44534a; border-color: #dce3de; }
+    .badge-wrap { white-space: normal; line-height: 1.35; max-width: 210px; }
+
+    .score-strong { font-weight: 600; color: var(--theme-900); font-family: var(--mono); }
+    .mono { font-family: var(--mono); font-size: 12px; }
+
+    .bar-bg {
+      width: 56px;
+      height: 6px;
+      background: #e6eee8;
+      border-radius: 999px;
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .bar-fill {
+      height: 100%;
+      background: var(--theme-600);
+      border-radius: 999px;
+    }
+
+    section.prose {
+      margin-top: 28px;
+    }
+    section.prose h2 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 26px;
+      margin: 0 0 12px;
+      color: var(--theme-950);
+    }
+    section.prose h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 18px 0 8px;
+      color: var(--theme-900);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    .subcard {
+      background: var(--surface-subtle);
+      border: 1px solid #e2ebe4;
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+    pre {
+      background: #102015;
+      color: #e6f2ea;
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 14px 16px;
+      border-radius: 9px;
+      overflow-x: auto;
+      line-height: 1.5;
+    }
+    .btn-copy {
+      appearance: none;
+      border: 1px solid var(--theme-300);
+      background: var(--theme-50);
+      color: var(--theme-900);
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 6px 12px;
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .btn-copy:hover { background: var(--theme-100); }
+    footer {
+      margin-top: 40px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 12.5px;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand-row">
+        <img class="brand-logo" src="https://www.vals.ai/Logos/vals-full.svg" alt="Vals AI" />
+        <span class="preview-pill">VeriBench Preview · Nov 2026</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#explorer">Leaderboard &amp; Chart</a>
+        <a href="#methodology">Methodology &amp; Metrics</a>
+        <a href="#validation">Prover &amp; DT Validation</a>
+        <a href="#example">Worked Example</a>
+        <a href="#limitations">Scope &amp; Caveats</a>
+        <a href="#citation">Citation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-kicker">Stanford University &amp; Vals AI · End-to-End Autoformalization in Lean 4</div>
+        <h1>VeriBench Leaderboard &amp; Methodology</h1>
+        <p class="hero-sub">
+          Can autonomous AI coding agents translate Python programs into verified Lean 4 implementations,
+          unit and property tests, complete formal specifications, and machine-checked kernel proofs without
+          <code>sorry</code> or custom axioms? Explore held-out private evaluation (<code>n=214</code>),
+          Public VeriBench V1 (<code>n=896</code>), TinyVeriBench-256, and full cost, token, and latency telemetry.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-label">Public VeriBench V1</div>
+            <div class="stat-value">896 tasks</div>
+            <div class="stat-note">614 Core + 282 IndustrySet (no DT)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Held-Out Private (vb-priv)</div>
+            <div class="stat-value">214 tasks</div>
+            <div class="stat-note">107 Val / 107 Test · 0.0% Harsh gap</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Best Held-Out Harsh (DT)</div>
+            <div class="stat-value">23.36%</div>
+            <div class="stat-note">Claude Opus 5.5 (50/214, Smooth 0.867)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Best Public 896 Harsh</div>
+            <div class="stat-value">0.33%</div>
+            <div class="stat-note">Claude Fable 5.1 (3/896, $3.18/task)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="explorer" class="panel">
+      <div class="controls-header">
+        <div class="suite-tabs" id="suite-tabs">
+          <button class="tab-btn active" data-suite="vb_priv_214">Held-Out Private (n=214, DT &amp; no DT)</button>
+          <button class="tab-btn" data-suite="public_vbv1_896">Public VeriBench V1 (n=896, no DT)</button>
+          <button class="tab-btn" data-suite="tiny_vbv1_256">TinyVeriBench-256 (DT &amp; no DT)</button>
+          <button class="tab-btn" data-suite="operational_telemetry">Operational Sweep (Cost, Tokens &amp; Latency)</button>
+        </div>
+
+        <div class="filter-bar">
+          <div class="control-group" id="metric-toggle-group">
+            <span class="group-label">Score Axis:</span>
+            <button class="seg-btn active" data-metric="harsh">Harsh Pass (%)</button>
+            <button class="seg-btn" data-metric="smooth">Smooth Score (%)</button>
+          </div>
+          <div class="control-group" id="xaxis-toggle-group">
+            <span class="group-label">X Axis:</span>
+            <button class="seg-btn active" data-x="cost">Median Cost ($/task)</button>
+            <button class="seg-btn" data-x="latency">Median Latency (min)</button>
+          </div>
+          <div class="control-group">
+            <label class="toggle-check"><input type="checkbox" id="chk-log" checked /> Log scale (X)</label>
+            <label class="toggle-check"><input type="checkbox" id="chk-pareto" checked /> Pareto frontier</label>
+            <label class="toggle-check"><input type="checkbox" id="chk-contrasts" checked /> Show contrast / secondary rows</label>
+          </div>
+          <div class="control-group" id="provider-chips">
+            <span class="group-label">Family:</span>
+            <button class="chip-btn active" data-provider="all">All</button>
+            <button class="chip-btn" data-provider="Anthropic">Anthropic</button>
+            <button class="chip-btn" data-provider="OpenAI">OpenAI</button>
+            <button class="chip-btn" data-provider="Open-Weight">Open-Weight (Pi)</button>
+            <button class="chip-btn" data-provider="Other">xAI / Qwen / DeepSeek / Open</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="suite-banner" class="suite-banner"></div>
+
+      <div class="chart-wrap">
+        <div class="chart-title-row">
+          <div class="chart-title" id="chart-title">Accuracy vs. Cost per Task</div>
+          <div class="chart-subtitle" id="chart-subtitle">Hover or click any point to inspect full telemetry</div>
+        </div>
+        <svg id="scatter-svg" viewBox="0 0 920 340" role="img" aria-label="Interactive VeriBench performance scatter plot"></svg>
+        <div class="legend-row">
+          <span class="legend-item"><span class="dot" style="background: var(--anthropic)"></span>Anthropic</span>
+          <span class="legend-item"><span class="dot" style="background: var(--openai)"></span>OpenAI</span>
+          <span class="legend-item"><span class="dot" style="background: var(--openweight)"></span>Open-Weight (Pi 1.4.0, $0 API)</span>
+          <span class="legend-item"><span class="dot" style="background: var(--other-lab)"></span>Other Frontier (xAI / Qwen / DeepSeek / Moonshot / Zhipu / Mistral)</span>
+          <span class="legend-item"><span style="border-bottom: 2px dashed var(--theme-700); width: 22px; display: inline-block;"></span>Pareto Frontier</span>
+        </div>
+        <div id="unmeasured-strip" class="unmeasured-strip"></div>
+      </div>
+
+      <div style="margin-top: 22px;">
+        <div class="table-header-row">
+          <div>
+            <strong style="font-size: 16px;">Detailed Leaderboard &amp; Telemetry</strong>
+            <span style="font-size: 12.5px; color: var(--ink-muted); margin-left: 8px;">Click any row to expand token breakdown, CI intervals, and provenance notes. Click column headers to sort.</span>
+          </div>
+          <button class="btn-copy" id="btn-download-json">Download Metadata JSON</button>
+        </div>
+        <div class="table-scroll">
+          <table class="lb" id="leaderboard-table">
+            <thead id="lb-thead"></thead>
+            <tbody id="lb-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="methodology" class="panel prose">
+      <h2>Background, Task Contract, and Scoring Methodology</h2>
+      <p>
+        VeriBench evaluates autonomous software verification end-to-end: given a public Python reference module and five explicit input/output examples, an agent outputs a self-contained Lean 4 development containing executable code, unit/property checks, formal pre-/postconditions and behavioral specifications, and complete kernel-checked proofs.
+        All scoring rejects <code>sorry</code>, added axioms, and theorem-level <code>native_decide</code>, requiring transitive proof axioms to remain strictly within Lean's standard core triple <code>&#123;propext, Classical.choice, Quot.sound&#125;</code>.
+      </p>
+      <div class="two-col">
+        <div class="subcard">
+          <h3>Conjunctive Metric Acronyms (Expanded)</h3>
+          <ul>
+            <li><strong><code>HCSCv</code> (Harsh Conjunctive Semantic Consistency verified):</strong> Binary <code>&#123;0, 1&#125;</code> per-task pass. Requires compiling code, valid tests (<code>IC_tests = 1</code>), all theorems proved cleanly in Lean (<code>IC_proofs = 1</code>), reference consistency (<code>RC_tests</code>, <code>RC_proofs</code>), and Formal Specification Coverage (<code>FSC</code>) simultaneously.</li>
+            <li><strong><code>SCSCv</code> (Smooth Conjunctive Semantic Consistency verified):</strong> Continuous <code>[0, 1]</code> aggregate score giving graded credit on incomplete specs while collapsing to <code>0</code> if any hard gate fails.</li>
+            <li><strong><code>int_ref</code> vs <code>int</code>:</strong> <code>int_ref</code> enforces hidden external reference checks (<code>RC_tests</code>, <code>RC_proofs</code>) in addition to internal consistency and <code>FSC</code>; <code>int</code> evaluates internal consistency and <code>FSC</code> alone.</li>
+          </ul>
+        </div>
+        <div class="subcard">
+          <h3>Execution Modes &amp; Checker Types</h3>
+          <ul>
+            <li><strong><code>DT</code> (Differential Testing) vs <code>no DT</code>:</strong> Under <code>DT</code>, the compiled Lean function is executed against Python across hundreds of randomized and boundary cases so compilation with silent semantic drift is caught immediately.</li>
+            <li><strong><code>Lean-checked non-vacuous entailment</code> vs <code>2-LLM coverage reading</code>:</strong> On <code>vb-priv</code>, coverage is verified by proving <code>Agent.FS -&gt; GoldRef.FS</code> inside Lean alongside explicit vacuity and satisfiability checks. Legacy 2-LLM coverage readers disagreed with Lean proofs on <code>27/211</code> and <code>38/211</code> tasks, explaining why <code>Harsh int_ref</code> jumped from <code>1/214 (0.47%)</code> to <code>50/214 (23.36%)</code> under formal Lean checks.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="validation" class="panel prose">
+      <h2>FSC Prover &amp; Differential-Testing Validation (Experiment 171 &amp; 11-06 Replay)</h2>
+      <p>
+        <strong>FSC is a one-sided ruler.</strong> A passing check requires a Lean-compiled proof with standard axioms only, a non-vacuous and satisfiable agent specification, and every gold theorem proved — so reported coverage is a <strong>verified lower bound</strong> on true coverage, and a failure denotes <em>not verified</em> rather than definitively non-covering.
+      </p>
+      <div class="two-col">
+        <div class="subcard">
+          <h3>Prover Sensitivity &amp; False-Acceptance Controls (<code>veribench</code> Exp 171)</h3>
+          <ul>
+            <li><strong>Gold proves itself:</strong> <code>256/256</code> (95% Wilson CI <code>[98.5%, 100%]</code>) after fixing 6 generator bugs.</li>
+            <li><strong>Sensitivity on known-true rewrites (<code>P_D</code>):</strong> <code>132/132</code> part B <code>[97.2%, 100%]</code> across both verified prover families and <code>334/334</code> part C <code>[98.9%, 100%]</code>.</li>
+            <li><strong>False acceptance on Lean countermodel-certified false specs (<code>P_F</code>):</strong> <code>0/124</code> part B <code>[0%, 3.0%]</code> and <code>0/375</code> part C <code>[0%, 1.0%]</code> (<code>0/499</code> total; 95% upper bound <code>0.8%</code>).</li>
+            <li><strong>Vacuity &amp; satisfiability gates:</strong> <code>0/72</code> vacuous specs accepted; <code>0/72</code> contradictory specs accepted once the satisfiability check runs.</li>
+            <li><strong>Dose-response &amp; stability:</strong> Tracks kept gold fraction <code>k/n</code> across 126 specs (Pearson <code>r=0.77</code>, Spearman <code>rho=0.78</code>, never below <code>k/n</code>); test-retest verdict agreement <code>95/100</code> (<code>kappa=0.90</code>).</li>
+          </ul>
+        </div>
+        <div class="subcard">
+          <h3>Miss Rate, Multi-Prover Recovery &amp; 11-06 DT Replay</h3>
+          <ul>
+            <li><strong>First-prover miss rate:</strong> An audit of 72 failures found <code>42/72 (58% [47%, 69%])</code> were true-covering specs the first prover missed. Adding a second proprietary prover raised verified coverage on <code>n=1,024</code> runs from <code>66.1%</code> to <code>84.3%</code> (manual inspection measured <code>3.3%</code> unfaithful/unclear passes on second-prover recoveries).</li>
+            <li><strong>Expert-rating validation split:</strong> Across 75 off-format human-rated artifacts (25 tasks: <code>10</code> train / <code>5</code> validation / <code>10</code> test), faithfulness-filtered prover pass vs mean human score shows Spearman <code>0.14</code> (off-format transfer result).</li>
+            <li><strong>11-06-2026 Private DT Replay:</strong> Losslessly replayed all <code>214/214</code> saved private tasks across <strong>87,714 test cases</strong> (<code>642/642</code> compiler/execution processes succeeded), establishing finite executable agreement without recomputing historical aggregates.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="example" class="panel prose">
+      <h2>Approved Public Worked Example: Gregorian <code>day_of_year</code></h2>
+      <p>
+        We do not release held-out task identifiers, prompts, or per-task scores. To make the specification gap concrete without leaking private items, consider the approved calendar illustration from our public note:
+      </p>
+      <pre>A year is a leap year when it is divisible by 4, except that a
+year divisible by 100 is a leap year only when it is also
+divisible by 400.
+
+day_of_year(year, month, day) returns the ordinal of a valid
+date within its year: January 1 has ordinal 1 and every later
+day of the same year has the ordinal of the previous day plus one.
+
+day_of_year raises ValueError when the date is not valid.</pre>
+      <p>
+        A Lean theorem stating only <code>1 &lt;= day_of_year y m d &lt;= 366</code> compiles cleanly and passes randomized differential tests, yet leaves the specification nearly empty. Full credit requires encoding successor monotonicity, inverse round-trip consistency with <code>ordinal_to_date</code>, exact Gregorian century leap-year rules, and explicit domain rejection. On <code>vb-priv</code>, <strong>23.36% Harsh vs 0.867 Smooth</strong> measures precisely this gap.
+      </p>
+    </section>
+
+    <section id="limitations" class="panel prose">
+      <h2>Scope, Disclosure Constraints, and Threats to Validity</h2>
+      <ul>
+        <li><strong>Separate Harnesses and Efforts:</strong> We never pool agent harnesses or reasoning efforts into a single row. Public 896 frontier rows reflect both the underlying model and its agent loop (<code>Terminus 2</code> with <code>14,400s</code> cap vs <code>Claude Code</code> and <code>Codex CLI</code> with <code>3,600s</code> cap; <code>Pi 1.4.0</code> for open-weight models).</li>
+        <li><strong>Telemetry Missingness:</strong> Cost, token, and latency fields are shown strictly where directly logged: <code>vb-priv</code> telemetry comes from Valkyrie Exp 16 (<code>n=79</code> Opus 5.5 cost/duration, <code>n=76</code> main tokens; <code>n=15</code> GPT-6 Astra telemetry slice where full-214 accuracy is unmeasured); <code>Claude Code</code> and <code>Codex CLI</code> runs on Public 896 did not record cost/token ledgers; the 9th internal pre-release model from Exp 109 is withheld per Vals policy.</li>
+        <li><strong>Unrecomposable Historical Aggregates:</strong> On <code>vb-priv</code>, historical DT applied to <code>209/214</code> tasks; the 11-06 replay checked <code>214/214</code> executable agreement (87,714 cases) without altering the baseline aggregate. On Public 896, Exp 172 (<code>Qwen3-Coder-30B-A3B-FP8</code> + <code>gemini-3.1-pro-preview</code> judge) uses a different test gate (<code>IC_tests=H</code>) and judge and is flagged separately from Sonnet-judged rows.</li>
+      </ul>
+    </section>
+
+    <section id="citation" class="panel prose">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <h2 style="margin: 0;">Paper-Ready Citation</h2>
+        <button class="btn-copy" id="btn-copy-bib">Copy BibTeX</button>
+      </div>
+      <pre id="bibtex-block">@misc{miranda2026veribench,
+  title={VeriBench: An End-to-End Autoformalization Benchmark for AI Coding Agents in Lean 4},
+  author={Miranda, Brando and Daruru, Srivatsava and Hersch, Ethan S. and Zhou, Zhanke and Nie, Allen and Amrollahi, Daneshvar and Aniva, Leni and Mlauzi, Iddah and Acharya, Kirill and Obbad, Elyas and Soylu, Dilara and Kirk, Weston and Wang, Zixiao Jolene and Fronsdal, Kai and Li, Ying and Poindexter Jr., Donald and Kaushik, Rakshit and Liu, Shurui and Denisov-Blanch, Yegor and Dillmann, Steven and Obstbaum, Simon and Cuellar, Santiago and Sarracino, John and Schaeffer, Rylan and Tiwari, Mo and Lee, Donghyun and Han, Bo and Koyejo, Sanmi},
+  year={2026},
+  note={Stanford University \& Vals AI Benchmark Preview, Experiment 173}
+}</pre>
+    </section>
+
+    <footer>
+      <div>VeriBench Preview Page · Maintained jointly with Stanford University &amp; Vals AI · Preview Version 2026-11-17</div>
+      <div>Source: <a href="https://github.com/brando90/veribench/tree/main/experiments/173_vals_benchmark_preview_page_vbv1_vbpriv_start_17Nov2026">Experiment 173 on GitHub</a> · <a href="https://github.com/brando90/veribench/blob/main/experiments/173_vals_benchmark_preview_page_vbv1_vbpriv_start_17Nov2026/RESULTS_vals_benchmark_writeup_and_tables.md">Writeup &amp; Tables</a></div>
+    </footer>
+  </main>
+
+  <script id="veribench-data" type="application/json">{
+  "metadata": {
+    "benchmark_slug": "veribench",
+    "title": "VeriBench: End-to-End Autoformalization Benchmark for AI Coding Agents in Lean 4",
+    "preview_version": "2026-11-17",
+    "preview_url": "https://brando90.github.io/brandomiranda/veribench/vals-preview/",
+    "stanford_mirror_url": "https://cs.stanford.edu/people/brando9/veribench/vals-preview/",
+    "source_commits": {
+      "veribench_public": "2885fed6fca48153b795c78529892fb6eb874901",
+      "vb_priv_bmg": "364cef4d42bcfa90b087afe71d640ba560aa64a8"
+    },
+    "acronyms": {
+      "HCSCv": "Harsh Conjunctive Semantic Consistency verified (binary {0,1} per-task pass requiring all component gates simultaneously)",
+      "SCSCv": "Smooth Conjunctive Semantic Consistency verified (continuous [0,1] per-task score with zero-collapse on any failed gate)",
+      "int_ref": "Intrinsic plus Reference variant (includes internal consistency, external reference tests and proofs, and Formal Specification Coverage)",
+      "int": "Intrinsic-only variant (includes internal consistency and Formal Specification Coverage without external reference tests and proofs)",
+      "IC_tests": "Internal Consistency of Tests (agent Lean file typechecks and includes concrete/property test checks)",
+      "IC_proofs": "Internal Consistency of Proofs (fraction of stated theorems accepted by the Lean 4 kernel using only {propext, Classical.choice, Quot.sound})",
+      "RC_tests": "Reference Consistency of Tests (agent Lean implementation passes hidden reference test suite)",
+      "RC_proofs": "Reference Consistency of Proofs (agent Lean implementation satisfies formal reference behavioral assertions)",
+      "FSC": "Formal Specification Coverage (directional Lean-checked or validated non-vacuous entailment Agent.FS -> GoldRef.FS)",
+      "DT": "Differential Testing (behavioral input-output agreement between extracted Python and compiled Lean across test cases)"
+    },
+    "privacy_notice": "Held-out task identifiers, prompts, task construction recipes, and per-task scores for vb-priv (n=214) are intentionally omitted. Only aggregated split/overall counts and approved public examples are published."
+  },
+  "suite_order": [
+    "vb_priv_214",
+    "public_vbv1_896",
+    "tiny_vbv1_256",
+    "operational_telemetry"
+  ],
+  "vals_benchmark_view": {
+    "vb_priv_214": {
+      "suite_id": "vb_priv_214",
+      "display_name": "Held-Out Private VeriBench (vb-priv)",
+      "tasks": 214,
+      "split": {
+        "validation": 107,
+        "test": 107
+      },
+      "dt_coverage": {
+        "historical_dt_ready": 209,
+        "lossless_replay_11_06": 214,
+        "replay_cases": 87714,
+        "replay_processes": 642
+      },
+      "primary_metric": "Harsh int_ref (Lean-checked non-vacuous entailment, DT and no DT)",
+      "tie_breaker_metric": "Smooth int_ref (DT and no DT)",
+      "models": {
+        "claude-opus-5-5-terminus2-max-lean": {
+          "display_name": "Claude Opus 5.5",
+          "model_id": "claude-opus-5-5",
+          "provider": "Anthropic",
+          "harness": "Terminus 2",
+          "reasoning_effort": "max (1 attempt/task)",
+          "eval_mode": "DT & no DT (DT changed 0/214 recorded harsh outcomes)",
+          "judge_or_checker": "Lean-checked non-vacuous entailment ({propext, Classical.choice, Quot.sound})",
+          "accuracy": 0.2336,
+          "accuracy_numerator": 50,
+          "accuracy_denominator": 214,
+          "accuracy_ci95": [
+            0.182,
+            0.2947
+          ],
+          "accuracy_ci95_pct_text": "[18.2%, 29.5%]",
+          "tie_breaker_score": 0.8666,
+          "smooth_no_dt": 0.8687,
+          "smooth_dt": 0.8666,
+          "validation_split": {
+            "n": 107,
+            "harsh_int_ref": 0.2336,
+            "harsh_k": 25,
+            "harsh_ci95": [
+              0.1636,
+              0.3222
+            ],
+            "smooth_int_ref_no_dt": 0.863,
+            "smooth_int_ref_dt": 0.86
+          },
+          "test_split": {
+            "n": 107,
+            "harsh_int_ref": 0.2336,
+            "harsh_k": 25,
+            "harsh_ci95": [
+              0.1636,
+              0.3222
+            ],
+            "smooth_int_ref_no_dt": 0.875,
+            "smooth_int_ref_dt": 0.873
+          },
+          "val_test_harsh_gap": 0.0,
+          "harsh_int": 0.2051,
+          "harsh_int_k": 40,
+          "harsh_int_n": 195,
+          "harsh_int_ci95": [
+            0.1544,
+            0.2672
+          ],
+          "smooth_int_no_dt": 0.816,
+          "smooth_int_dt": 0.814,
+          "dt_agreement_historical": "209/214 tasks (100% pass rate on agreed tasks, 99.8% mean case agreement)",
+          "dt_agreement_11_06_replay": "214/214 tasks across 87,714 cases (642/642 processes; executable agreement only, does not recompute aggregate)",
+          "cost_per_test": 8.61,
+          "cost_mean_usd": 8.94,
+          "cost_min_usd": 5.01,
+          "cost_max_usd": 17.82,
+          "cost_pooled_per_hour_usd": 8.7,
+          "cost_tasks_measured": 79,
+          "latency": 3576.0,
+          "latency_median_min": 59.6,
+          "latency_mean_min": 61.69,
+          "latency_p75_min": 70.8,
+          "latency_p90_min": 74.9,
+          "latency_max_min": 106.0,
+          "latency_timeouts": 0,
+          "latency_cap_s": 14400,
+          "stderr": 0.0289,
+          "token_totals": {
+            "input": 8313109,
+            "input_uncached": 148,
+            "cache_read": 7740710,
+            "cache_write": 403034,
+            "output": 235624,
+            "output_non_reasoning": 76501,
+            "reasoning": 158694,
+            "total": 8548733,
+            "pooled_n78_median_total": 8610946,
+            "pooled_n78_mean_total": 9105195
+          },
+          "token_tasks_measured": 76,
+          "turn_metrics": {
+            "median_episodes": 37,
+            "max_episodes": 86,
+            "finished_within_60m": "40/79 (51%)",
+            "finished_within_120m": "79/79 (100%)"
+          },
+          "is_primary": true,
+          "notes": "Historical aggregate condition (blog/post.md); DT-ready subset (n=209) smooth int_ref is 0.874 (no DT) / 0.874 (DT)."
+        },
+        "claude-opus-5-5-terminus2-max-2llm-contrast": {
+          "display_name": "Claude Opus 5.5 (2-LLM Reader Contrast)",
+          "model_id": "claude-opus-5-5",
+          "provider": "Anthropic",
+          "harness": "Terminus 2",
+          "reasoning_effort": "max (legacy 2-LLM reading)",
+          "eval_mode": "DT & no DT",
+          "judge_or_checker": "2-LLM coverage reading (historical contrast; disagreed with Lean on 27/211 and 38/211 tasks)",
+          "accuracy": 0.0047,
+          "accuracy_numerator": 1,
+          "accuracy_denominator": 214,
+          "accuracy_ci95": [
+            0.0008,
+            0.026
+          ],
+          "tie_breaker_score": 0.919,
+          "smooth_no_dt": 0.922,
+          "smooth_dt": 0.919,
+          "cost_per_test": 8.61,
+          "cost_mean_usd": 8.94,
+          "latency": 3576.0,
+          "latency_median_min": 59.6,
+          "latency_mean_min": 61.69,
+          "latency_timeouts": 0,
+          "stderr": 0.0047,
+          "token_totals": {
+            "input": 8313109,
+            "input_uncached": 148,
+            "cache_read": 7740710,
+            "cache_write": 403034,
+            "output": 235624,
+            "output_non_reasoning": 76501,
+            "reasoning": 158694,
+            "total": 8548733,
+            "pooled_n78_median_total": 8610946,
+            "pooled_n78_mean_total": 9105195
+          },
+          "token_tasks_measured": 76,
+          "turn_metrics": {
+            "median_episodes": 37
+          },
+          "is_primary": false,
+          "notes": "Contrast row from experiments/32 showing why Lean-checked entailment replaced 2-LLM coverage readers."
+        },
+        "gpt-6-astra-terminus2-xhigh-telemetry": {
+          "display_name": "GPT-6 Astra (Telemetry Slice)",
+          "model_id": "gpt-6-astra",
+          "provider": "OpenAI",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "eval_mode": "Telemetry only (n=15 Valkyrie slice; full-214 accuracy not measured)",
+          "judge_or_checker": "Telemetry only (Exp 16)",
+          "accuracy": null,
+          "accuracy_numerator": null,
+          "accuracy_denominator": 214,
+          "accuracy_ci95": null,
+          "tie_breaker_score": null,
+          "cost_per_test": 3.36,
+          "cost_mean_usd": 3.45,
+          "cost_min_usd": 2.06,
+          "cost_max_usd": 5.38,
+          "cost_pooled_per_hour_usd": 20.28,
+          "cost_tasks_measured": 15,
+          "latency": 558.0,
+          "latency_median_min": 9.3,
+          "latency_mean_min": 10.2,
+          "latency_p90_min": 15.0,
+          "latency_max_min": 15.8,
+          "latency_timeouts": 0,
+          "latency_cap_s": 14400,
+          "stderr": null,
+          "token_totals": {
+            "input": 800563,
+            "input_uncached": 60,
+            "cache_read": 744913,
+            "cache_write": 59972,
+            "output": 26652,
+            "output_non_reasoning": 17071,
+            "reasoning": 10164,
+            "total": 827215,
+            "pooled_n15_median_total": 1237086,
+            "pooled_n15_mean_total": 1161314
+          },
+          "token_tasks_measured": 11,
+          "turn_metrics": {
+            "median_episodes": 28,
+            "max_episodes": 50,
+            "finished_within_60m": "15/15 (100%)"
+          },
+          "is_primary": true,
+          "notes": "Valkyrie Exp 16 telemetry slice (n=15 runtime/cost, n=11 main token sample, n=15 pooled tokens); full-214 accuracy run not yet executed."
+        },
+        "qwen3-coder-30b-a3b-fp8-pi-proxy": {
+          "display_name": "Qwen3-Coder-30B-A3B-FP8 (Open-Weight Proxy)",
+          "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0 (vLLM)",
+          "reasoning_effort": "default (1,500s proxy / 2,700s candidates)",
+          "eval_mode": "Proxy screen (no DT; int_ref not computed)",
+          "judge_or_checker": "Mechanical IC pass & harsh int (Exp 25 / at1050)",
+          "accuracy": null,
+          "harsh_int": 0.0,
+          "harsh_int_k": 0,
+          "harsh_int_n": 60,
+          "proxy_60_compiles": "27/60 (45.0%)",
+          "candidate_203_mechanical_ic_pass": "11/203 (5.4%)",
+          "candidate_203_ci95": [
+            0.0305,
+            0.0944
+          ],
+          "candidate_203_compiles": "132/203 (65.0%)",
+          "candidate_203_rerun_timeouts": "26/179",
+          "tie_breaker_score": null,
+          "cost_per_test": 0.0,
+          "cost_mean_usd": 0.0,
+          "latency": null,
+          "latency_cap_s": 1500,
+          "stderr": null,
+          "token_totals": null,
+          "token_tasks_measured": 0,
+          "turn_metrics": null,
+          "is_primary": true,
+          "notes": "Open-weight local GPU baseline ($0 API cost). 0/60 harsh int on 60-task proxy screen; 11/203 (5.4%) mechanical IC pass on 203 private candidates (at1050, 2,700s cap)."
+        }
+      }
+    },
+    "public_vbv1_896": {
+      "suite_id": "public_vbv1_896",
+      "display_name": "Public VeriBench V1 (veribench@1.3)",
+      "tasks": 896,
+      "split": {
+        "core": 614,
+        "industry_set": 282
+      },
+      "primary_metric": "HCSCv_int_ref (no DT, final per-property IC_tests)",
+      "tie_breaker_metric": "SCSCv_int_ref / SCSCv_int interval",
+      "models": {
+        "claude-fable-5-1-terminus2-xhigh": {
+          "display_name": "Claude Fable 5.1",
+          "model_id": "claude-fable-5-1",
+          "provider": "Anthropic",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0033,
+          "accuracy_numerator": 3,
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.001,
+            0.01
+          ],
+          "accuracy_ci95_pct_text": "[0.1%, 1.0%]",
+          "harsh_int_interval": "3 to 190/896 ([0.1%, 1.0%] to [18.7%, 24.0%])",
+          "tie_breaker_score": 0.938,
+          "smooth_int_ref_bound": "n.m. (<= 0.938 [0.935, 0.941])",
+          "smooth_int_interval": "0.900 [0.897, 0.903] to 0.944 [0.941, 0.946]",
+          "cost_per_test": 3.18,
+          "cost_mean_usd": 3.18,
+          "total_cost_usd": 2849.86,
+          "cost_tasks_measured": 896,
+          "latency": null,
+          "latency_timeouts": 0,
+          "latency_cap_s": 14400,
+          "stderr": 0.0019,
+          "token_totals": null,
+          "token_tasks_measured": 0,
+          "is_primary": true,
+          "notes": "Strict HCSCv_int_ref upper-bounded by missing RC proofs/tests on unproved outputs (n.m. <= 0.938); 0/896 timeouts in Exp 109 ($2,849.86 total)."
+        },
+        "gpt-6-astra-terminus2-xhigh": {
+          "display_name": "GPT-6 Astra",
+          "model_id": "gpt-6-astra",
+          "provider": "OpenAI",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0022,
+          "accuracy_numerator": 2,
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.001,
+            0.008
+          ],
+          "accuracy_ci95_pct_text": "[0.1%, 0.8%]",
+          "harsh_int_interval": "2 to 26/896 ([0.1%, 0.8%] to [2.0%, 4.2%])",
+          "tie_breaker_score": 0.728,
+          "smooth_int_ref_bound": "n.m. (<= 0.728 [0.713, 0.742])",
+          "smooth_int_interval": "0.554 [0.533, 0.574] to 0.610 [0.590, 0.630]",
+          "cost_per_test": 1.04,
+          "cost_mean_usd": 1.04,
+          "total_cost_usd": 928.28,
+          "cost_tasks_measured": 896,
+          "latency": null,
+          "latency_timeouts": 0,
+          "latency_cap_s": 14400,
+          "stderr": 0.0016,
+          "token_totals": null,
+          "token_tasks_measured": 0,
+          "is_primary": true,
+          "notes": "0/896 timeouts in Exp 109 ($928.28 total)."
+        },
+        "claude-opus-5-claude-code": {
+          "display_name": "Claude Opus 5",
+          "model_id": "claude-opus-5",
+          "provider": "Anthropic",
+          "harness": "Claude Code 2.1.238\u2013247",
+          "reasoning_effort": "high (112/896), unrecorded (784/896)",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0,
+          "accuracy_numerator": 0,
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.0,
+            0.004
+          ],
+          "accuracy_ci95_pct_text": "[0.0%, 0.4%]",
+          "harsh_int_interval": "0 to 22/896 ([0.0%, 0.4%] to [1.6%, 3.7%])",
+          "tie_breaker_score": 0.56,
+          "smooth_int_ref_bound": "n.m. (<= 0.560 [0.534, 0.583])",
+          "smooth_int_interval": "0.254 [0.224, 0.280] to 0.398 [0.368, 0.426]",
+          "cost_per_test": null,
+          "latency": null,
+          "latency_cap_s": 3600,
+          "stderr": 0.0,
+          "token_totals": null,
+          "is_primary": true,
+          "notes": "3,600s cap; cost, token totals, and runtime telemetry were not recorded."
+        },
+        "gpt-5-6-sol-codex-cli": {
+          "display_name": "GPT-5.6 Sol",
+          "model_id": "gpt-5-6-sol",
+          "provider": "OpenAI",
+          "harness": "Codex CLI 0.148.0",
+          "reasoning_effort": "high (896/896)",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0,
+          "accuracy_numerator": 0,
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.0,
+            0.004
+          ],
+          "accuracy_ci95_pct_text": "[0.0%, 0.4%]",
+          "harsh_int_interval": "0 to 5/896 ([0.0%, 0.4%] to [0.2%, 1.3%])",
+          "tie_breaker_score": 0.425,
+          "smooth_int_ref_bound": "n.m. (<= 0.425 [0.383, 0.458])",
+          "smooth_int_interval": "0.171 [0.128, 0.203] to 0.254 [0.214, 0.287]",
+          "cost_per_test": null,
+          "latency": null,
+          "latency_cap_s": 3600,
+          "stderr": 0.0,
+          "token_totals": null,
+          "is_primary": true,
+          "notes": "3,600s cap; cost, token totals, and runtime telemetry were not recorded."
+        },
+        "qwen3-coder-30b-a3b-fp8-exp172": {
+          "display_name": "Qwen3-Coder-30B-A3B-FP8 (Exp 172, Separately Labeled)",
+          "model_id": "Qwen/Qwen3-Coder-30B-A3B-Instruct-FP8",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "reasoning_effort": "default (Exp 172 judge condition)",
+          "eval_mode": "no DT (separately labeled: IC_tests=H + gemini-3.1-pro-preview judge)",
+          "judge_or_checker": "gemini-3.1-pro-preview FSC judge (Exp 172; not mixed with Claude Sonnet judge)",
+          "accuracy": null,
+          "harsh_int": 0.0614,
+          "harsh_int_k": 55,
+          "harsh_int_n": 896,
+          "harsh_int_ci95": [
+            0.0475,
+            0.0791
+          ],
+          "mechanical_ic_pass": "345/896 (38.5%)",
+          "compiles_count": "651/896 (72.7%)",
+          "tie_breaker_score": 0.244,
+          "smooth_int_judged": 0.244,
+          "cost_per_test": 0.0,
+          "cost_mean_usd": 0.0,
+          "latency": null,
+          "stderr": 0.008,
+          "token_totals": null,
+          "is_primary": false,
+          "notes": "Separately labeled Exp 172 condition (IC_tests=H + gemini-3.1-pro-preview judge); judged harsh int = 55/896 (6.1%), smooth = 0.244. Not comparable on the same axis as Sonnet-judged HCSCv_int_ref rows."
+        },
+        "qwen3-14b-pi-thinking-off": {
+          "display_name": "Qwen3-14B (thinking-off)",
+          "model_id": "Qwen/Qwen3-14B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0 (vLLM 0.11.0 bf16)",
+          "reasoning_effort": "thinking-off (1,800s cap; 900s Core-614 run)",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0,
+          "accuracy_numerator": 0,
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.0,
+            0.004
+          ],
+          "accuracy_ci95_pct_text": "[0.0%, 0.4%]",
+          "harsh_int_interval": "0/896",
+          "tie_breaker_score": 0.0545,
+          "smooth_int_ref_interval": "0.0000 to 0.0545",
+          "smooth_int_interval": "0.0000 to 0.0509",
+          "cost_per_test": 0.0,
+          "cost_mean_usd": 0.0,
+          "latency": 900.0,
+          "latency_median_s_core614": 900.0,
+          "latency_mean_s_core614": 803.8,
+          "latency_timeouts_core614": "379/614",
+          "stderr": 0.0,
+          "token_totals": null,
+          "is_primary": true,
+          "notes": "Local GPU inference ($0 API cost). Core-614 duration telemetry: median 900.0s, mean 803.8s, 379/614 timeouts."
+        },
+        "qwen3-14b-pi-thinking-on": {
+          "display_name": "Qwen3-14B (thinking-on)",
+          "model_id": "Qwen/Qwen3-14B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0 (vLLM 0.11.0 bf16)",
+          "reasoning_effort": "thinking-on (1,800s cap)",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0011,
+          "accuracy_numerator": "0 to 1",
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.0,
+            0.006
+          ],
+          "accuracy_ci95_pct_text": "[0.0%, 0.6%]",
+          "harsh_int_interval": "0 to 1/896",
+          "tie_breaker_score": 0.0524,
+          "smooth_int_ref_interval": "0.0000 to 0.0524",
+          "smooth_int_interval": "0.0000 to 0.0490",
+          "cost_per_test": 0.0,
+          "cost_mean_usd": 0.0,
+          "latency": null,
+          "latency_cap_s": 1800,
+          "stderr": null,
+          "token_totals": null,
+          "is_primary": true,
+          "notes": "Local GPU inference ($0 API cost), 1,800s cap."
+        },
+        "qwen2-5-coder-14b-pi": {
+          "display_name": "Qwen2.5-Coder-14B",
+          "model_id": "Qwen/Qwen2.5-Coder-14B-Instruct",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0 (vLLM)",
+          "reasoning_effort": "default (Core-614 900s / 896 1,800s)",
+          "eval_mode": "no DT (final per-property IC_tests)",
+          "judge_or_checker": "VeriBench v3 scorer + FSC judge",
+          "accuracy": 0.0011,
+          "accuracy_numerator": "0 to 1",
+          "accuracy_denominator": 896,
+          "accuracy_ci95": [
+            0.0,
+            0.006
+          ],
+          "accuracy_ci95_pct_text": "[0.0%, 0.6%]",
+          "harsh_int_interval": "0 to 1/896",
+          "tie_breaker_score": 0.0096,
+          "smooth_int_ref_interval": "0.0000 to 0.0096",
+          "smooth_int_interval": "0.0000 to 0.0077",
+          "cost_per_test": 0.0,
+          "cost_mean_usd": 0.0,
+          "latency": 168.8,
+          "latency_median_s_core614": 168.8,
+          "latency_mean_s_core614": 340.1,
+          "latency_timeouts_core614": "78/614",
+          "stderr": null,
+          "token_totals": null,
+          "is_primary": true,
+          "notes": "Local GPU inference ($0 API cost). Core-614 duration telemetry: median 168.8s, mean 340.1s, 78/614 timeouts."
+        }
+      }
+    },
+    "tiny_vbv1_256": {
+      "suite_id": "tiny_vbv1_256",
+      "display_name": "TinyVeriBench-256 (Diagnostic API Subset)",
+      "tasks": 256,
+      "dt_ready_tasks": 247,
+      "primary_metric": "DT Core Harsh (n=247) + DT Int_ref (n=256) + no-DT HCSCv_int_ref",
+      "tie_breaker_metric": "Core smooth DT (n=247) / SCSCv_int_ref (n=256)",
+      "models": {
+        "claude-fable-5-1-tiny256": {
+          "display_name": "Claude Fable 5.1",
+          "model_id": "claude-fable-5-1",
+          "provider": "Anthropic",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "eval_mode": "DT (247 DT-ready / 256) and no DT (256)",
+          "judge_or_checker": "Lean-checked entailment + DT case bank",
+          "accuracy": 0.8623,
+          "accuracy_ci95": [
+            0.8138,
+            0.8998
+          ],
+          "core_harsh_dt": "213/247 (86.2%)",
+          "core_smooth_dt": 0.965,
+          "dt_case_agreement": "245/247 (99.88%)",
+          "dt_int_ref_harsh": "0 to 5/256",
+          "dt_int_harsh": "0 to 43/256",
+          "no_dt_hscsc_int_ref": "0/256 [0.0%, 1.5%]",
+          "no_dt_scsc_int_ref_interval": "0.692\u20130.916",
+          "tie_breaker_score": 0.965,
+          "cost_per_test": 3.18,
+          "latency": null,
+          "stderr": 0.0219,
+          "is_primary": true,
+          "notes": "Cost per task inherited from full-896 Exp 109 Terminus 2 run ($3.18/task)."
+        },
+        "gpt-6-astra-tiny256": {
+          "display_name": "GPT-6 Astra",
+          "model_id": "gpt-6-astra",
+          "provider": "OpenAI",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "eval_mode": "DT (247 DT-ready / 256) and no DT (256)",
+          "judge_or_checker": "Lean-checked entailment + DT case bank",
+          "accuracy": 0.8502,
+          "accuracy_ci95": [
+            0.8004,
+            0.8893
+          ],
+          "core_harsh_dt": "210/247 (85.0%)",
+          "core_smooth_dt": 0.959,
+          "dt_case_agreement": "245/247 (99.98%)",
+          "dt_int_ref_harsh": "0 to 1/256",
+          "dt_int_harsh": "0 to 9/256",
+          "no_dt_hscsc_int_ref": "0/256 [0.0%, 1.5%]",
+          "no_dt_scsc_int_ref_interval": "0.526\u20130.682",
+          "tie_breaker_score": 0.959,
+          "cost_per_test": 1.04,
+          "latency": null,
+          "stderr": 0.0227,
+          "is_primary": true,
+          "notes": "Cost per task inherited from full-896 Exp 109 Terminus 2 run ($1.04/task)."
+        },
+        "gpt-5-6-sol-tiny256": {
+          "display_name": "GPT-5.6 Sol",
+          "model_id": "gpt-5-6-sol",
+          "provider": "OpenAI",
+          "harness": "Codex CLI 0.148.0",
+          "reasoning_effort": "high",
+          "eval_mode": "DT (247 DT-ready / 256) and no DT (256)",
+          "judge_or_checker": "Lean-checked entailment + DT case bank",
+          "accuracy": 0.7571,
+          "accuracy_ci95": [
+            0.6999,
+            0.8064
+          ],
+          "core_harsh_dt": "187/247 (75.7%)",
+          "core_smooth_dt": 0.932,
+          "dt_case_agreement": "240/247 (99.22%)",
+          "dt_int_ref_harsh": "0 to 1/256",
+          "dt_int_harsh": "0 to 1/256",
+          "no_dt_hscsc_int_ref": "0/256 [0.0%, 1.5%]",
+          "no_dt_scsc_int_ref_interval": "0.279\u20130.380",
+          "tie_breaker_score": 0.932,
+          "cost_per_test": null,
+          "latency": null,
+          "stderr": 0.0273,
+          "is_primary": true,
+          "notes": "Codex CLI 0.148.0, 3,600s cap; cost/latency telemetry not recorded."
+        },
+        "claude-opus-5-tiny256": {
+          "display_name": "Claude Opus 5",
+          "model_id": "claude-opus-5",
+          "provider": "Anthropic",
+          "harness": "Claude Code 2.1.238\u2013247",
+          "reasoning_effort": "high (split) / unrecorded",
+          "eval_mode": "DT (247 DT-ready / 256) and no DT (256)",
+          "judge_or_checker": "Lean-checked entailment + DT case bank",
+          "accuracy": 0.7328,
+          "accuracy_ci95": [
+            0.6744,
+            0.7841
+          ],
+          "core_harsh_dt": "181/247 (73.3%)",
+          "core_smooth_dt": 0.922,
+          "dt_case_agreement": "244/247 (99.76%)",
+          "dt_int_ref_harsh": "0 to 2/256",
+          "dt_int_harsh": "0 to 2/256",
+          "no_dt_hscsc_int_ref": "0/256 [0.0%, 1.5%]",
+          "no_dt_scsc_int_ref_interval": "0.246\u20130.411",
+          "tie_breaker_score": 0.922,
+          "cost_per_test": null,
+          "latency": null,
+          "stderr": 0.0282,
+          "is_primary": true,
+          "notes": "Claude Code, 3,600s cap; cost/latency telemetry not recorded."
+        },
+        "qwen3-14b-off-tiny256": {
+          "display_name": "Qwen3-14B (thinking-off)",
+          "model_id": "Qwen/Qwen3-14B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0 (vLLM 0.11.0 bf16)",
+          "reasoning_effort": "thinking-off",
+          "eval_mode": "no DT (256)",
+          "judge_or_checker": "VeriBench v3 scorer",
+          "accuracy": 0.0,
+          "no_dt_hscsc_int_ref": "0/256",
+          "no_dt_scsc_int_ref_interval": "0 to 0.0817",
+          "tie_breaker_score": 0.0817,
+          "cost_per_test": 0.0,
+          "latency": 900.0,
+          "stderr": 0.0,
+          "is_primary": true,
+          "notes": "Open-weight baseline on Tiny256 (no DT), $0 API cost."
+        },
+        "qwen3-14b-on-tiny256": {
+          "display_name": "Qwen3-14B (thinking-on)",
+          "model_id": "Qwen/Qwen3-14B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0 (vLLM 0.11.0 bf16)",
+          "reasoning_effort": "thinking-on",
+          "eval_mode": "no DT (256)",
+          "judge_or_checker": "VeriBench v3 scorer",
+          "accuracy": 0.0039,
+          "no_dt_hscsc_int_ref": "0 to 1/256",
+          "no_dt_scsc_int_ref_interval": "0 to 0.0938",
+          "tie_breaker_score": 0.0938,
+          "cost_per_test": 0.0,
+          "latency": null,
+          "stderr": null,
+          "is_primary": true,
+          "notes": "Open-weight baseline on Tiny256 (no DT), $0 API cost."
+        }
+      }
+    },
+    "operational_telemetry": {
+      "suite_id": "operational_telemetry",
+      "display_name": "Operational Sweep (Exp 109 Cost + Exp 95 GPT-6 Luna + Core-614 Pi Latency)",
+      "tasks": 896,
+      "exp109_withheld_models_count": 1,
+      "exp109_withheld_note": "9th internal pre-release model from Experiment 109 is withheld per Vals confidentiality policy.",
+      "models": {
+        "exp109-claude-fable-5-1": {
+          "display_name": "Claude Fable 5.1",
+          "provider": "Anthropic",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 3.18,
+          "total_cost_usd": 2849.86,
+          "timeouts": "0/896",
+          "cap_s": 14400
+        },
+        "exp109-gpt-6-astra": {
+          "display_name": "GPT-6 Astra",
+          "provider": "OpenAI",
+          "harness": "Terminus 2",
+          "reasoning_effort": "xhigh",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 1.04,
+          "total_cost_usd": 928.28,
+          "timeouts": "0/896",
+          "cap_s": 14400
+        },
+        "exp109-grok-4-7": {
+          "display_name": "Grok 4.7",
+          "provider": "xAI",
+          "harness": "Terminus 2",
+          "reasoning_effort": "default/Exp109",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 2.84,
+          "timeouts": "1/896",
+          "cap_s": 14400
+        },
+        "exp109-qwen-3-8-max": {
+          "display_name": "Qwen 3.8 Max",
+          "provider": "Qwen",
+          "harness": "Terminus 2",
+          "reasoning_effort": "default/Exp109",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 1.72,
+          "timeouts": "2/896",
+          "cap_s": 14400
+        },
+        "exp109-kimi-k3": {
+          "display_name": "Kimi K3",
+          "provider": "Moonshot",
+          "harness": "Terminus 2",
+          "reasoning_effort": "default/Exp109",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 0.79,
+          "timeouts": "2/896",
+          "cap_s": 14400
+        },
+        "exp109-glm-5-3": {
+          "display_name": "GLM-5.3",
+          "provider": "Zhipu",
+          "harness": "Terminus 2",
+          "reasoning_effort": "default/Exp109",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 0.49,
+          "timeouts": "1/896",
+          "cap_s": 14400
+        },
+        "exp109-deepseek-v4-1-flash": {
+          "display_name": "DeepSeek V4.1 Flash",
+          "provider": "DeepSeek",
+          "harness": "Terminus 2",
+          "reasoning_effort": "default/Exp109",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 0.14,
+          "timeouts": "2/896",
+          "cap_s": 14400
+        },
+        "exp109-mistral-medium-3-5": {
+          "display_name": "Mistral Medium 3.5",
+          "provider": "Mistral",
+          "harness": "Terminus 2",
+          "reasoning_effort": "default/Exp109",
+          "suite": "Public 896 (Exp 109)",
+          "cost_per_test": 8.32,
+          "timeouts": "217/896",
+          "cap_s": 14400
+        },
+        "exp95-gpt-6-luna": {
+          "display_name": "GPT-6 Luna (Exp 95 IC Only)",
+          "provider": "OpenAI",
+          "harness": "Terminus 2",
+          "reasoning_effort": "high",
+          "suite": "Public 896 (Exp 95)",
+          "compiles": "881/896 (98.3%)",
+          "ic_tests": 0.983,
+          "ic_proofs": 0.962,
+          "fsc": null,
+          "cost_per_test": 0.0092,
+          "cost_mean_usd": 0.0119,
+          "total_cost_usd": 10.67,
+          "token_totals": {
+            "input": 167855,
+            "input_uncached": null,
+            "cache_read": 147677,
+            "cache_write": null,
+            "output": 10497,
+            "output_non_reasoning": null,
+            "reasoning": 5959,
+            "total": 179320
+          },
+          "turn_metrics": {
+            "median_turns": 12
+          },
+          "notes": "FSC unavailable due to retired host judge gateway HTTP errors; $0.0092 median / $0.0119 mean per task, 179.3k median tokens, 12 median turns."
+        },
+        "core614-hermes-3-8b": {
+          "display_name": "Hermes-3-8B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 32.3,
+          "latency_mean_s": 49.5,
+          "timeouts": "0/614"
+        },
+        "core614-qwen2-5-7b": {
+          "display_name": "Qwen2.5-7B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 61.6,
+          "latency_mean_s": 242.0,
+          "timeouts": "58/614"
+        },
+        "core614-qwen2-5-coder-14b": {
+          "display_name": "Qwen2.5-Coder-14B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 168.8,
+          "latency_mean_s": 340.1,
+          "timeouts": "78/614"
+        },
+        "core614-qwen3-4b-2507": {
+          "display_name": "Qwen3-4B-2507",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 286.6,
+          "latency_mean_s": 365.7,
+          "timeouts": "75/614"
+        },
+        "core614-olmo-3-7b": {
+          "display_name": "OLMo-3-7B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 361.5,
+          "latency_mean_s": 426.4,
+          "timeouts": "61/614"
+        },
+        "core614-qwen3-14b": {
+          "display_name": "Qwen3-14B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 900.0,
+          "latency_mean_s": 803.8,
+          "timeouts": "379/614"
+        },
+        "core614-qwen3-8b": {
+          "display_name": "Qwen3-8B",
+          "provider": "Open-Weight",
+          "harness": "Pi 1.4.0",
+          "suite": "Core-614 (n=614)",
+          "cost_per_test": 0.0,
+          "latency": 900.0,
+          "latency_mean_s": 867.0,
+          "timeouts": "541/614"
+        }
+      }
+    }
+  },
+  "validation": {
+    "fsc_prover_exp171": {
+      "gold_self_check": "250/256 first run (6 checker bugs fixed) -> 256/256 [98.5%, 100%]",
+      "sensitivity_known_true_pd": "132/132 part B [97.2%, 100%] both provers; 334/334 part C [98.9%, 100%]",
+      "false_acceptance_pf": "0/124 part B [0%, 3.0%]; 0/375 part C [0%, 1.0%] (499 Lean countermodel-certified known-false specs, 95% upper bound 0.8%)",
+      "vacuity_and_contradictory": "0/72 vacuous specs accepted [0%, 5.1%]; 0/72 contradictory specs accepted with satisfiability check",
+      "dose_response": "Pearson r=0.77, Spearman rho=0.78 across 126 specs on 24 tasks; measured coverage >= k/n in 126/126",
+      "test_retest": "95/100 identical verdicts [89%, 98%], Cohen kappa 0.90",
+      "miss_rate_and_second_prover": "First prover missed 42/72 (58% [47%, 69%]) sampled failures; second prover raised combined verified pass rate on n=1,024 from 66.1% to 84.3% (read audit found 3.3% unfaithful/unclear on second-prover passes)",
+      "expert_rating_correlation": "Spearman 0.14 across 75 human-rated artifacts (25 tasks; off-format harness-transfer condition; 10 train / 5 val / 10 test split)",
+      "exp171_spend_usd": 443.0
+    },
+    "private_dt_replay_11_06": {
+      "tasks_verified": "214/214",
+      "cases_agreed": 87714,
+      "processes_succeeded": "642/642",
+      "note": "Finite executable agreement on tested calls; does not recompute historical aggregate scores."
+    }
+  },
+  "citation": {
+    "title": "VeriBench: An End-to-End Autoformalization Benchmark for AI Coding Agents in Lean 4",
+    "year": 2026,
+    "authors": "Brando Miranda, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, Kirill Acharya, Elyas Obbad, Dilara Soylu, Weston Kirk, Zixiao Jolene Wang, Kai Fronsdal, Ying Li, Donald Poindexter Jr., Rakshit Kaushik, Shurui Liu, Yegor Denisov-Blanch, Steven Dillmann, Simon Obstbaum, Santiago Cuellar, John Sarracino, Rylan Schaeffer, Mo Tiwari, Donghyun Lee, Bo Han, and Sanmi Koyejo",
+    "bibtex": "@misc{miranda2026veribench,\n  title={VeriBench: An End-to-End Autoformalization Benchmark for AI Coding Agents in Lean 4},\n  author={Miranda, Brando and Daruru, Srivatsava and Hersch, Ethan S. and Zhou, Zhanke and Nie, Allen and Amrollahi, Daneshvar and Aniva, Leni and Mlauzi, Iddah and Acharya, Kirill and Obbad, Elyas and Soylu, Dilara and Kirk, Weston and Wang, Zixiao Jolene and Fronsdal, Kai and Li, Ying and Poindexter Jr., Donald and Kaushik, Rakshit and Liu, Shurui and Denisov-Blanch, Yegor and Dillmann, Steven and Obstbaum, Simon and Cuellar, Santiago and Sarracino, John and Schaeffer, Rylan and Tiwari, Mo and Lee, Donghyun and Han, Bo and Koyejo, Sanmi},\n  year={2026},\n  note={Stanford University \\& Vals AI Benchmark Preview, Experiment 173}\n}"
+  }
+}</script>
+  <script>
+    (function () {
+      const DATA = JSON.parse(document.getElementById("veribench-data").textContent);
+      const VIEW = DATA.vals_benchmark_view;
+
+      const state = {
+        suite: "vb_priv_214",
+        metric: "harsh",
+        xAxis: "cost",
+        logScale: true,
+        pareto: true,
+        showContrasts: true,
+        provider: "all",
+        sortKey: "score",
+        sortAsc: false,
+        expandedKey: null
+      };
+
+      function providerGroup(p) {
+        if (!p) return "Other";
+        if (p === "Anthropic" || p === "OpenAI" || p === "Open-Weight") return p;
+        return "Other";
+      }
+
+      function providerColor(p) {
+        if (p === "Anthropic") return "#b65336";
+        if (p === "OpenAI") return "#1e6f5c";
+        if (p === "Open-Weight") return "#2E7D52";
+        return "#52616b";
+      }
+
+      function fmtPct(v) {
+        if (v === null || v === undefined || Number.isNaN(v)) return "—";
+        return (v * 100).toFixed(2) + "%";
+      }
+
+      function fmtTokens(t) {
+        if (!t || !t.total) return "not recorded";
+        if (t.total >= 1e6) return (t.total / 1e6).toFixed(2) + "M";
+        if (t.total >= 1e3) return Math.round(t.total / 1e3) + "k";
+        return String(t.total);
+      }
+
+      function fmtLatencyMin(m) {
+        if (m.latency_median_min !== undefined && m.latency_median_min !== null) {
+          return m.latency_median_min.toFixed(1) + " min";
+        }
+        if (m.latency !== undefined && m.latency !== null) {
+          return (m.latency / 60).toFixed(1) + " min";
+        }
+        return "not recorded";
+      }
+
+      function getScoreValue(suiteId, m) {
+        if (suiteId === "operational_telemetry") {
+          if (state.xAxis === "latency") return m.latency !== undefined && m.latency !== null ? -(m.latency) : null;
+          return m.cost_per_test !== undefined && m.cost_per_test !== null ? m.cost_per_test : null;
+        }
+        if (state.metric === "harsh") {
+          if (m.accuracy !== null && m.accuracy !== undefined) return m.accuracy;
+          if (m.harsh_int !== null && m.harsh_int !== undefined) return m.harsh_int;
+          return null;
+        }
+        if (m.tie_breaker_score !== null && m.tie_breaker_score !== undefined) return m.tie_breaker_score;
+        return null;
+      }
+
+      function getXValue(m) {
+        if (state.xAxis === "cost") {
+          return m.cost_per_test !== undefined ? m.cost_per_test : null;
+        }
+        if (m.latency_median_min !== undefined && m.latency_median_min !== null) return m.latency_median_min;
+        if (m.latency !== undefined && m.latency !== null) return m.latency / 60.0;
+        return null;
+      }
+
+      function getFilteredRows() {
+        const suiteObj = VIEW[state.suite];
+        const rows = Object.entries(suiteObj.models).map(([key, m]) => ({ key, ...m }));
+        return rows.filter(r => {
+          if (!state.showContrasts && r.is_primary === false) return false;
+          if (state.provider === "all") return true;
+          return providerGroup(r.provider) === state.provider;
+        });
+      }
+
+      function renderBanner() {
+        const s = VIEW[state.suite];
+        const banner = document.getElementById("suite-banner");
+        if (state.suite === "vb_priv_214") {
+          banner.innerHTML =
+            "<div><strong>Held-Out Private (vb-priv, n=214):</strong> 107 Validation + 107 Test. Historical DT changed 0/214 recorded harsh outcomes (209/214 DT agreed); separate 11-06 replay verified 214/214 tasks across 87,714 cases.</div>" +
+            "<div class='mono'>Primary: Harsh int_ref &amp; Smooth int_ref</div>";
+        } else if (state.suite === "public_vbv1_896") {
+          banner.innerHTML =
+            "<div><strong>Public VeriBench V1 (veribench@1.3, n=896):</strong> 614 Core + 282 IndustrySet evaluated without DT (<code>no DT</code>) under final per-property <code>IC_tests</code>. Exp 172 uses a separate judge/test rule and is flagged accordingly.</div>" +
+            "<div class='mono'>Primary: HCSCv_int_ref / SCSCv_int_ref</div>";
+        } else if (state.suite === "tiny_vbv1_256") {
+          banner.innerHTML =
+            "<div><strong>TinyVeriBench-256 (n=256; 247 DT-ready):</strong> Diagnostic subset comparing <code>DT</code> Core/Int_ref pass rates and case agreement against <code>no DT</code> HCSCv_int_ref across frontier and open-weight baselines.</div>" +
+            "<div class='mono'>247 DT-ready / 256 tasks</div>";
+        } else {
+          banner.innerHTML =
+            "<div><strong>Operational Sweep:</strong> Combines Exp 109 (8 public Terminus 2 systems on 896 tasks; 9th internal pre-release model withheld), Exp 95 (GPT-6 Luna), Exp 16 private telemetry, and 7 Core-614 Pi open-weight latency profiles.</div>" +
+            "<div class='mono'>Cost · Tokens · Wall-Clock Time</div>";
+        }
+      }
+
+      function renderChart(rows) {
+        const svg = document.getElementById("scatter-svg");
+        const titleEl = document.getElementById("chart-title");
+        const subEl = document.getElementById("chart-subtitle");
+        const unmeasuredEl = document.getElementById("unmeasured-strip");
+
+        if (state.suite === "operational_telemetry") {
+          if (state.xAxis === "latency") {
+            titleEl.textContent = "Operational Profile: Core-614 Median Latency & Timeouts (Pi 1.4.0, Open-Weight)";
+            subEl.textContent = "Median wall-clock duration per task on Core-614 (900s cap on standard Pi runs; $0.00 API cost)";
+          } else {
+            titleEl.textContent = "Operational Profile: Per-Task API Cost ($) Across 896 Tasks (Exp 109 & Exp 95)";
+            subEl.textContent = "Terminus 2 runs across 8 public models (14,400s cap) plus GPT-6 Luna (Exp 95); toggle X-Axis to Latency for Core-614 Pi profiles";
+          }
+          renderOperationalBarChart(svg, rows);
+          unmeasuredEl.textContent = VIEW.operational_telemetry.exp109_withheld_note;
+          return;
+        }
+
+        const scoreLabel = state.metric === "harsh" ? "Harsh Pass (%)" : "Smooth Score / Upper Bound (%)";
+        const xLabel = state.xAxis === "cost" ? "Median Cost per Task ($ USD)" : "Median Duration per Task (min)";
+        titleEl.textContent = scoreLabel + " vs. " + xLabel;
+        subEl.textContent = (state.logScale ? "Log-scaled X axis · " : "Linear X axis · ") + "Primary & contrast evaluations tagged separately";
+
+        const plottable = [];
+        const missing = [];
+        rows.forEach(r => {
+          const y = getScoreValue(state.suite, r);
+          const x = getXValue(r);
+          if (y === null || x === null || r.is_primary === false) {
+            missing.push(r.display_name + (r.is_primary === false ? " (contrast row)" : " (missing " + (y === null ? "accuracy" : state.xAxis) + ")"));
+          } else {
+            plottable.push({ ...r, xRaw: x, yVal: y * 100.0 });
+          }
+        });
+
+        unmeasuredEl.textContent = missing.length
+          ? "Not plotted in scatter (kept in table below): " + missing.join(" · ")
+          : "All filtered primary models plotted.";
+
+        const W = 920, H = 340;
+        const pad = { l: 64, r: 28, t: 22, b: 48 };
+        const cw = W - pad.l - pad.r;
+        const ch = H - pad.t - pad.b;
+
+        if (!plottable.length) {
+          svg.innerHTML = `<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="#4b5a51" font-family="var(--sans)" font-size="14">No models in this filter have paired score and ${state.xAxis} telemetry — inspect full rows in the table below.</text>`;
+          return;
+        }
+
+        const xEps = state.xAxis === "cost" ? 0.05 : 0.5;
+        const xs = plottable.map(d => d.xRaw);
+        const xMinRaw = Math.min(...xs);
+        const xMaxRaw = Math.max(...xs);
+
+        function tx(val) {
+          if (state.logScale) {
+            const lo = Math.log10(Math.max(xMinRaw, xEps) * 0.65);
+            const hi = Math.log10(Math.max(xMaxRaw, xEps * 2) * 1.45);
+            return pad.l + ((Math.log10(Math.max(val, xEps)) - lo) / Math.max(1e-6, hi - lo)) * cw;
+          }
+          const span = Math.max(0.5, xMaxRaw * 1.15);
+          return pad.l + (val / span) * cw;
+        }
+        function ty(pct) {
+          return pad.t + ch - (Math.max(0, Math.min(100, pct)) / 100.0) * ch;
+        }
+
+        let html = "";
+        [0, 25, 50, 75, 100].forEach(tick => {
+          const y = ty(tick);
+          html += `<line x1="${pad.l}" y1="${y}" x2="${W - pad.r}" y2="${y}" stroke="#e8efe9" stroke-width="1" />`;
+          html += `<text x="${pad.l - 10}" y="${y + 4}" text-anchor="end" fill="#5e6e64" font-family="var(--mono)" font-size="11">${tick}%</text>`;
+        });
+
+        html += `<line x1="${pad.l}" y1="${pad.t}" x2="${pad.l}" y2="${H - pad.b}" stroke="#b9c9be" stroke-width="1.2" />`;
+        html += `<line x1="${pad.l}" y1="${H - pad.b}" x2="${W - pad.r}" y2="${H - pad.b}" stroke="#b9c9be" stroke-width="1.2" />`;
+        html += `<text x="${pad.l + cw / 2}" y="${H - 10}" text-anchor="middle" fill="#4b5a51" font-family="var(--mono)" font-size="11.5">${xLabel}</text>`;
+
+        const xTicks = Array.from(new Set(plottable.map(d => d.xRaw))).sort((a, b) => a - b);
+        xTicks.forEach(xt => {
+          const xp = tx(xt);
+          const lbl = state.xAxis === "cost" ? (xt === 0 ? "$0 (API)" : "$" + xt.toFixed(2)) : xt.toFixed(1) + "m";
+          html += `<line x1="${xp}" y1="${H - pad.b}" x2="${xp}" y2="${H - pad.b + 5}" stroke="#93a79a" />`;
+          html += `<text x="${xp}" y="${H - pad.b + 18}" text-anchor="middle" fill="#5e6e64" font-family="var(--mono)" font-size="10.5">${lbl}</text>`;
+        });
+
+        if (state.pareto && plottable.length >= 2) {
+          const sorted = [...plottable].sort((a, b) => a.xRaw - b.xRaw || b.yVal - a.yVal);
+          const frontier = [];
+          let bestY = -1;
+          sorted.forEach(pt => {
+            if (pt.yVal >= bestY) {
+              frontier.push(pt);
+              bestY = pt.yVal;
+            }
+          });
+          if (frontier.length >= 2) {
+            const ptsStr = frontier.map(pt => `${tx(pt.xRaw).toFixed(1)},${ty(pt.yVal).toFixed(1)}`).join(" ");
+            html += `<polyline fill="none" stroke="#386b46" stroke-width="2" stroke-dasharray="5 4" points="${ptsStr}" />`;
+          }
+        }
+
+        plottable.forEach((pt, idx) => {
+          const cx = tx(pt.xRaw);
+          const cy = ty(pt.yVal);
+          const col = providerColor(pt.provider);
+          const nearBottom = cy > pad.t + ch - 26;
+          const dyOff = nearBottom ? -12 - (idx % 2) * 14 : (idx % 2 === 0 ? -12 : 17);
+          const anchor = cx > W - 190 ? "end" : (cx < pad.l + 110 ? "start" : "middle");
+          const dxOff = anchor === "start" ? 8 : (anchor === "end" ? -8 : 0);
+          html += `<g style="cursor:pointer" data-key="${pt.key}">`;
+          html += `<circle cx="${cx}" cy="${cy}" r="7" fill="${col}" fill-opacity="0.9" stroke="#ffffff" stroke-width="2" />`;
+          html += `<text x="${cx + dxOff}" y="${cy + dyOff}" text-anchor="${anchor}" fill="#102015" font-family="var(--sans)" font-weight="600" font-size="11.5">${pt.display_name} (${pt.yVal.toFixed(1)}%)</text>`;
+          html += `</g>`;
+        });
+
+        svg.innerHTML = html;
+        svg.querySelectorAll("g[data-key]").forEach(el => {
+          el.addEventListener("click", () => {
+            state.expandedKey = el.getAttribute("data-key");
+            renderTable(rows);
+          });
+        });
+      }
+
+      function renderOperationalBarChart(svg, rows) {
+        const W = 920, H = 340, pad = { l: 210, r: 150, t: 20, b: 36 };
+        const cw = W - pad.l - pad.r;
+        const ch = H - pad.t - pad.b;
+        const isLatency = state.xAxis === "latency";
+        const barRows = isLatency
+          ? rows.filter(r => r.latency !== undefined && r.latency !== null).sort((a, b) => a.latency - b.latency)
+          : rows.filter(r => r.cost_per_test !== undefined && r.cost_per_test !== null && r.cost_per_test > 0).sort((a, b) => a.cost_per_test - b.cost_per_test);
+        if (!barRows.length) {
+          svg.innerHTML = `<text x="${W/2}" y="${H/2}" text-anchor="middle" fill="#4b5a51" font-family="var(--sans)" font-size="14">No operational ${isLatency ? "latency" : "API cost"} rows match the current family filter — clear the filter or switch X-Axis.</text>`;
+          return;
+        }
+        const maxVal = Math.max(...barRows.map(r => isLatency ? r.latency : r.cost_per_test), 1);
+        const barH = Math.min(26, Math.floor(ch / barRows.length) - 6);
+        let html = "";
+        barRows.forEach((r, i) => {
+          const val = isLatency ? r.latency : r.cost_per_test;
+          const y = pad.t + i * (ch / barRows.length) + 4;
+          const bw = (val / maxVal) * cw;
+          const col = providerColor(r.provider);
+          const metricLbl = isLatency
+            ? `${val.toFixed(1)}s med (mean ${r.latency_mean_s}s) · ${r.timeouts} TO`
+            : `$${val.toFixed(4).replace(/00$/, "")}/task · ${r.timeouts || "n/a"} TO`;
+          html += `<text x="${pad.l - 10}" y="${y + barH * 0.72}" text-anchor="end" fill="#102015" font-family="var(--sans)" font-size="12">${r.display_name} (${r.harness})</text>`;
+          html += `<rect x="${pad.l}" y="${y}" width="${Math.max(4, bw)}" height="${barH}" rx="4" fill="${col}" fill-opacity="0.85" />`;
+          html += `<text x="${pad.l + bw + 8}" y="${y + barH * 0.72}" fill="#386b46" font-family="var(--mono)" font-size="11.5">${metricLbl}</text>`;
+        });
+        svg.innerHTML = html;
+      }
+
+      function renderTable(rows) {
+        const thead = document.getElementById("lb-thead");
+        const tbody = document.getElementById("lb-tbody");
+
+        const sorted = [...rows].sort((a, b) => {
+          const ka = sortMetric(a, state.sortKey);
+          const kb = sortMetric(b, state.sortKey);
+          if (ka === null && kb === null) return 0;
+          if (ka === null) return 1;
+          if (kb === null) return -1;
+          return state.sortAsc ? (ka > kb ? 1 : -1) : (ka < kb ? 1 : -1);
+        });
+
+        if (state.suite === "operational_telemetry") {
+          thead.innerHTML = `<tr>
+            <th data-sort="name">Model</th>
+            <th>Harness</th>
+            <th>Effort / Suite</th>
+            <th data-sort="cost">Cost / Task</th>
+            <th>Tokens (Median)</th>
+            <th data-sort="latency">Latency / Timeouts</th>
+            <th>Outcome / Notes</th>
+          </tr>`;
+          tbody.innerHTML = sorted.map(r => {
+            const costStr = r.cost_per_test === 0 ? "$0.00 (API)" : (r.cost_per_test ? "$" + r.cost_per_test.toFixed(4).replace(/00$/, "") : "—");
+            const latStr = r.latency ? `${r.latency}s med (mean ${r.latency_mean_s}s)` : (r.cap_s ? `${r.cap_s}s cap` : "—");
+            const noteStr = r.compiles ? `Compiles ${r.compiles}, IC_tests ${r.ic_tests}, IC_proofs ${r.ic_proofs}` : (r.notes || `Cap ${r.cap_s || "n/a"}s`);
+            return `<tr class="main-row">
+              <td><strong>${r.display_name}</strong> <span class="badge ${r.provider === 'Open-Weight' ? 'badge-open' : 'badge-prop'}">${r.provider}</span></td>
+              <td class="mono">${r.harness || "—"}</td>
+              <td class="mono">${r.reasoning_effort || "default"} · ${r.suite}</td>
+              <td class="score-strong">${costStr}</td>
+              <td class="mono">${fmtTokens(r.token_totals)}</td>
+              <td class="mono">${latStr} · ${r.timeouts || "0"}</td>
+              <td>${noteStr}</td>
+            </tr>`;
+          }).join("");
+          bindSortHeaders(rows);
+          return;
+        }
+
+        const primaryColTitle = state.suite === "tiny_vbv1_256" ? "Core Harsh DT (n=247)" : (state.suite === "vb_priv_214" ? "Harsh int_ref (n=214)" : "HCSCv_int_ref (n=896)");
+        const secondaryColTitle = state.suite === "tiny_vbv1_256" ? "Core Smooth DT / no-DT" : (state.suite === "vb_priv_214" ? "Smooth int_ref (no DT / DT)" : "SCSCv Bound / Interval");
+
+        thead.innerHTML = `<tr>
+          <th data-sort="name">Model</th>
+          <th>Harness</th>
+          <th>Effort</th>
+          <th>Eval &amp; Checker Tag</th>
+          <th data-sort="score">${primaryColTitle}</th>
+          <th data-sort="smooth">${secondaryColTitle}</th>
+          <th data-sort="cost">Cost / Task</th>
+          <th>Median Tokens</th>
+          <th data-sort="latency">Latency / Cap</th>
+        </tr>`;
+
+        let html = "";
+        sorted.forEach(r => {
+          const primaryVal = getScoreValue(state.suite, r);
+          const pctText = r.core_harsh_dt
+            ? r.core_harsh_dt
+            : (r.accuracy_numerator !== undefined && r.accuracy_numerator !== null
+              ? `${r.accuracy_numerator}/${r.accuracy_denominator} (${fmtPct(r.accuracy)})`
+              : (r.harsh_int_k !== undefined ? `Harsh int: ${r.harsh_int_k}/${r.harsh_int_n} (${fmtPct(r.harsh_int)})` : "not measured"));
+          const smoothText = r.smooth_dt !== undefined
+            ? `${r.smooth_no_dt} / ${r.smooth_dt}`
+            : (r.core_smooth_dt !== undefined ? `${r.core_smooth_dt} (no DT: ${r.no_dt_scsc_int_ref_interval})` : (r.smooth_int_ref_bound || r.smooth_int_ref_interval || (r.smooth_int_judged ? `judged int: ${r.smooth_int_judged}` : "—")));
+          const costStr = r.cost_per_test === 0 ? "<span class='badge badge-open'>$0.00 API</span>" : (r.cost_per_test ? `$${r.cost_per_test.toFixed(2)}` : "<span class='badge badge-neutral'>not recorded</span>");
+          const latStr = r.latency_median_min ? `${r.latency_median_min.toFixed(1)}m (${r.latency_timeouts} TO)` : (r.latency_median_s_core614 ? `${r.latency_median_s_core614}s Core-614` : (r.latency_cap_s ? `${r.latency_cap_s}s cap` : "—"));
+          const barWidth = primaryVal !== null ? Math.min(100, Math.max(0, primaryVal * 100)) : 0;
+          const badgeCls = r.is_primary === false ? "badge-warn" : (r.provider === "Open-Weight" ? "badge-open" : "badge-prop");
+          const isOpen = state.expandedKey === r.key;
+
+          html += `<tr class="main-row" data-row-key="${r.key}">
+            <td><strong>${r.display_name}</strong><br><span class="badge ${badgeCls}">${r.provider}</span></td>
+            <td class="mono">${r.harness}</td>
+            <td class="mono">${r.reasoning_effort}</td>
+            <td><span class="badge badge-neutral badge-wrap">${r.eval_mode}</span><br><span style="font-size:11.5px; color:var(--ink-muted)">${r.judge_or_checker}</span></td>
+            <td>
+              <div class="bar-bg"><div class="bar-fill" style="width:${barWidth}%"></div></div>
+              <span class="score-strong">${pctText}</span>
+              ${r.accuracy_ci95_pct_text ? `<br><span class="mono" style="color:var(--ink-muted)">95% CI ${r.accuracy_ci95_pct_text}</span>` : ""}
+            </td>
+            <td class="mono">${smoothText}</td>
+            <td class="mono">${costStr}</td>
+            <td class="mono">${fmtTokens(r.token_totals)}</td>
+            <td class="mono">${latStr}</td>
+          </tr>`;
+
+          const detailParts = [];
+          if (r.validation_split) {
+            detailParts.push(`<strong>Val (n=107):</strong> Harsh ${r.validation_split.harsh_k}/107 (${fmtPct(r.validation_split.harsh_int_ref)}), Smooth ${r.validation_split.smooth_int_ref_no_dt} / ${r.validation_split.smooth_int_ref_dt}`);
+            detailParts.push(`<strong>Test (n=107):</strong> Harsh ${r.test_split.harsh_k}/107 (${fmtPct(r.test_split.harsh_int_ref)}), Smooth ${r.test_split.smooth_int_ref_no_dt} / ${r.test_split.smooth_int_ref_dt}`);
+          }
+          if (r.dt_agreement_historical) detailParts.push(`<strong>DT Agreement:</strong> ${r.dt_agreement_historical} · 11-06 replay: ${r.dt_agreement_11_06_replay}`);
+          if (r.dt_case_agreement) detailParts.push(`<strong>DT Case Agreement:</strong> ${r.dt_case_agreement} · DT Int_ref Harsh: ${r.dt_int_ref_harsh} · DT Int Harsh: ${r.dt_int_harsh} · no-DT HCSCv_int_ref: ${r.no_dt_hscsc_int_ref}`);
+          if (r.harsh_int_interval) detailParts.push(`<strong>HCSCv_int Interval:</strong> ${r.harsh_int_interval} · <strong>SCSCv_int Interval:</strong> ${r.smooth_int_interval}`);
+          if (r.token_totals && r.token_totals.input) {
+            detailParts.push(`<strong>Token Breakdown (n=${r.token_tasks_measured}):</strong> total ${r.token_totals.total.toLocaleString()} = input ${r.token_totals.input.toLocaleString()} (uncached ${r.token_totals.input_uncached}, cache_read ${r.token_totals.cache_read.toLocaleString()}, cache_write ${r.token_totals.cache_write.toLocaleString()}) + output ${r.token_totals.output.toLocaleString()} (out ${r.token_totals.output_non_reasoning.toLocaleString()}, reasoning ${r.token_totals.reasoning.toLocaleString()})`);
+          }
+          if (r.notes) detailParts.push(`<strong>Notes:</strong> ${r.notes}`);
+
+          html += `<tr class="detail-row ${isOpen ? '' : 'hidden'}" data-detail-key="${r.key}">
+            <td colspan="9">${detailParts.join("<br>")}</td>
+          </tr>`;
+        });
+        tbody.innerHTML = html;
+
+        tbody.querySelectorAll("tr.main-row").forEach(tr => {
+          tr.addEventListener("click", () => {
+            const k = tr.getAttribute("data-row-key");
+            state.expandedKey = state.expandedKey === k ? null : k;
+            renderTable(rows);
+          });
+        });
+        bindSortHeaders(rows);
+      }
+
+      function sortMetric(r, key) {
+        if (key === "name") return r.display_name;
+        if (key === "cost") return r.cost_per_test !== undefined ? r.cost_per_test : null;
+        if (key === "latency") return r.latency_median_min || (r.latency ? r.latency / 60.0 : null);
+        if (key === "smooth") return r.tie_breaker_score !== undefined ? r.tie_breaker_score : null;
+        return getScoreValue(state.suite, r);
+      }
+
+      function bindSortHeaders(rows) {
+        document.querySelectorAll("#lb-thead th[data-sort]").forEach(th => {
+          th.addEventListener("click", () => {
+            const key = th.getAttribute("data-sort");
+            if (state.sortKey === key) state.sortAsc = !state.sortAsc;
+            else { state.sortKey = key; state.sortAsc = key === "name" || key === "cost" || key === "latency"; }
+            renderTable(rows);
+          });
+        });
+      }
+
+      function renderAll() {
+        renderBanner();
+        const rows = getFilteredRows();
+        renderChart(rows);
+        renderTable(rows);
+      }
+
+      document.getElementById("suite-tabs").addEventListener("click", e => {
+        const btn = e.target.closest("[data-suite]");
+        if (!btn) return;
+        document.querySelectorAll("#suite-tabs .tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.suite = btn.getAttribute("data-suite");
+        state.expandedKey = null;
+        renderAll();
+      });
+
+      document.getElementById("metric-toggle-group").addEventListener("click", e => {
+        const btn = e.target.closest("[data-metric]");
+        if (!btn) return;
+        document.querySelectorAll("#metric-toggle-group .seg-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.metric = btn.getAttribute("data-metric");
+        renderAll();
+      });
+
+      document.getElementById("xaxis-toggle-group").addEventListener("click", e => {
+        const btn = e.target.closest("[data-x]");
+        if (!btn) return;
+        document.querySelectorAll("#xaxis-toggle-group .seg-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.xAxis = btn.getAttribute("data-x");
+        renderAll();
+      });
+
+      document.getElementById("provider-chips").addEventListener("click", e => {
+        const btn = e.target.closest("[data-provider]");
+        if (!btn) return;
+        document.querySelectorAll("#provider-chips .chip-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        state.provider = btn.getAttribute("data-provider");
+        renderAll();
+      });
+
+      document.getElementById("chk-log").addEventListener("change", e => { state.logScale = e.target.checked; renderAll(); });
+      document.getElementById("chk-pareto").addEventListener("change", e => { state.pareto = e.target.checked; renderAll(); });
+      document.getElementById("chk-contrasts").addEventListener("change", e => { state.showContrasts = e.target.checked; renderAll(); });
+
+      document.getElementById("btn-download-json").addEventListener("click", () => {
+        const blob = new Blob([JSON.stringify(DATA, null, 2)], { type: "application/json" });
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = "veribench_leaderboard_metadata.json";
+        a.click();
+      });
+
+      document.getElementById("btn-copy-bib").addEventListener("click", async () => {
+        const txt = document.getElementById("bibtex-block").textContent;
+        try {
+          await navigator.clipboard.writeText(txt);
+          document.getElementById("btn-copy-bib").textContent = "Copied BibTeX!";
+          setTimeout(() => { document.getElementById("btn-copy-bib").textContent = "Copy BibTeX"; }, 1800);
+        } catch (_err) {}
+      });
+
+      renderAll();
+    })();
+  </script>
+</body>
+</html>

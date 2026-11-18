@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="green">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>VeriBench One-Slide Summary | Vals AI Preview</title>
+  <style>
+    @font-face {
+      font-family: "Soehne";
+      src: url("https://www.vals.ai/fonts/Soehne/soehne-buch.woff2") format("woff2");
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Soehne";
+      src: url("https://www.vals.ai/fonts/Soehne/soehne-halbfett.woff2") format("woff2");
+      font-weight: 600;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Martina Plantijn";
+      src: url("https://www.vals.ai/fonts/MartinaPlantijn/martina-plantijn-regular.woff2") format("woff2");
+      font-weight: 400;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Berkeley Mono";
+      src: url("https://www.vals.ai/fonts/BerkeleyMono/BerkeleyMono-Regular.woff2") format("woff2");
+      font-weight: 400;
+      font-display: swap;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #edf3ef;
+      color: #102015;
+      font-family: "Soehne", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .slide {
+      width: 100%;
+      max-width: 1220px;
+      background: #ffffff;
+      border: 1px solid #d5e0d8;
+      border-radius: 16px;
+      padding: 32px 36px 26px;
+      box-shadow: 0 12px 34px rgba(16, 32, 21, 0.08);
+    }
+    .slide-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 14px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .kicker {
+      font-family: "Berkeley Mono", monospace;
+      font-size: 11.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #386b46;
+      background: #eef6f0;
+      border: 1px solid #bfe0ca;
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+    h1 {
+      font-family: "Martina Plantijn", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(22px, 2.7vw, 31px);
+      line-height: 1.18;
+      margin: 0 0 18px;
+      color: #102015;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1.35fr 0.95fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+    @media (max-width: 920px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: #f8fbf9;
+      border: 1px solid #d5e0d8;
+      border-radius: 12px;
+      padding: 16px 18px;
+    }
+    .card h2 {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #386b46;
+      margin: 0 0 10px;
+      font-family: "Berkeley Mono", monospace;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.2px;
+    }
+    th, td {
+      padding: 7px 6px;
+      border-bottom: 1px solid #e2ebe4;
+      text-align: left;
+    }
+    th {
+      font-family: "Berkeley Mono", monospace;
+      font-size: 10.5px;
+      text-transform: uppercase;
+      color: #4b5a51;
+    }
+    .mono { font-family: "Berkeley Mono", monospace; font-size: 11.5px; }
+    .bar-row { margin-bottom: 10px; }
+    .bar-lbl { display: flex; justify-content: space-between; font-size: 12.5px; margin-bottom: 4px; }
+    .track { height: 11px; background: #e3ece5; border-radius: 999px; overflow: hidden; }
+    .fill-dark { height: 100%; background: #386b46; }
+    .fill-light { height: 100%; background: #7ab88c; }
+    .caption {
+      margin-top: 16px;
+      padding-top: 12px;
+      border-top: 1px solid #e2ebe4;
+      font-size: 12.5px;
+      color: #4b5a51;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .caption a { color: #386b46; font-weight: 600; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="slide-top">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="https://www.vals.ai/Logos/vals-full.svg" alt="Vals AI" style="height:20px;" />
+        <span class="kicker">VeriBench Initial Summary · Nov 2026</span>
+      </div>
+      <div class="mono" style="color:#4b5a51;">Stanford University × Vals AI</div>
+    </div>
+    <h1>Frontier Agents Translate Code Accurately (99.8% DT Agreement) Set Back by Incomplete Formal Specifications (23.4% Harsh vs. 86.7% Smooth)</h1>
+    <div class="grid">
+      <div class="card">
+        <h2>Headline Benchmark &amp; Telemetry Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Suite</th>
+              <th>Harness / Model (Effort)</th>
+              <th>Harsh Pass (95% CI)</th>
+              <th>Smooth</th>
+              <th>Cost / Tokens / Latency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">Held-Out 214 (DT &amp; no DT)</td>
+              <td>Terminus 2 · Claude Opus 5.5 (<code>max</code>)</td>
+              <td class="mono"><strong>23.36%</strong> (50/214)<br>[18.2%, 29.5%]</td>
+              <td class="mono">0.869 / 0.867</td>
+              <td class="mono">$8.61 · 8.55M tok · 59.6m (0 TO)</td>
+            </tr>
+            <tr>
+              <td class="mono">Held-Out 214 (contrast)</td>
+              <td>Terminus 2 · Opus 5.5 (2-LLM reader)</td>
+              <td class="mono">0.47% (1/214)</td>
+              <td class="mono">0.922 / 0.919</td>
+              <td class="mono">disagreed on 27/211 &amp; 38/211</td>
+            </tr>
+            <tr>
+              <td class="mono">Held-Out Slice (n=15)</td>
+              <td>Terminus 2 · GPT-6 Astra (<code>xhigh</code>)</td>
+              <td class="mono">not measured (214)</td>
+              <td class="mono">—</td>
+              <td class="mono">$3.36 · 827k tok · 9.3m (0 TO)</td>
+            </tr>
+            <tr>
+              <td class="mono">Held-Out Proxy (n=60/203)</td>
+              <td>Pi 1.4.0 · Qwen3-Coder-30B-A3B-FP8</td>
+              <td class="mono">0/60 harsh int; 11/203 mech IC</td>
+              <td class="mono">—</td>
+              <td class="mono">$0.00 API (1,500s / 2,700s cap)</td>
+            </tr>
+            <tr>
+              <td class="mono">Public 896 (no DT)</td>
+              <td>Terminus 2 · Claude Fable 5.1 (<code>xhigh</code>)</td>
+              <td class="mono"><strong>0.33%</strong> (3/896)<br>[0.1%, 1.0%]</td>
+              <td class="mono">&lt;= 0.938 [0.935, 0.941]</td>
+              <td class="mono">$3.18/task ($2,849.86 · 0 TO)</td>
+            </tr>
+            <tr>
+              <td class="mono">Public 896 (no DT)</td>
+              <td>Terminus 2 · GPT-6 Astra (<code>xhigh</code>)</td>
+              <td class="mono"><strong>0.22%</strong> (2/896)<br>[0.1%, 0.8%]</td>
+              <td class="mono">&lt;= 0.728 [0.713, 0.742]</td>
+              <td class="mono">$1.04/task ($928.28 · 0 TO)</td>
+            </tr>
+            <tr>
+              <td class="mono">Public 896 (no DT)</td>
+              <td>Pi 1.4.0 · Qwen3-14B (<code>thinking-on</code>)</td>
+              <td class="mono">0–1/896 [0.0%, 0.6%]</td>
+              <td class="mono">0.000–0.0524</td>
+              <td class="mono">$0.00 API (1,800s cap)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h2>Why Hard Tasks Fail &amp; Verification Strength</h2>
+        <div class="bar-row">
+          <div class="bar-lbl"><span>Held-Out DT Agreement (209/214 all-case)</span><strong class="mono">99.8%</strong></div>
+          <div class="track"><div class="fill-dark" style="width:99.8%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lbl"><span>Held-Out Smooth int_ref (Opus 5.5, DT)</span><strong class="mono">86.7%</strong></div>
+          <div class="track"><div class="fill-light" style="width:86.7%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lbl"><span>Held-Out Harsh int_ref (0.0% Val–Test gap)</span><strong class="mono">23.4%</strong></div>
+          <div class="track"><div class="fill-dark" style="width:23.4%"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-lbl"><span>Public 896 Strict HCSCv_int_ref (Fable 5.1)</span><strong class="mono">0.33%</strong></div>
+          <div class="track"><div class="fill-dark" style="width:1%"></div></div>
+        </div>
+        <div style="font-size:12.2px; color:#2b3d32; margin-top:14px; line-height:1.5;">
+          <strong>Lean FSC Prover Validation (one-sided ruler, n=1,024+):</strong>
+          <ul style="margin:6px 0 0 18px; padding:0;">
+            <li>Sensitivity (<code>P_D</code>): <code>132/132</code> + <code>334/334</code> known-true rewrites pass.</li>
+            <li>False acceptance (<code>P_F</code>): <code>0/499</code> Lean-certified false specs pass (&lt;= 0.8% 95% bound); <code>0/72</code> vacuous, <code>0/72</code> contradictory.</li>
+            <li>Private DT Replay (11-06): <code>214/214</code> tasks agreed across <code>87,714</code> cases (<code>642/642</code> processes).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="caption">
+      <span>Caption: Differential Testing (DT) confirms Lean code fidelity, while Formal Specification Coverage (FSC) drives the 86.7% Smooth to 23.4% Harsh gap on held-out Python-to-Lean autoformalization.</span>
+      <a href="index.html">Open Full Interactive Preview &rarr;</a>
+    </div>
+  </div>
+</body>
+</html>
