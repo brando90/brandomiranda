@@ -568,7 +568,7 @@
           <div class="stat-card">
             <div class="stat-label">Public VeriBench V1</div>
             <div class="stat-value">896 tasks</div>
-            <div class="stat-note">614 Core + 282 IndustrySet (no DT)</div>
+            <div class="stat-note">all six splits (no DT)</div>
           </div>
           <div class="stat-card">
             <div class="stat-label">Held-Out Private (vb-priv)</div>
@@ -664,7 +664,7 @@
       <h2>Background, Task Contract, and Scoring Methodology</h2>
       <p>
         VeriBench evaluates autonomous software verification end-to-end: given a public Python reference module and five explicit input/output examples, an agent outputs a self-contained Lean 4 development containing executable code, unit/property checks, formal pre-/postconditions and behavioral specifications, and complete kernel-checked proofs.
-        All scoring rejects <code>sorry</code>, added axioms, and theorem-level <code>native_decide</code>, requiring transitive proof axioms to remain strictly within Lean's standard core triple <code>&#123;propext, Classical.choice, Quot.sound&#125;</code>.
+        All scoring rejects <code>sorry</code>, added axioms, and theorem-level <code>native_decide</code>, requiring transitive proof axioms to remain strictly within Lean's standard axiom triple <code>&#123;propext, Classical.choice, Quot.sound&#125;</code>.
       </p>
       <div class="two-col">
         <div class="subcard">
@@ -1029,7 +1029,11 @@ day_of_year raises ValueError when the date is not valid.</pre>
       "display_name": "Public VeriBench V1 (veribench@1.3)",
       "tasks": 896,
       "split": {
-        "core": 614,
+        "easy_set": 41,
+        "cs_set": 25,
+        "humaneval": 56,
+        "realcode_set": 32,
+        "security_set": 460,
         "industry_set": 282
       },
       "primary_metric": "HCSCv_int_ref (no DT, final per-property IC_tests)",
@@ -1190,7 +1194,7 @@ day_of_year raises ValueError when the date is not valid.</pre>
           "model_id": "Qwen/Qwen3-14B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0 (vLLM 0.11.0 bf16)",
-          "reasoning_effort": "thinking-off (1,800s cap; 900s Core-614 run)",
+          "reasoning_effort": "thinking-off (900s cap)",
           "eval_mode": "no DT (final per-property IC_tests)",
           "judge_or_checker": "VeriBench v3 scorer + FSC judge",
           "accuracy": 0.0,
@@ -1208,13 +1212,13 @@ day_of_year raises ValueError when the date is not valid.</pre>
           "cost_per_test": 0.0,
           "cost_mean_usd": 0.0,
           "latency": 900.0,
-          "latency_median_s_core614": 900.0,
-          "latency_mean_s_core614": 803.8,
-          "latency_timeouts_core614": "379/614",
+          "latency_median_s_614tasks": 900.0,
+          "latency_mean_s_614tasks": 803.8,
+          "latency_timeouts": "536/896",
           "stderr": 0.0,
           "token_totals": null,
           "is_primary": true,
-          "notes": "Local GPU inference ($0 API cost). Core-614 duration telemetry: median 900.0s, mean 803.8s, 379/614 timeouts."
+          "notes": "Local GPU inference ($0 API cost). Duration telemetry exists for 614 of 896 tasks; IndustrySet solver durations are missing, although the model ran all 896 tasks. On the recorded durations: median 900.0s, mean 803.8s. Timeouts over all tasks: 536/896."
         },
         "qwen3-14b-pi-thinking-on": {
           "display_name": "Qwen3-14B (thinking-on)",
@@ -1250,7 +1254,7 @@ day_of_year raises ValueError when the date is not valid.</pre>
           "model_id": "Qwen/Qwen2.5-Coder-14B-Instruct",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0 (vLLM)",
-          "reasoning_effort": "default (Core-614 900s / 896 1,800s)",
+          "reasoning_effort": "default (900s cap)",
           "eval_mode": "no DT (final per-property IC_tests)",
           "judge_or_checker": "VeriBench v3 scorer + FSC judge",
           "accuracy": 0.0011,
@@ -1268,13 +1272,13 @@ day_of_year raises ValueError when the date is not valid.</pre>
           "cost_per_test": 0.0,
           "cost_mean_usd": 0.0,
           "latency": 168.8,
-          "latency_median_s_core614": 168.8,
-          "latency_mean_s_core614": 340.1,
-          "latency_timeouts_core614": "78/614",
+          "latency_median_s_614tasks": 168.8,
+          "latency_mean_s_614tasks": 340.1,
+          "latency_timeouts": "119/896",
           "stderr": null,
           "token_totals": null,
           "is_primary": true,
-          "notes": "Local GPU inference ($0 API cost). Core-614 duration telemetry: median 168.8s, mean 340.1s, 78/614 timeouts."
+          "notes": "Local GPU inference ($0 API cost). Duration telemetry exists for 614 of 896 tasks; IndustrySet solver durations are missing, although the model ran all 896 tasks. On the recorded durations: median 168.8s, mean 340.1s. Timeouts over all tasks: 119/896."
         }
       }
     },
@@ -1283,8 +1287,8 @@ day_of_year raises ValueError when the date is not valid.</pre>
       "display_name": "TinyVeriBench-256 (Diagnostic API Subset)",
       "tasks": 256,
       "dt_ready_tasks": 247,
-      "primary_metric": "DT Core Harsh (n=247) + DT Int_ref (n=256) + no-DT HCSCv_int_ref",
-      "tie_breaker_metric": "Core smooth DT (n=247) / SCSCv_int_ref (n=256)",
+      "primary_metric": "DT Harsh (n=247) + DT Int_ref (n=256) + no-DT HCSCv_int_ref",
+      "tie_breaker_metric": "Smooth DT (n=247) / SCSCv_int_ref (n=256)",
       "models": {
         "claude-fable-5-1-tiny256": {
           "display_name": "Claude Fable 5.1",
@@ -1299,8 +1303,8 @@ day_of_year raises ValueError when the date is not valid.</pre>
             0.8138,
             0.8998
           ],
-          "core_harsh_dt": "213/247 (86.2%)",
-          "core_smooth_dt": 0.965,
+          "harsh_dt": "213/247 (86.2%)",
+          "smooth_dt": 0.965,
           "dt_case_agreement": "245/247 (99.88%)",
           "dt_int_ref_harsh": "0 to 5/256",
           "dt_int_harsh": "0 to 43/256",
@@ -1326,8 +1330,8 @@ day_of_year raises ValueError when the date is not valid.</pre>
             0.8004,
             0.8893
           ],
-          "core_harsh_dt": "210/247 (85.0%)",
-          "core_smooth_dt": 0.959,
+          "harsh_dt": "210/247 (85.0%)",
+          "smooth_dt": 0.959,
           "dt_case_agreement": "245/247 (99.98%)",
           "dt_int_ref_harsh": "0 to 1/256",
           "dt_int_harsh": "0 to 9/256",
@@ -1353,8 +1357,8 @@ day_of_year raises ValueError when the date is not valid.</pre>
             0.6999,
             0.8064
           ],
-          "core_harsh_dt": "187/247 (75.7%)",
-          "core_smooth_dt": 0.932,
+          "harsh_dt": "187/247 (75.7%)",
+          "smooth_dt": 0.932,
           "dt_case_agreement": "240/247 (99.22%)",
           "dt_int_ref_harsh": "0 to 1/256",
           "dt_int_harsh": "0 to 1/256",
@@ -1380,8 +1384,8 @@ day_of_year raises ValueError when the date is not valid.</pre>
             0.6744,
             0.7841
           ],
-          "core_harsh_dt": "181/247 (73.3%)",
-          "core_smooth_dt": 0.922,
+          "harsh_dt": "181/247 (73.3%)",
+          "smooth_dt": 0.922,
           "dt_case_agreement": "244/247 (99.76%)",
           "dt_int_ref_harsh": "0 to 2/256",
           "dt_int_harsh": "0 to 2/256",
@@ -1434,7 +1438,7 @@ day_of_year raises ValueError when the date is not valid.</pre>
     },
     "operational_telemetry": {
       "suite_id": "operational_telemetry",
-      "display_name": "Operational Sweep (Exp 109 Cost + Exp 95 GPT-6 Luna + Core-614 Pi Latency)",
+      "display_name": "Operational Sweep (Exp 109 Cost + Exp 95 GPT-6 Luna + Pi Latency on 614 of 896 Tasks)",
       "tasks": 896,
       "exp109_withheld_models_count": 1,
       "exp109_withheld_note": "9th internal pre-release model from Experiment 109 is withheld per Vals confidentiality policy.",
@@ -1549,75 +1553,75 @@ day_of_year raises ValueError when the date is not valid.</pre>
           },
           "notes": "FSC unavailable due to retired host judge gateway HTTP errors; $0.0092 median / $0.0119 mean per task, 179.3k median tokens, 12 median turns."
         },
-        "core614-hermes-3-8b": {
+        "pi614-hermes-3-8b": {
           "display_name": "Hermes-3-8B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "614 of 896 tasks, IndustrySet not run (n=614)",
           "cost_per_test": 0.0,
           "latency": 32.3,
           "latency_mean_s": 49.5,
           "timeouts": "0/614"
         },
-        "core614-qwen2-5-7b": {
+        "pi614-qwen2-5-7b": {
           "display_name": "Qwen2.5-7B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "614 of 896 tasks, IndustrySet not run (n=614)",
           "cost_per_test": 0.0,
           "latency": 61.6,
           "latency_mean_s": 242.0,
           "timeouts": "58/614"
         },
-        "core614-qwen2-5-coder-14b": {
+        "pi614-qwen2-5-coder-14b": {
           "display_name": "Qwen2.5-Coder-14B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "Duration coverage 614/896; IndustrySet durations missing; solver ran all 896",
           "cost_per_test": 0.0,
           "latency": 168.8,
           "latency_mean_s": 340.1,
-          "timeouts": "78/614"
+          "timeouts": "119/896"
         },
-        "core614-qwen3-4b-2507": {
+        "pi614-qwen3-4b-2507": {
           "display_name": "Qwen3-4B-2507",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "614 of 896 tasks, IndustrySet not run (n=614)",
           "cost_per_test": 0.0,
           "latency": 286.6,
           "latency_mean_s": 365.7,
           "timeouts": "75/614"
         },
-        "core614-olmo-3-7b": {
+        "pi614-olmo-3-7b": {
           "display_name": "OLMo-3-7B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "614 of 896 tasks, IndustrySet not run (n=614)",
           "cost_per_test": 0.0,
           "latency": 361.5,
           "latency_mean_s": 426.4,
           "timeouts": "61/614"
         },
-        "core614-qwen3-14b": {
+        "pi614-qwen3-14b": {
           "display_name": "Qwen3-14B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "Duration coverage 614/896; IndustrySet durations missing; solver ran all 896",
           "cost_per_test": 0.0,
           "latency": 900.0,
           "latency_mean_s": 803.8,
-          "timeouts": "379/614"
+          "timeouts": "536/896"
         },
-        "core614-qwen3-8b": {
+        "pi614-qwen3-8b": {
           "display_name": "Qwen3-8B",
           "provider": "Open-Weight",
           "harness": "Pi 1.4.0",
-          "suite": "Core-614 (n=614)",
+          "suite": "Duration coverage 614/896; IndustrySet durations missing; solver ran all 896",
           "cost_per_test": 0.0,
           "latency": 900.0,
           "latency_mean_s": 867.0,
-          "timeouts": "541/614"
+          "timeouts": "789/896"
         }
       }
     }
@@ -1743,15 +1747,15 @@ day_of_year raises ValueError when the date is not valid.</pre>
             "<div class='mono'>Primary: Harsh int_ref &amp; Smooth int_ref</div>";
         } else if (state.suite === "public_vbv1_896") {
           banner.innerHTML =
-            "<div><strong>Public VeriBench V1 (veribench@1.3, n=896):</strong> 614 Core + 282 IndustrySet evaluated without DT (<code>no DT</code>) under final per-property <code>IC_tests</code>. Exp 172 uses a separate judge/test rule and is flagged accordingly.</div>" +
+            "<div><strong>Public VeriBench V1 (veribench@1.3, n=896):</strong> all six splits evaluated without DT (<code>no DT</code>) under final per-property <code>IC_tests</code>. Exp 172 uses a separate judge/test rule and is flagged accordingly.</div>" +
             "<div class='mono'>Primary: HCSCv_int_ref / SCSCv_int_ref</div>";
         } else if (state.suite === "tiny_vbv1_256") {
           banner.innerHTML =
-            "<div><strong>TinyVeriBench-256 (n=256; 247 DT-ready):</strong> Diagnostic subset comparing <code>DT</code> Core/Int_ref pass rates and case agreement against <code>no DT</code> HCSCv_int_ref across frontier and open-weight baselines.</div>" +
+            "<div><strong>TinyVeriBench-256 (n=256; 247 DT-ready):</strong> Diagnostic subset comparing <code>DT</code> harsh/Int_ref pass rates and case agreement against <code>no DT</code> HCSCv_int_ref across frontier and open-weight baselines.</div>" +
             "<div class='mono'>247 DT-ready / 256 tasks</div>";
         } else {
           banner.innerHTML =
-            "<div><strong>Operational Sweep:</strong> Combines Exp 109 (8 public Terminus 2 systems on 896 tasks; 9th internal pre-release model withheld), Exp 95 (GPT-6 Luna), Exp 16 private telemetry, and 7 Core-614 Pi open-weight latency profiles.</div>" +
+            "<div><strong>Operational Sweep:</strong> Combines Exp 109 (8 public Terminus 2 systems on 896 tasks; 9th internal pre-release model withheld), Exp 95 (GPT-6 Luna), Exp 16 private telemetry, and 7 Pi open-weight (614 of 896 tasks) latency profiles.</div>" +
             "<div class='mono'>Cost · Tokens · Wall-Clock Time</div>";
         }
       }
@@ -1764,11 +1768,11 @@ day_of_year raises ValueError when the date is not valid.</pre>
 
         if (state.suite === "operational_telemetry") {
           if (state.xAxis === "latency") {
-            titleEl.textContent = "Operational Profile: Core-614 Median Latency & Timeouts (Pi 1.4.0, Open-Weight)";
-            subEl.textContent = "Median wall-clock duration per task on Core-614 (900s cap on standard Pi runs; $0.00 API cost)";
+            titleEl.textContent = "Operational Profile: Median Latency on 614 of 896 Tasks & Timeouts (Pi 1.4.0, Open-Weight)";
+            subEl.textContent = "Median wall-clock duration recorded for 614 of 896 tasks; IndustrySet durations missing (900s cap; $0.00 API cost). Timeout counts use all tasks run by each model.";
           } else {
             titleEl.textContent = "Operational Profile: Per-Task API Cost ($) Across 896 Tasks (Exp 109 & Exp 95)";
-            subEl.textContent = "Terminus 2 runs across 8 public models (14,400s cap) plus GPT-6 Luna (Exp 95); toggle X-Axis to Latency for Core-614 Pi profiles";
+            subEl.textContent = "Terminus 2 runs across 8 public models (14,400s cap) plus GPT-6 Luna (Exp 95); toggle X-Axis to Latency for the 614-task Pi profiles";
           }
           renderOperationalBarChart(svg, rows);
           unmeasuredEl.textContent = VIEW.operational_telemetry.exp109_withheld_note;
@@ -1953,8 +1957,8 @@ day_of_year raises ValueError when the date is not valid.</pre>
           return;
         }
 
-        const primaryColTitle = state.suite === "tiny_vbv1_256" ? "Core Harsh DT (n=247)" : (state.suite === "vb_priv_214" ? "Harsh int_ref (n=214)" : "HCSCv_int_ref (n=896)");
-        const secondaryColTitle = state.suite === "tiny_vbv1_256" ? "Core Smooth DT / no-DT" : (state.suite === "vb_priv_214" ? "Smooth int_ref (no DT / DT)" : "SCSCv Bound / Interval");
+        const primaryColTitle = state.suite === "tiny_vbv1_256" ? "Harsh DT (n=247)" : (state.suite === "vb_priv_214" ? "Harsh int_ref (n=214)" : "HCSCv_int_ref (n=896)");
+        const secondaryColTitle = state.suite === "tiny_vbv1_256" ? "Smooth DT / no-DT" : (state.suite === "vb_priv_214" ? "Smooth int_ref (no DT / DT)" : "SCSCv Bound / Interval");
 
         thead.innerHTML = `<tr>
           <th data-sort="name">Model</th>
@@ -1971,16 +1975,16 @@ day_of_year raises ValueError when the date is not valid.</pre>
         let html = "";
         sorted.forEach(r => {
           const primaryVal = getScoreValue(state.suite, r);
-          const pctText = r.core_harsh_dt
-            ? r.core_harsh_dt
+          const pctText = r.harsh_dt
+            ? r.harsh_dt
             : (r.accuracy_numerator !== undefined && r.accuracy_numerator !== null
               ? `${r.accuracy_numerator}/${r.accuracy_denominator} (${fmtPct(r.accuracy)})`
               : (r.harsh_int_k !== undefined ? `Harsh int: ${r.harsh_int_k}/${r.harsh_int_n} (${fmtPct(r.harsh_int)})` : "not measured"));
-          const smoothText = r.smooth_dt !== undefined
+          const smoothText = r.smooth_no_dt !== undefined && r.smooth_dt !== undefined
             ? `${r.smooth_no_dt} / ${r.smooth_dt}`
-            : (r.core_smooth_dt !== undefined ? `${r.core_smooth_dt} (no DT: ${r.no_dt_scsc_int_ref_interval})` : (r.smooth_int_ref_bound || r.smooth_int_ref_interval || (r.smooth_int_judged ? `judged int: ${r.smooth_int_judged}` : "—")));
+            : (r.smooth_dt !== undefined ? `${r.smooth_dt} (no DT: ${r.no_dt_scsc_int_ref_interval})` : (r.smooth_int_ref_bound || r.smooth_int_ref_interval || (r.smooth_int_judged ? `judged int: ${r.smooth_int_judged}` : "—")));
           const costStr = r.cost_per_test === 0 ? "<span class='badge badge-open'>$0.00 API</span>" : (r.cost_per_test ? `$${r.cost_per_test.toFixed(2)}` : "<span class='badge badge-neutral'>not recorded</span>");
-          const latStr = r.latency_median_min ? `${r.latency_median_min.toFixed(1)}m (${r.latency_timeouts} TO)` : (r.latency_median_s_core614 ? `${r.latency_median_s_core614}s Core-614` : (r.latency_cap_s ? `${r.latency_cap_s}s cap` : "—"));
+          const latStr = r.latency_median_min ? `${r.latency_median_min.toFixed(1)}m (${r.latency_timeouts} TO)` : (r.latency_median_s_614tasks ? `${r.latency_median_s_614tasks}s (614 tasks)` : (r.latency_cap_s ? `${r.latency_cap_s}s cap` : "—"));
           const barWidth = primaryVal !== null ? Math.min(100, Math.max(0, primaryVal * 100)) : 0;
           const badgeCls = r.is_primary === false ? "badge-warn" : (r.provider === "Open-Weight" ? "badge-open" : "badge-prop");
           const isOpen = state.expandedKey === r.key;
