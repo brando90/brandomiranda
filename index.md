@@ -64,7 +64,7 @@ Selected publications are listed reverse-chronologically; see [Google Scholar](h
 VeriBench: End-to-End Formal Verification Benchmark for AI Coding Agents in Lean 4 (2026)
 *<strong>Brando Miranda</strong>, Srivatsava Daruru, Ethan S. Hersch, Zhanke Zhou, Allen Nie, Daneshvar Amrollahi, Leni Aniva, Iddah Mlauzi, et al.*
 [**[Blog / Project Page]**]({{ site.baseurl }}veribench/blog/veribench-launch/)
-[**[Preprint]**]({{ site.baseurl }}professional_documents/papers/NeurIPS_2026_VeriBench.pdf)
+[**[Preprint]**](https://purl.stanford.edu/nw314gc8770)
 
 CoDaPO: Confidence and Difficulty-Adaptive Policy Optimization for LLM Reasoning (2026)
 *Zhanke Zhou, Xiangyu Lu, Chentao Cao, <strong>Brando Miranda</strong>, Tongliang Liu, Bo Han, Sanmi Koyejo.*
