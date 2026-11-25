@@ -35,7 +35,7 @@ Disagreement between experts—or intrinsic stochasticity in the target—is par
 
 Notice what this does not mean. It does not mean every judgment is mushy or uninformative. Where the target is concentrated (e.g., where experts agree), $$p^{*}(y \mid x)$$ is sharp, and a good judge should be confident. Where the target has genuine spread, $$p^{*}(y \mid x)$$ reflects it, and a good judge should match that spread.
 
-What you cannot do is demand a "peaky," zero-variance ground truth on a task whose true distribution has spread. Asking for a single deterministic score where none exists is not a hard engineering problem—it is asking the target to be something it is not. You can still report one number when a decision needs it, such as the mean or the mode of the distribution, but that is a summary you chose, not a ground truth you found. What you cannot do is want your judge to capture a genuinely stochastic target—like expert human judgment—and pretend that target has zero variance.
+What you cannot do is demand a "peaky," zero-variance ground truth on a task whose true distribution has spread. Asking for a single deterministic score where none exists is not a hard engineering problem—it is asking the target to be something it is not. You can still report one number when a decision needs it, such as the mean or the mode of the distribution, but that is a summary you chose, not a ground truth you found. But you cannot simultaneously want your judge to capture a genuinely stochastic target—like expert human judgment—and pretend that target has zero variance.
 
 ## 2. Once the Target Is a Distribution, Judging Is Ordinary Probabilistic ML
 
