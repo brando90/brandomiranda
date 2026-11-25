@@ -66,7 +66,7 @@ On the statistical objection: it is completely fair, and it is an empirical ques
 
 I want to distinguish clearly between what our early evidence supports and the further bet I am making.
 
-What we see so far: In our ongoing experiments comparing training objectives on ordinal rating data, cross-entropy fitting doesn't need massive datasets to beat correlation-style baselines—it starts pulling ahead after roughly 4 to 8 ratings and keeps improving as more ratings come in. Even at modest, realistic sample sizes, fitting the distribution directly pays off.
+What we see so far: In our ongoing experiments comparing training objectives on ordinal rating data, cross-entropy fitting doesn't need massive datasets to beat correlation-style baselines—it starts pulling ahead after roughly 4 to 8 ratings and keeps improving as more ratings come in. Even at modest, realistic sample sizes, fitting the distribution directly pays off. The full experiments will be in a paper I am still writing; until it is out, the working repo is [here](https://github.com/brando90/judges-dont-need-psychometrics-or-corr), and I will swap in the paper link when it is posted.
 
 The further bet: If AI judging really is just ordinary probabilistic prediction, then the Bitter Lesson applies. Held-out judge loss should follow ordinary scaling laws in the number of expert ratings. (To be clear: scaling laws for judges is still a hypothesis we haven't fitted yet—it is a prediction, not a finished result.)
 
