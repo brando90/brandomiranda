@@ -7,11 +7,11 @@ section: meta-research
 
 *Brando Miranda — November 2026 · ~7 min read*
 
-**TL;DR.** When a task has no verifiable answer, the target for an AI judge is the distribution of expert ratings, not a single score. Once you accept that, judging is ordinary supervised learning: train with cross-entropy (CE), evaluate on held-out data with proper scores such as the ranked probability score (RPS), and treat correlation as a ranking diagnostic, because it sees only the mean rating up to level and scale. In three experiments, the CE-fit (or CE-trained) judge has lower held-out RPS than its Pearson counterpart, and it almost always has lower CE and total variation distance (TVD) too (32 of 35 cells in the homework experiment, more in the others). In the main experiment that holds even where the two have almost the same correlation. The open question is then the one every ML problem has: how does held-out error fall as we add expert ratings? I predict an ordinary power law with a floor. I have not fit it yet.
+**TL;DR.** When a task has no verifiable answer, the target for an AI judge is the distribution of expert ratings, not a single score. Once you accept that, judging is ordinary supervised learning: train with cross-entropy (CE), evaluate on held-out data with proper scores such as the ranked probability score (RPS), and treat correlation as a ranking diagnostic, because it sees only the mean rating up to level and scale. In three experiments, the CE-fit (or CE-trained) judge has lower held-out RPS than its Pearson counterpart, and it almost always has lower CE and total variation distance (TVD) too (32 of 35 cells in the homework experiment, more in the others). In the main experiment that holds even where the two have almost the same correlation. The open question is then the one every ML problem has: how does held-out error fall as we add expert ratings? I fit it on the saved results. CE-fit and CE-trained curves are consistent with an ordinary power law with a floor, error = floor + a·N^-b, with exponent b about 0.6 to 0.9 where the fit is well determined. Pearson-fit curves are not: they keep falling slowly, stay flat, or wobble, and at the largest budget I tested they are still above where the CE curves level off in most cells. The fits are noisy and stop at 256 to 2,048 ratings, and I could not compute the human floor, so read them as a first look, not a settled law.
 
 ---
 
-A common objection to training AI judges with cross-entropy is that judging is special, so ordinary ML intuitions don't apply. I think judging is not special. This post is my argument for that, in three steps, plus the numbers I have so far and the one claim I have not tested.
+A common objection to training AI judges with cross-entropy is that judging is special, so ordinary ML intuitions don't apply. I think judging is not special. This post is my argument for that, in three steps, plus the numbers I have so far and what the first scaling fits do and do not show.
 
 ## Step 1: define the target first
 
@@ -70,29 +70,41 @@ So the case is strong in these experiments and not universal. I also derived the
 
 ## Step 3: then scaling laws apply, and data is the open question
 
-If judging is ordinary prediction of a distribution, I expect ordinary behavior: held-out error that falls as a power law in the number of ratings, down to a floor,
+If judging is ordinary prediction of a distribution, I expect ordinary behavior: held-out error that falls as a power law in the number of ratings $N$, down to a floor,
 
 $$
 \text{error}(N) \;=\; \text{floor} + a\, N^{-b}.
 $$
 
-**This is a prediction, not a result.** I have curves of RPS, CE and TVD against the number of ratings for several judges and sets, and the CE-fit curves fall as ratings grow. I have not fit the law with exponents, floors and uncertainty yet, so I can't tell you which curves flatten and where.
+I fit this to the curves I already had (RPS, CE and TVD against the number of human ratings used to fit). No new model calls, just the saved results, one curve per judge and set, with bootstrap intervals.
+
+**CE-fit and CE-trained curves are consistent with the law.** With one rating per item, the typical exponent is $b \approx 0.66$ for RPS, 0.82 for CE and 0.59 for TVD. That is the median over the cells where the floor is pinned down, which is only 8 of 25 cells for RPS (20 of 25 for CE, 10 of 25 for TVD). In the other cells the curve fits but is still bending at 256 ratings, so I can't say where it levels off. For the LoRA-trained judges, with eight budgets from 16 to 2,048 ratings, I get $b = 0.89$ [0.76, 0.99] on ChaosNLI with the 4B model, 0.76 [0.64, 0.89] on HelpSteer2 and 0.64 [0.49, 0.78] on ChaosNLI with the 8B model (95% intervals). The last two have a steep early drop and a noisy middle, so I trust those exponents less. At $b = 0.66$, each doubling of the ratings removes about 37% of the error that is still above the floor.
+
+**The floors are well under uniform.** The fitted RPS floors are 0.46 to 0.83 of the uniform judge's RPS across the five rating sets, and 0.69 to 0.76 across the LoRA panels. For example, on ChaosNLI with the 4B model the RPS floor is 0.148 against 0.204 for uniform. So more ratings buy real accuracy, not a few thousandths. But I don't know how close that is to the human limit, because I can't compute the human leave-one-vote-out RPS from the saved files (the labels are held out). Floors here are compared with uniform and with the raw judge, not with humans.
+
+**Pearson-fit and Pearson-trained curves do not follow the law.** Most show a slow, log-like decline with exponent under 0.1 and no floor I can identify. On DICES-990 the Pearson-fit RPS is flat at about 0.26 from 4 to 256 ratings, against 0.27 for uniform. With five ratings per item, all 25 Pearson-fit cells are non-monotone: the smallest budget beats the next one. At the largest budget I tested, the Pearson-fit is still above the CE-fit floor in 20 of 25 cells on RPS, 25 of 25 on CE and 21 of 25 on TVD. I can't say from this data whether Pearson ever levels off, only that at these budgets it hasn't reached where CE does.
+
+**Where I can't fit anything.** In the homework experiment the saved error bars (about 0.01) are wider than the whole decline (about 0.02), so every curve there is flat within noise, even though the points fall smoothly. Four-budget panels have one degree of freedom, so they are indicative only, and the three-budget panel is not fit.
+
+Caveats on all of this:
+
+1. The budgets stop at 256 ratings (2,048 for the LoRA judges), so every floor is an extrapolation.
+2. The bootstrap treats the points of a curve as independent. They share test items, so the intervals on shape are probably too wide and the intervals on level too narrow.
+3. I can't separate judge size from judge family in my data, so the scaling I can claim is in the number of ratings, not in judge size.
 
 What would change my mind:
 
-1. The curves bend to a high floor that more ratings do not lower. That would put judging in a permanently low-data regime, which is the claim I'd want to see argued specifically.
-2. CE-fit stops beating Pearson-fit as the budget grows, which would mean the early win was a small-sample effect.
-3. The break-even number of ratings grows with the size of the judge or the difficulty of the task instead of staying small.
-
-I should be fair about one limit. Within one family of judges my data cannot separate model size from everything else, so the scaling I can claim is in the number of ratings, not in judge size.
+1. The CE curves bend to a floor that is close to the raw judge and more ratings do not lower it. That would put judging in a permanently low-data regime. I see floors under the raw judge in 13 of 25 RPS cells, so it is not ruled out for the other half.
+2. Pearson-fit catches up to CE-fit at larger budgets than I tested, which would mean the CE win is a small-sample effect.
+3. The break-even number of ratings grows with the size of the judge or the difficulty of the task instead of staying small. My data can't test this.
 
 The argument turns on what we treat as the bottleneck. If the metric was the bottleneck, we would need new theory for each new kind of judge. If data is the bottleneck, we do what we do everywhere else in ML: collect more expert ratings, fit the distribution, and measure the curve. Ratings cost money and time, but they are a budget, not a law of nature.
 
-I think of this as the bitter lesson applied to judges. The bitter lesson in AI says that general methods that scale with compute and data beat hand-built cleverness in the long run. For judges, it says that once the target is fixed, the general recipe (fit the distribution with a proper loss, add data) should beat special-purpose metric design. That is the frame of my argument, not a result. The scaling-law prediction above is the test of it.
+I think of this as the bitter lesson applied to judges. The bitter lesson in AI says that general methods that scale with compute and data beat hand-built cleverness in the long run. For judges, it says that once the target is fixed, the general recipe (fit the distribution with a proper loss, add data) should beat special-purpose metric design. That is the frame of my argument, not a result. The fits above are a first test of it: the CE curves behave the way the frame predicts, the Pearson curves don't, and the data is too limited to call it more than that.
 
 **Define the target as the expert distribution, fit it with cross-entropy, score it with proper scores, and spend the rating budget the way we spend compute. That is the bitter lesson, for judges.**
 
-**TLDR-end:** The target for a judge on a subjective task is the distribution of expert ratings. Train with cross-entropy, evaluate with proper scores (RPS, CE, TVD) and keep correlation as a ranking diagnostic. CE-fit has lower held-out RPS than Pearson-fit in all three experiments, and almost always lower CE and TVD (Exp 26 homework: RPS in 35 of 35 cells, CE and TVD in 32 of 35). In the main experiment it breaks even from 4 to 8 ratings at one rating per item (10 to 20 at five per item), even where correlation is nearly tied. The bitter-lesson frame, that ordinary data scaling beats special-purpose metric design for judges, rests on a scaling law of held-out error against the number of ratings, and that law is my prediction, not yet a fit.
+**TLDR-end:** The target for a judge on a subjective task is the distribution of expert ratings. Train with cross-entropy, evaluate with proper scores (RPS, CE, TVD) and keep correlation as a ranking diagnostic. CE-fit has lower held-out RPS than Pearson-fit in all three experiments, and almost always lower CE and TVD (Exp 26 homework: RPS in 35 of 35 cells, CE and TVD in 32 of 35). In the main experiment it breaks even from 4 to 8 ratings at one rating per item (10 to 20 at five per item), even where correlation is nearly tied. Fitting error against the number of ratings, the CE-fit and CE-trained curves are consistent with a saturating power law with exponent about 0.6 to 0.9 (median 0.66 for RPS, 0.82 for CE, 0.59 for TVD, one rating per item, where the floor is identified), and their floors sit well under the uniform judge. The Pearson curves do not follow that law and, at the largest budget I tested, are still above the CE floor in 20 of 25 RPS cells. Budgets stop at 256 to 2,048 ratings, floors are extrapolations, and I could not compute the human floor, so this is a first look, not a settled law.
 
 ---
 
