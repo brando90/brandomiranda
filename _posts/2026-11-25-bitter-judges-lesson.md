@@ -25,19 +25,19 @@ I think this framing is backwards. AI judging is not a special case of machine l
 
 Before arguing about loss functions or evaluation metrics, we have to agree on what we are actually trying to fit.
 
-For subjective or unverifiable tasks—grading open-ended reasoning, judging formal specification quality, evaluating writing—there is no single deterministic label waiting to be uncovered. People often conclude from this that there is no ground truth at all. That is wrong. Once you specify the population of experts or the rubric persona you care about, the ground truth is completely well-defined: it is the conditional distribution $$p^{*}(y \mid x)$$ over expert ratings.
+For subjective or unverifiable tasks—grading open-ended reasoning, judging formal specification quality, evaluating writing—there is no single deterministic label waiting to be uncovered. People often conclude from this that there is no ground truth at all. That is wrong. Once you specify the population of experts or the rubric persona you care about, the ground truth is completely well-defined: it is the conditional distribution $$p^{*}(y \mid x)$$ over expert ratings. Concretely, it is the distribution of the rating that a randomly chosen expert from that population would give this item.
 
 Disagreement between experts is part of that target, not noise to be swept under the rug.
 
 Notice what this does not mean. It does not mean every judgment is mushy or uninformative. Where experts agree, $$p^{*}(y \mid x)$$ is sharp, and a good judge should be confident. Where experts legitimately disagree, $$p^{*}(y \mid x)$$ has spread, and a good judge should reflect that spread.
 
-What you cannot do is demand a "peaky," zero-variance ground truth on a task that is inherently subjective. Asking for a single deterministic score where none exists is not a hard engineering problem—it is a logical contradiction. You cannot simultaneously want your judge to capture subjective human judgment and pretend that human judgment has zero variance.
+What you cannot do is demand a "peaky," zero-variance ground truth on a task that is inherently subjective. Asking for a single deterministic score where none exists is not a hard engineering problem—it is asking the target to be something it is not. You can still report one number when a decision needs it, such as the mean or the mode of the distribution, but that is a summary you chose, not a ground truth you found. What you cannot do is want your judge to capture subjective human judgment and pretend that human judgment has zero variance.
 
 ## 2. Once the Target Is a Distribution, Judging Is Ordinary Probabilistic ML
 
 If we agree that the target is $$p^{*}(y \mid x)$$, everything else snaps back into standard machine learning.
 
-At training time, we should use a strictly proper scoring rule—cross-entropy. We already know what cross-entropy does: in the limit of data and capacity, it recovers the true conditional distribution $$p^{*}(y \mid x)$$. Nothing about AI judges calls for a special training objective.
+At training time, we should use a strictly proper scoring rule—cross-entropy. We already know what cross-entropy does: in the limit of data and capacity, it recovers the true conditional distribution $$p^{*}(y \mid x)$$. Nothing about AI judges calls for a special training objective. In practice the judge's output becomes a distribution in one of a few ways: read the probabilities it puts on each rating, sample it several times, or fit a small head on top of its score by minimizing cross-entropy on human ratings.
 
 At held-out evaluation time, we should use a metric that actually matches the decision problem:
 
@@ -56,6 +56,8 @@ The first is statistical. Richer distributional targets carry more information t
 
 The second is practical. Most teams don't want to sample a judge multiple times per input or collect multiple human ratings per prompt. They want cheap, single-shot reliability: run the judge once, get a number, move on. Distributional matching asks you to treat both human ratings and judge outputs as distributions—and to build evaluation suites that expect variability rather than hiding it.
 
+One thing softens the statistical worry: you never estimate $$p^{*}(y \mid x)$$ item by item. The model shares strength across items, so even one or two ratings per item add up to a usable training set.
+
 Here is where the hinge sits.
 
 On the practical objection: wanting single-sample determinism doesn't make an inherently variable target deterministic. If our evaluation pipelines pretend variance isn't there, we aren't getting reliability—we are just deluding ourselves about our error bars.
@@ -71,6 +73,8 @@ What we see so far: In our ongoing experiments comparing training objectives on 
 The further bet: If AI judging really is just ordinary probabilistic prediction, then the Bitter Lesson applies. Held-out judge loss should follow ordinary scaling laws in the number of expert ratings. (To be clear: scaling laws for judges is still a hypothesis we haven't fitted yet—it is a prediction, not a finished result.)
 
 If that prediction holds, the burden of proof flips. Anyone arguing that we must stick with correlation heuristics or bespoke low-data surrogates now has to justify why the field is permanently trapped in the low-data regime.
+
+There is a reason to expect this, and it is not a compute argument. The Bitter Lesson says that methods which keep improving as you scale beat hand-built cleverness. Here the thing you scale is expert ratings, not FLOPs. Correlation only sees the conditional mean of the ratings, so extra ratings can sharpen that one number and nothing else; it has no way to turn them into a better spread or shape. A proper loss has the whole distribution as its minimum, so every extra rating still has something left to teach it.
 
 Is that even true? Frontier labs routinely spend enormous budgets collecting domain-expert data for math, coding, and post-training. If expert judgment data is the bottleneck for trustworthy evaluation and scalable oversight, labs can—and will—collect it at scale.
 
