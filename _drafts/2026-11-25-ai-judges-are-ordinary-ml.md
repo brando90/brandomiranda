@@ -52,7 +52,7 @@ Over all budgets and judge-by-set cells with one rating per item, CE-fit has low
 The other two experiments agree.
 
 - **Fresh homework answers.** On 160 new homework answers with the same five judges, CE-fit has lower held-out RPS in 35 of 35 judge-by-budget cells. On CE and TVD it wins 32 of 35 each, so this one is a clean win on RPS only.
-- **Trained judges.** I trained two open-weight models with LoRA, once with CE and once with Pearson correlation, on the same ratings. At the largest budget, CE-trained wins on RPS, CE and TVD in 7 of 7 panels, with significant gaps. On DICES with the 4B model, held-out CE is 0.775 against 2.870, and RPS is 0.209 against 0.285.
+- **Trained judges.** I trained two open-weight models with LoRA, once with CE and once with Pearson correlation, on the same ratings. At the largest budget, CE-trained wins on RPS, CE and TVD in 7 of 7 panels, and the RPS gaps are significant. On DICES with the 4B model, held-out CE is 0.775 against 2.870, and RPS is 0.209 against 0.285.
 
 **Fitting the distribution wins on the scores that measure the distribution, including where correlation says the judges are tied.**
 
@@ -88,9 +88,11 @@ I should be fair about one limit. Within one family of judges my data cannot sep
 
 The argument turns on what we treat as the bottleneck. If the metric was the bottleneck, we would need new theory for each new kind of judge. If data is the bottleneck, we do what we do everywhere else in ML: collect more expert ratings, fit the distribution, and measure the curve. Ratings cost money and time, but they are a budget, not a law of nature.
 
-**Define the target as the expert distribution, fit it with cross-entropy, score it with proper scores, and spend the rating budget the way we spend compute.**
+I think of this as the bitter lesson applied to judges. The bitter lesson in AI says that general methods that scale with compute and data beat hand-built cleverness in the long run. For judges, it says that once the target is fixed, the general recipe (fit the distribution with a proper loss, add data) should beat special-purpose metric design. That is the frame of my argument, not a result. The scaling-law prediction above is the test of it.
 
-**TLDR-end:** The target for a judge on a subjective task is the distribution of expert ratings. Train with cross-entropy, evaluate with proper scores (RPS, CE, TVD) and keep correlation as a ranking diagnostic. CE-fit has lower held-out RPS than Pearson-fit in all three experiments, and almost always lower CE and TVD (Exp 26 homework: RPS in 35 of 35 cells, CE and TVD in 32 of 35). In the main experiment it breaks even from 4 to 8 ratings at one rating per item (10 to 20 at five per item), even where correlation is nearly tied. The scaling law of held-out error against the number of ratings is my prediction, not yet a fit.
+**Define the target as the expert distribution, fit it with cross-entropy, score it with proper scores, and spend the rating budget the way we spend compute. That is the bitter lesson, for judges.**
+
+**TLDR-end:** The target for a judge on a subjective task is the distribution of expert ratings. Train with cross-entropy, evaluate with proper scores (RPS, CE, TVD) and keep correlation as a ranking diagnostic. CE-fit has lower held-out RPS than Pearson-fit in all three experiments, and almost always lower CE and TVD (Exp 26 homework: RPS in 35 of 35 cells, CE and TVD in 32 of 35). In the main experiment it breaks even from 4 to 8 ratings at one rating per item (10 to 20 at five per item), even where correlation is nearly tied. The bitter-lesson frame, that ordinary data scaling beats special-purpose metric design for judges, rests on a scaling law of held-out error against the number of ratings, and that law is my prediction, not yet a fit.
 
 ---
 
