@@ -7,7 +7,7 @@ section: meta-research
 
 *Brando Miranda — November 2026 · ~7 min read*
 
-**TL;DR.** When a task has no verifiable answer, the target for an AI judge is the distribution of expert ratings, not a single score. Once you accept that, judging is ordinary supervised learning: train with cross-entropy (CE), evaluate on held-out data with proper scores such as the ranked probability score (RPS), and treat correlation as a ranking diagnostic, because it sees only the mean rating up to level and scale. In three experiments, CE-fit judges beat Pearson-fit judges on held-out RPS, CE and total variation distance (TVD) even where the two have almost the same correlation. The open question is then the one every ML problem has: how does held-out error fall as we add expert ratings? I predict an ordinary power law with a floor. I have not fit it yet.
+**TL;DR.** When a task has no verifiable answer, the target for an AI judge is the distribution of expert ratings, not a single score. Once you accept that, judging is ordinary supervised learning: train with cross-entropy (CE), evaluate on held-out data with proper scores such as the ranked probability score (RPS), and treat correlation as a ranking diagnostic, because it sees only the mean rating up to level and scale. In three experiments, the CE-fit (or CE-trained) judge has lower held-out RPS than its Pearson counterpart, and it almost always has lower CE and total variation distance (TVD) too (32 of 35 cells in the homework experiment, more in the others). In the main experiment that holds even where the two have almost the same correlation. The open question is then the one every ML problem has: how does held-out error fall as we add expert ratings? I predict an ordinary power law with a floor. I have not fit it yet.
 
 ---
 
@@ -76,7 +76,7 @@ $$
 \text{error}(N) \;=\; \text{floor} + a\, N^{-b}.
 $$
 
-**This is a prediction, not a result.** I have curves of RPS, CE and TVD against the number of ratings for several judges and sets, and they fall as ratings grow. I have not fit the law with exponents, floors and uncertainty yet, so I can't tell you which curves flatten and where.
+**This is a prediction, not a result.** I have curves of RPS, CE and TVD against the number of ratings for several judges and sets, and the CE-fit curves fall as ratings grow. I have not fit the law with exponents, floors and uncertainty yet, so I can't tell you which curves flatten and where.
 
 What would change my mind:
 
@@ -90,7 +90,7 @@ The argument turns on what we treat as the bottleneck. If the metric was the bot
 
 **Define the target as the expert distribution, fit it with cross-entropy, score it with proper scores, and spend the rating budget the way we spend compute.**
 
-**TLDR-end:** The target for a judge on a subjective task is the distribution of expert ratings. Train with cross-entropy, evaluate with proper scores (RPS, CE, TVD) and keep correlation as a ranking diagnostic. CE-fit beats Pearson-fit on those scores in all three experiments, from 4 to 8 ratings at one rating per item (10 to 20 at five per item), even where correlation is nearly tied. The scaling law of held-out error against the number of ratings is my prediction, not yet a fit.
+**TLDR-end:** The target for a judge on a subjective task is the distribution of expert ratings. Train with cross-entropy, evaluate with proper scores (RPS, CE, TVD) and keep correlation as a ranking diagnostic. CE-fit has lower held-out RPS than Pearson-fit in all three experiments, and almost always lower CE and TVD (Exp 26 homework: RPS in 35 of 35 cells, CE and TVD in 32 of 35). In the main experiment it breaks even from 4 to 8 ratings at one rating per item (10 to 20 at five per item), even where correlation is nearly tied. The scaling law of held-out error against the number of ratings is my prediction, not yet a fit.
 
 ---
 
