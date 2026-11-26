@@ -5,7 +5,7 @@ date: 2026-11-25
 section: ml
 ---
 
-*Brando Miranda — November 2026 · ~5 min read*
+*Brando Miranda — November 2026 · ~9 min read*
 
 **TL;DR.** The AI community treats LLM-as-a-judge like a special, bespoke subfield—inventing correlation-based objectives, agonizing over human rater disagreement, and calling open-ended evaluation "unverifiable." I don't buy that category at all. Everything is verifiable once you define the target PMF or PDF $$p^{*}(y \mid x)$$ you are after—even a uniform distribution. Once you accept that the target is a conditional distribution over expert ratings (or any specified target) rather than a single deterministic score, AI judging reduces to ordinary probabilistic machine learning: train with a proper loss (cross-entropy), evaluate with a task-aligned proper score (like Ranked Probability Score for ordinal scales), and let the Bitter Lesson take over. Data scaling—not clever metric engineering—becomes the real open question.
 
@@ -72,7 +72,7 @@ On the statistical objection: it is completely fair, and it is an empirical ques
 
 I want to distinguish clearly between what our early evidence supports and the further bet I am making.
 
-What we see so far: In our ongoing experiments comparing training objectives on ordinal rating data, cross-entropy fitting doesn't need massive datasets to beat correlation-style baselines—it starts pulling ahead after roughly 4 to 8 ratings (frozen frontier judges with a small calibration head, one rating per item, scored by held-out ranked probability score) and keeps improving as more ratings come in. Even at modest, realistic sample sizes, fitting the distribution directly pays off. The full experiments are in a technical memo, [Learn Judges Like Any Other Model: Cross-Entropy, Not Correlation, for Predicting Human Rating Distributions](https://doi.org/10.25740/pr787bn6444) (Stanford Digital Repository, November 25, 2026). The code, data and every number in it are in the [working repo](https://github.com/brando90/judges-dont-need-psychometrics-or-corr).
+What we see so far: In our ongoing experiments comparing training objectives on ordinal rating data, cross-entropy fitting doesn't need massive datasets to beat correlation-style baselines—it starts pulling ahead after roughly 4 to 8 total ratings (one rating per item, frozen frontier judges with a small calibration head, scored by held-out ranked probability score) and keeps improving as more ratings come in. Even at modest, realistic sample sizes, fitting the distribution directly pays off. The full experiments are in a technical memo, [Learn Judges Like Any Other Model: Cross-Entropy, Not Correlation, for Predicting Human Rating Distributions](https://doi.org/10.25740/pr787bn6444) (Stanford Digital Repository, November 25, 2026). The code, data and every number in it are in the [working repo](https://github.com/brando90/judges-dont-need-psychometrics-or-corr).
 
 The further bet: If AI judging really is just ordinary probabilistic prediction, then the Bitter Lesson applies. Held-out judge loss should follow ordinary scaling laws in the number of expert ratings (or target samples). (To be clear: this is a prediction that has passed a first test, not a finished result. The memo fits a saturating power law to our own learning curves on five public rating sets and two model families. The law fits the cross-entropy-trained curve in 9 of 11 panels, with median exponents of 0.66 on ranked probability score and 0.82 on cross-entropy in the frozen-judge cells where the floor can be identified, and it fits the correlation-trained curve in 1 of 11. Our largest budgets are a few hundred to about two thousand ratings, so the floors are extrapolations.)
 
@@ -85,6 +85,70 @@ Is that even true? Frontier labs routinely spend enormous budgets collecting dom
 The interesting research question stops being "what clever non-proper metric can squeeze signal out of three noisy labels?" It becomes: how does judge loss scale with target rating data, and how should we spend a fixed labeling budget—more items with fewer samples, or fewer items with deeper distributional coverage?
 
 Stop treating AI judges like magic. Define the distribution, minimize cross-entropy, evaluate with a proper score, and scale the data and compute.
+
+## Appendix: Mathematical & Practical Notes
+
+Same claims as the essay, written as identities. The prompt is $$c$$. The judge's score is a draw $$X \sim \hat{q}(\cdot \mid c)$$ and the human's score is a draw $$Y \sim p^{*}(\cdot \mid c)$$. Standardize them by their unconditional mean and standard deviation:
+
+$$z_X = (X - \mu_X)/\sigma_X, \qquad z_Y = (Y - \mu_Y)/\sigma_Y.$$
+
+The squared distance between the two conditional distributions on a prompt is
+
+$$D_B(p^{*} \Vert \hat{q}) = \sum_y \big(p^{*}(y \mid c) - \hat{q}(y \mid c)\big)^2.$$
+
+### A.1 Correlation $$\neq$$ Brier — Even on Binary Labels
+
+Pearson correlation standardizes both scores before it compares them. Whenever both have positive variance,
+
+$$\mathbb{E}[(z_X - z_Y)^2] = 2\big(1 - \operatorname{Corr}(X, Y)\big).$$
+
+Squared error keeps the mean gap and the scale gap:
+
+$$\mathbb{E}[(X - Y)^2] = (\mu_X - \mu_Y)^2 + (\sigma_X - \sigma_Y)^2 + 2\sigma_X\sigma_Y\big(1 - \operatorname{Corr}(X, Y)\big).$$
+
+On a binary label $$Y \in \{0,1\}$$, that second line is the Brier score. A Bernoulli distribution is its mean, so there is no moment gap between the scalar mean and the PMF: scalar $$L_2$$ and Brier are the same number. Correlation still misses calibration, Brier, and cross-entropy, because a positive affine map leaves it unchanged,
+
+$$\operatorname{Corr}(aX + b, Y) = \operatorname{Corr}(X, Y), \qquad a > 0.$$
+
+Shift the judge, or squash its range, and the correlation holds still. Every proper score moves.
+
+On an ordinal $$0$$–$$5$$ scale the mean is coarser than the PMF. A panel in consensus on $$2$$ and a panel split $$50/50$$ on $$\{0, 4\}$$ share the mean $$2.0$$. Anything that only sees means, correlation included, treats those two targets as one.
+
+### A.2 Strict Anti-Properness for Sampled Judges ($$\sqrt{\rho} > \rho$$)
+
+Condition on the prompt and draw the judge and the human independently, $$X \perp Y \mid c$$. Let $$\mu_Y(c) = \mathbb{E}[Y \mid c]$$. Suppose humans disagree on some prompts, $$\mathbb{E}[\operatorname{Var}(Y \mid c)] > 0$$, and prompts vary, $$\operatorname{Var}(\mu_Y(c)) > 0$$.
+
+If the judge matches the truth, $$\hat{q} = p^{*}$$, independence removes the conditional covariance. Correlation only sees the share of $$\operatorname{Var}(Y)$$ that lives in the conditional mean:
+
+$$\operatorname{Corr}(X_{p^{*}}, Y) = \frac{\operatorname{Var}(\mu_Y(c))}{\operatorname{Var}(Y)} \in (0, 1).$$
+
+Call this value $$\rho$$. Now collapse the judge onto a zero-variance affine copy of that mean, $$X_\delta = a\mu_Y(c) + b$$ with $$a > 0$$. The copy is the wrong distribution wherever the human has spread, and it is miscalibrated whenever $$a \neq 1$$ or $$b \neq 0$$. Correlation scores the whole family the same way:
+
+$$\operatorname{Corr}(X_\delta, Y) = \sqrt{\operatorname{Corr}(X_{p^{*}}, Y)} = \sqrt{\rho} > \rho.$$
+
+On $$(0, 1)$$ the square root is the larger number. When within-prompt disagreement and across-prompt variation of the mean split $$\operatorname{Var}(Y)$$ evenly, $$\rho = 0.50$$: the exact distribution $$p^{*}$$ scores $$0.50$$, and a miscalibrated collapsed judge scores about $$0.707$$. So on a finite discrete rating set, as the number of prompts $$N \to \infty$$, maximizing correlation moves away from $$p^{*}$$. A strictly proper score is minimized at $$p^{*}$$, and only there.
+
+### A.3 Single-Forward-Pass Logit Readout
+
+A distributional judge is cheap when the ratings are a handful of tokens. Here they are `0` through `5`. One forward pass returns a logit for each of them. Normalize those logits and the six probabilities are the full predictive distribution $$\hat{q}(\cdot \mid c)$$. Sampling the judge at inference time is optional.
+
+### A.4 Unbiased Proper Evaluation Even at $$k = 1$$ Held-Out Rater per Item
+
+One held-out human rating per test item is enough to score that distribution. Let $$L(\hat{q}(c), y)$$ be a proper scoring rule—cross-entropy, Brier, or ranked probability score—and let item $$c$$ carry $$k_c$$ held-out ratings $$y_{c,j}$$. The average over individual ratings,
+
+$$\widehat{R}(\hat{q}) = \frac{1}{\lvert D_{\text{test}}\rvert} \sum_{c \in D_{\text{test}}} \frac{1}{k_c} \sum_{j=1}^{k_c} L\big(\hat{q}(c), y_{c,j}\big),$$
+
+is an unbiased estimator of the risk $$\mathbb{E}_{c,\, Y \sim p^{*}(\cdot \mid c)}\big[L(\hat{q}(c), Y)\big]$$ at every finite $$k_c$$, including $$k_c = 1$$. Each held-out rating is already one draw from $$p^{*}(\cdot \mid c)$$, and the average is linear.
+
+The plug-in distance estimates a different quantity, and at finite $$k_c$$ it is biased. Replace $$p^{*}$$ with the empirical frequencies $$\hat{p}_{\text{test}}$$ built from those ratings, and $$D_B(\hat{p}_{\text{test}} \Vert \hat{q})$$ sits above $$D_B(p^{*} \Vert \hat{q})$$ by
+
+$$\frac{1}{k_c}\big(1 - \Vert p^{*}(c)\Vert_2^2\big).$$
+
+More raters on the same item are what shrink that gap. The per-rating average $$\widehat{R}$$ stays unbiased with a single rater.
+
+### A.5 Correlation Saturation, Scaling Laws, and Label Dollars
+
+Correlation is a property of the conditional mean. Once the judge has the ranking of $$\mu_Y(c)$$, further ratings only polish that one number, and the correlation curve flattens. A proper loss is fit to the whole distribution, so a rating that leaves the mean alone can still correct the spread, and the loss still moves. Judge building is then a dollar question: the next dollar can buy another expert rating, which a proper score can still learn from, or another round of hand-tuning a correlation prompt that has already taken everything correlation is able to take.
 
 ---
 
