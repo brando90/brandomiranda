@@ -84,7 +84,7 @@ Is that even true? Frontier labs routinely spend enormous budgets collecting dom
 
 The interesting research question stops being "what clever non-proper metric can squeeze signal out of three noisy labels?" It becomes: how does judge loss scale with target rating data, and how should we spend a fixed labeling budget—more items with fewer samples, or fewer items with deeper distributional coverage?
 
-Stop treating AI judges like magic. Define the distribution, minimize cross-entropy, evaluate with a proper score, and scale the data.
+Stop treating AI judges like magic. Define the distribution, minimize cross-entropy, evaluate with a proper score, and scale the data and compute.
 
 ---
 
