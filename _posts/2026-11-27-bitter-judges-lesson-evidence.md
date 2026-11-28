@@ -38,7 +38,7 @@ Before arguing against a ruler, I checked whether people use it. I ran a literat
 
 1. 16 lead with a correlation: 12 of 14 graded-score papers (short of my pre-set bar for calling it the standard there) and 4 of 6 leaderboard-validation papers.
 2. None of the 20 pairwise-preference, frontier-lab and retrieval or annotation papers does; 19 lead with accuracy, agreement, kappa or F1.
-3. Of the 25 that select, tune or train a judge on human data, 9 say they maximized agreement or correlation, and 4 correlation alone (one borderline).
+3. Of the 25 that select, tune or train a judge on human data, 9 say they maximized agreement or correlation, and 4 correlation alone, a fragile count.
 4. One of the 40 uses a proper score, a Brier score on pairwise system rankings, and none scores an item's human rating distribution.
 
 So correlation leads for graded scores and leaderboards, agreement leads elsewhere, and both summarize the center of the distribution. Some papers already work with distributions instead. [Elangovan et al. (2024)](https://arxiv.org/abs/2410.03775) stratify by human uncertainty; [Guerdan et al. (2025)](https://arxiv.org/abs/2503.05965) show that forced-choice validation can select judges up to 31% worse than their response-set method; [Wang, Zhang and Choi (2025)](https://arxiv.org/abs/2503.03064) find that the mean of a judge's own distribution over verdicts beats its most likely verdict; and [Lyu, Do and Pergola (2026)](https://arxiv.org/abs/2610.37868) steer frozen judges toward human rating distributions, training with RPS on ordinal labels and cross-entropy on nominal ones. I am arguing for making that the default.
